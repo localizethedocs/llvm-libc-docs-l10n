@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../dev/fuzzing.md:3
+msgid "Fuzzing for LLVM-libc functions"
+msgstr ""
+
+#: ../../../dev/fuzzing.md:5
+msgid ""
+"Fuzz tests are used to ensure quality and security of LLVM-libc "
+"implementations. All fuzz tests live under the directory named `fuzzing`. "
+"Within this directory, the fuzz test for a libc function lives in the same "
+"nested directory as its implementation in the toplevel `src` directory. The "
+"build target `libc-fuzzer` builds all of the enabled fuzz tests (but does "
+"not run them)."
+msgstr ""
+
+#: ../../../dev/fuzzing.md:11
+msgid "Types of fuzz tests"
+msgstr ""
+
+#: ../../../dev/fuzzing.md:13
+msgid ""
+"As of this writing, there are two different kinds of fuzz tests. One kind "
+"are the traditional fuzz tests which test one function at a time and only "
+"that particular function. The other kind of tests are what we call as the "
+"differential fuzz tests. These tests compare the behavior of LLVM libc "
+"implementations with the behavior of the corresponding functions from the "
+"system libc."
+msgstr ""

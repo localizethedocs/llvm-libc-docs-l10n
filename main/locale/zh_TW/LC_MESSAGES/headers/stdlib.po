@@ -1,0 +1,696 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/stdlib.rst:3
+msgid "stdlib.h"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:14 ../../../headers/stdlib.rst:47
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:15 ../../../headers/stdlib.rst:48
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:16 ../../../headers/stdlib.rst:49
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:17
+msgid "EXIT_FAILURE"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:18 ../../../headers/stdlib.rst:22
+#: ../../../headers/stdlib.rst:26 ../../../headers/stdlib.rst:30
+#: ../../../headers/stdlib.rst:51 ../../../headers/stdlib.rst:55
+#: ../../../headers/stdlib.rst:59 ../../../headers/stdlib.rst:63
+#: ../../../headers/stdlib.rst:67 ../../../headers/stdlib.rst:71
+#: ../../../headers/stdlib.rst:75 ../../../headers/stdlib.rst:79
+#: ../../../headers/stdlib.rst:83 ../../../headers/stdlib.rst:87
+#: ../../../headers/stdlib.rst:91 ../../../headers/stdlib.rst:95
+#: ../../../headers/stdlib.rst:99 ../../../headers/stdlib.rst:103
+#: ../../../headers/stdlib.rst:107 ../../../headers/stdlib.rst:119
+#: ../../../headers/stdlib.rst:123 ../../../headers/stdlib.rst:127
+#: ../../../headers/stdlib.rst:131 ../../../headers/stdlib.rst:135
+#: ../../../headers/stdlib.rst:139 ../../../headers/stdlib.rst:143
+#: ../../../headers/stdlib.rst:147 ../../../headers/stdlib.rst:151
+#: ../../../headers/stdlib.rst:155 ../../../headers/stdlib.rst:159
+#: ../../../headers/stdlib.rst:163 ../../../headers/stdlib.rst:167
+#: ../../../headers/stdlib.rst:171 ../../../headers/stdlib.rst:175
+#: ../../../headers/stdlib.rst:179 ../../../headers/stdlib.rst:195
+#: ../../../headers/stdlib.rst:199 ../../../headers/stdlib.rst:203
+#: ../../../headers/stdlib.rst:219 ../../../headers/stdlib.rst:223
+#: ../../../headers/stdlib.rst:227 ../../../headers/stdlib.rst:231
+#: ../../../headers/stdlib.rst:235 ../../../headers/stdlib.rst:239
+#: ../../../headers/stdlib.rst:243 ../../../headers/stdlib.rst:247
+#: ../../../headers/stdlib.rst:251
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:19 ../../../headers/stdlib.rst:23
+#: ../../../headers/stdlib.rst:27 ../../../headers/stdlib.rst:31
+#: ../../../headers/stdlib.rst:35
+msgid "7.24"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:20 ../../../headers/stdlib.rst:24
+#: ../../../headers/stdlib.rst:28 ../../../headers/stdlib.rst:32
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdlib.h.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:21
+msgid "EXIT_SUCCESS"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:25
+msgid "MB_CUR_MAX"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:29
+msgid "RAND_MAX"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:33
+msgid "__STDC_VERSION_STDLIB_H__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:39
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:46
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:50
+msgid "_Exit"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:52
+msgid "7.24.4.5"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:53
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"_Exit.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:54
+msgid "abort"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:56
+msgid "7.24.4.1"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:57
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"abort.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:58
+msgid "abs"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:60 ../../../headers/stdlib.rst:124
+#: ../../../headers/stdlib.rst:132
+msgid "7.24.6.1"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:61
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"abs.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:62
+msgid "aligned_alloc"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:64
+msgid "7.24.3.1"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:65
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"aligned_alloc.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:66
+msgid "at_quick_exit"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:68
+msgid "7.24.4.3"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:69
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"at_quick_exit.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:70
+msgid "atexit"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:72
+msgid "7.24.4.2"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:73
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"atexit.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:74
+msgid "atof"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:76
+msgid "7.24.1.1"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:77
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"atof.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:78
+msgid "atoi"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:80 ../../../headers/stdlib.rst:84
+#: ../../../headers/stdlib.rst:88
+msgid "7.24.1.2"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:81
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"atoi.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:82
+msgid "atol"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:85
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"atol.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:86
+msgid "atoll"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:89
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"atoll.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:90
+msgid "bsearch"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:92
+msgid "7.24.5.1"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:93
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"bsearch.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:94
+msgid "calloc"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:96
+msgid "7.24.3.2"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:97
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"calloc.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:98
+msgid "div"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:100 ../../../headers/stdlib.rst:128
+#: ../../../headers/stdlib.rst:136
+msgid "7.24.6.2"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:101
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"div.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:102
+msgid "exit"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:104
+msgid "7.24.4.4"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:105
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"exit.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:106
+msgid "free"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:108
+msgid "7.24.3.3"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:109
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"free.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:110
+msgid "free_aligned_sized"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:112
+msgid "7.24.3.5"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:114
+msgid "free_sized"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:116
+msgid "7.24.3.4"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:118
+msgid "getenv"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:120
+msgid "7.24.4.6"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:121
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getenv.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:122
+msgid "labs"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:125
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"labs.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:126
+msgid "ldiv"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:129
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ldiv.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:130
+msgid "llabs"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:133
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"llabs.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:134
+msgid "lldiv"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:137
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"lldiv.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:138
+msgid "malloc"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:140
+msgid "7.24.3.6"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:141
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"malloc.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:142
+msgid "mblen"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:144
+msgid "7.24.7.1"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:145
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mblen.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:146
+msgid "mbstowcs"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:148
+msgid "7.24.8.1"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:149
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mbstowcs.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:150
+msgid "mbtowc"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:152
+msgid "7.24.7.2"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:153
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mbtowc.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:154
+msgid "memalignment"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:156
+msgid "7.24.9.1"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:158
+msgid "qsort"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:160
+msgid "7.24.5.2"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:161
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"qsort.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:162
+msgid "quick_exit"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:164
+msgid "7.24.4.7"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:165
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"quick_exit.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:166
+msgid "rand"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:168
+msgid "7.24.2.1"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:169
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"rand.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:170
+msgid "realloc"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:172
+msgid "7.24.3.7"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:173
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"realloc.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:174
+msgid "srand"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:176
+msgid "7.24.2.2"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:177
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"srand.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:178
+msgid "strfromd"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:180 ../../../headers/stdlib.rst:196
+#: ../../../headers/stdlib.rst:200
+msgid "7.24.1.3"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:182
+msgid "strfromd128"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:184 ../../../headers/stdlib.rst:188
+#: ../../../headers/stdlib.rst:192
+msgid "7.24.1.4"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:186
+msgid "strfromd32"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:190
+msgid "strfromd64"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:194
+msgid "strfromf"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:198
+msgid "strfroml"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:202
+msgid "strtod"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:204 ../../../headers/stdlib.rst:220
+#: ../../../headers/stdlib.rst:228
+msgid "7.24.1.5"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:205
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strtod.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:206
+msgid "strtod128"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:208 ../../../headers/stdlib.rst:212
+#: ../../../headers/stdlib.rst:216
+msgid "7.24.1.6"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:210
+msgid "strtod32"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:214
+msgid "strtod64"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:218
+msgid "strtof"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:221
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strtof.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:222
+msgid "strtol"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:224 ../../../headers/stdlib.rst:232
+#: ../../../headers/stdlib.rst:236 ../../../headers/stdlib.rst:240
+msgid "7.24.1.7"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:225
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strtol.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:226
+msgid "strtold"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:229
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strtold.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:230
+msgid "strtoll"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:233
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strtoll.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:234
+msgid "strtoul"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:237
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strtoul.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:238
+msgid "strtoull"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:241
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strtoull.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:242
+msgid "system"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:244
+msgid "7.24.4.8"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:245
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"system.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:246
+msgid "wcstombs"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:248
+msgid "7.24.8.2"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:249
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"wcstombs.html>`__"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:250
+msgid "wctomb"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:252
+msgid "7.24.7.3"
+msgstr ""
+
+#: ../../../headers/stdlib.rst:253
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"wctomb.html>`__"
+msgstr ""

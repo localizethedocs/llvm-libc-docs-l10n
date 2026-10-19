@@ -13,22 +13,22 @@
     },
     "zh_CN" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-10-19 11:28:39 -0700",
+        "hash" : "d48c176a87ce7366d3e00f35b97d906a411ef571",
+        "title" : "[CIR] Implement 'loop hint' lowering (#232975)"
       }
     },
     "zh_TW" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-10-19 11:28:39 -0700",
+        "hash" : "d48c176a87ce7366d3e00f35b97d906a411ef571",
+        "title" : "[CIR] Implement 'loop hint' lowering (#232975)"
       }
     }
   },

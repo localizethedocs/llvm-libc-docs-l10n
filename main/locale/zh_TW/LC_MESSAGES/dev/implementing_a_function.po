@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../dev/implementing_a_function.md:3
+msgid "Implementing a New Function"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:5
+msgid ""
+"This guide provides a step-by-step walkthrough for adding a new function to "
+"LLVM-libc."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:7
+msgid "Overview"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:9
+msgid ""
+"Adding a new function involves several steps, from updating the public "
+"specification to implementing and testing the code. Below is the standard "
+"checklist for contributors."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:11
+msgid "Step-by-Step Checklist"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:13
+msgid "1. Header Entry"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:15
+msgid ""
+"Update the standard YAML file that describes the public header to ensure the "
+"function is included in the generated public header."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:17
+msgid ""
+"**File**: `libc/include/<header>.yaml` (or `libc/include/sys/<header>.yaml` "
+"for system headers)"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:18
+msgid "Add the new function to the `functions` list."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:19
+msgid "Specify its name, return type, and arguments."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:20
+msgid "List the standards it complies with (e.g., `stdc`, `POSIX`)."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:22
+msgid "2. Header Declaration"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:24
+msgid ""
+"Declare the function in the internal implementation header file. This file "
+"is used by other internal code."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:26
+msgid "**File**: `libc/src/<header>/<func>.h`"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:27
+msgid "Follow the structure defined in {ref}`implementation_standard`."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:28
+msgid "Ensure the declaration is inside the `LIBC_NAMESPACE_DECL` namespace."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:30
+msgid "3. Implementation"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:32
+msgid "Write the actual code for the function."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:34
+msgid ""
+"**File**: `libc/src/<header>/<func>.cpp` (or `libc/src/<header>/<os>/<func>."
+"cpp` for platform-specific implementations)"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:35
+msgid "Use the `LLVM_LIBC_FUNCTION` macro."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:36
+msgid "Refer to {ref}`code_style` for naming and layout conventions."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:38
+msgid "4. CMake Rule"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:40
+msgid "Add a CMake target for the new function so it can be compiled."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:42
+msgid "**File**: `libc/src/<header>/CMakeLists.txt`"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:43
+msgid "Add an `add_entrypoint_object` rule for the new file."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:44
+msgid ""
+"List all internal dependencies correctly to ensure proper build order. If "
+"the function reads or sets `errno`, include both `libc.src.__support."
+"libc_errno` and `libc.src.errno.errno` in `DEPENDS` (see {ref}"
+"`setting_errno`)."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:48
+msgid "5. Platform Registration"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:50
+msgid ""
+"Register the new entrypoint for the target platforms to include it in the "
+"build."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:52
+msgid "**File**: `libc/config/<os>/<arch>/entrypoints.txt`"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:53
+msgid "Add the new function to the list of active entrypoints."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:55
+msgid "6. Testing"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:57
+msgid "Create tests to verify the implementation."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:59
+msgid "**File**: `libc/test/src/<header>/<func>_test.cpp`"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:60
+msgid ""
+"Add corresponding tests using the internal testing framework. For functions "
+"setting `errno`, use `ErrnoCheckingTest` and `ErrnoSetterMatcher` (see {ref}"
+"`setting_errno`)."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:63
+msgid ""
+"Update the `CMakeLists.txt` in the test directory (`libc/test/src/<header>/"
+"CMakeLists.txt`) to include the new test target."
+msgstr ""

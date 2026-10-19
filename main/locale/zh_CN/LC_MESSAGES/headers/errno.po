@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/errno.rst:3
+msgid "errno.h"
+msgstr ""
+
+#: ../../../headers/errno.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/errno.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/errno.rst:14
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/errno.rst:15
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/errno.rst:16
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/errno.rst:17
+msgid "EDOM"
+msgstr ""
+
+#: ../../../headers/errno.rst:19 ../../../headers/errno.rst:23
+#: ../../../headers/errno.rst:27 ../../../headers/errno.rst:31
+msgid "7.5"
+msgstr ""
+
+#: ../../../headers/errno.rst:20 ../../../headers/errno.rst:24
+#: ../../../headers/errno.rst:28 ../../../headers/errno.rst:32
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"errno.h.html>`__"
+msgstr ""
+
+#: ../../../headers/errno.rst:21
+msgid "EILSEQ"
+msgstr ""
+
+#: ../../../headers/errno.rst:25
+msgid "ERANGE"
+msgstr ""
+
+#: ../../../headers/errno.rst:29
+msgid "errno"
+msgstr ""

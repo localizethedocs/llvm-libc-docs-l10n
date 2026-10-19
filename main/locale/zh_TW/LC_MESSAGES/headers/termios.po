@@ -1,0 +1,694 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/termios.rst:3
+msgid "termios.h"
+msgstr ""
+
+#: ../../../headers/termios.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/termios.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/termios.rst:14 ../../../headers/termios.rst:423
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/termios.rst:15 ../../../headers/termios.rst:424
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/termios.rst:16 ../../../headers/termios.rst:425
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/termios.rst:17
+msgid "B0"
+msgstr ""
+
+#: ../../../headers/termios.rst:18 ../../../headers/termios.rst:22
+#: ../../../headers/termios.rst:26 ../../../headers/termios.rst:30
+#: ../../../headers/termios.rst:34 ../../../headers/termios.rst:38
+#: ../../../headers/termios.rst:42 ../../../headers/termios.rst:46
+#: ../../../headers/termios.rst:50 ../../../headers/termios.rst:54
+#: ../../../headers/termios.rst:58 ../../../headers/termios.rst:62
+#: ../../../headers/termios.rst:66 ../../../headers/termios.rst:70
+#: ../../../headers/termios.rst:74 ../../../headers/termios.rst:78
+#: ../../../headers/termios.rst:82 ../../../headers/termios.rst:86
+#: ../../../headers/termios.rst:90 ../../../headers/termios.rst:94
+#: ../../../headers/termios.rst:98 ../../../headers/termios.rst:102
+#: ../../../headers/termios.rst:106 ../../../headers/termios.rst:110
+#: ../../../headers/termios.rst:114 ../../../headers/termios.rst:118
+#: ../../../headers/termios.rst:122 ../../../headers/termios.rst:126
+#: ../../../headers/termios.rst:130 ../../../headers/termios.rst:134
+#: ../../../headers/termios.rst:138 ../../../headers/termios.rst:142
+#: ../../../headers/termios.rst:146 ../../../headers/termios.rst:150
+#: ../../../headers/termios.rst:154 ../../../headers/termios.rst:158
+#: ../../../headers/termios.rst:162 ../../../headers/termios.rst:166
+#: ../../../headers/termios.rst:170 ../../../headers/termios.rst:174
+#: ../../../headers/termios.rst:178 ../../../headers/termios.rst:182
+#: ../../../headers/termios.rst:186 ../../../headers/termios.rst:194
+#: ../../../headers/termios.rst:198 ../../../headers/termios.rst:202
+#: ../../../headers/termios.rst:206 ../../../headers/termios.rst:210
+#: ../../../headers/termios.rst:214 ../../../headers/termios.rst:218
+#: ../../../headers/termios.rst:222 ../../../headers/termios.rst:226
+#: ../../../headers/termios.rst:230 ../../../headers/termios.rst:234
+#: ../../../headers/termios.rst:238 ../../../headers/termios.rst:242
+#: ../../../headers/termios.rst:246 ../../../headers/termios.rst:250
+#: ../../../headers/termios.rst:254 ../../../headers/termios.rst:258
+#: ../../../headers/termios.rst:262 ../../../headers/termios.rst:266
+#: ../../../headers/termios.rst:270 ../../../headers/termios.rst:274
+#: ../../../headers/termios.rst:278 ../../../headers/termios.rst:282
+#: ../../../headers/termios.rst:286 ../../../headers/termios.rst:290
+#: ../../../headers/termios.rst:294 ../../../headers/termios.rst:298
+#: ../../../headers/termios.rst:302 ../../../headers/termios.rst:306
+#: ../../../headers/termios.rst:310 ../../../headers/termios.rst:314
+#: ../../../headers/termios.rst:318 ../../../headers/termios.rst:322
+#: ../../../headers/termios.rst:326 ../../../headers/termios.rst:330
+#: ../../../headers/termios.rst:334 ../../../headers/termios.rst:338
+#: ../../../headers/termios.rst:342 ../../../headers/termios.rst:346
+#: ../../../headers/termios.rst:350 ../../../headers/termios.rst:354
+#: ../../../headers/termios.rst:358 ../../../headers/termios.rst:362
+#: ../../../headers/termios.rst:366 ../../../headers/termios.rst:370
+#: ../../../headers/termios.rst:374 ../../../headers/termios.rst:378
+#: ../../../headers/termios.rst:382 ../../../headers/termios.rst:386
+#: ../../../headers/termios.rst:390 ../../../headers/termios.rst:394
+#: ../../../headers/termios.rst:398 ../../../headers/termios.rst:402
+#: ../../../headers/termios.rst:406 ../../../headers/termios.rst:410
+#: ../../../headers/termios.rst:427 ../../../headers/termios.rst:431
+#: ../../../headers/termios.rst:435 ../../../headers/termios.rst:439
+#: ../../../headers/termios.rst:443 ../../../headers/termios.rst:447
+#: ../../../headers/termios.rst:451 ../../../headers/termios.rst:455
+#: ../../../headers/termios.rst:459 ../../../headers/termios.rst:463
+#: ../../../headers/termios.rst:467 ../../../headers/termios.rst:471
+#: ../../../headers/termios.rst:475
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/termios.rst:20 ../../../headers/termios.rst:24
+#: ../../../headers/termios.rst:28 ../../../headers/termios.rst:32
+#: ../../../headers/termios.rst:36 ../../../headers/termios.rst:40
+#: ../../../headers/termios.rst:44 ../../../headers/termios.rst:48
+#: ../../../headers/termios.rst:52 ../../../headers/termios.rst:56
+#: ../../../headers/termios.rst:60 ../../../headers/termios.rst:64
+#: ../../../headers/termios.rst:68 ../../../headers/termios.rst:72
+#: ../../../headers/termios.rst:76 ../../../headers/termios.rst:80
+#: ../../../headers/termios.rst:84 ../../../headers/termios.rst:88
+#: ../../../headers/termios.rst:92 ../../../headers/termios.rst:96
+#: ../../../headers/termios.rst:100 ../../../headers/termios.rst:104
+#: ../../../headers/termios.rst:108 ../../../headers/termios.rst:112
+#: ../../../headers/termios.rst:116 ../../../headers/termios.rst:120
+#: ../../../headers/termios.rst:124 ../../../headers/termios.rst:128
+#: ../../../headers/termios.rst:132 ../../../headers/termios.rst:136
+#: ../../../headers/termios.rst:140 ../../../headers/termios.rst:144
+#: ../../../headers/termios.rst:148 ../../../headers/termios.rst:152
+#: ../../../headers/termios.rst:156 ../../../headers/termios.rst:160
+#: ../../../headers/termios.rst:164 ../../../headers/termios.rst:168
+#: ../../../headers/termios.rst:172 ../../../headers/termios.rst:176
+#: ../../../headers/termios.rst:180 ../../../headers/termios.rst:184
+#: ../../../headers/termios.rst:188 ../../../headers/termios.rst:192
+#: ../../../headers/termios.rst:196 ../../../headers/termios.rst:200
+#: ../../../headers/termios.rst:204 ../../../headers/termios.rst:208
+#: ../../../headers/termios.rst:212 ../../../headers/termios.rst:216
+#: ../../../headers/termios.rst:220 ../../../headers/termios.rst:224
+#: ../../../headers/termios.rst:228 ../../../headers/termios.rst:232
+#: ../../../headers/termios.rst:236 ../../../headers/termios.rst:240
+#: ../../../headers/termios.rst:244 ../../../headers/termios.rst:248
+#: ../../../headers/termios.rst:252 ../../../headers/termios.rst:256
+#: ../../../headers/termios.rst:260 ../../../headers/termios.rst:264
+#: ../../../headers/termios.rst:268 ../../../headers/termios.rst:272
+#: ../../../headers/termios.rst:276 ../../../headers/termios.rst:280
+#: ../../../headers/termios.rst:284 ../../../headers/termios.rst:288
+#: ../../../headers/termios.rst:292 ../../../headers/termios.rst:296
+#: ../../../headers/termios.rst:300 ../../../headers/termios.rst:304
+#: ../../../headers/termios.rst:308 ../../../headers/termios.rst:312
+#: ../../../headers/termios.rst:316 ../../../headers/termios.rst:320
+#: ../../../headers/termios.rst:324 ../../../headers/termios.rst:328
+#: ../../../headers/termios.rst:332 ../../../headers/termios.rst:336
+#: ../../../headers/termios.rst:340 ../../../headers/termios.rst:344
+#: ../../../headers/termios.rst:348 ../../../headers/termios.rst:352
+#: ../../../headers/termios.rst:356 ../../../headers/termios.rst:360
+#: ../../../headers/termios.rst:364 ../../../headers/termios.rst:368
+#: ../../../headers/termios.rst:372 ../../../headers/termios.rst:376
+#: ../../../headers/termios.rst:380 ../../../headers/termios.rst:384
+#: ../../../headers/termios.rst:388 ../../../headers/termios.rst:392
+#: ../../../headers/termios.rst:396 ../../../headers/termios.rst:400
+#: ../../../headers/termios.rst:404 ../../../headers/termios.rst:408
+#: ../../../headers/termios.rst:412
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"termios.h.html>`__"
+msgstr ""
+
+#: ../../../headers/termios.rst:21
+msgid "B110"
+msgstr ""
+
+#: ../../../headers/termios.rst:25
+msgid "B1200"
+msgstr ""
+
+#: ../../../headers/termios.rst:29
+msgid "B134"
+msgstr ""
+
+#: ../../../headers/termios.rst:33
+msgid "B150"
+msgstr ""
+
+#: ../../../headers/termios.rst:37
+msgid "B1800"
+msgstr ""
+
+#: ../../../headers/termios.rst:41
+msgid "B19200"
+msgstr ""
+
+#: ../../../headers/termios.rst:45
+msgid "B200"
+msgstr ""
+
+#: ../../../headers/termios.rst:49
+msgid "B2400"
+msgstr ""
+
+#: ../../../headers/termios.rst:53
+msgid "B300"
+msgstr ""
+
+#: ../../../headers/termios.rst:57
+msgid "B38400"
+msgstr ""
+
+#: ../../../headers/termios.rst:61
+msgid "B4800"
+msgstr ""
+
+#: ../../../headers/termios.rst:65
+msgid "B50"
+msgstr ""
+
+#: ../../../headers/termios.rst:69
+msgid "B600"
+msgstr ""
+
+#: ../../../headers/termios.rst:73
+msgid "B75"
+msgstr ""
+
+#: ../../../headers/termios.rst:77
+msgid "B9600"
+msgstr ""
+
+#: ../../../headers/termios.rst:81
+msgid "BRKINT"
+msgstr ""
+
+#: ../../../headers/termios.rst:85
+msgid "BS0"
+msgstr ""
+
+#: ../../../headers/termios.rst:89
+msgid "BS1"
+msgstr ""
+
+#: ../../../headers/termios.rst:93
+msgid "BSDLY"
+msgstr ""
+
+#: ../../../headers/termios.rst:97
+msgid "CLOCAL"
+msgstr ""
+
+#: ../../../headers/termios.rst:101
+msgid "CR0"
+msgstr ""
+
+#: ../../../headers/termios.rst:105
+msgid "CR1"
+msgstr ""
+
+#: ../../../headers/termios.rst:109
+msgid "CR2"
+msgstr ""
+
+#: ../../../headers/termios.rst:113
+msgid "CR3"
+msgstr ""
+
+#: ../../../headers/termios.rst:117
+msgid "CRDLY"
+msgstr ""
+
+#: ../../../headers/termios.rst:121
+msgid "CREAD"
+msgstr ""
+
+#: ../../../headers/termios.rst:125
+msgid "CS5"
+msgstr ""
+
+#: ../../../headers/termios.rst:129
+msgid "CS6"
+msgstr ""
+
+#: ../../../headers/termios.rst:133
+msgid "CS7"
+msgstr ""
+
+#: ../../../headers/termios.rst:137
+msgid "CS8"
+msgstr ""
+
+#: ../../../headers/termios.rst:141
+msgid "CSIZE"
+msgstr ""
+
+#: ../../../headers/termios.rst:145
+msgid "CSTOPB"
+msgstr ""
+
+#: ../../../headers/termios.rst:149
+msgid "ECHO"
+msgstr ""
+
+#: ../../../headers/termios.rst:153
+msgid "ECHOE"
+msgstr ""
+
+#: ../../../headers/termios.rst:157
+msgid "ECHOK"
+msgstr ""
+
+#: ../../../headers/termios.rst:161
+msgid "ECHONL"
+msgstr ""
+
+#: ../../../headers/termios.rst:165
+msgid "FF0"
+msgstr ""
+
+#: ../../../headers/termios.rst:169
+msgid "FF1"
+msgstr ""
+
+#: ../../../headers/termios.rst:173
+msgid "FFDLY"
+msgstr ""
+
+#: ../../../headers/termios.rst:177
+msgid "HUPCL"
+msgstr ""
+
+#: ../../../headers/termios.rst:181
+msgid "ICANON"
+msgstr ""
+
+#: ../../../headers/termios.rst:185
+msgid "ICRNL"
+msgstr ""
+
+#: ../../../headers/termios.rst:189
+msgid "IEXTEN"
+msgstr ""
+
+#: ../../../headers/termios.rst:193
+msgid "IGNBRK"
+msgstr ""
+
+#: ../../../headers/termios.rst:197
+msgid "IGNCR"
+msgstr ""
+
+#: ../../../headers/termios.rst:201
+msgid "IGNPAR"
+msgstr ""
+
+#: ../../../headers/termios.rst:205
+msgid "INLCR"
+msgstr ""
+
+#: ../../../headers/termios.rst:209
+msgid "INPCK"
+msgstr ""
+
+#: ../../../headers/termios.rst:213
+msgid "ISIG"
+msgstr ""
+
+#: ../../../headers/termios.rst:217
+msgid "ISTRIP"
+msgstr ""
+
+#: ../../../headers/termios.rst:221
+msgid "IXANY"
+msgstr ""
+
+#: ../../../headers/termios.rst:225
+msgid "IXOFF"
+msgstr ""
+
+#: ../../../headers/termios.rst:229
+msgid "IXON"
+msgstr ""
+
+#: ../../../headers/termios.rst:233
+msgid "NCCS"
+msgstr ""
+
+#: ../../../headers/termios.rst:237
+msgid "NL0"
+msgstr ""
+
+#: ../../../headers/termios.rst:241
+msgid "NL1"
+msgstr ""
+
+#: ../../../headers/termios.rst:245
+msgid "NLDLY"
+msgstr ""
+
+#: ../../../headers/termios.rst:249
+msgid "NOFLSH"
+msgstr ""
+
+#: ../../../headers/termios.rst:253
+msgid "OCRNL"
+msgstr ""
+
+#: ../../../headers/termios.rst:257
+msgid "OFDEL"
+msgstr ""
+
+#: ../../../headers/termios.rst:261
+msgid "OFILL"
+msgstr ""
+
+#: ../../../headers/termios.rst:265
+msgid "ONLCR"
+msgstr ""
+
+#: ../../../headers/termios.rst:269
+msgid "ONLRET"
+msgstr ""
+
+#: ../../../headers/termios.rst:273
+msgid "ONOCR"
+msgstr ""
+
+#: ../../../headers/termios.rst:277
+msgid "OPOST"
+msgstr ""
+
+#: ../../../headers/termios.rst:281
+msgid "PARENB"
+msgstr ""
+
+#: ../../../headers/termios.rst:285
+msgid "PARMRK"
+msgstr ""
+
+#: ../../../headers/termios.rst:289
+msgid "PARODD"
+msgstr ""
+
+#: ../../../headers/termios.rst:293
+msgid "TAB0"
+msgstr ""
+
+#: ../../../headers/termios.rst:297
+msgid "TAB1"
+msgstr ""
+
+#: ../../../headers/termios.rst:301
+msgid "TAB2"
+msgstr ""
+
+#: ../../../headers/termios.rst:305
+msgid "TAB3"
+msgstr ""
+
+#: ../../../headers/termios.rst:309
+msgid "TABDLY"
+msgstr ""
+
+#: ../../../headers/termios.rst:313
+msgid "TCIFLUSH"
+msgstr ""
+
+#: ../../../headers/termios.rst:317
+msgid "TCIOFF"
+msgstr ""
+
+#: ../../../headers/termios.rst:321
+msgid "TCIOFLUSH"
+msgstr ""
+
+#: ../../../headers/termios.rst:325
+msgid "TCION"
+msgstr ""
+
+#: ../../../headers/termios.rst:329
+msgid "TCOFLUSH"
+msgstr ""
+
+#: ../../../headers/termios.rst:333
+msgid "TCOOFF"
+msgstr ""
+
+#: ../../../headers/termios.rst:337
+msgid "TCOON"
+msgstr ""
+
+#: ../../../headers/termios.rst:341
+msgid "TCSADRAIN"
+msgstr ""
+
+#: ../../../headers/termios.rst:345
+msgid "TCSAFLUSH"
+msgstr ""
+
+#: ../../../headers/termios.rst:349
+msgid "TCSANOW"
+msgstr ""
+
+#: ../../../headers/termios.rst:353
+msgid "TOSTOP"
+msgstr ""
+
+#: ../../../headers/termios.rst:357
+msgid "VEOF"
+msgstr ""
+
+#: ../../../headers/termios.rst:361
+msgid "VEOL"
+msgstr ""
+
+#: ../../../headers/termios.rst:365
+msgid "VERASE"
+msgstr ""
+
+#: ../../../headers/termios.rst:369
+msgid "VINTR"
+msgstr ""
+
+#: ../../../headers/termios.rst:373
+msgid "VKILL"
+msgstr ""
+
+#: ../../../headers/termios.rst:377
+msgid "VMIN"
+msgstr ""
+
+#: ../../../headers/termios.rst:381
+msgid "VQUIT"
+msgstr ""
+
+#: ../../../headers/termios.rst:385
+msgid "VSTART"
+msgstr ""
+
+#: ../../../headers/termios.rst:389
+msgid "VSTOP"
+msgstr ""
+
+#: ../../../headers/termios.rst:393
+msgid "VSUSP"
+msgstr ""
+
+#: ../../../headers/termios.rst:397
+msgid "VT0"
+msgstr ""
+
+#: ../../../headers/termios.rst:401
+msgid "VT1"
+msgstr ""
+
+#: ../../../headers/termios.rst:405
+msgid "VTDLY"
+msgstr ""
+
+#: ../../../headers/termios.rst:409
+msgid "VTIME"
+msgstr ""
+
+#: ../../../headers/termios.rst:415
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/termios.rst:422
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/termios.rst:426
+msgid "cfgetispeed"
+msgstr ""
+
+#: ../../../headers/termios.rst:429
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"cfgetispeed.html>`__"
+msgstr ""
+
+#: ../../../headers/termios.rst:430
+msgid "cfgetospeed"
+msgstr ""
+
+#: ../../../headers/termios.rst:433
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"cfgetospeed.html>`__"
+msgstr ""
+
+#: ../../../headers/termios.rst:434
+msgid "cfsetispeed"
+msgstr ""
+
+#: ../../../headers/termios.rst:437
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"cfsetispeed.html>`__"
+msgstr ""
+
+#: ../../../headers/termios.rst:438
+msgid "cfsetospeed"
+msgstr ""
+
+#: ../../../headers/termios.rst:441
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"cfsetospeed.html>`__"
+msgstr ""
+
+#: ../../../headers/termios.rst:442
+msgid "tcdrain"
+msgstr ""
+
+#: ../../../headers/termios.rst:445
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tcdrain.html>`__"
+msgstr ""
+
+#: ../../../headers/termios.rst:446
+msgid "tcflow"
+msgstr ""
+
+#: ../../../headers/termios.rst:449
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tcflow.html>`__"
+msgstr ""
+
+#: ../../../headers/termios.rst:450
+msgid "tcflush"
+msgstr ""
+
+#: ../../../headers/termios.rst:453
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tcflush.html>`__"
+msgstr ""
+
+#: ../../../headers/termios.rst:454
+msgid "tcgetattr"
+msgstr ""
+
+#: ../../../headers/termios.rst:457
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tcgetattr.html>`__"
+msgstr ""
+
+#: ../../../headers/termios.rst:458
+msgid "tcgetsid"
+msgstr ""
+
+#: ../../../headers/termios.rst:461
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tcgetsid.html>`__"
+msgstr ""
+
+#: ../../../headers/termios.rst:462
+msgid "tcgetwinsize"
+msgstr ""
+
+#: ../../../headers/termios.rst:465
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tcgetwinsize.html>`__"
+msgstr ""
+
+#: ../../../headers/termios.rst:466
+msgid "tcsendbreak"
+msgstr ""
+
+#: ../../../headers/termios.rst:469
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tcsendbreak.html>`__"
+msgstr ""
+
+#: ../../../headers/termios.rst:470
+msgid "tcsetattr"
+msgstr ""
+
+#: ../../../headers/termios.rst:473
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tcsetattr.html>`__"
+msgstr ""
+
+#: ../../../headers/termios.rst:474
+msgid "tcsetwinsize"
+msgstr ""
+
+#: ../../../headers/termios.rst:477
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tcsetwinsize.html>`__"
+msgstr ""

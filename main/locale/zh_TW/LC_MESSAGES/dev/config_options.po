@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../dev/config_options.md:3
+msgid "Adding new libc configure options"
+msgstr ""
+
+#: ../../../dev/config_options.md:5
+msgid ""
+"{doc}`There are a number of configure options <../configure>` which can be "
+"used to configure the libc build. The config system is driven by a set of "
+"hierarchical JSON files. At the top of the hierarchy is a JSON file by name "
+"`config.json` in the `config` directory. This JSON file lists the libc "
+"options which affect all platforms. The default value for the option and a "
+"short description about it listed against each option. For example:"
+msgstr ""
+
+#: ../../../dev/config_options.md:23
+msgid ""
+"The above config indicates that the option `LIBC_CONF_PRINTF_DISABLE_FLOAT` "
+"has a value of `false`. A platform, say the baremetal platform, can choose "
+"to override this value in its `config.json` file in the `config/baremetal` "
+"directory with the following contents:"
+msgstr ""
+
+#: ../../../dev/config_options.md:38
+msgid ""
+"Here, the config for the baremetal platform overrides the common `false` "
+"value of the `LIBC_CONF_PRINTF_DISABLE_FLOAT` with the `true` value."
+msgstr ""
+
+#: ../../../dev/config_options.md:41
+msgid "Config JSON format"
+msgstr ""
+
+#: ../../../dev/config_options.md:43
+msgid "Named tags"
+msgstr ""
+
+#: ../../../dev/config_options.md:45
+msgid ""
+"As can be noted from the above examples, `config.json` files contains a top-"
+"level dictionary. The keys of this dictionary are the names of *grouping-"
+"tags*. A grouping-tag is nothing but a named tag to refer to a related group "
+"of libc options. In the above example, a tag named `printf` is used to group "
+"all libc options which affect the behavior of `printf` and friends."
+msgstr ""
+
+#: ../../../dev/config_options.md:51
+msgid "Tag values"
+msgstr ""
+
+#: ../../../dev/config_options.md:53
+msgid ""
+"The value corresponding to each grouping tag is also a dictionary called the "
+"*option-dictionary*. The keys of the option-dictionary are the names of the "
+"libc options belonging to that grouping tag. For the `printf` tag in the "
+"above example, the option-dictionary is:"
+msgstr ""
+
+#: ../../../dev/config_options.md:67
+msgid ""
+"The value corresponding to an option key in the option-dictionary is another "
+"dictionary with two keys: `\"value\"` and `\"doc\"`. The `\"value\"` key has "
+"the value of the option listed against it, and the `\"doc\"` key has a short "
+"description of the option listed against it. Note that only the main config "
+"file `config/config.json` includes the `\"doc\"` key. Options which are of "
+"`ON`/`OFF` kind take boolean values `true`/`false`. Other types of options "
+"can take an integral or string value as suitable for that option. In the "
+"above option-dictionary, the option-key `LIBC_CONF_PRINTF_DISABLE_FLOAT` is "
+"of boolean type with value `true`."
+msgstr ""
+
+#: ../../../dev/config_options.md:77
+msgid "Option name format"
+msgstr ""
+
+#: ../../../dev/config_options.md:79
+msgid ""
+"The option names, or the keys of a option-dictionary, have the following "
+"format:"
+msgstr ""
+
+#: ../../../dev/config_options.md:85
+msgid ""
+"The option name used in the above examples, `LIBC_CONF_PRINTF_DISABLE_FLOAT` "
+"to disable printing of floating point numbers, follows this format: It has "
+"the prefix `LIBC_CONF_`, followed by the grouping-tag name `PRINTF` in upper "
+"case, followed by the action to disable floating point number printing "
+"`LIBC_CONF_PRINTF_DISABLE_FLOAT`."
+msgstr ""
+
+#: ../../../dev/config_options.md:91
+msgid "Mechanics of config application"
+msgstr ""
+
+#: ../../../dev/config_options.md:93
+msgid "Config reading"
+msgstr ""
+
+#: ../../../dev/config_options.md:95
+msgid ""
+"At libc config time, three different `config.json` files are read in the "
+"following order:"
+msgstr ""
+
+#: ../../../dev/config_options.md:98
+msgid "`config/config.json`"
+msgstr ""
+
+#: ../../../dev/config_options.md:99
+msgid "`config/<platform or OS>/config.json` if present."
+msgstr ""
+
+#: ../../../dev/config_options.md:100
+msgid "`config/<platform or OS>/<target arch>/config.json` if present."
+msgstr ""
+
+#: ../../../dev/config_options.md:102
+msgid ""
+"Each successive `config.json` file overrides the option values set by "
+"previously read `config.json` files. Likewise, a similarly named command "
+"line option to the cmake command will override the option values specified "
+"in all or any of these `config.json` files. That is, users will be able to "
+"override the config options from the command line."
+msgstr ""
+
+#: ../../../dev/config_options.md:108
+msgid "Config application"
+msgstr ""
+
+#: ../../../dev/config_options.md:110
+msgid ""
+"Local to the directory where an option group is relevant, suitable build "
+"logic should convert the CMake config options to appropriate compiler and/or "
+"linker flags. Those compile/link flags can be used in listing the affected "
+"targets as follows:"
+msgstr ""
+
+#: ../../../dev/config_options.md:125
+msgid ""
+"Note that the above scheme is only an example and not a prescription. "
+"Developers should employ a scheme appropriate to the option being added."
+msgstr ""
+
+#: ../../../dev/config_options.md:128
+msgid "Automatic doc update"
+msgstr ""
+
+#: ../../../dev/config_options.md:130
+msgid ""
+"The CMake configure step automatically generates the user document `doc/"
+"configure.rst`, which contains user information about the libc configure "
+"options, using the information in the main `config/config.json` file. An "
+"update to `config/config.json` will trigger reconfiguration by CMake, which "
+"in turn will regenerate the documentation in `doc/configure.rst`."
+msgstr ""

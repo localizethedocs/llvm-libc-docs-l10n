@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/net/if.rst:3
+msgid "net/if.h"
+msgstr ""
+
+#: ../../../headers/net/if.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/net/if.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/net/if.rst:14 ../../../headers/net/if.rst:31
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/net/if.rst:15 ../../../headers/net/if.rst:32
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/net/if.rst:16 ../../../headers/net/if.rst:33
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/net/if.rst:17
+msgid "IF_NAMESIZE"
+msgstr ""
+
+#: ../../../headers/net/if.rst:18
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/net/if.rst:20
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"net_if.h.html>`__"
+msgstr ""
+
+#: ../../../headers/net/if.rst:23
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/net/if.rst:30
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/net/if.rst:34
+msgid "if_freenameindex"
+msgstr ""
+
+#: ../../../headers/net/if.rst:37
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"if_freenameindex.html>`__"
+msgstr ""
+
+#: ../../../headers/net/if.rst:38
+msgid "if_indextoname"
+msgstr ""
+
+#: ../../../headers/net/if.rst:41
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"if_indextoname.html>`__"
+msgstr ""
+
+#: ../../../headers/net/if.rst:42
+msgid "if_nameindex"
+msgstr ""
+
+#: ../../../headers/net/if.rst:45
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"if_nameindex.html>`__"
+msgstr ""
+
+#: ../../../headers/net/if.rst:46
+msgid "if_nametoindex"
+msgstr ""
+
+#: ../../../headers/net/if.rst:49
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"if_nametoindex.html>`__"
+msgstr ""

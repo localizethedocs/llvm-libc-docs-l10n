@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../build_and_test.md:3
+msgid "Building and Testing the libc"
+msgstr ""
+
+#: ../../../build_and_test.md:5
+msgid "Build modes"
+msgstr ""
+
+#: ../../../build_and_test.md:7
+msgid "The libc can be built and tested in two different modes:"
+msgstr ""
+
+#: ../../../build_and_test.md:9
+msgid ""
+"**The overlay mode** - In this mode, one uses the static archive from LLVM's "
+"libc along with the system libc. See {ref}`overlay_mode` for more details on "
+"building and using the libc in this mode. You can only run the libc "
+"unittests in this mode. To run them, one simply does:"
+msgstr ""
+
+#: ../../../build_and_test.md:18
+msgid ""
+"Note that, unittests for only those functions which are part of the overlay "
+"static archive will be run with the above command."
+msgstr ""
+
+#: ../../../build_and_test.md:21
+msgid ""
+"**The full build mode** - In this mode, the libc is used as the only libc "
+"for the user's application. See {ref}`full_host_build` for more details on "
+"building and using the libc in this mode. Once configured for a full libc "
+"build, you can run three kinds of tests:"
+msgstr ""
+
+#: ../../../build_and_test.md:26
+msgid "Unit tests - You can run unittests by the command:"
+msgstr ""
+
+#: ../../../build_and_test.md:32
+msgid "Integration tests - You can run integration tests by the command:"
+msgstr ""
+
+#: ../../../build_and_test.md:38
+msgid ""
+"Shared tests - You can run tests for shared, standalone components (like "
+"math primitives) without needing the full libc runtime by the command:"
+msgstr ""
+
+#: ../../../build_and_test.md:44
+msgid "Building with VSCode"
+msgstr ""
+
+#: ../../../build_and_test.md:46
+msgid ""
+"As a quickstart to using VSCode for development, install the cmake extension "
+"and put the following in your settings.json file:"
+msgstr ""
+
+#: ../../../build_and_test.md:67
+msgid "Building with Bazel"
+msgstr ""
+
+#: ../../../build_and_test.md:69
+msgid "To build with Bazel, use the following command:"
+msgstr ""
+
+#: ../../../build_and_test.md:75
+msgid "To run the unit tests with bazel, use the following command:"
+msgstr ""
+
+#: ../../../build_and_test.md:81
+msgid ""
+"The bazel target layout of `libc` is located at: [utils/bazel/llvm-project-"
+"overlay/libc/BUILD.bazel](https://github.com/llvm/llvm-project/tree/main/"
+"utils/bazel/llvm-project-overlay/libc/BUILD.bazel)."
+msgstr ""
+
+#: ../../../build_and_test.md:83
+msgid "Building in a container for a different architecture"
+msgstr ""
+
+#: ../../../build_and_test.md:85
+msgid ""
+"[Podman](https://podman.io/) can be used together with [QEMU](https://www."
+"qemu.org/) to run container images built for architectures other than the "
+"host's. This can be used to build and test the libc on other supported "
+"architectures for which you do not have access to hardware. It can also be "
+"used if the hardware is slower than emulation of its architecture on a more "
+"powerful machine under a different architecture."
+msgstr ""
+
+#: ../../../build_and_test.md:92
+msgid "As an example, to build and test in a container for 32-bit Arm:"
+msgstr ""
+
+#: ../../../build_and_test.md:94
+msgid "To install the necessary packages on Arch Linux:"
+msgstr ""
+
+#: ../../../build_and_test.md:101
+msgid ""
+"To run Bash interactively in an Ubuntu 22.04 container for 32-bit Arm and "
+"bind-mount an existing checkout of llvm-project on the host:"
+msgstr ""
+
+#: ../../../build_and_test.md:110
+msgid "Install necessary packages, invoke CMake, build, and run tests."
+msgstr ""
+
+#: ../../../build_and_test.md:112
+msgid "Building and Testing with an Emulator"
+msgstr ""
+
+#: ../../../build_and_test.md:114
+msgid ""
+"If you are cross-compiling the libc for a different architecture, you can "
+"use an emulator such as QEMU to run the tests directly on your host without "
+"a container. See {ref}`full_cross_build` for detailed instructions on "
+"configuring CMake to use an emulator."
+msgstr ""

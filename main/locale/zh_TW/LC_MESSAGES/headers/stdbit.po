@@ -1,0 +1,602 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/stdbit.rst:3
+msgid "stdbit.h"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:14 ../../../headers/stdbit.rst:99
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:15 ../../../headers/stdbit.rst:100
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:16 ../../../headers/stdbit.rst:101
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:17
+msgid "__STDC_ENDIAN_BIG__"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:18 ../../../headers/stdbit.rst:22
+#: ../../../headers/stdbit.rst:26 ../../../headers/stdbit.rst:30
+#: ../../../headers/stdbit.rst:34 ../../../headers/stdbit.rst:38
+#: ../../../headers/stdbit.rst:42 ../../../headers/stdbit.rst:46
+#: ../../../headers/stdbit.rst:50 ../../../headers/stdbit.rst:54
+#: ../../../headers/stdbit.rst:58 ../../../headers/stdbit.rst:62
+#: ../../../headers/stdbit.rst:66 ../../../headers/stdbit.rst:70
+#: ../../../headers/stdbit.rst:74 ../../../headers/stdbit.rst:78
+#: ../../../headers/stdbit.rst:82 ../../../headers/stdbit.rst:86
+#: ../../../headers/stdbit.rst:103 ../../../headers/stdbit.rst:107
+#: ../../../headers/stdbit.rst:111 ../../../headers/stdbit.rst:115
+#: ../../../headers/stdbit.rst:119 ../../../headers/stdbit.rst:123
+#: ../../../headers/stdbit.rst:127 ../../../headers/stdbit.rst:131
+#: ../../../headers/stdbit.rst:135 ../../../headers/stdbit.rst:139
+#: ../../../headers/stdbit.rst:143 ../../../headers/stdbit.rst:147
+#: ../../../headers/stdbit.rst:151 ../../../headers/stdbit.rst:155
+#: ../../../headers/stdbit.rst:159 ../../../headers/stdbit.rst:163
+#: ../../../headers/stdbit.rst:167 ../../../headers/stdbit.rst:171
+#: ../../../headers/stdbit.rst:175 ../../../headers/stdbit.rst:179
+#: ../../../headers/stdbit.rst:183 ../../../headers/stdbit.rst:187
+#: ../../../headers/stdbit.rst:191 ../../../headers/stdbit.rst:195
+#: ../../../headers/stdbit.rst:199 ../../../headers/stdbit.rst:203
+#: ../../../headers/stdbit.rst:207 ../../../headers/stdbit.rst:211
+#: ../../../headers/stdbit.rst:215 ../../../headers/stdbit.rst:219
+#: ../../../headers/stdbit.rst:223 ../../../headers/stdbit.rst:227
+#: ../../../headers/stdbit.rst:231 ../../../headers/stdbit.rst:235
+#: ../../../headers/stdbit.rst:239 ../../../headers/stdbit.rst:243
+#: ../../../headers/stdbit.rst:247 ../../../headers/stdbit.rst:251
+#: ../../../headers/stdbit.rst:255 ../../../headers/stdbit.rst:259
+#: ../../../headers/stdbit.rst:263 ../../../headers/stdbit.rst:267
+#: ../../../headers/stdbit.rst:271 ../../../headers/stdbit.rst:275
+#: ../../../headers/stdbit.rst:279 ../../../headers/stdbit.rst:283
+#: ../../../headers/stdbit.rst:287 ../../../headers/stdbit.rst:291
+#: ../../../headers/stdbit.rst:295 ../../../headers/stdbit.rst:299
+#: ../../../headers/stdbit.rst:303 ../../../headers/stdbit.rst:307
+#: ../../../headers/stdbit.rst:311 ../../../headers/stdbit.rst:315
+#: ../../../headers/stdbit.rst:319 ../../../headers/stdbit.rst:323
+#: ../../../headers/stdbit.rst:327 ../../../headers/stdbit.rst:331
+#: ../../../headers/stdbit.rst:335 ../../../headers/stdbit.rst:339
+#: ../../../headers/stdbit.rst:343 ../../../headers/stdbit.rst:347
+#: ../../../headers/stdbit.rst:351 ../../../headers/stdbit.rst:355
+#: ../../../headers/stdbit.rst:359 ../../../headers/stdbit.rst:363
+#: ../../../headers/stdbit.rst:367 ../../../headers/stdbit.rst:371
+#: ../../../headers/stdbit.rst:375 ../../../headers/stdbit.rst:379
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:19 ../../../headers/stdbit.rst:23
+#: ../../../headers/stdbit.rst:27
+msgid "7.18.2.2"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:21
+msgid "__STDC_ENDIAN_LITTLE__"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:25
+msgid "__STDC_ENDIAN_NATIVE__"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:29
+msgid "__STDC_VERSION_STDBIT_H__"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:31
+msgid "7.18.1.2"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:33
+msgid "stdc_bit_ceil"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:35
+msgid "7.18.16.1"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:37
+msgid "stdc_bit_floor"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:39
+msgid "7.18.15.1"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:41
+msgid "stdc_bit_width"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:43
+msgid "7.18.14.1"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:45
+msgid "stdc_count_ones"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:47
+msgid "7.18.12.1"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:49
+msgid "stdc_count_zeros"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:51
+msgid "7.18.11.1"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:53
+msgid "stdc_first_leading_one"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:55
+msgid "7.18.8.1"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:57
+msgid "stdc_first_leading_zero"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:59
+msgid "7.18.7.1"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:61
+msgid "stdc_first_trailing_one"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:63
+msgid "7.18.10.1"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:65
+msgid "stdc_first_trailing_zero"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:67
+msgid "7.18.9.1"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:69
+msgid "stdc_has_single_bit"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:71
+msgid "7.18.13.1"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:73
+msgid "stdc_leading_ones"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:75
+msgid "7.18.4.1"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:77
+msgid "stdc_leading_zeros"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:79
+msgid "7.18.3.1"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:81
+msgid "stdc_trailing_ones"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:83
+msgid "7.18.6.1"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:85
+msgid "stdc_trailing_zeros"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:87
+msgid "7.18.5.1"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:91
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:98
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:102
+msgid "stdc_bit_ceil_uc"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:104 ../../../headers/stdbit.rst:108
+#: ../../../headers/stdbit.rst:112 ../../../headers/stdbit.rst:116
+#: ../../../headers/stdbit.rst:120
+msgid "7.18.16"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:106
+msgid "stdc_bit_ceil_ui"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:110
+msgid "stdc_bit_ceil_ul"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:114
+msgid "stdc_bit_ceil_ull"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:118
+msgid "stdc_bit_ceil_us"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:122
+msgid "stdc_bit_floor_uc"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:124 ../../../headers/stdbit.rst:128
+#: ../../../headers/stdbit.rst:132 ../../../headers/stdbit.rst:136
+#: ../../../headers/stdbit.rst:140
+msgid "7.18.15"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:126
+msgid "stdc_bit_floor_ui"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:130
+msgid "stdc_bit_floor_ul"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:134
+msgid "stdc_bit_floor_ull"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:138
+msgid "stdc_bit_floor_us"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:142
+msgid "stdc_bit_width_uc"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:144 ../../../headers/stdbit.rst:148
+#: ../../../headers/stdbit.rst:152 ../../../headers/stdbit.rst:156
+#: ../../../headers/stdbit.rst:160
+msgid "7.18.14"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:146
+msgid "stdc_bit_width_ui"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:150
+msgid "stdc_bit_width_ul"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:154
+msgid "stdc_bit_width_ull"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:158
+msgid "stdc_bit_width_us"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:162
+msgid "stdc_count_ones_uc"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:164 ../../../headers/stdbit.rst:168
+#: ../../../headers/stdbit.rst:172 ../../../headers/stdbit.rst:176
+#: ../../../headers/stdbit.rst:180
+msgid "7.18.12"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:166
+msgid "stdc_count_ones_ui"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:170
+msgid "stdc_count_ones_ul"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:174
+msgid "stdc_count_ones_ull"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:178
+msgid "stdc_count_ones_us"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:182
+msgid "stdc_count_zeros_uc"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:184 ../../../headers/stdbit.rst:188
+#: ../../../headers/stdbit.rst:192 ../../../headers/stdbit.rst:196
+#: ../../../headers/stdbit.rst:200
+msgid "7.18.11"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:186
+msgid "stdc_count_zeros_ui"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:190
+msgid "stdc_count_zeros_ul"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:194
+msgid "stdc_count_zeros_ull"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:198
+msgid "stdc_count_zeros_us"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:202
+msgid "stdc_first_leading_one_uc"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:204 ../../../headers/stdbit.rst:208
+#: ../../../headers/stdbit.rst:212 ../../../headers/stdbit.rst:216
+#: ../../../headers/stdbit.rst:220
+msgid "7.18.8"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:206
+msgid "stdc_first_leading_one_ui"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:210
+msgid "stdc_first_leading_one_ul"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:214
+msgid "stdc_first_leading_one_ull"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:218
+msgid "stdc_first_leading_one_us"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:222
+msgid "stdc_first_leading_zero_uc"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:224 ../../../headers/stdbit.rst:228
+#: ../../../headers/stdbit.rst:232 ../../../headers/stdbit.rst:236
+#: ../../../headers/stdbit.rst:240
+msgid "7.18.7"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:226
+msgid "stdc_first_leading_zero_ui"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:230
+msgid "stdc_first_leading_zero_ul"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:234
+msgid "stdc_first_leading_zero_ull"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:238
+msgid "stdc_first_leading_zero_us"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:242
+msgid "stdc_first_trailing_one_uc"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:244 ../../../headers/stdbit.rst:248
+#: ../../../headers/stdbit.rst:252 ../../../headers/stdbit.rst:256
+#: ../../../headers/stdbit.rst:260
+msgid "7.18.10"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:246
+msgid "stdc_first_trailing_one_ui"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:250
+msgid "stdc_first_trailing_one_ul"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:254
+msgid "stdc_first_trailing_one_ull"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:258
+msgid "stdc_first_trailing_one_us"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:262
+msgid "stdc_first_trailing_zero_uc"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:264 ../../../headers/stdbit.rst:268
+#: ../../../headers/stdbit.rst:272 ../../../headers/stdbit.rst:276
+#: ../../../headers/stdbit.rst:280
+msgid "7.18.9"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:266
+msgid "stdc_first_trailing_zero_ui"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:270
+msgid "stdc_first_trailing_zero_ul"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:274
+msgid "stdc_first_trailing_zero_ull"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:278
+msgid "stdc_first_trailing_zero_us"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:282
+msgid "stdc_has_single_bit_uc"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:284 ../../../headers/stdbit.rst:288
+#: ../../../headers/stdbit.rst:292 ../../../headers/stdbit.rst:296
+#: ../../../headers/stdbit.rst:300
+msgid "7.18.13"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:286
+msgid "stdc_has_single_bit_ui"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:290
+msgid "stdc_has_single_bit_ul"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:294
+msgid "stdc_has_single_bit_ull"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:298
+msgid "stdc_has_single_bit_us"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:302
+msgid "stdc_leading_ones_uc"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:304 ../../../headers/stdbit.rst:308
+#: ../../../headers/stdbit.rst:312 ../../../headers/stdbit.rst:316
+#: ../../../headers/stdbit.rst:320
+msgid "7.18.4"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:306
+msgid "stdc_leading_ones_ui"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:310
+msgid "stdc_leading_ones_ul"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:314
+msgid "stdc_leading_ones_ull"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:318
+msgid "stdc_leading_ones_us"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:322
+msgid "stdc_leading_zeros_uc"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:324 ../../../headers/stdbit.rst:328
+#: ../../../headers/stdbit.rst:332 ../../../headers/stdbit.rst:336
+#: ../../../headers/stdbit.rst:340
+msgid "7.18.3"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:326
+msgid "stdc_leading_zeros_ui"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:330
+msgid "stdc_leading_zeros_ul"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:334
+msgid "stdc_leading_zeros_ull"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:338
+msgid "stdc_leading_zeros_us"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:342
+msgid "stdc_trailing_ones_uc"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:344 ../../../headers/stdbit.rst:348
+#: ../../../headers/stdbit.rst:352 ../../../headers/stdbit.rst:356
+#: ../../../headers/stdbit.rst:360
+msgid "7.18.6"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:346
+msgid "stdc_trailing_ones_ui"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:350
+msgid "stdc_trailing_ones_ul"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:354
+msgid "stdc_trailing_ones_ull"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:358
+msgid "stdc_trailing_ones_us"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:362
+msgid "stdc_trailing_zeros_uc"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:364 ../../../headers/stdbit.rst:368
+#: ../../../headers/stdbit.rst:372 ../../../headers/stdbit.rst:376
+#: ../../../headers/stdbit.rst:380
+msgid "7.18.5"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:366
+msgid "stdc_trailing_zeros_ui"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:370
+msgid "stdc_trailing_zeros_ul"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:374
+msgid "stdc_trailing_zeros_ull"
+msgstr ""
+
+#: ../../../headers/stdbit.rst:378
+msgid "stdc_trailing_zeros_us"
+msgstr ""

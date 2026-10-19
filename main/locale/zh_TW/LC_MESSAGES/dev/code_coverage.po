@@ -1,0 +1,575 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../dev/code_coverage.md:3
+msgid "Code Coverage"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:5
+msgid ""
+"Code coverage is a software testing metric that measures the proportion of "
+"source code executed while running an automated test suite. It provides "
+"insight into test thoroughness by identifying untested functions, dead code "
+"paths, and unexercised conditional branches across library entrypoints and "
+"internal utilities."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:11
+msgid ""
+"LLVM-libc supports Modified Condition / Decision Coverage (MC/DC). MC/DC "
+"evaluates compound boolean decisions composed of multiple sub-conditions "
+"(such as `if (A && (B || C))`). Under MC/DC criteria, each individual "
+"boolean condition must:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:15
+msgid "Evaluate to both true and false across the test suite."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:16
+msgid ""
+"Demonstrate that it can independently affect the outcome of the overall "
+"decision while other conditions remain fixed."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:19
+msgid ""
+"This provides rigorous structural verification for safety-critical "
+"algorithms without requiring exhaustive testing of all 2<sup>n</sup> "
+"condition permutations."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:19
+msgid "<sup>"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:19
+msgid "</sup>"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:23
+msgid "Continuous Profiling Architecture"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:25
+msgid ""
+"LLVM-libc uses Clang's [continuous profiling mode][clang-continuous] (`-"
+"fprofile-continuous`) to record execution metrics directly into memory-"
+"mapped profile files during test execution."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:32
+msgid "Compiler Counter Relocation"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:33
+msgid ""
+"When compiled with `-fprofile-continuous`, Clang configures the LLVM code "
+"generator (`-mllvm -runtime-counter-relocation=true`) so that execution "
+"counter increments reference a dynamic base pointer (`*(bias + &counter) += "
+"1`). Each branch and basic block counter dynamically resolves to an address "
+"within a dedicated profile buffer mapped at program startup."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:39
+msgid "Runtime Memory Mapping"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:40
+msgid ""
+"During binary initialization, the profiling runtime (`libclang_rt.profile`) "
+"resolves the target `.profraw` file and maps the execution counter section "
+"into process memory using `mmap` with `MAP_SHARED`. The runtime sets the "
+"global bias pointer to this mapped region, routing live counter increments "
+"directly into the file-backed buffer."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:46
+msgid "Kernel Page-Cache Synchronization"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:47
+msgid ""
+"Execution counts are written directly to shared memory-mapped pages and "
+"synchronized by the operating system kernel's page cache. Subprocesses "
+"created via `fork()` share the same underlying memory mapping, committing "
+"statements executed across parent and child processes directly to the "
+"profile file."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:52
+msgid "Build System Integration"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:53
+msgid ""
+"Setting `-DLIBC_ENABLE_COVERAGE=ON` in the CMake configuration passes `-"
+"fprofile-instr-generate=libc_cov_%p.profraw`, `-fcoverage-mapping`, and `-"
+"fprofile-continuous` across all LLVM-libc compilation units and test link "
+"steps. When `-fprofile-continuous` is enabled, Clang automatically prepends "
+"`%c` to the profile file template, avoiding duplicate specifier warnings at "
+"runtime. Setting `-DLIBC_ENABLE_COVERAGE_MCDC=ON` additionally enables `-"
+"fcoverage-mcdc`."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:61
+msgid "Running Code Coverage Locally"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:63
+msgid "Prerequisites & Toolchain Setup"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:65
+msgid ""
+"Generating coverage reports requires Clang 24, LLVM profile tools, CMake, "
+"and Ninja:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:68
+msgid ""
+"**Compiler:** Clang 24 (or Clang built from HEAD). Full-build hermetic tests "
+"link `libclang_rt.profile.a`, which must match the compiler version and "
+"cannot rely on distro-built libraries with glibc source fortification."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:71
+msgid ""
+"**LLVM Utilities:** Matching Clang 24 versions of `llvm-profdata` and `llvm-"
+"cov`."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:73
+msgid "**Linker:** `lld` is recommended when configuring full-build mode."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:74
+msgid "**Build System:** CMake 3.28+ and Ninja."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:76
+msgid "Toolchain Discovery"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:78
+msgid ""
+"If your Linux distribution packages version-suffixed binaries (e.g. "
+"`clang-24`, `llvm-profdata-24`), discover and export them:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:89
+msgid ""
+"If version-agnostic tools are directly available in your `PATH`, export:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:96
+msgid ""
+"Subsequent merge and report commands reference `$LLVM_PROFDATA` and "
+"`$LLVM_COV`."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:98
+msgid "Building Clang 24 with Profiling Support"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:100
+msgid ""
+"Full-build hermetic tests link `libclang_rt.profile.a`. Distro-built "
+"compiler-rt packages on distributions like Debian or Ubuntu are built with "
+"glibc source fortification enabled, which LLVM-libc does not support because "
+"it introduces unresolved symbols such as `__vfprintf_chk`. Furthermore, "
+"compiler-rt must match the exact version of the compiler used to build. The "
+"recommended approach is building Clang 24, lld, and compiler-rt from HEAD:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:119
+msgid "Cleaning Profile Counters"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:121
+msgid ""
+"Removes previously generated raw profile counter files (`.profraw`) and "
+"merged profile databases (`.profdata`) so that new coverage runs record "
+"clean, non-aggregated execution data:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:133
+msgid "Standard Statement & Branch Coverage"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:135
+msgid ""
+"Standard coverage measures physical line execution and conditional branch "
+"outcomes across all LLVM-libc entrypoints and internal support utilities."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:138 ../../../dev/code_coverage.md:263
+#: ../../../dev/code_coverage.md:382
+msgid "1. Clean Prior Profile Artifacts"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:140
+msgid ""
+"Removes previously generated raw profile counters and profile data to "
+"maintain a clean baseline:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:147
+msgid "2. Configure Full-Build Coverage with Clang 24"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:149
+msgid ""
+"Configures CMake to build LLVM-libc with code coverage enabled using Clang "
+"24 and LLD:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:163 ../../../dev/code_coverage.md:288
+msgid "3. Export Environment Variables"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:165 ../../../dev/code_coverage.md:290
+msgid "Exports the profile output pattern and Clang 24 tool paths:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:173 ../../../dev/code_coverage.md:298
+msgid "4. Build and Execute Hermetic Tests"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:175
+msgid "Compiles and executes the full hermetic test suite:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:182
+msgid ""
+"The `-k 0` flag ensures Ninja continues executing all remaining test targets "
+"even if an individual edge-case test encounters an error. To only compile "
+"test binaries without executing them, use `ninja -C build-cov libc-hermetic-"
+"tests-build`."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:188 ../../../dev/code_coverage.md:307
+msgid "5. Merge Profile Counters"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:190
+msgid ""
+"Scans the build tree for all generated `.profraw` files and indexes them "
+"into a unified, sparse `.profdata` archive using `$LLVM_PROFDATA`:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:198
+msgid "6. Generate Coverage Reports"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:200
+msgid ""
+"Collects all compiled test binary paths and invokes `$LLVM_COV` to correlate "
+"recorded profile counters against the libc source tree:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:211
+msgid "Reports can be generated in different formats:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:213 ../../../dev/code_coverage.md:332
+msgid "Option 1: Terminal Summary Report"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:215
+msgid ""
+"Prints an aggregated terminal summary showing line, region, and branch "
+"coverage percentages for each file:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:226
+msgid "To restrict the terminal report to a specific source file:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:235 ../../../dev/code_coverage.md:346
+msgid "Option 2: Interactive HTML Dashboard"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:237
+msgid ""
+"Generates an interactive HTML dashboard containing sortable directory "
+"metrics and syntax-highlighted source views:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:256
+msgid "Modified Condition / Decision Coverage (MC/DC)"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:258
+msgid ""
+"MC/DC evaluates boolean sub-conditions within compound logical expressions "
+"(such as `if (A && B)`). It verifies that each individual sub-condition "
+"evaluates to both true and false and independently affects the outcome of "
+"the enclosing decision."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:265
+msgid "Removes previous MC/DC profile counters and profile data:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:271
+msgid "2. Configure Full-Build Coverage with MC/DC using Clang 24"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:273
+msgid ""
+"Configures CMake with `-DLIBC_ENABLE_COVERAGE_MCDC=ON` alongside profiling "
+"flags using Clang 24 and LLD:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:300
+msgid ""
+"Compiles and executes test executables in parallel with MC/DC "
+"instrumentation enabled:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:309
+msgid ""
+"Indexes and merges all MC/DC `.profraw` files into a unified `libc_mcdc."
+"profdata` archive for report generation:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:317
+msgid "6. Generate MC/DC Coverage Reports"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:319
+msgid ""
+"Maps MC/DC bitmap records to source AST decisions and evaluates condition "
+"independence pairs:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:330
+msgid "Reports can be generated in two formats depending on your needs:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:334
+msgid ""
+"Displays the terminal coverage summary including MC/DC Condition and Missed "
+"Condition percentages:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:348
+msgid ""
+"Produces an HTML report with expandable MC/DC decision truth tables and test "
+"vector coverage breakdowns:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:369
+msgid "Running Coverage for a Single Test"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:371
+msgid ""
+"When developing or modifying a specific function, coverage can be collected "
+"for a single hermetic test without building and executing the entire test "
+"suite."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:374
+msgid ""
+"The commands below use `libc.test.src.ctype.isalpha_test` (which tests `libc/"
+"src/ctype/isalpha.cpp`) as an example. You can test any other entrypoint by "
+"substituting the target name and source file path:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:377
+msgid ""
+"**Target pattern:** `libc.test.<path_to_test>.<test_name>` (e.g. `libc.test."
+"src.string.strlen_test`)"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:379
+msgid ""
+"**Source path pattern:** `libc/<path_to_source>/<source_file>.cpp` (e.g. "
+"`libc/src/string/strlen.cpp`)"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:384
+msgid "Removes previously generated raw profile counters:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:390
+msgid "2. Build and Execute the Targeted Test"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:392
+msgid ""
+"Compiles and runs only the specified test binary, immediately writing "
+"execution profile counters to disk upon completion:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:405
+msgid "3. Merge the Profile"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:407
+msgid "Merges the single test's raw profile into an indexed database:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:415
+msgid "4. View Coverage Reports"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:417
+msgid "Option 1: Summary Table Report"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:427
+msgid "Option 2: Line-by-Line & Truth Table View"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:441
+msgid "Interpreting Results"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:443
+msgid ""
+"For detailed documentation on the LLVM coverage reporting format, refer to "
+"the [official Clang Source-Based Code Coverage documentation][clang-"
+"coverage]."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:449
+msgid "Coverage Metrics Overview"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:451
+msgid ""
+"**Line Coverage:** Measures whether each physical line of executable source "
+"code was reached at least once during testing."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:453
+msgid ""
+"**Branch Coverage:** Measures whether each conditional branch evaluated to "
+"both its `True` and `False` paths. For example, if an `if (x > 0)` branch is "
+"taken 10 times but never skipped, branch coverage is 50% because the `False` "
+"path was never exercised."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:457
+msgid ""
+"**MC/DC Coverage:** Evaluates compound boolean expressions (such as `if (A "
+"&& B)` or `if (A || B)`). It verifies that each individual condition was "
+"tested as both True and False, and demonstrated that it could independently "
+"change the overall outcome of the decision."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:462
+msgid "Interpreting Reports"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:464
+msgid ""
+"The summary table produced by `llvm-cov report` displays metrics across "
+"individual source files and overall totals:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:467
+msgid ""
+"**Regions / Missed Regions:** A region is a continuous segment of code (such "
+"as a function body or basic block). Missed regions indicate code blocks that "
+"were never executed."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:470
+msgid ""
+"**Functions / Missed Functions:** The total number of entrypoints or "
+"subroutines executed vs unexecuted."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:472
+msgid "**Lines / Missed Lines:** Physical source lines executed vs unexecuted."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:473
+msgid ""
+"**Branches / Missed Branches:** The total count of decision directions (both "
+"True and False) evaluated."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:475
+msgid ""
+"**MC/DC Conditions / Missed Conditions:** The count of individual boolean "
+"sub-conditions that demonstrated independent decision control."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:478
+msgid "Interpreting MC/DC Truth Tables"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:480
+msgid ""
+"When inspecting with `--show-mcdc`, `llvm-cov` displays an MC/DC analysis "
+"table beneath each compound decision. For instance, consider the following "
+"decision:"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:500
+msgid ""
+"**Conditions:** **C1** represents `c < 0` and **C2** represents `c > cpp::"
+"numeric_limits<unsigned char>::max()`."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:502
+msgid "**Executed Vectors:**"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:503
+msgid ""
+"**Vector 1 (`F, F = F`):** Tested with a valid character (`c = 'a'`). Both "
+"C1 and C2 evaluated False, producing an overall False result."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:505
+msgid ""
+"**Vector 2 (`T, - = T`):** Tested with a negative value (`c = -1`). C1 "
+"evaluated True, producing an overall True result. The hyphen (`-`) indicates "
+"C2 was short-circuited and not evaluated."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:508
+msgid "**Condition Pairs:**"
+msgstr ""
+
+#: ../../../dev/code_coverage.md:509
+msgid ""
+"**`C1-Pair: covered (1, 2)`:** Comparing Vector 1 and Vector 2 proves that "
+"changing C1 from False to True directly flipped the result from False to "
+"True. C1 is fully covered."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:512
+msgid ""
+"**`C2-Pair: not covered`:** C2 was never tested in a state where it "
+"independently turned the result True while C1 was False."
+msgstr ""
+
+#: ../../../dev/code_coverage.md:514
+msgid ""
+"**Reaching 100% Coverage:** Add a test with a value above 255 (`c = 256`). "
+"This executes Vector 3 (`F, T = T`), forming the independence pair `(1, 3)` "
+"for C2 and reaching 100% MC/DC coverage."
+msgstr ""

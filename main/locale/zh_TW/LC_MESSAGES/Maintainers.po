@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../Maintainers.md:1
+msgid "LLVM-libc Maintainers"
+msgstr ""
+
+#: ../../../Maintainers.md:3
+msgid ""
+"This file is a list of the [maintainers](https://llvm.org/docs/"
+"DeveloperPolicy.html#maintainers) for LLVM-libc. The following people are "
+"the active maintainers for the project. Please reach out to them for code "
+"reviews, questions about their area of expertise, or other assistance."
+msgstr ""
+
+#: ../../../Maintainers.md:5
+msgid "Lead Maintainer"
+msgstr ""
+
+#: ../../../Maintainers.md:6
+msgid "Michael Jones"
+msgstr ""
+
+#: ../../../Maintainers.md:7
+msgid ""
+"michaelrj@google.com (email), [michaelrj-google](https://github.com/"
+"michaelrj-google) (github)"
+msgstr ""
+
+#: ../../../Maintainers.md:9
+msgid "Baremetal"
+msgstr ""
+
+#: ../../../Maintainers.md:10
+msgid "Petr Hosek"
+msgstr ""
+
+#: ../../../Maintainers.md:11
+msgid ""
+"phosek@google.com (email), [petrhosek](https://github.com/petrhosek) (github)"
+msgstr ""
+
+#: ../../../Maintainers.md:13
+msgid "Baremetal (Allocator)"
+msgstr ""
+
+#: ../../../Maintainers.md:14
+msgid "Daniel Thornburgh"
+msgstr ""
+
+#: ../../../Maintainers.md:15
+msgid ""
+"dthorn@google.com (email), [mysterymath](https://github.com/mysterymath) "
+"(github)"
+msgstr ""
+
+#: ../../../Maintainers.md:17
+msgid "Fixed Point"
+msgstr ""
+
+#: ../../../Maintainers.md:18
+msgid "Leonard Chan"
+msgstr ""
+
+#: ../../../Maintainers.md:19
+msgid ""
+"leonardchan@google.com (email), [PiJoules](https://github.com/PiJoules) "
+"(github)"
+msgstr ""
+
+#: ../../../Maintainers.md:21
+msgid "GPU"
+msgstr ""
+
+#: ../../../Maintainers.md:22
+msgid "Joseph Huber"
+msgstr ""
+
+#: ../../../Maintainers.md:23
+msgid ""
+"joseph.huber@amd.com (email), [jhuber6](https://github.com/jhuber6) (github)"
+msgstr ""
+
+#: ../../../Maintainers.md:25
+msgid "Math"
+msgstr ""
+
+#: ../../../Maintainers.md:26
+msgid "Tue Ly"
+msgstr ""
+
+#: ../../../Maintainers.md:27
+msgid "lntue@google.com (email), [lntue](https://github.com/lntue) (github)"
+msgstr ""
+
+#: ../../../Maintainers.md:29
+msgid "Nicolas Celik"
+msgstr ""
+
+#: ../../../Maintainers.md:30
+msgid ""
+"its.overmighty@gmail.com (email), [OverMighty](https://github.com/"
+"overmighty) (github)"
+msgstr ""
+
+#: ../../../Maintainers.md:32
+msgid "Threading, FreeBSD"
+msgstr ""
+
+#: ../../../Maintainers.md:33
+msgid "Yifan Zhu"
+msgstr ""
+
+#: ../../../Maintainers.md:34
+msgid ""
+"yifanzhu@rochester.edu (email), [Schrodinger ZHU Yifan](https://github.com/"
+"schrodingerzhu) (github)"
+msgstr ""
+
+#: ../../../Maintainers.md:36
+msgid "Runtime Safety, Threading, Math"
+msgstr ""
+
+#: ../../../Maintainers.md:37
+msgid "Muhammad Bassiouni"
+msgstr ""
+
+#: ../../../Maintainers.md:38
+msgid ""
+"muhammad.m.bassiouni@gmail.com (email), [bassiounix](https://github.com/"
+"bassiounix) (github)"
+msgstr ""
+
+#: ../../../Maintainers.md:40
+msgid "RISC-V"
+msgstr ""
+
+#: ../../../Maintainers.md:41
+msgid "Mikhail R. Gadelha"
+msgstr ""
+
+#: ../../../Maintainers.md:42
+msgid ""
+"mikhail@igalia.com (email), [mikhailramalho](https://github.com/"
+"mikhailramalho) (github)"
+msgstr ""
+
+#: ../../../Maintainers.md:44
+msgid "Public Headers / hdrgen"
+msgstr ""
+
+#: ../../../Maintainers.md:45
+msgid "Roland McGrath"
+msgstr ""
+
+#: ../../../Maintainers.md:46
+msgid ""
+"mcgrathr@google.com (email), [frobtech](https://github.com/frobtech) (github)"
+msgstr ""
+
+#: ../../../Maintainers.md:48
+msgid "General Maintenance and Documentation"
+msgstr ""
+
+#: ../../../Maintainers.md:49
+msgid "Jeff Bailey"
+msgstr ""
+
+#: ../../../Maintainers.md:50
+msgid ""
+"jbailey@raspberryginger.com (email), [kaladron](https://github.com/kaladron) "
+"(github), kaladron (discourse), kaladron725 (discord)"
+msgstr ""
+
+#: ../../../Maintainers.md:52
+msgid "ARM and AArch64"
+msgstr ""
+
+#: ../../../Maintainers.md:53
+msgid "Victor Campos"
+msgstr ""
+
+#: ../../../Maintainers.md:54
+msgid ""
+"victor.campos@arm.com (email), [vhscampos](https://github.com/vhscampos) "
+"(github)"
+msgstr ""
+
+#: ../../../Maintainers.md:56
+msgid "Hexagon"
+msgstr ""
+
+#: ../../../Maintainers.md:57
+msgid "Kushal Pal"
+msgstr ""
+
+#: ../../../Maintainers.md:58
+msgid ""
+"kushpal@qti.qualcomm.com (email), [quic-k](https://github.com/quic-k) "
+"(github)"
+msgstr ""
+
+#: ../../../Maintainers.md:60
+msgid "Inactive Maintainers"
+msgstr ""
+
+#: ../../../Maintainers.md:61
+msgid "Tristan Ross"
+msgstr ""
+
+#: ../../../Maintainers.md:62
+msgid ""
+"tristan.ross@midstall.com (email), [RossComputerGuy](https://github.com/"
+"RossComputerGuy) (github)"
+msgstr ""

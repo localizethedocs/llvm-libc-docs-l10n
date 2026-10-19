@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../dev/header_generation.md:3
+msgid "Generating Public and Internal headers"
+msgstr ""
+
+#: ../../../dev/header_generation.md:5
+msgid ""
+"There are 3 main components of the Headergen. The first component are the "
+"YAML files that contain all the function header information and are "
+"separated by header specification and standard. The second component are the "
+"classes that are created for each component of the function header: macros, "
+"enumerations, types, function, arguments, and objects. The third component "
+"is the Python script that uses the class representation to deserialize YAML "
+"files into its specific components and then reserializes the components into "
+"the function header. The Python script also combines the generated header "
+"content with header definitions and extra macro and type inclusions from "
+"the .h.def file."
+msgstr ""
+
+#: ../../../dev/header_generation.md:15
+msgid "Instructions"
+msgstr ""
+
+#: ../../../dev/header_generation.md:17
+msgid "Required Versions:"
+msgstr ""
+
+#: ../../../dev/header_generation.md:18
+msgid "Python Version: 3.8"
+msgstr ""
+
+#: ../../../dev/header_generation.md:19
+msgid "PyYAML Version: 5.1"
+msgstr ""
+
+#: ../../../dev/header_generation.md:21
+msgid ""
+"Keep full-build mode on when building, otherwise headers will not be "
+"generated."
+msgstr ""
+
+#: ../../../dev/header_generation.md:23
+msgid ""
+"Once the build is complete, enter in the command line within the build "
+"directory `ninja check-hdrgen` to ensure that the integration tests are "
+"passing."
+msgstr ""
+
+#: ../../../dev/header_generation.md:26
+msgid ""
+"Then enter in the command line `ninja libc` to generate headers. Headers "
+"will be in `build/projects/libc/include` or `build/libc/include` in a "
+"runtime build. Sys spec headers will be located in `build/projects/libc/"
+"include/sys`."
+msgstr ""
+
+#: ../../../dev/header_generation.md:31
+msgid ""
+"To add a function to the YAML files, you can either manually enter it in the "
+"YAML file corresponding to the header it belongs to or add it through the "
+"command line."
+msgstr ""
+
+#: ../../../dev/header_generation.md:35
+msgid "To add through the command line:"
+msgstr ""
+
+#: ../../../dev/header_generation.md:37
+msgid "Make sure you are in the llvm-project directory."
+msgstr ""
+
+#: ../../../dev/header_generation.md:39
+msgid "Enter in the command line:"
+msgstr ""
+
+#: ../../../dev/header_generation.md:46 ../../../dev/header_generation.md:82
+#: ../../../dev/header_generation.md:97 ../../../dev/header_generation.md:123
+#: ../../../dev/header_generation.md:141 ../../../dev/header_generation.md:157
+msgid "Example:"
+msgstr ""
+
+#: ../../../dev/header_generation.md:54
+msgid ""
+"Keep in mind only the return_type and arguments have quotes around them. If "
+"you do not have any guards or attributes you may enter \"null\" for both."
+msgstr ""
+
+#: ../../../dev/header_generation.md:57
+msgid ""
+"Check the YAML file that the added function is present. You will also get a "
+"generated header file with the new addition in the hdrgen directory to "
+"examine."
+msgstr ""
+
+#: ../../../dev/header_generation.md:61
+msgid ""
+"If you want to sort the functions alphabetically you can check out `libc/"
+"utils/hdrgen/hdrgen/yaml_functions_sorted.py`."
+msgstr ""
+
+#: ../../../dev/header_generation.md:64
+msgid "Testing"
+msgstr ""
+
+#: ../../../dev/header_generation.md:66
+msgid ""
+"Headergen has an integration test that you may run once you have configured "
+"your CMake within the build directory. In the command line, enter the "
+"following: `ninja check-hdrgen`. The integration test is one test that "
+"ensures the process of YAML to classes to generate headers works properly. "
+"If there are any new additions on formatting headers, make sure the test is "
+"updated with the specific addition."
+msgstr ""
+
+#: ../../../dev/header_generation.md:73
+msgid ""
+"Integration Test can be found in: `libc/utils/hdrgen/tests/test_integration."
+"py`"
+msgstr ""
+
+#: ../../../dev/header_generation.md:75
+msgid ""
+"File to modify if adding something to formatting: `libc/utils/hdrgen/tests/"
+"expected_output/test_header.h`"
+msgstr ""
+
+#: ../../../dev/header_generation.md:78
+msgid "Common Errors"
+msgstr ""
+
+#: ../../../dev/header_generation.md:80
+msgid "Missing function specific component"
+msgstr ""
+
+#: ../../../dev/header_generation.md:88
+msgid ""
+"If you receive this error or any error pertaining to "
+"`function_data[function_specific_component]` while building the headers that "
+"means the function specific component is missing within the YAML files. "
+"Through the call stack, you will be able to find the header file which has "
+"the issue. Ensure there is no missing function specific component for that "
+"YAML header file."
+msgstr ""
+
+#: ../../../dev/header_generation.md:95
+msgid "CMake Error: require argument to be specified"
+msgstr ""
+
+#: ../../../dev/header_generation.md:108
+msgid ""
+"If you receive this error, there is a missing YAML file, h_def file, or "
+"header name within the `libc/include/CMakeLists.txt`. The last line in the "
+"error call stack will point to the header where there is a specific "
+"component missing. Ensure the correct style and required files are present:"
+msgstr ""
+
+#: ../../../dev/header_generation.md:121
+msgid "Command line: expected arguments"
+msgstr ""
+
+#: ../../../dev/header_generation.md:134
+msgid ""
+"In the process of adding a function, you may run into an issue where the "
+"command line is requiring more arguments than what you currently have. "
+"Ensure that all components of the new function are filled. Even if you do "
+"not have a guard or attribute, make sure to put null in those two areas."
+msgstr ""
+
+#: ../../../dev/header_generation.md:139
+msgid "Object has no attribute"
+msgstr ""
+
+#: ../../../dev/header_generation.md:149
+msgid ""
+"When running `ninja libc` in the build directory to generate headers you may "
+"receive the error above. Essentially this means that in `libc/utils/hdrgen/"
+"hdrgen/header.py` there is a missing attribute named functions. Make sure "
+"all function components are defined within this file and there are no "
+"missing functions to add these components."
+msgstr ""
+
+#: ../../../dev/header_generation.md:155
+msgid "Unknown type name"
+msgstr ""
+
+#: ../../../dev/header_generation.md:170
+msgid ""
+"During the header generation process errors like the one above may occur "
+"because there are missing types for a specific header file. Check the YAML "
+"file corresponding to the header file and make sure all the necessary types "
+"that are being used are input into the types as well. Delete the specific "
+"header file from the build folder and re-run `ninja libc` to ensure the "
+"types are being recognized."
+msgstr ""
+
+#: ../../../dev/header_generation.md:177
+msgid "Test Integration Errors"
+msgstr ""
+
+#: ../../../dev/header_generation.md:179
+msgid ""
+"Sometimes the integration test will fail but that still means the process is "
+"working unless the comparison between the output and expected_output is not "
+"showing. If that is the case make sure in `libc/utils/hdrgen/tests/"
+"test_integration.py` there are no missing arguments that run through the "
+"script."
+msgstr ""
+
+#: ../../../dev/header_generation.md:185
+msgid ""
+"If the integration tests are failing due to mismatching of lines or small "
+"errors in spacing that is nothing to worry about. If this is happening while "
+"you are making a new change to the formatting of the headers, then ensure "
+"the expected output file `libc/utils/hdrgen/tests/expected_output/"
+"test_header.h` has the changes you are applying."
+msgstr ""
