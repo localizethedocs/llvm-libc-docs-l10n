@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../build_concepts.md:3
+msgid "Build Concepts"
+msgstr ""
+
+#: ../../../build_concepts.md:5
+msgid ""
+"Most people don't need to build their own C library — the one provided by "
+"their system works well. However, LLVM-libc's **Overlay Mode** can provide "
+"key updates like faster or more consistent math functions for projects that "
+"need them."
+msgstr ""
+
+#: ../../../build_concepts.md:9
+msgid ""
+"For those who do need a full C library, LLVM-libc supports several build "
+"configurations depending on your target environment and intended usage."
+msgstr ""
+
+#: ../../../build_concepts.md:12
+msgid "The Five Build Scenarios"
+msgstr ""
+
+#: ../../../build_concepts.md:14
+msgid "1. Overlay Mode (Augmenting the System Libc)"
+msgstr ""
+
+#: ../../../build_concepts.md:16
+msgid ""
+"In Overlay Mode, LLVM-libc functions are compiled alongside the host's "
+"existing system library (like `glibc`). Only the functions explicitly "
+"implemented in LLVM-libc are used; the rest \"fall back\" to the system "
+"library. This is the preferred method for most contributors as it is the "
+"fastest to build and test."
+msgstr ""
+
+#: ../../../build_concepts.md:21
+msgid ""
+"To configure for an overlay build, point CMake to the `runtimes` directory "
+"and set `LLVM_LIBC_FULL_BUILD=OFF` (which is the default). This will build a "
+"static archive named `libllvmlibc.a`:"
+msgstr ""
+
+#: ../../../build_concepts.md:30
+msgid "2. Full Build Mode (Standalone Library)"
+msgstr ""
+
+#: ../../../build_concepts.md:32
+msgid ""
+"In Full Build Mode, LLVM-libc is a complete replacement for the system "
+"library. This is used to build standalone `libc.a` and `libm.a` (with "
+"separate CMake targets) for a new operating system or to generate a sysroot "
+"for a specific target."
+msgstr ""
+
+#: ../../../build_concepts.md:36
+msgid "To configure for a full build, set `LLVM_LIBC_FULL_BUILD=ON`:"
+msgstr ""
+
+#: ../../../build_concepts.md:43
+msgid "3. Bootstrap Build"
+msgstr ""
+
+#: ../../../build_concepts.md:45
+msgid ""
+"A bootstrap build first builds the compiler (Clang) and other LLVM tools "
+"using the host compiler, and then uses that newly-built Clang to build the "
+"libc. This ensures you are using a matched toolchain where the compiler and "
+"the library are built for each other."
+msgstr ""
+
+#: ../../../build_concepts.md:50
+msgid ""
+"To configure a bootstrap build, you point CMake to the `llvm` directory:"
+msgstr ""
+
+#: ../../../build_concepts.md:56
+msgid "4. Cross-compiler Build (Targeting Other Architectures)"
+msgstr ""
+
+#: ../../../build_concepts.md:58
+msgid ""
+"Used when you want to build LLVM-libc for a different architecture than you "
+"are currently running on (e.g., building on x86_64 for an aarch64 target). "
+"This requires a cross-compiler or a toolchain file."
+msgstr ""
+
+#: ../../../build_concepts.md:62
+msgid "5. Bootstrap Cross-compiler (New Environment)"
+msgstr ""
+
+#: ../../../build_concepts.md:64
+msgid ""
+"For users who are starting from scratch (e.g., with only Linux kernel "
+"headers) and want to generate a full C compiler and sysroot for their "
+"target. This is the most common path for those building entire environments "
+"to tinker in."
+msgstr ""

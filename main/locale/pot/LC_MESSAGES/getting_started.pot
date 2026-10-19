@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../getting_started.md:3
+msgid "Getting Started"
+msgstr ""
+
+#: ../../../getting_started.md:5
+msgid ""
+"This guide provides a single, robust path for new users and contributors to "
+"build, test, and verify LLVM-libc. We use the **runtimes build** (see {ref}"
+"`build_concepts` for more information) because it is faster and sufficient "
+"for most development tasks."
+msgstr ""
+
+#: ../../../getting_started.md:10
+msgid "1. Install Dependencies"
+msgstr ""
+
+#: ../../../getting_started.md:12
+msgid ""
+"To build LLVM-libc, you will need a recent version of Clang (v15+) and basic "
+"build tools. On a Debian/Ubuntu-based system, you can install these using "
+"`apt-get`:"
+msgstr ""
+
+#: ../../../getting_started.md:21
+msgid "2. Clone and Configure"
+msgstr ""
+
+#: ../../../getting_started.md:23
+msgid ""
+"The following command clones the complete LLVM project and configures the "
+"build for LLVM-libc. We include `compiler-rt` to enable the Scudo memory "
+"allocator."
+msgstr ""
+
+#: ../../../getting_started.md:43
+msgid "3. Build and Test"
+msgstr ""
+
+#: ../../../getting_started.md:45
+msgid ""
+"After configuring, you can build the library, the math library (libm), and "
+"run all unit tests:"
+msgstr ""
+
+#: ../../../getting_started.md:52
+msgid "To run a specific test, such as `isalpha` in `ctype.h`:"
+msgstr ""
+
+#: ../../../getting_started.md:58
+msgid "4. Verify with Hello World"
+msgstr ""
+
+#: ../../../getting_started.md:60
+msgid "To verify your build, create a simple `hello.c` file:"
+msgstr ""
+
+#: ../../../getting_started.md:71
+msgid "Compile it using the build artifacts:"
+msgstr ""
+
+#: ../../../getting_started.md:82
+msgid "Finally, run the executable:"
+msgstr ""
+
+#: ../../../getting_started.md:89
+msgid ""
+"This setup builds LLVM-libc as a standalone library using the recommended "
+"set of flags. From here, you can visit {ref}`full_host_build` for advanced "
+"sysroot setup, {ref}`overlay_mode` to learn about using LLVM-libc to augment "
+"your system's C library, or {ref}`build_concepts` to understand other build "
+"scenarios."
+msgstr ""

@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/pwd.rst:3
+msgid "pwd.h"
+msgstr ""
+
+#: ../../../headers/pwd.rst:6
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/pwd.rst:13
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/pwd.rst:14
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/pwd.rst:15
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/pwd.rst:16
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/pwd.rst:17
+msgid "endpwent"
+msgstr ""
+
+#: ../../../headers/pwd.rst:18 ../../../headers/pwd.rst:22
+#: ../../../headers/pwd.rst:26 ../../../headers/pwd.rst:30
+#: ../../../headers/pwd.rst:34 ../../../headers/pwd.rst:38
+#: ../../../headers/pwd.rst:42
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/pwd.rst:20
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"endpwent.html>`__"
+msgstr ""
+
+#: ../../../headers/pwd.rst:21
+msgid "getpwent"
+msgstr ""
+
+#: ../../../headers/pwd.rst:24
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getpwent.html>`__"
+msgstr ""
+
+#: ../../../headers/pwd.rst:25
+msgid "getpwnam"
+msgstr ""
+
+#: ../../../headers/pwd.rst:28
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getpwnam.html>`__"
+msgstr ""
+
+#: ../../../headers/pwd.rst:29
+msgid "getpwnam_r"
+msgstr ""
+
+#: ../../../headers/pwd.rst:32
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getpwnam_r.html>`__"
+msgstr ""
+
+#: ../../../headers/pwd.rst:33
+msgid "getpwuid"
+msgstr ""
+
+#: ../../../headers/pwd.rst:36
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getpwuid.html>`__"
+msgstr ""
+
+#: ../../../headers/pwd.rst:37
+msgid "getpwuid_r"
+msgstr ""
+
+#: ../../../headers/pwd.rst:40
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getpwuid_r.html>`__"
+msgstr ""
+
+#: ../../../headers/pwd.rst:41
+msgid "setpwent"
+msgstr ""
+
+#: ../../../headers/pwd.rst:44
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setpwent.html>`__"
+msgstr ""

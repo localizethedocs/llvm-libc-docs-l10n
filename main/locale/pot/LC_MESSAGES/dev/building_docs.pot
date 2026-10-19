@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../dev/building_docs.md:3
+msgid "Building the Documentation"
+msgstr ""
+
+#: ../../../dev/building_docs.md:5
+msgid ""
+"This page explains how to build the LLVM-libc HTML documentation locally so "
+"you can preview changes before submitting a patch."
+msgstr ""
+
+#: ../../../dev/building_docs.md:8
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../../dev/building_docs.md:10
+msgid ""
+"The LLVM documentation build uses [Sphinx](https://www.sphinx-doc.org/). The "
+"key packages required are:"
+msgstr ""
+
+#: ../../../dev/building_docs.md:13
+msgid "`sphinx` — the documentation generator"
+msgstr ""
+
+#: ../../../dev/building_docs.md:14
+msgid "`furo` — the theme used by LLVM-libc"
+msgstr ""
+
+#: ../../../dev/building_docs.md:15
+msgid "`myst-parser` — Markdown support alongside RST"
+msgstr ""
+
+#: ../../../dev/building_docs.md:16
+msgid "`sphinx-reredirects` — handles page redirect entries in `conf.py`"
+msgstr ""
+
+#: ../../../dev/building_docs.md:18
+msgid "**On Debian/Ubuntu**, all required packages are available via apt:"
+msgstr ""
+
+#: ../../../dev/building_docs.md:25
+msgid ""
+"**On other systems**, install everything from the shared requirements file:"
+msgstr ""
+
+#: ../../../dev/building_docs.md:31
+msgid "CMake Configuration"
+msgstr ""
+
+#: ../../../dev/building_docs.md:33
+msgid ""
+"Enable the Sphinx documentation build by adding these flags to your CMake "
+"invocation:"
+msgstr ""
+
+#: ../../../dev/building_docs.md:44
+msgid ""
+"The `LLVM_ENABLE_SPHINX=ON` flag enables Sphinx globally for all LLVM "
+"subprojects. `LIBC_INCLUDE_DOCS=ON` is specific to libc and tells CMake to "
+"register the libc doc targets."
+msgstr ""
+
+#: ../../../dev/building_docs.md:48
+msgid "Building"
+msgstr ""
+
+#: ../../../dev/building_docs.md:50
+msgid "Once configured, build the HTML docs with:"
+msgstr ""
+
+#: ../../../dev/building_docs.md:56
+msgid ""
+"The output is written to `<build-dir>/tools/libc/docs/html/`. Open `index."
+"html` in a browser to view the site."
+msgstr ""
+
+#: ../../../dev/building_docs.md:59
+msgid "Header Status Pages (Auto-generated)"
+msgstr ""
+
+#: ../../../dev/building_docs.md:61
+msgid ""
+"The per-header implementation status pages under `docs/headers/` are **not** "
+"hand-written RST. They are generated at build time by `libc/utils/docgen/"
+"docgen.py`, which:"
+msgstr ""
+
+#: ../../../dev/building_docs.md:65
+msgid "Reads YAML function definitions from `libc/src/<header>/*.yaml`."
+msgstr ""
+
+#: ../../../dev/building_docs.md:66
+msgid "Scans `libc/src/<header>/` for `.cpp` implementation files."
+msgstr ""
+
+#: ../../../dev/building_docs.md:67
+msgid "Checks `libc/include/llvm-libc-macros/` for macro `#define` entries."
+msgstr ""
+
+#: ../../../dev/building_docs.md:68
+msgid ""
+"Emits an RST `list-table` showing each symbol's implementation status, C "
+"standard section, and POSIX link."
+msgstr ""
+
+#: ../../../dev/building_docs.md:71
+msgid ""
+"If you add a new function and regenerate, these pages update automatically. "
+"Do **not** hand-edit the generated RST files in `docs/headers/` — your "
+"changes will be overwritten the next time the docs are built."
+msgstr ""
+
+#: ../../../dev/building_docs.md:75
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../dev/building_docs.md:77
+msgid "`Extension error: Could not import extension myst_parser`"
+msgstr ""
+
+#: ../../../dev/building_docs.md:78
+msgid ""
+"On Debian/Ubuntu: `sudo apt-get install python3-myst-parser`. Otherwise: "
+"`pip install -r llvm/docs/requirements.txt`."
+msgstr ""
+
+#: ../../../dev/building_docs.md:81
+msgid "`WARNING: document isn't included in any toctree`"
+msgstr ""
+
+#: ../../../dev/building_docs.md:82
+msgid ""
+"A new RST/Markdown file needs a `toctree` entry. Add it to the appropriate "
+"`index.rst` or its parent toctree."
+msgstr ""
+
+#: ../../../dev/building_docs.md:85
+msgid "`Extension error: No module named 'sphinx_reredirects'`"
+msgstr ""
+
+#: ../../../dev/building_docs.md:86
+msgid "Same fix: `pip install -r llvm/docs/requirements.txt`."
+msgstr ""

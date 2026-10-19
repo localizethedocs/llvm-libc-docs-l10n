@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../uefi/building.rst:5
+msgid "Building libc for UEFI"
+msgstr ""
+
+#: ../../../uefi/building.rst:8
+msgid "Building LLVM libc for UEFI"
+msgstr ""
+
+#: ../../../uefi/building.rst:10
+msgid ""
+"This document will present recipes to build the LLVM C library for UEFI. "
+"UEFI builds use the same :ref:`cross build<full_cross_build>` support as the "
+"other targets. However, the UEFI target has the restriction that it *must* "
+"be built with an up-to-date ``clang`` compiler. This is because UEFI support "
+"in ``clang`` is still an experimental feature."
+msgstr ""
+
+#: ../../../uefi/building.rst:16
+msgid ""
+"Currently, it is only possible to build LLVM libc for UEFI for ``x86_64`` "
+"CPUs. This is due to the target not being enabled for ``aarch64`` and "
+"``riscv64``."
+msgstr ""
+
+#: ../../../uefi/building.rst:20
+msgid ""
+"Once you have finished building, refer to :ref:`libc_uefi_usage` to get "
+"started with the newly built C library."
+msgstr ""
+
+#: ../../../uefi/building.rst:24
+msgid "Standard runtimes build"
+msgstr ""
+
+#: ../../../uefi/building.rst:26
+msgid ""
+"The simplest way to build for UEFI is to use the existing LLVM runtimes "
+"support. This will automatically handle bootstrapping an up-to-date "
+"``clang`` compiler and use it to build the C library. The following CMake "
+"invocation will instruct it to build the ``libc`` runtime targeting "
+"``x86_64`` CPUs."
+msgstr ""
+
+#: ../../../uefi/building.rst:46
+msgid ""
+"We need ``clang`` to build the UEFI C library and ``lld`` to link UEFI PE "
+"executables, so we enable them in ``LLVM_ENABLE_PROJECTS``. We then set "
+"``RUNTIMES_<triple>_LLVM_ENABLE_RUNTIMES`` to enable ``libc`` for the UEFI "
+"targets."
+msgstr ""

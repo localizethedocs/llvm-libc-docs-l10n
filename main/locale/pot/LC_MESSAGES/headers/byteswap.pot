@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/byteswap.rst:3
+msgid "byteswap.h"
+msgstr ""
+
+#: ../../../headers/byteswap.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/byteswap.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/byteswap.rst:14
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/byteswap.rst:15
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/byteswap.rst:16
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/byteswap.rst:17
+msgid "bswap_16"
+msgstr ""
+
+#: ../../../headers/byteswap.rst:18 ../../../headers/byteswap.rst:22
+#: ../../../headers/byteswap.rst:26
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/byteswap.rst:21
+msgid "bswap_32"
+msgstr ""
+
+#: ../../../headers/byteswap.rst:25
+msgid "bswap_64"
+msgstr ""
