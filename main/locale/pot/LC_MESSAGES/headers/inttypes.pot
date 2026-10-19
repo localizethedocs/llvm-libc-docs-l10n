@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/inttypes.rst:3
+msgid "inttypes.h"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:6
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:13
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:14
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:15
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:16
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:17
+msgid "imaxabs"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:18 ../../../headers/inttypes.rst:22
+#: ../../../headers/inttypes.rst:26 ../../../headers/inttypes.rst:30
+#: ../../../headers/inttypes.rst:34 ../../../headers/inttypes.rst:38
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:19
+msgid "7.8.2.1"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:20
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"imaxabs.html>`__"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:21
+msgid "imaxdiv"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:23
+msgid "7.8.2.2"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:24
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"imaxdiv.html>`__"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:25
+msgid "strtoimax"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:27 ../../../headers/inttypes.rst:31
+msgid "7.8.2.3"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:28
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strtoimax.html>`__"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:29
+msgid "strtoumax"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:32
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strtoumax.html>`__"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:33
+msgid "wcstoimax"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:35 ../../../headers/inttypes.rst:39
+msgid "7.8.2.4"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:36
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"wcstoimax.html>`__"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:37
+msgid "wcstoumax"
+msgstr ""
+
+#: ../../../headers/inttypes.rst:40
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"wcstoumax.html>`__"
+msgstr ""

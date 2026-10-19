@@ -1,0 +1,313 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/complex.rst:3
+msgid "complex.h"
+msgstr ""
+
+#: ../../../headers/complex.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/complex.rst:9 ../../../headers/complex.rst:18
+msgid "<Func>"
+msgstr ""
+
+#: ../../../headers/complex.rst:9 ../../../headers/complex.rst:18
+msgid "<Func_f> (float)"
+msgstr ""
+
+#: ../../../headers/complex.rst:9 ../../../headers/complex.rst:18
+msgid "<Func> (double)"
+msgstr ""
+
+#: ../../../headers/complex.rst:9 ../../../headers/complex.rst:18
+msgid "<Func_l> (long double)"
+msgstr ""
+
+#: ../../../headers/complex.rst:9 ../../../headers/complex.rst:18
+msgid "<Func_f16> (float16)"
+msgstr ""
+
+#: ../../../headers/complex.rst:9 ../../../headers/complex.rst:18
+msgid "<Func_f128> (float128)"
+msgstr ""
+
+#: ../../../headers/complex.rst:9 ../../../headers/complex.rst:18
+msgid "C23 Definition Section"
+msgstr ""
+
+#: ../../../headers/complex.rst:9 ../../../headers/complex.rst:18
+msgid "C23 Error Handling Section"
+msgstr ""
+
+#: ../../../headers/complex.rst:11
+msgid "CMPLX"
+msgstr ""
+
+#: ../../../headers/complex.rst:11 ../../../headers/complex.rst:48
+#: ../../../headers/complex.rst:54 ../../../headers/complex.rst:56
+#: ../../../headers/complex.rst:58 ../../../headers/complex.rst:60
+#: ../../../headers/complex.rst:62
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/complex.rst:11
+msgid "7.3.9.3"
+msgstr ""
+
+#: ../../../headers/complex.rst:11 ../../../headers/complex.rst:22
+#: ../../../headers/complex.rst:24 ../../../headers/complex.rst:26
+#: ../../../headers/complex.rst:28 ../../../headers/complex.rst:30
+#: ../../../headers/complex.rst:48 ../../../headers/complex.rst:54
+#: ../../../headers/complex.rst:56 ../../../headers/complex.rst:58
+#: ../../../headers/complex.rst:60 ../../../headers/complex.rst:62
+msgid "N/A"
+msgstr ""
+
+#: ../../../headers/complex.rst:15
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/complex.rst:20
+msgid "cacos"
+msgstr ""
+
+#: ../../../headers/complex.rst:20
+msgid "7.3.5.1"
+msgstr ""
+
+#: ../../../headers/complex.rst:20
+msgid "G.6.2.1"
+msgstr ""
+
+#: ../../../headers/complex.rst:22
+msgid "casin"
+msgstr ""
+
+#: ../../../headers/complex.rst:22
+msgid "7.3.5.2"
+msgstr ""
+
+#: ../../../headers/complex.rst:24
+msgid "catan"
+msgstr ""
+
+#: ../../../headers/complex.rst:24
+msgid "7.3.5.3"
+msgstr ""
+
+#: ../../../headers/complex.rst:26
+msgid "ccos"
+msgstr ""
+
+#: ../../../headers/complex.rst:26
+msgid "7.3.5.4"
+msgstr ""
+
+#: ../../../headers/complex.rst:28
+msgid "csin"
+msgstr ""
+
+#: ../../../headers/complex.rst:28
+msgid "7.3.5.5"
+msgstr ""
+
+#: ../../../headers/complex.rst:30
+msgid "ctan"
+msgstr ""
+
+#: ../../../headers/complex.rst:30
+msgid "7.3.5.6"
+msgstr ""
+
+#: ../../../headers/complex.rst:32
+msgid "cacosh"
+msgstr ""
+
+#: ../../../headers/complex.rst:32
+msgid "7.3.6.1"
+msgstr ""
+
+#: ../../../headers/complex.rst:32
+msgid "G.6.3.1"
+msgstr ""
+
+#: ../../../headers/complex.rst:34
+msgid "casinh"
+msgstr ""
+
+#: ../../../headers/complex.rst:34
+msgid "7.3.6.2"
+msgstr ""
+
+#: ../../../headers/complex.rst:34
+msgid "G.6.3.2"
+msgstr ""
+
+#: ../../../headers/complex.rst:36
+msgid "catanh"
+msgstr ""
+
+#: ../../../headers/complex.rst:36
+msgid "7.3.6.3"
+msgstr ""
+
+#: ../../../headers/complex.rst:36
+msgid "G.6.3.3"
+msgstr ""
+
+#: ../../../headers/complex.rst:38
+msgid "ccosh"
+msgstr ""
+
+#: ../../../headers/complex.rst:38
+msgid "7.3.6.4"
+msgstr ""
+
+#: ../../../headers/complex.rst:38
+msgid "G.6.3.4"
+msgstr ""
+
+#: ../../../headers/complex.rst:40
+msgid "csinh"
+msgstr ""
+
+#: ../../../headers/complex.rst:40
+msgid "7.3.6.5"
+msgstr ""
+
+#: ../../../headers/complex.rst:40
+msgid "G.6.3.5"
+msgstr ""
+
+#: ../../../headers/complex.rst:42
+msgid "ctanh"
+msgstr ""
+
+#: ../../../headers/complex.rst:42
+msgid "7.3.6.6"
+msgstr ""
+
+#: ../../../headers/complex.rst:42
+msgid "G.6.3.6"
+msgstr ""
+
+#: ../../../headers/complex.rst:44
+msgid "cexp"
+msgstr ""
+
+#: ../../../headers/complex.rst:44
+msgid "7.3.7.1"
+msgstr ""
+
+#: ../../../headers/complex.rst:44
+msgid "G.6.4.1"
+msgstr ""
+
+#: ../../../headers/complex.rst:46
+msgid "clog"
+msgstr ""
+
+#: ../../../headers/complex.rst:46
+msgid "7.3.7.2"
+msgstr ""
+
+#: ../../../headers/complex.rst:46
+msgid "G.6.4.2"
+msgstr ""
+
+#: ../../../headers/complex.rst:48
+msgid "cabs"
+msgstr ""
+
+#: ../../../headers/complex.rst:48
+msgid "7.3.8.1"
+msgstr ""
+
+#: ../../../headers/complex.rst:50
+msgid "cpow"
+msgstr ""
+
+#: ../../../headers/complex.rst:50
+msgid "7.3.8.2"
+msgstr ""
+
+#: ../../../headers/complex.rst:50
+msgid "G.6.5.1"
+msgstr ""
+
+#: ../../../headers/complex.rst:52
+msgid "csqrt"
+msgstr ""
+
+#: ../../../headers/complex.rst:52
+msgid "7.3.8.3"
+msgstr ""
+
+#: ../../../headers/complex.rst:52
+msgid "G.6.5.2"
+msgstr ""
+
+#: ../../../headers/complex.rst:54
+msgid "carg"
+msgstr ""
+
+#: ../../../headers/complex.rst:54
+msgid "1 ULP"
+msgstr ""
+
+#: ../../../headers/complex.rst:54
+msgid "7.3.9.1"
+msgstr ""
+
+#: ../../../headers/complex.rst:56
+msgid "cimag"
+msgstr ""
+
+#: ../../../headers/complex.rst:56
+msgid "7.3.9.2"
+msgstr ""
+
+#: ../../../headers/complex.rst:58
+msgid "conj"
+msgstr ""
+
+#: ../../../headers/complex.rst:58
+msgid "7.3.9.4"
+msgstr ""
+
+#: ../../../headers/complex.rst:60
+msgid "cproj"
+msgstr ""
+
+#: ../../../headers/complex.rst:60
+msgid "7.3.9.5"
+msgstr ""
+
+#: ../../../headers/complex.rst:62
+msgid "creal"
+msgstr ""
+
+#: ../../../headers/complex.rst:62
+msgid "7.3.9.6"
+msgstr ""

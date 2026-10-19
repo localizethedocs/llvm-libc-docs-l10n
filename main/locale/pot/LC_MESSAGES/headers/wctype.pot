@@ -1,0 +1,488 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/wctype.rst:3
+msgid "wctype.h"
+msgstr ""
+
+#: ../../../headers/wctype.rst:6
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/wctype.rst:13
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/wctype.rst:14
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/wctype.rst:15
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/wctype.rst:16
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/wctype.rst:17
+msgid "iswalnum"
+msgstr ""
+
+#: ../../../headers/wctype.rst:18 ../../../headers/wctype.rst:26
+#: ../../../headers/wctype.rst:34 ../../../headers/wctype.rst:42
+#: ../../../headers/wctype.rst:50 ../../../headers/wctype.rst:58
+#: ../../../headers/wctype.rst:66 ../../../headers/wctype.rst:74
+#: ../../../headers/wctype.rst:82 ../../../headers/wctype.rst:90
+#: ../../../headers/wctype.rst:98 ../../../headers/wctype.rst:106
+#: ../../../headers/wctype.rst:114 ../../../headers/wctype.rst:130
+#: ../../../headers/wctype.rst:138 ../../../headers/wctype.rst:154
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/wctype.rst:19
+msgid "7.32.2.1.1"
+msgstr ""
+
+#: ../../../headers/wctype.rst:20
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswalnum.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:21
+msgid "iswalnum_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:24
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswalnum_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:25
+msgid "iswalpha"
+msgstr ""
+
+#: ../../../headers/wctype.rst:27
+msgid "7.32.2.1.2"
+msgstr ""
+
+#: ../../../headers/wctype.rst:28
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswalpha.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:29
+msgid "iswalpha_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:32
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswalpha_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:33
+msgid "iswblank"
+msgstr ""
+
+#: ../../../headers/wctype.rst:35
+msgid "7.32.2.1.3"
+msgstr ""
+
+#: ../../../headers/wctype.rst:36
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswblank.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:37
+msgid "iswblank_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:40
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswblank_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:41
+msgid "iswcntrl"
+msgstr ""
+
+#: ../../../headers/wctype.rst:43
+msgid "7.32.2.1.4"
+msgstr ""
+
+#: ../../../headers/wctype.rst:44
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswcntrl.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:45
+msgid "iswcntrl_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:48
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswcntrl_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:49
+msgid "iswctype"
+msgstr ""
+
+#: ../../../headers/wctype.rst:51
+msgid "7.32.2.2.1"
+msgstr ""
+
+#: ../../../headers/wctype.rst:52
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswctype.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:53
+msgid "iswctype_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:56
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswctype_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:57
+msgid "iswdigit"
+msgstr ""
+
+#: ../../../headers/wctype.rst:59
+msgid "7.32.2.1.5"
+msgstr ""
+
+#: ../../../headers/wctype.rst:60
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswdigit.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:61
+msgid "iswdigit_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:64
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswdigit_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:65
+msgid "iswgraph"
+msgstr ""
+
+#: ../../../headers/wctype.rst:67
+msgid "7.32.2.1.6"
+msgstr ""
+
+#: ../../../headers/wctype.rst:68
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswgraph.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:69
+msgid "iswgraph_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:72
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswgraph_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:73
+msgid "iswlower"
+msgstr ""
+
+#: ../../../headers/wctype.rst:75
+msgid "7.32.2.1.7"
+msgstr ""
+
+#: ../../../headers/wctype.rst:76
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswlower.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:77
+msgid "iswlower_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:80
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswlower_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:81
+msgid "iswprint"
+msgstr ""
+
+#: ../../../headers/wctype.rst:83
+msgid "7.32.2.1.8"
+msgstr ""
+
+#: ../../../headers/wctype.rst:84
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswprint.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:85
+msgid "iswprint_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:88
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswprint_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:89
+msgid "iswpunct"
+msgstr ""
+
+#: ../../../headers/wctype.rst:91
+msgid "7.32.2.1.9"
+msgstr ""
+
+#: ../../../headers/wctype.rst:92
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswpunct.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:93
+msgid "iswpunct_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:96
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswpunct_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:97
+msgid "iswspace"
+msgstr ""
+
+#: ../../../headers/wctype.rst:99
+msgid "7.32.2.1.10"
+msgstr ""
+
+#: ../../../headers/wctype.rst:100
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswspace.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:101
+msgid "iswspace_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:104
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswspace_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:105
+msgid "iswupper"
+msgstr ""
+
+#: ../../../headers/wctype.rst:107
+msgid "7.32.2.1.11"
+msgstr ""
+
+#: ../../../headers/wctype.rst:108
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswupper.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:109
+msgid "iswupper_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:112
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswupper_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:113
+msgid "iswxdigit"
+msgstr ""
+
+#: ../../../headers/wctype.rst:115
+msgid "7.32.2.1.12"
+msgstr ""
+
+#: ../../../headers/wctype.rst:116
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswxdigit.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:117
+msgid "iswxdigit_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:120
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"iswxdigit_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:121
+msgid "towctrans"
+msgstr ""
+
+#: ../../../headers/wctype.rst:123
+msgid "7.32.3.2.1"
+msgstr ""
+
+#: ../../../headers/wctype.rst:124
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"towctrans.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:125
+msgid "towctrans_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:128
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"towctrans_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:129
+msgid "towlower"
+msgstr ""
+
+#: ../../../headers/wctype.rst:131
+msgid "7.32.3.1.1"
+msgstr ""
+
+#: ../../../headers/wctype.rst:132
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"towlower.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:133
+msgid "towlower_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:136
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"towlower_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:137
+msgid "towupper"
+msgstr ""
+
+#: ../../../headers/wctype.rst:139
+msgid "7.32.3.1.2"
+msgstr ""
+
+#: ../../../headers/wctype.rst:140
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"towupper.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:141
+msgid "towupper_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:144
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"towupper_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:145
+msgid "wctrans"
+msgstr ""
+
+#: ../../../headers/wctype.rst:147
+msgid "7.32.3.2.2"
+msgstr ""
+
+#: ../../../headers/wctype.rst:148
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"wctrans.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:149
+msgid "wctrans_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:152
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"wctrans_l.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:153
+msgid "wctype"
+msgstr ""
+
+#: ../../../headers/wctype.rst:155
+msgid "7.32.2.2.2"
+msgstr ""
+
+#: ../../../headers/wctype.rst:156
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"wctype.html>`__"
+msgstr ""
+
+#: ../../../headers/wctype.rst:157
+msgid "wctype_l"
+msgstr ""
+
+#: ../../../headers/wctype.rst:160
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"wctype_l.html>`__"
+msgstr ""

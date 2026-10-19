@@ -1,0 +1,352 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/signal.rst:3
+msgid "signal.h"
+msgstr ""
+
+#: ../../../headers/signal.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/signal.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/signal.rst:14 ../../../headers/signal.rst:163
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/signal.rst:15 ../../../headers/signal.rst:164
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/signal.rst:16 ../../../headers/signal.rst:165
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/signal.rst:17
+msgid "SIGABRT"
+msgstr ""
+
+#: ../../../headers/signal.rst:18 ../../../headers/signal.rst:22
+#: ../../../headers/signal.rst:26 ../../../headers/signal.rst:30
+#: ../../../headers/signal.rst:34 ../../../headers/signal.rst:38
+#: ../../../headers/signal.rst:42 ../../../headers/signal.rst:46
+#: ../../../headers/signal.rst:50 ../../../headers/signal.rst:54
+#: ../../../headers/signal.rst:58 ../../../headers/signal.rst:62
+#: ../../../headers/signal.rst:66 ../../../headers/signal.rst:70
+#: ../../../headers/signal.rst:74 ../../../headers/signal.rst:78
+#: ../../../headers/signal.rst:82 ../../../headers/signal.rst:86
+#: ../../../headers/signal.rst:90 ../../../headers/signal.rst:94
+#: ../../../headers/signal.rst:98 ../../../headers/signal.rst:102
+#: ../../../headers/signal.rst:106 ../../../headers/signal.rst:110
+#: ../../../headers/signal.rst:114 ../../../headers/signal.rst:118
+#: ../../../headers/signal.rst:122 ../../../headers/signal.rst:126
+#: ../../../headers/signal.rst:130 ../../../headers/signal.rst:134
+#: ../../../headers/signal.rst:138 ../../../headers/signal.rst:142
+#: ../../../headers/signal.rst:146 ../../../headers/signal.rst:150
+#: ../../../headers/signal.rst:167 ../../../headers/signal.rst:171
+#: ../../../headers/signal.rst:175 ../../../headers/signal.rst:179
+#: ../../../headers/signal.rst:183 ../../../headers/signal.rst:187
+#: ../../../headers/signal.rst:191 ../../../headers/signal.rst:195
+#: ../../../headers/signal.rst:199 ../../../headers/signal.rst:203
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/signal.rst:19 ../../../headers/signal.rst:39
+#: ../../../headers/signal.rst:47 ../../../headers/signal.rst:51
+#: ../../../headers/signal.rst:83 ../../../headers/signal.rst:95
+#: ../../../headers/signal.rst:139 ../../../headers/signal.rst:143
+#: ../../../headers/signal.rst:151
+msgid "7.14.3"
+msgstr ""
+
+#: ../../../headers/signal.rst:20 ../../../headers/signal.rst:24
+#: ../../../headers/signal.rst:28 ../../../headers/signal.rst:32
+#: ../../../headers/signal.rst:36 ../../../headers/signal.rst:40
+#: ../../../headers/signal.rst:44 ../../../headers/signal.rst:48
+#: ../../../headers/signal.rst:52 ../../../headers/signal.rst:56
+#: ../../../headers/signal.rst:60 ../../../headers/signal.rst:64
+#: ../../../headers/signal.rst:68 ../../../headers/signal.rst:72
+#: ../../../headers/signal.rst:76 ../../../headers/signal.rst:80
+#: ../../../headers/signal.rst:84 ../../../headers/signal.rst:88
+#: ../../../headers/signal.rst:92 ../../../headers/signal.rst:96
+#: ../../../headers/signal.rst:100 ../../../headers/signal.rst:104
+#: ../../../headers/signal.rst:108 ../../../headers/signal.rst:112
+#: ../../../headers/signal.rst:116 ../../../headers/signal.rst:120
+#: ../../../headers/signal.rst:124 ../../../headers/signal.rst:128
+#: ../../../headers/signal.rst:132 ../../../headers/signal.rst:136
+#: ../../../headers/signal.rst:140 ../../../headers/signal.rst:144
+#: ../../../headers/signal.rst:148 ../../../headers/signal.rst:152
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"signal.h.html>`__"
+msgstr ""
+
+#: ../../../headers/signal.rst:21
+msgid "SIGALRM"
+msgstr ""
+
+#: ../../../headers/signal.rst:25
+msgid "SIGBUS"
+msgstr ""
+
+#: ../../../headers/signal.rst:29
+msgid "SIGCHLD"
+msgstr ""
+
+#: ../../../headers/signal.rst:33
+msgid "SIGCONT"
+msgstr ""
+
+#: ../../../headers/signal.rst:37
+msgid "SIGFPE"
+msgstr ""
+
+#: ../../../headers/signal.rst:41
+msgid "SIGHUP"
+msgstr ""
+
+#: ../../../headers/signal.rst:45
+msgid "SIGILL"
+msgstr ""
+
+#: ../../../headers/signal.rst:49
+msgid "SIGINT"
+msgstr ""
+
+#: ../../../headers/signal.rst:53
+msgid "SIGKILL"
+msgstr ""
+
+#: ../../../headers/signal.rst:57
+msgid "SIGPIPE"
+msgstr ""
+
+#: ../../../headers/signal.rst:61
+msgid "SIGPOLL"
+msgstr ""
+
+#: ../../../headers/signal.rst:65
+msgid "SIGPROF"
+msgstr ""
+
+#: ../../../headers/signal.rst:69
+msgid "SIGQUIT"
+msgstr ""
+
+#: ../../../headers/signal.rst:73
+msgid "SIGRTMAX"
+msgstr ""
+
+#: ../../../headers/signal.rst:77
+msgid "SIGRTMIN"
+msgstr ""
+
+#: ../../../headers/signal.rst:81
+msgid "SIGSEGV"
+msgstr ""
+
+#: ../../../headers/signal.rst:85
+msgid "SIGSTOP"
+msgstr ""
+
+#: ../../../headers/signal.rst:89
+msgid "SIGSYS"
+msgstr ""
+
+#: ../../../headers/signal.rst:93
+msgid "SIGTERM"
+msgstr ""
+
+#: ../../../headers/signal.rst:97
+msgid "SIGTRAP"
+msgstr ""
+
+#: ../../../headers/signal.rst:101
+msgid "SIGTSTP"
+msgstr ""
+
+#: ../../../headers/signal.rst:105
+msgid "SIGTTIN"
+msgstr ""
+
+#: ../../../headers/signal.rst:109
+msgid "SIGTTOU"
+msgstr ""
+
+#: ../../../headers/signal.rst:113
+msgid "SIGURG"
+msgstr ""
+
+#: ../../../headers/signal.rst:117
+msgid "SIGUSR1"
+msgstr ""
+
+#: ../../../headers/signal.rst:121
+msgid "SIGUSR2"
+msgstr ""
+
+#: ../../../headers/signal.rst:125
+msgid "SIGVTALRM"
+msgstr ""
+
+#: ../../../headers/signal.rst:129
+msgid "SIGXCPU"
+msgstr ""
+
+#: ../../../headers/signal.rst:133
+msgid "SIGXFSZ"
+msgstr ""
+
+#: ../../../headers/signal.rst:137
+msgid "SIG_DFL"
+msgstr ""
+
+#: ../../../headers/signal.rst:141
+msgid "SIG_ERR"
+msgstr ""
+
+#: ../../../headers/signal.rst:145
+msgid "SIG_HOLD"
+msgstr ""
+
+#: ../../../headers/signal.rst:149
+msgid "SIG_IGN"
+msgstr ""
+
+#: ../../../headers/signal.rst:155
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/signal.rst:162
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/signal.rst:166
+msgid "kill"
+msgstr ""
+
+#: ../../../headers/signal.rst:169
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"kill.html>`__"
+msgstr ""
+
+#: ../../../headers/signal.rst:170
+msgid "raise"
+msgstr ""
+
+#: ../../../headers/signal.rst:172
+msgid "7.14.2.1"
+msgstr ""
+
+#: ../../../headers/signal.rst:173
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"raise.html>`__"
+msgstr ""
+
+#: ../../../headers/signal.rst:174
+msgid "sigaction"
+msgstr ""
+
+#: ../../../headers/signal.rst:177
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sigaction.html>`__"
+msgstr ""
+
+#: ../../../headers/signal.rst:178
+msgid "sigaddset"
+msgstr ""
+
+#: ../../../headers/signal.rst:181
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sigaddset.html>`__"
+msgstr ""
+
+#: ../../../headers/signal.rst:182
+msgid "sigaltstack"
+msgstr ""
+
+#: ../../../headers/signal.rst:185
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sigaltstack.html>`__"
+msgstr ""
+
+#: ../../../headers/signal.rst:186
+msgid "sigdelset"
+msgstr ""
+
+#: ../../../headers/signal.rst:189
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sigdelset.html>`__"
+msgstr ""
+
+#: ../../../headers/signal.rst:190
+msgid "sigemptyset"
+msgstr ""
+
+#: ../../../headers/signal.rst:193
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sigemptyset.html>`__"
+msgstr ""
+
+#: ../../../headers/signal.rst:194
+msgid "sigfillset"
+msgstr ""
+
+#: ../../../headers/signal.rst:197
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sigfillset.html>`__"
+msgstr ""
+
+#: ../../../headers/signal.rst:198
+msgid "signal"
+msgstr ""
+
+#: ../../../headers/signal.rst:200
+msgid "7.14.1.1"
+msgstr ""
+
+#: ../../../headers/signal.rst:201
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"signal.html>`__"
+msgstr ""
+
+#: ../../../headers/signal.rst:202
+msgid "sigprocmask"
+msgstr ""
+
+#: ../../../headers/signal.rst:205
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sigprocmask.html>`__"
+msgstr ""
