@@ -1,0 +1,2162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/unistd.rst:3
+msgid "unistd.h"
+msgstr ""
+
+#: ../../../headers/unistd.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/unistd.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/unistd.rst:14 ../../../headers/unistd.rst:1011
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/unistd.rst:15 ../../../headers/unistd.rst:1012
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/unistd.rst:16 ../../../headers/unistd.rst:1013
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/unistd.rst:17
+msgid "F_LOCK"
+msgstr ""
+
+#: ../../../headers/unistd.rst:18 ../../../headers/unistd.rst:22
+#: ../../../headers/unistd.rst:26 ../../../headers/unistd.rst:30
+#: ../../../headers/unistd.rst:34 ../../../headers/unistd.rst:42
+#: ../../../headers/unistd.rst:54 ../../../headers/unistd.rst:58
+#: ../../../headers/unistd.rst:62 ../../../headers/unistd.rst:66
+#: ../../../headers/unistd.rst:70 ../../../headers/unistd.rst:142
+#: ../../../headers/unistd.rst:146 ../../../headers/unistd.rst:150
+#: ../../../headers/unistd.rst:154 ../../../headers/unistd.rst:162
+#: ../../../headers/unistd.rst:166 ../../../headers/unistd.rst:170
+#: ../../../headers/unistd.rst:174 ../../../headers/unistd.rst:178
+#: ../../../headers/unistd.rst:182 ../../../headers/unistd.rst:186
+#: ../../../headers/unistd.rst:190 ../../../headers/unistd.rst:194
+#: ../../../headers/unistd.rst:198 ../../../headers/unistd.rst:202
+#: ../../../headers/unistd.rst:206 ../../../headers/unistd.rst:210
+#: ../../../headers/unistd.rst:214 ../../../headers/unistd.rst:218
+#: ../../../headers/unistd.rst:230 ../../../headers/unistd.rst:286
+#: ../../../headers/unistd.rst:342 ../../../headers/unistd.rst:414
+#: ../../../headers/unistd.rst:418 ../../../headers/unistd.rst:422
+#: ../../../headers/unistd.rst:426 ../../../headers/unistd.rst:430
+#: ../../../headers/unistd.rst:434 ../../../headers/unistd.rst:438
+#: ../../../headers/unistd.rst:442 ../../../headers/unistd.rst:446
+#: ../../../headers/unistd.rst:450 ../../../headers/unistd.rst:454
+#: ../../../headers/unistd.rst:458 ../../../headers/unistd.rst:510
+#: ../../../headers/unistd.rst:514 ../../../headers/unistd.rst:566
+#: ../../../headers/unistd.rst:602 ../../../headers/unistd.rst:634
+#: ../../../headers/unistd.rst:638 ../../../headers/unistd.rst:702
+#: ../../../headers/unistd.rst:706 ../../../headers/unistd.rst:714
+#: ../../../headers/unistd.rst:718 ../../../headers/unistd.rst:722
+#: ../../../headers/unistd.rst:814 ../../../headers/unistd.rst:818
+#: ../../../headers/unistd.rst:822 ../../../headers/unistd.rst:826
+#: ../../../headers/unistd.rst:830 ../../../headers/unistd.rst:838
+#: ../../../headers/unistd.rst:842 ../../../headers/unistd.rst:846
+#: ../../../headers/unistd.rst:850 ../../../headers/unistd.rst:854
+#: ../../../headers/unistd.rst:858 ../../../headers/unistd.rst:862
+#: ../../../headers/unistd.rst:866 ../../../headers/unistd.rst:934
+#: ../../../headers/unistd.rst:1019 ../../../headers/unistd.rst:1023
+#: ../../../headers/unistd.rst:1027 ../../../headers/unistd.rst:1031
+#: ../../../headers/unistd.rst:1035 ../../../headers/unistd.rst:1039
+#: ../../../headers/unistd.rst:1043 ../../../headers/unistd.rst:1047
+#: ../../../headers/unistd.rst:1055 ../../../headers/unistd.rst:1059
+#: ../../../headers/unistd.rst:1063 ../../../headers/unistd.rst:1071
+#: ../../../headers/unistd.rst:1075 ../../../headers/unistd.rst:1083
+#: ../../../headers/unistd.rst:1087 ../../../headers/unistd.rst:1091
+#: ../../../headers/unistd.rst:1095 ../../../headers/unistd.rst:1099
+#: ../../../headers/unistd.rst:1103 ../../../headers/unistd.rst:1107
+#: ../../../headers/unistd.rst:1111 ../../../headers/unistd.rst:1115
+#: ../../../headers/unistd.rst:1119 ../../../headers/unistd.rst:1123
+#: ../../../headers/unistd.rst:1127 ../../../headers/unistd.rst:1131
+#: ../../../headers/unistd.rst:1135 ../../../headers/unistd.rst:1139
+#: ../../../headers/unistd.rst:1143 ../../../headers/unistd.rst:1147
+#: ../../../headers/unistd.rst:1151 ../../../headers/unistd.rst:1163
+#: ../../../headers/unistd.rst:1175 ../../../headers/unistd.rst:1179
+#: ../../../headers/unistd.rst:1183 ../../../headers/unistd.rst:1187
+#: ../../../headers/unistd.rst:1191 ../../../headers/unistd.rst:1195
+#: ../../../headers/unistd.rst:1207 ../../../headers/unistd.rst:1211
+#: ../../../headers/unistd.rst:1215 ../../../headers/unistd.rst:1219
+#: ../../../headers/unistd.rst:1223 ../../../headers/unistd.rst:1227
+#: ../../../headers/unistd.rst:1231 ../../../headers/unistd.rst:1235
+#: ../../../headers/unistd.rst:1239 ../../../headers/unistd.rst:1243
+#: ../../../headers/unistd.rst:1247 ../../../headers/unistd.rst:1251
+#: ../../../headers/unistd.rst:1255 ../../../headers/unistd.rst:1263
+#: ../../../headers/unistd.rst:1267 ../../../headers/unistd.rst:1271
+#: ../../../headers/unistd.rst:1275 ../../../headers/unistd.rst:1279
+#: ../../../headers/unistd.rst:1283 ../../../headers/unistd.rst:1295
+#: ../../../headers/unistd.rst:1299 ../../../headers/unistd.rst:1303
+#: ../../../headers/unistd.rst:1315 ../../../headers/unistd.rst:1319
+#: ../../../headers/unistd.rst:1323 ../../../headers/unistd.rst:1327
+#: ../../../headers/unistd.rst:1331 ../../../headers/unistd.rst:1335
+#: ../../../headers/unistd.rst:1339 ../../../headers/unistd.rst:1343
+#: ../../../headers/unistd.rst:1347 ../../../headers/unistd.rst:1351
+#: ../../../headers/unistd.rst:1355 ../../../headers/unistd.rst:1359
+#: ../../../headers/unistd.rst:1371 ../../../headers/unistd.rst:1375
+#: ../../../headers/unistd.rst:1379
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/unistd.rst:20 ../../../headers/unistd.rst:24
+#: ../../../headers/unistd.rst:28 ../../../headers/unistd.rst:32
+#: ../../../headers/unistd.rst:36 ../../../headers/unistd.rst:40
+#: ../../../headers/unistd.rst:44 ../../../headers/unistd.rst:48
+#: ../../../headers/unistd.rst:52 ../../../headers/unistd.rst:56
+#: ../../../headers/unistd.rst:60 ../../../headers/unistd.rst:64
+#: ../../../headers/unistd.rst:68 ../../../headers/unistd.rst:72
+#: ../../../headers/unistd.rst:76 ../../../headers/unistd.rst:80
+#: ../../../headers/unistd.rst:84 ../../../headers/unistd.rst:88
+#: ../../../headers/unistd.rst:92 ../../../headers/unistd.rst:96
+#: ../../../headers/unistd.rst:100 ../../../headers/unistd.rst:104
+#: ../../../headers/unistd.rst:108 ../../../headers/unistd.rst:112
+#: ../../../headers/unistd.rst:116 ../../../headers/unistd.rst:120
+#: ../../../headers/unistd.rst:124 ../../../headers/unistd.rst:128
+#: ../../../headers/unistd.rst:132 ../../../headers/unistd.rst:136
+#: ../../../headers/unistd.rst:140 ../../../headers/unistd.rst:144
+#: ../../../headers/unistd.rst:148 ../../../headers/unistd.rst:152
+#: ../../../headers/unistd.rst:156 ../../../headers/unistd.rst:160
+#: ../../../headers/unistd.rst:164 ../../../headers/unistd.rst:168
+#: ../../../headers/unistd.rst:172 ../../../headers/unistd.rst:176
+#: ../../../headers/unistd.rst:180 ../../../headers/unistd.rst:184
+#: ../../../headers/unistd.rst:188 ../../../headers/unistd.rst:192
+#: ../../../headers/unistd.rst:196 ../../../headers/unistd.rst:200
+#: ../../../headers/unistd.rst:204 ../../../headers/unistd.rst:208
+#: ../../../headers/unistd.rst:212 ../../../headers/unistd.rst:216
+#: ../../../headers/unistd.rst:220 ../../../headers/unistd.rst:224
+#: ../../../headers/unistd.rst:228 ../../../headers/unistd.rst:232
+#: ../../../headers/unistd.rst:236 ../../../headers/unistd.rst:240
+#: ../../../headers/unistd.rst:244 ../../../headers/unistd.rst:248
+#: ../../../headers/unistd.rst:252 ../../../headers/unistd.rst:256
+#: ../../../headers/unistd.rst:260 ../../../headers/unistd.rst:264
+#: ../../../headers/unistd.rst:268 ../../../headers/unistd.rst:272
+#: ../../../headers/unistd.rst:276 ../../../headers/unistd.rst:280
+#: ../../../headers/unistd.rst:284 ../../../headers/unistd.rst:288
+#: ../../../headers/unistd.rst:292 ../../../headers/unistd.rst:296
+#: ../../../headers/unistd.rst:300 ../../../headers/unistd.rst:304
+#: ../../../headers/unistd.rst:308 ../../../headers/unistd.rst:312
+#: ../../../headers/unistd.rst:316 ../../../headers/unistd.rst:320
+#: ../../../headers/unistd.rst:324 ../../../headers/unistd.rst:328
+#: ../../../headers/unistd.rst:332 ../../../headers/unistd.rst:336
+#: ../../../headers/unistd.rst:340 ../../../headers/unistd.rst:344
+#: ../../../headers/unistd.rst:348 ../../../headers/unistd.rst:352
+#: ../../../headers/unistd.rst:356 ../../../headers/unistd.rst:360
+#: ../../../headers/unistd.rst:364 ../../../headers/unistd.rst:368
+#: ../../../headers/unistd.rst:372 ../../../headers/unistd.rst:376
+#: ../../../headers/unistd.rst:380 ../../../headers/unistd.rst:384
+#: ../../../headers/unistd.rst:388 ../../../headers/unistd.rst:392
+#: ../../../headers/unistd.rst:396 ../../../headers/unistd.rst:400
+#: ../../../headers/unistd.rst:404 ../../../headers/unistd.rst:408
+#: ../../../headers/unistd.rst:412 ../../../headers/unistd.rst:416
+#: ../../../headers/unistd.rst:420 ../../../headers/unistd.rst:424
+#: ../../../headers/unistd.rst:428 ../../../headers/unistd.rst:432
+#: ../../../headers/unistd.rst:436 ../../../headers/unistd.rst:440
+#: ../../../headers/unistd.rst:444 ../../../headers/unistd.rst:448
+#: ../../../headers/unistd.rst:452 ../../../headers/unistd.rst:456
+#: ../../../headers/unistd.rst:460 ../../../headers/unistd.rst:464
+#: ../../../headers/unistd.rst:468 ../../../headers/unistd.rst:472
+#: ../../../headers/unistd.rst:476 ../../../headers/unistd.rst:480
+#: ../../../headers/unistd.rst:484 ../../../headers/unistd.rst:488
+#: ../../../headers/unistd.rst:492 ../../../headers/unistd.rst:496
+#: ../../../headers/unistd.rst:500 ../../../headers/unistd.rst:504
+#: ../../../headers/unistd.rst:508 ../../../headers/unistd.rst:512
+#: ../../../headers/unistd.rst:516 ../../../headers/unistd.rst:520
+#: ../../../headers/unistd.rst:524 ../../../headers/unistd.rst:528
+#: ../../../headers/unistd.rst:532 ../../../headers/unistd.rst:536
+#: ../../../headers/unistd.rst:540 ../../../headers/unistd.rst:544
+#: ../../../headers/unistd.rst:548 ../../../headers/unistd.rst:552
+#: ../../../headers/unistd.rst:556 ../../../headers/unistd.rst:560
+#: ../../../headers/unistd.rst:564 ../../../headers/unistd.rst:568
+#: ../../../headers/unistd.rst:572 ../../../headers/unistd.rst:576
+#: ../../../headers/unistd.rst:580 ../../../headers/unistd.rst:584
+#: ../../../headers/unistd.rst:588 ../../../headers/unistd.rst:592
+#: ../../../headers/unistd.rst:596 ../../../headers/unistd.rst:600
+#: ../../../headers/unistd.rst:604 ../../../headers/unistd.rst:608
+#: ../../../headers/unistd.rst:612 ../../../headers/unistd.rst:616
+#: ../../../headers/unistd.rst:620 ../../../headers/unistd.rst:624
+#: ../../../headers/unistd.rst:628 ../../../headers/unistd.rst:632
+#: ../../../headers/unistd.rst:636 ../../../headers/unistd.rst:640
+#: ../../../headers/unistd.rst:644 ../../../headers/unistd.rst:648
+#: ../../../headers/unistd.rst:652 ../../../headers/unistd.rst:656
+#: ../../../headers/unistd.rst:660 ../../../headers/unistd.rst:664
+#: ../../../headers/unistd.rst:668 ../../../headers/unistd.rst:672
+#: ../../../headers/unistd.rst:676 ../../../headers/unistd.rst:680
+#: ../../../headers/unistd.rst:684 ../../../headers/unistd.rst:688
+#: ../../../headers/unistd.rst:692 ../../../headers/unistd.rst:696
+#: ../../../headers/unistd.rst:700 ../../../headers/unistd.rst:704
+#: ../../../headers/unistd.rst:708 ../../../headers/unistd.rst:712
+#: ../../../headers/unistd.rst:716 ../../../headers/unistd.rst:720
+#: ../../../headers/unistd.rst:724 ../../../headers/unistd.rst:728
+#: ../../../headers/unistd.rst:732 ../../../headers/unistd.rst:736
+#: ../../../headers/unistd.rst:740 ../../../headers/unistd.rst:744
+#: ../../../headers/unistd.rst:748 ../../../headers/unistd.rst:752
+#: ../../../headers/unistd.rst:756 ../../../headers/unistd.rst:760
+#: ../../../headers/unistd.rst:764 ../../../headers/unistd.rst:768
+#: ../../../headers/unistd.rst:772 ../../../headers/unistd.rst:776
+#: ../../../headers/unistd.rst:780 ../../../headers/unistd.rst:784
+#: ../../../headers/unistd.rst:788 ../../../headers/unistd.rst:792
+#: ../../../headers/unistd.rst:796 ../../../headers/unistd.rst:800
+#: ../../../headers/unistd.rst:804 ../../../headers/unistd.rst:808
+#: ../../../headers/unistd.rst:812 ../../../headers/unistd.rst:816
+#: ../../../headers/unistd.rst:820 ../../../headers/unistd.rst:824
+#: ../../../headers/unistd.rst:828 ../../../headers/unistd.rst:832
+#: ../../../headers/unistd.rst:836 ../../../headers/unistd.rst:840
+#: ../../../headers/unistd.rst:844 ../../../headers/unistd.rst:848
+#: ../../../headers/unistd.rst:852 ../../../headers/unistd.rst:856
+#: ../../../headers/unistd.rst:860 ../../../headers/unistd.rst:864
+#: ../../../headers/unistd.rst:868 ../../../headers/unistd.rst:872
+#: ../../../headers/unistd.rst:876 ../../../headers/unistd.rst:880
+#: ../../../headers/unistd.rst:884 ../../../headers/unistd.rst:888
+#: ../../../headers/unistd.rst:892 ../../../headers/unistd.rst:896
+#: ../../../headers/unistd.rst:900 ../../../headers/unistd.rst:904
+#: ../../../headers/unistd.rst:908 ../../../headers/unistd.rst:912
+#: ../../../headers/unistd.rst:916 ../../../headers/unistd.rst:920
+#: ../../../headers/unistd.rst:924 ../../../headers/unistd.rst:928
+#: ../../../headers/unistd.rst:932 ../../../headers/unistd.rst:936
+#: ../../../headers/unistd.rst:940 ../../../headers/unistd.rst:944
+#: ../../../headers/unistd.rst:948 ../../../headers/unistd.rst:952
+#: ../../../headers/unistd.rst:956 ../../../headers/unistd.rst:960
+#: ../../../headers/unistd.rst:964 ../../../headers/unistd.rst:968
+#: ../../../headers/unistd.rst:972 ../../../headers/unistd.rst:976
+#: ../../../headers/unistd.rst:980 ../../../headers/unistd.rst:984
+#: ../../../headers/unistd.rst:988 ../../../headers/unistd.rst:992
+#: ../../../headers/unistd.rst:996 ../../../headers/unistd.rst:1000
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"unistd.h.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:21
+msgid "F_OK"
+msgstr ""
+
+#: ../../../headers/unistd.rst:25
+msgid "F_TEST"
+msgstr ""
+
+#: ../../../headers/unistd.rst:29
+msgid "F_TLOCK"
+msgstr ""
+
+#: ../../../headers/unistd.rst:33
+msgid "F_ULOCK"
+msgstr ""
+
+#: ../../../headers/unistd.rst:37
+msgid "POSIX_CLOSE_RESTART"
+msgstr ""
+
+#: ../../../headers/unistd.rst:41
+msgid "R_OK"
+msgstr ""
+
+#: ../../../headers/unistd.rst:45
+msgid "SEEK_END"
+msgstr ""
+
+#: ../../../headers/unistd.rst:49
+msgid "SEEK_SET"
+msgstr ""
+
+#: ../../../headers/unistd.rst:53
+msgid "STDERR_FILENO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:57
+msgid "STDIN_FILENO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:61
+msgid "STDOUT_FILENO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:65
+msgid "W_OK"
+msgstr ""
+
+#: ../../../headers/unistd.rst:69
+msgid "X_OK"
+msgstr ""
+
+#: ../../../headers/unistd.rst:73
+msgid "_CS_PATH"
+msgstr ""
+
+#: ../../../headers/unistd.rst:77
+msgid "_CS_POSIX_V8_ILP32_OFF32_CFLAGS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:81
+msgid "_CS_POSIX_V8_ILP32_OFF32_LDFLAGS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:85
+msgid "_CS_POSIX_V8_ILP32_OFF32_LIBS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:89
+msgid "_CS_POSIX_V8_ILP32_OFFBIG_CFLAGS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:93
+msgid "_CS_POSIX_V8_ILP32_OFFBIG_LDFLAGS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:97
+msgid "_CS_POSIX_V8_ILP32_OFFBIG_LIBS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:101
+msgid "_CS_POSIX_V8_LP64_OFF64_CFLAGS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:105
+msgid "_CS_POSIX_V8_LP64_OFF64_LDFLAGS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:109
+msgid "_CS_POSIX_V8_LP64_OFF64_LIBS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:113
+msgid "_CS_POSIX_V8_LPBIG_OFFBIG_CFLAGS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:117
+msgid "_CS_POSIX_V8_LPBIG_OFFBIG_LDFLAGS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:121
+msgid "_CS_POSIX_V8_LPBIG_OFFBIG_LIBS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:125
+msgid "_CS_POSIX_V8_THREADS_CFLAGS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:129
+msgid "_CS_POSIX_V8_THREADS_LDFLAGS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:133
+msgid "_CS_POSIX_V8_WIDTH_RESTRICTED_ENVS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:137
+msgid "_CS_V8_ENV"
+msgstr ""
+
+#: ../../../headers/unistd.rst:141
+msgid "_PC_2_SYMLINKS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:145
+msgid "_PC_ALLOC_SIZE_MIN"
+msgstr ""
+
+#: ../../../headers/unistd.rst:149
+msgid "_PC_ASYNC_IO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:153
+msgid "_PC_CHOWN_RESTRICTED"
+msgstr ""
+
+#: ../../../headers/unistd.rst:157
+msgid "_PC_FALLOC"
+msgstr ""
+
+#: ../../../headers/unistd.rst:161
+msgid "_PC_FILESIZEBITS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:165
+msgid "_PC_LINK_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:169
+msgid "_PC_MAX_CANON"
+msgstr ""
+
+#: ../../../headers/unistd.rst:173
+msgid "_PC_MAX_INPUT"
+msgstr ""
+
+#: ../../../headers/unistd.rst:177
+msgid "_PC_NAME_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:181
+msgid "_PC_NO_TRUNC"
+msgstr ""
+
+#: ../../../headers/unistd.rst:185
+msgid "_PC_PATH_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:189
+msgid "_PC_PIPE_BUF"
+msgstr ""
+
+#: ../../../headers/unistd.rst:193
+msgid "_PC_PRIO_IO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:197
+msgid "_PC_REC_INCR_XFER_SIZE"
+msgstr ""
+
+#: ../../../headers/unistd.rst:201
+msgid "_PC_REC_MAX_XFER_SIZE"
+msgstr ""
+
+#: ../../../headers/unistd.rst:205
+msgid "_PC_REC_MIN_XFER_SIZE"
+msgstr ""
+
+#: ../../../headers/unistd.rst:209
+msgid "_PC_REC_XFER_ALIGN"
+msgstr ""
+
+#: ../../../headers/unistd.rst:213
+msgid "_PC_SYMLINK_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:217
+msgid "_PC_SYNC_IO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:221
+msgid "_PC_TEXTDOMAIN_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:225
+msgid "_PC_TIMESTAMP_RESOLUTION"
+msgstr ""
+
+#: ../../../headers/unistd.rst:229
+msgid "_PC_VDISABLE"
+msgstr ""
+
+#: ../../../headers/unistd.rst:233
+msgid "_POSIX2_CHAR_TERM"
+msgstr ""
+
+#: ../../../headers/unistd.rst:237
+msgid "_POSIX2_C_BIND"
+msgstr ""
+
+#: ../../../headers/unistd.rst:241
+msgid "_POSIX2_C_DEV"
+msgstr ""
+
+#: ../../../headers/unistd.rst:245
+msgid "_POSIX2_FORT_RUN"
+msgstr ""
+
+#: ../../../headers/unistd.rst:249
+msgid "_POSIX2_LOCALEDEF"
+msgstr ""
+
+#: ../../../headers/unistd.rst:253
+msgid "_POSIX2_SW_DEV"
+msgstr ""
+
+#: ../../../headers/unistd.rst:257
+msgid "_POSIX2_SYMLINKS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:261
+msgid "_POSIX2_UPE"
+msgstr ""
+
+#: ../../../headers/unistd.rst:265
+msgid "_POSIX2_VERSION"
+msgstr ""
+
+#: ../../../headers/unistd.rst:269
+msgid "_POSIX_ADVISORY_INFO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:273
+msgid "_POSIX_ASYNCHRONOUS_IO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:277
+msgid "_POSIX_ASYNC_IO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:281
+msgid "_POSIX_BARRIERS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:285
+msgid "_POSIX_CHOWN_RESTRICTED"
+msgstr ""
+
+#: ../../../headers/unistd.rst:289
+msgid "_POSIX_CLOCK_SELECTION"
+msgstr ""
+
+#: ../../../headers/unistd.rst:293
+msgid "_POSIX_CPUTIME"
+msgstr ""
+
+#: ../../../headers/unistd.rst:297
+msgid "_POSIX_DEVICE_CONTROL"
+msgstr ""
+
+#: ../../../headers/unistd.rst:301
+msgid "_POSIX_FALLOC"
+msgstr ""
+
+#: ../../../headers/unistd.rst:305
+msgid "_POSIX_FSYNC"
+msgstr ""
+
+#: ../../../headers/unistd.rst:309
+msgid "_POSIX_IPV6"
+msgstr ""
+
+#: ../../../headers/unistd.rst:313
+msgid "_POSIX_JOB_CONTROL"
+msgstr ""
+
+#: ../../../headers/unistd.rst:317
+msgid "_POSIX_MAPPED_FILES"
+msgstr ""
+
+#: ../../../headers/unistd.rst:321
+msgid "_POSIX_MEMLOCK"
+msgstr ""
+
+#: ../../../headers/unistd.rst:325
+msgid "_POSIX_MEMLOCK_RANGE"
+msgstr ""
+
+#: ../../../headers/unistd.rst:329
+msgid "_POSIX_MEMORY_PROTECTION"
+msgstr ""
+
+#: ../../../headers/unistd.rst:333
+msgid "_POSIX_MESSAGE_PASSING"
+msgstr ""
+
+#: ../../../headers/unistd.rst:337
+msgid "_POSIX_MONOTONIC_CLOCK"
+msgstr ""
+
+#: ../../../headers/unistd.rst:341
+msgid "_POSIX_NO_TRUNC"
+msgstr ""
+
+#: ../../../headers/unistd.rst:345
+msgid "_POSIX_PRIORITIZED_IO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:349
+msgid "_POSIX_PRIORITY_SCHEDULING"
+msgstr ""
+
+#: ../../../headers/unistd.rst:353
+msgid "_POSIX_PRIO_IO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:357
+msgid "_POSIX_RAW_SOCKETS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:361
+msgid "_POSIX_READER_WRITER_LOCKS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:365
+msgid "_POSIX_REALTIME_SIGNALS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:369
+msgid "_POSIX_REGEXP"
+msgstr ""
+
+#: ../../../headers/unistd.rst:373
+msgid "_POSIX_SAVED_IDS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:377
+msgid "_POSIX_SEMAPHORES"
+msgstr ""
+
+#: ../../../headers/unistd.rst:381
+msgid "_POSIX_SHARED_MEMORY_OBJECTS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:385
+msgid "_POSIX_SHELL"
+msgstr ""
+
+#: ../../../headers/unistd.rst:389
+msgid "_POSIX_SPAWN"
+msgstr ""
+
+#: ../../../headers/unistd.rst:393
+msgid "_POSIX_SPIN_LOCKS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:397
+msgid "_POSIX_SPORADIC_SERVER"
+msgstr ""
+
+#: ../../../headers/unistd.rst:401
+msgid "_POSIX_SUBPROFILE"
+msgstr ""
+
+#: ../../../headers/unistd.rst:405
+msgid "_POSIX_SYNCHRONIZED_IO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:409
+msgid "_POSIX_SYNC_IO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:413
+msgid "_POSIX_THREADS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:417
+msgid "_POSIX_THREAD_ATTR_STACKADDR"
+msgstr ""
+
+#: ../../../headers/unistd.rst:421
+msgid "_POSIX_THREAD_ATTR_STACKSIZE"
+msgstr ""
+
+#: ../../../headers/unistd.rst:425
+msgid "_POSIX_THREAD_CPUTIME"
+msgstr ""
+
+#: ../../../headers/unistd.rst:429
+msgid "_POSIX_THREAD_PRIORITY_SCHEDULING"
+msgstr ""
+
+#: ../../../headers/unistd.rst:433
+msgid "_POSIX_THREAD_PRIO_INHERIT"
+msgstr ""
+
+#: ../../../headers/unistd.rst:437
+msgid "_POSIX_THREAD_PRIO_PROTECT"
+msgstr ""
+
+#: ../../../headers/unistd.rst:441
+msgid "_POSIX_THREAD_PROCESS_SHARED"
+msgstr ""
+
+#: ../../../headers/unistd.rst:445
+msgid "_POSIX_THREAD_ROBUST_PRIO_INHERIT"
+msgstr ""
+
+#: ../../../headers/unistd.rst:449
+msgid "_POSIX_THREAD_ROBUST_PRIO_PROTECT"
+msgstr ""
+
+#: ../../../headers/unistd.rst:453
+msgid "_POSIX_THREAD_SAFE_FUNCTIONS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:457
+msgid "_POSIX_THREAD_SPORADIC_SERVER"
+msgstr ""
+
+#: ../../../headers/unistd.rst:461
+msgid "_POSIX_TIMEOUTS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:465
+msgid "_POSIX_TIMERS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:469
+msgid "_POSIX_TIMESTAMP_RESOLUTION"
+msgstr ""
+
+#: ../../../headers/unistd.rst:473
+msgid "_POSIX_TYPED_MEMORY_OBJECTS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:477
+msgid "_POSIX_V7_ILP32_OFF32"
+msgstr ""
+
+#: ../../../headers/unistd.rst:481
+msgid "_POSIX_V7_ILP32_OFFBIG"
+msgstr ""
+
+#: ../../../headers/unistd.rst:485
+msgid "_POSIX_V7_LP64_OFF64"
+msgstr ""
+
+#: ../../../headers/unistd.rst:489
+msgid "_POSIX_V7_LPBIG_OFFBIG"
+msgstr ""
+
+#: ../../../headers/unistd.rst:493
+msgid "_POSIX_V8_ILP32_OFF32"
+msgstr ""
+
+#: ../../../headers/unistd.rst:497
+msgid "_POSIX_V8_ILP32_OFFBIG"
+msgstr ""
+
+#: ../../../headers/unistd.rst:501
+msgid "_POSIX_V8_LP64_OFF64"
+msgstr ""
+
+#: ../../../headers/unistd.rst:505
+msgid "_POSIX_V8_LPBIG_OFFBIG"
+msgstr ""
+
+#: ../../../headers/unistd.rst:509
+msgid "_POSIX_VDISABLE"
+msgstr ""
+
+#: ../../../headers/unistd.rst:513
+msgid "_POSIX_VERSION"
+msgstr ""
+
+#: ../../../headers/unistd.rst:517
+msgid "_SC_2_CHAR_TERM"
+msgstr ""
+
+#: ../../../headers/unistd.rst:521
+msgid "_SC_2_C_BIND"
+msgstr ""
+
+#: ../../../headers/unistd.rst:525
+msgid "_SC_2_C_DEV"
+msgstr ""
+
+#: ../../../headers/unistd.rst:529
+msgid "_SC_2_FORT_RUN"
+msgstr ""
+
+#: ../../../headers/unistd.rst:533
+msgid "_SC_2_LOCALEDEF"
+msgstr ""
+
+#: ../../../headers/unistd.rst:537
+msgid "_SC_2_SW_DEV"
+msgstr ""
+
+#: ../../../headers/unistd.rst:541
+msgid "_SC_2_UPE"
+msgstr ""
+
+#: ../../../headers/unistd.rst:545
+msgid "_SC_2_VERSION"
+msgstr ""
+
+#: ../../../headers/unistd.rst:549
+msgid "_SC_ADVISORY_INFO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:553
+msgid "_SC_AIO_LISTIO_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:557
+msgid "_SC_AIO_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:561
+msgid "_SC_AIO_PRIO_DELTA_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:565
+msgid "_SC_ARG_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:569
+msgid "_SC_ASYNCHRONOUS_IO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:573
+msgid "_SC_ATEXIT_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:577
+msgid "_SC_BARRIERS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:581
+msgid "_SC_BC_BASE_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:585
+msgid "_SC_BC_DIM_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:589
+msgid "_SC_BC_SCALE_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:593
+msgid "_SC_BC_STRING_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:597
+msgid "_SC_CHILD_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:601
+msgid "_SC_CLK_TCK"
+msgstr ""
+
+#: ../../../headers/unistd.rst:605
+msgid "_SC_CLOCK_SELECTION"
+msgstr ""
+
+#: ../../../headers/unistd.rst:609
+msgid "_SC_COLL_WEIGHTS_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:613
+msgid "_SC_CPUTIME"
+msgstr ""
+
+#: ../../../headers/unistd.rst:617
+msgid "_SC_DELAYTIMER_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:621
+msgid "_SC_DEVICE_CONTROL"
+msgstr ""
+
+#: ../../../headers/unistd.rst:625
+msgid "_SC_EXPR_NEST_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:629
+msgid "_SC_FSYNC"
+msgstr ""
+
+#: ../../../headers/unistd.rst:633
+msgid "_SC_GETGR_R_SIZE_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:637
+msgid "_SC_GETPW_R_SIZE_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:641
+msgid "_SC_HOST_NAME_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:645
+msgid "_SC_IOV_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:649
+msgid "_SC_IPV6"
+msgstr ""
+
+#: ../../../headers/unistd.rst:653
+msgid "_SC_JOB_CONTROL"
+msgstr ""
+
+#: ../../../headers/unistd.rst:657
+msgid "_SC_LINE_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:661
+msgid "_SC_LOGIN_NAME_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:665
+msgid "_SC_MAPPED_FILES"
+msgstr ""
+
+#: ../../../headers/unistd.rst:669
+msgid "_SC_MEMLOCK"
+msgstr ""
+
+#: ../../../headers/unistd.rst:673
+msgid "_SC_MEMLOCK_RANGE"
+msgstr ""
+
+#: ../../../headers/unistd.rst:677
+msgid "_SC_MEMORY_PROTECTION"
+msgstr ""
+
+#: ../../../headers/unistd.rst:681
+msgid "_SC_MESSAGE_PASSING"
+msgstr ""
+
+#: ../../../headers/unistd.rst:685
+msgid "_SC_MONOTONIC_CLOCK"
+msgstr ""
+
+#: ../../../headers/unistd.rst:689
+msgid "_SC_MQ_OPEN_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:693
+msgid "_SC_MQ_PRIO_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:697
+msgid "_SC_NGROUPS_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:701
+msgid "_SC_NPROCESSORS_CONF"
+msgstr ""
+
+#: ../../../headers/unistd.rst:705
+msgid "_SC_NPROCESSORS_ONLN"
+msgstr ""
+
+#: ../../../headers/unistd.rst:709
+msgid "_SC_NSIG"
+msgstr ""
+
+#: ../../../headers/unistd.rst:713
+msgid "_SC_OPEN_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:717
+msgid "_SC_PAGESIZE"
+msgstr ""
+
+#: ../../../headers/unistd.rst:721
+msgid "_SC_PAGE_SIZE"
+msgstr ""
+
+#: ../../../headers/unistd.rst:725
+msgid "_SC_PRIORITIZED_IO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:729
+msgid "_SC_PRIORITY_SCHEDULING"
+msgstr ""
+
+#: ../../../headers/unistd.rst:733
+msgid "_SC_RAW_SOCKETS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:737
+msgid "_SC_READER_WRITER_LOCKS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:741
+msgid "_SC_REALTIME_SIGNALS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:745
+msgid "_SC_REGEXP"
+msgstr ""
+
+#: ../../../headers/unistd.rst:749
+msgid "_SC_RE_DUP_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:753
+msgid "_SC_RTSIG_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:757
+msgid "_SC_SAVED_IDS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:761
+msgid "_SC_SEMAPHORES"
+msgstr ""
+
+#: ../../../headers/unistd.rst:765
+msgid "_SC_SEM_NSEMS_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:769
+msgid "_SC_SEM_VALUE_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:773
+msgid "_SC_SHARED_MEMORY_OBJECTS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:777
+msgid "_SC_SHELL"
+msgstr ""
+
+#: ../../../headers/unistd.rst:781
+msgid "_SC_SIGQUEUE_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:785
+msgid "_SC_SPAWN"
+msgstr ""
+
+#: ../../../headers/unistd.rst:789
+msgid "_SC_SPIN_LOCKS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:793
+msgid "_SC_SPORADIC_SERVER"
+msgstr ""
+
+#: ../../../headers/unistd.rst:797
+msgid "_SC_SS_REPL_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:801
+msgid "_SC_STREAM_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:805
+msgid "_SC_SYMLOOP_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:809
+msgid "_SC_SYNCHRONIZED_IO"
+msgstr ""
+
+#: ../../../headers/unistd.rst:813
+msgid "_SC_THREADS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:817
+msgid "_SC_THREAD_ATTR_STACKADDR"
+msgstr ""
+
+#: ../../../headers/unistd.rst:821
+msgid "_SC_THREAD_ATTR_STACKSIZE"
+msgstr ""
+
+#: ../../../headers/unistd.rst:825
+msgid "_SC_THREAD_CPUTIME"
+msgstr ""
+
+#: ../../../headers/unistd.rst:829
+msgid "_SC_THREAD_DESTRUCTOR_ITERATIONS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:833
+msgid "_SC_THREAD_KEYS_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:837
+msgid "_SC_THREAD_PRIORITY_SCHEDULING"
+msgstr ""
+
+#: ../../../headers/unistd.rst:841
+msgid "_SC_THREAD_PRIO_INHERIT"
+msgstr ""
+
+#: ../../../headers/unistd.rst:845
+msgid "_SC_THREAD_PRIO_PROTECT"
+msgstr ""
+
+#: ../../../headers/unistd.rst:849
+msgid "_SC_THREAD_PROCESS_SHARED"
+msgstr ""
+
+#: ../../../headers/unistd.rst:853
+msgid "_SC_THREAD_ROBUST_PRIO_INHERIT"
+msgstr ""
+
+#: ../../../headers/unistd.rst:857
+msgid "_SC_THREAD_ROBUST_PRIO_PROTECT"
+msgstr ""
+
+#: ../../../headers/unistd.rst:861
+msgid "_SC_THREAD_SAFE_FUNCTIONS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:865
+msgid "_SC_THREAD_SPORADIC_SERVER"
+msgstr ""
+
+#: ../../../headers/unistd.rst:869
+msgid "_SC_THREAD_STACK_MIN"
+msgstr ""
+
+#: ../../../headers/unistd.rst:873
+msgid "_SC_THREAD_THREADS_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:877
+msgid "_SC_TIMEOUTS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:881
+msgid "_SC_TIMERS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:885
+msgid "_SC_TIMER_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:889
+msgid "_SC_TTY_NAME_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:893
+msgid "_SC_TYPED_MEMORY_OBJECTS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:897
+msgid "_SC_TZNAME_MAX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:901
+msgid "_SC_V7_ILP32_OFF32"
+msgstr ""
+
+#: ../../../headers/unistd.rst:905
+msgid "_SC_V7_ILP32_OFFBIG"
+msgstr ""
+
+#: ../../../headers/unistd.rst:909
+msgid "_SC_V7_LP64_OFF64"
+msgstr ""
+
+#: ../../../headers/unistd.rst:913
+msgid "_SC_V7_LPBIG_OFFBIG"
+msgstr ""
+
+#: ../../../headers/unistd.rst:917
+msgid "_SC_V8_ILP32_OFF32"
+msgstr ""
+
+#: ../../../headers/unistd.rst:921
+msgid "_SC_V8_ILP32_OFFBIG"
+msgstr ""
+
+#: ../../../headers/unistd.rst:925
+msgid "_SC_V8_LP64_OFF64"
+msgstr ""
+
+#: ../../../headers/unistd.rst:929
+msgid "_SC_V8_LPBIG_OFFBIG"
+msgstr ""
+
+#: ../../../headers/unistd.rst:933
+msgid "_SC_VERSION"
+msgstr ""
+
+#: ../../../headers/unistd.rst:937
+msgid "_SC_XOPEN_CRYPT"
+msgstr ""
+
+#: ../../../headers/unistd.rst:941
+msgid "_SC_XOPEN_ENH_I18N"
+msgstr ""
+
+#: ../../../headers/unistd.rst:945
+msgid "_SC_XOPEN_REALTIME"
+msgstr ""
+
+#: ../../../headers/unistd.rst:949
+msgid "_SC_XOPEN_REALTIME_THREADS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:953
+msgid "_SC_XOPEN_SHM"
+msgstr ""
+
+#: ../../../headers/unistd.rst:957
+msgid "_SC_XOPEN_UNIX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:961
+msgid "_SC_XOPEN_UUCP"
+msgstr ""
+
+#: ../../../headers/unistd.rst:965
+msgid "_SC_XOPEN_VERSION"
+msgstr ""
+
+#: ../../../headers/unistd.rst:969
+msgid "_XOPEN_CRYPT"
+msgstr ""
+
+#: ../../../headers/unistd.rst:973
+msgid "_XOPEN_ENH_I18N"
+msgstr ""
+
+#: ../../../headers/unistd.rst:977
+msgid "_XOPEN_REALTIME"
+msgstr ""
+
+#: ../../../headers/unistd.rst:981
+msgid "_XOPEN_REALTIME_THREADS"
+msgstr ""
+
+#: ../../../headers/unistd.rst:985
+msgid "_XOPEN_SHM"
+msgstr ""
+
+#: ../../../headers/unistd.rst:989
+msgid "_XOPEN_UNIX"
+msgstr ""
+
+#: ../../../headers/unistd.rst:993
+msgid "_XOPEN_UUCP"
+msgstr ""
+
+#: ../../../headers/unistd.rst:997
+msgid "_XOPEN_VERSION"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1003
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1010
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1014
+msgid "_Fork"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1017
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"_Fork.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1018
+msgid "_exit"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1021
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"_exit.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1022
+msgid "access"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1025
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"access.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1026
+msgid "alarm"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1029
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"alarm.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1030
+msgid "chdir"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1033
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"chdir.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1034
+msgid "chown"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1037
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"chown.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1038
+msgid "chroot"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1041
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"chroot.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1042
+msgid "close"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1045
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"close.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1046
+msgid "confstr"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1049
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"confstr.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1050
+msgid "crypt"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1053
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"crypt.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1054
+msgid "dup"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1057
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"dup.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1058
+msgid "dup2"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1061
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"dup2.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1062
+msgid "dup3"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1065
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"dup3.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1066
+msgid "encrypt"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1069
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"encrypt.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1070
+msgid "execl"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1073
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"execl.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1074
+msgid "execle"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1077
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"execle.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1078
+msgid "execlp"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1081
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"execlp.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1082
+msgid "execv"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1085
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"execv.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1086
+msgid "execve"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1089
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"execve.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1090
+msgid "execvp"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1093
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"execvp.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1094
+msgid "faccessat"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1097
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"faccessat.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1098
+msgid "fchdir"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1101
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fchdir.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1102
+msgid "fchown"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1105
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fchown.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1106
+msgid "fchownat"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1109
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fchownat.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1110
+msgid "fdatasync"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1113
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fdatasync.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1114
+msgid "fexecve"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1117
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fexecve.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1118
+msgid "fork"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1121
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fork.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1122
+msgid "fpathconf"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1125
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fpathconf.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1126
+msgid "fsync"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1129
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fsync.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1130
+msgid "ftruncate"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1133
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ftruncate.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1134
+msgid "getcwd"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1137
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getcwd.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1138
+msgid "getegid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1141
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getegid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1142
+msgid "getentropy"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1145
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getentropy.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1146
+msgid "geteuid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1149
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"geteuid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1150
+msgid "getgid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1153
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getgid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1154
+msgid "getgroups"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1157
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getgroups.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1158
+msgid "gethostid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1161
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"gethostid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1162
+msgid "gethostname"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1165
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"gethostname.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1166
+msgid "getlogin"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1169
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getlogin.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1170
+msgid "getlogin_r"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1173
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getlogin_r.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1174
+msgid "getopt"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1177
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getopt.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1178
+msgid "getpagesize"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1181
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getpagesize.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1182
+msgid "getpgid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1185
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getpgid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1186
+msgid "getpgrp"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1189
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getpgrp.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1190
+msgid "getpid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1193
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getpid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1194
+msgid "getppid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1197
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getppid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1198
+msgid "getresgid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1201
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getresgid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1202
+msgid "getresuid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1205
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getresuid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1206
+msgid "getsid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1209
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getsid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1210
+msgid "getuid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1213
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getuid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1214
+msgid "isatty"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1217
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"isatty.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1218
+msgid "lchown"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1221
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"lchown.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1222
+msgid "link"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1225
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"link.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1226
+msgid "linkat"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1229
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"linkat.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1230
+msgid "lockf"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1233
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"lockf.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1234
+msgid "lseek"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1237
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"lseek.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1238
+msgid "nice"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1241
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"nice.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1242
+msgid "pathconf"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1245
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pathconf.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1246
+msgid "pause"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1249
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pause.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1250
+msgid "pipe"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1253
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pipe.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1254
+msgid "pipe2"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1257
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pipe2.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1258
+msgid "posix_close"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1261
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_close.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1262
+msgid "pread"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1265
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pread.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1266
+msgid "pwrite"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1269
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pwrite.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1270
+msgid "read"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1273
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"read.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1274
+msgid "readlink"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1277
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"readlink.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1278
+msgid "readlinkat"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1281
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"readlinkat.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1282
+msgid "rmdir"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1285
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"rmdir.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1286
+msgid "setegid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1289
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setegid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1290
+msgid "seteuid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1293
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"seteuid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1294
+msgid "setgid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1297
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setgid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1298
+msgid "setpgid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1301
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setpgid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1302
+msgid "setregid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1305
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setregid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1306
+msgid "setresgid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1309
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setresgid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1310
+msgid "setresuid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1313
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setresuid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1314
+msgid "setreuid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1317
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setreuid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1318
+msgid "setsid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1321
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setsid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1322
+msgid "setuid"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1325
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setuid.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1326
+msgid "sleep"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1329
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sleep.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1330
+msgid "swab"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1333
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"swab.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1334
+msgid "symlink"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1337
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"symlink.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1338
+msgid "symlinkat"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1341
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"symlinkat.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1342
+msgid "sync"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1345
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sync.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1346
+msgid "sysconf"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1349
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sysconf.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1350
+msgid "tcgetpgrp"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1353
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tcgetpgrp.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1354
+msgid "tcsetpgrp"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1357
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tcsetpgrp.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1358
+msgid "truncate"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1361
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"truncate.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1362
+msgid "ttyname"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1365
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ttyname.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1366
+msgid "ttyname_r"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1369
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ttyname_r.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1370
+msgid "unlink"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1373
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"unlink.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1374
+msgid "unlinkat"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1377
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"unlinkat.html>`__"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1378
+msgid "write"
+msgstr ""
+
+#: ../../../headers/unistd.rst:1381
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"write.html>`__"
+msgstr ""

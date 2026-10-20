@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/strings.rst:3
+msgid "strings.h"
+msgstr "strings.h"
+
+#: ../../../headers/strings.rst:6
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/strings.rst:13
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/strings.rst:14
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/strings.rst:15
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/strings.rst:16
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/strings.rst:17
+msgid "bcmp"
+msgstr ""
+
+#: ../../../headers/strings.rst:18 ../../../headers/strings.rst:22
+#: ../../../headers/strings.rst:26 ../../../headers/strings.rst:30
+#: ../../../headers/strings.rst:34 ../../../headers/strings.rst:38
+#: ../../../headers/strings.rst:42 ../../../headers/strings.rst:46
+#: ../../../headers/strings.rst:50 ../../../headers/strings.rst:54
+#: ../../../headers/strings.rst:58 ../../../headers/strings.rst:62
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/strings.rst:20
+msgid ""
+"`removed in POSIX.1-2008 <https://pubs.opengroup.org/onlinepubs/007904875/"
+"functions/bcmp.html>`__"
+msgstr ""
+
+#: ../../../headers/strings.rst:21
+msgid "bcopy"
+msgstr ""
+
+#: ../../../headers/strings.rst:24
+msgid ""
+"`removed in POSIX.1-2008 <https://pubs.opengroup.org/onlinepubs/007904875/"
+"functions/bcopy.html>`__"
+msgstr ""
+
+#: ../../../headers/strings.rst:25
+msgid "bzero"
+msgstr ""
+
+#: ../../../headers/strings.rst:28
+msgid ""
+"`removed in POSIX.1-2008 <https://pubs.opengroup.org/onlinepubs/007904875/"
+"functions/bzero.html>`__"
+msgstr ""
+
+#: ../../../headers/strings.rst:29
+msgid "ffs"
+msgstr ""
+
+#: ../../../headers/strings.rst:32
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ffs.html>`__"
+msgstr ""
+
+#: ../../../headers/strings.rst:33
+msgid "ffsl"
+msgstr ""
+
+#: ../../../headers/strings.rst:36
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ffsl.html>`__"
+msgstr ""
+
+#: ../../../headers/strings.rst:37
+msgid "ffsll"
+msgstr ""
+
+#: ../../../headers/strings.rst:40
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ffsll.html>`__"
+msgstr ""
+
+#: ../../../headers/strings.rst:41
+msgid "index"
+msgstr "index"
+
+#: ../../../headers/strings.rst:44
+msgid ""
+"`removed in POSIX.1-2008 <https://pubs.opengroup.org/onlinepubs/007904875/"
+"functions/index.html>`__"
+msgstr ""
+
+#: ../../../headers/strings.rst:45
+msgid "rindex"
+msgstr "rindex"
+
+#: ../../../headers/strings.rst:48
+msgid ""
+"`removed in POSIX.1-2008 <https://pubs.opengroup.org/onlinepubs/007904875/"
+"functions/rindex.html>`__"
+msgstr ""
+
+#: ../../../headers/strings.rst:49
+msgid "strcasecmp"
+msgstr "strcasecmp"
+
+#: ../../../headers/strings.rst:52
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strcasecmp.html>`__"
+msgstr ""
+
+#: ../../../headers/strings.rst:53
+msgid "strcasecmp_l"
+msgstr ""
+
+#: ../../../headers/strings.rst:56
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strcasecmp_l.html>`__"
+msgstr ""
+
+#: ../../../headers/strings.rst:57
+msgid "strncasecmp"
+msgstr ""
+
+#: ../../../headers/strings.rst:60
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strncasecmp.html>`__"
+msgstr ""
+
+#: ../../../headers/strings.rst:61
+msgid "strncasecmp_l"
+msgstr ""
+
+#: ../../../headers/strings.rst:64
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strncasecmp_l.html>`__"
+msgstr ""

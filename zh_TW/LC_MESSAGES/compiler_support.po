@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../compiler_support.md:3
+msgid "Compiler Support"
+msgstr ""
+
+#: ../../../compiler_support.md:5
+msgid ""
+"`LLVM libc` compiles from both `Clang` and `GCC` but for maximum performance "
+"we recommend using `Clang`."
+msgstr ""
+
+#: ../../../compiler_support.md:8
+msgid ""
+"Indeed, some memory function implementations rely on [compiler intrinsics]"
+"(https://clang.llvm.org/docs/LanguageExtensions.html#guaranteed-inlined-"
+"copy) that are not currently available in `GCC`. As such we cannot guarantee "
+"optimal performance for these functions."
+msgstr ""
+
+#: ../../../compiler_support.md:12
+msgid ""
+"For platforms where only `GCC` is natively available but maximum performance "
+"is required it is possible to bootstrap `Clang` with `GCC` and then use "
+"`Clang` to build the `libc` project."
+msgstr ""
+
+#: ../../../compiler_support.md:16
+msgid "Minimum supported versions"
+msgstr "最低支援版本"
+
+#: ../../../compiler_support.md:18
+msgid "`Clang 11`"
+msgstr "`Clang 11`"
+
+#: ../../../compiler_support.md:19
+msgid "`GCC 12.2`"
+msgstr "`GCC 12.2`"

@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/endian.rst:3
+msgid "endian.h"
+msgstr ""
+
+#: ../../../headers/endian.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/endian.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/endian.rst:14
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/endian.rst:15
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/endian.rst:16
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/endian.rst:17
+msgid "BIG_ENDIAN"
+msgstr ""
+
+#: ../../../headers/endian.rst:18 ../../../headers/endian.rst:22
+#: ../../../headers/endian.rst:26 ../../../headers/endian.rst:30
+#: ../../../headers/endian.rst:34 ../../../headers/endian.rst:38
+#: ../../../headers/endian.rst:42 ../../../headers/endian.rst:46
+#: ../../../headers/endian.rst:50 ../../../headers/endian.rst:54
+#: ../../../headers/endian.rst:58 ../../../headers/endian.rst:62
+#: ../../../headers/endian.rst:66 ../../../headers/endian.rst:70
+#: ../../../headers/endian.rst:74
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/endian.rst:20 ../../../headers/endian.rst:24
+#: ../../../headers/endian.rst:28 ../../../headers/endian.rst:32
+#: ../../../headers/endian.rst:36 ../../../headers/endian.rst:40
+#: ../../../headers/endian.rst:44 ../../../headers/endian.rst:48
+#: ../../../headers/endian.rst:52 ../../../headers/endian.rst:56
+#: ../../../headers/endian.rst:60 ../../../headers/endian.rst:64
+#: ../../../headers/endian.rst:68 ../../../headers/endian.rst:72
+#: ../../../headers/endian.rst:76
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"endian.h.html>`__"
+msgstr ""
+
+#: ../../../headers/endian.rst:21
+msgid "BYTE_ORDER"
+msgstr ""
+
+#: ../../../headers/endian.rst:25
+msgid "LITTLE_ENDIAN"
+msgstr ""
+
+#: ../../../headers/endian.rst:29
+msgid "be16toh"
+msgstr ""
+
+#: ../../../headers/endian.rst:33
+msgid "be32toh"
+msgstr ""
+
+#: ../../../headers/endian.rst:37
+msgid "be64toh"
+msgstr ""
+
+#: ../../../headers/endian.rst:41
+msgid "htobe16"
+msgstr ""
+
+#: ../../../headers/endian.rst:45
+msgid "htobe32"
+msgstr ""
+
+#: ../../../headers/endian.rst:49
+msgid "htobe64"
+msgstr ""
+
+#: ../../../headers/endian.rst:53
+msgid "htole16"
+msgstr ""
+
+#: ../../../headers/endian.rst:57
+msgid "htole32"
+msgstr ""
+
+#: ../../../headers/endian.rst:61
+msgid "htole64"
+msgstr ""
+
+#: ../../../headers/endian.rst:65
+msgid "le16toh"
+msgstr ""
+
+#: ../../../headers/endian.rst:69
+msgid "le32toh"
+msgstr ""
+
+#: ../../../headers/endian.rst:73
+msgid "le64toh"
+msgstr ""

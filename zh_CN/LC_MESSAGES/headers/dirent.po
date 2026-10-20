@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/dirent.rst:3
+msgid "dirent.h"
+msgstr ""
+
+#: ../../../headers/dirent.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/dirent.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/dirent.rst:14 ../../../headers/dirent.rst:75
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/dirent.rst:15 ../../../headers/dirent.rst:76
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/dirent.rst:16 ../../../headers/dirent.rst:77
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/dirent.rst:17
+msgid "DT_BLK"
+msgstr ""
+
+#: ../../../headers/dirent.rst:18 ../../../headers/dirent.rst:22
+#: ../../../headers/dirent.rst:26 ../../../headers/dirent.rst:30
+#: ../../../headers/dirent.rst:34 ../../../headers/dirent.rst:42
+#: ../../../headers/dirent.rst:54 ../../../headers/dirent.rst:62
+#: ../../../headers/dirent.rst:79 ../../../headers/dirent.rst:83
+#: ../../../headers/dirent.rst:87 ../../../headers/dirent.rst:91
+#: ../../../headers/dirent.rst:95 ../../../headers/dirent.rst:103
+#: ../../../headers/dirent.rst:115
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/dirent.rst:20 ../../../headers/dirent.rst:24
+#: ../../../headers/dirent.rst:28 ../../../headers/dirent.rst:32
+#: ../../../headers/dirent.rst:36 ../../../headers/dirent.rst:40
+#: ../../../headers/dirent.rst:44 ../../../headers/dirent.rst:48
+#: ../../../headers/dirent.rst:52 ../../../headers/dirent.rst:56
+#: ../../../headers/dirent.rst:60 ../../../headers/dirent.rst:64
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html>`__"
+msgstr ""
+
+#: ../../../headers/dirent.rst:21
+msgid "DT_CHR"
+msgstr ""
+
+#: ../../../headers/dirent.rst:25
+msgid "DT_DIR"
+msgstr ""
+
+#: ../../../headers/dirent.rst:29
+msgid "DT_FIFO"
+msgstr ""
+
+#: ../../../headers/dirent.rst:33
+msgid "DT_LNK"
+msgstr ""
+
+#: ../../../headers/dirent.rst:37
+msgid "DT_MQ"
+msgstr ""
+
+#: ../../../headers/dirent.rst:41
+msgid "DT_REG"
+msgstr ""
+
+#: ../../../headers/dirent.rst:45
+msgid "DT_SEM"
+msgstr ""
+
+#: ../../../headers/dirent.rst:49
+msgid "DT_SHM"
+msgstr ""
+
+#: ../../../headers/dirent.rst:53
+msgid "DT_SOCK"
+msgstr ""
+
+#: ../../../headers/dirent.rst:57
+msgid "DT_TMO"
+msgstr ""
+
+#: ../../../headers/dirent.rst:61
+msgid "DT_UNKNOWN"
+msgstr ""
+
+#: ../../../headers/dirent.rst:67
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/dirent.rst:74
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/dirent.rst:78
+msgid "alphasort"
+msgstr ""
+
+#: ../../../headers/dirent.rst:81
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"alphasort.html>`__"
+msgstr ""
+
+#: ../../../headers/dirent.rst:82
+msgid "closedir"
+msgstr ""
+
+#: ../../../headers/dirent.rst:85
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"closedir.html>`__"
+msgstr ""
+
+#: ../../../headers/dirent.rst:86
+msgid "dirfd"
+msgstr ""
+
+#: ../../../headers/dirent.rst:89
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"dirfd.html>`__"
+msgstr ""
+
+#: ../../../headers/dirent.rst:90
+msgid "fdopendir"
+msgstr ""
+
+#: ../../../headers/dirent.rst:93
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fdopendir.html>`__"
+msgstr ""
+
+#: ../../../headers/dirent.rst:94
+msgid "opendir"
+msgstr ""
+
+#: ../../../headers/dirent.rst:97
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"opendir.html>`__"
+msgstr ""
+
+#: ../../../headers/dirent.rst:98
+msgid "posix_getdents"
+msgstr ""
+
+#: ../../../headers/dirent.rst:101
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_getdents.html>`__"
+msgstr ""
+
+#: ../../../headers/dirent.rst:102
+msgid "readdir"
+msgstr ""
+
+#: ../../../headers/dirent.rst:105
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"readdir.html>`__"
+msgstr ""
+
+#: ../../../headers/dirent.rst:106
+msgid "readdir_r"
+msgstr ""
+
+#: ../../../headers/dirent.rst:109
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"readdir_r.html>`__"
+msgstr ""
+
+#: ../../../headers/dirent.rst:110
+msgid "rewinddir"
+msgstr ""
+
+#: ../../../headers/dirent.rst:113
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"rewinddir.html>`__"
+msgstr ""
+
+#: ../../../headers/dirent.rst:114
+msgid "scandir"
+msgstr ""
+
+#: ../../../headers/dirent.rst:117
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"scandir.html>`__"
+msgstr ""
+
+#: ../../../headers/dirent.rst:118
+msgid "seekdir"
+msgstr ""
+
+#: ../../../headers/dirent.rst:121
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"seekdir.html>`__"
+msgstr ""
+
+#: ../../../headers/dirent.rst:122
+msgid "telldir"
+msgstr ""
+
+#: ../../../headers/dirent.rst:125
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"telldir.html>`__"
+msgstr ""

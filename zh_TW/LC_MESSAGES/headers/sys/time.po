@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/sys/time.rst:3
+msgid "sys/time.h"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:6
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:13
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:14
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:15
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:16
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:17
+msgid "getitimer"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:18 ../../../headers/sys/time.rst:22
+#: ../../../headers/sys/time.rst:30 ../../../headers/sys/time.rst:34
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:20
+msgid ""
+"`removed in POSIX.1-2024 <https://pubs.opengroup.org/"
+"onlinepubs/9699919799.2018edition/functions/getitimer.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:21
+msgid "gettimeofday"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:24
+msgid ""
+"`removed in POSIX.1-2024 <https://pubs.opengroup.org/"
+"onlinepubs/9699919799.2018edition/functions/gettimeofday.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:25
+msgid "select"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:28
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"select.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:29
+msgid "setitimer"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:32
+msgid ""
+"`removed in POSIX.1-2024 <https://pubs.opengroup.org/"
+"onlinepubs/9699919799.2018edition/functions/setitimer.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:33
+msgid "utimes"
+msgstr ""
+
+#: ../../../headers/sys/time.rst:36
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"utimes.html>`__"
+msgstr ""

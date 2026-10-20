@@ -1,0 +1,585 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/wchar.rst:3
+msgid "wchar.h"
+msgstr ""
+
+#: ../../../headers/wchar.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/wchar.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/wchar.rst:14 ../../../headers/wchar.rst:35
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/wchar.rst:15 ../../../headers/wchar.rst:36
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/wchar.rst:16 ../../../headers/wchar.rst:37
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/wchar.rst:17
+msgid "WEOF"
+msgstr ""
+
+#: ../../../headers/wchar.rst:18 ../../../headers/wchar.rst:39
+#: ../../../headers/wchar.rst:43 ../../../headers/wchar.rst:47
+#: ../../../headers/wchar.rst:51 ../../../headers/wchar.rst:55
+#: ../../../headers/wchar.rst:59 ../../../headers/wchar.rst:71
+#: ../../../headers/wchar.rst:75 ../../../headers/wchar.rst:79
+#: ../../../headers/wchar.rst:83 ../../../headers/wchar.rst:87
+#: ../../../headers/wchar.rst:91 ../../../headers/wchar.rst:95
+#: ../../../headers/wchar.rst:99 ../../../headers/wchar.rst:103
+#: ../../../headers/wchar.rst:111 ../../../headers/wchar.rst:139
+#: ../../../headers/wchar.rst:143 ../../../headers/wchar.rst:147
+#: ../../../headers/wchar.rst:151 ../../../headers/wchar.rst:155
+#: ../../../headers/wchar.rst:159 ../../../headers/wchar.rst:163
+#: ../../../headers/wchar.rst:167 ../../../headers/wchar.rst:175
+#: ../../../headers/wchar.rst:179 ../../../headers/wchar.rst:183
+#: ../../../headers/wchar.rst:187 ../../../headers/wchar.rst:191
+#: ../../../headers/wchar.rst:195 ../../../headers/wchar.rst:199
+#: ../../../headers/wchar.rst:203 ../../../headers/wchar.rst:207
+#: ../../../headers/wchar.rst:211 ../../../headers/wchar.rst:215
+#: ../../../headers/wchar.rst:231 ../../../headers/wchar.rst:235
+#: ../../../headers/wchar.rst:239 ../../../headers/wchar.rst:243
+#: ../../../headers/wchar.rst:247 ../../../headers/wchar.rst:251
+#: ../../../headers/wchar.rst:255 ../../../headers/wchar.rst:259
+#: ../../../headers/wchar.rst:263 ../../../headers/wchar.rst:267
+#: ../../../headers/wchar.rst:271 ../../../headers/wchar.rst:275
+#: ../../../headers/wchar.rst:279 ../../../headers/wchar.rst:283
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/wchar.rst:19 ../../../headers/wchar.rst:23
+msgid "7.31.1"
+msgstr ""
+
+#: ../../../headers/wchar.rst:21
+msgid "__STDC_VERSION_WCHAR_H__"
+msgstr ""
+
+#: ../../../headers/wchar.rst:27
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/wchar.rst:34
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/wchar.rst:38
+msgid "btowc"
+msgstr ""
+
+#: ../../../headers/wchar.rst:40
+msgid "7.31.6.2.1"
+msgstr ""
+
+#: ../../../headers/wchar.rst:42
+msgid "fgetwc"
+msgstr ""
+
+#: ../../../headers/wchar.rst:44
+msgid "7.31.3.1"
+msgstr ""
+
+#: ../../../headers/wchar.rst:46
+msgid "fgetws"
+msgstr ""
+
+#: ../../../headers/wchar.rst:48
+msgid "7.31.3.2"
+msgstr ""
+
+#: ../../../headers/wchar.rst:50
+msgid "fputwc"
+msgstr ""
+
+#: ../../../headers/wchar.rst:52
+msgid "7.31.3.3"
+msgstr ""
+
+#: ../../../headers/wchar.rst:54
+msgid "fputws"
+msgstr ""
+
+#: ../../../headers/wchar.rst:56
+msgid "7.31.3.4"
+msgstr ""
+
+#: ../../../headers/wchar.rst:58
+msgid "fwide"
+msgstr ""
+
+#: ../../../headers/wchar.rst:60
+msgid "7.31.3.5"
+msgstr ""
+
+#: ../../../headers/wchar.rst:62
+msgid "fwprintf"
+msgstr ""
+
+#: ../../../headers/wchar.rst:64
+msgid "7.31.2.2"
+msgstr ""
+
+#: ../../../headers/wchar.rst:66
+msgid "fwscanf"
+msgstr ""
+
+#: ../../../headers/wchar.rst:68
+msgid "7.31.2.3"
+msgstr ""
+
+#: ../../../headers/wchar.rst:70
+msgid "getwc"
+msgstr ""
+
+#: ../../../headers/wchar.rst:72
+msgid "7.31.3.6"
+msgstr ""
+
+#: ../../../headers/wchar.rst:74
+msgid "getwchar"
+msgstr ""
+
+#: ../../../headers/wchar.rst:76
+msgid "7.31.3.7"
+msgstr ""
+
+#: ../../../headers/wchar.rst:78
+msgid "mbrlen"
+msgstr ""
+
+#: ../../../headers/wchar.rst:80
+msgid "7.31.6.4.2"
+msgstr ""
+
+#: ../../../headers/wchar.rst:82
+msgid "mbrtowc"
+msgstr ""
+
+#: ../../../headers/wchar.rst:84
+msgid "7.31.6.4.3"
+msgstr ""
+
+#: ../../../headers/wchar.rst:86
+msgid "mbsinit"
+msgstr ""
+
+#: ../../../headers/wchar.rst:88
+msgid "7.31.6.3.1"
+msgstr ""
+
+#: ../../../headers/wchar.rst:90
+msgid "mbsrtowcs"
+msgstr ""
+
+#: ../../../headers/wchar.rst:92
+msgid "7.31.6.5.2"
+msgstr ""
+
+#: ../../../headers/wchar.rst:94
+msgid "putwc"
+msgstr ""
+
+#: ../../../headers/wchar.rst:96
+msgid "7.31.3.8"
+msgstr ""
+
+#: ../../../headers/wchar.rst:98
+msgid "putwchar"
+msgstr ""
+
+#: ../../../headers/wchar.rst:100
+msgid "7.31.3.9"
+msgstr ""
+
+#: ../../../headers/wchar.rst:102
+msgid "swprintf"
+msgstr ""
+
+#: ../../../headers/wchar.rst:104
+msgid "7.31.2.4"
+msgstr ""
+
+#: ../../../headers/wchar.rst:106
+msgid "swscanf"
+msgstr ""
+
+#: ../../../headers/wchar.rst:108
+msgid "7.31.2.5"
+msgstr ""
+
+#: ../../../headers/wchar.rst:110
+msgid "ungetwc"
+msgstr ""
+
+#: ../../../headers/wchar.rst:112
+msgid "7.31.3.10"
+msgstr ""
+
+#: ../../../headers/wchar.rst:114
+msgid "vfwprintf"
+msgstr ""
+
+#: ../../../headers/wchar.rst:116
+msgid "7.31.2.6"
+msgstr ""
+
+#: ../../../headers/wchar.rst:118
+msgid "vfwscanf"
+msgstr ""
+
+#: ../../../headers/wchar.rst:120
+msgid "7.31.2.7"
+msgstr ""
+
+#: ../../../headers/wchar.rst:122
+msgid "vswprintf"
+msgstr ""
+
+#: ../../../headers/wchar.rst:124
+msgid "7.31.2.8"
+msgstr ""
+
+#: ../../../headers/wchar.rst:126
+msgid "vswscanf"
+msgstr ""
+
+#: ../../../headers/wchar.rst:128
+msgid "7.31.2.9"
+msgstr ""
+
+#: ../../../headers/wchar.rst:130
+msgid "vwprintf"
+msgstr ""
+
+#: ../../../headers/wchar.rst:132
+msgid "7.31.2.10"
+msgstr ""
+
+#: ../../../headers/wchar.rst:134
+msgid "vwscanf"
+msgstr ""
+
+#: ../../../headers/wchar.rst:136
+msgid "7.31.2.11"
+msgstr ""
+
+#: ../../../headers/wchar.rst:138
+msgid "wcrtomb"
+msgstr ""
+
+#: ../../../headers/wchar.rst:140
+msgid "7.31.6.4.4"
+msgstr ""
+
+#: ../../../headers/wchar.rst:142
+msgid "wcscasecmp"
+msgstr ""
+
+#: ../../../headers/wchar.rst:145
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"wcscasecmp.html>`__"
+msgstr ""
+
+#: ../../../headers/wchar.rst:146
+msgid "wcscat"
+msgstr ""
+
+#: ../../../headers/wchar.rst:148
+msgid "7.31.4.4.1"
+msgstr ""
+
+#: ../../../headers/wchar.rst:150
+msgid "wcschr"
+msgstr ""
+
+#: ../../../headers/wchar.rst:152
+msgid "7.31.4.6.2"
+msgstr ""
+
+#: ../../../headers/wchar.rst:154
+msgid "wcscmp"
+msgstr ""
+
+#: ../../../headers/wchar.rst:156
+msgid "7.31.4.5.2"
+msgstr ""
+
+#: ../../../headers/wchar.rst:158
+msgid "wcscoll"
+msgstr ""
+
+#: ../../../headers/wchar.rst:160
+msgid "7.31.4.5.3"
+msgstr ""
+
+#: ../../../headers/wchar.rst:162
+msgid "wcscpy"
+msgstr ""
+
+#: ../../../headers/wchar.rst:164
+msgid "7.31.4.3.1"
+msgstr ""
+
+#: ../../../headers/wchar.rst:166
+msgid "wcscspn"
+msgstr ""
+
+#: ../../../headers/wchar.rst:168
+msgid "7.31.4.6.3"
+msgstr ""
+
+#: ../../../headers/wchar.rst:170
+msgid "wcsftime"
+msgstr ""
+
+#: ../../../headers/wchar.rst:172
+msgid "7.31.5.1"
+msgstr ""
+
+#: ../../../headers/wchar.rst:174
+msgid "wcslen"
+msgstr ""
+
+#: ../../../headers/wchar.rst:176
+msgid "7.31.4.7.1"
+msgstr ""
+
+#: ../../../headers/wchar.rst:178
+msgid "wcsncasecmp"
+msgstr ""
+
+#: ../../../headers/wchar.rst:181
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"wcsncasecmp.html>`__"
+msgstr ""
+
+#: ../../../headers/wchar.rst:182
+msgid "wcsncat"
+msgstr ""
+
+#: ../../../headers/wchar.rst:184
+msgid "7.31.4.4.2"
+msgstr ""
+
+#: ../../../headers/wchar.rst:186
+msgid "wcsncmp"
+msgstr ""
+
+#: ../../../headers/wchar.rst:188
+msgid "7.31.4.5.4"
+msgstr ""
+
+#: ../../../headers/wchar.rst:190
+msgid "wcsncpy"
+msgstr ""
+
+#: ../../../headers/wchar.rst:192
+msgid "7.31.4.3.2"
+msgstr ""
+
+#: ../../../headers/wchar.rst:194
+msgid "wcspbrk"
+msgstr ""
+
+#: ../../../headers/wchar.rst:196
+msgid "7.31.4.6.4"
+msgstr ""
+
+#: ../../../headers/wchar.rst:198
+msgid "wcsrchr"
+msgstr ""
+
+#: ../../../headers/wchar.rst:200
+msgid "7.31.4.6.5"
+msgstr ""
+
+#: ../../../headers/wchar.rst:202
+msgid "wcsrtombs"
+msgstr ""
+
+#: ../../../headers/wchar.rst:204
+msgid "7.31.6.5.3"
+msgstr ""
+
+#: ../../../headers/wchar.rst:206
+msgid "wcsspn"
+msgstr ""
+
+#: ../../../headers/wchar.rst:208
+msgid "7.31.4.6.6"
+msgstr ""
+
+#: ../../../headers/wchar.rst:210
+msgid "wcsstr"
+msgstr ""
+
+#: ../../../headers/wchar.rst:212
+msgid "7.31.4.6.7"
+msgstr ""
+
+#: ../../../headers/wchar.rst:214
+msgid "wcstod"
+msgstr ""
+
+#: ../../../headers/wchar.rst:216 ../../../headers/wchar.rst:232
+#: ../../../headers/wchar.rst:244
+msgid "7.31.4.2.2"
+msgstr ""
+
+#: ../../../headers/wchar.rst:218
+msgid "wcstod128"
+msgstr ""
+
+#: ../../../headers/wchar.rst:220 ../../../headers/wchar.rst:224
+#: ../../../headers/wchar.rst:228
+msgid "7.31.4.2.3"
+msgstr ""
+
+#: ../../../headers/wchar.rst:222
+msgid "wcstod32"
+msgstr ""
+
+#: ../../../headers/wchar.rst:226
+msgid "wcstod64"
+msgstr ""
+
+#: ../../../headers/wchar.rst:230
+msgid "wcstof"
+msgstr ""
+
+#: ../../../headers/wchar.rst:234
+msgid "wcstok"
+msgstr ""
+
+#: ../../../headers/wchar.rst:236
+msgid "7.31.4.6.8"
+msgstr ""
+
+#: ../../../headers/wchar.rst:238
+msgid "wcstol"
+msgstr ""
+
+#: ../../../headers/wchar.rst:240 ../../../headers/wchar.rst:248
+#: ../../../headers/wchar.rst:252 ../../../headers/wchar.rst:256
+msgid "7.31.4.2.4"
+msgstr ""
+
+#: ../../../headers/wchar.rst:242
+msgid "wcstold"
+msgstr ""
+
+#: ../../../headers/wchar.rst:246
+msgid "wcstoll"
+msgstr ""
+
+#: ../../../headers/wchar.rst:250
+msgid "wcstoul"
+msgstr ""
+
+#: ../../../headers/wchar.rst:254
+msgid "wcstoull"
+msgstr ""
+
+#: ../../../headers/wchar.rst:258
+msgid "wcsxfrm"
+msgstr ""
+
+#: ../../../headers/wchar.rst:260
+msgid "7.31.4.5.5"
+msgstr ""
+
+#: ../../../headers/wchar.rst:262
+msgid "wctob"
+msgstr ""
+
+#: ../../../headers/wchar.rst:264
+msgid "7.31.6.2.2"
+msgstr ""
+
+#: ../../../headers/wchar.rst:266
+msgid "wmemchr"
+msgstr ""
+
+#: ../../../headers/wchar.rst:268
+msgid "7.31.4.6.9"
+msgstr ""
+
+#: ../../../headers/wchar.rst:270
+msgid "wmemcmp"
+msgstr ""
+
+#: ../../../headers/wchar.rst:272
+msgid "7.31.4.5.6"
+msgstr ""
+
+#: ../../../headers/wchar.rst:274
+msgid "wmemcpy"
+msgstr ""
+
+#: ../../../headers/wchar.rst:276
+msgid "7.31.4.3.3"
+msgstr ""
+
+#: ../../../headers/wchar.rst:278
+msgid "wmemmove"
+msgstr ""
+
+#: ../../../headers/wchar.rst:280
+msgid "7.31.4.3.4"
+msgstr ""
+
+#: ../../../headers/wchar.rst:282
+msgid "wmemset"
+msgstr ""
+
+#: ../../../headers/wchar.rst:284
+msgid "7.31.4.7.2"
+msgstr ""
+
+#: ../../../headers/wchar.rst:286
+msgid "wprintf"
+msgstr ""
+
+#: ../../../headers/wchar.rst:288
+msgid "7.31.2.12"
+msgstr ""
+
+#: ../../../headers/wchar.rst:290
+msgid "wscanf"
+msgstr ""
+
+#: ../../../headers/wchar.rst:292
+msgid "7.31.2.13"
+msgstr ""

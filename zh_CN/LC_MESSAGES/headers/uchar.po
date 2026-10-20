@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/uchar.rst:3
+msgid "uchar.h"
+msgstr ""
+
+#: ../../../headers/uchar.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/uchar.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/uchar.rst:14 ../../../headers/uchar.rst:31
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/uchar.rst:15 ../../../headers/uchar.rst:32
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/uchar.rst:16 ../../../headers/uchar.rst:33
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/uchar.rst:17
+msgid "__STDC_VERSION_UCHAR_H__"
+msgstr ""
+
+#: ../../../headers/uchar.rst:19
+msgid "7.30.1"
+msgstr ""
+
+#: ../../../headers/uchar.rst:23
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/uchar.rst:30
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/uchar.rst:34
+msgid "c16rtomb"
+msgstr ""
+
+#: ../../../headers/uchar.rst:36
+msgid "7.30.2.5"
+msgstr ""
+
+#: ../../../headers/uchar.rst:37
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"c16rtomb.html>`__"
+msgstr ""
+
+#: ../../../headers/uchar.rst:38
+msgid "c32rtomb"
+msgstr ""
+
+#: ../../../headers/uchar.rst:40
+msgid "7.30.2.7"
+msgstr ""
+
+#: ../../../headers/uchar.rst:41
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"c32rtomb.html>`__"
+msgstr ""
+
+#: ../../../headers/uchar.rst:42
+msgid "c8rtomb"
+msgstr ""
+
+#: ../../../headers/uchar.rst:44
+msgid "7.30.2.3"
+msgstr ""
+
+#: ../../../headers/uchar.rst:46
+msgid "mbrtoc16"
+msgstr ""
+
+#: ../../../headers/uchar.rst:48
+msgid "7.30.2.4"
+msgstr ""
+
+#: ../../../headers/uchar.rst:49
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mbrtoc16.html>`__"
+msgstr ""
+
+#: ../../../headers/uchar.rst:50
+msgid "mbrtoc32"
+msgstr ""
+
+#: ../../../headers/uchar.rst:52
+msgid "7.30.2.6"
+msgstr ""
+
+#: ../../../headers/uchar.rst:53
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mbrtoc32.html>`__"
+msgstr ""
+
+#: ../../../headers/uchar.rst:54
+msgid "mbrtoc8"
+msgstr ""
+
+#: ../../../headers/uchar.rst:56
+msgid "7.30.2.2"
+msgstr ""

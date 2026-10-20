@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/aio.rst:3
+msgid "aio.h"
+msgstr ""
+
+#: ../../../headers/aio.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/aio.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/aio.rst:14 ../../../headers/aio.rst:59
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/aio.rst:15 ../../../headers/aio.rst:60
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/aio.rst:16 ../../../headers/aio.rst:61
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/aio.rst:17
+msgid "AIO_ALLDONE"
+msgstr ""
+
+#: ../../../headers/aio.rst:20 ../../../headers/aio.rst:24
+#: ../../../headers/aio.rst:28 ../../../headers/aio.rst:32
+#: ../../../headers/aio.rst:36 ../../../headers/aio.rst:40
+#: ../../../headers/aio.rst:44 ../../../headers/aio.rst:48
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/aio."
+"h.html>`__"
+msgstr ""
+
+#: ../../../headers/aio.rst:21
+msgid "AIO_CANCELED"
+msgstr ""
+
+#: ../../../headers/aio.rst:25
+msgid "AIO_NOTCANCELED"
+msgstr ""
+
+#: ../../../headers/aio.rst:29
+msgid "LIO_NOP"
+msgstr ""
+
+#: ../../../headers/aio.rst:33
+msgid "LIO_NOWAIT"
+msgstr ""
+
+#: ../../../headers/aio.rst:37
+msgid "LIO_READ"
+msgstr ""
+
+#: ../../../headers/aio.rst:41
+msgid "LIO_WAIT"
+msgstr ""
+
+#: ../../../headers/aio.rst:45
+msgid "LIO_WRITE"
+msgstr ""
+
+#: ../../../headers/aio.rst:51
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/aio.rst:58
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/aio.rst:62
+msgid "aio_cancel"
+msgstr ""
+
+#: ../../../headers/aio.rst:65
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"aio_cancel.html>`__"
+msgstr ""
+
+#: ../../../headers/aio.rst:66
+msgid "aio_error"
+msgstr ""
+
+#: ../../../headers/aio.rst:69
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"aio_error.html>`__"
+msgstr ""
+
+#: ../../../headers/aio.rst:70
+msgid "aio_fsync"
+msgstr ""
+
+#: ../../../headers/aio.rst:73
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"aio_fsync.html>`__"
+msgstr ""
+
+#: ../../../headers/aio.rst:74
+msgid "aio_read"
+msgstr ""
+
+#: ../../../headers/aio.rst:77
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"aio_read.html>`__"
+msgstr ""
+
+#: ../../../headers/aio.rst:78
+msgid "aio_return"
+msgstr ""
+
+#: ../../../headers/aio.rst:81
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"aio_return.html>`__"
+msgstr ""
+
+#: ../../../headers/aio.rst:82
+msgid "aio_suspend"
+msgstr ""
+
+#: ../../../headers/aio.rst:85
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"aio_suspend.html>`__"
+msgstr ""
+
+#: ../../../headers/aio.rst:86
+msgid "aio_write"
+msgstr ""
+
+#: ../../../headers/aio.rst:89
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"aio_write.html>`__"
+msgstr ""
+
+#: ../../../headers/aio.rst:90
+msgid "lio_listio"
+msgstr ""
+
+#: ../../../headers/aio.rst:93
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"lio_listio.html>`__"
+msgstr ""

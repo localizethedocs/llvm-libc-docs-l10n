@@ -1,0 +1,1008 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/stdio.rst:3
+msgid "stdio.h"
+msgstr ""
+
+#: ../../../headers/stdio.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/stdio.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/stdio.rst:14 ../../../headers/stdio.rst:99
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/stdio.rst:15 ../../../headers/stdio.rst:100
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/stdio.rst:16 ../../../headers/stdio.rst:101
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/stdio.rst:17
+msgid "BUFSIZ"
+msgstr ""
+
+#: ../../../headers/stdio.rst:18 ../../../headers/stdio.rst:22
+#: ../../../headers/stdio.rst:26 ../../../headers/stdio.rst:30
+#: ../../../headers/stdio.rst:38 ../../../headers/stdio.rst:42
+#: ../../../headers/stdio.rst:46 ../../../headers/stdio.rst:50
+#: ../../../headers/stdio.rst:54 ../../../headers/stdio.rst:58
+#: ../../../headers/stdio.rst:62 ../../../headers/stdio.rst:66
+#: ../../../headers/stdio.rst:78 ../../../headers/stdio.rst:82
+#: ../../../headers/stdio.rst:86 ../../../headers/stdio.rst:103
+#: ../../../headers/stdio.rst:115 ../../../headers/stdio.rst:119
+#: ../../../headers/stdio.rst:123 ../../../headers/stdio.rst:127
+#: ../../../headers/stdio.rst:131 ../../../headers/stdio.rst:135
+#: ../../../headers/stdio.rst:139 ../../../headers/stdio.rst:143
+#: ../../../headers/stdio.rst:147 ../../../headers/stdio.rst:151
+#: ../../../headers/stdio.rst:155 ../../../headers/stdio.rst:159
+#: ../../../headers/stdio.rst:163 ../../../headers/stdio.rst:167
+#: ../../../headers/stdio.rst:171 ../../../headers/stdio.rst:175
+#: ../../../headers/stdio.rst:179 ../../../headers/stdio.rst:183
+#: ../../../headers/stdio.rst:187 ../../../headers/stdio.rst:191
+#: ../../../headers/stdio.rst:195 ../../../headers/stdio.rst:199
+#: ../../../headers/stdio.rst:203 ../../../headers/stdio.rst:211
+#: ../../../headers/stdio.rst:215 ../../../headers/stdio.rst:219
+#: ../../../headers/stdio.rst:223 ../../../headers/stdio.rst:243
+#: ../../../headers/stdio.rst:251 ../../../headers/stdio.rst:255
+#: ../../../headers/stdio.rst:263 ../../../headers/stdio.rst:271
+#: ../../../headers/stdio.rst:275 ../../../headers/stdio.rst:279
+#: ../../../headers/stdio.rst:283 ../../../headers/stdio.rst:287
+#: ../../../headers/stdio.rst:291 ../../../headers/stdio.rst:295
+#: ../../../headers/stdio.rst:299 ../../../headers/stdio.rst:303
+#: ../../../headers/stdio.rst:307 ../../../headers/stdio.rst:311
+#: ../../../headers/stdio.rst:315 ../../../headers/stdio.rst:319
+#: ../../../headers/stdio.rst:323 ../../../headers/stdio.rst:331
+#: ../../../headers/stdio.rst:335 ../../../headers/stdio.rst:339
+#: ../../../headers/stdio.rst:343 ../../../headers/stdio.rst:347
+#: ../../../headers/stdio.rst:351 ../../../headers/stdio.rst:355
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/stdio.rst:19 ../../../headers/stdio.rst:23
+#: ../../../headers/stdio.rst:27 ../../../headers/stdio.rst:31
+#: ../../../headers/stdio.rst:39 ../../../headers/stdio.rst:43
+#: ../../../headers/stdio.rst:47 ../../../headers/stdio.rst:51
+#: ../../../headers/stdio.rst:55 ../../../headers/stdio.rst:59
+#: ../../../headers/stdio.rst:63 ../../../headers/stdio.rst:67
+#: ../../../headers/stdio.rst:71 ../../../headers/stdio.rst:75
+#: ../../../headers/stdio.rst:79 ../../../headers/stdio.rst:83
+#: ../../../headers/stdio.rst:87
+msgid "7.23.1"
+msgstr ""
+
+#: ../../../headers/stdio.rst:20 ../../../headers/stdio.rst:24
+#: ../../../headers/stdio.rst:28 ../../../headers/stdio.rst:32
+#: ../../../headers/stdio.rst:36 ../../../headers/stdio.rst:40
+#: ../../../headers/stdio.rst:44 ../../../headers/stdio.rst:48
+#: ../../../headers/stdio.rst:52 ../../../headers/stdio.rst:56
+#: ../../../headers/stdio.rst:60 ../../../headers/stdio.rst:64
+#: ../../../headers/stdio.rst:68 ../../../headers/stdio.rst:80
+#: ../../../headers/stdio.rst:84 ../../../headers/stdio.rst:88
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:21
+msgid "EOF"
+msgstr ""
+
+#: ../../../headers/stdio.rst:25
+msgid "FILENAME_MAX"
+msgstr ""
+
+#: ../../../headers/stdio.rst:29
+msgid "FOPEN_MAX"
+msgstr ""
+
+#: ../../../headers/stdio.rst:33
+msgid "L_ctermid"
+msgstr ""
+
+#: ../../../headers/stdio.rst:37
+msgid "L_tmpnam"
+msgstr ""
+
+#: ../../../headers/stdio.rst:41
+msgid "SEEK_CUR"
+msgstr ""
+
+#: ../../../headers/stdio.rst:45
+msgid "SEEK_END"
+msgstr ""
+
+#: ../../../headers/stdio.rst:49
+msgid "SEEK_SET"
+msgstr ""
+
+#: ../../../headers/stdio.rst:53
+msgid "TMP_MAX"
+msgstr ""
+
+#: ../../../headers/stdio.rst:57
+msgid "_IOFBF"
+msgstr ""
+
+#: ../../../headers/stdio.rst:61
+msgid "_IOLBF"
+msgstr ""
+
+#: ../../../headers/stdio.rst:65
+msgid "_IONBF"
+msgstr ""
+
+#: ../../../headers/stdio.rst:69
+msgid "_PRINTF_NAN_LEN_MAX"
+msgstr ""
+
+#: ../../../headers/stdio.rst:73
+msgid "__STDC_VERSION_STDIO_H__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:77
+msgid "stderr"
+msgstr ""
+
+#: ../../../headers/stdio.rst:81
+msgid "stdin"
+msgstr ""
+
+#: ../../../headers/stdio.rst:85
+msgid "stdout"
+msgstr ""
+
+#: ../../../headers/stdio.rst:91
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/stdio.rst:98
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/stdio.rst:102
+msgid "clearerr"
+msgstr ""
+
+#: ../../../headers/stdio.rst:104
+msgid "7.23.10.1"
+msgstr ""
+
+#: ../../../headers/stdio.rst:105
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"clearerr.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:106
+msgid "ctermid"
+msgstr ""
+
+#: ../../../headers/stdio.rst:109
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ctermid.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:110
+msgid "dprintf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:113
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"dprintf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:114
+msgid "fclose"
+msgstr ""
+
+#: ../../../headers/stdio.rst:116
+msgid "7.23.5.1"
+msgstr ""
+
+#: ../../../headers/stdio.rst:117
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fclose.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:118
+msgid "fdopen"
+msgstr ""
+
+#: ../../../headers/stdio.rst:121
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fdopen.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:122
+msgid "feof"
+msgstr ""
+
+#: ../../../headers/stdio.rst:124
+msgid "7.23.10.2"
+msgstr ""
+
+#: ../../../headers/stdio.rst:125
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"feof.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:126
+msgid "ferror"
+msgstr ""
+
+#: ../../../headers/stdio.rst:128
+msgid "7.23.10.3"
+msgstr ""
+
+#: ../../../headers/stdio.rst:129
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ferror.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:130
+msgid "fflush"
+msgstr ""
+
+#: ../../../headers/stdio.rst:132
+msgid "7.23.5.2"
+msgstr ""
+
+#: ../../../headers/stdio.rst:133
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fflush.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:134
+msgid "fgetc"
+msgstr ""
+
+#: ../../../headers/stdio.rst:136
+msgid "7.23.7.1"
+msgstr ""
+
+#: ../../../headers/stdio.rst:137
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fgetc.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:138
+msgid "fgetpos"
+msgstr ""
+
+#: ../../../headers/stdio.rst:140
+msgid "7.23.9.1"
+msgstr ""
+
+#: ../../../headers/stdio.rst:141
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fgetpos.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:142
+msgid "fgets"
+msgstr ""
+
+#: ../../../headers/stdio.rst:144
+msgid "7.23.7.2"
+msgstr ""
+
+#: ../../../headers/stdio.rst:145
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fgets.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:146
+msgid "fileno"
+msgstr ""
+
+#: ../../../headers/stdio.rst:149
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fileno.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:150
+msgid "flockfile"
+msgstr ""
+
+#: ../../../headers/stdio.rst:153
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"flockfile.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:154
+msgid "fmemopen"
+msgstr ""
+
+#: ../../../headers/stdio.rst:157
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fmemopen.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:158
+msgid "fopen"
+msgstr ""
+
+#: ../../../headers/stdio.rst:160
+msgid "7.23.5.3"
+msgstr ""
+
+#: ../../../headers/stdio.rst:161
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fopen.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:162
+msgid "fprintf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:164
+msgid "7.23.6.1"
+msgstr ""
+
+#: ../../../headers/stdio.rst:165
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fprintf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:166
+msgid "fputc"
+msgstr ""
+
+#: ../../../headers/stdio.rst:168
+msgid "7.23.7.3"
+msgstr ""
+
+#: ../../../headers/stdio.rst:169
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fputc.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:170
+msgid "fputs"
+msgstr ""
+
+#: ../../../headers/stdio.rst:172
+msgid "7.23.7.4"
+msgstr ""
+
+#: ../../../headers/stdio.rst:173
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fputs.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:174
+msgid "fread"
+msgstr ""
+
+#: ../../../headers/stdio.rst:176
+msgid "7.23.8.1"
+msgstr ""
+
+#: ../../../headers/stdio.rst:177
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fread.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:178
+msgid "freopen"
+msgstr ""
+
+#: ../../../headers/stdio.rst:180
+msgid "7.23.5.4"
+msgstr ""
+
+#: ../../../headers/stdio.rst:181
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"freopen.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:182
+msgid "fscanf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:184
+msgid "7.23.6.2"
+msgstr ""
+
+#: ../../../headers/stdio.rst:185
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fscanf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:186
+msgid "fseek"
+msgstr ""
+
+#: ../../../headers/stdio.rst:188
+msgid "7.23.9.2"
+msgstr ""
+
+#: ../../../headers/stdio.rst:189
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fseek.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:190
+msgid "fseeko"
+msgstr ""
+
+#: ../../../headers/stdio.rst:193
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fseeko.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:194
+msgid "fsetpos"
+msgstr ""
+
+#: ../../../headers/stdio.rst:196
+msgid "7.23.9.3"
+msgstr ""
+
+#: ../../../headers/stdio.rst:197
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fsetpos.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:198
+msgid "ftell"
+msgstr ""
+
+#: ../../../headers/stdio.rst:200
+msgid "7.23.9.4"
+msgstr ""
+
+#: ../../../headers/stdio.rst:201
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ftell.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:202
+msgid "ftello"
+msgstr ""
+
+#: ../../../headers/stdio.rst:205
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ftello.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:206
+msgid "ftrylockfile"
+msgstr ""
+
+#: ../../../headers/stdio.rst:209
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ftrylockfile.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:210
+msgid "funlockfile"
+msgstr ""
+
+#: ../../../headers/stdio.rst:213
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"funlockfile.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:214
+msgid "fwrite"
+msgstr ""
+
+#: ../../../headers/stdio.rst:216
+msgid "7.23.8.2"
+msgstr ""
+
+#: ../../../headers/stdio.rst:217
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fwrite.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:218
+msgid "getc"
+msgstr ""
+
+#: ../../../headers/stdio.rst:220
+msgid "7.23.7.5"
+msgstr ""
+
+#: ../../../headers/stdio.rst:221
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getc.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:222
+msgid "getchar"
+msgstr ""
+
+#: ../../../headers/stdio.rst:224
+msgid "7.23.7.6"
+msgstr ""
+
+#: ../../../headers/stdio.rst:225
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getchar.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:226
+msgid "getdelim"
+msgstr ""
+
+#: ../../../headers/stdio.rst:229
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getdelim.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:230
+msgid "getline"
+msgstr ""
+
+#: ../../../headers/stdio.rst:233
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getline.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:234
+msgid "open_memstream"
+msgstr ""
+
+#: ../../../headers/stdio.rst:237
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"open_memstream.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:238
+msgid "pclose"
+msgstr ""
+
+#: ../../../headers/stdio.rst:241
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pclose.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:242
+msgid "perror"
+msgstr ""
+
+#: ../../../headers/stdio.rst:244
+msgid "7.23.10.4"
+msgstr ""
+
+#: ../../../headers/stdio.rst:245
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"perror.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:246
+msgid "popen"
+msgstr ""
+
+#: ../../../headers/stdio.rst:249
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"popen.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:250
+msgid "printf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:252
+msgid "7.23.6.3"
+msgstr ""
+
+#: ../../../headers/stdio.rst:253
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"printf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:254
+msgid "putc"
+msgstr ""
+
+#: ../../../headers/stdio.rst:256
+msgid "7.23.7.7"
+msgstr ""
+
+#: ../../../headers/stdio.rst:257
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"putc.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:258
+msgid "putc_unlocked"
+msgstr ""
+
+#: ../../../headers/stdio.rst:261
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"putc_unlocked.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:262
+msgid "putchar"
+msgstr ""
+
+#: ../../../headers/stdio.rst:264
+msgid "7.23.7.8"
+msgstr ""
+
+#: ../../../headers/stdio.rst:265
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"putchar.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:266
+msgid "putchar_unlocked"
+msgstr ""
+
+#: ../../../headers/stdio.rst:269
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"putchar_unlocked.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:270
+msgid "puts"
+msgstr ""
+
+#: ../../../headers/stdio.rst:272
+msgid "7.23.7.9"
+msgstr ""
+
+#: ../../../headers/stdio.rst:273
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"puts.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:274
+msgid "remove"
+msgstr ""
+
+#: ../../../headers/stdio.rst:276
+msgid "7.23.4.1"
+msgstr ""
+
+#: ../../../headers/stdio.rst:277
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"remove.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:278
+msgid "rename"
+msgstr ""
+
+#: ../../../headers/stdio.rst:280
+msgid "7.23.4.2"
+msgstr ""
+
+#: ../../../headers/stdio.rst:281
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"rename.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:282
+msgid "renameat"
+msgstr ""
+
+#: ../../../headers/stdio.rst:285
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"renameat.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:286
+msgid "rewind"
+msgstr ""
+
+#: ../../../headers/stdio.rst:288
+msgid "7.23.9.5"
+msgstr ""
+
+#: ../../../headers/stdio.rst:289
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"rewind.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:290
+msgid "scanf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:292
+msgid "7.23.6.4"
+msgstr ""
+
+#: ../../../headers/stdio.rst:293
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"scanf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:294
+msgid "setbuf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:296
+msgid "7.23.5.5"
+msgstr ""
+
+#: ../../../headers/stdio.rst:297
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setbuf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:298
+msgid "setvbuf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:300
+msgid "7.23.5.6"
+msgstr ""
+
+#: ../../../headers/stdio.rst:301
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setvbuf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:302
+msgid "snprintf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:304
+msgid "7.23.6.5"
+msgstr ""
+
+#: ../../../headers/stdio.rst:305
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"snprintf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:306
+msgid "sprintf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:308
+msgid "7.23.6.6"
+msgstr ""
+
+#: ../../../headers/stdio.rst:309
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sprintf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:310
+msgid "sscanf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:312
+msgid "7.23.6.7"
+msgstr ""
+
+#: ../../../headers/stdio.rst:313
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sscanf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:314
+msgid "tmpfile"
+msgstr ""
+
+#: ../../../headers/stdio.rst:316
+msgid "7.23.4.3"
+msgstr ""
+
+#: ../../../headers/stdio.rst:317
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tmpfile.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:318
+msgid "tmpnam"
+msgstr ""
+
+#: ../../../headers/stdio.rst:320
+msgid "7.23.4.4"
+msgstr ""
+
+#: ../../../headers/stdio.rst:321
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tmpnam.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:322
+msgid "ungetc"
+msgstr ""
+
+#: ../../../headers/stdio.rst:324
+msgid "7.23.7.10"
+msgstr ""
+
+#: ../../../headers/stdio.rst:325
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ungetc.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:326
+msgid "vdprintf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:329
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vdprintf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:330
+msgid "vfprintf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:332
+msgid "7.23.6.8"
+msgstr ""
+
+#: ../../../headers/stdio.rst:333
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vfprintf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:334
+msgid "vfscanf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:336
+msgid "7.23.6.9"
+msgstr ""
+
+#: ../../../headers/stdio.rst:337
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vfscanf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:338
+msgid "vprintf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:340
+msgid "7.23.6.10"
+msgstr ""
+
+#: ../../../headers/stdio.rst:341
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vprintf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:342
+msgid "vscanf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:344
+msgid "7.23.6.11"
+msgstr ""
+
+#: ../../../headers/stdio.rst:345
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vscanf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:346
+msgid "vsnprintf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:348
+msgid "7.23.6.12"
+msgstr ""
+
+#: ../../../headers/stdio.rst:349
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vsnprintf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:350
+msgid "vsprintf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:352
+msgid "7.23.6.13"
+msgstr ""
+
+#: ../../../headers/stdio.rst:353
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vsprintf.html>`__"
+msgstr ""
+
+#: ../../../headers/stdio.rst:354
+msgid "vsscanf"
+msgstr ""
+
+#: ../../../headers/stdio.rst:356
+msgid "7.23.6.14"
+msgstr ""
+
+#: ../../../headers/stdio.rst:357
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vsscanf.html>`__"
+msgstr ""

@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/sys/uio.rst:3
+msgid "sys/uio.h"
+msgstr ""
+
+#: ../../../headers/sys/uio.rst:6
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/sys/uio.rst:13
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/sys/uio.rst:14
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/sys/uio.rst:15
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/sys/uio.rst:16
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/sys/uio.rst:17
+msgid "readv"
+msgstr ""
+
+#: ../../../headers/sys/uio.rst:18 ../../../headers/sys/uio.rst:22
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/sys/uio.rst:20
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"readv.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/uio.rst:21
+msgid "writev"
+msgstr ""
+
+#: ../../../headers/sys/uio.rst:24
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"writev.html>`__"
+msgstr ""

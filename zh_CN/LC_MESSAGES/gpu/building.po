@@ -1,0 +1,339 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../gpu/building.rst:5
+msgid "Building libs for GPUs"
+msgstr ""
+
+#: ../../../gpu/building.rst:8
+msgid "Building the GPU C library"
+msgstr ""
+
+#: ../../../gpu/building.rst:10
+msgid ""
+"This document will present recipes to build the LLVM C library targeting a "
+"GPU architecture. The GPU build uses the same :ref:`cross "
+"build<full_cross_build>` support as the other targets. However, the GPU "
+"target has the restriction that it *must* be built with an up-to-date "
+"``clang`` compiler. This is because the GPU target uses several compiler "
+"extensions to target GPU architectures."
+msgstr ""
+
+#: ../../../gpu/building.rst:16
+msgid ""
+"The LLVM C library currently supports two GPU targets. This is either "
+"``nvptx64-nvidia-cuda`` for NVIDIA GPUs or ``amdgcn-amd-amdhsa`` for AMD "
+"GPUs. Targeting these architectures is done through ``clang``'s cross-"
+"compiling support using the ``--target=<triple>`` flag. The following "
+"sections will describe how to build the GPU support specifically."
+msgstr ""
+
+#: ../../../gpu/building.rst:22
+msgid ""
+"Once you have finished building, refer to :ref:`libc_gpu_usage` to get "
+"started with the newly built C library."
+msgstr ""
+
+#: ../../../gpu/building.rst:26
+msgid "Bootstrap Build"
+msgstr ""
+
+#: ../../../gpu/building.rst:28
+msgid ""
+"The recommended way to build the GPU libc is using a **Bootstrap Build** "
+"(see :ref:`build_concepts` for an overview of build modes). This approach "
+"first builds the compiler (``clang``) and tools using the host compiler, and "
+"then automatically uses that newly-built compiler to build the C library for "
+"the GPU targets in a single CMake invocation. This is ideal for building for "
+"multiple GPU vendors at once."
+msgstr ""
+
+#: ../../../gpu/building.rst:30
+msgid "Set the environment variables for the build:"
+msgstr ""
+
+#: ../../../gpu/building.rst:38
+msgid "Configure the project:"
+msgstr ""
+
+#: ../../../gpu/building.rst:51
+msgid "Build and install the libraries:"
+msgstr ""
+
+#: ../../../gpu/building.rst:57
+msgid ""
+"We need ``clang`` to build the GPU C library and ``lld`` to link AMDGPU "
+"executables, so we enable them in ``LLVM_ENABLE_PROJECTS``. We add "
+"``openmp`` to ``LLVM_ENABLED_RUNTIMES`` so it is built for the default "
+"target and provides OpenMP support. We then set "
+"``RUNTIMES_<triple>_LLVM_ENABLE_RUNTIMES`` to enable ``libc`` for the GPU "
+"targets. The ``LLVM_RUNTIME_TARGETS`` sets the enabled targets to build, in "
+"this case we want the default target and the GPU targets. Note that if "
+"``libc`` were included in ``LLVM_ENABLE_RUNTIMES`` it would build targeting "
+"the default host environment as well. Alternatively, you can point your "
+"build towards the ``libc/cmake/caches/gpu.cmake`` cache file with ``-C``."
+msgstr ""
+
+#: ../../../gpu/building.rst:68
+msgid "Two-stage Cross-compiler Build"
+msgstr ""
+
+#: ../../../gpu/building.rst:70
+msgid ""
+"Alternatively, you can use a manual **Two-stage Cross-compiler Build** (see :"
+"ref:`build_concepts`). This separates the build into two distinct CMake "
+"invocations: first to build the host compiler and tools (Stage 1), and then "
+"to build the target library using those tools (Stage 2). This provides more "
+"direct control over the configuration and is useful if you only need to "
+"build for a single target or want to avoid the complexity of the combined "
+"bootstrap build."
+msgstr ""
+
+#: ../../../gpu/building.rst:72
+msgid ""
+"First, build the host compiler. Set up the variables for the host build:"
+msgstr ""
+
+#: ../../../gpu/building.rst:80
+msgid "Configure the host build:"
+msgstr ""
+
+#: ../../../gpu/building.rst:91
+msgid "Build the host tools:"
+msgstr ""
+
+#: ../../../gpu/building.rst:97
+msgid ""
+"Once this has finished, use the newly built compiler to build the C library "
+"for the GPU. Select your target architecture (``amdgcn-amd-amdhsa`` or "
+"``nvptx64-nvidia-cuda``)."
+msgstr ""
+
+#: ../../../gpu/building.rst:99
+msgid "Set up the variables for the target build:"
+msgstr ""
+
+#: ../../../gpu/building.rst:108
+msgid "Configure the target build:"
+msgstr ""
+
+#: ../../../gpu/building.rst:120
+msgid "Build and install the target library:"
+msgstr ""
+
+#: ../../../gpu/building.rst:126
+msgid ""
+"The above steps will result in a build targeting one of the supported GPU "
+"architectures. Building for multiple targets requires separate CMake "
+"invocations."
+msgstr ""
+
+#: ../../../gpu/building.rst:131
+msgid "Build overview"
+msgstr ""
+
+#: ../../../gpu/building.rst:133
+msgid ""
+"Once installed, the GPU build will create several files used for different "
+"targets. This section will briefly describe their purpose."
+msgstr ""
+
+#: ../../../gpu/building.rst:136
+msgid "**include/<target-triple>**"
+msgstr ""
+
+#: ../../../gpu/building.rst:137
+msgid ""
+"The include directory where all of the generated headers for the target will "
+"go. These definitions are strictly for the GPU when being targeted directly."
+msgstr ""
+
+#: ../../../gpu/building.rst:140
+msgid ""
+"**lib/clang/<llvm-major-version>/include/llvm-libc-wrappers/llvm-libc-decls**"
+msgstr ""
+
+#: ../../../gpu/building.rst:141
+msgid ""
+"These are wrapper headers created for offloading languages like CUDA, HIP, "
+"or OpenMP. They contain functions supported in the GPU libc along with "
+"attributes and metadata that declare them on the target device and make them "
+"compatible with the host headers."
+msgstr ""
+
+#: ../../../gpu/building.rst:146
+msgid "**lib/<target-triple>/libc.a**"
+msgstr ""
+
+#: ../../../gpu/building.rst:147
+msgid ""
+"The main C library static archive containing LLVM-IR targeting the given "
+"GPU. It can be linked directly or inspected depending on the target support."
+msgstr ""
+
+#: ../../../gpu/building.rst:150
+msgid "**lib/<target-triple>/libm.a**"
+msgstr ""
+
+#: ../../../gpu/building.rst:151
+msgid ""
+"The C library static archive providing implementations of the standard math "
+"functions."
+msgstr ""
+
+#: ../../../gpu/building.rst:154
+msgid "**lib/<target-triple>/libc.bc**"
+msgstr ""
+
+#: ../../../gpu/building.rst:155
+msgid ""
+"An alternate form of the library provided as a single LLVM-IR bitcode blob. "
+"This can be used similarly to NVIDIA's or AMD's device libraries."
+msgstr ""
+
+#: ../../../gpu/building.rst:158
+msgid "**lib/<target-triple>/libm.bc**"
+msgstr ""
+
+#: ../../../gpu/building.rst:159
+msgid ""
+"An alternate form of the library provided as a single LLVM-IR bitcode blob "
+"containing the standard math functions."
+msgstr ""
+
+#: ../../../gpu/building.rst:162
+msgid "**lib/<target-triple>/crt1.o**"
+msgstr ""
+
+#: ../../../gpu/building.rst:163
+msgid ""
+"An LLVM-IR file containing startup code to call the ``main`` function on the "
+"GPU. This is used similarly to the standard C library startup object."
+msgstr ""
+
+#: ../../../gpu/building.rst:166
+msgid "**bin/amdhsa-loader**"
+msgstr ""
+
+#: ../../../gpu/building.rst:167
+msgid ""
+"A binary utility used to launch executables compiled targeting the AMD GPU. "
+"This will be included if the build system found the ``hsa-runtime64`` "
+"library either in ``/opt/rocm`` or the current CMake installation directory. "
+"This is required to build the GPU tests .See the :ref:`libc GPU "
+"usage<libc_gpu_usage>` for more information."
+msgstr ""
+
+#: ../../../gpu/building.rst:173
+msgid "**bin/nvptx-loader**"
+msgstr ""
+
+#: ../../../gpu/building.rst:174
+msgid ""
+"A binary utility used to launch executables compiled targeting the NVIDIA "
+"GPU. This will be included if the build system found the CUDA driver API. "
+"This is required for building tests."
+msgstr ""
+
+#: ../../../gpu/building.rst:178
+msgid "**include/llvm-libc-rpc-server.h**"
+msgstr ""
+
+#: ../../../gpu/building.rst:179
+msgid ""
+"A header file containing definitions that can be used to interface with the :"
+"ref:`RPC server<libc_gpu_rpc>`."
+msgstr ""
+
+#: ../../../gpu/building.rst:182
+msgid "**lib/libllvmlibc_rpc_server.a**"
+msgstr ""
+
+#: ../../../gpu/building.rst:183
+msgid ""
+"The static library containing the implementation of the RPC server. This can "
+"be used to enable host services for anyone looking to interface with the :"
+"ref:`RPC client<libc_gpu_rpc>`."
+msgstr ""
+
+#: ../../../gpu/building.rst:190
+msgid "CMake options"
+msgstr ""
+
+#: ../../../gpu/building.rst:192
+msgid ""
+"This section briefly lists a few of the CMake variables that specifically "
+"control the GPU build of the C library. These options can be passed "
+"individually to each target using ``-DRUNTIMES_<target>_<variable>=<value>`` "
+"when using a standard runtime build."
+msgstr ""
+
+#: ../../../gpu/building.rst:197
+msgid "**LLVM_LIBC_FULL_BUILD**:BOOL"
+msgstr ""
+
+#: ../../../gpu/building.rst:198
+msgid ""
+"This flag controls whether or not the libc build will generate its own "
+"headers. This must always be on when targeting the GPU."
+msgstr ""
+
+#: ../../../gpu/building.rst:201
+msgid "**LIBC_GPU_BUILD**:BOOL"
+msgstr ""
+
+#: ../../../gpu/building.rst:202
+msgid ""
+"Shorthand for enabling GPU support. Equivalent to enabling support for both "
+"AMDGPU and NVPTX builds for ``libc``."
+msgstr ""
+
+#: ../../../gpu/building.rst:205
+msgid "**LIBC_GPU_TEST_ARCHITECTURE**:STRING"
+msgstr ""
+
+#: ../../../gpu/building.rst:206
+msgid ""
+"Sets the architecture used to build the GPU tests for, such as ``gfx90a`` or "
+"``sm_80`` for AMD and NVIDIA GPUs respectively. The default behavior is to "
+"detect the system's GPU architecture using the ``native`` option. If this "
+"option is not set and a GPU was not detected the tests will not be built."
+msgstr ""
+
+#: ../../../gpu/building.rst:211
+msgid "**LIBC_GPU_TEST_JOBS**:STRING"
+msgstr ""
+
+#: ../../../gpu/building.rst:212
+msgid ""
+"Sets the number of threads used to run GPU tests. The GPU test suite will "
+"commonly run out of resources if this is not constrained so it is "
+"recommended to keep it low. The default value is a single thread."
+msgstr ""
+
+#: ../../../gpu/building.rst:216
+msgid "**CMAKE_CROSSCOMPILING_EMULATOR**:STRING"
+msgstr ""
+
+#: ../../../gpu/building.rst:217
+msgid ""
+"Overrides the default loader used for running GPU tests. This is set "
+"automatically to ``llvm-gpu-loader`` for GPU runtime targets when building "
+"via the runtimes build."
+msgstr ""

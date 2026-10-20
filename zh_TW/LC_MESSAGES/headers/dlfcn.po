@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/dlfcn.rst:3
+msgid "dlfcn.h"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:14 ../../../headers/dlfcn.rst:43
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:15 ../../../headers/dlfcn.rst:44
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:16 ../../../headers/dlfcn.rst:45
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:17
+msgid "RTLD_GLOBAL"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:18 ../../../headers/dlfcn.rst:22
+#: ../../../headers/dlfcn.rst:26 ../../../headers/dlfcn.rst:30
+#: ../../../headers/dlfcn.rst:47 ../../../headers/dlfcn.rst:51
+#: ../../../headers/dlfcn.rst:55 ../../../headers/dlfcn.rst:59
+#: ../../../headers/dlfcn.rst:63
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:20 ../../../headers/dlfcn.rst:24
+#: ../../../headers/dlfcn.rst:28 ../../../headers/dlfcn.rst:32
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dlfcn.h.html>`__"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:21
+msgid "RTLD_LAZY"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:25
+msgid "RTLD_LOCAL"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:29
+msgid "RTLD_NOW"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:35
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:42
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:46
+msgid "dladdr"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:49
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"dladdr.html>`__"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:50
+msgid "dlclose"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:53
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"dlclose.html>`__"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:54
+msgid "dlerror"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:57
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"dlerror.html>`__"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:58
+msgid "dlopen"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:61
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"dlopen.html>`__"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:62
+msgid "dlsym"
+msgstr ""
+
+#: ../../../headers/dlfcn.rst:65
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"dlsym.html>`__"
+msgstr ""

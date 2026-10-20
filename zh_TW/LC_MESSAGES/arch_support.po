@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../arch_support.md:1
+msgid "Architecture Support"
+msgstr ""
+
+#: ../../../arch_support.md:3
+msgid "The currently continuously tested architectures are:"
+msgstr ""
+
+#: ../../../arch_support.md:5
+msgid "aarch64"
+msgstr "aarch64"
+
+#: ../../../arch_support.md:6
+msgid "amdgpu"
+msgstr "amdgpu"
+
+#: ../../../arch_support.md:7
+msgid "arm"
+msgstr "arm"
+
+#: ../../../arch_support.md:8
+msgid "nvptx"
+msgstr "nvptx"
+
+#: ../../../arch_support.md:9
+msgid "riscv32"
+msgstr "riscv32"
+
+#: ../../../arch_support.md:10
+msgid "riscv64"
+msgstr "riscv64"
+
+#: ../../../arch_support.md:11
+msgid "x86_64"
+msgstr "x86_64"
+
+#: ../../../arch_support.md:13
+msgid ""
+"i386 support is [in the works](https://github.com/llvm/llvm-project/"
+"issues/93709)."
+msgstr ""
+
+#: ../../../arch_support.md:15
+msgid ""
+"See {doc}`Bringup on a New OS or Architecture <porting>` for more "
+"information. Please do first file a bug in [our issue tracker](https://"
+"github.com/llvm/llvm-project/labels/libc) before starting a port that you "
+"plan to upstream."
+msgstr ""

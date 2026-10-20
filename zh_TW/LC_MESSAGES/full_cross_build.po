@@ -1,0 +1,298 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../full_cross_build.md:3
+msgid "Full Cross Build"
+msgstr ""
+
+#: ../../../full_cross_build.md:6
+msgid ""
+"Fullbuild requires running headergen, which is a python program that depends "
+"on pyyaml. The minimum versions are listed on the {ref}`header_generation` "
+"page, as well as additional information."
+msgstr ""
+
+#: ../../../full_cross_build.md:11
+msgid ""
+"In this document, we will present recipes to cross build the full libc. When "
+"we say *cross build* a full libc, we mean that we will build the full libc "
+"for a target system which is not the same as the system on which the libc is "
+"being built. For example, you could be building for a bare metal aarch64 "
+"*target* on a Linux x86_64 *host*."
+msgstr ""
+
+#: ../../../full_cross_build.md:17
+msgid ""
+"There are two main recipes to cross build the full libc. Each one serves a "
+"different use case. Below is a short description of these recipes to help "
+"users pick the recipe that best suites their needs and contexts."
+msgstr ""
+
+#: ../../../full_cross_build.md:21
+msgid ""
+"**Standalone cross build** - Using this recipe one can build the libc using "
+"a compiler of their choice. One should use this recipe if their compiler can "
+"build for the host as well as the target."
+msgstr ""
+
+#: ../../../full_cross_build.md:24
+msgid ""
+"**Bootstrap cross build** - In this recipe, one will build the `clang` "
+"compiler and the libc build tools for the host first, and then use them to "
+"build the libc for the target. Unlike with the standalone build recipe, the "
+"user does not have explicitly build `clang` and other build tools. They get "
+"built automatically before building the libc. One should use this recipe if "
+"they intend use the built `clang` and the libc as part of their toolchain "
+"for the target."
+msgstr ""
+
+#: ../../../full_cross_build.md:32
+msgid "The following sections present the two recipes in detail."
+msgstr ""
+
+#: ../../../full_cross_build.md:34
+msgid "Standalone cross build"
+msgstr ""
+
+#: ../../../full_cross_build.md:36
+msgid ""
+"In the *standalone crossbuild* recipe, the system compiler or a custom "
+"compiler of user's choice is used to build the libc. The necessary build "
+"tools for the host are built first, and those build tools are then used to "
+"build the libc for the target. Both these steps happen automatically, as in, "
+"the user does not have to explicitly build the build tools first and then "
+"build the libc. A point to keep in mind is that the compiler used should be "
+"capable of building for the host as well as the target."
+msgstr ""
+
+#: ../../../full_cross_build.md:45
+msgid ""
+"Even though the LLVM libc provides its own complete C library "
+"implementation, compiling it for a Linux target still requires the Linux "
+"kernel API headers for that architecture. On Debian-based systems, these and "
+"other standard cross-compilation runtimes (like `libgcc`) can be installed "
+"via packages like `gcc-riscv64-linux-gnu` and `linux-libc-dev-riscv64-cross` "
+"(or similar for other architectures). You will need to point CMake to the "
+"kernel headers using `-DLIBC_KERNEL_HEADERS` (e.g., `-DLIBC_KERNEL_HEADERS=/"
+"usr/riscv64-linux-gnu/include`) so the libc build can find headers like `asm/"
+"unistd.h`."
+msgstr ""
+
+#: ../../../full_cross_build.md:56 ../../../full_cross_build.md:111
+#: ../../../full_cross_build.md:178
+msgid "CMake configure step"
+msgstr ""
+
+#: ../../../full_cross_build.md:58 ../../../full_cross_build.md:113
+msgid "First, set up the environment variables for your compiler and target:"
+msgstr ""
+
+#: ../../../full_cross_build.md:66
+msgid ""
+"Below is the CMake command to configure the standalone crossbuild of the "
+"libc."
+msgstr ""
+
+#: ../../../full_cross_build.md:83
+msgid ""
+"We will go over the special options passed to the `cmake` command above."
+msgstr ""
+
+#: ../../../full_cross_build.md:85
+msgid ""
+"**Enabled Runtimes** - Since we want to build LLVM-libc, we list `libc` as "
+"the enabled runtime."
+msgstr ""
+
+#: ../../../full_cross_build.md:87
+msgid ""
+"**The full build option** - Since we want to build the full libc, we pass `-"
+"DLLVM_LIBC_FULL_BUILD=ON`."
+msgstr ""
+
+#: ../../../full_cross_build.md:89
+msgid ""
+"**The target triple** - This is the target triple of the target for which we "
+"are building the libc. For example, for a Linux 32-bit Arm target, one can "
+"specify it as `arm-linux-eabi`."
+msgstr ""
+
+#: ../../../full_cross_build.md:93 ../../../full_cross_build.md:144
+msgid "Build step"
+msgstr ""
+
+#: ../../../full_cross_build.md:95
+msgid ""
+"After configuring the build with the above `cmake` command, one can build "
+"the the libc for the target with the following command:"
+msgstr ""
+
+#: ../../../full_cross_build.md:102
+msgid ""
+"The above `ninja` command will build the libc static archives `libc.a` and "
+"`libm.a` for the target specified with `-DLIBC_TARGET_TRIPLE` in the CMake "
+"configure step."
+msgstr ""
+
+#: ../../../full_cross_build.md:106
+msgid "Bootstrap cross build"
+msgstr ""
+
+#: ../../../full_cross_build.md:108
+msgid ""
+"In this recipe, the clang compiler is built automatically before building "
+"the libc for the target."
+msgstr ""
+
+#: ../../../full_cross_build.md:121
+msgid "Then, configure the CMake build for the bootstrap build:"
+msgstr ""
+
+#: ../../../full_cross_build.md:137
+msgid ""
+"Note how the above cmake command differs from the one used in the other "
+"recipe:"
+msgstr ""
+
+#: ../../../full_cross_build.md:139
+msgid ""
+"`clang` is listed in `-DLLVM_ENABLE_PROJECTS` and `libc` is listed in `-"
+"DLLVM_ENABLE_RUNTIMES`."
+msgstr ""
+
+#: ../../../full_cross_build.md:141
+msgid "The CMake root source directory is `llvm-project/llvm`."
+msgstr ""
+
+#: ../../../full_cross_build.md:142
+msgid "The target triple is specified with `-DLLVM_RUNTIME_TARGETS`."
+msgstr ""
+
+#: ../../../full_cross_build.md:146
+msgid "The build step is similar to the other recipe:"
+msgstr ""
+
+#: ../../../full_cross_build.md:152
+msgid ""
+"The above ninja command should build the libc static archives for the target "
+"specified with `-DLLVM_RUNTIME_TARGETS`."
+msgstr ""
+
+#: ../../../full_cross_build.md:155
+msgid "Building for bare metal"
+msgstr ""
+
+#: ../../../full_cross_build.md:157
+msgid ""
+"To build for bare metal, all one has to do is to specify the [system]"
+"(https://clang.llvm.org/docs/CrossCompilation.html#target-triple) component "
+"of the target triple as `none`. For example, to build for a 32-bit arm "
+"target on bare metal, one can use a target triple like `arm-none-eabi`. "
+"Other than that, the libc for a bare metal target can be built using any of "
+"the three recipes described above."
+msgstr ""
+
+#: ../../../full_cross_build.md:164
+msgid "Building for the GPU"
+msgstr ""
+
+#: ../../../full_cross_build.md:166
+msgid ""
+"To build for a GPU architecture, it should only be necessary to specify the "
+"target triple as one of the supported GPU targets. Currently, this is either "
+"`nvptx64-nvidia-cuda` for NVIDIA GPUs or `amdgcn-amd-amdhsa` for AMD GPUs. "
+"More detailed information is provided in the {ref}`GPU documentation "
+"<libc_gpu_building>`."
+msgstr ""
+
+#: ../../../full_cross_build.md:172
+msgid "Building and Testing with an Emulator"
+msgstr ""
+
+#: ../../../full_cross_build.md:174
+msgid ""
+"If you are cross-compiling the libc for a different architecture, you can "
+"use an emulator such as QEMU to run the tests. For instance, to cross-"
+"compile for `riscv64` and run tests using `qemu-riscv64`, you can use the "
+"standalone cross build recipe with a few additional CMake flags."
+msgstr ""
+
+#: ../../../full_cross_build.md:180
+msgid ""
+"Assuming your system compiler (e.g., `clang++`) supports the RISC-V target, "
+"you can configure the build as follows:"
+msgstr ""
+
+#: ../../../full_cross_build.md:201
+msgid "The notable additions are:"
+msgstr ""
+
+#: ../../../full_cross_build.md:203
+msgid ""
+"**The compiler target** - We set `-DCMAKE_C_COMPILER_TARGET=riscv64-linux-"
+"gnu` and `-DCMAKE_CXX_COMPILER_TARGET=riscv64-linux-gnu` to tell CMake to "
+"pass the correct `--target` flags to `clang` so that it cross-compiles "
+"rather than building for the host."
+msgstr ""
+
+#: ../../../full_cross_build.md:204
+msgid "**The target triple** - We set `-DLIBC_TARGET_TRIPLE=riscv64-linux-gnu`"
+msgstr ""
+
+#: ../../../full_cross_build.md:205
+msgid ""
+"**The kernel headers** - We set `-DLIBC_KERNEL_HEADERS=/usr/riscv64-linux-"
+"gnu/include` to point to the target's Linux API headers (e.g. for `asm/"
+"unistd.h`)."
+msgstr ""
+
+#: ../../../full_cross_build.md:207
+msgid ""
+"**The cross-compiling emulator** - We set `-"
+"DCMAKE_CROSSCOMPILING_EMULATOR=qemu-riscv64` to tell CMake how to execute "
+"the compiled unittests. Note that this requires that `qemu-riscv64` is "
+"installed and available in your `$PATH`."
+msgstr ""
+
+#: ../../../full_cross_build.md:210
+msgid ""
+"**LLD Linker** - We set `-DLLVM_ENABLE_LLD=ON` to ensure the test suite is "
+"linked using `lld`, which is necessary for cross-compilation."
+msgstr ""
+
+#: ../../../full_cross_build.md:212
+msgid "Build and Test step"
+msgstr ""
+
+#: ../../../full_cross_build.md:214
+msgid "You can then build the libc using:"
+msgstr ""
+
+#: ../../../full_cross_build.md:220
+msgid ""
+"To run the tests for the cross-compiled libc, you must use the hermetic test "
+"suite, which is entirely self-hosted."
+msgstr ""
+
+#: ../../../full_cross_build.md:228
+msgid ""
+"The standard `check-libc` target relies on the target's system C++ and C "
+"library headers. Because these tests aren't hermetic, they are not expected "
+"to work for a standalone cross-compilation build."
+msgstr ""
