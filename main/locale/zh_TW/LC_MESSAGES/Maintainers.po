@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../Maintainers.md:6
 msgid "Michael Jones"
-msgstr ""
+msgstr "Michael Jones"
 
 #: ../../../Maintainers.md:7
 msgid ""
@@ -62,7 +62,7 @@ msgstr ""
 
 #: ../../../Maintainers.md:14
 msgid "Daniel Thornburgh"
-msgstr ""
+msgstr "Daniel Thornburgh"
 
 #: ../../../Maintainers.md:15
 msgid ""
@@ -86,11 +86,11 @@ msgstr ""
 
 #: ../../../Maintainers.md:21
 msgid "GPU"
-msgstr ""
+msgstr "GPU"
 
 #: ../../../Maintainers.md:22
 msgid "Joseph Huber"
-msgstr ""
+msgstr "Joseph Huber"
 
 #: ../../../Maintainers.md:23
 msgid ""

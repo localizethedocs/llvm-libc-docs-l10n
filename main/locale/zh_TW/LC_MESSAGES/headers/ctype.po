@@ -88,7 +88,7 @@ msgstr ""
 
 #: ../../../headers/ctype.rst:25
 msgid "isalpha"
-msgstr ""
+msgstr "isalpha"
 
 #: ../../../headers/ctype.rst:27
 msgid "7.4.1.2"
@@ -112,7 +112,7 @@ msgstr ""
 
 #: ../../../headers/ctype.rst:33
 msgid "isblank"
-msgstr ""
+msgstr "isblank"
 
 #: ../../../headers/ctype.rst:35
 msgid "7.4.1.3"
@@ -136,7 +136,7 @@ msgstr ""
 
 #: ../../../headers/ctype.rst:41
 msgid "iscntrl"
-msgstr ""
+msgstr "iscntrl"
 
 #: ../../../headers/ctype.rst:43
 msgid "7.4.1.4"
@@ -160,7 +160,7 @@ msgstr ""
 
 #: ../../../headers/ctype.rst:49
 msgid "isdigit"
-msgstr ""
+msgstr "isdigit"
 
 #: ../../../headers/ctype.rst:51
 msgid "7.4.1.5"
@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../../headers/ctype.rst:57
 msgid "isgraph"
-msgstr ""
+msgstr "isgraph"
 
 #: ../../../headers/ctype.rst:59
 msgid "7.4.1.6"
@@ -208,7 +208,7 @@ msgstr ""
 
 #: ../../../headers/ctype.rst:65
 msgid "islower"
-msgstr ""
+msgstr "islower"
 
 #: ../../../headers/ctype.rst:67
 msgid "7.4.1.7"
@@ -232,7 +232,7 @@ msgstr ""
 
 #: ../../../headers/ctype.rst:73
 msgid "isprint"
-msgstr ""
+msgstr "isprint"
 
 #: ../../../headers/ctype.rst:75
 msgid "7.4.1.8"
@@ -256,7 +256,7 @@ msgstr ""
 
 #: ../../../headers/ctype.rst:81
 msgid "ispunct"
-msgstr ""
+msgstr "ispunct"
 
 #: ../../../headers/ctype.rst:83
 msgid "7.4.1.9"
@@ -280,7 +280,7 @@ msgstr ""
 
 #: ../../../headers/ctype.rst:89
 msgid "isspace"
-msgstr ""
+msgstr "isspace"
 
 #: ../../../headers/ctype.rst:91
 msgid "7.4.1.10"
@@ -304,7 +304,7 @@ msgstr ""
 
 #: ../../../headers/ctype.rst:97
 msgid "isupper"
-msgstr ""
+msgstr "isupper"
 
 #: ../../../headers/ctype.rst:99
 msgid "7.4.1.11"
@@ -328,7 +328,7 @@ msgstr ""
 
 #: ../../../headers/ctype.rst:105
 msgid "isxdigit"
-msgstr ""
+msgstr "isxdigit"
 
 #: ../../../headers/ctype.rst:107
 msgid "7.4.1.12"
@@ -352,7 +352,7 @@ msgstr ""
 
 #: ../../../headers/ctype.rst:113
 msgid "tolower"
-msgstr ""
+msgstr "tolower"
 
 #: ../../../headers/ctype.rst:115
 msgid "7.4.2.1"

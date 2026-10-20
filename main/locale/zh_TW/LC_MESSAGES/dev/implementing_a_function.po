@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../../dev/implementing_a_function.md:7
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../dev/implementing_a_function.md:9
 msgid ""

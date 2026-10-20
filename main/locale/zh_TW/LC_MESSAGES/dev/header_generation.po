@@ -95,7 +95,7 @@ msgstr ""
 #: ../../../dev/header_generation.md:97 ../../../dev/header_generation.md:123
 #: ../../../dev/header_generation.md:141 ../../../dev/header_generation.md:157
 msgid "Example:"
-msgstr ""
+msgstr "範例："
 
 #: ../../../dev/header_generation.md:54
 msgid ""
@@ -213,7 +213,7 @@ msgstr ""
 
 #: ../../../dev/header_generation.md:177
 msgid "Test Integration Errors"
-msgstr ""
+msgstr "測試整合錯誤"
 
 #: ../../../dev/header_generation.md:179
 msgid ""

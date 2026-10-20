@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../dev/date_and_time.md:3
 msgid "Date and Time"
-msgstr ""
+msgstr "日期與時間"
 
 #: ../../../dev/date_and_time.md:5
 msgid ""
@@ -76,7 +76,7 @@ msgstr ""
 
 #: ../../../dev/date_and_time.md:34
 msgid "Algorithms"
-msgstr ""
+msgstr "演算法"
 
 #: ../../../dev/date_and_time.md:36
 msgid ""

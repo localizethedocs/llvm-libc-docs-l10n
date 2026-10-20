@@ -38,27 +38,27 @@ msgstr ""
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "gcc-5"
-msgstr ""
+msgstr "gcc-5"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "gcc-6"
-msgstr ""
+msgstr "gcc-6"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "gcc-7"
-msgstr ""
+msgstr "gcc-7"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "gcc-8"
-msgstr ""
+msgstr "gcc-8"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "gcc-9"
-msgstr ""
+msgstr "gcc-9"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "gcc-10"
-msgstr ""
+msgstr "gcc-10"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "gcc-11"
@@ -86,7 +86,7 @@ msgstr ""
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "gcc-17"
-msgstr ""
+msgstr "gcc-17"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_aarch64_get_fpcr`"
@@ -94,203 +94,203 @@ msgstr ""
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "{{ check }}"
-msgstr ""
+msgstr "{{ check }}"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_aarch64_get_fpsr`"
-msgstr ""
+msgstr "`__builtin_aarch64_get_fpsr`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_aarch64_set_fpcr`"
-msgstr ""
+msgstr "`__builtin_aarch64_set_fpcr`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_aarch64_set_fpsr`"
-msgstr ""
+msgstr "`__builtin_aarch64_set_fpsr`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_aarch64_wsr64`"
-msgstr ""
+msgstr "`__builtin_aarch64_wsr64`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_abs`"
-msgstr ""
+msgstr "`__builtin_abs`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_addc`"
-msgstr ""
+msgstr "`__builtin_addc`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_addcb`"
-msgstr ""
+msgstr "`__builtin_addcb`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_addcl`"
-msgstr ""
+msgstr "`__builtin_addcl`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_addcll`"
-msgstr ""
+msgstr "`__builtin_addcll`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_addcs`"
-msgstr ""
+msgstr "`__builtin_addcs`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_add_overflow`"
-msgstr ""
+msgstr "`__builtin_add_overflow`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_addressof`"
-msgstr ""
+msgstr "`__builtin_addressof`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_align_down`"
-msgstr ""
+msgstr "`__builtin_align_down`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_align_up`"
-msgstr ""
+msgstr "`__builtin_align_up`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_alloca`"
-msgstr ""
+msgstr "`__builtin_alloca`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_amdgcn_ldexp`"
-msgstr ""
+msgstr "`__builtin_amdgcn_ldexp`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_amdgcn_ldexpf`"
-msgstr ""
+msgstr "`__builtin_amdgcn_ldexpf`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_amdgcn_s_sendmsg`"
-msgstr ""
+msgstr "`__builtin_amdgcn_s_sendmsg`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_amdgcn_s_sleep`"
-msgstr ""
+msgstr "`__builtin_amdgcn_s_sleep`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_amdgcn_workitem_id_x`"
-msgstr ""
+msgstr "`__builtin_amdgcn_workitem_id_x`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_arm_get_fpscr`"
-msgstr ""
+msgstr "`__builtin_arm_get_fpscr`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_arm_isb`"
-msgstr ""
+msgstr "`__builtin_arm_isb`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_arm_set_fpscr`"
-msgstr ""
+msgstr "`__builtin_arm_set_fpscr`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_arm_wsr64`"
-msgstr ""
+msgstr "`__builtin_arm_wsr64`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_assume`"
-msgstr ""
+msgstr "`__builtin_assume`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_assume_aligned`"
-msgstr ""
+msgstr "`__builtin_assume_aligned`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_bcmp`"
-msgstr ""
+msgstr "`__builtin_bcmp`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_bit_cast`"
-msgstr ""
+msgstr "`__builtin_bit_cast`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_bswap16`"
-msgstr ""
+msgstr "`__builtin_bswap16`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_bswap32`"
-msgstr ""
+msgstr "`__builtin_bswap32`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_bswap64`"
-msgstr ""
+msgstr "`__builtin_bswap64`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_ceil`"
-msgstr ""
+msgstr "`__builtin_ceil`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_ceilf`"
-msgstr ""
+msgstr "`__builtin_ceilf`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_clear_padding`"
-msgstr ""
+msgstr "`__builtin_clear_padding`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_clz`"
-msgstr ""
+msgstr "`__builtin_clz`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_clzg`"
-msgstr ""
+msgstr "`__builtin_clzg`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_clzl`"
-msgstr ""
+msgstr "`__builtin_clzl`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_clzll`"
-msgstr ""
+msgstr "`__builtin_clzll`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_clzs`"
-msgstr ""
+msgstr "`__builtin_clzs`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_complex`"
-msgstr ""
+msgstr "`__builtin_complex`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_convertvector`"
-msgstr ""
+msgstr "`__builtin_convertvector`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_copysign`"
-msgstr ""
+msgstr "`__builtin_copysign`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_copysignf`"
-msgstr ""
+msgstr "`__builtin_copysignf`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_copysignf16`"
-msgstr ""
+msgstr "`__builtin_copysignf16`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_ctz`"
-msgstr ""
+msgstr "`__builtin_ctz`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_ctzg`"
-msgstr ""
+msgstr "`__builtin_ctzg`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_ctzl`"
-msgstr ""
+msgstr "`__builtin_ctzl`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_ctzll`"
-msgstr ""
+msgstr "`__builtin_ctzll`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_ctzs`"
-msgstr ""
+msgstr "`__builtin_ctzs`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_elementwise_abs`"
@@ -494,203 +494,203 @@ msgstr ""
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_ldexp`"
-msgstr ""
+msgstr "`__builtin_ldexp`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_ldexpf`"
-msgstr ""
+msgstr "`__builtin_ldexpf`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_masked_compress_store`"
-msgstr ""
+msgstr "`__builtin_masked_compress_store`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_masked_expand_load`"
-msgstr ""
+msgstr "`__builtin_masked_expand_load`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_masked_gather`"
-msgstr ""
+msgstr "`__builtin_masked_gather`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_masked_load`"
-msgstr ""
+msgstr "`__builtin_masked_load`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_masked_scatter`"
-msgstr ""
+msgstr "`__builtin_masked_scatter`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_masked_store`"
-msgstr ""
+msgstr "`__builtin_masked_store`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_memcmp`"
-msgstr ""
+msgstr "`__builtin_memcmp`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_memcmp_inline`"
-msgstr ""
+msgstr "`__builtin_memcmp_inline`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_memcpy`"
-msgstr ""
+msgstr "`__builtin_memcpy`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_memcpy_inline`"
-msgstr ""
+msgstr "`__builtin_memcpy_inline`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_memmove`"
-msgstr ""
+msgstr "`__builtin_memmove`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_memset`"
-msgstr ""
+msgstr "`__builtin_memset`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_memset_inline`"
-msgstr ""
+msgstr "`__builtin_memset_inline`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_mul_overflow`"
-msgstr ""
+msgstr "`__builtin_mul_overflow`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_nanf`"
-msgstr ""
+msgstr "`__builtin_nanf`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_nans`"
-msgstr ""
+msgstr "`__builtin_nans`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_nansf`"
-msgstr ""
+msgstr "`__builtin_nansf`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_nansl`"
-msgstr ""
+msgstr "`__builtin_nansl`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_nearbyint`"
-msgstr ""
+msgstr "`__builtin_nearbyint`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_nearbyintf`"
-msgstr ""
+msgstr "`__builtin_nearbyintf`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_nondeterministic_value`"
-msgstr ""
+msgstr "`__builtin_nondeterministic_value`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_nontemporal_store`"
-msgstr ""
+msgstr "`__builtin_nontemporal_store`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_offsetof`"
-msgstr ""
+msgstr "`__builtin_offsetof`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_popcount`"
-msgstr ""
+msgstr "`__builtin_popcount`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_popcountg`"
-msgstr ""
+msgstr "`__builtin_popcountg`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_popcountl`"
-msgstr ""
+msgstr "`__builtin_popcountl`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_popcountll`"
-msgstr ""
+msgstr "`__builtin_popcountll`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_prefetch`"
-msgstr ""
+msgstr "`__builtin_prefetch`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_readcyclecounter`"
-msgstr ""
+msgstr "`__builtin_readcyclecounter`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_readsteadycounter`"
-msgstr ""
+msgstr "`__builtin_readsteadycounter`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_reduce_add`"
-msgstr ""
+msgstr "`__builtin_reduce_add`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_reduce_and`"
-msgstr ""
+msgstr "`__builtin_reduce_and`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_reduce_max`"
-msgstr ""
+msgstr "`__builtin_reduce_max`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_reduce_min`"
-msgstr ""
+msgstr "`__builtin_reduce_min`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_reduce_mul`"
-msgstr ""
+msgstr "`__builtin_reduce_mul`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_reduce_or`"
-msgstr ""
+msgstr "`__builtin_reduce_or`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_reduce_xor`"
-msgstr ""
+msgstr "`__builtin_reduce_xor`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_remainder`"
-msgstr ""
+msgstr "`__builtin_remainder`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_remainderf`"
-msgstr ""
+msgstr "`__builtin_remainderf`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_return_address`"
-msgstr ""
+msgstr "`__builtin_return_address`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_rint`"
-msgstr ""
+msgstr "`__builtin_rint`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_rintf`"
-msgstr ""
+msgstr "`__builtin_rintf`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_round`"
-msgstr ""
+msgstr "`__builtin_round`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_roundeven`"
-msgstr ""
+msgstr "`__builtin_roundeven`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_roundevenf`"
-msgstr ""
+msgstr "`__builtin_roundevenf`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_roundf`"
-msgstr ""
+msgstr "`__builtin_roundf`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_sadd_overflow`"
-msgstr ""
+msgstr "`__builtin_sadd_overflow`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_shufflevector`"
-msgstr ""
+msgstr "`__builtin_shufflevector`"
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_signbit`"

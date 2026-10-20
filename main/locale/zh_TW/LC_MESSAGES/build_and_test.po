@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../../build_and_test.md:3
 msgid "Building and Testing the libc"
-msgstr ""
+msgstr "建置與測試 libc"
 
 #: ../../../build_and_test.md:5
 msgid "Build modes"
-msgstr ""
+msgstr "建置模式"
 
 #: ../../../build_and_test.md:7
 msgid "The libc can be built and tested in two different modes:"

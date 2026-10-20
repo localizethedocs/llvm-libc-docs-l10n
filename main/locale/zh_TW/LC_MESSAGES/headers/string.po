@@ -183,7 +183,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:66
 msgid "stpcpy"
-msgstr ""
+msgstr "stpcpy"
 
 #: ../../../headers/string.rst:69
 msgid ""
@@ -193,7 +193,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:70
 msgid "stpncpy"
-msgstr ""
+msgstr "stpncpy"
 
 #: ../../../headers/string.rst:73
 msgid ""
@@ -203,7 +203,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:74
 msgid "strcat"
-msgstr ""
+msgstr "strcat"
 
 #: ../../../headers/string.rst:76
 msgid "7.26.3.1"
@@ -217,7 +217,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:78
 msgid "strchr"
-msgstr ""
+msgstr "strchr"
 
 #: ../../../headers/string.rst:80
 msgid "7.26.5.3"
@@ -231,7 +231,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:82
 msgid "strcmp"
-msgstr ""
+msgstr "strcmp"
 
 #: ../../../headers/string.rst:84
 msgid "7.26.4.2"
@@ -245,7 +245,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:86
 msgid "strcoll"
-msgstr ""
+msgstr "strcoll"
 
 #: ../../../headers/string.rst:88
 msgid "7.26.4.3"
@@ -269,7 +269,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:94
 msgid "strcpy"
-msgstr ""
+msgstr "strcpy"
 
 #: ../../../headers/string.rst:96
 msgid "7.26.2.4"
@@ -283,7 +283,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:98
 msgid "strcspn"
-msgstr ""
+msgstr "strcspn"
 
 #: ../../../headers/string.rst:100
 msgid "7.26.5.4"
@@ -297,7 +297,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:102
 msgid "strdup"
-msgstr ""
+msgstr "strdup"
 
 #: ../../../headers/string.rst:104
 msgid "7.26.2.6"
@@ -311,7 +311,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:106
 msgid "strerror"
-msgstr ""
+msgstr "strerror"
 
 #: ../../../headers/string.rst:108
 msgid "7.26.6.3"
@@ -325,7 +325,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:110
 msgid "strlen"
-msgstr ""
+msgstr "strlen"
 
 #: ../../../headers/string.rst:112
 msgid "7.26.6.4"
@@ -339,7 +339,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:114
 msgid "strncat"
-msgstr ""
+msgstr "strncat"
 
 #: ../../../headers/string.rst:116
 msgid "7.26.3.2"
@@ -353,7 +353,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:118
 msgid "strncmp"
-msgstr ""
+msgstr "strncmp"
 
 #: ../../../headers/string.rst:120
 msgid "7.26.4.4"
@@ -367,7 +367,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:122
 msgid "strncpy"
-msgstr ""
+msgstr "strncpy"
 
 #: ../../../headers/string.rst:124
 msgid "7.26.2.5"
@@ -381,7 +381,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:126
 msgid "strndup"
-msgstr ""
+msgstr "strndup"
 
 #: ../../../headers/string.rst:128
 msgid "7.26.2.7"
@@ -409,7 +409,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:134
 msgid "strpbrk"
-msgstr ""
+msgstr "strpbrk"
 
 #: ../../../headers/string.rst:136
 msgid "7.26.5.5"
@@ -423,7 +423,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:138
 msgid "strrchr"
-msgstr ""
+msgstr "strrchr"
 
 #: ../../../headers/string.rst:140
 msgid "7.26.5.6"
@@ -437,7 +437,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:142
 msgid "strspn"
-msgstr ""
+msgstr "strspn"
 
 #: ../../../headers/string.rst:144
 msgid "7.26.5.7"
@@ -451,7 +451,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:146
 msgid "strstr"
-msgstr ""
+msgstr "strstr"
 
 #: ../../../headers/string.rst:148
 msgid "7.26.5.8"
@@ -465,7 +465,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:150
 msgid "strtok"
-msgstr ""
+msgstr "strtok"
 
 #: ../../../headers/string.rst:152
 msgid "7.26.5.9"
@@ -479,7 +479,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:154
 msgid "strtok_r"
-msgstr ""
+msgstr "strtok_r"
 
 #: ../../../headers/string.rst:157
 msgid ""
@@ -489,7 +489,7 @@ msgstr ""
 
 #: ../../../headers/string.rst:158
 msgid "strxfrm"
-msgstr ""
+msgstr "strxfrm"
 
 #: ../../../headers/string.rst:160
 msgid "7.26.4.5"

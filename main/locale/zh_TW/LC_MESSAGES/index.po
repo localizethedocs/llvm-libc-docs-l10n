@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../../index.md:62
 msgid "Using LLVM-libc"
-msgstr ""
+msgstr "使用 LLVM-libc"
 
 #: ../../../index.md:76
 msgid "Platforms"
-msgstr ""
+msgstr "平台"
 
 #: ../../../index.md:85
 msgid "Implementation Status"
@@ -43,11 +43,11 @@ msgstr ""
 
 #: ../../../index.md:108
 msgid "Discourse"
-msgstr ""
+msgstr "Discourse"
 
 #: ../../../index.md:108
 msgid "Join the Discord"
-msgstr ""
+msgstr "加入 Discord"
 
 #: ../../../index.md:108
 msgid "Discord Channel"
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../../index.md:108
 msgid "Links"
-msgstr ""
+msgstr "連結"
 
 #: ../../../index.md:1
 msgid "The LLVM-libc logo, drawn by Jordan Abrahams-Whitehead"
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../../index.md:7
 msgid "The LLVM C Library"
-msgstr ""
+msgstr "LLVM C 程式庫"
 
 #: ../../../index.md:9
 msgid ""

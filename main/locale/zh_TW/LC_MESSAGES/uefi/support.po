@@ -61,11 +61,11 @@ msgstr ""
 
 #: ../../../uefi/support.rst:33
 msgid "strings.h"
-msgstr ""
+msgstr "strings.h"
 
 #: ../../../uefi/support.rst:41
 msgid "stdbit.h"
-msgstr ""
+msgstr "stdbit.h"
 
 #: ../../../uefi/support.rst:49
 msgid "stdlib.h"

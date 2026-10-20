@@ -92,7 +92,7 @@ msgstr ""
 
 #: ../../../dev/entrypoints.md:37
 msgid "Header File Structure"
-msgstr ""
+msgstr "標頭檔結構"
 
 #: ../../../dev/entrypoints.md:39
 msgid ""
@@ -157,7 +157,7 @@ msgstr ""
 
 #: ../../../dev/entrypoints.md:96
 msgid "`add_entrypoint_library`"
-msgstr ""
+msgstr "`add_entrypoint_library`"
 
 #: ../../../dev/entrypoints.md:98
 msgid ""
@@ -169,7 +169,7 @@ msgstr ""
 
 #: ../../../dev/entrypoints.md:102
 msgid "Configuration: `entrypoints.txt`"
-msgstr ""
+msgstr "組態：`entrypoints.txt`"
 
 #: ../../../dev/entrypoints.md:104
 msgid ""

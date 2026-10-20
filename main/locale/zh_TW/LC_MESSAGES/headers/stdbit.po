@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../headers/stdbit.rst:3
 msgid "stdbit.h"
-msgstr ""
+msgstr "stdbit.h"
 
 #: ../../../headers/stdbit.rst:6
 msgid "Macros"
@@ -525,7 +525,7 @@ msgstr ""
 
 #: ../../../headers/stdbit.rst:322
 msgid "stdc_leading_zeros_uc"
-msgstr ""
+msgstr "stdc_leading_zeros_uc"
 
 #: ../../../headers/stdbit.rst:324 ../../../headers/stdbit.rst:328
 #: ../../../headers/stdbit.rst:332 ../../../headers/stdbit.rst:336
@@ -535,23 +535,23 @@ msgstr ""
 
 #: ../../../headers/stdbit.rst:326
 msgid "stdc_leading_zeros_ui"
-msgstr ""
+msgstr "stdc_leading_zeros_ui"
 
 #: ../../../headers/stdbit.rst:330
 msgid "stdc_leading_zeros_ul"
-msgstr ""
+msgstr "stdc_leading_zeros_ul"
 
 #: ../../../headers/stdbit.rst:334
 msgid "stdc_leading_zeros_ull"
-msgstr ""
+msgstr "stdc_leading_zeros_ull"
 
 #: ../../../headers/stdbit.rst:338
 msgid "stdc_leading_zeros_us"
-msgstr ""
+msgstr "stdc_leading_zeros_us"
 
 #: ../../../headers/stdbit.rst:342
 msgid "stdc_trailing_ones_uc"
-msgstr ""
+msgstr "stdc_trailing_ones_uc"
 
 #: ../../../headers/stdbit.rst:344 ../../../headers/stdbit.rst:348
 #: ../../../headers/stdbit.rst:352 ../../../headers/stdbit.rst:356
@@ -577,7 +577,7 @@ msgstr ""
 
 #: ../../../headers/stdbit.rst:362
 msgid "stdc_trailing_zeros_uc"
-msgstr ""
+msgstr "stdc_trailing_zeros_uc"
 
 #: ../../../headers/stdbit.rst:364 ../../../headers/stdbit.rst:368
 #: ../../../headers/stdbit.rst:372 ../../../headers/stdbit.rst:376
@@ -587,16 +587,16 @@ msgstr ""
 
 #: ../../../headers/stdbit.rst:366
 msgid "stdc_trailing_zeros_ui"
-msgstr ""
+msgstr "stdc_trailing_zeros_ui"
 
 #: ../../../headers/stdbit.rst:370
 msgid "stdc_trailing_zeros_ul"
-msgstr ""
+msgstr "stdc_trailing_zeros_ul"
 
 #: ../../../headers/stdbit.rst:374
 msgid "stdc_trailing_zeros_ull"
-msgstr ""
+msgstr "stdc_trailing_zeros_ull"
 
 #: ../../../headers/stdbit.rst:378
 msgid "stdc_trailing_zeros_us"
-msgstr ""
+msgstr "stdc_trailing_zeros_us"

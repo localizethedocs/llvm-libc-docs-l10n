@@ -27,31 +27,31 @@ msgstr ""
 
 #: ../../../arch_support.md:5
 msgid "aarch64"
-msgstr ""
+msgstr "aarch64"
 
 #: ../../../arch_support.md:6
 msgid "amdgpu"
-msgstr ""
+msgstr "amdgpu"
 
 #: ../../../arch_support.md:7
 msgid "arm"
-msgstr ""
+msgstr "arm"
 
 #: ../../../arch_support.md:8
 msgid "nvptx"
-msgstr ""
+msgstr "nvptx"
 
 #: ../../../arch_support.md:9
 msgid "riscv32"
-msgstr ""
+msgstr "riscv32"
 
 #: ../../../arch_support.md:10
 msgid "riscv64"
-msgstr ""
+msgstr "riscv64"
 
 #: ../../../arch_support.md:11
 msgid "x86_64"
-msgstr ""
+msgstr "x86_64"
 
 #: ../../../arch_support.md:13
 msgid ""

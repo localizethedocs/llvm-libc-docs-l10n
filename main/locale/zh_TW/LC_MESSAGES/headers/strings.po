@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../headers/strings.rst:3
 msgid "strings.h"
-msgstr ""
+msgstr "strings.h"
 
 #: ../../../headers/strings.rst:6
 msgid "Functions"
@@ -116,7 +116,7 @@ msgstr ""
 
 #: ../../../headers/strings.rst:41
 msgid "index"
-msgstr ""
+msgstr "index"
 
 #: ../../../headers/strings.rst:44
 msgid ""
@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../../../headers/strings.rst:45
 msgid "rindex"
-msgstr ""
+msgstr "rindex"
 
 #: ../../../headers/strings.rst:48
 msgid ""
@@ -136,7 +136,7 @@ msgstr ""
 
 #: ../../../headers/strings.rst:49
 msgid "strcasecmp"
-msgstr ""
+msgstr "strcasecmp"
 
 #: ../../../headers/strings.rst:52
 msgid ""

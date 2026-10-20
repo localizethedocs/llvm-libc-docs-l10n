@@ -156,7 +156,7 @@ msgstr ""
 
 #: ../../../gpu/building.rst:136
 msgid "**include/<target-triple>**"
-msgstr ""
+msgstr "**include/<target-triple>**"
 
 #: ../../../gpu/building.rst:137
 msgid ""
@@ -168,6 +168,7 @@ msgstr ""
 msgid ""
 "**lib/clang/<llvm-major-version>/include/llvm-libc-wrappers/llvm-libc-decls**"
 msgstr ""
+"**lib/clang/<llvm-major-version>/include/llvm-libc-wrappers/llvm-libc-decls**"
 
 #: ../../../gpu/building.rst:141
 msgid ""

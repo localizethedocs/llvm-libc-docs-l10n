@@ -44,12 +44,12 @@ msgstr ""
 
 #: ../../../compiler_support.md:16
 msgid "Minimum supported versions"
-msgstr ""
+msgstr "最低支援版本"
 
 #: ../../../compiler_support.md:18
 msgid "`Clang 11`"
-msgstr ""
+msgstr "`Clang 11`"
 
 #: ../../../compiler_support.md:19
 msgid "`GCC 12.2`"
-msgstr ""
+msgstr "`GCC 12.2`"
