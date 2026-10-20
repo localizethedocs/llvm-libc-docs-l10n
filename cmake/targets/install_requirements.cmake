@@ -346,11 +346,11 @@ execute_process(
     COMMAND ${CMAKE_COMMAND} -E env
             ${ENV_VARS_OF_SYSTEM}
             ${CMake_EXECUTABLE}
-            -S ${PROJ_OUT_REPO_DIR}/llvm
+            -S ${PROJ_OUT_REPO_DIR}/runtimes
             -B ${PROJ_OUT_REPO_BUILD_DIR}
             -G Ninja
             -D CMAKE_BUILD_TYPE=Release
-            -D LLVM_ENABLE_PROJECTS=libc
+            -D LLVM_ENABLE_RUNTIMES=libc
             -D LLVM_TARGETS_TO_BUILD=host
             -D LLVM_INCLUDE_TESTS=OFF
             -D LLVM_INCLUDE_BENCHMARKS=OFF
