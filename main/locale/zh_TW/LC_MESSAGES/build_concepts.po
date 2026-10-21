@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../build_concepts.md:3
 msgid "Build Concepts"
-msgstr ""
+msgstr "建置概念"
 
 #: ../../../build_concepts.md:5
 msgid ""

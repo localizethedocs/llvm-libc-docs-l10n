@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../Maintainers.md:5
 msgid "Lead Maintainer"
-msgstr ""
+msgstr "首席維護者"
 
 #: ../../../Maintainers.md:6
 msgid "Michael Jones"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../../Maintainers.md:9
 msgid "Baremetal"
-msgstr ""
+msgstr "裸機"
 
 #: ../../../Maintainers.md:10
 msgid "Petr Hosek"

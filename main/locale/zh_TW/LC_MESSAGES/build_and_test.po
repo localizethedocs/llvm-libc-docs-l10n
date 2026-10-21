@@ -53,17 +53,19 @@ msgstr ""
 
 #: ../../../build_and_test.md:26
 msgid "Unit tests - You can run unittests by the command:"
-msgstr ""
+msgstr "單元測試—您可以使用以下命令執行單元測試："
 
 #: ../../../build_and_test.md:32
 msgid "Integration tests - You can run integration tests by the command:"
-msgstr ""
+msgstr "整合測試—您可以透過以下命令執行整合測試："
 
 #: ../../../build_and_test.md:38
 msgid ""
 "Shared tests - You can run tests for shared, standalone components (like "
 "math primitives) without needing the full libc runtime by the command:"
 msgstr ""
+"共用測試—您可以透過以下命令，在不需要完整 libc 執行環境的情況下，針對共用的獨"
+"立組件（例如數學基元）執行測試："
 
 #: ../../../build_and_test.md:44
 msgid "Building with VSCode"

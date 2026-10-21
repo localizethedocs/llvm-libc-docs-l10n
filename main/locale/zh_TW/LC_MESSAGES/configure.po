@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../configure.rst:18
 msgid "For example:"
-msgstr ""
+msgstr "例如："
 
 #: ../../../configure.rst:24
 msgid ""

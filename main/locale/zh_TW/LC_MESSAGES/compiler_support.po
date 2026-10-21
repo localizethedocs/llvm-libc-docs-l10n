@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../compiler_support.md:3
 msgid "Compiler Support"
-msgstr ""
+msgstr "編譯器支援"
 
 #: ../../../compiler_support.md:5
 msgid ""

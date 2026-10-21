@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../index.md:108
 msgid "Buildbot"
-msgstr ""
+msgstr "Buildbot"
 
 #: ../../../index.md:108
 msgid "Links"
@@ -77,10 +77,13 @@ msgid ""
 "UEFI, macOS, Windows), and written in modern C++ for correctness, "
 "performance, and safety."
 msgstr ""
+"LLVM-libc 是從零開始實現的 C 標準程式庫，隸屬於 LLVM 專案。其設計目標是 **模"
+"組化** （各個部分皆可獨立使用）、支援 **多種平台** （Linux、GPU、裸機嵌入式系"
+"統、UEFI、macOS、Windows），並以現代 C++ 撰寫，確保正確性、效能與安全性。"
 
 #: ../../../index.md:15
 msgid "The logo was drawn by Jordan Abrahams-Whitehead"
-msgstr ""
+msgstr "標誌由 Jordan Abrahams-Whitehead 繪製"
 
 #: ../../../index.md:17
 msgid "What Works Today"
@@ -139,7 +142,7 @@ msgstr ""
 
 #: ../../../index.md:41
 msgid "Getting Started"
-msgstr ""
+msgstr "開始使用"
 
 #: ../../../index.md:43
 msgid ""
@@ -156,7 +159,7 @@ msgstr ""
 
 #: ../../../index.md:50
 msgid "Get Involved"
-msgstr ""
+msgstr "參與其中"
 
 #: ../../../index.md:52
 msgid ""
@@ -174,7 +177,7 @@ msgstr ""
 
 #: ../../../index.md:57
 msgid "[Discourse](https://discourse.llvm.org/c/runtimes/libc)"
-msgstr ""
+msgstr "[Discourse](https://discourse.llvm.org/c/runtimes/libc)"
 
 #: ../../../index.md:58
 msgid ""
@@ -185,4 +188,4 @@ msgstr ""
 
 #: ../../../index.md:60
 msgid "[Buildbot](https://lab.llvm.org/buildbot/#/builders?tags=libc)"
-msgstr ""
+msgstr "[Buildbot](https://lab.llvm.org/buildbot/#/builders?tags=libc)"

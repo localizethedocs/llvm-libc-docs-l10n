@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../full_cross_build.md:3
 msgid "Full Cross Build"
-msgstr ""
+msgstr "完整交叉建置"
 
 #: ../../../full_cross_build.md:6
 msgid ""

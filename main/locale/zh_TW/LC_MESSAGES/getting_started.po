@@ -39,6 +39,8 @@ msgid ""
 "build tools. On a Debian/Ubuntu-based system, you can install these using "
 "`apt-get`:"
 msgstr ""
+"若要建置 LLVM-libc，您需要近期版本的 Clang（v15 以上）及基本建置工具。在 "
+"Debian/Ubuntu 系統上，您可以使用 `apt-get` 安裝這些工具："
 
 #: ../../../getting_started.md:21
 msgid "2. Clone and Configure"
@@ -75,11 +77,11 @@ msgstr ""
 
 #: ../../../getting_started.md:71
 msgid "Compile it using the build artifacts:"
-msgstr ""
+msgstr "使用建置製品進行編譯："
 
 #: ../../../getting_started.md:82
 msgid "Finally, run the executable:"
-msgstr ""
+msgstr "最後，執行可執行檔："
 
 #: ../../../getting_started.md:89
 msgid ""

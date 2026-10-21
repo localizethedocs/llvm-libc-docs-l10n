@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../full_host_build.md:3
 msgid "Full Host Build"
-msgstr ""
+msgstr "完整主機建置"
 
 #: ../../../full_host_build.md:6
 msgid ""
@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../full_host_build.md:11
 msgid "Standard Building and Testing"
-msgstr ""
+msgstr "標準建置與測試"
 
 #: ../../../full_host_build.md:14
 msgid ""
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../../full_host_build.md:79
 msgid "Building Documentation"
-msgstr ""
+msgstr "建置文件"
 
 #: ../../../full_host_build.md:81
 msgid ""
@@ -157,7 +157,7 @@ msgstr ""
 
 #: ../../../full_host_build.md:125
 msgid "Step 2: Linux Headers"
-msgstr ""
+msgstr "第 2 步：Linux 標頭檔"
 
 #: ../../../full_host_build.md:127
 msgid ""
