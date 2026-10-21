@@ -1,0 +1,293 @@
+=======
+wchar.h
+=======
+
+Macros
+======
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Macro
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - WEOF
+    - |check|
+    - 7.31.1
+    -
+  * - __STDC_VERSION_WCHAR_H__
+    -
+    - 7.31.1
+    -
+
+Functions
+=========
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Function
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - btowc
+    - |check|
+    - 7.31.6.2.1
+    -
+  * - fgetwc
+    - |check|
+    - 7.31.3.1
+    -
+  * - fgetws
+    - |check|
+    - 7.31.3.2
+    -
+  * - fputwc
+    - |check|
+    - 7.31.3.3
+    -
+  * - fputws
+    - |check|
+    - 7.31.3.4
+    -
+  * - fwide
+    - |check|
+    - 7.31.3.5
+    -
+  * - fwprintf
+    -
+    - 7.31.2.2
+    -
+  * - fwscanf
+    -
+    - 7.31.2.3
+    -
+  * - getwc
+    - |check|
+    - 7.31.3.6
+    -
+  * - getwchar
+    - |check|
+    - 7.31.3.7
+    -
+  * - mbrlen
+    - |check|
+    - 7.31.6.4.2
+    -
+  * - mbrtowc
+    - |check|
+    - 7.31.6.4.3
+    -
+  * - mbsinit
+    - |check|
+    - 7.31.6.3.1
+    -
+  * - mbsrtowcs
+    - |check|
+    - 7.31.6.5.2
+    -
+  * - putwc
+    - |check|
+    - 7.31.3.8
+    -
+  * - putwchar
+    - |check|
+    - 7.31.3.9
+    -
+  * - swprintf
+    - |check|
+    - 7.31.2.4
+    -
+  * - swscanf
+    -
+    - 7.31.2.5
+    -
+  * - ungetwc
+    - |check|
+    - 7.31.3.10
+    -
+  * - vfwprintf
+    -
+    - 7.31.2.6
+    -
+  * - vfwscanf
+    -
+    - 7.31.2.7
+    -
+  * - vswprintf
+    -
+    - 7.31.2.8
+    -
+  * - vswscanf
+    -
+    - 7.31.2.9
+    -
+  * - vwprintf
+    -
+    - 7.31.2.10
+    -
+  * - vwscanf
+    -
+    - 7.31.2.11
+    -
+  * - wcrtomb
+    - |check|
+    - 7.31.6.4.4
+    -
+  * - wcscasecmp
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcscasecmp.html>`__
+  * - wcscat
+    - |check|
+    - 7.31.4.4.1
+    -
+  * - wcschr
+    - |check|
+    - 7.31.4.6.2
+    -
+  * - wcscmp
+    - |check|
+    - 7.31.4.5.2
+    -
+  * - wcscoll
+    - |check|
+    - 7.31.4.5.3
+    -
+  * - wcscpy
+    - |check|
+    - 7.31.4.3.1
+    -
+  * - wcscspn
+    - |check|
+    - 7.31.4.6.3
+    -
+  * - wcsftime
+    -
+    - 7.31.5.1
+    -
+  * - wcslen
+    - |check|
+    - 7.31.4.7.1
+    -
+  * - wcsncasecmp
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcsncasecmp.html>`__
+  * - wcsncat
+    - |check|
+    - 7.31.4.4.2
+    -
+  * - wcsncmp
+    - |check|
+    - 7.31.4.5.4
+    -
+  * - wcsncpy
+    - |check|
+    - 7.31.4.3.2
+    -
+  * - wcspbrk
+    - |check|
+    - 7.31.4.6.4
+    -
+  * - wcsrchr
+    - |check|
+    - 7.31.4.6.5
+    -
+  * - wcsrtombs
+    - |check|
+    - 7.31.6.5.3
+    -
+  * - wcsspn
+    - |check|
+    - 7.31.4.6.6
+    -
+  * - wcsstr
+    - |check|
+    - 7.31.4.6.7
+    -
+  * - wcstod
+    - |check|
+    - 7.31.4.2.2
+    -
+  * - wcstod128
+    -
+    - 7.31.4.2.3
+    -
+  * - wcstod32
+    -
+    - 7.31.4.2.3
+    -
+  * - wcstod64
+    -
+    - 7.31.4.2.3
+    -
+  * - wcstof
+    - |check|
+    - 7.31.4.2.2
+    -
+  * - wcstok
+    - |check|
+    - 7.31.4.6.8
+    -
+  * - wcstol
+    - |check|
+    - 7.31.4.2.4
+    -
+  * - wcstold
+    - |check|
+    - 7.31.4.2.2
+    -
+  * - wcstoll
+    - |check|
+    - 7.31.4.2.4
+    -
+  * - wcstoul
+    - |check|
+    - 7.31.4.2.4
+    -
+  * - wcstoull
+    - |check|
+    - 7.31.4.2.4
+    -
+  * - wcsxfrm
+    - |check|
+    - 7.31.4.5.5
+    -
+  * - wctob
+    - |check|
+    - 7.31.6.2.2
+    -
+  * - wmemchr
+    - |check|
+    - 7.31.4.6.9
+    -
+  * - wmemcmp
+    - |check|
+    - 7.31.4.5.6
+    -
+  * - wmemcpy
+    - |check|
+    - 7.31.4.3.3
+    -
+  * - wmemmove
+    - |check|
+    - 7.31.4.3.4
+    -
+  * - wmemset
+    - |check|
+    - 7.31.4.7.2
+    -
+  * - wprintf
+    -
+    - 7.31.2.12
+    -
+  * - wscanf
+    -
+    - 7.31.2.13
+    -

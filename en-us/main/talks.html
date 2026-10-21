@@ -1,0 +1,619 @@
+<!doctype html>
+<html class="no-js" lang="en-US" data-content_root="./">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="prev" title="LLVM-libc Maintainers" href="Maintainers.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/llvm-libc-docs-l10n/talks.html">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Talks - The LLVM C Library</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=69ba022a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="_static/llvm-sphinx/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f0f0f0;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style>
+<script type="text/javascript" src="ltd-provenance.js"></script>
+<script type="text/javascript" src="ltd-current.js"></script>
+<script type="text/javascript" src="../../ltd-config.js"></script>
+<script type="text/javascript" src="../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">The LLVM C Library</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <span class="sidebar-brand-text">The LLVM C Library</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Using LLVM-libc</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build_concepts.html">Build Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overlay_mode.html">Overlay Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="full_host_build.html">Full Host Build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="full_cross_build.html">Full Cross Build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configure.html">Configure Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hand_in_hand.html">Hand-in-Hand</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Platforms</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="gpu/index.html">libc for GPUs</a><input aria-label="Toggle navigation of libc for GPUs" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="gpu/building.html">Building libs for GPUs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpu/using.html">Using libc for GPUs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpu/support.html">Supported Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpu/rpc.html">Remote Procedure Calls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpu/testing.html">Testing the GPU C library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpu/motivation.html">Motivation and Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="uefi/index.html">libc for UEFI</a><input aria-label="Toggle navigation of libc for UEFI" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="uefi/building.html">Building libc for UEFI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uefi/using.html">Using libc for UEFI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uefi/support.html">Supported Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uefi/testing.html">Testing the UEFI C library</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Implementation Status</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="headers/index.html">Implementation Status</a><input aria-label="Toggle navigation of Implementation Status" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="headers/aio.html">aio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/arpa/inet.html">arpa/inet.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/assert.html">assert.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/byteswap.html">byteswap.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/complex.html">complex.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/cpio.html">cpio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/ctype.html">ctype.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/dirent.html">dirent.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/dlfcn.html">dlfcn.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/endian.html">endian.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/errno.html">errno.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/fcntl.html">fcntl.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/fenv.html">fenv.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/float.html">float.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/glob.html">glob.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/inttypes.html">inttypes.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/libgen.html">libgen.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/locale.html">locale.h</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="headers/math/index.html">math.h</a><input aria-label="Toggle navigation of math.h" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="headers/math/log.html">Log/Log10/Log2 Algorithm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="headers/net/if.html">net/if.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/netinet/in.html">netinet/in.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/netinet/tcp.html">netinet/tcp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/nl_types.html">nl_types.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/poll.html">poll.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/pwd.html">pwd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sched.html">sched.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/search.html">search.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/setjmp.html">setjmp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/signal.html">signal.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/spawn.html">spawn.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/stdbit.html">stdbit.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/stdfix.html">stdfix.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/stdio.html">stdio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/stdlib.html">stdlib.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/string.html">string.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/strings.html">strings.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/ipc.html">sys/ipc.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/mman.html">sys/mman.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/msg.html">sys/msg.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/resource.html">sys/resource.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/select.html">sys/select.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/sem.html">sys/sem.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/socket.html">sys/socket.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/stat.html">sys/stat.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/statvfs.html">sys/statvfs.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/time.html">sys/time.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/uio.html">sys/uio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/utsname.html">sys/utsname.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/wait.html">sys/wait.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/syslog.html">syslog.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/termios.html">termios.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/threads.html">threads.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/time.html">time.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/uchar.html">uchar.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/unistd.html">unistd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/wchar.html">wchar.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/wctype.html">wctype.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/pthread.html">pthread.h</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arch_support.html">Architecture Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platform_support.html">Platform Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compiler_support.html">Compiler Support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to the libc Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build_and_test.html">Building and Testing the libc</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="dev/index.html">Developer Guides</a><input aria-label="Toggle navigation of Developer Guides" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="dev/building_docs.html">Building the Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/code_style.html">The libc code style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/source_tree_layout.html">LLVM-libc Source Tree Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/entrypoints.html">Entrypoints in LLVM libc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/implementing_a_function.html">Implementing a New Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/config_options.html">Adding new libc configure options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/date_and_time.html">Date and Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/fuzzing.html">Fuzzing for LLVM-libc functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/fuzzing.html#types-of-fuzz-tests">Types of fuzz tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/header_generation.html">Generating Public and Internal headers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/implementation_standard.html">Convention for implementing entrypoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/undefined_behavior.html">Defining Undefined Behavior</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/printf_behavior.html">Printf Behavior Under All Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/builtin_compatibility.html">GCC Compatibility of Builtins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/syscall_wrapper_refactor.html">Syscall Wrapper Refactoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/modular_format.html">Modular format strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/code_coverage.html">Code Coverage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="porting.html">Bringup on a New OS or Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Maintainers.html">LLVM-libc Maintainers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Maintainers.html#inactive-maintainers">Inactive Maintainers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Links</span></p>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Talks</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc">Source Code</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/llvm/llvm-project/labels/libc">Bug Reports</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discourse.llvm.org/c/runtimes/libc">Discourse</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discord.gg/xS7Z362">Join the Discord</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discord.com/channels/636084430946959380/636732994891284500">Discord Channel</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://lab.llvm.org/buildbot/#/builders?tags=libc">Buildbot</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="https://github.com/llvm/llvm-project/blob/main/libc/docs/talks.md?plain=true" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div><div class="edit-this-page">
+  <a class="muted-link" href="https://github.com/llvm/llvm-project/edit/main/libc/docs/talks.md" rel="edit" title="Edit this page">
+    <svg><use href="#svg-pencil"></use></svg>
+    <span class="visually-hidden">Edit this page</span>
+  </a>
+</div><div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="talks">
+<h1>Talks<a class="headerlink" href="#talks" title="Link to this heading">¶</a></h1>
+<section id="id1">
+<h2>2025<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>From proprietary to fully open-source - Arm Toolchain’s adoption of LLVM technology - Peter Smith</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2025-10/slides/keynotes/smith.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=I7S_Vsnkecg">video</a></p></li>
+</ul>
+</li>
+<li><p>How to test and evaluate LLVM libc on embedded applications - William Huynh</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2025-10/slides/lightning_talks/huynh.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=Dta6nQLmCOY">video</a></p></li>
+</ul>
+</li>
+<li><p>Through the Compiler’s Keyhole - Migrating to Clang Without Seeing the Source - Petr Hosek</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2025-10/slides/technical_talks/hosek.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=CHbyo0Ux60o">video</a></p></li>
+</ul>
+</li>
+<li><p>Building C++ compiler runtimes on demand - Why and how - Brook Moses</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2025-10/slides/technical_talks/moses.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=4oKegT4TWV0">video</a></p></li>
+</ul>
+</li>
+<li><p>LT-Uh-Oh - Adventures using LTO with libc - Paul Kirth, Daniel Thornburgh</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2025-10/slides/technical_talks/kirth_thornburgh.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=cG278WjmIFs">video</a></p></li>
+</ul>
+</li>
+<li><p>Climbing the ladder of Complete - LLVM libc past and future - Michael Jones</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2025-10/slides/technical_talks/jones.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=HtCMCL13Grg">video</a></p></li>
+</ul>
+</li>
+<li><p>Project Widen Your Char-izons - Adding wchar support to LLVM libc - Uzair Nawaz, Sriya Pratipati</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2025-10/slides/quick_talks/nawaz_pratipati.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=YjI9dum74uM">video</a></p></li>
+</ul>
+</li>
+<li><p>A problem left unsolved by Jean-Michel (RAIM 2025) - Paul Zimmermann, Tue Ly</p>
+<ul>
+<li><p><a class="reference external" href="https://raim2025.sciencesconf.org/data/program/slides_paul_zimmermann.pdf">slides</a></p></li>
+</ul>
+</li>
+<li><p>Bfloat16 in LLVM libc (GSoC 2025) - Krishna Pandey</p>
+<ul>
+<li><p><a class="reference external" href="https://blog.llvm.org/posts/2025-09-10-bfloat16-in-llvm-libc/">blog</a></p></li>
+</ul>
+</li>
+<li><p>Profiling and Testing Math Functions on GPUs (GSoC 2025) - Leandro A. L. Campos</p>
+<ul>
+<li><p><a class="reference external" href="https://blog.llvm.org/posts/2025-08-29-gsoc-profiling-and-testing-math-functions-on-gpus/">blog</a></p></li>
+</ul>
+</li>
+<li><p>GPU-driven I/O with io_uring (GSoC 2025) - Rodrigo Ceccato</p>
+<ul>
+<li><p><a class="reference external" href="https://blog.llvm.org/posts/2025-08-04-gpu-io-uring/">blog</a></p></li>
+</ul>
+</li>
+<li><p>An introduction to building and using LLVM libc - Peter Smith</p>
+<ul>
+<li><p><a class="reference external" href="https://fosdem.org/2025/events/attachments/fosdem-2025-5456-an-introduction-to-building-and-using-llvm-libc/slides/237989/Fosdem202_76Bilu2.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://fosdem.org/2025/schedule/event/fosdem-2025-5456-an-introduction-to-building-and-using-llvm-libc/">video</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id2">
+<h2>2024<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>A C/C++ Toolchain for your GPU - Joseph Huber</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2024-10/slides/techtalk/Huber-A-CPlusPlus-Toolchain-for-Your-GPU.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=4TxGWis1mws">video</a></p></li>
+<li><p><a class="reference external" href="https://www.phoronix.com/news/AMD-Standard-C-Code-GPUs">phoronix</a></p></li>
+</ul>
+</li>
+<li><p>Modern Embedded Development with LLVM - Petr Hosek</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2024-10/slides/techtalk/Hosek-ModernEmbeddedDevelopment-with-LLVM.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=5hHQi-Uj34I">video</a></p></li>
+</ul>
+</li>
+<li><p>Using llvm-libc in LLVM Embedded Toolchain for Arm - Peter Smith</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2024-10/slides/lightning/Smith-Using-llvm-libc.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=ctgkbaYwT_I">video</a></p></li>
+</ul>
+</li>
+<li><p>RISC-V Support into LLVM libc - Challenges and Solutions for 32-bit and 64-bit - Mikhail R. Gadelha</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2024-10/slides/quicktalks/Gadelha-RISC-V-SupportIntoLLVM-libc.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=GytmaH64wFo">video</a></p></li>
+</ul>
+</li>
+<li><p>Project Hand-in-Hand - The beginning of a beautiful friendship - Michael Jones &amp; Christopher Di Bella</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2024-10/slides/techtalk/Jones-DiBella-hand-in-hand.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=VAEO86YtTHA">video</a></p></li>
+</ul>
+</li>
+<li><p>LLVM libc math library - Current status and future directions - Tue Ly</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2024-10/slides/techtalk/Ly-LLVM-libc-math-library-CurrentStatus.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=-8zb8rHbvcQ">video</a></p></li>
+</ul>
+</li>
+<li><p>Half-precision in LLVM libc - Nicolas Celik</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2024-10/slides/studenttalks/Celik-Half-precision-in-LLVM-libc.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=H6aOFSVwSSM">video</a></p></li>
+<li><p><a class="reference external" href="https://blog.llvm.org/posts/2024-08-31-half-precision-in-llvm-libc/">blog</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id3">
+<h2>2023<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Math functions in LLVM libc or yet another correctly rounded libm - Tue Ly</p>
+<ul>
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1Gchrc3AXKXAWFI1nk8Y1x8UsoQSp8XjF/view">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=kBSJqVWNQLY">video</a></p></li>
+</ul>
+</li>
+<li><p>The LLVM C Library for GPUs - Joseph Huber</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2023-10/slides/techtalks/Huber-LibCforGPUs.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=_LLGc48GYHc">video</a></p></li>
+</ul>
+</li>
+<li><p>The Challenges of Implementing the C Standard Library in C++ - Sivachandra Reddy</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/boostcon/cppnow_presentations_2023/blob/main/cppnow_slides/The_Challenges_of_Implementing_the_C_Standard_Library_in_Cpp.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=cuVrWUGSIgM">video</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id4">
+<h2>2022<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Using LLVM’s libc - Sivachandra Reddy, Michael Jones, Tue Ly</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2022-11/slides/Tutorial1-UsingLLVM-libc.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=OpY4lnpnbq4">video</a></p></li>
+</ul>
+</li>
+<li><p>Using modern CPU instructions to improve LLVM’s libc math library - Tue Ly</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2022-11/slides/QuickTalk7-UsingModernCPUInstructionsToImproveLLVM-libcMathLib">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=9bvdbdn0nMA">video</a></p></li>
+</ul>
+</li>
+<li><p>Approximating at Scale: How strto float in LLVM’s libc is faster - Michael Jones</p>
+<ul>
+<li><p><a class="reference external" href="https://llvm.org/devmtg/2022-11/slides/QuickTalk3-ApproximatingatScale-StringToFloat.pdf">slides</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=s-UjbTV8p6g">video</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          <a class="prev-page" href="Maintainers.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">LLVM-libc Maintainers</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2011-2026, LLVM Project
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Talks</a><ul>
+<li><a class="reference internal" href="#id1">2025</a></li>
+<li><a class="reference internal" href="#id2">2024</a></li>
+<li><a class="reference internal" href="#id3">2023</a></li>
+<li><a class="reference internal" href="#id4">2022</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=ccd1e645"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="_static/llvm-sphinx/copybutton.js"></script>
+    </body>
+</html>

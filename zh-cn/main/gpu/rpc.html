@@ -1,0 +1,729 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="索引" href="../genindex.html"><link rel="search" title="搜索" href="../search.html"><link rel="next" title="Testing the GPU C library" href="testing.html"><link rel="prev" title="Supported Functions" href="support.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/llvm-libc-docs-l10n/gpu/rpc.html">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Remote Procedure Calls - The LLVM C Library</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=69ba022a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/llvm-sphinx/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f0f0f0;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style>
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">The LLVM C Library</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <span class="sidebar-brand-text">The LLVM C Library</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="搜索" name="q" aria-label="搜索">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Using LLVM-libc</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_concepts.html">Build Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overlay_mode.html">Overlay Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../full_host_build.html">Full Host Build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../full_cross_build.html">Full Cross Build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configure.html">Configure Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hand_in_hand.html">Hand-in-Hand</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Platforms</span></p>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">libc for GPUs</a><input aria-label="Toggle navigation of libc for GPUs" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="building.html">Building libs for GPUs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using.html">Using libc for GPUs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="support.html">Supported Functions</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Remote Procedure Calls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testing.html">Testing the GPU C library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="motivation.html">Motivation and Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../uefi/index.html">libc for UEFI</a><input aria-label="Toggle navigation of libc for UEFI" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../uefi/building.html">Building libc for UEFI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uefi/using.html">Using libc for UEFI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uefi/support.html">Supported Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uefi/testing.html">Testing the UEFI C library</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Implementation Status</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../headers/index.html">Implementation Status</a><input aria-label="Toggle navigation of Implementation Status" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../headers/aio.html">aio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/arpa/inet.html">arpa/inet.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/assert.html">assert.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/byteswap.html">byteswap.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/complex.html">complex.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/cpio.html">cpio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/ctype.html">ctype.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/dirent.html">dirent.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/dlfcn.html">dlfcn.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/endian.html">endian.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/errno.html">errno.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/fcntl.html">fcntl.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/fenv.html">fenv.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/float.html">float.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/glob.html">glob.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/inttypes.html">inttypes.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/libgen.html">libgen.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/locale.html">locale.h</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../headers/math/index.html">math.h</a><input aria-label="Toggle navigation of math.h" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../headers/math/log.html">Log/Log10/Log2 Algorithm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/net/if.html">net/if.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/netinet/in.html">netinet/in.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/netinet/tcp.html">netinet/tcp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/nl_types.html">nl_types.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/poll.html">poll.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/pwd.html">pwd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sched.html">sched.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/search.html">search.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/setjmp.html">setjmp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/signal.html">signal.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/spawn.html">spawn.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdbit.html">stdbit.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdfix.html">stdfix.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdio.html">stdio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdlib.html">stdlib.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/string.html">string.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/strings.html">strings.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/ipc.html">sys/ipc.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/mman.html">sys/mman.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/msg.html">sys/msg.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/resource.html">sys/resource.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/select.html">sys/select.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/sem.html">sys/sem.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/socket.html">sys/socket.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/stat.html">sys/stat.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/statvfs.html">sys/statvfs.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/time.html">sys/time.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/uio.html">sys/uio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/utsname.html">sys/utsname.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/wait.html">sys/wait.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/syslog.html">syslog.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/termios.html">termios.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/threads.html">threads.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/time.html">time.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/uchar.html">uchar.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/unistd.html">unistd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/wchar.html">wchar.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/wctype.html">wctype.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/pthread.html">pthread.h</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../arch_support.html">Architecture Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platform_support.html">Platform Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compiler_support.html">Compiler Support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing to the libc Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_and_test.html">Building and Testing the libc</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../dev/index.html">Developer Guides</a><input aria-label="Toggle navigation of Developer Guides" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../dev/building_docs.html">Building the Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/code_style.html">The libc code style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/source_tree_layout.html">LLVM-libc Source Tree Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/entrypoints.html">Entrypoints in LLVM libc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/implementing_a_function.html">Implementing a New Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/config_options.html">Adding new libc configure options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/date_and_time.html">Date and Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/fuzzing.html">Fuzzing for LLVM-libc functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/fuzzing.html#types-of-fuzz-tests">Types of fuzz tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/header_generation.html">Generating Public and Internal headers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/implementation_standard.html">Convention for implementing entrypoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/undefined_behavior.html">Defining Undefined Behavior</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/printf_behavior.html">Printf Behavior Under All Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/builtin_compatibility.html">GCC Compatibility of Builtins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/syscall_wrapper_refactor.html">Syscall Wrapper Refactoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/modular_format.html">Modular format strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/code_coverage.html">Code Coverage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../porting.html">Bringup on a New OS or Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Maintainers.html">LLVM-libc Maintainers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Maintainers.html#inactive-maintainers">Inactive Maintainers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../talks.html">Talks</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc">Source Code</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/llvm/llvm-project/labels/libc">Bug Reports</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discourse.llvm.org/c/runtimes/libc">Discourse</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discord.gg/xS7Z362">Join the Discord</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discord.com/channels/636084430946959380/636732994891284500">Discord Channel</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://lab.llvm.org/buildbot/#/builders?tags=libc">Buildbot</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="https://github.com/llvm/llvm-project/blob/main/libc/docs/gpu/rpc.rst?plain=true" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div><div class="edit-this-page">
+  <a class="muted-link" href="https://github.com/llvm/llvm-project/edit/main/libc/docs/gpu/rpc.rst" rel="edit" title="Edit this page">
+    <svg><use href="#svg-pencil"></use></svg>
+    <span class="visually-hidden">Edit this page</span>
+  </a>
+</div><div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="remote-procedure-calls">
+<span id="libc-gpu-rpc"></span><h1>Remote Procedure Calls<a class="headerlink" href="#remote-procedure-calls" title="链接到此标题。">¶</a></h1>
+<section id="remote-procedure-call-implementation">
+<h2>Remote Procedure Call Implementation<a class="headerlink" href="#remote-procedure-call-implementation" title="链接到此标题。">¶</a></h2>
+<p>Traditionally, the C library abstracts over several functions that interface
+with the platform's operating system through system calls. The GPU however does
+not provide an operating system that can handle target dependent operations.
+Instead, we implemented remote procedure calls to interface with the host's
+operating system while executing on a GPU.</p>
+<p>We implemented remote procedure calls using unified virtual memory to create a
+shared communicate channel between the two processes. This memory is often
+pinned memory that can be accessed asynchronously and atomically by multiple
+processes simultaneously. This support means that we can simply provide mutual
+exclusion on a shared buffer to swap work back and forth between the host system
+and the GPU. We can then use this to create a simple client-server protocol
+using this shared memory.</p>
+<p>This work treats the GPU as a client and the host as a server. The client
+initiates a communication while the server listens for them. In order to
+communicate between the host and the device, we simply maintain a buffer of
+memory and two mailboxes. One mailbox is write-only while the other is
+read-only. This exposes three primitive operations: using the buffer, giving
+away ownership, and waiting for ownership. This is implemented as a half-duplex
+transmission channel between the two sides. We decided to assign ownership of
+the buffer to the client when the inbox and outbox bits are equal and to the
+server when they are not.</p>
+<p>In order to make this transmission channel thread-safe, we abstract ownership of
+the given mailbox pair and buffer around a port, effectively acting as a lock
+and an index into the allocated buffer slice. The server and device have
+independent locks around the given port. In this scheme, the buffer can be used
+to communicate intent and data generically with the server. We then simply
+provide multiple copies of this protocol and expose them as multiple ports.</p>
+<p>If this were simply a standard CPU system, this would be sufficient. However,
+GPUs have my unique architectural challenges. First, GPU threads execute in
+lock-step with each other in groups typically called warps or wavefronts. We
+need to target the smallest unit of independent parallelism, so the RPC
+interface needs to handle an entire group of threads at once. This is done by
+increasing the size of the buffer and adding a thread mask argument so the
+server knows which threads are active when it handles the communication. Second,
+GPUs generally have no forward progress guarantees. In order to guarantee we do
+not encounter deadlocks while executing it is required that the number of ports
+matches the maximum amount of hardware parallelism on the device. It is also
+very important that the thread mask remains consistent while interfacing with
+the port.</p>
+<a class="reference internal image-reference" href="../_images/rpc-diagram.svg"><img alt="../_images/rpc-diagram.svg" class="align-center" src="../_images/rpc-diagram.svg" style="width: 75%;" />
+</a>
+<p>The above diagram outlines the architecture of the RPC interface. For clarity
+the following list will explain the operations done by the client and server
+respectively when initiating a communication.</p>
+<p>First, a communication from the perspective of the client:</p>
+<ul class="simple">
+<li><p>The client searches for an available port and claims the lock.</p></li>
+<li><p>The client checks that the port is still available to the current device and
+continues if so.</p></li>
+<li><p>The client writes its data to the fixed-size packet and toggles its outbox.</p></li>
+<li><p>The client waits until its inbox matches its outbox.</p></li>
+<li><p>The client reads the data from the fixed-size packet.</p></li>
+<li><p>The client closes the port and continues executing.</p></li>
+</ul>
+<p>Now, the same communication from the perspective of the server:</p>
+<ul class="simple">
+<li><p>The server searches for an available port with pending work and claims the
+lock.</p></li>
+<li><p>The server checks that the port is still available to the current device.</p></li>
+<li><p>The server reads the opcode to perform the expected operation, in this
+case a receive and then send.</p></li>
+<li><p>The server reads the data from the fixed-size packet.</p></li>
+<li><p>The server writes its data to the fixed-size packet and toggles its outbox.</p></li>
+<li><p>The server closes the port and continues searching for ports that need to be
+serviced</p></li>
+</ul>
+<p>This architecture currently requires that the host periodically checks the RPC
+server's buffer for ports with pending work. Note that a port can be closed
+without waiting for its submitted work to be completed. This allows us to model
+asynchronous operations that do not need to wait until the server has completed
+them. If an operation requires more data than the fixed size buffer, we simply
+send multiple packets back and forth in a streaming fashion.</p>
+<section id="client-example">
+<h3>Client Example<a class="headerlink" href="#client-example" title="链接到此标题。">¶</a></h3>
+<p>The Client API is not currently exported by the LLVM C library. This is
+primarily due to being written in C++ and relying on internal data structures.
+It uses a simple send and receive interface with a fixed-size packet. The
+following example uses the RPC interface to call a function pointer on the
+server.</p>
+<p>This code first opens a port with the given opcode to facilitate the
+communication. It then copies over the argument struct to the server using the
+<code class="docutils literal notranslate"><span class="pre">send_n</span></code> interface to stream arbitrary bytes. The next send operation provides
+the server with the function pointer that will be executed. The final receive
+operation is a no-op and simply forces the client to wait until the server is
+done. It can be omitted if asynchronous execution is desired.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">rpc_host_call</span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">fn</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">rpc</span><span class="o">::</span><span class="n">Client</span><span class="o">::</span><span class="n">Port</span><span class="w"> </span><span class="n">port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rpc</span><span class="o">::</span><span class="n">client</span><span class="p">.</span><span class="n">open</span><span class="o">&lt;</span><span class="n">RPC_HOST_CALL</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">  </span><span class="n">port</span><span class="p">.</span><span class="n">send_n</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="p">);</span>
+<span class="w">  </span><span class="n">port</span><span class="p">.</span><span class="n">send</span><span class="p">([</span><span class="o">=</span><span class="p">](</span><span class="n">rpc</span><span class="o">::</span><span class="n">Buffer</span><span class="w"> </span><span class="o">*</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">buffer</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">uintptr_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">fn</span><span class="p">);</span>
+<span class="w">  </span><span class="p">});</span>
+<span class="w">  </span><span class="n">port</span><span class="p">.</span><span class="n">recv</span><span class="p">([](</span><span class="n">rpc</span><span class="o">::</span><span class="n">Buffer</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="p">)</span><span class="w"> </span><span class="p">{});</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="server-example">
+<h3>Server Example<a class="headerlink" href="#server-example" title="链接到此标题。">¶</a></h3>
+<p>This example shows the server-side handling of the previous client example. When
+the server is checked, if there are any ports with pending work it will check
+the opcode and perform the appropriate action. In this case, the action is to
+call a function pointer provided by the client.</p>
+<p>In this example, the server simply runs forever in a separate thread for
+brevity's sake. Because the client is a GPU potentially handling several threads
+at once, the server needs to loop over all the active threads on the GPU. We
+abstract this into the <code class="docutils literal notranslate"><span class="pre">num_lanes</span></code> variable, which is simply the device's warp
+or wavefront size. The identifier is simply the threads index into the current
+warp or wavefront. We allocate memory to copy the struct data into, and then
+call the given function pointer with that copied data. The final send simply
+signals completion and uses the implicit thread mask to delete the temporary
+data.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="p">(;;)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">server</span><span class="p">.</span><span class="n">try_open</span><span class="p">(</span><span class="n">index</span><span class="p">);</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">port</span><span class="p">)</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">continue</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">switch</span><span class="p">(</span><span class="n">port</span><span class="o">-&gt;</span><span class="n">get_opcode</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="no">RPC_HOST_CALL</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">sizes</span><span class="p">[</span><span class="n">NUM_LANES</span><span class="p">];</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">args</span><span class="p">[</span><span class="n">NUM_LANES</span><span class="p">];</span>
+<span class="w">    </span><span class="n">port</span><span class="o">-&gt;</span><span class="n">recv_n</span><span class="p">(</span><span class="n">args</span><span class="p">,</span><span class="w"> </span><span class="n">sizes</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="o">&amp;</span><span class="p">](</span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">size</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">char</span><span class="p">[</span><span class="n">size</span><span class="p">];</span><span class="w"> </span><span class="p">});</span>
+<span class="w">    </span><span class="n">port</span><span class="o">-&gt;</span><span class="n">recv</span><span class="p">([</span><span class="o">&amp;</span><span class="p">](</span><span class="n">rpc</span><span class="o">::</span><span class="n">Buffer</span><span class="w"> </span><span class="o">*</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">void</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="p">)(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&gt;</span><span class="p">(</span><span class="n">buffer</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])(</span><span class="n">args</span><span class="p">[</span><span class="n">id</span><span class="p">]);</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="w">    </span><span class="n">port</span><span class="o">-&gt;</span><span class="n">send</span><span class="p">([</span><span class="o">&amp;</span><span class="p">](</span><span class="n">rpc</span><span class="o">::</span><span class="n">Buffer</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">delete</span><span class="p">[]</span><span class="w"> </span><span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*&gt;</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="n">id</span><span class="p">]);</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">default</span><span class="o">:</span>
+<span class="w">    </span><span class="n">port</span><span class="o">-&gt;</span><span class="n">recv</span><span class="p">([](</span><span class="n">rpc</span><span class="o">::</span><span class="n">Buffer</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="p">{});</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="function-dispatch">
+<h3>Function Dispatch<a class="headerlink" href="#function-dispatch" title="链接到此标题。">¶</a></h3>
+<p>There are cases where the client wants to simply execute a function as-is on the
+server. A helper function is provided to make this case almost automatic. By
+default, all memory is assumed to live privately on the client. Pointer
+arguments will be copied between the client and server for correctness. Pointers
+to void will all be treated as opaque pointers and copied by-value. Constant
+character pointers will be treated as C-strings and copied using its length.
+Functions returning void will wait for the server to complete execution rather
+than submitting asynchronously.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">double</span><span class="w"> </span><span class="nf">fn</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">d</span><span class="p">);</span>
+
+<span class="c1">// Client-side dispatch.</span>
+<span class="kt">double</span><span class="w"> </span><span class="nf">fn</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">d</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">rpc</span><span class="o">::</span><span class="n">dispatch</span><span class="o">&lt;</span><span class="n">OPCODE</span><span class="p">,</span><span class="w"> </span><span class="n">fn</span><span class="o">&gt;</span><span class="p">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Server-side handling.</span>
+<span class="k">for</span><span class="p">(;;)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">server</span><span class="p">.</span><span class="n">try_open</span><span class="p">(</span><span class="n">index</span><span class="p">);</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">port</span><span class="p">)</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">continue</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">switch</span><span class="p">(</span><span class="n">port</span><span class="o">-&gt;</span><span class="n">get_opcode</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="no">OPCODE</span><span class="p">:</span>
+<span class="w">    </span><span class="n">rpc</span><span class="o">::</span><span class="n">invoke</span><span class="o">&lt;</span><span class="n">NUM_LANES</span><span class="o">&gt;</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">port</span><span class="p">);</span>
+<span class="w">  </span><span class="k">default</span><span class="o">:</span>
+<span class="w">    </span><span class="n">port</span><span class="o">-&gt;</span><span class="n">recv</span><span class="p">([](</span><span class="n">rpc</span><span class="o">::</span><span class="n">Buffer</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="p">{});</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="cuda-server-example">
+<h3>CUDA Server Example<a class="headerlink" href="#cuda-server-example" title="链接到此标题。">¶</a></h3>
+<p>The following code shows an example of using the exported RPC interface along
+with the C library to manually configure a working server using the CUDA
+language. Other runtimes can use the presence of the <code class="docutils literal notranslate"><span class="pre">__llvm_rpc_client</span></code>
+in the GPU executable as an indicator for whether or not the server can be
+checked. These details should ideally be handled by the GPU language runtime,
+but the following example shows how it can be used by a standard user.</p>
+<div class="highlight-cuda notranslate" id="libc-gpu-cuda-server"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstdio&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstdlib&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cuda_runtime.h&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;shared/rpc.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;shared/rpc_opcodes.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;shared/rpc_server.h&gt;</span>
+
+<span class="p">[[</span><span class="na">noreturn</span><span class="p">]]</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">handle_error</span><span class="p">(</span><span class="n">cudaError_t</span><span class="w"> </span><span class="n">err</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span><span class="w"> </span><span class="s">"CUDA error: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">cudaGetErrorString</span><span class="p">(</span><span class="n">err</span><span class="p">));</span>
+<span class="w">  </span><span class="n">exit</span><span class="p">(</span><span class="n">EXIT_FAILURE</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Routes the library symbol into the CUDA runtime interface.</span>
+<span class="p">[[</span><span class="na">gnu</span><span class="p">::</span><span class="na">weak</span><span class="p">]]</span><span class="w"> </span><span class="kt">__device__</span><span class="w"> </span><span class="n">rpc</span><span class="o">::</span><span class="n">Client</span><span class="w"> </span><span class="n">client</span><span class="w"> </span><span class="k">asm</span><span class="p">(</span><span class="s">"__llvm_rpc_client"</span><span class="p">);</span>
+
+<span class="c1">// The device-side overload of the standard C function to call.</span>
+<span class="k">extern</span><span class="w"> </span><span class="s">"C"</span><span class="w"> </span><span class="kt">__device__</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">puts</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="p">);</span>
+
+<span class="c1">// Calls the C library function from the GPU C library.</span>
+<span class="kr">__global__</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">hello</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">puts</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">rpc_client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">nullptr</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cudaError_t</span><span class="w"> </span><span class="n">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cudaGetSymbolAddress</span><span class="p">(</span><span class="o">&amp;</span><span class="n">rpc_client</span><span class="p">,</span><span class="w"> </span><span class="n">client</span><span class="p">))</span>
+<span class="w">    </span><span class="n">handle_error</span><span class="p">(</span><span class="n">err</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Initialize the RPC client and server interface.</span>
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">warp_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">32</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">rpc_buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">nullptr</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cudaError_t</span><span class="w"> </span><span class="n">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cudaMallocHost</span><span class="p">(</span>
+<span class="w">          </span><span class="o">&amp;</span><span class="n">rpc_buffer</span><span class="p">,</span>
+<span class="w">          </span><span class="n">rpc</span><span class="o">::</span><span class="n">Server</span><span class="o">::</span><span class="n">allocation_size</span><span class="p">(</span><span class="n">warp_size</span><span class="p">,</span><span class="w"> </span><span class="n">rpc</span><span class="o">::</span><span class="n">MAX_PORT_COUNT</span><span class="p">)))</span>
+<span class="w">    </span><span class="n">handle_error</span><span class="p">(</span><span class="n">err</span><span class="p">);</span>
+<span class="w">  </span><span class="n">rpc</span><span class="o">::</span><span class="n">Server</span><span class="w"> </span><span class="nf">server</span><span class="p">(</span><span class="n">rpc</span><span class="o">::</span><span class="n">MAX_PORT_COUNT</span><span class="p">,</span><span class="w"> </span><span class="n">rpc_buffer</span><span class="p">);</span>
+<span class="w">  </span><span class="n">rpc</span><span class="o">::</span><span class="n">Client</span><span class="w"> </span><span class="nf">client</span><span class="p">(</span><span class="n">rpc</span><span class="o">::</span><span class="n">MAX_PORT_COUNT</span><span class="p">,</span><span class="w"> </span><span class="n">rpc_buffer</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Initialize the client on the device so it can communicate with the server.</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cudaError_t</span><span class="w"> </span><span class="n">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cudaMemcpy</span><span class="p">(</span><span class="n">rpc_client</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">rpc</span><span class="o">::</span><span class="n">Client</span><span class="p">),</span>
+<span class="w">                                   </span><span class="n">cudaMemcpyHostToDevice</span><span class="p">))</span>
+<span class="w">    </span><span class="n">handle_error</span><span class="p">(</span><span class="n">err</span><span class="p">);</span>
+
+<span class="w">  </span><span class="n">cudaStream_t</span><span class="w"> </span><span class="n">stream</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cudaError_t</span><span class="w"> </span><span class="n">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cudaStreamCreate</span><span class="p">(</span><span class="o">&amp;</span><span class="n">stream</span><span class="p">))</span>
+<span class="w">    </span><span class="n">handle_error</span><span class="p">(</span><span class="n">err</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Execute the kernel.</span>
+<span class="w">  </span><span class="n">hello</span><span class="o">&lt;&lt;&lt;</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">stream</span><span class="o">&gt;&gt;&gt;</span><span class="p">();</span>
+
+<span class="w">  </span><span class="c1">// While the kernel is executing, check the RPC server for work to do.</span>
+<span class="w">  </span><span class="c1">// Requires non-blocking CUDA kernels but avoids a separate thread.</span>
+<span class="w">  </span><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">server</span><span class="p">.</span><span class="n">try_open</span><span class="p">(</span><span class="n">warp_size</span><span class="p">,</span><span class="w"> </span><span class="cm">/*index=*/</span><span class="mi">0</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">port</span><span class="p">)</span>
+<span class="w">      </span><span class="k">continue</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Only available in-tree from the 'libc' sources.</span>
+<span class="w">    </span><span class="n">handle_libc_opcodes</span><span class="p">(</span><span class="o">*</span><span class="n">port</span><span class="p">,</span><span class="w"> </span><span class="n">warp_size</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">cudaStreamQuery</span><span class="p">(</span><span class="n">stream</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">cudaErrorNotReady</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The above code must be compiled in CUDA's relocatable device code mode and with
+the advanced offloading driver to link in the library. Currently this can be
+done with the following invocation. Using LTO avoids the overhead normally
+associated with relocatable device code linking. The C library for GPU's
+handling is included through the <code class="docutils literal notranslate"><span class="pre">shared/</span></code> directory. This is not currently
+installed as it does not use a stable interface.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$&gt;<span class="w"> </span>clang++<span class="w"> </span>-x<span class="w"> </span>cuda<span class="w"> </span>rpc.cpp<span class="w"> </span>--offload-arch<span class="o">=</span>native<span class="w"> </span>-fgpu-rdc<span class="w"> </span>-lcudart<span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-I&lt;install-path&gt;include<span class="w"> </span>-L&lt;install-path&gt;/lib<span class="w"> </span>-Xoffload-linker<span class="w"> </span>-lc<span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-O3<span class="w"> </span>-foffload-lto<span class="w"> </span>-o<span class="w"> </span>hello
+$&gt;<span class="w"> </span>./hello
+Hello<span class="w"> </span>world!
+</pre></div>
+</div>
+</section>
+<section id="extensions">
+<h3>Extensions<a class="headerlink" href="#extensions" title="链接到此标题。">¶</a></h3>
+<p>The opcode is a 32-bit integer that must be unique to the requested operation.
+All opcodes used by <code class="docutils literal notranslate"><span class="pre">libc</span></code> internally have the character <code class="docutils literal notranslate"><span class="pre">c</span></code> in the most
+significant byte. Any other opcode is available for use outside of the <code class="docutils literal notranslate"><span class="pre">libc</span></code>
+implementation.</p>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="testing.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Testing the GPU C library</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="support.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Supported Functions</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2011-2026, LLVM Project
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Remote Procedure Calls</a><ul>
+<li><a class="reference internal" href="#remote-procedure-call-implementation">Remote Procedure Call Implementation</a><ul>
+<li><a class="reference internal" href="#client-example">Client Example</a></li>
+<li><a class="reference internal" href="#server-example">Server Example</a></li>
+<li><a class="reference internal" href="#function-dispatch">Function Dispatch</a></li>
+<li><a class="reference internal" href="#cuda-server-example">CUDA Server Example</a></li>
+<li><a class="reference internal" href="#extensions">Extensions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=7d86a446"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/translations.js?v=540d3cec"></script>
+    <script src="../_static/llvm-sphinx/copybutton.js"></script>
+    </body>
+</html>
