@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/locale.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/locale.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/locale.rst:14 ../../../headers/locale.rst:51
 msgid "Implemented"

@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/sys/statvfs.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/sys/statvfs.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/sys/statvfs.rst:14 ../../../headers/sys/statvfs.rst:35
 msgid "Implemented"

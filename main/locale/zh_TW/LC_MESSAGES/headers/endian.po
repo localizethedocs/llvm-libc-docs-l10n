@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/endian.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/endian.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/endian.rst:14
 msgid "Implemented"

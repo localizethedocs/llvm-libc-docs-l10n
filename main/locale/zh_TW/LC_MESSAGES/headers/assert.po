@@ -19,15 +19,15 @@ msgstr ""
 
 #: ../../../headers/assert.rst:3
 msgid "assert.h"
-msgstr ""
+msgstr "assert.h"
 
 #: ../../../headers/assert.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/assert.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/assert.rst:14
 msgid "Implemented"
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../../headers/assert.rst:21
 msgid "assert"
-msgstr ""
+msgstr "assert"
 
 #: ../../../headers/assert.rst:24
 msgid ""

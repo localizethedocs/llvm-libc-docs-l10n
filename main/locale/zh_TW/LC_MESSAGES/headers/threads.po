@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/threads.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/threads.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/threads.rst:14 ../../../headers/threads.rst:43
 msgid "Implemented"

@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/sys/wait.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/sys/wait.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/sys/wait.rst:14 ../../../headers/sys/wait.rst:83
 msgid "Implemented"

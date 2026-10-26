@@ -180,7 +180,7 @@ msgstr ""
 
 #: ../../../gpu/building.rst:146
 msgid "**lib/<target-triple>/libc.a**"
-msgstr ""
+msgstr "**lib/<target-triple>/libc.a**"
 
 #: ../../../gpu/building.rst:147
 msgid ""
@@ -190,7 +190,7 @@ msgstr ""
 
 #: ../../../gpu/building.rst:150
 msgid "**lib/<target-triple>/libm.a**"
-msgstr ""
+msgstr "**lib/<target-triple>/libm.a**"
 
 #: ../../../gpu/building.rst:151
 msgid ""
@@ -200,7 +200,7 @@ msgstr ""
 
 #: ../../../gpu/building.rst:154
 msgid "**lib/<target-triple>/libc.bc**"
-msgstr ""
+msgstr "**lib/<target-triple>/libc.bc**"
 
 #: ../../../gpu/building.rst:155
 msgid ""
@@ -220,7 +220,7 @@ msgstr ""
 
 #: ../../../gpu/building.rst:162
 msgid "**lib/<target-triple>/crt1.o**"
-msgstr ""
+msgstr "**lib/<target-triple>/crt1.o**"
 
 #: ../../../gpu/building.rst:163
 msgid ""
@@ -230,7 +230,7 @@ msgstr ""
 
 #: ../../../gpu/building.rst:166
 msgid "**bin/amdhsa-loader**"
-msgstr ""
+msgstr "**bin/amdhsa-loader**"
 
 #: ../../../gpu/building.rst:167
 msgid ""
@@ -254,7 +254,7 @@ msgstr ""
 
 #: ../../../gpu/building.rst:178
 msgid "**include/llvm-libc-rpc-server.h**"
-msgstr ""
+msgstr "**include/llvm-libc-rpc-server.h**"
 
 #: ../../../gpu/building.rst:179
 msgid ""
@@ -264,7 +264,7 @@ msgstr ""
 
 #: ../../../gpu/building.rst:182
 msgid "**lib/libllvmlibc_rpc_server.a**"
-msgstr ""
+msgstr "**lib/libllvmlibc_rpc_server.a**"
 
 #: ../../../gpu/building.rst:183
 msgid ""
@@ -275,7 +275,7 @@ msgstr ""
 
 #: ../../../gpu/building.rst:190
 msgid "CMake options"
-msgstr ""
+msgstr "CMake 選項"
 
 #: ../../../gpu/building.rst:192
 msgid ""
@@ -287,7 +287,7 @@ msgstr ""
 
 #: ../../../gpu/building.rst:197
 msgid "**LLVM_LIBC_FULL_BUILD**:BOOL"
-msgstr ""
+msgstr "**LLVM_LIBC_FULL_BUILD**:BOOL"
 
 #: ../../../gpu/building.rst:198
 msgid ""

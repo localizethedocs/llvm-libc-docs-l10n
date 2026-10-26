@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/sys/mman.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/sys/mman.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/sys/mman.rst:14 ../../../headers/sys/mman.rst:119
 msgid "Implemented"
@@ -80,91 +80,91 @@ msgstr ""
 
 #: ../../../headers/sys/mman.rst:21
 msgid "MAP_ANONYMOUS"
-msgstr ""
+msgstr "MAP_ANONYMOUS"
 
 #: ../../../headers/sys/mman.rst:25
 msgid "MAP_FAILED"
-msgstr ""
+msgstr "MAP_FAILED"
 
 #: ../../../headers/sys/mman.rst:29
 msgid "MAP_FIXED"
-msgstr ""
+msgstr "MAP_FIXED"
 
 #: ../../../headers/sys/mman.rst:33
 msgid "MAP_PRIVATE"
-msgstr ""
+msgstr "MAP_PRIVATE"
 
 #: ../../../headers/sys/mman.rst:37
 msgid "MAP_SHARED"
-msgstr ""
+msgstr "MAP_SHARED"
 
 #: ../../../headers/sys/mman.rst:41
 msgid "MCL_CURRENT"
-msgstr ""
+msgstr "MCL_CURRENT"
 
 #: ../../../headers/sys/mman.rst:45
 msgid "MCL_FUTURE"
-msgstr ""
+msgstr "MCL_FUTURE"
 
 #: ../../../headers/sys/mman.rst:49
 msgid "MS_ASYNC"
-msgstr ""
+msgstr "MS_ASYNC"
 
 #: ../../../headers/sys/mman.rst:53
 msgid "MS_INVALIDATE"
-msgstr ""
+msgstr "MS_INVALIDATE"
 
 #: ../../../headers/sys/mman.rst:57
 msgid "MS_SYNC"
-msgstr ""
+msgstr "MS_SYNC"
 
 #: ../../../headers/sys/mman.rst:61
 msgid "POSIX_MADV_DONTNEED"
-msgstr ""
+msgstr "POSIX_MADV_DONTNEED"
 
 #: ../../../headers/sys/mman.rst:65
 msgid "POSIX_MADV_NORMAL"
-msgstr ""
+msgstr "POSIX_MADV_NORMAL"
 
 #: ../../../headers/sys/mman.rst:69
 msgid "POSIX_MADV_RANDOM"
-msgstr ""
+msgstr "POSIX_MADV_RANDOM"
 
 #: ../../../headers/sys/mman.rst:73
 msgid "POSIX_MADV_SEQUENTIAL"
-msgstr ""
+msgstr "POSIX_MADV_SEQUENTIAL"
 
 #: ../../../headers/sys/mman.rst:77
 msgid "POSIX_MADV_WILLNEED"
-msgstr ""
+msgstr "POSIX_MADV_WILLNEED"
 
 #: ../../../headers/sys/mman.rst:81
 msgid "POSIX_TYPED_MEM_ALLOCATE"
-msgstr ""
+msgstr "POSIX_TYPED_MEM_ALLOCATE"
 
 #: ../../../headers/sys/mman.rst:85
 msgid "POSIX_TYPED_MEM_ALLOCATE_CONTIG"
-msgstr ""
+msgstr "POSIX_TYPED_MEM_ALLOCATE_CONTIG"
 
 #: ../../../headers/sys/mman.rst:89
 msgid "POSIX_TYPED_MEM_MAP_ALLOCATABLE"
-msgstr ""
+msgstr "POSIX_TYPED_MEM_MAP_ALLOCATABLE"
 
 #: ../../../headers/sys/mman.rst:93
 msgid "PROT_EXEC"
-msgstr ""
+msgstr "PROT_EXEC"
 
 #: ../../../headers/sys/mman.rst:97
 msgid "PROT_NONE"
-msgstr ""
+msgstr "PROT_NONE"
 
 #: ../../../headers/sys/mman.rst:101
 msgid "PROT_READ"
-msgstr ""
+msgstr "PROT_READ"
 
 #: ../../../headers/sys/mman.rst:105
 msgid "PROT_WRITE"
-msgstr ""
+msgstr "PROT_WRITE"
 
 #: ../../../headers/sys/mman.rst:111
 msgid "Functions"
@@ -276,40 +276,48 @@ msgstr ""
 
 #: ../../../headers/sys/mman.rst:162
 msgid "posix_typed_mem_get_info"
-msgstr ""
+msgstr "posix_typed_mem_get_info"
 
 #: ../../../headers/sys/mman.rst:165
 msgid ""
 "`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
 "posix_typed_mem_get_info.html>`__"
 msgstr ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_typed_mem_get_info.html>`__"
 
 #: ../../../headers/sys/mman.rst:166
 msgid "posix_typed_mem_open"
-msgstr ""
+msgstr "posix_typed_mem_open"
 
 #: ../../../headers/sys/mman.rst:169
 msgid ""
 "`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
 "posix_typed_mem_open.html>`__"
 msgstr ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_typed_mem_open.html>`__"
 
 #: ../../../headers/sys/mman.rst:170
 msgid "shm_open"
-msgstr ""
+msgstr "shm_open"
 
 #: ../../../headers/sys/mman.rst:173
 msgid ""
 "`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
 "shm_open.html>`__"
 msgstr ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"shm_open.html>`__"
 
 #: ../../../headers/sys/mman.rst:174
 msgid "shm_unlink"
-msgstr ""
+msgstr "shm_unlink"
 
 #: ../../../headers/sys/mman.rst:177
 msgid ""
 "`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
 "shm_unlink.html>`__"
 msgstr ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"shm_unlink.html>`__"

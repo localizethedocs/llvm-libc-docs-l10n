@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../dev/building_docs.md:3
 msgid "Building the Documentation"
-msgstr ""
+msgstr "建置文件"
 
 #: ../../../dev/building_docs.md:5
 msgid ""
@@ -64,7 +64,7 @@ msgstr ""
 
 #: ../../../dev/building_docs.md:31
 msgid "CMake Configuration"
-msgstr ""
+msgstr "CMake 組態"
 
 #: ../../../dev/building_docs.md:33
 msgid ""

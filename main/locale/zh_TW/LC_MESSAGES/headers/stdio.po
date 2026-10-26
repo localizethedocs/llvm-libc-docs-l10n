@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/stdio.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/stdio.rst:14 ../../../headers/stdio.rst:99
 msgid "Implemented"
@@ -117,7 +117,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:25
 msgid "FILENAME_MAX"
-msgstr ""
+msgstr "FILENAME_MAX"
 
 #: ../../../headers/stdio.rst:29
 msgid "FOPEN_MAX"
@@ -189,7 +189,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:102
 msgid "clearerr"
-msgstr ""
+msgstr "clearerr"
 
 #: ../../../headers/stdio.rst:104
 msgid "7.23.10.1"
@@ -223,7 +223,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:114
 msgid "fclose"
-msgstr ""
+msgstr "fclose"
 
 #: ../../../headers/stdio.rst:116
 msgid "7.23.5.1"
@@ -247,7 +247,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:122
 msgid "feof"
-msgstr ""
+msgstr "feof"
 
 #: ../../../headers/stdio.rst:124
 msgid "7.23.10.2"
@@ -261,7 +261,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:126
 msgid "ferror"
-msgstr ""
+msgstr "ferror"
 
 #: ../../../headers/stdio.rst:128
 msgid "7.23.10.3"
@@ -275,7 +275,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:130
 msgid "fflush"
-msgstr ""
+msgstr "fflush"
 
 #: ../../../headers/stdio.rst:132
 msgid "7.23.5.2"
@@ -289,7 +289,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:134
 msgid "fgetc"
-msgstr ""
+msgstr "fgetc"
 
 #: ../../../headers/stdio.rst:136
 msgid "7.23.7.1"
@@ -317,7 +317,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:142
 msgid "fgets"
-msgstr ""
+msgstr "fgets"
 
 #: ../../../headers/stdio.rst:144
 msgid "7.23.7.2"
@@ -361,7 +361,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:158
 msgid "fopen"
-msgstr ""
+msgstr "fopen"
 
 #: ../../../headers/stdio.rst:160
 msgid "7.23.5.3"
@@ -375,7 +375,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:162
 msgid "fprintf"
-msgstr ""
+msgstr "fprintf"
 
 #: ../../../headers/stdio.rst:164
 msgid "7.23.6.1"
@@ -389,7 +389,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:166
 msgid "fputc"
-msgstr ""
+msgstr "fputc"
 
 #: ../../../headers/stdio.rst:168
 msgid "7.23.7.3"
@@ -403,7 +403,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:170
 msgid "fputs"
-msgstr ""
+msgstr "fputs"
 
 #: ../../../headers/stdio.rst:172
 msgid "7.23.7.4"
@@ -417,7 +417,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:174
 msgid "fread"
-msgstr ""
+msgstr "fread"
 
 #: ../../../headers/stdio.rst:176
 msgid "7.23.8.1"
@@ -445,7 +445,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:182
 msgid "fscanf"
-msgstr ""
+msgstr "fscanf"
 
 #: ../../../headers/stdio.rst:184
 msgid "7.23.6.2"
@@ -459,7 +459,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:186
 msgid "fseek"
-msgstr ""
+msgstr "fseek"
 
 #: ../../../headers/stdio.rst:188
 msgid "7.23.9.2"
@@ -497,7 +497,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:198
 msgid "ftell"
-msgstr ""
+msgstr "ftell"
 
 #: ../../../headers/stdio.rst:200
 msgid "7.23.9.4"
@@ -541,7 +541,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:214
 msgid "fwrite"
-msgstr ""
+msgstr "fwrite"
 
 #: ../../../headers/stdio.rst:216
 msgid "7.23.8.2"
@@ -555,7 +555,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:218
 msgid "getc"
-msgstr ""
+msgstr "getc"
 
 #: ../../../headers/stdio.rst:220
 msgid "7.23.7.5"
@@ -569,7 +569,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:222
 msgid "getchar"
-msgstr ""
+msgstr "getchar"
 
 #: ../../../headers/stdio.rst:224
 msgid "7.23.7.6"
@@ -647,7 +647,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:250
 msgid "printf"
-msgstr ""
+msgstr "printf"
 
 #: ../../../headers/stdio.rst:252
 msgid "7.23.6.3"
@@ -661,7 +661,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:254
 msgid "putc"
-msgstr ""
+msgstr "putc"
 
 #: ../../../headers/stdio.rst:256
 msgid "7.23.7.7"
@@ -685,7 +685,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:262
 msgid "putchar"
-msgstr ""
+msgstr "putchar"
 
 #: ../../../headers/stdio.rst:264
 msgid "7.23.7.8"
@@ -709,7 +709,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:270
 msgid "puts"
-msgstr ""
+msgstr "puts"
 
 #: ../../../headers/stdio.rst:272
 msgid "7.23.7.9"
@@ -723,7 +723,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:274
 msgid "remove"
-msgstr ""
+msgstr "remove"
 
 #: ../../../headers/stdio.rst:276
 msgid "7.23.4.1"
@@ -737,7 +737,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:278
 msgid "rename"
-msgstr ""
+msgstr "rename"
 
 #: ../../../headers/stdio.rst:280
 msgid "7.23.4.2"
@@ -748,16 +748,20 @@ msgid ""
 "`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
 "rename.html>`__"
 msgstr ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"rename.html>`__"
 
 #: ../../../headers/stdio.rst:282
 msgid "renameat"
-msgstr ""
+msgstr "renameat"
 
 #: ../../../headers/stdio.rst:285
 msgid ""
 "`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
 "renameat.html>`__"
 msgstr ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"renameat.html>`__"
 
 #: ../../../headers/stdio.rst:286
 msgid "rewind"
@@ -775,7 +779,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:290
 msgid "scanf"
-msgstr ""
+msgstr "scanf"
 
 #: ../../../headers/stdio.rst:292
 msgid "7.23.6.4"
@@ -817,7 +821,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:302
 msgid "snprintf"
-msgstr ""
+msgstr "snprintf"
 
 #: ../../../headers/stdio.rst:304
 msgid "7.23.6.5"
@@ -831,7 +835,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:306
 msgid "sprintf"
-msgstr ""
+msgstr "sprintf"
 
 #: ../../../headers/stdio.rst:308
 msgid "7.23.6.6"
@@ -845,7 +849,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:310
 msgid "sscanf"
-msgstr ""
+msgstr "sscanf"
 
 #: ../../../headers/stdio.rst:312
 msgid "7.23.6.7"
@@ -887,7 +891,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:322
 msgid "ungetc"
-msgstr ""
+msgstr "ungetc"
 
 #: ../../../headers/stdio.rst:324
 msgid "7.23.7.10"
@@ -911,7 +915,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:330
 msgid "vfprintf"
-msgstr ""
+msgstr "vfprintf"
 
 #: ../../../headers/stdio.rst:332
 msgid "7.23.6.8"
@@ -939,7 +943,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:338
 msgid "vprintf"
-msgstr ""
+msgstr "vprintf"
 
 #: ../../../headers/stdio.rst:340
 msgid "7.23.6.10"
@@ -967,7 +971,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:346
 msgid "vsnprintf"
-msgstr ""
+msgstr "vsnprintf"
 
 #: ../../../headers/stdio.rst:348
 msgid "7.23.6.12"
@@ -981,7 +985,7 @@ msgstr ""
 
 #: ../../../headers/stdio.rst:350
 msgid "vsprintf"
-msgstr ""
+msgstr "vsprintf"
 
 #: ../../../headers/stdio.rst:352
 msgid "7.23.6.13"

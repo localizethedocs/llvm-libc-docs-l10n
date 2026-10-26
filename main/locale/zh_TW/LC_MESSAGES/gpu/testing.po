@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../gpu/testing.rst:6
 msgid "Testing the GPU C library"
-msgstr ""
+msgstr "測試 GPU C 程式庫"
 
 #: ../../../gpu/testing.rst:9
 msgid ""
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../gpu/testing.rst:14
 msgid "Testing infrastructure"
-msgstr ""
+msgstr "測試基礎設施"
 
 #: ../../../gpu/testing.rst:16
 msgid ""

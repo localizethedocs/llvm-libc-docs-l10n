@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/cpio.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/cpio.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/cpio.rst:14
 msgid "Implemented"

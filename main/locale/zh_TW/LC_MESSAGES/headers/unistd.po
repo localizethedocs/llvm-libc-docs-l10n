@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/unistd.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/unistd.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/unistd.rst:14 ../../../headers/unistd.rst:1011
 msgid "Implemented"
@@ -875,7 +875,7 @@ msgstr ""
 
 #: ../../../headers/unistd.rst:641
 msgid "_SC_HOST_NAME_MAX"
-msgstr ""
+msgstr "_SC_HOST_NAME_MAX"
 
 #: ../../../headers/unistd.rst:645
 msgid "_SC_IOV_MAX"
@@ -895,7 +895,7 @@ msgstr ""
 
 #: ../../../headers/unistd.rst:661
 msgid "_SC_LOGIN_NAME_MAX"
-msgstr ""
+msgstr "_SC_LOGIN_NAME_MAX"
 
 #: ../../../headers/unistd.rst:665
 msgid "_SC_MAPPED_FILES"
@@ -1123,7 +1123,7 @@ msgstr ""
 
 #: ../../../headers/unistd.rst:889
 msgid "_SC_TTY_NAME_MAX"
-msgstr ""
+msgstr "_SC_TTY_NAME_MAX"
 
 #: ../../../headers/unistd.rst:893
 msgid "_SC_TYPED_MEMORY_OBJECTS"
@@ -1131,7 +1131,7 @@ msgstr ""
 
 #: ../../../headers/unistd.rst:897
 msgid "_SC_TZNAME_MAX"
-msgstr ""
+msgstr "_SC_TZNAME_MAX"
 
 #: ../../../headers/unistd.rst:901
 msgid "_SC_V7_ILP32_OFF32"
@@ -1613,13 +1613,15 @@ msgstr ""
 
 #: ../../../headers/unistd.rst:1162
 msgid "gethostname"
-msgstr ""
+msgstr "gethostname"
 
 #: ../../../headers/unistd.rst:1165
 msgid ""
 "`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
 "gethostname.html>`__"
 msgstr ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"gethostname.html>`__"
 
 #: ../../../headers/unistd.rst:1166
 msgid "getlogin"
@@ -2113,17 +2115,19 @@ msgstr ""
 
 #: ../../../headers/unistd.rst:1362
 msgid "ttyname"
-msgstr ""
+msgstr "ttyname"
 
 #: ../../../headers/unistd.rst:1365
 msgid ""
 "`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
 "ttyname.html>`__"
 msgstr ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ttyname.html>`__"
 
 #: ../../../headers/unistd.rst:1366
 msgid "ttyname_r"
-msgstr ""
+msgstr "ttyname_r"
 
 #: ../../../headers/unistd.rst:1369
 msgid ""

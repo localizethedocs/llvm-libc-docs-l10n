@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/spawn.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/spawn.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/spawn.rst:14 ../../../headers/spawn.rst:55
 msgid "Implemented"

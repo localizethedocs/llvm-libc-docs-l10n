@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../headers/complex.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/complex.rst:9 ../../../headers/complex.rst:18
 msgid "<Func>"

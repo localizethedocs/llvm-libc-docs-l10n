@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../gpu/motivation.rst:8
 msgid "Motivation"
-msgstr ""
+msgstr "動機"
 
 #: ../../../gpu/motivation.rst:10
 msgid ""

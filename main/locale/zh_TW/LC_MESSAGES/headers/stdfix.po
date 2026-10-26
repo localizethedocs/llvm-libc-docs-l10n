@@ -113,7 +113,7 @@ msgstr ""
 #: ../../../headers/stdfix.rst:62 ../../../headers/stdfix.rst:103
 #: ../../../headers/stdfix.rst:130
 msgid "Function Name"
-msgstr ""
+msgstr "函數名稱"
 
 #: ../../../headers/stdfix.rst:62 ../../../headers/stdfix.rst:103
 #: ../../../headers/stdfix.rst:130
@@ -331,11 +331,11 @@ msgstr ""
 
 #: ../../../headers/stdfix.rst:136
 msgid "fprintf"
-msgstr ""
+msgstr "fprintf"
 
 #: ../../../headers/stdfix.rst:138
 msgid "fscanf"
-msgstr ""
+msgstr "fscanf"
 
 #: ../../../headers/stdfix.rst:140
 msgid "strtofx"

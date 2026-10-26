@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/errno.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/errno.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/errno.rst:14
 msgid "Implemented"

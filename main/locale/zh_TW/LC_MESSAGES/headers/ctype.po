@@ -376,7 +376,7 @@ msgstr ""
 
 #: ../../../headers/ctype.rst:121
 msgid "toupper"
-msgstr ""
+msgstr "toupper"
 
 #: ../../../headers/ctype.rst:123
 msgid "7.4.2.2"

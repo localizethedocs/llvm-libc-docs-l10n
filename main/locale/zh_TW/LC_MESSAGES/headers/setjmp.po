@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/setjmp.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/setjmp.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/setjmp.rst:14 ../../../headers/setjmp.rst:31
 msgid "Implemented"

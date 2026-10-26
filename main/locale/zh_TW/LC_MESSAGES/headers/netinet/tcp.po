@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/netinet/tcp.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/netinet/tcp.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/netinet/tcp.rst:14
 msgid "Implemented"

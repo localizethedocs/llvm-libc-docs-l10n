@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/sys/socket.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/sys/socket.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/sys/socket.rst:14 ../../../headers/sys/socket.rst:227
 msgid "Implemented"

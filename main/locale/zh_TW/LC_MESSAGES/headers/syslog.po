@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/syslog.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/syslog.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/syslog.rst:14 ../../../headers/syslog.rst:155
 msgid "Implemented"

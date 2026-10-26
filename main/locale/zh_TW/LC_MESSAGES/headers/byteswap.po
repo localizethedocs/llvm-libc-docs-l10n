@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/byteswap.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/byteswap.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/byteswap.rst:14
 msgid "Implemented"

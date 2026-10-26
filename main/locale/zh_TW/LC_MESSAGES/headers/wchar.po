@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/wchar.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/wchar.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/wchar.rst:14 ../../../headers/wchar.rst:35
 msgid "Implemented"

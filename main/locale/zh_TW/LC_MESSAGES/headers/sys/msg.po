@@ -19,15 +19,15 @@ msgstr ""
 
 #: ../../../headers/sys/msg.rst:3
 msgid "sys/msg.h"
-msgstr ""
+msgstr "sys/msg.h"
 
 #: ../../../headers/sys/msg.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/sys/msg.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/sys/msg.rst:14 ../../../headers/sys/msg.rst:31
 msgid "Implemented"

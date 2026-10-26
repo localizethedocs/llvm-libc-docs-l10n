@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../headers/time.rst:3
 msgid "time.h"
-msgstr ""
+msgstr "time.h"
 
 #: ../../../headers/time.rst:6
 msgid "Functions"
@@ -87,7 +87,7 @@ msgstr ""
 
 #: ../../../headers/time.rst:25
 msgid "clock"
-msgstr ""
+msgstr "clock"
 
 #: ../../../headers/time.rst:28
 msgid ""
@@ -117,7 +117,7 @@ msgstr ""
 
 #: ../../../headers/time.rst:37
 msgid "clock_gettime"
-msgstr ""
+msgstr "clock_gettime"
 
 #: ../../../headers/time.rst:40
 msgid ""
@@ -249,7 +249,7 @@ msgstr ""
 
 #: ../../../headers/time.rst:85
 msgid "nanosleep"
-msgstr ""
+msgstr "nanosleep"
 
 #: ../../../headers/time.rst:88
 msgid ""
@@ -259,7 +259,7 @@ msgstr ""
 
 #: ../../../headers/time.rst:89
 msgid "strftime"
-msgstr ""
+msgstr "strftime"
 
 #: ../../../headers/time.rst:91
 msgid "7.27.3.5"
@@ -273,7 +273,7 @@ msgstr ""
 
 #: ../../../headers/time.rst:93
 msgid "strftime_l"
-msgstr ""
+msgstr "strftime_l"
 
 #: ../../../headers/time.rst:96
 msgid ""

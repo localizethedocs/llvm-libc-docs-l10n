@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../headers/search.rst:26
 msgid "Type Name"
-msgstr ""
+msgstr "型別名稱"
 
 #: ../../../headers/search.rst:26 ../../../headers/search.rst:37
 #: ../../../headers/search.rst:57
@@ -88,7 +88,7 @@ msgstr ""
 
 #: ../../../headers/search.rst:37 ../../../headers/search.rst:57
 msgid "Function Name"
-msgstr ""
+msgstr "函數名稱"
 
 #: ../../../headers/search.rst:39
 msgid "hcreate"

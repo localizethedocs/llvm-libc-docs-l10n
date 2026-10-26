@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../uefi/testing.rst:8
 msgid "Testing infrastructure"
-msgstr ""
+msgstr "測試基礎設施"
 
 #: ../../../uefi/testing.rst:10
 msgid ""

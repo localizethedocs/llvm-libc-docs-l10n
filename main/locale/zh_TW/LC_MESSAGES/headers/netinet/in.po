@@ -19,15 +19,15 @@ msgstr ""
 
 #: ../../../headers/netinet/in.rst:3
 msgid "netinet/in.h"
-msgstr ""
+msgstr "netinet/in.h"
 
 #: ../../../headers/netinet/in.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/netinet/in.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/netinet/in.rst:14 ../../../headers/netinet/in.rst:155
 msgid "Implemented"

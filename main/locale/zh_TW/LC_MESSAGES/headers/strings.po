@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../../headers/strings.rst:17
 msgid "bcmp"
-msgstr ""
+msgstr "bcmp"
 
 #: ../../../headers/strings.rst:18 ../../../headers/strings.rst:22
 #: ../../../headers/strings.rst:26 ../../../headers/strings.rst:30
@@ -66,7 +66,7 @@ msgstr ""
 
 #: ../../../headers/strings.rst:21
 msgid "bcopy"
-msgstr ""
+msgstr "bcopy"
 
 #: ../../../headers/strings.rst:24
 msgid ""
@@ -76,7 +76,7 @@ msgstr ""
 
 #: ../../../headers/strings.rst:25
 msgid "bzero"
-msgstr ""
+msgstr "bzero"
 
 #: ../../../headers/strings.rst:28
 msgid ""

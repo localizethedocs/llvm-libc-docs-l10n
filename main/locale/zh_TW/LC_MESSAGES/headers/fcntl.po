@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/fcntl.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/fcntl.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/fcntl.rst:14 ../../../headers/fcntl.rst:239
 msgid "Implemented"

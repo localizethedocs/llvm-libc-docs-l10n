@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/poll.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/poll.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/poll.rst:14 ../../../headers/poll.rst:67
 msgid "Implemented"

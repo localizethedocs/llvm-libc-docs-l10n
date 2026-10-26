@@ -45,7 +45,7 @@ msgstr ""
 #: ../../../uefi/support.rst:68 ../../../uefi/support.rst:76
 #: ../../../uefi/support.rst:84
 msgid "Function Name"
-msgstr ""
+msgstr "函數名稱"
 
 #: ../../../uefi/support.rst:20 ../../../uefi/support.rst:28
 #: ../../../uefi/support.rst:36 ../../../uefi/support.rst:44
@@ -57,7 +57,7 @@ msgstr ""
 
 #: ../../../uefi/support.rst:25
 msgid "string.h"
-msgstr ""
+msgstr "string.h"
 
 #: ../../../uefi/support.rst:33
 msgid "strings.h"
@@ -81,8 +81,8 @@ msgstr ""
 
 #: ../../../uefi/support.rst:73
 msgid "time.h"
-msgstr ""
+msgstr "time.h"
 
 #: ../../../uefi/support.rst:81
 msgid "assert.h"
-msgstr ""
+msgstr "assert.h"

@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../headers/net/if.rst:6
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/net/if.rst:13
 msgid "Macro"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/net/if.rst:14 ../../../headers/net/if.rst:31
 msgid "Implemented"
@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../../headers/net/if.rst:17
 msgid "IF_NAMESIZE"
-msgstr ""
+msgstr "IF_NAMESIZE"
 
 #: ../../../headers/net/if.rst:18
 msgid "|check|"
@@ -69,27 +69,31 @@ msgstr ""
 
 #: ../../../headers/net/if.rst:34
 msgid "if_freenameindex"
-msgstr ""
+msgstr "if_freenameindex"
 
 #: ../../../headers/net/if.rst:37
 msgid ""
 "`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
 "if_freenameindex.html>`__"
 msgstr ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"if_freenameindex.html>`__"
 
 #: ../../../headers/net/if.rst:38
 msgid "if_indextoname"
-msgstr ""
+msgstr "if_indextoname"
 
 #: ../../../headers/net/if.rst:41
 msgid ""
 "`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
 "if_indextoname.html>`__"
 msgstr ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"if_indextoname.html>`__"
 
 #: ../../../headers/net/if.rst:42
 msgid "if_nameindex"
-msgstr ""
+msgstr "if_nameindex"
 
 #: ../../../headers/net/if.rst:45
 msgid ""
@@ -99,10 +103,12 @@ msgstr ""
 
 #: ../../../headers/net/if.rst:46
 msgid "if_nametoindex"
-msgstr ""
+msgstr "if_nametoindex"
 
 #: ../../../headers/net/if.rst:49
 msgid ""
 "`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
 "if_nametoindex.html>`__"
 msgstr ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"if_nametoindex.html>`__"
