@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -54,8 +55,8 @@ msgstr ""
 
 #: ../../../arch_support.md:13
 msgid ""
-"i386 support is [in the works](https://github.com/llvm/llvm-project/"
-"issues/93709)."
+"i386 support is [in the works](https://github.com/llvm/llvm-project/issues/"
+"93709)."
 msgstr ""
 
 #: ../../../arch_support.md:15
