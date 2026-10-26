@@ -1,0 +1,45 @@
+=============
+sys/statvfs.h
+=============
+
+Macros
+======
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Macro
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - ST_NOSUID
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_statvfs.h.html>`__
+  * - ST_RDONLY
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_statvfs.h.html>`__
+
+Functions
+=========
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Function
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - fstatvfs
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/fstatvfs.html>`__
+  * - statvfs
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/statvfs.html>`__

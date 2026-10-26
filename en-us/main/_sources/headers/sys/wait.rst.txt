@@ -1,0 +1,97 @@
+==========
+sys/wait.h
+==========
+
+Macros
+======
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Macro
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - WCONTINUED
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_wait.h.html>`__
+  * - WCORE_DUMPED
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_wait.h.html>`__
+  * - WEXITED
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_wait.h.html>`__
+  * - WEXITSTATUS
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_wait.h.html>`__
+  * - WIFCONTINUED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_wait.h.html>`__
+  * - WIFEXITED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_wait.h.html>`__
+  * - WIFSIGNALED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_wait.h.html>`__
+  * - WIFSTOPPED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_wait.h.html>`__
+  * - WNOHANG
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_wait.h.html>`__
+  * - WNOWAIT
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_wait.h.html>`__
+  * - WSTOPPED
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_wait.h.html>`__
+  * - WSTOPSIG
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_wait.h.html>`__
+  * - WTERMSIG
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_wait.h.html>`__
+  * - WUNTRACED
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_wait.h.html>`__
+
+Functions
+=========
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Function
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - wait
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/wait.html>`__
+  * - waitid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/waitid.html>`__
+  * - waitpid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/waitpid.html>`__

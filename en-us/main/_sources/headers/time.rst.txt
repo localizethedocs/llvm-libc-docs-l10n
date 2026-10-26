@@ -1,0 +1,132 @@
+======
+time.h
+======
+
+Functions
+=========
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Function
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - asctime
+    - |check|
+    - 7.27.2.1
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/asctime.html>`__
+  * - asctime_r
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/asctime_r.html>`__
+  * - clock
+    - |check|
+    - 7.27.2.1
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock.html>`__
+  * - clock_getcpuclockid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_getcpuclockid.html>`__
+  * - clock_getres
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_getres.html>`__
+  * - clock_gettime
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_gettime.html>`__
+  * - clock_nanosleep
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_nanosleep.html>`__
+  * - clock_settime
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_settime.html>`__
+  * - ctime
+    - |check|
+    - 7.27.2.2
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctime.html>`__
+  * - ctime_r
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctime_r.html>`__
+  * - difftime
+    - |check|
+    - 7.27.2.2
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/difftime.html>`__
+  * - getdate
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getdate.html>`__
+  * - gmtime
+    - |check|
+    - 7.27.2.3
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/gmtime.html>`__
+  * - gmtime_r
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/gmtime_r.html>`__
+  * - localtime
+    - |check|
+    - 7.27.2.4
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/localtime.html>`__
+  * - localtime_r
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/localtime_r.html>`__
+  * - mktime
+    - |check|
+    - 7.27.2.3
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/mktime.html>`__
+  * - nanosleep
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/nanosleep.html>`__
+  * - strftime
+    - |check|
+    - 7.27.3.5
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/strftime.html>`__
+  * - strftime_l
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/strftime_l.html>`__
+  * - strptime
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/strptime.html>`__
+  * - time
+    - |check|
+    - 7.27.2.4
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/time.html>`__
+  * - timer_create
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_create.html>`__
+  * - timer_delete
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_delete.html>`__
+  * - timer_getoverrun
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_getoverrun.html>`__
+  * - timer_gettime
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_gettime.html>`__
+  * - timer_settime
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_settime.html>`__
+  * - timespec_get
+    - |check|
+    - 7.27.2.5
+    -
+  * - tzset
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/tzset.html>`__

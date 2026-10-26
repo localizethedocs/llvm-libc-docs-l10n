@@ -1,0 +1,1003 @@
+<!doctype html>
+<html class="no-js" lang="en-US" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="Bringup on a New OS or Architecture" href="../porting.html"><link rel="prev" title="Modular format strings" href="modular_format.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/llvm-libc-docs-l10n/dev/code_coverage.html">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>Code Coverage - The LLVM C Library</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=69ba022a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/llvm-sphinx/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f0f0f0;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style>
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">The LLVM C Library</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <span class="sidebar-brand-text">The LLVM C Library</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Using LLVM-libc</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_concepts.html">Build Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overlay_mode.html">Overlay Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../full_host_build.html">Full Host Build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../full_cross_build.html">Full Cross Build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configure.html">Configure Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hand_in_hand.html">Hand-in-Hand</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Platforms</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../gpu/index.html">libc for GPUs</a><input aria-label="Toggle navigation of libc for GPUs" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gpu/building.html">Building libs for GPUs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gpu/using.html">Using libc for GPUs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gpu/support.html">Supported Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gpu/rpc.html">Remote Procedure Calls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gpu/testing.html">Testing the GPU C library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gpu/motivation.html">Motivation and Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../uefi/index.html">libc for UEFI</a><input aria-label="Toggle navigation of libc for UEFI" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../uefi/building.html">Building libc for UEFI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uefi/using.html">Using libc for UEFI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uefi/support.html">Supported Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uefi/testing.html">Testing the UEFI C library</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Implementation Status</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../headers/index.html">Implementation Status</a><input aria-label="Toggle navigation of Implementation Status" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../headers/aio.html">aio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/arpa/inet.html">arpa/inet.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/assert.html">assert.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/byteswap.html">byteswap.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/complex.html">complex.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/cpio.html">cpio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/ctype.html">ctype.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/dirent.html">dirent.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/dlfcn.html">dlfcn.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/endian.html">endian.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/errno.html">errno.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/fcntl.html">fcntl.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/fenv.html">fenv.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/float.html">float.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/glob.html">glob.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/inttypes.html">inttypes.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/libgen.html">libgen.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/locale.html">locale.h</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../headers/math/index.html">math.h</a><input aria-label="Toggle navigation of math.h" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../headers/math/log.html">Log/Log10/Log2 Algorithm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/net/if.html">net/if.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/netinet/in.html">netinet/in.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/netinet/tcp.html">netinet/tcp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/nl_types.html">nl_types.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/poll.html">poll.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/pwd.html">pwd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sched.html">sched.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/search.html">search.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/setjmp.html">setjmp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/signal.html">signal.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/spawn.html">spawn.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdbit.html">stdbit.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdfix.html">stdfix.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdio.html">stdio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdlib.html">stdlib.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/string.html">string.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/strings.html">strings.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/ipc.html">sys/ipc.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/mman.html">sys/mman.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/msg.html">sys/msg.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/resource.html">sys/resource.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/select.html">sys/select.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/sem.html">sys/sem.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/socket.html">sys/socket.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/stat.html">sys/stat.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/statvfs.html">sys/statvfs.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/time.html">sys/time.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/uio.html">sys/uio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/utsname.html">sys/utsname.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/wait.html">sys/wait.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/syslog.html">syslog.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/termios.html">termios.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/threads.html">threads.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/time.html">time.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/uchar.html">uchar.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/unistd.html">unistd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/wchar.html">wchar.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/wctype.html">wctype.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/pthread.html">pthread.h</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../arch_support.html">Architecture Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platform_support.html">Platform Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compiler_support.html">Compiler Support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing to the libc Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_and_test.html">Building and Testing the libc</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Developer Guides</a><input aria-label="Toggle navigation of Developer Guides" checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="building_docs.html">Building the Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_style.html">The libc code style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_tree_layout.html">LLVM-libc Source Tree Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="entrypoints.html">Entrypoints in LLVM libc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="implementing_a_function.html">Implementing a New Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_options.html">Adding new libc configure options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="date_and_time.html">Date and Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fuzzing.html">Fuzzing for LLVM-libc functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fuzzing.html#types-of-fuzz-tests">Types of fuzz tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="header_generation.html">Generating Public and Internal headers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="implementation_standard.html">Convention for implementing entrypoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="undefined_behavior.html">Defining Undefined Behavior</a></li>
+<li class="toctree-l2"><a class="reference internal" href="printf_behavior.html">Printf Behavior Under All Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="builtin_compatibility.html">GCC Compatibility of Builtins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syscall_wrapper_refactor.html">Syscall Wrapper Refactoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modular_format.html">Modular format strings</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Code Coverage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../porting.html">Bringup on a New OS or Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Maintainers.html">LLVM-libc Maintainers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Maintainers.html#inactive-maintainers">Inactive Maintainers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../talks.html">Talks</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc">Source Code</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/llvm/llvm-project/labels/libc">Bug Reports</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discourse.llvm.org/c/runtimes/libc">Discourse</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discord.gg/xS7Z362">Join the Discord</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discord.com/channels/636084430946959380/636732994891284500">Discord Channel</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://lab.llvm.org/buildbot/#/builders?tags=libc">Buildbot</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="https://github.com/llvm/llvm-project/blob/main/libc/docs/dev/code_coverage.md?plain=true" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div><div class="edit-this-page">
+  <a class="muted-link" href="https://github.com/llvm/llvm-project/edit/main/libc/docs/dev/code_coverage.md" rel="edit" title="Edit this page">
+    <svg><use href="#svg-pencil"></use></svg>
+    <span class="visually-hidden">Edit this page</span>
+  </a>
+</div><div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="code-coverage">
+<span id="id1"></span><h1>Code Coverage<a class="headerlink" href="#code-coverage" title="Link to this heading">¶</a></h1>
+<p>Code coverage is a software testing metric that measures the proportion of
+source code executed while running an automated test suite. It provides insight
+into test thoroughness by identifying untested functions, dead code paths, and
+unexercised conditional branches across library entrypoints and internal
+utilities.</p>
+<p>LLVM-libc supports Modified Condition / Decision Coverage (MC/DC). MC/DC
+evaluates compound boolean decisions composed of multiple sub-conditions (such
+as <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">(A</span> <span class="pre">&amp;&amp;</span> <span class="pre">(B</span> <span class="pre">||</span> <span class="pre">C))</span></code>). Under MC/DC criteria, each individual boolean
+condition must:</p>
+<ul class="simple">
+<li><p>Evaluate to both true and false across the test suite.</p></li>
+<li><p>Demonstrate that it can independently affect the outcome of the overall
+decision while other conditions remain fixed.</p></li>
+</ul>
+<p>This provides rigorous structural verification for safety-critical algorithms
+without requiring exhaustive testing of all 2<sup>n</sup> condition
+permutations.</p>
+<section id="continuous-profiling-architecture">
+<h2>Continuous Profiling Architecture<a class="headerlink" href="#continuous-profiling-architecture" title="Link to this heading">¶</a></h2>
+<p>LLVM-libc uses Clang’s <a class="reference external" href="https://clang.llvm.org/docs/UsersManual.html#cmdoption-fprofile-continuous">continuous profiling mode</a>
+(<code class="docutils literal notranslate"><span class="pre">-fprofile-continuous</span></code>) to record execution metrics directly into
+memory-mapped profile files during test execution.</p>
+<section id="compiler-counter-relocation">
+<h3>Compiler Counter Relocation<a class="headerlink" href="#compiler-counter-relocation" title="Link to this heading">¶</a></h3>
+<p>When compiled with <code class="docutils literal notranslate"><span class="pre">-fprofile-continuous</span></code>, Clang configures the LLVM code
+generator (<code class="docutils literal notranslate"><span class="pre">-mllvm</span> <span class="pre">-runtime-counter-relocation=true</span></code>) so that execution counter
+increments reference a dynamic base pointer (<code class="docutils literal notranslate"><span class="pre">*(bias</span> <span class="pre">+</span> <span class="pre">&amp;counter)</span> <span class="pre">+=</span> <span class="pre">1</span></code>). Each
+branch and basic block counter dynamically resolves to an address within a
+dedicated profile buffer mapped at program startup.</p>
+</section>
+<section id="runtime-memory-mapping">
+<h3>Runtime Memory Mapping<a class="headerlink" href="#runtime-memory-mapping" title="Link to this heading">¶</a></h3>
+<p>During binary initialization, the profiling runtime (<code class="docutils literal notranslate"><span class="pre">libclang_rt.profile</span></code>)
+resolves the target <code class="docutils literal notranslate"><span class="pre">.profraw</span></code> file and maps the execution counter section into
+process memory using <code class="docutils literal notranslate"><span class="pre">mmap</span></code> with <code class="docutils literal notranslate"><span class="pre">MAP_SHARED</span></code>. The runtime sets the global bias
+pointer to this mapped region, routing live counter increments directly into the
+file-backed buffer.</p>
+</section>
+<section id="kernel-page-cache-synchronization">
+<h3>Kernel Page-Cache Synchronization<a class="headerlink" href="#kernel-page-cache-synchronization" title="Link to this heading">¶</a></h3>
+<p>Execution counts are written directly to shared memory-mapped pages and
+synchronized by the operating system kernel’s page cache. Subprocesses created
+via <code class="docutils literal notranslate"><span class="pre">fork()</span></code> share the same underlying memory mapping, committing statements
+executed across parent and child processes directly to the profile file.</p>
+</section>
+<section id="build-system-integration">
+<h3>Build System Integration<a class="headerlink" href="#build-system-integration" title="Link to this heading">¶</a></h3>
+<p>Setting <code class="docutils literal notranslate"><span class="pre">-DLIBC_ENABLE_COVERAGE=ON</span></code> in the CMake configuration passes
+<code class="docutils literal notranslate"><span class="pre">-fprofile-instr-generate=libc_cov_%p.profraw</span></code>, <code class="docutils literal notranslate"><span class="pre">-fcoverage-mapping</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">-fprofile-continuous</span></code> across all LLVM-libc compilation units and test link
+steps. When <code class="docutils literal notranslate"><span class="pre">-fprofile-continuous</span></code> is enabled, Clang automatically prepends
+<code class="docutils literal notranslate"><span class="pre">%c</span></code> to the profile file template, avoiding duplicate specifier warnings at
+runtime. Setting <code class="docutils literal notranslate"><span class="pre">-DLIBC_ENABLE_COVERAGE_MCDC=ON</span></code> additionally enables
+<code class="docutils literal notranslate"><span class="pre">-fcoverage-mcdc</span></code>.</p>
+</section>
+</section>
+<section id="running-code-coverage-locally">
+<h2>Running Code Coverage Locally<a class="headerlink" href="#running-code-coverage-locally" title="Link to this heading">¶</a></h2>
+<section id="prerequisites-toolchain-setup">
+<h3>Prerequisites &amp; Toolchain Setup<a class="headerlink" href="#prerequisites-toolchain-setup" title="Link to this heading">¶</a></h3>
+<p>Generating coverage reports requires Clang 24, LLVM profile tools, CMake, and
+Ninja:</p>
+<ul class="simple">
+<li><p><strong>Compiler:</strong> Clang 24 (or Clang built from HEAD). Full-build hermetic tests
+link <code class="docutils literal notranslate"><span class="pre">libclang_rt.profile.a</span></code>, which must match the compiler version and cannot
+rely on distro-built libraries with glibc source fortification.</p></li>
+<li><p><strong>LLVM Utilities:</strong> Matching Clang 24 versions of <code class="docutils literal notranslate"><span class="pre">llvm-profdata</span></code> and
+<code class="docutils literal notranslate"><span class="pre">llvm-cov</span></code>.</p></li>
+<li><p><strong>Linker:</strong> <code class="docutils literal notranslate"><span class="pre">lld</span></code> is recommended when configuring full-build mode.</p></li>
+<li><p><strong>Build System:</strong> CMake 3.28+ and Ninja.</p></li>
+</ul>
+<section id="toolchain-discovery">
+<h4>Toolchain Discovery<a class="headerlink" href="#toolchain-discovery" title="Link to this heading">¶</a></h4>
+<p>If your Linux distribution packages version-suffixed binaries (e.g. <code class="docutils literal notranslate"><span class="pre">clang-24</span></code>,
+<code class="docutils literal notranslate"><span class="pre">llvm-profdata-24</span></code>), discover and export them:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">CLANG_MAJOR</span><span class="o">=</span><span class="k">$(</span>clang<span class="w"> </span>--version<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span>-n<span class="w"> </span><span class="s1">'s/.*version \([0-9]*\).*/\1/p'</span><span class="k">)</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LLVM_PROFDATA</span><span class="o">=</span><span class="k">$(</span>which<span class="w"> </span>llvm-profdata-<span class="nv">$CLANG_MAJOR</span><span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="o">||</span><span class="w"> </span>which<span class="w"> </span>llvm-profdata<span class="k">)</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LLVM_COV</span><span class="o">=</span><span class="k">$(</span>which<span class="w"> </span>llvm-cov-<span class="nv">$CLANG_MAJOR</span><span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="o">||</span><span class="w"> </span>which<span class="w"> </span>llvm-cov<span class="k">)</span>
+</pre></div>
+</div>
+<p>If version-agnostic tools are directly available in your <code class="docutils literal notranslate"><span class="pre">PATH</span></code>, export:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">LLVM_PROFDATA</span><span class="o">=</span>llvm-profdata
+<span class="nb">export</span><span class="w"> </span><span class="nv">LLVM_COV</span><span class="o">=</span>llvm-cov
+</pre></div>
+</div>
+<p>Subsequent merge and report commands reference <code class="docutils literal notranslate"><span class="pre">$LLVM_PROFDATA</span></code> and <code class="docutils literal notranslate"><span class="pre">$LLVM_COV</span></code>.</p>
+</section>
+<section id="building-clang-24-with-profiling-support">
+<h4>Building Clang 24 with Profiling Support<a class="headerlink" href="#building-clang-24-with-profiling-support" title="Link to this heading">¶</a></h4>
+<p>Full-build hermetic tests link <code class="docutils literal notranslate"><span class="pre">libclang_rt.profile.a</span></code>. Distro-built compiler-rt
+packages on distributions like Debian or Ubuntu are built with glibc source
+fortification enabled, which LLVM-libc does not support because it introduces
+unresolved symbols such as <code class="docutils literal notranslate"><span class="pre">__vfprintf_chk</span></code>. Furthermore, compiler-rt must
+match the exact version of the compiler used to build. The recommended approach
+is building Clang 24, lld, and compiler-rt from HEAD:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span>-G<span class="w"> </span>Ninja<span class="w"> </span>-S<span class="w"> </span>llvm<span class="w"> </span>-B<span class="w"> </span>build-clang<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DCMAKE_INSTALL_PREFIX<span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/clang"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DLLVM_ENABLE_PROJECTS<span class="o">=</span><span class="s2">"clang;clang-tools-extra;lld"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DLLVM_ENABLE_RUNTIMES<span class="o">=</span><span class="s2">"compiler-rt"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DLLVM_USE_LINKER<span class="o">=</span>lld
+ninja<span class="w"> </span>-C<span class="w"> </span>build-clang<span class="w"> </span>install
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="cleaning-profile-counters">
+<h2>Cleaning Profile Counters<a class="headerlink" href="#cleaning-profile-counters" title="Link to this heading">¶</a></h2>
+<p>Removes previously generated raw profile counter files (<code class="docutils literal notranslate"><span class="pre">.profraw</span></code>) and merged
+profile databases (<code class="docutils literal notranslate"><span class="pre">.profdata</span></code>) so that new coverage runs record clean,
+non-aggregated execution data:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>find<span class="w"> </span>.<span class="w"> </span>-name<span class="w"> </span><span class="s2">"libc_cov_*.profraw"</span><span class="w"> </span>-delete<span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">true</span>
+rm<span class="w"> </span>-f<span class="w"> </span>libc_full.profdata<span class="w"> </span>libc_mcdc.profdata<span class="w"> </span>libc_single.profdata<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>profraw_list.txt
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="standard-statement-branch-coverage">
+<h2>Standard Statement &amp; Branch Coverage<a class="headerlink" href="#standard-statement-branch-coverage" title="Link to this heading">¶</a></h2>
+<p>Standard coverage measures physical line execution and conditional branch
+outcomes across all LLVM-libc entrypoints and internal support utilities.</p>
+<section id="clean-prior-profile-artifacts">
+<h3>1. Clean Prior Profile Artifacts<a class="headerlink" href="#clean-prior-profile-artifacts" title="Link to this heading">¶</a></h3>
+<p>Removes previously generated raw profile counters and profile data to maintain
+a clean baseline:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm<span class="w"> </span>-f<span class="w"> </span>build-cov/libc_cov_*.profraw<span class="w"> </span>libc_cov_*.profraw<span class="w"> </span>profraw_list.txt<span class="w"> </span>libc_full.profdata
+</pre></div>
+</div>
+</section>
+<section id="configure-full-build-coverage-with-clang-24">
+<h3>2. Configure Full-Build Coverage with Clang 24<a class="headerlink" href="#configure-full-build-coverage-with-clang-24" title="Link to this heading">¶</a></h3>
+<p>Configures CMake to build LLVM-libc with code coverage enabled using Clang 24
+and LLD:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span>-G<span class="w"> </span>Ninja<span class="w"> </span>-S<span class="w"> </span>runtimes<span class="w"> </span>-B<span class="w"> </span>build-cov<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DCMAKE_C_COMPILER<span class="o">=</span><span class="s2">"</span><span class="nv">$PWD</span><span class="s2">/build-clang/bin/clang"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DCMAKE_CXX_COMPILER<span class="o">=</span><span class="s2">"</span><span class="nv">$PWD</span><span class="s2">/build-clang/bin/clang++"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DLLVM_USE_LINKER<span class="o">=</span>lld<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Debug<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DLLVM_ENABLE_RUNTIMES<span class="o">=</span><span class="s2">"libc"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DLLVM_LIBC_FULL_BUILD<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DLIBC_ENABLE_COVERAGE<span class="o">=</span>ON
+</pre></div>
+</div>
+</section>
+<section id="export-environment-variables">
+<h3>3. Export Environment Variables<a class="headerlink" href="#export-environment-variables" title="Link to this heading">¶</a></h3>
+<p>Exports the profile output pattern and Clang 24 tool paths:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">LLVM_PROFILE_FILE</span><span class="o">=</span><span class="s2">"libc_cov_%p.profraw"</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LLVM_PROFDATA</span><span class="o">=</span><span class="s2">"</span><span class="nv">$PWD</span><span class="s2">/build-clang/bin/llvm-profdata"</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LLVM_COV</span><span class="o">=</span><span class="s2">"</span><span class="nv">$PWD</span><span class="s2">/build-clang/bin/llvm-cov"</span>
+</pre></div>
+</div>
+</section>
+<section id="build-and-execute-hermetic-tests">
+<h3>4. Build and Execute Hermetic Tests<a class="headerlink" href="#build-and-execute-hermetic-tests" title="Link to this heading">¶</a></h3>
+<p>Compiles and executes the full hermetic test suite:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ninja<span class="w"> </span>-k<span class="w"> </span><span class="m">0</span><span class="w"> </span>-C<span class="w"> </span>build-cov<span class="w"> </span>libc-hermetic-tests
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">-k</span> <span class="pre">0</span></code> flag ensures Ninja continues executing all remaining test targets
+even if an individual edge-case test encounters an error. To only compile test
+binaries without executing them, use
+<code class="docutils literal notranslate"><span class="pre">ninja</span> <span class="pre">-C</span> <span class="pre">build-cov</span> <span class="pre">libc-hermetic-tests-build</span></code>.</p>
+</div>
+</section>
+<section id="merge-profile-counters">
+<h3>5. Merge Profile Counters<a class="headerlink" href="#merge-profile-counters" title="Link to this heading">¶</a></h3>
+<p>Scans the build tree for all generated <code class="docutils literal notranslate"><span class="pre">.profraw</span></code> files and indexes them into a
+unified, sparse <code class="docutils literal notranslate"><span class="pre">.profdata</span></code> archive using <code class="docutils literal notranslate"><span class="pre">$LLVM_PROFDATA</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>find<span class="w"> </span>build-cov<span class="w"> </span>-name<span class="w"> </span><span class="s2">"libc_cov_*.profraw"</span><span class="w"> </span>&gt;<span class="w"> </span>profraw_list.txt
+<span class="s2">"</span><span class="nv">$LLVM_PROFDATA</span><span class="s2">"</span><span class="w"> </span>merge<span class="w"> </span>-sparse<span class="w"> </span>-f<span class="w"> </span>profraw_list.txt<span class="w"> </span>-o<span class="w"> </span>libc_full.profdata
+</pre></div>
+</div>
+</section>
+<section id="generate-coverage-reports">
+<h3>6. Generate Coverage Reports<a class="headerlink" href="#generate-coverage-reports" title="Link to this heading">¶</a></h3>
+<p>Collects all compiled test binary paths and invokes <code class="docutils literal notranslate"><span class="pre">$LLVM_COV</span></code> to correlate
+recorded profile counters against the libc source tree:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">TEST_BINS</span><span class="o">=(</span><span class="k">$(</span>find<span class="w"> </span>build-cov<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-executable<span class="w"> </span>-name<span class="w"> </span><span class="s2">"*__build__"</span><span class="k">)</span><span class="o">)</span>
+<span class="nv">OBJECT_FLAGS</span><span class="o">=()</span>
+<span class="k">for</span><span class="w"> </span>bin<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">"</span><span class="si">${</span><span class="nv">TEST_BINS</span><span class="p">[@]:</span><span class="nv">1</span><span class="si">}</span><span class="s2">"</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">  </span><span class="nv">OBJECT_FLAGS</span><span class="o">+=(</span><span class="s2">"-object=</span><span class="nv">$bin</span><span class="s2">"</span><span class="o">)</span>
+<span class="k">done</span>
+</pre></div>
+</div>
+<p>Reports can be generated in different formats:</p>
+<section id="option-1-terminal-summary-report">
+<h4>Option 1: Terminal Summary Report<a class="headerlink" href="#option-1-terminal-summary-report" title="Link to this heading">¶</a></h4>
+<p>Prints an aggregated terminal summary showing line, region, and branch coverage
+percentages for each file:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="s2">"</span><span class="nv">$LLVM_COV</span><span class="s2">"</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-instr-profile<span class="o">=</span>libc_full.profdata<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">"</span><span class="si">${</span><span class="nv">TEST_BINS</span><span class="p">[0]</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span><span class="s2">"</span><span class="si">${</span><span class="nv">OBJECT_FLAGS</span><span class="p">[@]</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--show-branch-summary<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-ignore-filename-regex<span class="o">=</span><span class="s2">".*(test|utils).*"</span>
+</pre></div>
+</div>
+<p>To restrict the terminal report to a specific source file:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="s2">"</span><span class="nv">$LLVM_COV</span><span class="s2">"</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-instr-profile<span class="o">=</span>libc_full.profdata<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">"</span><span class="si">${</span><span class="nv">TEST_BINS</span><span class="p">[0]</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span><span class="s2">"</span><span class="si">${</span><span class="nv">OBJECT_FLAGS</span><span class="p">[@]</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>libc/src/string/strlen.cpp
+</pre></div>
+</div>
+</section>
+<section id="option-2-interactive-html-dashboard">
+<h4>Option 2: Interactive HTML Dashboard<a class="headerlink" href="#option-2-interactive-html-dashboard" title="Link to this heading">¶</a></h4>
+<p>Generates an interactive HTML dashboard containing sortable directory metrics
+and syntax-highlighted source views:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="s2">"</span><span class="nv">$LLVM_COV</span><span class="s2">"</span><span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-format<span class="o">=</span>html<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-output-dir<span class="o">=</span>coverage_html<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-instr-profile<span class="o">=</span>libc_full.profdata<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">"</span><span class="si">${</span><span class="nv">TEST_BINS</span><span class="p">[0]</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span><span class="s2">"</span><span class="si">${</span><span class="nv">OBJECT_FLAGS</span><span class="p">[@]</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--show-directory-coverage<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--show-branches<span class="o">=</span>count<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-ignore-filename-regex<span class="o">=</span><span class="s2">".*(test|utils).*"</span>
+
+<span class="c1"># Open dashboard in browser</span>
+xdg-open<span class="w"> </span>coverage_html/index.html
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="modified-condition-decision-coverage-mc-dc">
+<h2>Modified Condition / Decision Coverage (MC/DC)<a class="headerlink" href="#modified-condition-decision-coverage-mc-dc" title="Link to this heading">¶</a></h2>
+<p>MC/DC evaluates boolean sub-conditions within compound logical expressions (such
+as <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">(A</span> <span class="pre">&amp;&amp;</span> <span class="pre">B)</span></code>). It verifies that each individual sub-condition evaluates to
+both true and false and independently affects the outcome of the enclosing
+decision.</p>
+<section id="id2">
+<h3>1. Clean Prior Profile Artifacts<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<p>Removes previous MC/DC profile counters and profile data:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm<span class="w"> </span>-f<span class="w"> </span>build-cov-mcdc/libc_cov_*.profraw<span class="w"> </span>libc_cov_*.profraw<span class="w"> </span>profraw_list.txt<span class="w"> </span>libc_mcdc.profdata
+</pre></div>
+</div>
+</section>
+<section id="configure-full-build-coverage-with-mc-dc-using-clang-24">
+<h3>2. Configure Full-Build Coverage with MC/DC using Clang 24<a class="headerlink" href="#configure-full-build-coverage-with-mc-dc-using-clang-24" title="Link to this heading">¶</a></h3>
+<p>Configures CMake with <code class="docutils literal notranslate"><span class="pre">-DLIBC_ENABLE_COVERAGE_MCDC=ON</span></code> alongside profiling
+flags using Clang 24 and LLD:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span>-G<span class="w"> </span>Ninja<span class="w"> </span>-S<span class="w"> </span>runtimes<span class="w"> </span>-B<span class="w"> </span>build-cov-mcdc<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DCMAKE_C_COMPILER<span class="o">=</span><span class="s2">"</span><span class="nv">$PWD</span><span class="s2">/build-clang/bin/clang"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DCMAKE_CXX_COMPILER<span class="o">=</span><span class="s2">"</span><span class="nv">$PWD</span><span class="s2">/build-clang/bin/clang++"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DLLVM_USE_LINKER<span class="o">=</span>lld<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Debug<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DLLVM_ENABLE_RUNTIMES<span class="o">=</span><span class="s2">"libc"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DLLVM_LIBC_FULL_BUILD<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DLIBC_ENABLE_COVERAGE<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DLIBC_ENABLE_COVERAGE_MCDC<span class="o">=</span>ON
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h3>3. Export Environment Variables<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<p>Exports the profile output pattern and Clang 24 tool paths:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">LLVM_PROFILE_FILE</span><span class="o">=</span><span class="s2">"libc_cov_%p.profraw"</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LLVM_PROFDATA</span><span class="o">=</span><span class="s2">"</span><span class="nv">$PWD</span><span class="s2">/build-clang/bin/llvm-profdata"</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LLVM_COV</span><span class="o">=</span><span class="s2">"</span><span class="nv">$PWD</span><span class="s2">/build-clang/bin/llvm-cov"</span>
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h3>4. Build and Execute Hermetic Tests<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<p>Compiles and executes test executables in parallel with MC/DC instrumentation
+enabled:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ninja<span class="w"> </span>-k<span class="w"> </span><span class="m">0</span><span class="w"> </span>-C<span class="w"> </span>build-cov-mcdc<span class="w"> </span>libc-hermetic-tests
+</pre></div>
+</div>
+</section>
+<section id="id5">
+<h3>5. Merge Profile Counters<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<p>Indexes and merges all MC/DC <code class="docutils literal notranslate"><span class="pre">.profraw</span></code> files into a unified
+<code class="docutils literal notranslate"><span class="pre">libc_mcdc.profdata</span></code> archive for report generation:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>find<span class="w"> </span>build-cov-mcdc<span class="w"> </span>-name<span class="w"> </span><span class="s2">"libc_cov_*.profraw"</span><span class="w"> </span>&gt;<span class="w"> </span>profraw_list.txt
+<span class="s2">"</span><span class="nv">$LLVM_PROFDATA</span><span class="s2">"</span><span class="w"> </span>merge<span class="w"> </span>-sparse<span class="w"> </span>-f<span class="w"> </span>profraw_list.txt<span class="w"> </span>-o<span class="w"> </span>libc_mcdc.profdata
+</pre></div>
+</div>
+</section>
+<section id="generate-mc-dc-coverage-reports">
+<h3>6. Generate MC/DC Coverage Reports<a class="headerlink" href="#generate-mc-dc-coverage-reports" title="Link to this heading">¶</a></h3>
+<p>Maps MC/DC bitmap records to source AST decisions and evaluates condition
+independence pairs:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">TEST_BINS</span><span class="o">=(</span><span class="k">$(</span>find<span class="w"> </span>build-cov-mcdc<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-executable<span class="w"> </span>-name<span class="w"> </span><span class="s2">"*__build__"</span><span class="k">)</span><span class="o">)</span>
+<span class="nv">OBJECT_FLAGS</span><span class="o">=()</span>
+<span class="k">for</span><span class="w"> </span>bin<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">"</span><span class="si">${</span><span class="nv">TEST_BINS</span><span class="p">[@]:</span><span class="nv">1</span><span class="si">}</span><span class="s2">"</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">  </span><span class="nv">OBJECT_FLAGS</span><span class="o">+=(</span><span class="s2">"-object=</span><span class="nv">$bin</span><span class="s2">"</span><span class="o">)</span>
+<span class="k">done</span>
+</pre></div>
+</div>
+<p>Reports can be generated in two formats depending on your needs:</p>
+<section id="id6">
+<h4>Option 1: Terminal Summary Report<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h4>
+<p>Displays the terminal coverage summary including MC/DC Condition and Missed
+Condition percentages:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="s2">"</span><span class="nv">$LLVM_COV</span><span class="s2">"</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-instr-profile<span class="o">=</span>libc_mcdc.profdata<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">"</span><span class="si">${</span><span class="nv">TEST_BINS</span><span class="p">[0]</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span><span class="s2">"</span><span class="si">${</span><span class="nv">OBJECT_FLAGS</span><span class="p">[@]</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--show-branch-summary<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--show-mcdc-summary<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-ignore-filename-regex<span class="o">=</span><span class="s2">".*(test|utils).*"</span>
+</pre></div>
+</div>
+</section>
+<section id="id7">
+<h4>Option 2: Interactive HTML Dashboard<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h4>
+<p>Produces an HTML report with expandable MC/DC decision truth tables and test
+vector coverage breakdowns:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="s2">"</span><span class="nv">$LLVM_COV</span><span class="s2">"</span><span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-format<span class="o">=</span>html<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-output-dir<span class="o">=</span>coverage_mcdc_html<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-instr-profile<span class="o">=</span>libc_mcdc.profdata<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">"</span><span class="si">${</span><span class="nv">TEST_BINS</span><span class="p">[0]</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span><span class="s2">"</span><span class="si">${</span><span class="nv">OBJECT_FLAGS</span><span class="p">[@]</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--show-directory-coverage<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--show-branches<span class="o">=</span>count<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--show-mcdc<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--show-mcdc-summary<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-ignore-filename-regex<span class="o">=</span><span class="s2">".*(test|utils).*"</span>
+
+<span class="c1"># Open dashboard in browser</span>
+xdg-open<span class="w"> </span>coverage_mcdc_html/index.html
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="running-coverage-for-a-single-test">
+<h2>Running Coverage for a Single Test<a class="headerlink" href="#running-coverage-for-a-single-test" title="Link to this heading">¶</a></h2>
+<p>When developing or modifying a specific function, coverage can be collected for
+a single hermetic test without building and executing the entire test suite.</p>
+<p>The commands below use <code class="docutils literal notranslate"><span class="pre">libc.test.src.ctype.isalpha_test</span></code> (which tests
+<code class="docutils literal notranslate"><span class="pre">libc/src/ctype/isalpha.cpp</span></code>) as an example. You can test any other entrypoint
+by substituting the target name and source file path:</p>
+<ul class="simple">
+<li><p><strong>Target pattern:</strong> <code class="docutils literal notranslate"><span class="pre">libc.test.&lt;path_to_test&gt;.&lt;test_name&gt;</span></code>
+(e.g. <code class="docutils literal notranslate"><span class="pre">libc.test.src.string.strlen_test</span></code>)</p></li>
+<li><p><strong>Source path pattern:</strong> <code class="docutils literal notranslate"><span class="pre">libc/&lt;path_to_source&gt;/&lt;source_file&gt;.cpp</span></code>
+(e.g. <code class="docutils literal notranslate"><span class="pre">libc/src/string/strlen.cpp</span></code>)</p></li>
+</ul>
+<section id="id8">
+<h3>1. Clean Prior Profile Artifacts<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<p>Removes previously generated raw profile counters:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm<span class="w"> </span>-f<span class="w"> </span>libc_cov_*.profraw<span class="w"> </span>profraw_list.txt<span class="w"> </span>libc_single.profdata
+</pre></div>
+</div>
+</section>
+<section id="build-and-execute-the-targeted-test">
+<h3>2. Build and Execute the Targeted Test<a class="headerlink" href="#build-and-execute-the-targeted-test" title="Link to this heading">¶</a></h3>
+<p>Compiles and runs only the specified test binary, immediately writing execution
+profile counters to disk upon completion:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">LLVM_PROFILE_FILE</span><span class="o">=</span><span class="s2">"libc_cov_%p.profraw"</span>
+
+<span class="c1"># Standard coverage build</span>
+ninja<span class="w"> </span>-C<span class="w"> </span>build-cov<span class="w"> </span>libc.test.src.ctype.isalpha_test
+
+<span class="c1"># MC/DC coverage build</span>
+ninja<span class="w"> </span>-C<span class="w"> </span>build-cov-mcdc<span class="w"> </span>libc.test.src.ctype.isalpha_test
+</pre></div>
+</div>
+</section>
+<section id="merge-the-profile">
+<h3>3. Merge the Profile<a class="headerlink" href="#merge-the-profile" title="Link to this heading">¶</a></h3>
+<p>Merges the single test’s raw profile into an indexed database:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>find<span class="w"> </span>build-cov/<span class="w"> </span>build-cov-mcdc/<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-name<span class="w"> </span><span class="s2">"libc_cov_*.profraw"</span><span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span>&gt;<span class="w"> </span>profraw_list.txt
+<span class="s2">"</span><span class="nv">$LLVM_PROFDATA</span><span class="s2">"</span><span class="w"> </span>merge<span class="w"> </span>-sparse<span class="w"> </span>-f<span class="w"> </span>profraw_list.txt<span class="w"> </span>-o<span class="w"> </span>libc_single.profdata
+</pre></div>
+</div>
+</section>
+<section id="view-coverage-reports">
+<h3>4. View Coverage Reports<a class="headerlink" href="#view-coverage-reports" title="Link to this heading">¶</a></h3>
+<section id="option-1-summary-table-report">
+<h4>Option 1: Summary Table Report<a class="headerlink" href="#option-1-summary-table-report" title="Link to this heading">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">BIN_DIR</span><span class="o">=</span><span class="s2">"build-cov/libc/test/src/ctype"</span>
+<span class="s2">"</span><span class="nv">$LLVM_COV</span><span class="s2">"</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-instr-profile<span class="o">=</span>libc_single.profdata<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">"</span><span class="nv">$BIN_DIR</span><span class="s2">/libc.test.src.ctype.isalpha_test.__build__"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>libc/src/ctype/isalpha.cpp
+</pre></div>
+</div>
+</section>
+<section id="option-2-line-by-line-truth-table-view">
+<h4>Option 2: Line-by-Line &amp; Truth Table View<a class="headerlink" href="#option-2-line-by-line-truth-table-view" title="Link to this heading">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">BIN_DIR</span><span class="o">=</span><span class="s2">"build-cov-mcdc/libc/test/src/ctype"</span>
+<span class="s2">"</span><span class="nv">$LLVM_COV</span><span class="s2">"</span><span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-instr-profile<span class="o">=</span>libc_single.profdata<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">"</span><span class="nv">$BIN_DIR</span><span class="s2">/libc.test.src.ctype.isalpha_test.__build__"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--show-branches<span class="o">=</span>count<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--show-mcdc<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>libc/src/ctype/isalpha.cpp
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="interpreting-results">
+<h2>Interpreting Results<a class="headerlink" href="#interpreting-results" title="Link to this heading">¶</a></h2>
+<p>For detailed documentation on the LLVM coverage reporting format, refer to the
+<a class="reference external" href="https://clang.llvm.org/docs/SourceBasedCodeCoverage.html#interpreting-reports">official Clang Source-Based Code Coverage documentation</a>.</p>
+<section id="coverage-metrics-overview">
+<h3>Coverage Metrics Overview<a class="headerlink" href="#coverage-metrics-overview" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Line Coverage:</strong> Measures whether each physical line of executable source
+code was reached at least once during testing.</p></li>
+<li><p><strong>Branch Coverage:</strong> Measures whether each conditional branch evaluated to
+both its <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code> paths. For example, if an <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">(x</span> <span class="pre">&gt;</span> <span class="pre">0)</span></code> branch is
+taken 10 times but never skipped, branch coverage is 50% because the <code class="docutils literal notranslate"><span class="pre">False</span></code>
+path was never exercised.</p></li>
+<li><p><strong>MC/DC Coverage:</strong> Evaluates compound boolean expressions (such as
+<code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">(A</span> <span class="pre">&amp;&amp;</span> <span class="pre">B)</span></code> or <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">(A</span> <span class="pre">||</span> <span class="pre">B)</span></code>). It verifies that each individual condition
+was tested as both True and False, and demonstrated that it could
+independently change the overall outcome of the decision.</p></li>
+</ul>
+</section>
+<section id="interpreting-reports">
+<h3>Interpreting Reports<a class="headerlink" href="#interpreting-reports" title="Link to this heading">¶</a></h3>
+<p>The summary table produced by <code class="docutils literal notranslate"><span class="pre">llvm-cov</span> <span class="pre">report</span></code> displays metrics across
+individual source files and overall totals:</p>
+<ul class="simple">
+<li><p><strong>Regions / Missed Regions:</strong> A region is a continuous segment of code (such
+as a function body or basic block). Missed regions indicate code blocks that
+were never executed.</p></li>
+<li><p><strong>Functions / Missed Functions:</strong> The total number of entrypoints or
+subroutines executed vs unexecuted.</p></li>
+<li><p><strong>Lines / Missed Lines:</strong> Physical source lines executed vs unexecuted.</p></li>
+<li><p><strong>Branches / Missed Branches:</strong> The total count of decision directions (both
+True and False) evaluated.</p></li>
+<li><p><strong>MC/DC Conditions / Missed Conditions:</strong> The count of individual boolean
+sub-conditions that demonstrated independent decision control.</p></li>
+</ul>
+</section>
+<section id="interpreting-mc-dc-truth-tables">
+<h3>Interpreting MC/DC Truth Tables<a class="headerlink" href="#interpreting-mc-dc-truth-tables" title="Link to this heading">¶</a></h3>
+<p>When inspecting with <code class="docutils literal notranslate"><span class="pre">--show-mcdc</span></code>, <code class="docutils literal notranslate"><span class="pre">llvm-cov</span></code> displays an MC/DC analysis table
+beneath each compound decision. For instance, consider the following decision:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>   19|  if (c &lt; 0 || c &gt; cpp::numeric_limits&lt;unsigned char&gt;::max())
+  ------------------------------------------------------------------
+  | Conditions: C1 = (c &lt; 0)
+  |             C2 = (c &gt; cpp::numeric_limits&lt;unsigned char&gt;::max())
+  |
+  | Executed Test Vectors:
+  |    C1, C2    Result
+  | 1 { F,  F  = F      }  (tested with c = 'a')
+  | 2 { T,  -  = T      }  (tested with c = -1)
+  |
+  | C1-Pair: covered (1, 2)
+  | C2-Pair: not covered
+  | MC/DC Coverage: 50.00%
+  ------------------------------------------------------------------
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Conditions:</strong> <strong>C1</strong> represents <code class="docutils literal notranslate"><span class="pre">c</span> <span class="pre">&lt;</span> <span class="pre">0</span></code> and <strong>C2</strong> represents
+<code class="docutils literal notranslate"><span class="pre">c</span> <span class="pre">&gt;</span> <span class="pre">cpp::numeric_limits&lt;unsigned</span> <span class="pre">char&gt;::max()</span></code>.</p></li>
+<li><p><strong>Executed Vectors:</strong></p>
+<ul>
+<li><p><strong>Vector 1 (<code class="docutils literal notranslate"><span class="pre">F,</span> <span class="pre">F</span> <span class="pre">=</span> <span class="pre">F</span></code>):</strong> Tested with a valid character (<code class="docutils literal notranslate"><span class="pre">c</span> <span class="pre">=</span> <span class="pre">'a'</span></code>). Both
+C1 and C2 evaluated False, producing an overall False result.</p></li>
+<li><p><strong>Vector 2 (<code class="docutils literal notranslate"><span class="pre">T,</span> <span class="pre">-</span> <span class="pre">=</span> <span class="pre">T</span></code>):</strong> Tested with a negative value (<code class="docutils literal notranslate"><span class="pre">c</span> <span class="pre">=</span> <span class="pre">-1</span></code>). C1
+evaluated True, producing an overall True result. The hyphen (<code class="docutils literal notranslate"><span class="pre">-</span></code>)
+indicates C2 was short-circuited and not evaluated.</p></li>
+</ul>
+</li>
+<li><p><strong>Condition Pairs:</strong></p>
+<ul>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">C1-Pair:</span> <span class="pre">covered</span> <span class="pre">(1,</span> <span class="pre">2)</span></code>:</strong> Comparing Vector 1 and Vector 2 proves that
+changing C1 from False to True directly flipped the result from False to
+True. C1 is fully covered.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">C2-Pair:</span> <span class="pre">not</span> <span class="pre">covered</span></code>:</strong> C2 was never tested in a state where it
+independently turned the result True while C1 was False.</p></li>
+</ul>
+</li>
+<li><p><strong>Reaching 100% Coverage:</strong> Add a test with a value above 255 (<code class="docutils literal notranslate"><span class="pre">c</span> <span class="pre">=</span> <span class="pre">256</span></code>).
+This executes Vector 3 (<code class="docutils literal notranslate"><span class="pre">F,</span> <span class="pre">T</span> <span class="pre">=</span> <span class="pre">T</span></code>), forming the independence pair <code class="docutils literal notranslate"><span class="pre">(1,</span> <span class="pre">3)</span></code>
+for C2 and reaching 100% MC/DC coverage.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../porting.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Bringup on a New OS or Architecture</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="modular_format.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Modular format strings</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2011-2026, LLVM Project
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Code Coverage</a><ul>
+<li><a class="reference internal" href="#continuous-profiling-architecture">Continuous Profiling Architecture</a><ul>
+<li><a class="reference internal" href="#compiler-counter-relocation">Compiler Counter Relocation</a></li>
+<li><a class="reference internal" href="#runtime-memory-mapping">Runtime Memory Mapping</a></li>
+<li><a class="reference internal" href="#kernel-page-cache-synchronization">Kernel Page-Cache Synchronization</a></li>
+<li><a class="reference internal" href="#build-system-integration">Build System Integration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#running-code-coverage-locally">Running Code Coverage Locally</a><ul>
+<li><a class="reference internal" href="#prerequisites-toolchain-setup">Prerequisites &amp; Toolchain Setup</a><ul>
+<li><a class="reference internal" href="#toolchain-discovery">Toolchain Discovery</a></li>
+<li><a class="reference internal" href="#building-clang-24-with-profiling-support">Building Clang 24 with Profiling Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cleaning-profile-counters">Cleaning Profile Counters</a></li>
+<li><a class="reference internal" href="#standard-statement-branch-coverage">Standard Statement &amp; Branch Coverage</a><ul>
+<li><a class="reference internal" href="#clean-prior-profile-artifacts">1. Clean Prior Profile Artifacts</a></li>
+<li><a class="reference internal" href="#configure-full-build-coverage-with-clang-24">2. Configure Full-Build Coverage with Clang 24</a></li>
+<li><a class="reference internal" href="#export-environment-variables">3. Export Environment Variables</a></li>
+<li><a class="reference internal" href="#build-and-execute-hermetic-tests">4. Build and Execute Hermetic Tests</a></li>
+<li><a class="reference internal" href="#merge-profile-counters">5. Merge Profile Counters</a></li>
+<li><a class="reference internal" href="#generate-coverage-reports">6. Generate Coverage Reports</a><ul>
+<li><a class="reference internal" href="#option-1-terminal-summary-report">Option 1: Terminal Summary Report</a></li>
+<li><a class="reference internal" href="#option-2-interactive-html-dashboard">Option 2: Interactive HTML Dashboard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#modified-condition-decision-coverage-mc-dc">Modified Condition / Decision Coverage (MC/DC)</a><ul>
+<li><a class="reference internal" href="#id2">1. Clean Prior Profile Artifacts</a></li>
+<li><a class="reference internal" href="#configure-full-build-coverage-with-mc-dc-using-clang-24">2. Configure Full-Build Coverage with MC/DC using Clang 24</a></li>
+<li><a class="reference internal" href="#id3">3. Export Environment Variables</a></li>
+<li><a class="reference internal" href="#id4">4. Build and Execute Hermetic Tests</a></li>
+<li><a class="reference internal" href="#id5">5. Merge Profile Counters</a></li>
+<li><a class="reference internal" href="#generate-mc-dc-coverage-reports">6. Generate MC/DC Coverage Reports</a><ul>
+<li><a class="reference internal" href="#id6">Option 1: Terminal Summary Report</a></li>
+<li><a class="reference internal" href="#id7">Option 2: Interactive HTML Dashboard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#running-coverage-for-a-single-test">Running Coverage for a Single Test</a><ul>
+<li><a class="reference internal" href="#id8">1. Clean Prior Profile Artifacts</a></li>
+<li><a class="reference internal" href="#build-and-execute-the-targeted-test">2. Build and Execute the Targeted Test</a></li>
+<li><a class="reference internal" href="#merge-the-profile">3. Merge the Profile</a></li>
+<li><a class="reference internal" href="#view-coverage-reports">4. View Coverage Reports</a><ul>
+<li><a class="reference internal" href="#option-1-summary-table-report">Option 1: Summary Table Report</a></li>
+<li><a class="reference internal" href="#option-2-line-by-line-truth-table-view">Option 2: Line-by-Line &amp; Truth Table View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#interpreting-results">Interpreting Results</a><ul>
+<li><a class="reference internal" href="#coverage-metrics-overview">Coverage Metrics Overview</a></li>
+<li><a class="reference internal" href="#interpreting-reports">Interpreting Reports</a></li>
+<li><a class="reference internal" href="#interpreting-mc-dc-truth-tables">Interpreting MC/DC Truth Tables</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=ccd1e645"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/llvm-sphinx/copybutton.js"></script>
+    </body>
+</html>

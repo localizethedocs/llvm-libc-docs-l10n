@@ -1,0 +1,917 @@
+<!doctype html>
+<html class="no-js" lang="en-US" data-content_root="../">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="LLVM-libc Source Tree Layout" href="source_tree_layout.html"><link rel="prev" title="Building the Documentation" href="building_docs.html">
+        <link rel="canonical" href="https://projects.localizethedocs.org/llvm-libc-docs-l10n/dev/code_style.html">
+
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+        <title>The libc code style - The LLVM C Library</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=69ba022a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/llvm-sphinx/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f0f0f0;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style>
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+</head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">The LLVM C Library</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <span class="sidebar-brand-text">The LLVM C Library</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Using LLVM-libc</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_concepts.html">Build Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overlay_mode.html">Overlay Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../full_host_build.html">Full Host Build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../full_cross_build.html">Full Cross Build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configure.html">Configure Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hand_in_hand.html">Hand-in-Hand</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Platforms</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../gpu/index.html">libc for GPUs</a><input aria-label="Toggle navigation of libc for GPUs" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gpu/building.html">Building libs for GPUs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gpu/using.html">Using libc for GPUs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gpu/support.html">Supported Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gpu/rpc.html">Remote Procedure Calls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gpu/testing.html">Testing the GPU C library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gpu/motivation.html">Motivation and Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../uefi/index.html">libc for UEFI</a><input aria-label="Toggle navigation of libc for UEFI" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../uefi/building.html">Building libc for UEFI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uefi/using.html">Using libc for UEFI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uefi/support.html">Supported Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uefi/testing.html">Testing the UEFI C library</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Implementation Status</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../headers/index.html">Implementation Status</a><input aria-label="Toggle navigation of Implementation Status" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../headers/aio.html">aio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/arpa/inet.html">arpa/inet.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/assert.html">assert.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/byteswap.html">byteswap.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/complex.html">complex.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/cpio.html">cpio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/ctype.html">ctype.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/dirent.html">dirent.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/dlfcn.html">dlfcn.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/endian.html">endian.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/errno.html">errno.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/fcntl.html">fcntl.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/fenv.html">fenv.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/float.html">float.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/glob.html">glob.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/inttypes.html">inttypes.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/libgen.html">libgen.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/locale.html">locale.h</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../headers/math/index.html">math.h</a><input aria-label="Toggle navigation of math.h" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../headers/math/log.html">Log/Log10/Log2 Algorithm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/net/if.html">net/if.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/netinet/in.html">netinet/in.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/netinet/tcp.html">netinet/tcp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/nl_types.html">nl_types.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/poll.html">poll.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/pwd.html">pwd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sched.html">sched.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/search.html">search.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/setjmp.html">setjmp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/signal.html">signal.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/spawn.html">spawn.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdbit.html">stdbit.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdfix.html">stdfix.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdio.html">stdio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdlib.html">stdlib.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/string.html">string.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/strings.html">strings.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/ipc.html">sys/ipc.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/mman.html">sys/mman.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/msg.html">sys/msg.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/resource.html">sys/resource.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/select.html">sys/select.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/sem.html">sys/sem.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/socket.html">sys/socket.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/stat.html">sys/stat.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/statvfs.html">sys/statvfs.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/time.html">sys/time.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/uio.html">sys/uio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/utsname.html">sys/utsname.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/wait.html">sys/wait.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/syslog.html">syslog.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/termios.html">termios.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/threads.html">threads.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/time.html">time.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/uchar.html">uchar.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/unistd.html">unistd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/wchar.html">wchar.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/wctype.html">wctype.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/pthread.html">pthread.h</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../arch_support.html">Architecture Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platform_support.html">Platform Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compiler_support.html">Compiler Support</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing to the libc Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_and_test.html">Building and Testing the libc</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Developer Guides</a><input aria-label="Toggle navigation of Developer Guides" checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="building_docs.html">Building the Documentation</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">The libc code style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_tree_layout.html">LLVM-libc Source Tree Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="entrypoints.html">Entrypoints in LLVM libc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="implementing_a_function.html">Implementing a New Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_options.html">Adding new libc configure options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="date_and_time.html">Date and Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fuzzing.html">Fuzzing for LLVM-libc functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fuzzing.html#types-of-fuzz-tests">Types of fuzz tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="header_generation.html">Generating Public and Internal headers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="implementation_standard.html">Convention for implementing entrypoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="undefined_behavior.html">Defining Undefined Behavior</a></li>
+<li class="toctree-l2"><a class="reference internal" href="printf_behavior.html">Printf Behavior Under All Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="builtin_compatibility.html">GCC Compatibility of Builtins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syscall_wrapper_refactor.html">Syscall Wrapper Refactoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modular_format.html">Modular format strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_coverage.html">Code Coverage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../porting.html">Bringup on a New OS or Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Maintainers.html">LLVM-libc Maintainers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Maintainers.html#inactive-maintainers">Inactive Maintainers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../talks.html">Talks</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc">Source Code</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/llvm/llvm-project/labels/libc">Bug Reports</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discourse.llvm.org/c/runtimes/libc">Discourse</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discord.gg/xS7Z362">Join the Discord</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discord.com/channels/636084430946959380/636732994891284500">Discord Channel</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://lab.llvm.org/buildbot/#/builders?tags=libc">Buildbot</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="https://github.com/llvm/llvm-project/blob/main/libc/docs/dev/code_style.md?plain=true" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div><div class="edit-this-page">
+  <a class="muted-link" href="https://github.com/llvm/llvm-project/edit/main/libc/docs/dev/code_style.md" rel="edit" title="Edit this page">
+    <svg><use href="#svg-pencil"></use></svg>
+    <span class="visually-hidden">Edit this page</span>
+  </a>
+</div><div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="the-libc-code-style">
+<span id="code-style"></span><h1>The libc code style<a class="headerlink" href="#the-libc-code-style" title="Link to this heading">¶</a></h1>
+<section id="naming-style">
+<h2>Naming style<a class="headerlink" href="#naming-style" title="Link to this heading">¶</a></h2>
+<p>For the large part, the libc project follows the general <a class="reference external" href="https://llvm.org/docs/CodingStandards.html">coding standards of
+the LLVM project</a>. The libc
+project differs from that standard with respect to the naming style. The
+differences are as follows:</p>
+<ol class="arabic simple">
+<li><p><strong>Non-const variables</strong> - This includes function arguments, struct and
+class data members, non-const globals and local variables. They all use the
+<code class="docutils literal notranslate"><span class="pre">snake_case</span></code> style.</p></li>
+<li><p><strong>const and constexpr variables</strong> - They use the capitalized
+<code class="docutils literal notranslate"><span class="pre">SNAKE_CASE</span></code> irrespective of whether they are local or global.</p></li>
+<li><p><strong>Function and methods</strong> - They use the <code class="docutils literal notranslate"><span class="pre">snake_case</span></code> style like the
+non-const variables.</p></li>
+<li><p><strong>Internal type names</strong> - These are types which are internal to the libc
+implementation. They use the <code class="docutils literal notranslate"><span class="pre">CaptilizedCamelCase</span></code> style.</p></li>
+<li><p><strong>Public names</strong> - These are the names as prescribed by the standards and
+will follow the style as prescribed by the standards.</p></li>
+</ol>
+</section>
+<section id="macro-style">
+<h2>Macro style<a class="headerlink" href="#macro-style" title="Link to this heading">¶</a></h2>
+<p>We define two kinds of macros:</p>
+<ol class="arabic simple">
+<li><p><strong>Build defined</strong> macros are generated by <code class="docutils literal notranslate"><span class="pre">CMake</span></code> or <code class="docutils literal notranslate"><span class="pre">Bazel</span></code> and are passed
+down to the compiler with the <code class="docutils literal notranslate"><span class="pre">-D</span></code> command line flag. They start with the
+<code class="docutils literal notranslate"><span class="pre">LIBC_COPT_</span></code> prefix. They are used to tune the behavior of the libc.
+They either denote an action or define a constant.</p></li>
+<li><p><strong>Code defined</strong> macros are defined within the <code class="docutils literal notranslate"><span class="pre">src/__support/macros</span></code>
+folder. They all start with the <code class="docutils literal notranslate"><span class="pre">LIBC_</span></code> prefix.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">src/__support/macros/properties/</span></code> - Build related properties like
+target architecture or enabled CPU features defined by introspecting
+compiler defined preprocessor definitions.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">architectures.h</span></code> - Target architecture properties.
+e.g., <code class="docutils literal notranslate"><span class="pre">LIBC_TARGET_ARCH_IS_ARM</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">compiler.h</span></code> - Host compiler properties.
+e.g., <code class="docutils literal notranslate"><span class="pre">LIBC_COMPILER_IS_CLANG</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cpu_features.h</span></code> - Target cpu feature availability.
+e.g., <code class="docutils literal notranslate"><span class="pre">LIBC_TARGET_CPU_HAS_AVX2</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">types.h</span></code> - Type properties and availability.
+e.g., <code class="docutils literal notranslate"><span class="pre">LIBC_TYPES_HAS_NATIVE_FLOAT128</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">os.h</span></code> - Target os properties.
+e.g., <code class="docutils literal notranslate"><span class="pre">LIBC_TARGET_OS_IS_LINUX</span></code>.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/__support/macros/config.h</span></code> - Important compiler and platform
+features. Such macros can be used to produce portable code by
+parameterizing compilation based on the presence or lack of a given
+feature. e.g., <code class="docutils literal notranslate"><span class="pre">LIBC_HAS_FEATURE</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/__support/macros/attributes.h</span></code> - Attributes for functions, types,
+and variables. e.g., <code class="docutils literal notranslate"><span class="pre">LIBC_UNUSED</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/__support/macros/optimization.h</span></code> - Portable macros for performance
+optimization. e.g., <code class="docutils literal notranslate"><span class="pre">LIBC_LIKELY</span></code>, <code class="docutils literal notranslate"><span class="pre">LIBC_LOOP_NOUNROLL</span></code></p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="inline-functions-and-variables-defined-in-header-files">
+<h2>Inline functions and variables defined in header files<a class="headerlink" href="#inline-functions-and-variables-defined-in-header-files" title="Link to this heading">¶</a></h2>
+<p>When defining functions and variables inline in header files, we follow certain
+rules:</p>
+<ol class="arabic">
+<li><p>The functions should not be given file-static linkage. There can be class
+static methods defined inline however.</p></li>
+<li><p>Instead of using the <code class="docutils literal notranslate"><span class="pre">inline</span></code> keyword, functions should be tagged with the
+<code class="docutils literal notranslate"><span class="pre">LIBC_INLINE</span></code> macro and variables should be tagged with the
+<code class="docutils literal notranslate"><span class="pre">LIBC_INLINE_VAR</span></code> macro defined in <code class="docutils literal notranslate"><span class="pre">src/__support/macros/attributes.h</span></code>.
+For example:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">LIBC_INLINE_VAR</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+
+<span class="n">LIBC_INLINE</span><span class="w"> </span><span class="n">ReturnType</span><span class="w"> </span><span class="n">function_defined_inline</span><span class="p">(</span><span class="n">ArgType</span><span class="w"> </span><span class="n">arg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">LIBC_INLINE</span></code> tag should also be added to functions which have
+definitions that are implicitly inline. Examples of such functions are
+class methods (static and non-static) defined inline and <code class="docutils literal notranslate"><span class="pre">constexpr</span></code>
+functions.</p></li>
+</ol>
+</section>
+<section id="setting-errno-from-runtime-code">
+<span id="setting-errno"></span><h2>Setting <code class="docutils literal notranslate"><span class="pre">errno</span></code> from runtime code<a class="headerlink" href="#setting-errno-from-runtime-code" title="Link to this heading">¶</a></h2>
+<p>Many libc functions set <code class="docutils literal notranslate"><span class="pre">errno</span></code> to indicate an error condition. If LLVM’s libc
+is being used as the only libc, then the <code class="docutils literal notranslate"><span class="pre">errno</span></code> from LLVM’s libc is affected.
+If LLVM’s libc is being used in <a class="reference internal" href="../overlay_mode.html#overlay-mode"><span class="std std-ref">Overlay Mode</span></a>, then the <code class="docutils literal notranslate"><span class="pre">errno</span></code> from
+the system libc is affected. When a libc function that can potentially affect
+<code class="docutils literal notranslate"><span class="pre">errno</span></code> is called from a unit test, we do not want the global <code class="docutils literal notranslate"><span class="pre">errno</span></code>
+(as in, the <code class="docutils literal notranslate"><span class="pre">errno</span></code> of the process thread running the unit test) to be
+affected. If the global <code class="docutils literal notranslate"><span class="pre">errno</span></code> is affected, then the operation of the unit
+test infrastructure itself can be affected.</p>
+<p>To handle <code class="docutils literal notranslate"><span class="pre">errno</span></code> correctly across all build modes and avoid silent thread-local
+storage mismatches, the following rules must be followed:</p>
+<ol class="arabic">
+<li><p><strong>Header Inclusion:</strong>
+Runtime code and unit tests must <strong>ONLY</strong> <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&quot;src/__support/libc_errno.h&quot;</span></code>
+and refer to <code class="docutils literal notranslate"><span class="pre">libc_errno</span></code>.</p>
+<ul class="simple">
+<li><p>Never <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;errno.h&gt;</span></code>.</p></li>
+<li><p>Never <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&quot;src/errno/libc_errno.h&quot;</span></code> (this is a legacy path; the header
+lives in <code class="docutils literal notranslate"><span class="pre">src/__support/</span></code>).</p></li>
+<li><p>For standard error constants (such as <code class="docutils literal notranslate"><span class="pre">EINVAL</span></code>, <code class="docutils literal notranslate"><span class="pre">ENOMEM</span></code>), include
+<code class="docutils literal notranslate"><span class="pre">&quot;hdr/errno_macros.h&quot;</span></code>.</p></li>
+</ul>
+<p>Setting <code class="docutils literal notranslate"><span class="pre">errno</span></code> should be done directly via <code class="docutils literal notranslate"><span class="pre">libc_errno</span></code>:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">libc_errno</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EINVAL</span><span class="p">;</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Where to set <code class="docutils literal notranslate"><span class="pre">errno</span></code>:</strong>
+<code class="docutils literal notranslate"><span class="pre">errno</span></code> should only be set just before returning from the implementation of
+the public function. It should not be set from within helper functions. Helper
+functions should use idiomatic C++ constructs like
+<a class="reference external" href="https://github.com/llvm/llvm-project/blob/main/libc/src/__support/CPP/optional.h">cpp::optional</a>
+and
+<a class="reference external" href="https://github.com/llvm/llvm-project/blob/main/libc/src/__support/error_or.h">ErrorOr</a>
+to return error values.</p></li>
+<li><p><strong>CMake Dependencies for Public Entrypoints:</strong>
+Any entrypoint that reads or sets <code class="docutils literal notranslate"><span class="pre">errno</span></code> should ideally declare <strong>BOTH</strong> of the
+following in the <code class="docutils literal notranslate"><span class="pre">DEPENDS</span></code> list of its <code class="docutils literal notranslate"><span class="pre">add_entrypoint_object</span></code>:</p>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">libc.src.__support.libc_errno</span></code></strong>: Satisfies the header dependency for
+<code class="docutils literal notranslate"><span class="pre">src/__support/libc_errno.h</span></code>.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">libc.src.errno.errno</span></code></strong>: Satisfies the link-time requirement for the compiled
+runtime storage (<code class="docutils literal notranslate"><span class="pre">libc_errno.cpp</span></code>) defining <code class="docutils literal notranslate"><span class="pre">thread_errno</span></code>, <code class="docutils literal notranslate"><span class="pre">__llvm_libc_errno()</span></code>,
+and the C++ <code class="docutils literal notranslate"><span class="pre">Errno</span></code> class.</p></li>
+</ul>
+<p>While LLVM-libc generally disallows dependencies between public entrypoints,
+<code class="docutils literal notranslate"><span class="pre">libc.src.errno.errno</span></code> is an <strong>explicitly allowed exception</strong> in the build system
+(see <code class="docutils literal notranslate"><span class="pre">ALLOWED_DEPS</span></code> in <code class="docutils literal notranslate"><span class="pre">libc/cmake/modules/LLVMLibCObjectRules.cmake</span></code>). Downstream
+consumers and test suites that link the entrypoint require this dependency so that
+the storage for <code class="docutils literal notranslate"><span class="pre">libc_errno</span></code> is linked.</p>
+</li>
+<li><p><strong>CMake Dependencies for Internal Support Libraries:</strong>
+Header-only utility libraries under <code class="docutils literal notranslate"><span class="pre">libc/src/__support/</span></code> (such as <code class="docutils literal notranslate"><span class="pre">OSUtil</span></code> syscall
+wrappers or <code class="docutils literal notranslate"><span class="pre">FPUtil</span></code>) that reference <code class="docutils literal notranslate"><span class="pre">libc_errno.h</span></code> should depend on
+<strong><code class="docutils literal notranslate"><span class="pre">libc.src.__support.libc_errno</span></code></strong> so they remain pure header libraries without
+introducing compiled entrypoint object dependencies.</p></li>
+<li><p><strong>Unit and Hermetic Testing:</strong>
+Unit tests verifying functions that set <code class="docutils literal notranslate"><span class="pre">errno</span></code> must use the <code class="docutils literal notranslate"><span class="pre">ErrnoCheckingTest</span></code>
+fixture (<code class="docutils literal notranslate"><span class="pre">test/UnitTest/ErrnoCheckingTest.h</span></code>) and <code class="docutils literal notranslate"><span class="pre">ErrnoSetterMatcher</span></code>
+(<code class="docutils literal notranslate"><span class="pre">test/UnitTest/ErrnoSetterMatcher.h</span></code>).</p>
+<ul class="simple">
+<li><p>Both <code class="docutils literal notranslate"><span class="pre">ErrnoCheckingTest</span></code> and <code class="docutils literal notranslate"><span class="pre">ErrnoSetterMatcher</span></code> already declare <code class="docutils literal notranslate"><span class="pre">DEPENDS</span> <span class="pre">libc.src.errno.errno</span></code>,
+so tests using them inherit the compiled <code class="docutils literal notranslate"><span class="pre">errno</span></code> object transitively.</p></li>
+<li><p>Tests that check <code class="docutils literal notranslate"><span class="pre">libc_errno</span></code> directly without those matchers must declare
+<code class="docutils literal notranslate"><span class="pre">libc.src.errno.errno</span></code> in their test <code class="docutils literal notranslate"><span class="pre">DEPENDS</span></code>.</p></li>
+<li><p>Tests must never <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;errno.h&gt;</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>The “Dual-TLS” Pitfall in Overlay Mode:</strong>
+Why is strictly adhering to <code class="docutils literal notranslate"><span class="pre">libc_errno</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;src/__support/libc_errno.h&quot;</span></code> critical?
+In overlay mode, the host system libc (e.g., glibc) maintains its own thread-local
+<code class="docutils literal notranslate"><span class="pre">errno</span></code> location (accessed via <code class="docutils literal notranslate"><span class="pre">*__errno_location()</span></code>). In unit tests, LLVM-libc
+runs in internal thread-local mode (<code class="docutils literal notranslate"><span class="pre">LIBC_ERRNO_MODE_THREAD_LOCAL</span></code>), writing to
+LLVM-libc’s own <code class="docutils literal notranslate"><span class="pre">thread_errno</span></code>.
+If implementation code or tests mistakenly <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&lt;errno.h&gt;</span></code> and use raw <code class="docutils literal notranslate"><span class="pre">errno</span></code>,
+the code will compile cleanly without warnings, but reads and writes will target
+different thread-local storage locations in the same thread. This results in silent
+test failures or error values that appear to vanish or go to the wrong thread.</p></li>
+</ol>
+</section>
+<section id="assertions-in-libc-runtime-code">
+<h2>Assertions in libc runtime code<a class="headerlink" href="#assertions-in-libc-runtime-code" title="Link to this heading">¶</a></h2>
+<p>The libc developers should, and are encouraged to, use assertions freely in
+the libc runtime code. However, the assertion should be listed via the macro
+<code class="docutils literal notranslate"><span class="pre">LIBC_ASSERT</span></code> defined in <code class="docutils literal notranslate"><span class="pre">src/__support/libc_assert.h</span></code>. This macro can be
+used from anywhere in the libc runtime code. Internally, all it does is to
+print the assertion expression and exit. It does not implement the semantics
+of the standard <code class="docutils literal notranslate"><span class="pre">assert</span></code> macro. Hence, it can be used from any where in the
+libc runtime code without causing any recursive calls or chicken-and-egg
+situations.</p>
+</section>
+<section id="allocations-in-the-libc-runtime-code">
+<h2>Allocations in the libc runtime code<a class="headerlink" href="#allocations-in-the-libc-runtime-code" title="Link to this heading">¶</a></h2>
+<p>Some libc functions allocate memory. For example, the <code class="docutils literal notranslate"><span class="pre">strdup</span></code> function
+allocates new memory into which the input string is duplicated. Allocations
+are typically done by calling a function from the <code class="docutils literal notranslate"><span class="pre">malloc</span></code> family of
+functions. Such functions can fail and return an error value to indicate
+allocation failure. To conform to standards, the libc should handle
+allocation failures gracefully and surface the error conditions to the user
+code as appropriate. Since LLVM’s libc is implemented in C++, we want
+allocations and deallocations to employ C++ operators <code class="docutils literal notranslate"><span class="pre">new</span></code> and <code class="docutils literal notranslate"><span class="pre">delete</span></code>
+as they implicitly invoke constructors and destructors respectively. However,
+if we use the default <code class="docutils literal notranslate"><span class="pre">new</span></code> and <code class="docutils literal notranslate"><span class="pre">delete</span></code> operators, the libc will end up
+depending on the C++ runtime. To avoid such a dependence, and to handle
+allocation failures gracefully, we use special <code class="docutils literal notranslate"><span class="pre">new</span></code> and <code class="docutils literal notranslate"><span class="pre">delete</span></code> operators
+defined in
+<a class="reference external" href="https://github.com/llvm/llvm-project/blob/main/libc/src/__support/CPP/new.h"><code class="docutils literal notranslate"><span class="pre">src/__support/CPP/new.h</span></code></a>.
+Allocations and deallocations using these operators employ a pattern like
+this:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">"src/__support/CPP/new.h"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"src/__support/alloc-checker.h"</span>
+
+<span class="p">...</span>
+
+<span class="w">  </span><span class="n">LIBC_NAMESPACE</span><span class="o">::</span><span class="n">AllocChecker</span><span class="w"> </span><span class="n">ac</span><span class="p">;</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="o">*</span><span class="n">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="p">(</span><span class="n">ac</span><span class="p">)</span><span class="w"> </span><span class="n">Type</span><span class="p">(...);</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">ac</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// handle allocator failure.</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="w">  </span><span class="k">delete</span><span class="w"> </span><span class="n">obj</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>The only exception to using the above pattern is if allocating using the
+<code class="docutils literal notranslate"><span class="pre">realloc</span></code> function is of value. In such cases, prefer to use only the
+<code class="docutils literal notranslate"><span class="pre">malloc</span></code> family of functions for allocations and deallocations. Allocation
+failures will still need to be handled gracefully. Further, keep in mind that
+these functions do not call the constructors and destructors of the
+allocated/deallocated objects. So, use these functions carefully and only
+when it is absolutely clear that constructor and destructor invocation is
+not required.</p>
+</section>
+<section id="warnings-in-sources">
+<h2>Warnings in sources<a class="headerlink" href="#warnings-in-sources" title="Link to this heading">¶</a></h2>
+<p>We expect contributions to be free of warnings from the <a class="reference internal" href="../compiler_support.html#minimum-supported-versions"><span class="std std-ref">minimum supported
+compiler versions</span></a> (and newer).</p>
+</section>
+<section id="header-inclusion-policy">
+<h2>Header Inclusion Policy<a class="headerlink" href="#header-inclusion-policy" title="Link to this heading">¶</a></h2>
+<p>Because llvm-libc supports
+<a class="reference internal" href="../overlay_mode.html"><span class="std std-doc">Overlay Mode</span></a>,
+<a class="reference internal" href="../full_host_build.html"><span class="std std-doc">Full Host Build Mode</span></a> and
+<a class="reference internal" href="../full_cross_build.html"><span class="std std-doc">Full Cross Build Mode</span></a> care
+must be taken when <code class="docutils literal notranslate"><span class="pre">#include</span></code>’ing certain headers.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">include/</span></code> directory contains public facing headers that users must
+consume for fullbuild mode. As such, types defined here will have ABI
+implications as these definitions may differ from the underlying system for
+overlay mode and are NEVER appropriate to include in <code class="docutils literal notranslate"><span class="pre">libc/src/</span></code> without
+preprocessor guards for <code class="docutils literal notranslate"><span class="pre">LLVM_LIBC_FULL_BUILD</span></code>.</p>
+<p>Consider the case where an implementation in <code class="docutils literal notranslate"><span class="pre">libc/src/</span></code> may wish to refer to
+a <code class="docutils literal notranslate"><span class="pre">sigset_t</span></code>, what header should be included? <code class="docutils literal notranslate"><span class="pre">&lt;signal.h&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;spawn.h&gt;</span></code>,
+<code class="docutils literal notranslate"><span class="pre">&lt;sys/select.h&gt;</span></code>?</p>
+<p>None of the above. Instead, code under <code class="docutils literal notranslate"><span class="pre">src/</span></code> should <code class="docutils literal notranslate"><span class="pre">#include</span> <span class="pre">&quot;hdr/types/sigset_t.h&quot;</span></code> which contains preprocessor guards on
+<code class="docutils literal notranslate"><span class="pre">LLVM_LIBC_FULL_BUILD</span></code> to either include the public type (fullbuild mode) or
+the underlying system header (overlay mode).</p>
+<p>Implementations in <code class="docutils literal notranslate"><span class="pre">libc/src/</span></code> should NOT be <code class="docutils literal notranslate"><span class="pre">#include</span></code>’ing using <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> or
+<code class="docutils literal notranslate"><span class="pre">&quot;include/*</span></code>, except for these “proxy” headers that first check for
+<code class="docutils literal notranslate"><span class="pre">LLVM_LIBC_FULL_BUILD</span></code>.</p>
+<p>These “proxy” headers are similarly used when referring to preprocessor
+defines. Code under <code class="docutils literal notranslate"><span class="pre">libc/src/</span></code> should <code class="docutils literal notranslate"><span class="pre">#include</span></code> a proxy header from
+<code class="docutils literal notranslate"><span class="pre">hdr/</span></code>, which contains a guard on <code class="docutils literal notranslate"><span class="pre">LLVM_LIBC_FULL_BUILD</span></code> to either include
+our header from <code class="docutils literal notranslate"><span class="pre">libc/include/</span></code> (fullbuild) or the corresponding underlying
+system header (overlay).</p>
+</section>
+<section id="policy-on-assembly-sources">
+<h2>Policy on Assembly sources<a class="headerlink" href="#policy-on-assembly-sources" title="Link to this heading">¶</a></h2>
+<p>Coding in high level languages such as C++ provides benefits relative to low
+level languages like Assembly, such as:</p>
+<ul class="simple">
+<li><p>Improved safety</p></li>
+<li><p>Compile time diagnostics</p></li>
+<li><p>Instrumentation</p>
+<ul>
+<li><p>Code coverage</p></li>
+<li><p>Profile collection</p></li>
+</ul>
+</li>
+<li><p>Sanitization</p></li>
+<li><p>Automatic generation of debug info</p></li>
+</ul>
+<p>While it’s not impossible to have Assembly code that correctly provides all of
+the above, we do not wish to maintain such Assembly sources in llvm-libc.</p>
+<p>That said, there are a few functions provided by llvm-libc that are impossible
+to reliably implement in C++ for all compilers supported for building
+llvm-libc.</p>
+<p>We do use inline or out-of-line Assembly in an intentionally minimal set of
+places; typically places where the stack or individual register state must be
+manipulated very carefully for correctness, or instances where a specific
+instruction sequence does not have a corresponding compiler builtin function
+today.</p>
+<p>Contributions adding functions implemented purely in Assembly for performance
+are not welcome.</p>
+<p>Contributors should strive to stick with C++ for as long as it remains
+reasonable to do so. Ideally, bugs should be filed against compiler vendors,
+and links to those bug reports should appear in commit messages or comments
+that seek to add Assembly to llvm-libc.</p>
+<p>Patches containing any amount of Assembly ideally should be approved by 2
+maintainers. llvm-libc maintainers reserve the right to reject Assembly
+contributions that they feel could be better maintained if rewritten in C++,
+and to revisit this policy in the future.</p>
+</section>
+<section id="libc-namespace-decl">
+<h2>LIBC_NAMESPACE_DECL<a class="headerlink" href="#libc-namespace-decl" title="Link to this heading">¶</a></h2>
+<p>llvm-libc provides a macro <code class="docutils literal notranslate"><span class="pre">LIBC_NAMESPACE</span></code> which contains internal implementations of
+libc functions and globals. This macro should only be used as an
+identifier for accessing such symbols within the namespace (like <code class="docutils literal notranslate"><span class="pre">LIBC_NAMESPACE::cpp::max</span></code>).
+Any usage of this namespace for declaring or defining internal symbols should
+instead use <code class="docutils literal notranslate"><span class="pre">LIBC_NAMESPACE_DECL</span></code> which declares <code class="docutils literal notranslate"><span class="pre">LIBC_NAMESPACE</span></code> with hidden visibility.</p>
+<p>Example usage:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">"src/__support/macros/config.h"</span><span class="w">  </span><span class="c1">// The macro is defined here.</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">LIBC_NAMESPACE_DECL</span><span class="w"> </span><span class="p">{</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">new_function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="p">}</span>
+
+<span class="p">}</span><span class="w">  </span><span class="c1">// LIBC_NAMESPACE_DECL</span>
+</pre></div>
+</div>
+<p>Having hidden visibility on the namespace ensures extern declarations in a given TU
+have known visibility and never generate GOT indirections. The attribute guarantees
+this independently of global compile options and build systems.</p>
+</section>
+<section id="static-analysis-clang-tidy">
+<span id="clang-tidy-checks"></span><h2>Static Analysis &amp; Clang-Tidy<a class="headerlink" href="#static-analysis-clang-tidy" title="Link to this heading">¶</a></h2>
+<section id="configuration">
+<h3>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">¶</a></h3>
+<p>LLVM libc uses layered <code class="docutils literal notranslate"><span class="pre">.clang-tidy</span></code> configuration files:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">libc/.clang-tidy</span></code>: baseline checks for the <code class="docutils literal notranslate"><span class="pre">libc</span></code> subtree (currently
+focuses on identifier naming conventions).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">libc/src/.clang-tidy</span></code>: adds LLVM-libc-specific checks (<code class="docutils literal notranslate"><span class="pre">llvmlibc-*</span></code>) for
+implementation code under <code class="docutils literal notranslate"><span class="pre">libc/src</span></code> and also enables
+<code class="docutils literal notranslate"><span class="pre">readability-identifier-naming</span></code> and <code class="docutils literal notranslate"><span class="pre">llvm-header-guard</span></code>. Diagnostics from
+<code class="docutils literal notranslate"><span class="pre">llvmlibc-*</span></code> checks are treated as errors.</p></li>
+</ul>
+</section>
+<section id="running-the-checks">
+<h3>Running the checks<a class="headerlink" href="#running-the-checks" title="Link to this heading">¶</a></h3>
+<p>Configure with <code class="docutils literal notranslate"><span class="pre">-DLLVM_LIBC_ENABLE_LINTING=ON</span></code> and build the <code class="docutils literal notranslate"><span class="pre">libc-lint</span></code>
+target. CMake looks for <code class="docutils literal notranslate"><span class="pre">clang-tidy</span></code> in the LLVM tools directory first (the
+build tree in a bootstrapping build, so the freshly built <code class="docutils literal notranslate"><span class="pre">clang-tidy</span></code> wins)
+and then on <code class="docutils literal notranslate"><span class="pre">PATH</span></code>. The <code class="docutils literal notranslate"><span class="pre">clang-tidy</span></code> it finds must have the same major
+version as the compiler, because <code class="docutils literal notranslate"><span class="pre">clang-tidy</span></code> carries its own clang front end
+and a mismatch shows up as spurious diagnostics. To use a specific binary,
+pass <code class="docutils literal notranslate"><span class="pre">-DLLVM_LIBC_CLANG_TIDY=&lt;path&gt;</span></code>; this also turns linting on, and a
+version mismatch is then reported as a warning rather than an error.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">.clang-tidy</span></code> files and the <code class="docutils literal notranslate"><span class="pre">llvmlibc-*</span></code> checks live in the same
+repository and change together, so the configuration is written for the
+<code class="docutils literal notranslate"><span class="pre">clang-tidy</span></code> built from the same revision as the libc sources, not for the
+latest release. An older <code class="docutils literal notranslate"><span class="pre">clang-tidy</span></code> does not fail loudly on a newer
+configuration: it ignores checks and check options it does not know, and
+releases up to at least 21 react to an unknown top-level key by discarding
+the file and running their default checks, exiting 0 either way. Results
+from an older <code class="docutils literal notranslate"><span class="pre">clang-tidy</span></code> are therefore not comparable with a build at the
+same revision. To match, add <code class="docutils literal notranslate"><span class="pre">clang-tools-extra</span></code> to a bootstrapping build
+and point <code class="docutils literal notranslate"><span class="pre">LLVM_LIBC_CLANG_TIDY</span></code> at the <code class="docutils literal notranslate"><span class="pre">clang-tidy</span></code> it produces;
+<code class="docutils literal notranslate"><span class="pre">clang-tidy</span> <span class="pre">--verify-config</span> <span class="pre">--config-file=libc/src/.clang-tidy</span></code> reports
+anything your <code class="docutils literal notranslate"><span class="pre">clang-tidy</span></code> would silently skip.</p>
+<p>A configuration that asks for linting but cannot run it (no <code class="docutils literal notranslate"><span class="pre">clang-tidy</span></code>, a
+non-clang compiler, or a discovered <code class="docutils literal notranslate"><span class="pre">clang-tidy</span></code> of the wrong major version)
+fails to configure. There is no mode in which <code class="docutils literal notranslate"><span class="pre">libc-lint</span></code> exists but does
+nothing, so a green <code class="docutils literal notranslate"><span class="pre">libc-lint</span></code> build always means the checks ran.</p>
+</section>
+<section id="llvm-libc-checks">
+<h3>LLVM-libc checks<a class="headerlink" href="#llvm-libc-checks" title="Link to this heading">¶</a></h3>
+</section>
+<section id="restrict-system-libc-headers">
+<h3>restrict-system-libc-headers<a class="headerlink" href="#restrict-system-libc-headers" title="Link to this heading">¶</a></h3>
+<p>Check name: <code class="docutils literal notranslate"><span class="pre">llvmlibc-restrict-system-libc-headers</span></code>.</p>
+<p>One of libc-project’s design goals is to use kernel headers and compiler
+provided headers to prevent code duplication on a per platform basis. This
+presents a problem when writing implementations since system libc headers are
+easy to include accidentally and we can’t just use the <code class="docutils literal notranslate"><span class="pre">-nostdinc</span></code> flag.
+Improperly included system headers can introduce runtime errors because the C
+standard outlines function prototypes and behaviors but doesn’t define
+underlying implementation details such as the layout of a struct.</p>
+<p>This check prevents accidental inclusion of system libc headers when writing a
+libc implementation.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span><span class="w">            </span><span class="c1">// Not allowed because it is part of system libc.</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stddef.h&gt;</span><span class="w">           </span><span class="c1">// Allowed because it is provided by the compiler.</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"internal/stdio.h"</span><span class="w">   </span><span class="c1">// Allowed because it is NOT part of system libc.</span>
+</pre></div>
+</div>
+</section>
+<section id="implementation-in-namespace">
+<h3>implementation-in-namespace<a class="headerlink" href="#implementation-in-namespace" title="Link to this heading">¶</a></h3>
+<p>Check name: <code class="docutils literal notranslate"><span class="pre">llvmlibc-implementation-in-namespace</span></code>.</p>
+<p>All LLVM-libc implementation constructs must be enclosed in the
+<code class="docutils literal notranslate"><span class="pre">LIBC_NAMESPACE_DECL</span></code> namespace. See <a class="reference internal" href="#code-style"><span class="std std-ref">The libc code style</span></a> for the full technical
+rationale and macro definitions.</p>
+<p>This check ensures that top-level declarations in a translation unit are
+enclosed within the <code class="docutils literal notranslate"><span class="pre">LIBC_NAMESPACE_DECL</span></code> namespace.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="c1">// Correct: implementation inside the correct namespace.</span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">LIBC_NAMESPACE_DECL</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">LLVM_LIBC_FUNCTION</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="n">strcpy</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">dest</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">src</span><span class="p">))</span><span class="w"> </span><span class="p">{}</span>
+<span class="w">    </span><span class="c1">// Namespaces within LIBC_NAMESPACE namespace are allowed.</span>
+<span class="w">    </span><span class="k">namespace</span><span class="w"> </span><span class="nn">inner</span><span class="p">{</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">localVar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="c1">// Functions with C linkage are allowed.</span>
+<span class="w">    </span><span class="k">extern</span><span class="w"> </span><span class="s">"C"</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">str_fuzz</span><span class="p">(){}</span>
+<span class="p">}</span>
+
+<span class="c1">// Incorrect: implementation not in a namespace.</span>
+<span class="n">LLVM_LIBC_FUNCTION</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="n">strcpy</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">dest</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">src</span><span class="p">))</span><span class="w"> </span><span class="p">{}</span>
+
+<span class="c1">// Incorrect: outer most namespace is not correct.</span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">something_else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">LLVM_LIBC_FUNCTION</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="n">strcpy</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">dest</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">src</span><span class="p">))</span><span class="w"> </span><span class="p">{}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="callee-namespace">
+<h3>callee-namespace<a class="headerlink" href="#callee-namespace" title="Link to this heading">¶</a></h3>
+<p>Check name: <code class="docutils literal notranslate"><span class="pre">llvmlibc-callee-namespace</span></code>.</p>
+<p>LLVM-libc is distinct because it is designed to maintain interoperability with
+other libc libraries, including the one that lives on the system. This feature
+creates some uncertainty about which library a call resolves to especially when
+a public header with non-namespaced functions like <code class="docutils literal notranslate"><span class="pre">string.h</span></code> is included.</p>
+<p>This check ensures any function call resolves to a function within the
+LIBC_NAMESPACE namespace.</p>
+<p>There are exceptions for the following functions:
+<code class="docutils literal notranslate"><span class="pre">__errno_location</span></code> so that <code class="docutils literal notranslate"><span class="pre">errno</span></code> can be set;
+<code class="docutils literal notranslate"><span class="pre">malloc</span></code>, <code class="docutils literal notranslate"><span class="pre">calloc</span></code>, <code class="docutils literal notranslate"><span class="pre">realloc</span></code>, <code class="docutils literal notranslate"><span class="pre">aligned_alloc</span></code>, and <code class="docutils literal notranslate"><span class="pre">free</span></code> since they
+are always external and can be intercepted.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">namespace</span><span class="w"> </span><span class="nn">LIBC_NAMESPACE_DECL</span><span class="w"> </span><span class="p">{</span>
+
+<span class="c1">// Disallow calls to the public versions with the LIBC_NAMESPACE.</span>
+<span class="n">LIBC_NAMESPACE</span><span class="o">::</span><span class="n">strlen</span><span class="p">(</span><span class="s">"hello"</span><span class="p">);</span>
+
+<span class="c1">// Allow calls to compiler provided functions.</span>
+<span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">__builtin_abs</span><span class="p">(</span><span class="mi">-1</span><span class="p">);</span>
+
+<span class="c1">// Disallow bare calls.</span>
+<span class="n">strlen</span><span class="p">(</span><span class="s">"world"</span><span class="p">);</span>
+
+<span class="c1">// Disallow calling into functions in the global namespace.</span>
+<span class="o">::</span><span class="n">strlen</span><span class="p">(</span><span class="s">"!"</span><span class="p">);</span>
+
+<span class="c1">// Allow calling into specific global functions (explained above).</span>
+<span class="o">::</span><span class="n">malloc</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+
+<span class="p">}</span><span class="w"> </span><span class="c1">// namespace LIBC_NAMESPACE_DECL</span>
+</pre></div>
+</div>
+</section>
+<section id="inline-function-decl">
+<h3>inline-function-decl<a class="headerlink" href="#inline-function-decl" title="Link to this heading">¶</a></h3>
+<p>Check name: <code class="docutils literal notranslate"><span class="pre">llvmlibc-inline-function-decl</span></code>.</p>
+<p>LLVM libc uses the <code class="docutils literal notranslate"><span class="pre">LIBC_INLINE</span></code> macro to tag inline function declarations in
+headers. This check enforces that any inline function declaration in a header
+begins with <code class="docutils literal notranslate"><span class="pre">LIBC_INLINE</span></code> and provides a fix-it to insert the macro.</p>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="source_tree_layout.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">LLVM-libc Source Tree Layout</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="building_docs.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Building the Documentation</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2011-2026, LLVM Project
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">The libc code style</a><ul>
+<li><a class="reference internal" href="#naming-style">Naming style</a></li>
+<li><a class="reference internal" href="#macro-style">Macro style</a></li>
+<li><a class="reference internal" href="#inline-functions-and-variables-defined-in-header-files">Inline functions and variables defined in header files</a></li>
+<li><a class="reference internal" href="#setting-errno-from-runtime-code">Setting <code class="docutils literal notranslate"><span class="pre">errno</span></code> from runtime code</a></li>
+<li><a class="reference internal" href="#assertions-in-libc-runtime-code">Assertions in libc runtime code</a></li>
+<li><a class="reference internal" href="#allocations-in-the-libc-runtime-code">Allocations in the libc runtime code</a></li>
+<li><a class="reference internal" href="#warnings-in-sources">Warnings in sources</a></li>
+<li><a class="reference internal" href="#header-inclusion-policy">Header Inclusion Policy</a></li>
+<li><a class="reference internal" href="#policy-on-assembly-sources">Policy on Assembly sources</a></li>
+<li><a class="reference internal" href="#libc-namespace-decl">LIBC_NAMESPACE_DECL</a></li>
+<li><a class="reference internal" href="#static-analysis-clang-tidy">Static Analysis &amp; Clang-Tidy</a><ul>
+<li><a class="reference internal" href="#configuration">Configuration</a></li>
+<li><a class="reference internal" href="#running-the-checks">Running the checks</a></li>
+<li><a class="reference internal" href="#llvm-libc-checks">LLVM-libc checks</a></li>
+<li><a class="reference internal" href="#restrict-system-libc-headers">restrict-system-libc-headers</a></li>
+<li><a class="reference internal" href="#implementation-in-namespace">implementation-in-namespace</a></li>
+<li><a class="reference internal" href="#callee-namespace">callee-namespace</a></li>
+<li><a class="reference internal" href="#inline-function-decl">inline-function-decl</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=ccd1e645"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="../_static/llvm-sphinx/copybutton.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1381 @@
+========
+unistd.h
+========
+
+Macros
+======
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Macro
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - F_LOCK
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - F_OK
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - F_TEST
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - F_TLOCK
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - F_ULOCK
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - POSIX_CLOSE_RESTART
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - R_OK
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - SEEK_END
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - SEEK_SET
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - STDERR_FILENO
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - STDIN_FILENO
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - STDOUT_FILENO
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - W_OK
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - X_OK
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_PATH
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_ILP32_OFF32_CFLAGS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_ILP32_OFF32_LDFLAGS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_ILP32_OFF32_LIBS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_ILP32_OFFBIG_CFLAGS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_ILP32_OFFBIG_LDFLAGS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_ILP32_OFFBIG_LIBS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_LP64_OFF64_CFLAGS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_LP64_OFF64_LDFLAGS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_LP64_OFF64_LIBS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_LPBIG_OFFBIG_CFLAGS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_LPBIG_OFFBIG_LDFLAGS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_LPBIG_OFFBIG_LIBS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_THREADS_CFLAGS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_THREADS_LDFLAGS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_POSIX_V8_WIDTH_RESTRICTED_ENVS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _CS_V8_ENV
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_2_SYMLINKS
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_ALLOC_SIZE_MIN
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_ASYNC_IO
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_CHOWN_RESTRICTED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_FALLOC
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_FILESIZEBITS
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_LINK_MAX
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_MAX_CANON
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_MAX_INPUT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_NAME_MAX
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_NO_TRUNC
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_PATH_MAX
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_PIPE_BUF
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_PRIO_IO
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_REC_INCR_XFER_SIZE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_REC_MAX_XFER_SIZE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_REC_MIN_XFER_SIZE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_REC_XFER_ALIGN
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_SYMLINK_MAX
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_SYNC_IO
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_TEXTDOMAIN_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_TIMESTAMP_RESOLUTION
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _PC_VDISABLE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX2_CHAR_TERM
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX2_C_BIND
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX2_C_DEV
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX2_FORT_RUN
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX2_LOCALEDEF
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX2_SW_DEV
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX2_SYMLINKS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX2_UPE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX2_VERSION
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_ADVISORY_INFO
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_ASYNCHRONOUS_IO
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_ASYNC_IO
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_BARRIERS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_CHOWN_RESTRICTED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_CLOCK_SELECTION
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_CPUTIME
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_DEVICE_CONTROL
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_FALLOC
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_FSYNC
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_IPV6
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_JOB_CONTROL
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_MAPPED_FILES
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_MEMLOCK
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_MEMLOCK_RANGE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_MEMORY_PROTECTION
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_MESSAGE_PASSING
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_MONOTONIC_CLOCK
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_NO_TRUNC
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_PRIORITIZED_IO
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_PRIORITY_SCHEDULING
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_PRIO_IO
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_RAW_SOCKETS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_READER_WRITER_LOCKS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_REALTIME_SIGNALS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_REGEXP
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_SAVED_IDS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_SEMAPHORES
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_SHARED_MEMORY_OBJECTS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_SHELL
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_SPAWN
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_SPIN_LOCKS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_SPORADIC_SERVER
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_SUBPROFILE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_SYNCHRONIZED_IO
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_SYNC_IO
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_THREADS
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_THREAD_ATTR_STACKADDR
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_THREAD_ATTR_STACKSIZE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_THREAD_CPUTIME
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_THREAD_PRIORITY_SCHEDULING
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_THREAD_PRIO_INHERIT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_THREAD_PRIO_PROTECT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_THREAD_PROCESS_SHARED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_THREAD_ROBUST_PRIO_INHERIT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_THREAD_ROBUST_PRIO_PROTECT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_THREAD_SAFE_FUNCTIONS
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_THREAD_SPORADIC_SERVER
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_TIMEOUTS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_TIMERS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_TIMESTAMP_RESOLUTION
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_TYPED_MEMORY_OBJECTS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_V7_ILP32_OFF32
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_V7_ILP32_OFFBIG
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_V7_LP64_OFF64
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_V7_LPBIG_OFFBIG
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_V8_ILP32_OFF32
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_V8_ILP32_OFFBIG
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_V8_LP64_OFF64
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_V8_LPBIG_OFFBIG
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_VDISABLE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _POSIX_VERSION
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_2_CHAR_TERM
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_2_C_BIND
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_2_C_DEV
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_2_FORT_RUN
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_2_LOCALEDEF
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_2_SW_DEV
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_2_UPE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_2_VERSION
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_ADVISORY_INFO
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_AIO_LISTIO_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_AIO_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_AIO_PRIO_DELTA_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_ARG_MAX
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_ASYNCHRONOUS_IO
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_ATEXIT_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_BARRIERS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_BC_BASE_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_BC_DIM_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_BC_SCALE_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_BC_STRING_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_CHILD_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_CLK_TCK
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_CLOCK_SELECTION
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_COLL_WEIGHTS_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_CPUTIME
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_DELAYTIMER_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_DEVICE_CONTROL
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_EXPR_NEST_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_FSYNC
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_GETGR_R_SIZE_MAX
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_GETPW_R_SIZE_MAX
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_HOST_NAME_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_IOV_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_IPV6
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_JOB_CONTROL
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_LINE_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_LOGIN_NAME_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_MAPPED_FILES
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_MEMLOCK
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_MEMLOCK_RANGE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_MEMORY_PROTECTION
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_MESSAGE_PASSING
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_MONOTONIC_CLOCK
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_MQ_OPEN_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_MQ_PRIO_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_NGROUPS_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_NPROCESSORS_CONF
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_NPROCESSORS_ONLN
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_NSIG
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_OPEN_MAX
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_PAGESIZE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_PAGE_SIZE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_PRIORITIZED_IO
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_PRIORITY_SCHEDULING
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_RAW_SOCKETS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_READER_WRITER_LOCKS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_REALTIME_SIGNALS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_REGEXP
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_RE_DUP_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_RTSIG_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_SAVED_IDS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_SEMAPHORES
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_SEM_NSEMS_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_SEM_VALUE_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_SHARED_MEMORY_OBJECTS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_SHELL
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_SIGQUEUE_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_SPAWN
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_SPIN_LOCKS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_SPORADIC_SERVER
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_SS_REPL_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_STREAM_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_SYMLOOP_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_SYNCHRONIZED_IO
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREADS
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_ATTR_STACKADDR
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_ATTR_STACKSIZE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_CPUTIME
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_DESTRUCTOR_ITERATIONS
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_KEYS_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_PRIORITY_SCHEDULING
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_PRIO_INHERIT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_PRIO_PROTECT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_PROCESS_SHARED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_ROBUST_PRIO_INHERIT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_ROBUST_PRIO_PROTECT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_SAFE_FUNCTIONS
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_SPORADIC_SERVER
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_STACK_MIN
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_THREAD_THREADS_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_TIMEOUTS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_TIMERS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_TIMER_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_TTY_NAME_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_TYPED_MEMORY_OBJECTS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_TZNAME_MAX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_V7_ILP32_OFF32
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_V7_ILP32_OFFBIG
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_V7_LP64_OFF64
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_V7_LPBIG_OFFBIG
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_V8_ILP32_OFF32
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_V8_ILP32_OFFBIG
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_V8_LP64_OFF64
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_V8_LPBIG_OFFBIG
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_VERSION
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_XOPEN_CRYPT
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_XOPEN_ENH_I18N
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_XOPEN_REALTIME
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_XOPEN_REALTIME_THREADS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_XOPEN_SHM
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_XOPEN_UNIX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_XOPEN_UUCP
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _SC_XOPEN_VERSION
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _XOPEN_CRYPT
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _XOPEN_ENH_I18N
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _XOPEN_REALTIME
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _XOPEN_REALTIME_THREADS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _XOPEN_SHM
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _XOPEN_UNIX
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _XOPEN_UUCP
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+  * - _XOPEN_VERSION
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/unistd.h.html>`__
+
+Functions
+=========
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Function
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - _Fork
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/_Fork.html>`__
+  * - _exit
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/_exit.html>`__
+  * - access
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/access.html>`__
+  * - alarm
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/alarm.html>`__
+  * - chdir
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/chdir.html>`__
+  * - chown
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/chown.html>`__
+  * - chroot
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/chroot.html>`__
+  * - close
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/close.html>`__
+  * - confstr
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/confstr.html>`__
+  * - crypt
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/crypt.html>`__
+  * - dup
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/dup.html>`__
+  * - dup2
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/dup2.html>`__
+  * - dup3
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/dup3.html>`__
+  * - encrypt
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/encrypt.html>`__
+  * - execl
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/execl.html>`__
+  * - execle
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/execle.html>`__
+  * - execlp
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/execlp.html>`__
+  * - execv
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/execv.html>`__
+  * - execve
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/execve.html>`__
+  * - execvp
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/execvp.html>`__
+  * - faccessat
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/faccessat.html>`__
+  * - fchdir
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/fchdir.html>`__
+  * - fchown
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/fchown.html>`__
+  * - fchownat
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/fchownat.html>`__
+  * - fdatasync
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/fdatasync.html>`__
+  * - fexecve
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/fexecve.html>`__
+  * - fork
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/fork.html>`__
+  * - fpathconf
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/fpathconf.html>`__
+  * - fsync
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/fsync.html>`__
+  * - ftruncate
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/ftruncate.html>`__
+  * - getcwd
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getcwd.html>`__
+  * - getegid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getegid.html>`__
+  * - getentropy
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getentropy.html>`__
+  * - geteuid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/geteuid.html>`__
+  * - getgid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getgid.html>`__
+  * - getgroups
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getgroups.html>`__
+  * - gethostid
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/gethostid.html>`__
+  * - gethostname
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/gethostname.html>`__
+  * - getlogin
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getlogin.html>`__
+  * - getlogin_r
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getlogin_r.html>`__
+  * - getopt
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getopt.html>`__
+  * - getpagesize
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpagesize.html>`__
+  * - getpgid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpgid.html>`__
+  * - getpgrp
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpgrp.html>`__
+  * - getpid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpid.html>`__
+  * - getppid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getppid.html>`__
+  * - getresgid
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getresgid.html>`__
+  * - getresuid
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getresuid.html>`__
+  * - getsid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getsid.html>`__
+  * - getuid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getuid.html>`__
+  * - isatty
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/isatty.html>`__
+  * - lchown
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/lchown.html>`__
+  * - link
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/link.html>`__
+  * - linkat
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/linkat.html>`__
+  * - lockf
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/lockf.html>`__
+  * - lseek
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/lseek.html>`__
+  * - nice
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/nice.html>`__
+  * - pathconf
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pathconf.html>`__
+  * - pause
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pause.html>`__
+  * - pipe
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pipe.html>`__
+  * - pipe2
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pipe2.html>`__
+  * - posix_close
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_close.html>`__
+  * - pread
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pread.html>`__
+  * - pwrite
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pwrite.html>`__
+  * - read
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/read.html>`__
+  * - readlink
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/readlink.html>`__
+  * - readlinkat
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/readlinkat.html>`__
+  * - rmdir
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/rmdir.html>`__
+  * - setegid
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/setegid.html>`__
+  * - seteuid
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/seteuid.html>`__
+  * - setgid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/setgid.html>`__
+  * - setpgid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/setpgid.html>`__
+  * - setregid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/setregid.html>`__
+  * - setresgid
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/setresgid.html>`__
+  * - setresuid
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/setresuid.html>`__
+  * - setreuid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/setreuid.html>`__
+  * - setsid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/setsid.html>`__
+  * - setuid
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/setuid.html>`__
+  * - sleep
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/sleep.html>`__
+  * - swab
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/swab.html>`__
+  * - symlink
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/symlink.html>`__
+  * - symlinkat
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/symlinkat.html>`__
+  * - sync
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/sync.html>`__
+  * - sysconf
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/sysconf.html>`__
+  * - tcgetpgrp
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/tcgetpgrp.html>`__
+  * - tcsetpgrp
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/tcsetpgrp.html>`__
+  * - truncate
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/truncate.html>`__
+  * - ttyname
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/ttyname.html>`__
+  * - ttyname_r
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/ttyname_r.html>`__
+  * - unlink
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/unlink.html>`__
+  * - unlinkat
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/unlinkat.html>`__
+  * - write
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/write.html>`__
