@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/cpio.rst:3
+msgid "cpio.h"
+msgstr ""
+
+#: ../../../headers/cpio.rst:6
+msgid "Macros"
+msgstr "巨集"
+
+#: ../../../headers/cpio.rst:13
+msgid "Macro"
+msgstr "巨集"
+
+#: ../../../headers/cpio.rst:14
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/cpio.rst:15
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/cpio.rst:16
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/cpio.rst:17
+msgid "C_IRGRP"
+msgstr ""
+
+#: ../../../headers/cpio.rst:18 ../../../headers/cpio.rst:22
+#: ../../../headers/cpio.rst:26 ../../../headers/cpio.rst:30
+#: ../../../headers/cpio.rst:34 ../../../headers/cpio.rst:38
+#: ../../../headers/cpio.rst:42 ../../../headers/cpio.rst:46
+#: ../../../headers/cpio.rst:50 ../../../headers/cpio.rst:54
+#: ../../../headers/cpio.rst:58 ../../../headers/cpio.rst:62
+#: ../../../headers/cpio.rst:66 ../../../headers/cpio.rst:70
+#: ../../../headers/cpio.rst:74 ../../../headers/cpio.rst:78
+#: ../../../headers/cpio.rst:82 ../../../headers/cpio.rst:86
+#: ../../../headers/cpio.rst:90 ../../../headers/cpio.rst:94
+#: ../../../headers/cpio.rst:98
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/cpio.rst:20 ../../../headers/cpio.rst:24
+#: ../../../headers/cpio.rst:28 ../../../headers/cpio.rst:32
+#: ../../../headers/cpio.rst:36 ../../../headers/cpio.rst:40
+#: ../../../headers/cpio.rst:44 ../../../headers/cpio.rst:48
+#: ../../../headers/cpio.rst:52 ../../../headers/cpio.rst:56
+#: ../../../headers/cpio.rst:60 ../../../headers/cpio.rst:64
+#: ../../../headers/cpio.rst:68 ../../../headers/cpio.rst:72
+#: ../../../headers/cpio.rst:76 ../../../headers/cpio.rst:80
+#: ../../../headers/cpio.rst:84 ../../../headers/cpio.rst:88
+#: ../../../headers/cpio.rst:92 ../../../headers/cpio.rst:96
+#: ../../../headers/cpio.rst:100
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"cpio.h.html>`__"
+msgstr ""
+
+#: ../../../headers/cpio.rst:21
+msgid "C_IROTH"
+msgstr ""
+
+#: ../../../headers/cpio.rst:25
+msgid "C_IRUSR"
+msgstr ""
+
+#: ../../../headers/cpio.rst:29
+msgid "C_ISBLK"
+msgstr ""
+
+#: ../../../headers/cpio.rst:33
+msgid "C_ISCHR"
+msgstr ""
+
+#: ../../../headers/cpio.rst:37
+msgid "C_ISCTG"
+msgstr ""
+
+#: ../../../headers/cpio.rst:41
+msgid "C_ISDIR"
+msgstr ""
+
+#: ../../../headers/cpio.rst:45
+msgid "C_ISFIFO"
+msgstr ""
+
+#: ../../../headers/cpio.rst:49
+msgid "C_ISGID"
+msgstr ""
+
+#: ../../../headers/cpio.rst:53
+msgid "C_ISLNK"
+msgstr ""
+
+#: ../../../headers/cpio.rst:57
+msgid "C_ISREG"
+msgstr ""
+
+#: ../../../headers/cpio.rst:61
+msgid "C_ISSOCK"
+msgstr ""
+
+#: ../../../headers/cpio.rst:65
+msgid "C_ISUID"
+msgstr ""
+
+#: ../../../headers/cpio.rst:69
+msgid "C_ISVTX"
+msgstr ""
+
+#: ../../../headers/cpio.rst:73
+msgid "C_IWGRP"
+msgstr ""
+
+#: ../../../headers/cpio.rst:77
+msgid "C_IWOTH"
+msgstr ""
+
+#: ../../../headers/cpio.rst:81
+msgid "C_IWUSR"
+msgstr ""
+
+#: ../../../headers/cpio.rst:85
+msgid "C_IXGRP"
+msgstr ""
+
+#: ../../../headers/cpio.rst:89
+msgid "C_IXOTH"
+msgstr ""
+
+#: ../../../headers/cpio.rst:93
+msgid "C_IXUSR"
+msgstr ""
+
+#: ../../../headers/cpio.rst:97
+msgid "MAGIC"
+msgstr ""

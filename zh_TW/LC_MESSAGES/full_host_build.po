@@ -1,0 +1,242 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../full_host_build.md:3
+msgid "Full Host Build"
+msgstr "完整主機建置"
+
+#: ../../../full_host_build.md:6
+msgid ""
+"Fullbuild requires running headergen, which is a python program that depends "
+"on pyyaml. The minimum versions are listed on the {ref}`header_generation` "
+"page, as well as additional information."
+msgstr ""
+
+#: ../../../full_host_build.md:11
+msgid "Standard Building and Testing"
+msgstr "標準建置與測試"
+
+#: ../../../full_host_build.md:14
+msgid ""
+"If your build fails with an error saying the compiler can't find `<asm/"
+"unistd.h>` or similar then you're probably missing the symlink from `/usr/"
+"include/asm` to `/usr/include/<HOST TRIPLE>/asm`. Installing the `gcc-"
+"multilib` package creates this symlink, or you can do it manually with this "
+"command:"
+msgstr ""
+
+#: ../../../full_host_build.md:24
+msgid "(your host triple will probably be similar to `x86_64-linux-gnu`)"
+msgstr ""
+
+#: ../../../full_host_build.md:27
+msgid ""
+"For basic development, such as adding new functions or fixing bugs, you can "
+"build and test the libc directly without setting up a full sysroot. This "
+"approach is using the **runtimes build** (see {ref}`build_concepts` for more "
+"information) and is faster and sufficient for most contributors."
+msgstr ""
+
+#: ../../../full_host_build.md:32
+msgid "To configure the build, create a build directory and run `cmake`:"
+msgstr ""
+
+#: ../../../full_host_build.md:53
+msgid ""
+"After configuring the build, you can build the libc, math library, and run "
+"the tests with the following command:"
+msgstr ""
+
+#: ../../../full_host_build.md:60
+msgid "To build just the generated headers (useful for troubleshooting):"
+msgstr ""
+
+#: ../../../full_host_build.md:66
+msgid ""
+"To run a specific unit test for a function, you can target it directly using "
+"its full name:"
+msgstr ""
+
+#: ../../../full_host_build.md:73
+msgid "For example, to run the test for `isalpha` in `ctype.h`:"
+msgstr ""
+
+#: ../../../full_host_build.md:79
+msgid "Building Documentation"
+msgstr "建置文件"
+
+#: ../../../full_host_build.md:81
+msgid ""
+"If you have Sphinx installed, you can build the libc documentation locally. "
+"The build configuration above already includes the necessary flags (`-"
+"DLLVM_ENABLE_SPHINX=ON -DLIBC_INCLUDE_DOCS=ON`)."
+msgstr ""
+
+#: ../../../full_host_build.md:85
+msgid "To generate the HTML documentation:"
+msgstr ""
+
+#: ../../../full_host_build.md:91
+msgid ""
+"The generated documentation will be available in the `docs/libc/html` "
+"directory within your build folder."
+msgstr ""
+
+#: ../../../full_host_build.md:94
+msgid "Building a Simple Sysroot"
+msgstr ""
+
+#: ../../../full_host_build.md:97
+msgid ""
+"The LLVM libc is missing many critical functions needed to build non-trivial "
+"applications. If you are not currently working on porting the libc, we "
+"recommend sticking with your system libc. However, ignoring warnings like "
+"this are how most of us got into this business. So: Speak friend and enter."
+msgstr ""
+
+#: ../../../full_host_build.md:102
+msgid ""
+"This document describes how to set up a simple sysroot and a compiler that "
+"uses it from scratch. These are not full cross-compilation instructions. We "
+"make a few assumptions:"
+msgstr ""
+
+#: ../../../full_host_build.md:106
+msgid ""
+"The host and target are the same architecture and OS. For example, building "
+"a Linux x86-64 libc on a Linux x86-64 host."
+msgstr ""
+
+#: ../../../full_host_build.md:108
+msgid ""
+"The host has a working and recent Clang toolchain. Clang 21 has been tested."
+msgstr ""
+
+#: ../../../full_host_build.md:109
+msgid ""
+"Your container is using Debian Testing or a derived distribution. Other "
+"distributions likely work but the package names and paths may differ."
+msgstr ""
+
+#: ../../../full_host_build.md:111
+msgid "You have root access to your machine to set up the compiler wrapper."
+msgstr ""
+
+#: ../../../full_host_build.md:113
+msgid ""
+"For more comprehensive instructions on setting up a sysroot, see the "
+"[official LLVM guide](https://llvm.org/docs/HowToCrossCompileLLVM."
+"html#setting-up-a-sysroot)."
+msgstr ""
+
+#: ../../../full_host_build.md:116
+msgid "Step 1: Preparation"
+msgstr ""
+
+#: ../../../full_host_build.md:118
+msgid ""
+"First, set up the environment variables for your sysroot path and the major "
+"version of your host Clang."
+msgstr ""
+
+#: ../../../full_host_build.md:125
+msgid "Step 2: Linux Headers"
+msgstr "第 2 步：Linux 標頭檔"
+
+#: ../../../full_host_build.md:127
+msgid ""
+"Next, install the Linux kernel headers into your sysroot. For this guide, "
+"we'll copy the headers from the host system's `/usr/include` directory. This "
+"includes `linux`, `asm-generic`, and the architecture-specific `asm` headers."
+msgstr ""
+
+#: ../../../full_host_build.md:143
+msgid ""
+"If you instead want to build the headers from the kernel sources, you can "
+"run the following commands:"
+msgstr ""
+
+#: ../../../full_host_build.md:154
+msgid ""
+"The headers can be built to target non-host architectures by adding the "
+"`ARCH={arm|arm64|i386}` to the above invocation of `make`."
+msgstr ""
+
+#: ../../../full_host_build.md:158
+msgid ""
+"For a more production-ready sysroot, you would typically download a specific "
+"kernel version and install the headers using `make headers_install` "
+"configured for the target architecture and installation path using the above "
+"instructions."
+msgstr ""
+
+#: ../../../full_host_build.md:164
+msgid "Step 3: Build and Install Runtimes"
+msgstr ""
+
+#: ../../../full_host_build.md:166
+msgid ""
+"Now, configure the build for LLVM libc and compiler-rt. We're using the "
+"**bootstrap build** (see {ref}`build_concepts`) because we need to build the "
+"full `clang` and then install the `clang-resource-headers` that provide "
+"`stdarg.h`, `stddef.h` and others."
+msgstr ""
+
+#: ../../../full_host_build.md:191
+msgid "After configuring, build and install the necessary components:"
+msgstr ""
+
+#: ../../../full_host_build.md:197
+msgid "Step 4: Configure the Compiler Wrapper"
+msgstr ""
+
+#: ../../../full_host_build.md:199
+msgid ""
+"To make using the new toolchain easier, you can create a Clang configuration "
+"file. This allows you to avoid passing long command line arguments every "
+"time you compile a program."
+msgstr ""
+
+#: ../../../full_host_build.md:203
+msgid "Identify the directory where your Clang binary is located:"
+msgstr ""
+
+#: ../../../full_host_build.md:209
+msgid "Create a symlink to `clang` named `llvm-libc-clang` in that directory:"
+msgstr ""
+
+#: ../../../full_host_build.md:215
+msgid ""
+"Create the configuration file in the same directory. Clang automatically "
+"looks for a file named `<executable-name>.cfg` in the same directory as the "
+"executable. Use the following command to generate it with your environment "
+"variables:"
+msgstr ""
+
+#: ../../../full_host_build.md:233
+msgid "Step 5: Verification"
+msgstr ""
+
+#: ../../../full_host_build.md:235
+msgid "You can now use your newly built toolchain by running your wrapper."
+msgstr ""
+
+#: ../../../full_host_build.md:246
+msgid "Compile and run the example:"
+msgstr ""

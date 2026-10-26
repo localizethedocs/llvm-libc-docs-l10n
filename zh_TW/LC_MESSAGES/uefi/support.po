@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../uefi/support.rst:5
+msgid "Supported Functions"
+msgstr ""
+
+#: ../../../uefi/support.rst:7
+msgid ""
+"The follow functions and headers are supported at least partially in UEFI. "
+"Some functions are implemented fully for UEFI."
+msgstr ""
+
+#: ../../../uefi/support.rst:11
+msgid ""
+"LLVM-libc support for UEFI is currently in the early bring-up phase. The "
+"tables below are placeholders; for the current source of truth on "
+"implemented functions, please refer to ``libc/config/uefi/entrypoints.txt`` "
+"in the source tree."
+msgstr ""
+
+#: ../../../uefi/support.rst:17
+msgid "ctype.h"
+msgstr ""
+
+#: ../../../uefi/support.rst:20 ../../../uefi/support.rst:28
+#: ../../../uefi/support.rst:36 ../../../uefi/support.rst:44
+#: ../../../uefi/support.rst:52 ../../../uefi/support.rst:60
+#: ../../../uefi/support.rst:68 ../../../uefi/support.rst:76
+#: ../../../uefi/support.rst:84
+msgid "Function Name"
+msgstr "函數名稱"
+
+#: ../../../uefi/support.rst:20 ../../../uefi/support.rst:28
+#: ../../../uefi/support.rst:36 ../../../uefi/support.rst:44
+#: ../../../uefi/support.rst:52 ../../../uefi/support.rst:60
+#: ../../../uefi/support.rst:68 ../../../uefi/support.rst:76
+#: ../../../uefi/support.rst:84
+msgid "Available"
+msgstr ""
+
+#: ../../../uefi/support.rst:25
+msgid "string.h"
+msgstr "string.h"
+
+#: ../../../uefi/support.rst:33
+msgid "strings.h"
+msgstr "strings.h"
+
+#: ../../../uefi/support.rst:41
+msgid "stdbit.h"
+msgstr "stdbit.h"
+
+#: ../../../uefi/support.rst:49
+msgid "stdlib.h"
+msgstr ""
+
+#: ../../../uefi/support.rst:57
+msgid "inttypes.h"
+msgstr ""
+
+#: ../../../uefi/support.rst:65
+msgid "stdio.h"
+msgstr ""
+
+#: ../../../uefi/support.rst:73
+msgid "time.h"
+msgstr "time.h"
+
+#: ../../../uefi/support.rst:81
+msgid "assert.h"
+msgstr "assert.h"

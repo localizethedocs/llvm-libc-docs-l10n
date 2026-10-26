@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../overlay_mode.md:3
+msgid "Overlay Mode"
+msgstr ""
+
+#: ../../../overlay_mode.md:5
+msgid ""
+"One can choose to use LLVM's libc in the overlay mode. In this mode, the "
+"link order semantics are exploited to pick symbols from `libllvmlibc.a` (if "
+"they are available in `libllvmlibc.a`) and the rest are picked from the "
+"system libc. The user programs also have to use header files from the system "
+"libc. Naturally, only functions which do not depend on implementation "
+"specific ABI are included in `libllvmlibc.a`. Examples of such functions are "
+"`strlen` and `round`. Functions like `fopen` and friends are not included as "
+"they depend on the implementation specific definition of the `FILE` data "
+"structure."
+msgstr ""
+
+#: ../../../overlay_mode.md:14
+msgid "Building the libc in the overlay mode"
+msgstr ""
+
+#: ../../../overlay_mode.md:16
+msgid ""
+"There are two different ways in which the libc can be built for use in the "
+"overlay mode. In both the ways, we build a static archive named `libllvmlibc."
+"a`. We use a rather verbose name with a repeated `lib` to make it clear that "
+"it is not the system libc, which is typically named `libc.a`. Also, if users "
+"choose to mix more than one libc with the system libc, then the name "
+"`libllvmlibc.a` makes it absolutely clear that it is the static archive of "
+"LLVM's libc."
+msgstr ""
+
+#: ../../../overlay_mode.md:24
+msgid "Building LLVM-libc as a standalone runtime"
+msgstr ""
+
+#: ../../../overlay_mode.md:26
+msgid ""
+"We can treat the `libc` project like any other normal LLVM runtime library "
+"by building it with the following cmake command:"
+msgstr ""
+
+#: ../../../overlay_mode.md:39
+msgid "Next, build the libc:"
+msgstr ""
+
+#: ../../../overlay_mode.md:45
+msgid "Then, run the tests:"
+msgstr ""
+
+#: ../../../overlay_mode.md:51
+msgid ""
+"The build step will build the static archive the in the directory `build/"
+"projects/libc/lib`. Notice that the above CMake configure step also "
+"specified an install prefix. This is optional, but it's used, then the "
+"following command will install the static archive to the install path:"
+msgstr ""
+
+#: ../../../overlay_mode.md:60
+msgid "Building the static archive as part of the bootstrap build"
+msgstr ""
+
+#: ../../../overlay_mode.md:62
+msgid ""
+"The bootstrap build is a build mode in which runtime components like libc++, "
+"libcxx-abi, libc etc. are built using the ToT clang. The idea is that this "
+"build produces an in-sync toolchain of compiler + runtime libraries. This "
+"ensures that LLVM-libc has access to the latest clang features, which should "
+"provide the best performance possible."
+msgstr ""
+
+#: ../../../overlay_mode.md:76
+msgid ""
+"The build and install steps are the same as above, but the build step will "
+"take much longer since `clang` will be built before building `libllvmlibc.a`."
+msgstr ""
+
+#: ../../../overlay_mode.md:84
+msgid "Using the overlay static archive"
+msgstr ""
+
+#: ../../../overlay_mode.md:86
+msgid ""
+"Once built (and optionally installed), the overlay static archive can be "
+"linked to your binaries like any other static archive. For example, when "
+"building with `clang` on Linux, one should follow a recipe like:"
+msgstr ""
+
+#: ../../../overlay_mode.md:96
+msgid ""
+"If you installed `libllvmlibc.a` in a standard linker lookup path, for "
+"example `/usr/local/lib` on Linux like systems, then specifying the path to "
+"the static archive using the `-L` option is not necessary."
+msgstr ""
+
+#: ../../../overlay_mode.md:100
+msgid "Linking the static archive to other LLVM binaries"
+msgstr ""
+
+#: ../../../overlay_mode.md:102
+msgid ""
+"Since the libc and other LLVM binaries are developed in the same source "
+"tree, linking `libllvmlibc.a` to those LLVM binaries does not require any "
+"special install step or explicitly passing any special linker flags/options. "
+"One can simply add `llvmlibc` as a link library to that binary's target. For "
+"example, if you want to link `libllvmlibc.a` to `llvm-objcopy`, all you have "
+"to do is to add a CMake command as follows:"
+msgstr ""

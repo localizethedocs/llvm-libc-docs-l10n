@@ -1,0 +1,1249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/pthread.rst:3
+msgid "pthread.h"
+msgstr ""
+
+#: ../../../headers/pthread.rst:6
+msgid "Macros"
+msgstr "巨集"
+
+#: ../../../headers/pthread.rst:13
+msgid "Macro"
+msgstr "巨集"
+
+#: ../../../headers/pthread.rst:14 ../../../headers/pthread.rst:147
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/pthread.rst:15 ../../../headers/pthread.rst:148
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/pthread.rst:16 ../../../headers/pthread.rst:149
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/pthread.rst:17
+msgid "PTHREAD_BARRIER_SERIAL_THREAD"
+msgstr ""
+
+#: ../../../headers/pthread.rst:18 ../../../headers/pthread.rst:42
+#: ../../../headers/pthread.rst:46 ../../../headers/pthread.rst:50
+#: ../../../headers/pthread.rst:54 ../../../headers/pthread.rst:58
+#: ../../../headers/pthread.rst:62 ../../../headers/pthread.rst:66
+#: ../../../headers/pthread.rst:70 ../../../headers/pthread.rst:74
+#: ../../../headers/pthread.rst:78 ../../../headers/pthread.rst:82
+#: ../../../headers/pthread.rst:86 ../../../headers/pthread.rst:90
+#: ../../../headers/pthread.rst:94 ../../../headers/pthread.rst:110
+#: ../../../headers/pthread.rst:114 ../../../headers/pthread.rst:118
+#: ../../../headers/pthread.rst:122 ../../../headers/pthread.rst:126
+#: ../../../headers/pthread.rst:130 ../../../headers/pthread.rst:134
+#: ../../../headers/pthread.rst:151 ../../../headers/pthread.rst:155
+#: ../../../headers/pthread.rst:159 ../../../headers/pthread.rst:163
+#: ../../../headers/pthread.rst:167 ../../../headers/pthread.rst:171
+#: ../../../headers/pthread.rst:175 ../../../headers/pthread.rst:179
+#: ../../../headers/pthread.rst:183 ../../../headers/pthread.rst:187
+#: ../../../headers/pthread.rst:191 ../../../headers/pthread.rst:195
+#: ../../../headers/pthread.rst:199 ../../../headers/pthread.rst:203
+#: ../../../headers/pthread.rst:207 ../../../headers/pthread.rst:211
+#: ../../../headers/pthread.rst:215 ../../../headers/pthread.rst:219
+#: ../../../headers/pthread.rst:223 ../../../headers/pthread.rst:227
+#: ../../../headers/pthread.rst:231 ../../../headers/pthread.rst:235
+#: ../../../headers/pthread.rst:259 ../../../headers/pthread.rst:263
+#: ../../../headers/pthread.rst:267 ../../../headers/pthread.rst:271
+#: ../../../headers/pthread.rst:275 ../../../headers/pthread.rst:279
+#: ../../../headers/pthread.rst:283 ../../../headers/pthread.rst:287
+#: ../../../headers/pthread.rst:291 ../../../headers/pthread.rst:295
+#: ../../../headers/pthread.rst:299 ../../../headers/pthread.rst:303
+#: ../../../headers/pthread.rst:307 ../../../headers/pthread.rst:311
+#: ../../../headers/pthread.rst:315 ../../../headers/pthread.rst:319
+#: ../../../headers/pthread.rst:323 ../../../headers/pthread.rst:331
+#: ../../../headers/pthread.rst:335 ../../../headers/pthread.rst:339
+#: ../../../headers/pthread.rst:343 ../../../headers/pthread.rst:347
+#: ../../../headers/pthread.rst:359 ../../../headers/pthread.rst:367
+#: ../../../headers/pthread.rst:371 ../../../headers/pthread.rst:383
+#: ../../../headers/pthread.rst:387 ../../../headers/pthread.rst:391
+#: ../../../headers/pthread.rst:403 ../../../headers/pthread.rst:407
+#: ../../../headers/pthread.rst:411 ../../../headers/pthread.rst:415
+#: ../../../headers/pthread.rst:427 ../../../headers/pthread.rst:431
+#: ../../../headers/pthread.rst:435 ../../../headers/pthread.rst:439
+#: ../../../headers/pthread.rst:443 ../../../headers/pthread.rst:447
+#: ../../../headers/pthread.rst:451 ../../../headers/pthread.rst:455
+#: ../../../headers/pthread.rst:459 ../../../headers/pthread.rst:463
+#: ../../../headers/pthread.rst:467 ../../../headers/pthread.rst:471
+#: ../../../headers/pthread.rst:475 ../../../headers/pthread.rst:479
+#: ../../../headers/pthread.rst:483 ../../../headers/pthread.rst:487
+#: ../../../headers/pthread.rst:491 ../../../headers/pthread.rst:495
+#: ../../../headers/pthread.rst:499 ../../../headers/pthread.rst:503
+#: ../../../headers/pthread.rst:515 ../../../headers/pthread.rst:523
+#: ../../../headers/pthread.rst:527 ../../../headers/pthread.rst:531
+#: ../../../headers/pthread.rst:535 ../../../headers/pthread.rst:539
+#: ../../../headers/pthread.rst:543
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/pthread.rst:20 ../../../headers/pthread.rst:24
+#: ../../../headers/pthread.rst:28 ../../../headers/pthread.rst:32
+#: ../../../headers/pthread.rst:36 ../../../headers/pthread.rst:40
+#: ../../../headers/pthread.rst:44 ../../../headers/pthread.rst:48
+#: ../../../headers/pthread.rst:52 ../../../headers/pthread.rst:56
+#: ../../../headers/pthread.rst:60 ../../../headers/pthread.rst:64
+#: ../../../headers/pthread.rst:68 ../../../headers/pthread.rst:72
+#: ../../../headers/pthread.rst:76 ../../../headers/pthread.rst:80
+#: ../../../headers/pthread.rst:84 ../../../headers/pthread.rst:88
+#: ../../../headers/pthread.rst:92 ../../../headers/pthread.rst:96
+#: ../../../headers/pthread.rst:100 ../../../headers/pthread.rst:104
+#: ../../../headers/pthread.rst:108 ../../../headers/pthread.rst:112
+#: ../../../headers/pthread.rst:116 ../../../headers/pthread.rst:120
+#: ../../../headers/pthread.rst:124 ../../../headers/pthread.rst:128
+#: ../../../headers/pthread.rst:132 ../../../headers/pthread.rst:136
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"pthread.h.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:21
+msgid "PTHREAD_CANCELED"
+msgstr ""
+
+#: ../../../headers/pthread.rst:25
+msgid "PTHREAD_CANCEL_ASYNCHRONOUS"
+msgstr ""
+
+#: ../../../headers/pthread.rst:29
+msgid "PTHREAD_CANCEL_DEFERRED"
+msgstr ""
+
+#: ../../../headers/pthread.rst:33
+msgid "PTHREAD_CANCEL_DISABLE"
+msgstr ""
+
+#: ../../../headers/pthread.rst:37
+msgid "PTHREAD_CANCEL_ENABLE"
+msgstr ""
+
+#: ../../../headers/pthread.rst:41
+msgid "PTHREAD_COND_INITIALIZER"
+msgstr ""
+
+#: ../../../headers/pthread.rst:45
+msgid "PTHREAD_CREATE_DETACHED"
+msgstr ""
+
+#: ../../../headers/pthread.rst:49
+msgid "PTHREAD_CREATE_JOINABLE"
+msgstr ""
+
+#: ../../../headers/pthread.rst:53
+msgid "PTHREAD_EXPLICIT_SCHED"
+msgstr ""
+
+#: ../../../headers/pthread.rst:57
+msgid "PTHREAD_INHERIT_SCHED"
+msgstr ""
+
+#: ../../../headers/pthread.rst:61
+msgid "PTHREAD_MUTEX_DEFAULT"
+msgstr ""
+
+#: ../../../headers/pthread.rst:65
+msgid "PTHREAD_MUTEX_ERRORCHECK"
+msgstr ""
+
+#: ../../../headers/pthread.rst:69
+msgid "PTHREAD_MUTEX_INITIALIZER"
+msgstr ""
+
+#: ../../../headers/pthread.rst:73
+msgid "PTHREAD_MUTEX_NORMAL"
+msgstr ""
+
+#: ../../../headers/pthread.rst:77
+msgid "PTHREAD_MUTEX_RECURSIVE"
+msgstr ""
+
+#: ../../../headers/pthread.rst:81
+msgid "PTHREAD_MUTEX_ROBUST"
+msgstr ""
+
+#: ../../../headers/pthread.rst:85
+msgid "PTHREAD_MUTEX_STALLED"
+msgstr ""
+
+#: ../../../headers/pthread.rst:89
+msgid "PTHREAD_NULL"
+msgstr ""
+
+#: ../../../headers/pthread.rst:93
+msgid "PTHREAD_ONCE_INIT"
+msgstr ""
+
+#: ../../../headers/pthread.rst:97
+msgid "PTHREAD_PRIO_INHERIT"
+msgstr ""
+
+#: ../../../headers/pthread.rst:101
+msgid "PTHREAD_PRIO_NONE"
+msgstr ""
+
+#: ../../../headers/pthread.rst:105
+msgid "PTHREAD_PRIO_PROTECT"
+msgstr ""
+
+#: ../../../headers/pthread.rst:109
+msgid "PTHREAD_PROCESS_PRIVATE"
+msgstr ""
+
+#: ../../../headers/pthread.rst:113
+msgid "PTHREAD_PROCESS_SHARED"
+msgstr ""
+
+#: ../../../headers/pthread.rst:117
+msgid "PTHREAD_RWLOCK_INITIALIZER"
+msgstr ""
+
+#: ../../../headers/pthread.rst:121
+msgid "PTHREAD_SCOPE_PROCESS"
+msgstr ""
+
+#: ../../../headers/pthread.rst:125
+msgid "PTHREAD_SCOPE_SYSTEM"
+msgstr ""
+
+#: ../../../headers/pthread.rst:129
+msgid "pthread_cleanup_pop"
+msgstr ""
+
+#: ../../../headers/pthread.rst:133
+msgid "pthread_cleanup_push"
+msgstr ""
+
+#: ../../../headers/pthread.rst:139
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/pthread.rst:146
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/pthread.rst:150
+msgid "pthread_atfork"
+msgstr ""
+
+#: ../../../headers/pthread.rst:153
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_atfork.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:154
+msgid "pthread_attr_destroy"
+msgstr ""
+
+#: ../../../headers/pthread.rst:157
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_destroy.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:158
+msgid "pthread_attr_getdetachstate"
+msgstr ""
+
+#: ../../../headers/pthread.rst:161
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_getdetachstate.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:162
+msgid "pthread_attr_getguardsize"
+msgstr ""
+
+#: ../../../headers/pthread.rst:165
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_getguardsize.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:166
+msgid "pthread_attr_getinheritsched"
+msgstr ""
+
+#: ../../../headers/pthread.rst:169
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_getinheritsched.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:170
+msgid "pthread_attr_getschedparam"
+msgstr ""
+
+#: ../../../headers/pthread.rst:173
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_getschedparam.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:174
+msgid "pthread_attr_getschedpolicy"
+msgstr ""
+
+#: ../../../headers/pthread.rst:177
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_getschedpolicy.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:178
+msgid "pthread_attr_getscope"
+msgstr ""
+
+#: ../../../headers/pthread.rst:181
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_getscope.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:182
+msgid "pthread_attr_getstack"
+msgstr ""
+
+#: ../../../headers/pthread.rst:185
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_getstack.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:186
+msgid "pthread_attr_getstacksize"
+msgstr ""
+
+#: ../../../headers/pthread.rst:189
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_getstacksize.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:190
+msgid "pthread_attr_init"
+msgstr ""
+
+#: ../../../headers/pthread.rst:193
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_init.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:194
+msgid "pthread_attr_setdetachstate"
+msgstr ""
+
+#: ../../../headers/pthread.rst:197
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_setdetachstate.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:198
+msgid "pthread_attr_setguardsize"
+msgstr ""
+
+#: ../../../headers/pthread.rst:201
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_setguardsize.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:202
+msgid "pthread_attr_setinheritsched"
+msgstr ""
+
+#: ../../../headers/pthread.rst:205
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_setinheritsched.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:206
+msgid "pthread_attr_setschedparam"
+msgstr ""
+
+#: ../../../headers/pthread.rst:209
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_setschedparam.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:210
+msgid "pthread_attr_setschedpolicy"
+msgstr ""
+
+#: ../../../headers/pthread.rst:213
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_setschedpolicy.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:214
+msgid "pthread_attr_setscope"
+msgstr ""
+
+#: ../../../headers/pthread.rst:217
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_setscope.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:218
+msgid "pthread_attr_setstack"
+msgstr ""
+
+#: ../../../headers/pthread.rst:221
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_setstack.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:222
+msgid "pthread_attr_setstacksize"
+msgstr ""
+
+#: ../../../headers/pthread.rst:225
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_attr_setstacksize.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:226
+msgid "pthread_barrier_destroy"
+msgstr ""
+
+#: ../../../headers/pthread.rst:229
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_barrier_destroy.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:230
+msgid "pthread_barrier_init"
+msgstr ""
+
+#: ../../../headers/pthread.rst:233
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_barrier_init.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:234
+msgid "pthread_barrier_wait"
+msgstr ""
+
+#: ../../../headers/pthread.rst:237
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_barrier_wait.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:238
+msgid "pthread_barrierattr_destroy"
+msgstr ""
+
+#: ../../../headers/pthread.rst:241
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_barrierattr_destroy.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:242
+msgid "pthread_barrierattr_getpshared"
+msgstr ""
+
+#: ../../../headers/pthread.rst:245
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_barrierattr_getpshared.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:246
+msgid "pthread_barrierattr_init"
+msgstr ""
+
+#: ../../../headers/pthread.rst:249
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_barrierattr_init.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:250
+msgid "pthread_barrierattr_setpshared"
+msgstr ""
+
+#: ../../../headers/pthread.rst:253
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_barrierattr_setpshared.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:254
+msgid "pthread_cancel"
+msgstr ""
+
+#: ../../../headers/pthread.rst:257
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_cancel.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:258
+msgid "pthread_cond_broadcast"
+msgstr ""
+
+#: ../../../headers/pthread.rst:261
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_cond_broadcast.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:262
+msgid "pthread_cond_clockwait"
+msgstr ""
+
+#: ../../../headers/pthread.rst:265
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_cond_clockwait.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:266
+msgid "pthread_cond_destroy"
+msgstr ""
+
+#: ../../../headers/pthread.rst:269
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_cond_destroy.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:270
+msgid "pthread_cond_init"
+msgstr ""
+
+#: ../../../headers/pthread.rst:273
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_cond_init.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:274
+msgid "pthread_cond_signal"
+msgstr ""
+
+#: ../../../headers/pthread.rst:277
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_cond_signal.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:278
+msgid "pthread_cond_timedwait"
+msgstr ""
+
+#: ../../../headers/pthread.rst:281
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_cond_timedwait.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:282
+msgid "pthread_cond_wait"
+msgstr ""
+
+#: ../../../headers/pthread.rst:285
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_cond_wait.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:286
+msgid "pthread_condattr_destroy"
+msgstr ""
+
+#: ../../../headers/pthread.rst:289
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_condattr_destroy.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:290
+msgid "pthread_condattr_getclock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:293
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_condattr_getclock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:294
+msgid "pthread_condattr_getpshared"
+msgstr ""
+
+#: ../../../headers/pthread.rst:297
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_condattr_getpshared.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:298
+msgid "pthread_condattr_init"
+msgstr ""
+
+#: ../../../headers/pthread.rst:301
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_condattr_init.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:302
+msgid "pthread_condattr_setclock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:305
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_condattr_setclock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:306
+msgid "pthread_condattr_setpshared"
+msgstr ""
+
+#: ../../../headers/pthread.rst:309
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_condattr_setpshared.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:310
+msgid "pthread_create"
+msgstr ""
+
+#: ../../../headers/pthread.rst:313
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_create.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:314
+msgid "pthread_detach"
+msgstr ""
+
+#: ../../../headers/pthread.rst:317
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_detach.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:318
+msgid "pthread_equal"
+msgstr ""
+
+#: ../../../headers/pthread.rst:321
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_equal.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:322
+msgid "pthread_exit"
+msgstr ""
+
+#: ../../../headers/pthread.rst:325
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_exit.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:326
+msgid "pthread_getcpuclockid"
+msgstr ""
+
+#: ../../../headers/pthread.rst:329
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_getcpuclockid.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:330
+msgid "pthread_getschedparam"
+msgstr ""
+
+#: ../../../headers/pthread.rst:333
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_getschedparam.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:334
+msgid "pthread_getspecific"
+msgstr ""
+
+#: ../../../headers/pthread.rst:337
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_getspecific.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:338
+msgid "pthread_join"
+msgstr ""
+
+#: ../../../headers/pthread.rst:341
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_join.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:342
+msgid "pthread_key_create"
+msgstr ""
+
+#: ../../../headers/pthread.rst:345
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_key_create.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:346
+msgid "pthread_key_delete"
+msgstr ""
+
+#: ../../../headers/pthread.rst:349
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_key_delete.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:350
+msgid "pthread_mutex_clocklock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:353
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutex_clocklock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:354
+msgid "pthread_mutex_consistent"
+msgstr ""
+
+#: ../../../headers/pthread.rst:357
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutex_consistent.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:358
+msgid "pthread_mutex_destroy"
+msgstr ""
+
+#: ../../../headers/pthread.rst:361
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutex_destroy.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:362
+msgid "pthread_mutex_getprioceiling"
+msgstr ""
+
+#: ../../../headers/pthread.rst:365
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutex_getprioceiling.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:366
+msgid "pthread_mutex_init"
+msgstr ""
+
+#: ../../../headers/pthread.rst:369
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutex_init.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:370
+msgid "pthread_mutex_lock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:373
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutex_lock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:374
+msgid "pthread_mutex_setprioceiling"
+msgstr ""
+
+#: ../../../headers/pthread.rst:377
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutex_setprioceiling.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:378
+msgid "pthread_mutex_timedlock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:381
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutex_timedlock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:382
+msgid "pthread_mutex_trylock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:385
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutex_trylock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:386
+msgid "pthread_mutex_unlock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:389
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutex_unlock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:390
+msgid "pthread_mutexattr_destroy"
+msgstr ""
+
+#: ../../../headers/pthread.rst:393
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutexattr_destroy.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:394
+msgid "pthread_mutexattr_getprioceiling"
+msgstr ""
+
+#: ../../../headers/pthread.rst:397
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutexattr_getprioceiling.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:398
+msgid "pthread_mutexattr_getprotocol"
+msgstr ""
+
+#: ../../../headers/pthread.rst:401
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutexattr_getprotocol.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:402
+msgid "pthread_mutexattr_getpshared"
+msgstr ""
+
+#: ../../../headers/pthread.rst:405
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutexattr_getpshared.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:406
+msgid "pthread_mutexattr_getrobust"
+msgstr ""
+
+#: ../../../headers/pthread.rst:409
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutexattr_getrobust.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:410
+msgid "pthread_mutexattr_gettype"
+msgstr ""
+
+#: ../../../headers/pthread.rst:413
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutexattr_gettype.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:414
+msgid "pthread_mutexattr_init"
+msgstr ""
+
+#: ../../../headers/pthread.rst:417
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutexattr_init.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:418
+msgid "pthread_mutexattr_setprioceiling"
+msgstr ""
+
+#: ../../../headers/pthread.rst:421
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutexattr_setprioceiling.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:422
+msgid "pthread_mutexattr_setprotocol"
+msgstr ""
+
+#: ../../../headers/pthread.rst:425
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutexattr_setprotocol.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:426
+msgid "pthread_mutexattr_setpshared"
+msgstr ""
+
+#: ../../../headers/pthread.rst:429
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutexattr_setpshared.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:430
+msgid "pthread_mutexattr_setrobust"
+msgstr ""
+
+#: ../../../headers/pthread.rst:433
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutexattr_setrobust.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:434
+msgid "pthread_mutexattr_settype"
+msgstr ""
+
+#: ../../../headers/pthread.rst:437
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_mutexattr_settype.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:438
+msgid "pthread_once"
+msgstr ""
+
+#: ../../../headers/pthread.rst:441
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_once.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:442
+msgid "pthread_rwlock_clockrdlock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:445
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlock_clockrdlock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:446
+msgid "pthread_rwlock_clockwrlock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:449
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlock_clockwrlock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:450
+msgid "pthread_rwlock_destroy"
+msgstr ""
+
+#: ../../../headers/pthread.rst:453
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlock_destroy.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:454
+msgid "pthread_rwlock_init"
+msgstr ""
+
+#: ../../../headers/pthread.rst:457
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlock_init.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:458
+msgid "pthread_rwlock_rdlock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:461
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlock_rdlock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:462
+msgid "pthread_rwlock_timedrdlock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:465
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlock_timedrdlock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:466
+msgid "pthread_rwlock_timedwrlock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:469
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlock_timedwrlock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:470
+msgid "pthread_rwlock_tryrdlock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:473
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlock_tryrdlock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:474
+msgid "pthread_rwlock_trywrlock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:477
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlock_trywrlock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:478
+msgid "pthread_rwlock_unlock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:481
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlock_unlock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:482
+msgid "pthread_rwlock_wrlock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:485
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlock_wrlock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:486
+msgid "pthread_rwlockattr_destroy"
+msgstr ""
+
+#: ../../../headers/pthread.rst:489
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlockattr_destroy.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:490
+msgid "pthread_rwlockattr_getpshared"
+msgstr ""
+
+#: ../../../headers/pthread.rst:493
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlockattr_getpshared.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:494
+msgid "pthread_rwlockattr_init"
+msgstr ""
+
+#: ../../../headers/pthread.rst:497
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlockattr_init.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:498
+msgid "pthread_rwlockattr_setpshared"
+msgstr ""
+
+#: ../../../headers/pthread.rst:501
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_rwlockattr_setpshared.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:502
+msgid "pthread_self"
+msgstr ""
+
+#: ../../../headers/pthread.rst:505
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_self.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:506
+msgid "pthread_setcancelstate"
+msgstr ""
+
+#: ../../../headers/pthread.rst:509
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_setcancelstate.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:510
+msgid "pthread_setcanceltype"
+msgstr ""
+
+#: ../../../headers/pthread.rst:513
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_setcanceltype.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:514
+msgid "pthread_setschedparam"
+msgstr ""
+
+#: ../../../headers/pthread.rst:517
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_setschedparam.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:518
+msgid "pthread_setschedprio"
+msgstr ""
+
+#: ../../../headers/pthread.rst:521
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_setschedprio.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:522
+msgid "pthread_setspecific"
+msgstr ""
+
+#: ../../../headers/pthread.rst:525
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_setspecific.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:526
+msgid "pthread_spin_destroy"
+msgstr ""
+
+#: ../../../headers/pthread.rst:529
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_spin_destroy.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:530
+msgid "pthread_spin_init"
+msgstr ""
+
+#: ../../../headers/pthread.rst:533
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_spin_init.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:534
+msgid "pthread_spin_lock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:537
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_spin_lock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:538
+msgid "pthread_spin_trylock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:541
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_spin_trylock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:542
+msgid "pthread_spin_unlock"
+msgstr ""
+
+#: ../../../headers/pthread.rst:545
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_spin_unlock.html>`__"
+msgstr ""
+
+#: ../../../headers/pthread.rst:546
+msgid "pthread_testcancel"
+msgstr ""
+
+#: ../../../headers/pthread.rst:549
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pthread_testcancel.html>`__"
+msgstr ""

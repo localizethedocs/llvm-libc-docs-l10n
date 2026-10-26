@@ -1,0 +1,392 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/fenv.rst:3
+msgid "fenv.h"
+msgstr ""
+
+#: ../../../headers/fenv.rst:6
+msgid "Macros"
+msgstr "巨集"
+
+#: ../../../headers/fenv.rst:13
+msgid "Macro"
+msgstr "巨集"
+
+#: ../../../headers/fenv.rst:14 ../../../headers/fenv.rst:103
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/fenv.rst:15 ../../../headers/fenv.rst:104
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/fenv.rst:16 ../../../headers/fenv.rst:105
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/fenv.rst:17
+msgid "FE_ALL_EXCEPT"
+msgstr ""
+
+#: ../../../headers/fenv.rst:18 ../../../headers/fenv.rst:42
+#: ../../../headers/fenv.rst:50 ../../../headers/fenv.rst:54
+#: ../../../headers/fenv.rst:58 ../../../headers/fenv.rst:62
+#: ../../../headers/fenv.rst:66 ../../../headers/fenv.rst:70
+#: ../../../headers/fenv.rst:78 ../../../headers/fenv.rst:82
+#: ../../../headers/fenv.rst:86 ../../../headers/fenv.rst:115
+#: ../../../headers/fenv.rst:119 ../../../headers/fenv.rst:123
+#: ../../../headers/fenv.rst:131 ../../../headers/fenv.rst:135
+#: ../../../headers/fenv.rst:139 ../../../headers/fenv.rst:143
+#: ../../../headers/fenv.rst:147 ../../../headers/fenv.rst:151
+#: ../../../headers/fenv.rst:159 ../../../headers/fenv.rst:163
+#: ../../../headers/fenv.rst:167 ../../../headers/fenv.rst:171
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/fenv.rst:19
+msgid "7.6.12"
+msgstr ""
+
+#: ../../../headers/fenv.rst:20 ../../../headers/fenv.rst:44
+#: ../../../headers/fenv.rst:52 ../../../headers/fenv.rst:56
+#: ../../../headers/fenv.rst:60 ../../../headers/fenv.rst:64
+#: ../../../headers/fenv.rst:68 ../../../headers/fenv.rst:72
+#: ../../../headers/fenv.rst:80 ../../../headers/fenv.rst:84
+#: ../../../headers/fenv.rst:88
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"fenv.h.html>`__"
+msgstr ""
+
+#: ../../../headers/fenv.rst:21
+msgid "FE_DEC_DOWNWARD"
+msgstr ""
+
+#: ../../../headers/fenv.rst:23 ../../../headers/fenv.rst:27
+#: ../../../headers/fenv.rst:31 ../../../headers/fenv.rst:35
+#: ../../../headers/fenv.rst:39
+msgid "7.6.14"
+msgstr ""
+
+#: ../../../headers/fenv.rst:25
+msgid "FE_DEC_TONEAREST"
+msgstr ""
+
+#: ../../../headers/fenv.rst:29
+msgid "FE_DEC_TONEARESTFROMZERO"
+msgstr ""
+
+#: ../../../headers/fenv.rst:33
+msgid "FE_DEC_TOWARDZERO"
+msgstr ""
+
+#: ../../../headers/fenv.rst:37
+msgid "FE_DEC_UPWARD"
+msgstr ""
+
+#: ../../../headers/fenv.rst:41
+msgid "FE_DFL_ENV"
+msgstr ""
+
+#: ../../../headers/fenv.rst:43
+msgid "7.6.17"
+msgstr ""
+
+#: ../../../headers/fenv.rst:45
+msgid "FE_DFL_MODE"
+msgstr ""
+
+#: ../../../headers/fenv.rst:47
+msgid "7.6.11"
+msgstr ""
+
+#: ../../../headers/fenv.rst:49
+msgid "FE_DIVBYZERO"
+msgstr ""
+
+#: ../../../headers/fenv.rst:51 ../../../headers/fenv.rst:59
+#: ../../../headers/fenv.rst:63 ../../../headers/fenv.rst:67
+#: ../../../headers/fenv.rst:83
+msgid "7.6.9"
+msgstr ""
+
+#: ../../../headers/fenv.rst:53
+msgid "FE_DOWNWARD"
+msgstr ""
+
+#: ../../../headers/fenv.rst:55 ../../../headers/fenv.rst:71
+#: ../../../headers/fenv.rst:75 ../../../headers/fenv.rst:79
+#: ../../../headers/fenv.rst:87
+msgid "7.6.13"
+msgstr ""
+
+#: ../../../headers/fenv.rst:57
+msgid "FE_INEXACT"
+msgstr ""
+
+#: ../../../headers/fenv.rst:61
+msgid "FE_INVALID"
+msgstr ""
+
+#: ../../../headers/fenv.rst:65
+msgid "FE_OVERFLOW"
+msgstr ""
+
+#: ../../../headers/fenv.rst:69
+msgid "FE_TONEAREST"
+msgstr ""
+
+#: ../../../headers/fenv.rst:73
+msgid "FE_TONEARESTFROMZERO"
+msgstr ""
+
+#: ../../../headers/fenv.rst:77
+msgid "FE_TOWARDZERO"
+msgstr ""
+
+#: ../../../headers/fenv.rst:81
+msgid "FE_UNDERFLOW"
+msgstr ""
+
+#: ../../../headers/fenv.rst:85
+msgid "FE_UPWARD"
+msgstr ""
+
+#: ../../../headers/fenv.rst:89
+msgid "__STDC_VERSION_FENV_H__"
+msgstr ""
+
+#: ../../../headers/fenv.rst:91
+msgid "7.6.5"
+msgstr ""
+
+#: ../../../headers/fenv.rst:95
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/fenv.rst:102
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/fenv.rst:106
+msgid "fe_dec_getround"
+msgstr ""
+
+#: ../../../headers/fenv.rst:108
+msgid "7.6.5.3"
+msgstr ""
+
+#: ../../../headers/fenv.rst:110
+msgid "fe_dec_setround"
+msgstr ""
+
+#: ../../../headers/fenv.rst:112
+msgid "7.6.5.6"
+msgstr ""
+
+#: ../../../headers/fenv.rst:114
+msgid "feclearexcept"
+msgstr ""
+
+#: ../../../headers/fenv.rst:116
+msgid "7.6.4.1"
+msgstr ""
+
+#: ../../../headers/fenv.rst:117
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"feclearexcept.html>`__"
+msgstr ""
+
+#: ../../../headers/fenv.rst:118
+msgid "fegetenv"
+msgstr ""
+
+#: ../../../headers/fenv.rst:120
+msgid "7.6.6.1"
+msgstr ""
+
+#: ../../../headers/fenv.rst:121
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fegetenv.html>`__"
+msgstr ""
+
+#: ../../../headers/fenv.rst:122
+msgid "fegetexceptflag"
+msgstr ""
+
+#: ../../../headers/fenv.rst:124
+msgid "7.6.4.2"
+msgstr ""
+
+#: ../../../headers/fenv.rst:125
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fegetexceptflag.html>`__"
+msgstr ""
+
+#: ../../../headers/fenv.rst:126
+msgid "fegetmode"
+msgstr ""
+
+#: ../../../headers/fenv.rst:128
+msgid "7.6.5.1"
+msgstr ""
+
+#: ../../../headers/fenv.rst:130
+msgid "fegetround"
+msgstr ""
+
+#: ../../../headers/fenv.rst:132
+msgid "7.6.5.2"
+msgstr ""
+
+#: ../../../headers/fenv.rst:133
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fegetround.html>`__"
+msgstr ""
+
+#: ../../../headers/fenv.rst:134
+msgid "feholdexcept"
+msgstr ""
+
+#: ../../../headers/fenv.rst:136
+msgid "7.6.6.2"
+msgstr ""
+
+#: ../../../headers/fenv.rst:137
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"feholdexcept.html>`__"
+msgstr ""
+
+#: ../../../headers/fenv.rst:138
+msgid "feraiseexcept"
+msgstr ""
+
+#: ../../../headers/fenv.rst:140
+msgid "7.6.4.3"
+msgstr ""
+
+#: ../../../headers/fenv.rst:141
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"feraiseexcept.html>`__"
+msgstr ""
+
+#: ../../../headers/fenv.rst:142
+msgid "fesetenv"
+msgstr ""
+
+#: ../../../headers/fenv.rst:144
+msgid "7.6.6.3"
+msgstr ""
+
+#: ../../../headers/fenv.rst:145
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fesetenv.html>`__"
+msgstr ""
+
+#: ../../../headers/fenv.rst:146
+msgid "fesetexcept"
+msgstr ""
+
+#: ../../../headers/fenv.rst:148
+msgid "7.6.4.4"
+msgstr ""
+
+#: ../../../headers/fenv.rst:150
+msgid "fesetexceptflag"
+msgstr ""
+
+#: ../../../headers/fenv.rst:152
+msgid "7.6.4.5"
+msgstr ""
+
+#: ../../../headers/fenv.rst:153
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fesetexceptflag.html>`__"
+msgstr ""
+
+#: ../../../headers/fenv.rst:154
+msgid "fesetmode"
+msgstr ""
+
+#: ../../../headers/fenv.rst:156
+msgid "7.6.5.4"
+msgstr ""
+
+#: ../../../headers/fenv.rst:158
+msgid "fesetround"
+msgstr ""
+
+#: ../../../headers/fenv.rst:160
+msgid "7.6.5.5"
+msgstr ""
+
+#: ../../../headers/fenv.rst:161
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fesetround.html>`__"
+msgstr ""
+
+#: ../../../headers/fenv.rst:162
+msgid "fetestexcept"
+msgstr ""
+
+#: ../../../headers/fenv.rst:164
+msgid "7.6.4.7"
+msgstr ""
+
+#: ../../../headers/fenv.rst:165
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fetestexcept.html>`__"
+msgstr ""
+
+#: ../../../headers/fenv.rst:166
+msgid "fetestexceptflag"
+msgstr ""
+
+#: ../../../headers/fenv.rst:168
+msgid "7.6.4.6"
+msgstr ""
+
+#: ../../../headers/fenv.rst:170
+msgid "feupdateenv"
+msgstr ""
+
+#: ../../../headers/fenv.rst:172
+msgid "7.6.6.4"
+msgstr ""
+
+#: ../../../headers/fenv.rst:173
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"feupdateenv.html>`__"
+msgstr ""

@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../dev/implementation_standard.md:3
+msgid "Convention for implementing entrypoints"
+msgstr ""
+
+#: ../../../dev/implementation_standard.md:5
+msgid ""
+"The implementations of LLVM-libc entrypoints live in the `src/` directory, "
+"organized by the public header they belong to. Some entrypoints are "
+"platform- specific, and so their implementations are in a subdirectory with "
+"the name of the platform (e.g., `stdio/linux/remove.cpp`)."
+msgstr ""
+
+#: ../../../dev/implementation_standard.md:10
+msgid ""
+"For a complete overview of what an entrypoint is and how it is managed in "
+"the build system, see the {ref}`entrypoints` documentation."
+msgstr ""
+
+#: ../../../dev/implementation_standard.md:13
+msgid ""
+"Implementation of entrypoints can span multiple `.cpp` and `.h` files, but "
+"there will be at least one header file with name of the form `<entrypoint "
+"name>.h` for every entrypoint. This header file is called the implementation "
+"header file. For the `isalpha` function, the path to the implementation "
+"header file is `src/ctype/isalpha.h`."
+msgstr ""
+
+#: ../../../dev/implementation_standard.md:19
+msgid "Implementation Header File Structure"
+msgstr ""
+
+#: ../../../dev/implementation_standard.md:21
+msgid ""
+"We will use the `isalpha` function from the public `ctype.h` header file as "
+"an example. The `isalpha` function will be declared in an internal header "
+"file `src/ctype/isalpha.h` as follows:"
+msgstr ""
+
+#: ../../../dev/implementation_standard.md:39
+msgid ""
+"All LLVM-libc implementation constructs must be enclosed in the "
+"`LIBC_NAMESPACE_DECL` namespace. See {ref}`code_style` for the full "
+"technical rationale and macro definitions."
+msgstr ""
+
+#: ../../../dev/implementation_standard.md:43
+msgid "`.cpp` File Structure"
+msgstr ""
+
+#: ../../../dev/implementation_standard.md:45
+msgid ""
+"The main `.cpp` file is named `<entrypoint name>.cpp` and is usually in the "
+"same folder as the header. It contains the signature of the entrypoint "
+"function, which must be defined with the `LLVM_LIBC_FUNCTION` macro. For "
+"example, the `isalpha` function from `ctype.h` is defined as follows, in the "
+"file `src/ctype/isalpha.cpp`:"
+msgstr ""
+
+#: ../../../dev/implementation_standard.md:63
+msgid ""
+"Notice the use of the macro `LLVM_LIBC_FUNCTION`. This macro helps us define "
+"a C alias symbol for the C++ implementation. For example, for a library "
+"build, the macro is defined as follows:"
+msgstr ""
+
+#: ../../../dev/implementation_standard.md:77
+msgid ""
+"The LLVM_LIBC_FUNCTION_ATTR macro is normally defined to nothing, but can be "
+"defined by vendors who want to set their own attributes."
+msgstr ""
+
+#: ../../../dev/implementation_standard.md:80
+msgid "When defining a variable, use the `LLVM_LIBC_VARIABLE` macro:"
+msgstr ""

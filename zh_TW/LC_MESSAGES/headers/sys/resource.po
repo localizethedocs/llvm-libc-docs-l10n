@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/sys/resource.rst:3
+msgid "sys/resource.h"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:6
+msgid "Macros"
+msgstr "巨集"
+
+#: ../../../headers/sys/resource.rst:13
+msgid "Macro"
+msgstr "巨集"
+
+#: ../../../headers/sys/resource.rst:14 ../../../headers/sys/resource.rst:87
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:15 ../../../headers/sys/resource.rst:88
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:16 ../../../headers/sys/resource.rst:89
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:17
+msgid "PRIO_PGRP"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:18 ../../../headers/sys/resource.rst:22
+#: ../../../headers/sys/resource.rst:26 ../../../headers/sys/resource.rst:30
+#: ../../../headers/sys/resource.rst:34 ../../../headers/sys/resource.rst:38
+#: ../../../headers/sys/resource.rst:42 ../../../headers/sys/resource.rst:46
+#: ../../../headers/sys/resource.rst:50 ../../../headers/sys/resource.rst:54
+#: ../../../headers/sys/resource.rst:58 ../../../headers/sys/resource.rst:70
+#: ../../../headers/sys/resource.rst:74 ../../../headers/sys/resource.rst:91
+#: ../../../headers/sys/resource.rst:95 ../../../headers/sys/resource.rst:99
+#: ../../../headers/sys/resource.rst:103 ../../../headers/sys/resource.rst:107
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:20 ../../../headers/sys/resource.rst:24
+#: ../../../headers/sys/resource.rst:28 ../../../headers/sys/resource.rst:32
+#: ../../../headers/sys/resource.rst:36 ../../../headers/sys/resource.rst:40
+#: ../../../headers/sys/resource.rst:44 ../../../headers/sys/resource.rst:48
+#: ../../../headers/sys/resource.rst:52 ../../../headers/sys/resource.rst:56
+#: ../../../headers/sys/resource.rst:60 ../../../headers/sys/resource.rst:64
+#: ../../../headers/sys/resource.rst:68 ../../../headers/sys/resource.rst:72
+#: ../../../headers/sys/resource.rst:76
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"sys_resource.h.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:21
+msgid "PRIO_PROCESS"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:25
+msgid "PRIO_USER"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:29
+msgid "RLIMIT_AS"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:33
+msgid "RLIMIT_CORE"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:37
+msgid "RLIMIT_CPU"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:41
+msgid "RLIMIT_DATA"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:45
+msgid "RLIMIT_FSIZE"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:49
+msgid "RLIMIT_NOFILE"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:53
+msgid "RLIMIT_STACK"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:57
+msgid "RLIM_INFINITY"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:61
+msgid "RLIM_SAVED_CUR"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:65
+msgid "RLIM_SAVED_MAX"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:69
+msgid "RUSAGE_CHILDREN"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:73
+msgid "RUSAGE_SELF"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:79
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:86
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:90
+msgid "getpriority"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:93
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getpriority.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:94
+msgid "getrlimit"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:97
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getrlimit.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:98
+msgid "getrusage"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:101
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getrusage.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:102
+msgid "setpriority"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:105
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setpriority.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:106
+msgid "setrlimit"
+msgstr ""
+
+#: ../../../headers/sys/resource.rst:109
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setrlimit.html>`__"
+msgstr ""

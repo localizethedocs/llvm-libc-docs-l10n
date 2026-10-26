@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../platform_support.md:1
+msgid "Platform Support"
+msgstr ""
+
+#: ../../../platform_support.md:3
+msgid ""
+"Development is currently mostly focused on Linux. MacOS and Windows has "
+"partial support, but has bitrot and isn't being tested continuously."
+msgstr ""
+
+#: ../../../platform_support.md:6
+msgid ""
+"LLVM-libc is currently being integrated into Android and Fuchsia operating "
+"systems via {doc}`overlay mode <overlay_mode>`."
+msgstr ""
+
+#: ../../../platform_support.md:9
+msgid ""
+"For Linux, we support kernel versions as listed on [kernel.org](https://"
+"kernel.org/), including `longterm` (not past EOL date), `stable`, and "
+"`mainline` versions. We actively adopt new features from `linux-next`."
+msgstr ""
+
+#: ../../../platform_support.md:14
+msgid ""
+"For Windows, we plan to support products within their lifecycle. Please "
+"refer to [Search Product and Services Lifecycle Information](https://learn."
+"microsoft.com/en-us/lifecycle/products/?products=windows) for more "
+"information."
+msgstr ""
+
+#: ../../../platform_support.md:17
+msgid ""
+"LLVM-libc does not guarantee backward compatibility with operating systems "
+"that have reached their EOL. Compatibility patches for obsolete operating "
+"systems will not be accepted."
+msgstr ""
+
+#: ../../../platform_support.md:21
+msgid "For GPU, reference {doc}`our GPU docs <gpu/index>`."
+msgstr ""

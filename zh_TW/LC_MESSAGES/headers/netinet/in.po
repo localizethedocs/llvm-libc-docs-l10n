@@ -1,0 +1,261 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/netinet/in.rst:3
+msgid "netinet/in.h"
+msgstr "netinet/in.h"
+
+#: ../../../headers/netinet/in.rst:6
+msgid "Macros"
+msgstr "巨集"
+
+#: ../../../headers/netinet/in.rst:13
+msgid "Macro"
+msgstr "巨集"
+
+#: ../../../headers/netinet/in.rst:14 ../../../headers/netinet/in.rst:155
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:15 ../../../headers/netinet/in.rst:156
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:16 ../../../headers/netinet/in.rst:157
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:17
+msgid "IN6ADDR_ANY_INIT"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:18 ../../../headers/netinet/in.rst:22
+#: ../../../headers/netinet/in.rst:26 ../../../headers/netinet/in.rst:30
+#: ../../../headers/netinet/in.rst:34 ../../../headers/netinet/in.rst:38
+#: ../../../headers/netinet/in.rst:42 ../../../headers/netinet/in.rst:46
+#: ../../../headers/netinet/in.rst:50 ../../../headers/netinet/in.rst:54
+#: ../../../headers/netinet/in.rst:58 ../../../headers/netinet/in.rst:62
+#: ../../../headers/netinet/in.rst:66 ../../../headers/netinet/in.rst:70
+#: ../../../headers/netinet/in.rst:74 ../../../headers/netinet/in.rst:78
+#: ../../../headers/netinet/in.rst:82 ../../../headers/netinet/in.rst:94
+#: ../../../headers/netinet/in.rst:98 ../../../headers/netinet/in.rst:102
+#: ../../../headers/netinet/in.rst:106 ../../../headers/netinet/in.rst:110
+#: ../../../headers/netinet/in.rst:114 ../../../headers/netinet/in.rst:118
+#: ../../../headers/netinet/in.rst:122 ../../../headers/netinet/in.rst:126
+#: ../../../headers/netinet/in.rst:130 ../../../headers/netinet/in.rst:134
+#: ../../../headers/netinet/in.rst:138 ../../../headers/netinet/in.rst:142
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:20 ../../../headers/netinet/in.rst:24
+#: ../../../headers/netinet/in.rst:28 ../../../headers/netinet/in.rst:32
+#: ../../../headers/netinet/in.rst:36 ../../../headers/netinet/in.rst:40
+#: ../../../headers/netinet/in.rst:44 ../../../headers/netinet/in.rst:48
+#: ../../../headers/netinet/in.rst:52 ../../../headers/netinet/in.rst:56
+#: ../../../headers/netinet/in.rst:60 ../../../headers/netinet/in.rst:64
+#: ../../../headers/netinet/in.rst:68 ../../../headers/netinet/in.rst:72
+#: ../../../headers/netinet/in.rst:76 ../../../headers/netinet/in.rst:80
+#: ../../../headers/netinet/in.rst:88 ../../../headers/netinet/in.rst:92
+#: ../../../headers/netinet/in.rst:96 ../../../headers/netinet/in.rst:100
+#: ../../../headers/netinet/in.rst:104 ../../../headers/netinet/in.rst:108
+#: ../../../headers/netinet/in.rst:112 ../../../headers/netinet/in.rst:116
+#: ../../../headers/netinet/in.rst:120 ../../../headers/netinet/in.rst:124
+#: ../../../headers/netinet/in.rst:128 ../../../headers/netinet/in.rst:132
+#: ../../../headers/netinet/in.rst:136 ../../../headers/netinet/in.rst:140
+#: ../../../headers/netinet/in.rst:144
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"netinet_in.h.html>`__"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:21
+msgid "IN6ADDR_LOOPBACK_INIT"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:25
+msgid "IN6_IS_ADDR_LINKLOCAL"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:29
+msgid "IN6_IS_ADDR_LOOPBACK"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:33
+msgid "IN6_IS_ADDR_MC_GLOBAL"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:37
+msgid "IN6_IS_ADDR_MC_LINKLOCAL"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:41
+msgid "IN6_IS_ADDR_MC_NODELOCAL"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:45
+msgid "IN6_IS_ADDR_MC_ORGLOCAL"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:49
+msgid "IN6_IS_ADDR_MC_SITELOCAL"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:53
+msgid "IN6_IS_ADDR_MULTICAST"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:57
+msgid "IN6_IS_ADDR_SITELOCAL"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:61
+msgid "IN6_IS_ADDR_UNSPECIFIED"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:65
+msgid "IN6_IS_ADDR_V4COMPAT"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:69
+msgid "IN6_IS_ADDR_V4MAPPED"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:73
+msgid "INADDR_ANY"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:77
+msgid "INADDR_BROADCAST"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:81
+msgid "INADDR_LOOPBACK"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:85
+msgid "INET6_ADDRSTRLEN"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:89
+msgid "INET_ADDRSTRLEN"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:93
+msgid "IPPROTO_ICMP"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:97
+msgid "IPPROTO_IP"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:101
+msgid "IPPROTO_IPV6"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:105
+msgid "IPPROTO_RAW"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:109
+msgid "IPPROTO_TCP"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:113
+msgid "IPPROTO_UDP"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:117
+msgid "IPV6_JOIN_GROUP"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:121
+msgid "IPV6_LEAVE_GROUP"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:125
+msgid "IPV6_MULTICAST_HOPS"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:129
+msgid "IPV6_MULTICAST_IF"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:133
+msgid "IPV6_MULTICAST_LOOP"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:137
+msgid "IPV6_UNICAST_HOPS"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:141
+msgid "IPV6_V6ONLY"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:147
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:154
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:158
+msgid "htonl"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:161
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"htonl.html>`__"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:162
+msgid "htons"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:165
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"htons.html>`__"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:166
+msgid "ntohl"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:169
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ntohl.html>`__"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:170
+msgid "ntohs"
+msgstr ""
+
+#: ../../../headers/netinet/in.rst:173
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ntohs.html>`__"
+msgstr ""

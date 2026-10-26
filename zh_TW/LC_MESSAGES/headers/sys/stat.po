@@ -1,0 +1,422 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/sys/stat.rst:3
+msgid "sys/stat.h"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:6
+msgid "Macros"
+msgstr "巨集"
+
+#: ../../../headers/sys/stat.rst:13
+msgid "Macro"
+msgstr "巨集"
+
+#: ../../../headers/sys/stat.rst:14 ../../../headers/sys/stat.rst:183
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:15 ../../../headers/sys/stat.rst:184
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:16 ../../../headers/sys/stat.rst:185
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:17
+msgid "S_IFBLK"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:18 ../../../headers/sys/stat.rst:22
+#: ../../../headers/sys/stat.rst:26 ../../../headers/sys/stat.rst:30
+#: ../../../headers/sys/stat.rst:34 ../../../headers/sys/stat.rst:38
+#: ../../../headers/sys/stat.rst:42 ../../../headers/sys/stat.rst:46
+#: ../../../headers/sys/stat.rst:50 ../../../headers/sys/stat.rst:54
+#: ../../../headers/sys/stat.rst:58 ../../../headers/sys/stat.rst:62
+#: ../../../headers/sys/stat.rst:66 ../../../headers/sys/stat.rst:70
+#: ../../../headers/sys/stat.rst:74 ../../../headers/sys/stat.rst:78
+#: ../../../headers/sys/stat.rst:82 ../../../headers/sys/stat.rst:86
+#: ../../../headers/sys/stat.rst:90 ../../../headers/sys/stat.rst:94
+#: ../../../headers/sys/stat.rst:98 ../../../headers/sys/stat.rst:102
+#: ../../../headers/sys/stat.rst:106 ../../../headers/sys/stat.rst:110
+#: ../../../headers/sys/stat.rst:114 ../../../headers/sys/stat.rst:118
+#: ../../../headers/sys/stat.rst:122 ../../../headers/sys/stat.rst:126
+#: ../../../headers/sys/stat.rst:130 ../../../headers/sys/stat.rst:134
+#: ../../../headers/sys/stat.rst:154 ../../../headers/sys/stat.rst:158
+#: ../../../headers/sys/stat.rst:187 ../../../headers/sys/stat.rst:191
+#: ../../../headers/sys/stat.rst:195 ../../../headers/sys/stat.rst:199
+#: ../../../headers/sys/stat.rst:203 ../../../headers/sys/stat.rst:207
+#: ../../../headers/sys/stat.rst:211 ../../../headers/sys/stat.rst:215
+#: ../../../headers/sys/stat.rst:219 ../../../headers/sys/stat.rst:223
+#: ../../../headers/sys/stat.rst:227 ../../../headers/sys/stat.rst:231
+#: ../../../headers/sys/stat.rst:235 ../../../headers/sys/stat.rst:239
+#: ../../../headers/sys/stat.rst:243 ../../../headers/sys/stat.rst:247
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:20 ../../../headers/sys/stat.rst:24
+#: ../../../headers/sys/stat.rst:28 ../../../headers/sys/stat.rst:32
+#: ../../../headers/sys/stat.rst:36 ../../../headers/sys/stat.rst:40
+#: ../../../headers/sys/stat.rst:44 ../../../headers/sys/stat.rst:48
+#: ../../../headers/sys/stat.rst:52 ../../../headers/sys/stat.rst:56
+#: ../../../headers/sys/stat.rst:60 ../../../headers/sys/stat.rst:64
+#: ../../../headers/sys/stat.rst:68 ../../../headers/sys/stat.rst:72
+#: ../../../headers/sys/stat.rst:76 ../../../headers/sys/stat.rst:80
+#: ../../../headers/sys/stat.rst:84 ../../../headers/sys/stat.rst:88
+#: ../../../headers/sys/stat.rst:92 ../../../headers/sys/stat.rst:96
+#: ../../../headers/sys/stat.rst:100 ../../../headers/sys/stat.rst:104
+#: ../../../headers/sys/stat.rst:108 ../../../headers/sys/stat.rst:112
+#: ../../../headers/sys/stat.rst:116 ../../../headers/sys/stat.rst:120
+#: ../../../headers/sys/stat.rst:124 ../../../headers/sys/stat.rst:128
+#: ../../../headers/sys/stat.rst:132 ../../../headers/sys/stat.rst:136
+#: ../../../headers/sys/stat.rst:140 ../../../headers/sys/stat.rst:144
+#: ../../../headers/sys/stat.rst:148 ../../../headers/sys/stat.rst:152
+#: ../../../headers/sys/stat.rst:156 ../../../headers/sys/stat.rst:160
+#: ../../../headers/sys/stat.rst:164 ../../../headers/sys/stat.rst:168
+#: ../../../headers/sys/stat.rst:172
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"sys_stat.h.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:21
+msgid "S_IFCHR"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:25
+msgid "S_IFDIR"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:29
+msgid "S_IFIFO"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:33
+msgid "S_IFLNK"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:37
+msgid "S_IFMT"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:41
+msgid "S_IFREG"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:45
+msgid "S_IFSOCK"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:49
+msgid "S_IRGRP"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:53
+msgid "S_IROTH"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:57
+msgid "S_IRUSR"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:61
+msgid "S_IRWXG"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:65
+msgid "S_IRWXO"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:69
+msgid "S_IRWXU"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:73
+msgid "S_ISBLK"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:77
+msgid "S_ISCHR"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:81
+msgid "S_ISDIR"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:85
+msgid "S_ISFIFO"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:89
+msgid "S_ISGID"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:93
+msgid "S_ISLNK"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:97
+msgid "S_ISREG"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:101
+msgid "S_ISSOCK"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:105
+msgid "S_ISUID"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:109
+msgid "S_ISVTX"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:113
+msgid "S_IWGRP"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:117
+msgid "S_IWOTH"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:121
+msgid "S_IWUSR"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:125
+msgid "S_IXGRP"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:129
+msgid "S_IXOTH"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:133
+msgid "S_IXUSR"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:137
+msgid "S_TYPEISMQ"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:141
+msgid "S_TYPEISSEM"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:145
+msgid "S_TYPEISSHM"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:149
+msgid "S_TYPEISTMO"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:153
+msgid "UTIME_NOW"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:157
+msgid "UTIME_OMIT"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:161
+msgid "st_atime"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:165
+msgid "st_ctime"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:169
+msgid "st_mtime"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:175
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:182
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:186
+msgid "chmod"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:189
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"chmod.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:190
+msgid "fchmod"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:193
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fchmod.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:194
+msgid "fchmodat"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:197
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fchmodat.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:198
+msgid "fstat"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:201
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fstat.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:202
+msgid "fstatat"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:205
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fstatat.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:206
+msgid "futimens"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:209
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"futimens.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:210
+msgid "lstat"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:213
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"lstat.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:214
+msgid "mkdir"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:217
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mkdir.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:218
+msgid "mkdirat"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:221
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mkdirat.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:222
+msgid "mkfifo"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:225
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mkfifo.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:226
+msgid "mkfifoat"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:229
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mkfifoat.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:230
+msgid "mknod"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:233
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mknod.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:234
+msgid "mknodat"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:237
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mknodat.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:238
+msgid "stat"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:241
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"stat.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:242
+msgid "umask"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:245
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"umask.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:246
+msgid "utimensat"
+msgstr ""
+
+#: ../../../headers/sys/stat.rst:249
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"utimensat.html>`__"
+msgstr ""

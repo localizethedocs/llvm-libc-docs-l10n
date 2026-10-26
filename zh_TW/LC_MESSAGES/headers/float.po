@@ -1,0 +1,334 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/float.rst:3
+msgid "float.h"
+msgstr ""
+
+#: ../../../headers/float.rst:6
+msgid "Macros"
+msgstr "巨集"
+
+#: ../../../headers/float.rst:13
+msgid "Macro"
+msgstr "巨集"
+
+#: ../../../headers/float.rst:14
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/float.rst:15
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/float.rst:16
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/float.rst:17
+msgid "DBL_DECIMAL_DIG"
+msgstr ""
+
+#: ../../../headers/float.rst:18 ../../../headers/float.rst:22
+#: ../../../headers/float.rst:26 ../../../headers/float.rst:30
+#: ../../../headers/float.rst:38 ../../../headers/float.rst:42
+#: ../../../headers/float.rst:46 ../../../headers/float.rst:50
+#: ../../../headers/float.rst:54 ../../../headers/float.rst:58
+#: ../../../headers/float.rst:62 ../../../headers/float.rst:74
+#: ../../../headers/float.rst:78 ../../../headers/float.rst:82
+#: ../../../headers/float.rst:86 ../../../headers/float.rst:90
+#: ../../../headers/float.rst:94 ../../../headers/float.rst:98
+#: ../../../headers/float.rst:106 ../../../headers/float.rst:110
+#: ../../../headers/float.rst:114 ../../../headers/float.rst:118
+#: ../../../headers/float.rst:122 ../../../headers/float.rst:126
+#: ../../../headers/float.rst:130 ../../../headers/float.rst:138
+#: ../../../headers/float.rst:142 ../../../headers/float.rst:150
+#: ../../../headers/float.rst:158 ../../../headers/float.rst:162
+#: ../../../headers/float.rst:166 ../../../headers/float.rst:170
+#: ../../../headers/float.rst:178 ../../../headers/float.rst:182
+#: ../../../headers/float.rst:186 ../../../headers/float.rst:190
+#: ../../../headers/float.rst:194 ../../../headers/float.rst:198
+#: ../../../headers/float.rst:202 ../../../headers/float.rst:214
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/float.rst:19 ../../../headers/float.rst:23
+#: ../../../headers/float.rst:27 ../../../headers/float.rst:31
+#: ../../../headers/float.rst:35 ../../../headers/float.rst:39
+#: ../../../headers/float.rst:43 ../../../headers/float.rst:47
+#: ../../../headers/float.rst:51 ../../../headers/float.rst:55
+#: ../../../headers/float.rst:59 ../../../headers/float.rst:63
+#: ../../../headers/float.rst:67 ../../../headers/float.rst:71
+#: ../../../headers/float.rst:75 ../../../headers/float.rst:79
+#: ../../../headers/float.rst:83 ../../../headers/float.rst:87
+#: ../../../headers/float.rst:91 ../../../headers/float.rst:95
+#: ../../../headers/float.rst:99 ../../../headers/float.rst:103
+#: ../../../headers/float.rst:107 ../../../headers/float.rst:111
+#: ../../../headers/float.rst:115 ../../../headers/float.rst:119
+#: ../../../headers/float.rst:123 ../../../headers/float.rst:127
+#: ../../../headers/float.rst:131 ../../../headers/float.rst:135
+#: ../../../headers/float.rst:139 ../../../headers/float.rst:143
+#: ../../../headers/float.rst:147 ../../../headers/float.rst:151
+#: ../../../headers/float.rst:155 ../../../headers/float.rst:159
+#: ../../../headers/float.rst:163 ../../../headers/float.rst:167
+#: ../../../headers/float.rst:171 ../../../headers/float.rst:175
+#: ../../../headers/float.rst:179 ../../../headers/float.rst:183
+#: ../../../headers/float.rst:187 ../../../headers/float.rst:191
+#: ../../../headers/float.rst:195 ../../../headers/float.rst:199
+#: ../../../headers/float.rst:203 ../../../headers/float.rst:207
+#: ../../../headers/float.rst:211 ../../../headers/float.rst:215
+#: ../../../headers/float.rst:219
+msgid "5.3.5.3.3"
+msgstr ""
+
+#: ../../../headers/float.rst:20 ../../../headers/float.rst:24
+#: ../../../headers/float.rst:28 ../../../headers/float.rst:32
+#: ../../../headers/float.rst:44 ../../../headers/float.rst:48
+#: ../../../headers/float.rst:52 ../../../headers/float.rst:56
+#: ../../../headers/float.rst:60 ../../../headers/float.rst:64
+#: ../../../headers/float.rst:76 ../../../headers/float.rst:80
+#: ../../../headers/float.rst:84 ../../../headers/float.rst:88
+#: ../../../headers/float.rst:92 ../../../headers/float.rst:96
+#: ../../../headers/float.rst:100 ../../../headers/float.rst:112
+#: ../../../headers/float.rst:116 ../../../headers/float.rst:120
+#: ../../../headers/float.rst:124 ../../../headers/float.rst:128
+#: ../../../headers/float.rst:132 ../../../headers/float.rst:140
+#: ../../../headers/float.rst:144 ../../../headers/float.rst:152
+#: ../../../headers/float.rst:160 ../../../headers/float.rst:164
+#: ../../../headers/float.rst:168 ../../../headers/float.rst:172
+#: ../../../headers/float.rst:184 ../../../headers/float.rst:188
+#: ../../../headers/float.rst:192 ../../../headers/float.rst:196
+#: ../../../headers/float.rst:200 ../../../headers/float.rst:204
+#: ../../../headers/float.rst:216
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"float.h.html>`__"
+msgstr ""
+
+#: ../../../headers/float.rst:21
+msgid "DBL_DIG"
+msgstr ""
+
+#: ../../../headers/float.rst:25
+msgid "DBL_EPSILON"
+msgstr ""
+
+#: ../../../headers/float.rst:29
+msgid "DBL_HAS_SUBNORM"
+msgstr ""
+
+#: ../../../headers/float.rst:33
+msgid "DBL_IS_IEC_60559"
+msgstr ""
+
+#: ../../../headers/float.rst:37
+msgid "DBL_MANT_DIG"
+msgstr ""
+
+#: ../../../headers/float.rst:41
+msgid "DBL_MAX"
+msgstr ""
+
+#: ../../../headers/float.rst:45
+msgid "DBL_MAX_10_EXP"
+msgstr ""
+
+#: ../../../headers/float.rst:49
+msgid "DBL_MAX_EXP"
+msgstr ""
+
+#: ../../../headers/float.rst:53
+msgid "DBL_MIN"
+msgstr ""
+
+#: ../../../headers/float.rst:57
+msgid "DBL_MIN_10_EXP"
+msgstr ""
+
+#: ../../../headers/float.rst:61
+msgid "DBL_MIN_EXP"
+msgstr ""
+
+#: ../../../headers/float.rst:65
+msgid "DBL_NORM_MAX"
+msgstr ""
+
+#: ../../../headers/float.rst:69
+msgid "DBL_SNAN"
+msgstr ""
+
+#: ../../../headers/float.rst:73
+msgid "DBL_TRUE_MIN"
+msgstr ""
+
+#: ../../../headers/float.rst:77
+msgid "DECIMAL_DIG"
+msgstr ""
+
+#: ../../../headers/float.rst:81
+msgid "FLT_DECIMAL_DIG"
+msgstr ""
+
+#: ../../../headers/float.rst:85
+msgid "FLT_DIG"
+msgstr ""
+
+#: ../../../headers/float.rst:89
+msgid "FLT_EPSILON"
+msgstr ""
+
+#: ../../../headers/float.rst:93
+msgid "FLT_EVAL_METHOD"
+msgstr ""
+
+#: ../../../headers/float.rst:97
+msgid "FLT_HAS_SUBNORM"
+msgstr ""
+
+#: ../../../headers/float.rst:101
+msgid "FLT_IS_IEC_60559"
+msgstr ""
+
+#: ../../../headers/float.rst:105
+msgid "FLT_MANT_DIG"
+msgstr ""
+
+#: ../../../headers/float.rst:109
+msgid "FLT_MAX"
+msgstr ""
+
+#: ../../../headers/float.rst:113
+msgid "FLT_MAX_10_EXP"
+msgstr ""
+
+#: ../../../headers/float.rst:117
+msgid "FLT_MAX_EXP"
+msgstr ""
+
+#: ../../../headers/float.rst:121
+msgid "FLT_MIN"
+msgstr ""
+
+#: ../../../headers/float.rst:125
+msgid "FLT_MIN_10_EXP"
+msgstr ""
+
+#: ../../../headers/float.rst:129
+msgid "FLT_MIN_EXP"
+msgstr ""
+
+#: ../../../headers/float.rst:133
+msgid "FLT_NORM_MAX"
+msgstr ""
+
+#: ../../../headers/float.rst:137
+msgid "FLT_RADIX"
+msgstr ""
+
+#: ../../../headers/float.rst:141
+msgid "FLT_ROUNDS"
+msgstr ""
+
+#: ../../../headers/float.rst:145
+msgid "FLT_SNAN"
+msgstr ""
+
+#: ../../../headers/float.rst:149
+msgid "FLT_TRUE_MIN"
+msgstr ""
+
+#: ../../../headers/float.rst:153
+msgid "INFINITY"
+msgstr ""
+
+#: ../../../headers/float.rst:157
+msgid "LDBL_DECIMAL_DIG"
+msgstr ""
+
+#: ../../../headers/float.rst:161
+msgid "LDBL_DIG"
+msgstr ""
+
+#: ../../../headers/float.rst:165
+msgid "LDBL_EPSILON"
+msgstr ""
+
+#: ../../../headers/float.rst:169
+msgid "LDBL_HAS_SUBNORM"
+msgstr ""
+
+#: ../../../headers/float.rst:173
+msgid "LDBL_IS_IEC_60559"
+msgstr ""
+
+#: ../../../headers/float.rst:177
+msgid "LDBL_MANT_DIG"
+msgstr ""
+
+#: ../../../headers/float.rst:181
+msgid "LDBL_MAX"
+msgstr ""
+
+#: ../../../headers/float.rst:185
+msgid "LDBL_MAX_10_EXP"
+msgstr ""
+
+#: ../../../headers/float.rst:189
+msgid "LDBL_MAX_EXP"
+msgstr ""
+
+#: ../../../headers/float.rst:193
+msgid "LDBL_MIN"
+msgstr ""
+
+#: ../../../headers/float.rst:197
+msgid "LDBL_MIN_10_EXP"
+msgstr ""
+
+#: ../../../headers/float.rst:201
+msgid "LDBL_MIN_EXP"
+msgstr ""
+
+#: ../../../headers/float.rst:205
+msgid "LDBL_NORM_MAX"
+msgstr ""
+
+#: ../../../headers/float.rst:209
+msgid "LDBL_SNAN"
+msgstr ""
+
+#: ../../../headers/float.rst:213
+msgid "LDBL_TRUE_MIN"
+msgstr ""
+
+#: ../../../headers/float.rst:217
+msgid "NAN"
+msgstr ""
+
+#: ../../../headers/float.rst:221
+msgid "__STDC_VERSION_FLOAT_H__"
+msgstr ""
+
+#: ../../../headers/float.rst:223
+msgid "7.7"
+msgstr ""

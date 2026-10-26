@@ -1,0 +1,447 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/threads.rst:3
+msgid "threads.h"
+msgstr ""
+
+#: ../../../headers/threads.rst:6
+msgid "Macros"
+msgstr "巨集"
+
+#: ../../../headers/threads.rst:13
+msgid "Macro"
+msgstr "巨集"
+
+#: ../../../headers/threads.rst:14 ../../../headers/threads.rst:43
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/threads.rst:15 ../../../headers/threads.rst:44
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/threads.rst:16 ../../../headers/threads.rst:45
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/threads.rst:17
+msgid "ONCE_FLAG_INIT"
+msgstr ""
+
+#: ../../../headers/threads.rst:18 ../../../headers/threads.rst:22
+#: ../../../headers/threads.rst:47 ../../../headers/threads.rst:51
+#: ../../../headers/threads.rst:55 ../../../headers/threads.rst:59
+#: ../../../headers/threads.rst:63 ../../../headers/threads.rst:67
+#: ../../../headers/threads.rst:71 ../../../headers/threads.rst:75
+#: ../../../headers/threads.rst:79 ../../../headers/threads.rst:83
+#: ../../../headers/threads.rst:91 ../../../headers/threads.rst:95
+#: ../../../headers/threads.rst:99 ../../../headers/threads.rst:103
+#: ../../../headers/threads.rst:107 ../../../headers/threads.rst:111
+#: ../../../headers/threads.rst:115 ../../../headers/threads.rst:119
+#: ../../../headers/threads.rst:131 ../../../headers/threads.rst:135
+#: ../../../headers/threads.rst:139 ../../../headers/threads.rst:143
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/threads.rst:19 ../../../headers/threads.rst:23
+#: ../../../headers/threads.rst:27
+msgid "7.28.1"
+msgstr ""
+
+#: ../../../headers/threads.rst:20 ../../../headers/threads.rst:24
+#: ../../../headers/threads.rst:32
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"threads.h.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:21
+msgid "TSS_DTOR_ITERATIONS"
+msgstr ""
+
+#: ../../../headers/threads.rst:25
+msgid "__STDC_NO_THREADS__"
+msgstr ""
+
+#: ../../../headers/threads.rst:29
+msgid "thread_local"
+msgstr ""
+
+#: ../../../headers/threads.rst:35
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/threads.rst:42
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/threads.rst:46
+msgid "call_once"
+msgstr ""
+
+#: ../../../headers/threads.rst:48
+msgid "7.28.2.1"
+msgstr ""
+
+#: ../../../headers/threads.rst:49
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"call_once.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:50
+msgid "cnd_broadcast"
+msgstr ""
+
+#: ../../../headers/threads.rst:52
+msgid "7.28.3.1"
+msgstr ""
+
+#: ../../../headers/threads.rst:53
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"cnd_broadcast.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:54
+msgid "cnd_destroy"
+msgstr ""
+
+#: ../../../headers/threads.rst:56
+msgid "7.28.3.2"
+msgstr ""
+
+#: ../../../headers/threads.rst:57
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"cnd_destroy.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:58
+msgid "cnd_init"
+msgstr ""
+
+#: ../../../headers/threads.rst:60
+msgid "7.28.3.3"
+msgstr ""
+
+#: ../../../headers/threads.rst:61
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"cnd_init.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:62
+msgid "cnd_signal"
+msgstr ""
+
+#: ../../../headers/threads.rst:64
+msgid "7.28.3.4"
+msgstr ""
+
+#: ../../../headers/threads.rst:65
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"cnd_signal.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:66
+msgid "cnd_timedwait"
+msgstr ""
+
+#: ../../../headers/threads.rst:68
+msgid "7.28.3.5"
+msgstr ""
+
+#: ../../../headers/threads.rst:69
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"cnd_timedwait.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:70
+msgid "cnd_wait"
+msgstr ""
+
+#: ../../../headers/threads.rst:72
+msgid "7.28.3.6"
+msgstr ""
+
+#: ../../../headers/threads.rst:73
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"cnd_wait.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:74
+msgid "mtx_destroy"
+msgstr ""
+
+#: ../../../headers/threads.rst:76
+msgid "7.28.4.2"
+msgstr ""
+
+#: ../../../headers/threads.rst:77
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mtx_destroy.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:78
+msgid "mtx_init"
+msgstr ""
+
+#: ../../../headers/threads.rst:80
+msgid "7.28.4.3"
+msgstr ""
+
+#: ../../../headers/threads.rst:81
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mtx_init.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:82
+msgid "mtx_lock"
+msgstr ""
+
+#: ../../../headers/threads.rst:84
+msgid "7.28.4.4"
+msgstr ""
+
+#: ../../../headers/threads.rst:85
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mtx_lock.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:86
+msgid "mtx_timedlock"
+msgstr ""
+
+#: ../../../headers/threads.rst:88
+msgid "7.28.4.5"
+msgstr ""
+
+#: ../../../headers/threads.rst:89
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mtx_timedlock.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:90
+msgid "mtx_trylock"
+msgstr ""
+
+#: ../../../headers/threads.rst:92
+msgid "7.28.4.6"
+msgstr ""
+
+#: ../../../headers/threads.rst:93
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mtx_trylock.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:94
+msgid "mtx_unlock"
+msgstr ""
+
+#: ../../../headers/threads.rst:96
+msgid "7.28.4.7"
+msgstr ""
+
+#: ../../../headers/threads.rst:97
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mtx_unlock.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:98
+msgid "thrd_create"
+msgstr ""
+
+#: ../../../headers/threads.rst:100
+msgid "7.28.5.1"
+msgstr ""
+
+#: ../../../headers/threads.rst:101
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"thrd_create.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:102
+msgid "thrd_current"
+msgstr ""
+
+#: ../../../headers/threads.rst:104
+msgid "7.28.5.2"
+msgstr ""
+
+#: ../../../headers/threads.rst:105
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"thrd_current.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:106
+msgid "thrd_detach"
+msgstr ""
+
+#: ../../../headers/threads.rst:108
+msgid "7.28.5.3"
+msgstr ""
+
+#: ../../../headers/threads.rst:109
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"thrd_detach.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:110
+msgid "thrd_equal"
+msgstr ""
+
+#: ../../../headers/threads.rst:112
+msgid "7.28.5.4"
+msgstr ""
+
+#: ../../../headers/threads.rst:113
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"thrd_equal.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:114
+msgid "thrd_exit"
+msgstr ""
+
+#: ../../../headers/threads.rst:116
+msgid "7.28.5.5"
+msgstr ""
+
+#: ../../../headers/threads.rst:117
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"thrd_exit.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:118
+msgid "thrd_join"
+msgstr ""
+
+#: ../../../headers/threads.rst:120
+msgid "7.28.5.6"
+msgstr ""
+
+#: ../../../headers/threads.rst:121
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"thrd_join.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:122
+msgid "thrd_sleep"
+msgstr ""
+
+#: ../../../headers/threads.rst:124
+msgid "7.28.5.7"
+msgstr ""
+
+#: ../../../headers/threads.rst:125
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"thrd_sleep.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:126
+msgid "thrd_yield"
+msgstr ""
+
+#: ../../../headers/threads.rst:128
+msgid "7.28.5.8"
+msgstr ""
+
+#: ../../../headers/threads.rst:129
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"thrd_yield.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:130
+msgid "tss_create"
+msgstr ""
+
+#: ../../../headers/threads.rst:132
+msgid "7.28.6.1"
+msgstr ""
+
+#: ../../../headers/threads.rst:133
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tss_create.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:134
+msgid "tss_delete"
+msgstr ""
+
+#: ../../../headers/threads.rst:136
+msgid "7.28.6.2"
+msgstr ""
+
+#: ../../../headers/threads.rst:137
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tss_delete.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:138
+msgid "tss_get"
+msgstr ""
+
+#: ../../../headers/threads.rst:140
+msgid "7.28.6.3"
+msgstr ""
+
+#: ../../../headers/threads.rst:141
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tss_get.html>`__"
+msgstr ""
+
+#: ../../../headers/threads.rst:142
+msgid "tss_set"
+msgstr ""
+
+#: ../../../headers/threads.rst:144
+msgid "7.28.6.4"
+msgstr ""
+
+#: ../../../headers/threads.rst:145
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tss_set.html>`__"
+msgstr ""

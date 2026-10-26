@@ -1,0 +1,370 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/time.rst:3
+msgid "time.h"
+msgstr "time.h"
+
+#: ../../../headers/time.rst:6
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/time.rst:13
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/time.rst:14
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/time.rst:15
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/time.rst:16
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/time.rst:17
+msgid "asctime"
+msgstr ""
+
+#: ../../../headers/time.rst:18 ../../../headers/time.rst:22
+#: ../../../headers/time.rst:26 ../../../headers/time.rst:30
+#: ../../../headers/time.rst:34 ../../../headers/time.rst:38
+#: ../../../headers/time.rst:46 ../../../headers/time.rst:50
+#: ../../../headers/time.rst:54 ../../../headers/time.rst:58
+#: ../../../headers/time.rst:66 ../../../headers/time.rst:70
+#: ../../../headers/time.rst:74 ../../../headers/time.rst:78
+#: ../../../headers/time.rst:82 ../../../headers/time.rst:86
+#: ../../../headers/time.rst:90 ../../../headers/time.rst:94
+#: ../../../headers/time.rst:98 ../../../headers/time.rst:102
+#: ../../../headers/time.rst:106 ../../../headers/time.rst:110
+#: ../../../headers/time.rst:118 ../../../headers/time.rst:122
+#: ../../../headers/time.rst:126 ../../../headers/time.rst:130
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/time.rst:19 ../../../headers/time.rst:27
+msgid "7.27.2.1"
+msgstr ""
+
+#: ../../../headers/time.rst:20
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"asctime.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:21
+msgid "asctime_r"
+msgstr ""
+
+#: ../../../headers/time.rst:24
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"asctime_r.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:25
+msgid "clock"
+msgstr "clock"
+
+#: ../../../headers/time.rst:28
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"clock.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:29
+msgid "clock_getcpuclockid"
+msgstr ""
+
+#: ../../../headers/time.rst:32
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"clock_getcpuclockid.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:33
+msgid "clock_getres"
+msgstr ""
+
+#: ../../../headers/time.rst:36
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"clock_getres.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:37
+msgid "clock_gettime"
+msgstr "clock_gettime"
+
+#: ../../../headers/time.rst:40
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"clock_gettime.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:41
+msgid "clock_nanosleep"
+msgstr ""
+
+#: ../../../headers/time.rst:44
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"clock_nanosleep.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:45
+msgid "clock_settime"
+msgstr ""
+
+#: ../../../headers/time.rst:48
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"clock_settime.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:49
+msgid "ctime"
+msgstr ""
+
+#: ../../../headers/time.rst:51 ../../../headers/time.rst:59
+msgid "7.27.2.2"
+msgstr ""
+
+#: ../../../headers/time.rst:52
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ctime.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:53
+msgid "ctime_r"
+msgstr ""
+
+#: ../../../headers/time.rst:56
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ctime_r.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:57
+msgid "difftime"
+msgstr ""
+
+#: ../../../headers/time.rst:60
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"difftime.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:61
+msgid "getdate"
+msgstr ""
+
+#: ../../../headers/time.rst:64
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getdate.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:65
+msgid "gmtime"
+msgstr ""
+
+#: ../../../headers/time.rst:67 ../../../headers/time.rst:83
+msgid "7.27.2.3"
+msgstr ""
+
+#: ../../../headers/time.rst:68
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"gmtime.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:69
+msgid "gmtime_r"
+msgstr ""
+
+#: ../../../headers/time.rst:72
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"gmtime_r.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:73
+msgid "localtime"
+msgstr ""
+
+#: ../../../headers/time.rst:75 ../../../headers/time.rst:103
+msgid "7.27.2.4"
+msgstr ""
+
+#: ../../../headers/time.rst:76
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"localtime.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:77
+msgid "localtime_r"
+msgstr ""
+
+#: ../../../headers/time.rst:80
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"localtime_r.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:81
+msgid "mktime"
+msgstr ""
+
+#: ../../../headers/time.rst:84
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"mktime.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:85
+msgid "nanosleep"
+msgstr "nanosleep"
+
+#: ../../../headers/time.rst:88
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"nanosleep.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:89
+msgid "strftime"
+msgstr "strftime"
+
+#: ../../../headers/time.rst:91
+msgid "7.27.3.5"
+msgstr ""
+
+#: ../../../headers/time.rst:92
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strftime.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:93
+msgid "strftime_l"
+msgstr "strftime_l"
+
+#: ../../../headers/time.rst:96
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strftime_l.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:97
+msgid "strptime"
+msgstr ""
+
+#: ../../../headers/time.rst:100
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strptime.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:101
+msgid "time"
+msgstr ""
+
+#: ../../../headers/time.rst:104
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"time.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:105
+msgid "timer_create"
+msgstr ""
+
+#: ../../../headers/time.rst:108
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"timer_create.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:109
+msgid "timer_delete"
+msgstr ""
+
+#: ../../../headers/time.rst:112
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"timer_delete.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:113
+msgid "timer_getoverrun"
+msgstr ""
+
+#: ../../../headers/time.rst:116
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"timer_getoverrun.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:117
+msgid "timer_gettime"
+msgstr ""
+
+#: ../../../headers/time.rst:120
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"timer_gettime.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:121
+msgid "timer_settime"
+msgstr ""
+
+#: ../../../headers/time.rst:124
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"timer_settime.html>`__"
+msgstr ""
+
+#: ../../../headers/time.rst:125
+msgid "timespec_get"
+msgstr ""
+
+#: ../../../headers/time.rst:127
+msgid "7.27.2.5"
+msgstr ""
+
+#: ../../../headers/time.rst:129
+msgid "tzset"
+msgstr ""
+
+#: ../../../headers/time.rst:132
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tzset.html>`__"
+msgstr ""

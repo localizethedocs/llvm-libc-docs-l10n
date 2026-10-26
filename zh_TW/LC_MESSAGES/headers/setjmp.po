@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/setjmp.rst:3
+msgid "setjmp.h"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:6
+msgid "Macros"
+msgstr "巨集"
+
+#: ../../../headers/setjmp.rst:13
+msgid "Macro"
+msgstr "巨集"
+
+#: ../../../headers/setjmp.rst:14 ../../../headers/setjmp.rst:31
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:15 ../../../headers/setjmp.rst:32
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:16 ../../../headers/setjmp.rst:33
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:17
+msgid "__STDC_VERSION_SETJMP_H__"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:19
+msgid "7.13.2"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:23
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:30
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:34
+msgid "longjmp"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:35 ../../../headers/setjmp.rst:39
+#: ../../../headers/setjmp.rst:43 ../../../headers/setjmp.rst:47
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:36
+msgid "7.13.2.1"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:37
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"longjmp.html>`__"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:38
+msgid "setjmp"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:40
+msgid "7.13.1.1"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:41
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setjmp.html>`__"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:42
+msgid "siglongjmp"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:45
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"siglongjmp.html>`__"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:46
+msgid "sigsetjmp"
+msgstr ""
+
+#: ../../../headers/setjmp.rst:49
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sigsetjmp.html>`__"
+msgstr ""

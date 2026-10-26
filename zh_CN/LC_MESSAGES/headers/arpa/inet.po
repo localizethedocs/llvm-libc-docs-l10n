@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/arpa/inet.rst:3
+msgid "arpa/inet.h"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:6
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:13
+msgid "Macro"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:14 ../../../headers/arpa/inet.rst:35
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:15 ../../../headers/arpa/inet.rst:36
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:16 ../../../headers/arpa/inet.rst:37
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:17
+msgid "INET6_ADDRSTRLEN"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:20 ../../../headers/arpa/inet.rst:24
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"arpa_inet.h.html>`__"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:21
+msgid "INET_ADDRSTRLEN"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:27
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:34
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:38
+msgid "htonl"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:39 ../../../headers/arpa/inet.rst:43
+#: ../../../headers/arpa/inet.rst:47 ../../../headers/arpa/inet.rst:51
+#: ../../../headers/arpa/inet.rst:55 ../../../headers/arpa/inet.rst:59
+#: ../../../headers/arpa/inet.rst:63 ../../../headers/arpa/inet.rst:67
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:41
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"htonl.html>`__"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:42
+msgid "htons"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:45
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"htons.html>`__"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:46
+msgid "inet_addr"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:49
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"inet_addr.html>`__"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:50
+msgid "inet_ntoa"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:53
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"inet_ntoa.html>`__"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:54
+msgid "inet_ntop"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:57
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"inet_ntop.html>`__"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:58
+msgid "inet_pton"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:61
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"inet_pton.html>`__"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:62
+msgid "ntohl"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:65
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ntohl.html>`__"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:66
+msgid "ntohs"
+msgstr ""
+
+#: ../../../headers/arpa/inet.rst:69
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ntohs.html>`__"
+msgstr ""

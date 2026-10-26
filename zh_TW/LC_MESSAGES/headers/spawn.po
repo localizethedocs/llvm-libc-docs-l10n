@@ -1,0 +1,327 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/spawn.rst:3
+msgid "spawn.h"
+msgstr ""
+
+#: ../../../headers/spawn.rst:6
+msgid "Macros"
+msgstr "巨集"
+
+#: ../../../headers/spawn.rst:13
+msgid "Macro"
+msgstr "巨集"
+
+#: ../../../headers/spawn.rst:14 ../../../headers/spawn.rst:55
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/spawn.rst:15 ../../../headers/spawn.rst:56
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/spawn.rst:16 ../../../headers/spawn.rst:57
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/spawn.rst:17
+msgid "POSIX_SPAWN_RESETIDS"
+msgstr ""
+
+#: ../../../headers/spawn.rst:20 ../../../headers/spawn.rst:24
+#: ../../../headers/spawn.rst:28 ../../../headers/spawn.rst:32
+#: ../../../headers/spawn.rst:36 ../../../headers/spawn.rst:40
+#: ../../../headers/spawn.rst:44
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"spawn.h.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:21
+msgid "POSIX_SPAWN_SETPGROUP"
+msgstr ""
+
+#: ../../../headers/spawn.rst:25
+msgid "POSIX_SPAWN_SETSCHEDPARAM"
+msgstr ""
+
+#: ../../../headers/spawn.rst:29
+msgid "POSIX_SPAWN_SETSCHEDULER"
+msgstr ""
+
+#: ../../../headers/spawn.rst:33
+msgid "POSIX_SPAWN_SETSID"
+msgstr ""
+
+#: ../../../headers/spawn.rst:37
+msgid "POSIX_SPAWN_SETSIGDEF"
+msgstr ""
+
+#: ../../../headers/spawn.rst:41
+msgid "POSIX_SPAWN_SETSIGMASK"
+msgstr ""
+
+#: ../../../headers/spawn.rst:47
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/spawn.rst:54
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/spawn.rst:58
+msgid "posix_spawn"
+msgstr ""
+
+#: ../../../headers/spawn.rst:59 ../../../headers/spawn.rst:67
+#: ../../../headers/spawn.rst:71 ../../../headers/spawn.rst:79
+#: ../../../headers/spawn.rst:83 ../../../headers/spawn.rst:87
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/spawn.rst:61
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawn.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:62
+msgid "posix_spawn_file_actions_addchdir"
+msgstr ""
+
+#: ../../../headers/spawn.rst:65
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawn_file_actions_addchdir.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:66
+msgid "posix_spawn_file_actions_addclose"
+msgstr ""
+
+#: ../../../headers/spawn.rst:69
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawn_file_actions_addclose.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:70
+msgid "posix_spawn_file_actions_adddup2"
+msgstr ""
+
+#: ../../../headers/spawn.rst:73
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawn_file_actions_adddup2.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:74
+msgid "posix_spawn_file_actions_addfchdir"
+msgstr ""
+
+#: ../../../headers/spawn.rst:77
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawn_file_actions_addfchdir.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:78
+msgid "posix_spawn_file_actions_addopen"
+msgstr ""
+
+#: ../../../headers/spawn.rst:81
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawn_file_actions_addopen.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:82
+msgid "posix_spawn_file_actions_destroy"
+msgstr ""
+
+#: ../../../headers/spawn.rst:85
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawn_file_actions_destroy.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:86
+msgid "posix_spawn_file_actions_init"
+msgstr ""
+
+#: ../../../headers/spawn.rst:89
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawn_file_actions_init.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:90
+msgid "posix_spawnattr_destroy"
+msgstr ""
+
+#: ../../../headers/spawn.rst:93
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnattr_destroy.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:94
+msgid "posix_spawnattr_getflags"
+msgstr ""
+
+#: ../../../headers/spawn.rst:97
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnattr_getflags.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:98
+msgid "posix_spawnattr_getpgroup"
+msgstr ""
+
+#: ../../../headers/spawn.rst:101
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnattr_getpgroup.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:102
+msgid "posix_spawnattr_getschedparam"
+msgstr ""
+
+#: ../../../headers/spawn.rst:105
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnattr_getschedparam.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:106
+msgid "posix_spawnattr_getschedpolicy"
+msgstr ""
+
+#: ../../../headers/spawn.rst:109
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnattr_getschedpolicy.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:110
+msgid "posix_spawnattr_getsigdefault"
+msgstr ""
+
+#: ../../../headers/spawn.rst:113
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnattr_getsigdefault.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:114
+msgid "posix_spawnattr_getsigmask"
+msgstr ""
+
+#: ../../../headers/spawn.rst:117
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnattr_getsigmask.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:118
+msgid "posix_spawnattr_init"
+msgstr ""
+
+#: ../../../headers/spawn.rst:121
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnattr_init.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:122
+msgid "posix_spawnattr_setflags"
+msgstr ""
+
+#: ../../../headers/spawn.rst:125
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnattr_setflags.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:126
+msgid "posix_spawnattr_setpgroup"
+msgstr ""
+
+#: ../../../headers/spawn.rst:129
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnattr_setpgroup.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:130
+msgid "posix_spawnattr_setschedparam"
+msgstr ""
+
+#: ../../../headers/spawn.rst:133
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnattr_setschedparam.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:134
+msgid "posix_spawnattr_setschedpolicy"
+msgstr ""
+
+#: ../../../headers/spawn.rst:137
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnattr_setschedpolicy.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:138
+msgid "posix_spawnattr_setsigdefault"
+msgstr ""
+
+#: ../../../headers/spawn.rst:141
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnattr_setsigdefault.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:142
+msgid "posix_spawnattr_setsigmask"
+msgstr ""
+
+#: ../../../headers/spawn.rst:145
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnattr_setsigmask.html>`__"
+msgstr ""
+
+#: ../../../headers/spawn.rst:146
+msgid "posix_spawnp"
+msgstr ""
+
+#: ../../../headers/spawn.rst:149
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_spawnp.html>`__"
+msgstr ""

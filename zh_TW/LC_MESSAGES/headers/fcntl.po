@@ -1,0 +1,391 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/fcntl.rst:3
+msgid "fcntl.h"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:6
+msgid "Macros"
+msgstr "巨集"
+
+#: ../../../headers/fcntl.rst:13
+msgid "Macro"
+msgstr "巨集"
+
+#: ../../../headers/fcntl.rst:14 ../../../headers/fcntl.rst:239
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:15 ../../../headers/fcntl.rst:240
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:16 ../../../headers/fcntl.rst:241
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:17
+msgid "AT_EACCESS"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:18 ../../../headers/fcntl.rst:22
+#: ../../../headers/fcntl.rst:26 ../../../headers/fcntl.rst:30
+#: ../../../headers/fcntl.rst:34 ../../../headers/fcntl.rst:38
+#: ../../../headers/fcntl.rst:46 ../../../headers/fcntl.rst:50
+#: ../../../headers/fcntl.rst:58 ../../../headers/fcntl.rst:62
+#: ../../../headers/fcntl.rst:66 ../../../headers/fcntl.rst:70
+#: ../../../headers/fcntl.rst:74 ../../../headers/fcntl.rst:78
+#: ../../../headers/fcntl.rst:82 ../../../headers/fcntl.rst:94
+#: ../../../headers/fcntl.rst:98 ../../../headers/fcntl.rst:102
+#: ../../../headers/fcntl.rst:106 ../../../headers/fcntl.rst:110
+#: ../../../headers/fcntl.rst:114 ../../../headers/fcntl.rst:118
+#: ../../../headers/fcntl.rst:122 ../../../headers/fcntl.rst:126
+#: ../../../headers/fcntl.rst:130 ../../../headers/fcntl.rst:134
+#: ../../../headers/fcntl.rst:142 ../../../headers/fcntl.rst:146
+#: ../../../headers/fcntl.rst:150 ../../../headers/fcntl.rst:154
+#: ../../../headers/fcntl.rst:162 ../../../headers/fcntl.rst:166
+#: ../../../headers/fcntl.rst:170 ../../../headers/fcntl.rst:174
+#: ../../../headers/fcntl.rst:178 ../../../headers/fcntl.rst:182
+#: ../../../headers/fcntl.rst:190 ../../../headers/fcntl.rst:194
+#: ../../../headers/fcntl.rst:202 ../../../headers/fcntl.rst:206
+#: ../../../headers/fcntl.rst:210 ../../../headers/fcntl.rst:214
+#: ../../../headers/fcntl.rst:218 ../../../headers/fcntl.rst:222
+#: ../../../headers/fcntl.rst:226 ../../../headers/fcntl.rst:243
+#: ../../../headers/fcntl.rst:247 ../../../headers/fcntl.rst:251
+#: ../../../headers/fcntl.rst:255 ../../../headers/fcntl.rst:259
+#: ../../../headers/fcntl.rst:263 ../../../headers/fcntl.rst:267
+msgid "|check|"
+msgstr ""
+
+#: ../../../<rst_prologue>:5
+msgid ":raw-html:`&#x2705`"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:20 ../../../headers/fcntl.rst:24
+#: ../../../headers/fcntl.rst:28 ../../../headers/fcntl.rst:32
+#: ../../../headers/fcntl.rst:36 ../../../headers/fcntl.rst:40
+#: ../../../headers/fcntl.rst:44 ../../../headers/fcntl.rst:48
+#: ../../../headers/fcntl.rst:52 ../../../headers/fcntl.rst:56
+#: ../../../headers/fcntl.rst:60 ../../../headers/fcntl.rst:64
+#: ../../../headers/fcntl.rst:68 ../../../headers/fcntl.rst:72
+#: ../../../headers/fcntl.rst:76 ../../../headers/fcntl.rst:80
+#: ../../../headers/fcntl.rst:84 ../../../headers/fcntl.rst:88
+#: ../../../headers/fcntl.rst:92 ../../../headers/fcntl.rst:96
+#: ../../../headers/fcntl.rst:100 ../../../headers/fcntl.rst:104
+#: ../../../headers/fcntl.rst:108 ../../../headers/fcntl.rst:112
+#: ../../../headers/fcntl.rst:116 ../../../headers/fcntl.rst:120
+#: ../../../headers/fcntl.rst:124 ../../../headers/fcntl.rst:128
+#: ../../../headers/fcntl.rst:132 ../../../headers/fcntl.rst:136
+#: ../../../headers/fcntl.rst:140 ../../../headers/fcntl.rst:144
+#: ../../../headers/fcntl.rst:148 ../../../headers/fcntl.rst:152
+#: ../../../headers/fcntl.rst:156 ../../../headers/fcntl.rst:160
+#: ../../../headers/fcntl.rst:164 ../../../headers/fcntl.rst:168
+#: ../../../headers/fcntl.rst:172 ../../../headers/fcntl.rst:176
+#: ../../../headers/fcntl.rst:180 ../../../headers/fcntl.rst:184
+#: ../../../headers/fcntl.rst:188 ../../../headers/fcntl.rst:192
+#: ../../../headers/fcntl.rst:196 ../../../headers/fcntl.rst:200
+#: ../../../headers/fcntl.rst:204 ../../../headers/fcntl.rst:208
+#: ../../../headers/fcntl.rst:212 ../../../headers/fcntl.rst:216
+#: ../../../headers/fcntl.rst:220 ../../../headers/fcntl.rst:224
+#: ../../../headers/fcntl.rst:228
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"fcntl.h.html>`__"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:21
+msgid "AT_FDCWD"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:25
+msgid "AT_REMOVEDIR"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:29
+msgid "AT_SYMLINK_FOLLOW"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:33
+msgid "AT_SYMLINK_NOFOLLOW"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:37
+msgid "FD_CLOEXEC"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:41
+msgid "FD_CLOFORK"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:45
+msgid "F_DUPFD"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:49
+msgid "F_DUPFD_CLOEXEC"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:53
+msgid "F_DUPFD_CLOFORK"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:57
+msgid "F_GETFD"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:61
+msgid "F_GETFL"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:65
+msgid "F_GETLK"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:69
+msgid "F_GETOWN"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:73
+msgid "F_OFD_GETLK"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:77
+msgid "F_OFD_SETLK"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:81
+msgid "F_OFD_SETLKW"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:85
+msgid "F_OWNER_PGRP"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:89
+msgid "F_OWNER_PID"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:93
+msgid "F_RDLCK"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:97
+msgid "F_SETFD"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:101
+msgid "F_SETFL"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:105
+msgid "F_SETLK"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:109
+msgid "F_SETLKW"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:113
+msgid "F_SETOWN"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:117
+msgid "F_UNLCK"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:121
+msgid "F_WRLCK"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:125
+msgid "O_ACCMODE"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:129
+msgid "O_APPEND"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:133
+msgid "O_CLOEXEC"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:137
+msgid "O_CLOFORK"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:141
+msgid "O_CREAT"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:145
+msgid "O_DIRECTORY"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:149
+msgid "O_DSYNC"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:153
+msgid "O_EXCL"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:157
+msgid "O_EXEC"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:161
+msgid "O_NOCTTY"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:165
+msgid "O_NOFOLLOW"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:169
+msgid "O_NONBLOCK"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:173
+msgid "O_RDONLY"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:177
+msgid "O_RDWR"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:181
+msgid "O_RSYNC"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:185
+msgid "O_SEARCH"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:189
+msgid "O_SYNC"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:193
+msgid "O_TRUNC"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:197
+msgid "O_TTY_INIT"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:201
+msgid "O_WRONLY"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:205
+msgid "POSIX_FADV_DONTNEED"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:209
+msgid "POSIX_FADV_NOREUSE"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:213
+msgid "POSIX_FADV_NORMAL"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:217
+msgid "POSIX_FADV_RANDOM"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:221
+msgid "POSIX_FADV_SEQUENTIAL"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:225
+msgid "POSIX_FADV_WILLNEED"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:231
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:238
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:242
+msgid "creat"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:245
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"creat.html>`__"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:246
+msgid "fallocate"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:250
+msgid "fcntl"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:253
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fcntl.html>`__"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:254
+msgid "open"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:257
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"open.html>`__"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:258
+msgid "openat"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:261
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"openat.html>`__"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:262
+msgid "posix_fadvise"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:265
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_fadvise.html>`__"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:266
+msgid "posix_fallocate"
+msgstr ""
+
+#: ../../../headers/fcntl.rst:269
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_fallocate.html>`__"
+msgstr ""

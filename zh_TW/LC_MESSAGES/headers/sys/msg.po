@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/sys/msg.rst:3
+msgid "sys/msg.h"
+msgstr "sys/msg.h"
+
+#: ../../../headers/sys/msg.rst:6
+msgid "Macros"
+msgstr "巨集"
+
+#: ../../../headers/sys/msg.rst:13
+msgid "Macro"
+msgstr "巨集"
+
+#: ../../../headers/sys/msg.rst:14 ../../../headers/sys/msg.rst:31
+msgid "Implemented"
+msgstr ""
+
+#: ../../../headers/sys/msg.rst:15 ../../../headers/sys/msg.rst:32
+msgid "C23 Standard Section"
+msgstr ""
+
+#: ../../../headers/sys/msg.rst:16 ../../../headers/sys/msg.rst:33
+msgid "POSIX Docs"
+msgstr ""
+
+#: ../../../headers/sys/msg.rst:17
+msgid "MSG_NOERROR"
+msgstr ""
+
+#: ../../../headers/sys/msg.rst:20
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"sys_msg.h.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/msg.rst:23
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/sys/msg.rst:30
+msgid "Function"
+msgstr ""
+
+#: ../../../headers/sys/msg.rst:34
+msgid "msgctl"
+msgstr ""
+
+#: ../../../headers/sys/msg.rst:37
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"msgctl.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/msg.rst:38
+msgid "msgget"
+msgstr ""
+
+#: ../../../headers/sys/msg.rst:41
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"msgget.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/msg.rst:42
+msgid "msgrcv"
+msgstr ""
+
+#: ../../../headers/sys/msg.rst:45
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"msgrcv.html>`__"
+msgstr ""
+
+#: ../../../headers/sys/msg.rst:46
+msgid "msgsnd"
+msgstr ""
+
+#: ../../../headers/sys/msg.rst:49
+msgid ""
+"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"msgsnd.html>`__"
+msgstr ""
