@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,26 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../uefi/using.rst:5
+#: ../../../uefi/using.md:3
 msgid "Using libc for UEFI"
 msgstr ""
 
-#: ../../../uefi/using.rst:8
+#: ../../../uefi/using.md:5
 msgid "Using the UEFI C library"
 msgstr ""
 
-#: ../../../uefi/using.rst:10
+#: ../../../uefi/using.md:7
 msgid ""
-"Once you have finished :ref:`building<libc_uefi_building>` the UEFI C "
+"Once you have finished {ref}`building<libc_uefi_building>` the UEFI C "
 "library it can be used to run libc or libm functions inside of UEFI Images. "
-"Currently, not all C standard functions are supported in UEFI. Consult the :"
-"ref:`list of supported functions<libc_uefi_support>` for a comprehensive "
+"Currently, not all C standard functions are supported in UEFI. Consult the "
+"{ref}`list of supported functions<libc_uefi_support>` for a comprehensive "
 "list."
 msgstr ""
 
-#: ../../../uefi/using.rst:16
+#: ../../../uefi/using.md:13
 msgid ""
 "LLVM-libc support for UEFI is currently in the early bring-up phase. For the "
-"current source of truth on implemented functions, please refer to ``libc/"
-"config/uefi/entrypoints.txt`` in the source tree."
+"current source of truth on implemented functions, please refer to `libc/"
+"config/uefi/entrypoints.txt` in the source tree."
 msgstr ""

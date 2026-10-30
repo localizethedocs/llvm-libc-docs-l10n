@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,8 +56,9 @@ msgstr ""
 #: ../../../headers/time.rst:90 ../../../headers/time.rst:94
 #: ../../../headers/time.rst:98 ../../../headers/time.rst:102
 #: ../../../headers/time.rst:106 ../../../headers/time.rst:110
-#: ../../../headers/time.rst:118 ../../../headers/time.rst:122
-#: ../../../headers/time.rst:126 ../../../headers/time.rst:130
+#: ../../../headers/time.rst:114 ../../../headers/time.rst:118
+#: ../../../headers/time.rst:122 ../../../headers/time.rst:126
+#: ../../../headers/time.rst:130
 msgid "|check|"
 msgstr ""
 

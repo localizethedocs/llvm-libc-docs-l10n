@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,335 +17,332 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../headers/stdfix.rst:3
+#: ../../../headers/stdfix.md:1
 msgid "stdfix.h"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:6
+#: ../../../headers/stdfix.md:3
 msgid "Standards and Goals"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:8
+#: ../../../headers/stdfix.md:5
 msgid ""
-"stdfix.h is specified in the `ISO/IEC TR 18037:2008 <https://www.iso.org/"
-"standard/51126.html>`_, C extensions to support embedded processors ."
+"stdfix.h is specified in the [ISO/IEC TR 18037:2008](https://www.iso.org/"
+"standard/51126.html), C extensions to support embedded processors ."
 msgstr ""
 
-#: ../../../headers/stdfix.rst:11
+#: ../../../headers/stdfix.md:7
 msgid ""
-"Its `specifications <https://standards.iso.org/ittf/"
-"PubliclyAvailableStandards/c051126_ISO_IEC_TR_18037_2008.zip>`_."
+"Its [specifications](https://standards.iso.org/ittf/"
+"PubliclyAvailableStandards/c051126_ISO_IEC_TR_18037_2008.zip)."
 msgstr ""
 
-#: ../../../headers/stdfix.rst:13
+#: ../../../headers/stdfix.md:8
 msgid ""
 "Our goal is to implement a complete set of math functions for fixed point "
 "types, most of them are currently not included in the ISO/IEC TR 18037:2008 "
-"standard.  Our math functions for fixed point types are modeled after the "
-"C99/C23 math functions for floating point types."
+"standard. Our math functions for fixed point types are modeled after the C99/"
+"C23 math functions for floating point types."
 msgstr ""
 
-#: ../../../headers/stdfix.rst:20
+#: ../../../headers/stdfix.md:13
 msgid "Source location"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:22
+#: ../../../headers/stdfix.md:15
 msgid ""
-"The main source for fixed-point functions is located at: ``libc/src/stdfix`` "
+"The main source for fixed-point functions is located at: `libc/src/stdfix` "
 "with subdirectories for internal implementations."
 msgstr ""
 
-#: ../../../headers/stdfix.rst:27
+#: ../../../headers/stdfix.md:18
 msgid "Implementation Status"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:30
+#: ../../../headers/stdfix.md:20
 msgid "Requirements"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:32
+#: ../../../headers/stdfix.md:22
 msgid ""
 "In order to build LLVM libc to support fixed-point arithmetics, we need the "
 "compiler to support the basic fixed-point types `_Fract` and `_Accum` in C++."
 msgstr ""
 
-#: ../../../headers/stdfix.rst:36
+#: ../../../headers/stdfix.md:25
 msgid ""
 "For the users to be able to use the generated headers, their compiler needs "
 "to support `_Fract` and `_Accum` types in C or C++."
 msgstr ""
 
-#: ../../../headers/stdfix.rst:39
+#: ../../../headers/stdfix.md:27
 msgid ""
-"This compiler support is checked at the beginning of `libc/include/llvm-libc-"
-"macros/stdfix-macros.h <https://github.com/llvm/llvm-project/tree/main/libc/"
-"include/llvm-libc-macros/stdfix-macros.h>`_."
+"This compiler support is checked at the beginning of [libc/include/llvm-libc-"
+"macros/stdfix-macros.h](https://github.com/llvm/llvm-project/tree/main/libc/"
+"include/llvm-libc-macros/stdfix-macros.h)."
 msgstr ""
 
-#: ../../../headers/stdfix.rst:45
+#: ../../../headers/stdfix.md:30
 msgid "Predefined Macros"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:47
+#: ../../../headers/stdfix.md:32
 msgid ""
 "We use the macro `LIBC_COMPILER_HAS_FIXED_POINT` to specify whether the "
 "compiler support the fixed-point types."
 msgstr ""
 
-#: ../../../headers/stdfix.rst:50
+#: ../../../headers/stdfix.md:34
 msgid ""
 "Other predefined precision macros specified in section 7.18a.3 are defined "
-"in `libc/include/llvm-libc-macros/stdfix-macros.h <https://github.com/llvm/"
-"llvm-project/tree/main/libc/include/llvm-libc-macros/stdfix-macros.h>`_ "
-"using the default configuration of `typical desktop processor` in section "
-"A.3."
+"in [libc/include/llvm-libc-macros/stdfix-macros.h](https://github.com/llvm/"
+"llvm-project/tree/main/libc/include/llvm-libc-macros/stdfix-macros.h) using "
+"the default configuration of `typical desktop processor` in section A.3."
 msgstr ""
 
-#: ../../../headers/stdfix.rst:57
+#: ../../../headers/stdfix.md:39
 msgid "Fixed-point Arithmetics"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:59
+#: ../../../headers/stdfix.md:41
 msgid ""
 "The following functions are included in the ISO/IEC TR 18037:2008 standard."
 msgstr ""
 
-#: ../../../headers/stdfix.rst:62 ../../../headers/stdfix.rst:103
-#: ../../../headers/stdfix.rst:130
+#: ../../../headers/stdfix.md:45 ../../../headers/stdfix.md:84
+#: ../../../headers/stdfix.md:111
 msgid "Function Name"
 msgstr "函數名稱"
 
-#: ../../../headers/stdfix.rst:62 ../../../headers/stdfix.rst:103
-#: ../../../headers/stdfix.rst:130
+#: ../../../headers/stdfix.md:45 ../../../headers/stdfix.md:84
+#: ../../../headers/stdfix.md:111
 msgid "_Fract (r)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:62 ../../../headers/stdfix.rst:103
-#: ../../../headers/stdfix.rst:130
+#: ../../../headers/stdfix.md:45 ../../../headers/stdfix.md:84
+#: ../../../headers/stdfix.md:111
 msgid "_Accum (k)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:64 ../../../headers/stdfix.rst:105
-#: ../../../headers/stdfix.rst:132
+#: ../../../headers/stdfix.md:47 ../../../headers/stdfix.md:86
+#: ../../../headers/stdfix.md:113
 msgid "short (hr)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:64 ../../../headers/stdfix.rst:105
-#: ../../../headers/stdfix.rst:132
+#: ../../../headers/stdfix.md:47 ../../../headers/stdfix.md:86
+#: ../../../headers/stdfix.md:113
 msgid "_ (r)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:64 ../../../headers/stdfix.rst:105
-#: ../../../headers/stdfix.rst:132
+#: ../../../headers/stdfix.md:47 ../../../headers/stdfix.md:86
+#: ../../../headers/stdfix.md:113
 msgid "long (lr)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:64 ../../../headers/stdfix.rst:105
-#: ../../../headers/stdfix.rst:132
+#: ../../../headers/stdfix.md:47 ../../../headers/stdfix.md:86
+#: ../../../headers/stdfix.md:113
 msgid "short (hk)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:64 ../../../headers/stdfix.rst:105
-#: ../../../headers/stdfix.rst:132
+#: ../../../headers/stdfix.md:47 ../../../headers/stdfix.md:86
+#: ../../../headers/stdfix.md:113
 msgid "_ (k)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:64 ../../../headers/stdfix.rst:105
-#: ../../../headers/stdfix.rst:132
+#: ../../../headers/stdfix.md:47 ../../../headers/stdfix.md:86
+#: ../../../headers/stdfix.md:113
 msgid "long (lk)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:66 ../../../headers/stdfix.rst:107
-#: ../../../headers/stdfix.rst:134
+#: ../../../headers/stdfix.md:49 ../../../headers/stdfix.md:88
+#: ../../../headers/stdfix.md:115
 msgid "unsigned (uhr)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:66 ../../../headers/stdfix.rst:107
-#: ../../../headers/stdfix.rst:134
+#: ../../../headers/stdfix.md:49 ../../../headers/stdfix.md:88
+#: ../../../headers/stdfix.md:115
 msgid "signed (hr)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:66 ../../../headers/stdfix.rst:107
-#: ../../../headers/stdfix.rst:134
+#: ../../../headers/stdfix.md:49 ../../../headers/stdfix.md:88
+#: ../../../headers/stdfix.md:115
 msgid "unsigned (ur)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:66 ../../../headers/stdfix.rst:107
-#: ../../../headers/stdfix.rst:134
+#: ../../../headers/stdfix.md:49 ../../../headers/stdfix.md:88
+#: ../../../headers/stdfix.md:115
 msgid "signed (r)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:66 ../../../headers/stdfix.rst:107
-#: ../../../headers/stdfix.rst:134
+#: ../../../headers/stdfix.md:49 ../../../headers/stdfix.md:88
+#: ../../../headers/stdfix.md:115
 msgid "unsigned (ulr)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:66 ../../../headers/stdfix.rst:107
-#: ../../../headers/stdfix.rst:134
+#: ../../../headers/stdfix.md:49 ../../../headers/stdfix.md:88
+#: ../../../headers/stdfix.md:115
 msgid "signed (lr)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:66 ../../../headers/stdfix.rst:107
-#: ../../../headers/stdfix.rst:134
+#: ../../../headers/stdfix.md:49 ../../../headers/stdfix.md:88
+#: ../../../headers/stdfix.md:115
 msgid "unsigned (uhk)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:66 ../../../headers/stdfix.rst:107
-#: ../../../headers/stdfix.rst:134
+#: ../../../headers/stdfix.md:49 ../../../headers/stdfix.md:88
+#: ../../../headers/stdfix.md:115
 msgid "signed (hk)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:66 ../../../headers/stdfix.rst:107
-#: ../../../headers/stdfix.rst:134
+#: ../../../headers/stdfix.md:49 ../../../headers/stdfix.md:88
+#: ../../../headers/stdfix.md:115
 msgid "unsigned (uk)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:66 ../../../headers/stdfix.rst:107
-#: ../../../headers/stdfix.rst:134
+#: ../../../headers/stdfix.md:49 ../../../headers/stdfix.md:88
+#: ../../../headers/stdfix.md:115
 msgid "signed (k)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:66 ../../../headers/stdfix.rst:107
-#: ../../../headers/stdfix.rst:134
+#: ../../../headers/stdfix.md:49 ../../../headers/stdfix.md:88
+#: ../../../headers/stdfix.md:115
 msgid "unsigned (ulk)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:66 ../../../headers/stdfix.rst:107
-#: ../../../headers/stdfix.rst:134
+#: ../../../headers/stdfix.md:49 ../../../headers/stdfix.md:88
+#: ../../../headers/stdfix.md:115
 msgid "signed (lk)"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:68
+#: ../../../headers/stdfix.md:51
 msgid "abs"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:68 ../../../headers/stdfix.rst:70
-#: ../../../headers/stdfix.rst:72 ../../../headers/stdfix.rst:74
-#: ../../../headers/stdfix.rst:76 ../../../headers/stdfix.rst:78
-#: ../../../headers/stdfix.rst:82 ../../../headers/stdfix.rst:84
-#: ../../../headers/stdfix.rst:90 ../../../headers/stdfix.rst:91
-#: ../../../headers/stdfix.rst:92 ../../../headers/stdfix.rst:111
-#: ../../../headers/stdfix.rst:117
-msgid "|check|"
+#: ../../../headers/stdfix.md:51 ../../../headers/stdfix.md:53
+#: ../../../headers/stdfix.md:55 ../../../headers/stdfix.md:57
+#: ../../../headers/stdfix.md:59 ../../../headers/stdfix.md:61
+#: ../../../headers/stdfix.md:65 ../../../headers/stdfix.md:67
+#: ../../../headers/stdfix.md:92 ../../../headers/stdfix.md:98
+msgid "✅"
 msgstr ""
 
-#: ../../../<rst_prologue>:5
-msgid ":raw-html:`&#x2705`"
-msgstr ""
-
-#: ../../../headers/stdfix.rst:70
+#: ../../../headers/stdfix.md:53
 msgid "bits\\*"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:72
+#: ../../../headers/stdfix.md:55
 msgid "\\*bits"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:74
+#: ../../../headers/stdfix.md:57
 msgid "countls"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:76
+#: ../../../headers/stdfix.md:59
 msgid "divi\\*"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:78
+#: ../../../headers/stdfix.md:61
 msgid "idiv\\*"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:80
+#: ../../../headers/stdfix.md:63
 msgid "muli"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:82
+#: ../../../headers/stdfix.md:65
 msgid "\\*divi"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:84
+#: ../../../headers/stdfix.md:67
 msgid "round"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:88
+#: ../../../headers/stdfix.md:0
 msgid "Type Generic Macro"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:88
+#: ../../../headers/stdfix.md:0
 msgid "Available"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:90
+#: ../../../headers/stdfix.md:0
 msgid "absfx"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:91
+#: ../../../headers/stdfix.md:0
+msgid "{{ check }}"
+msgstr ""
+
+#: ../../../headers/stdfix.md:0
 msgid "countlsfx"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:92
+#: ../../../headers/stdfix.md:0
 msgid "roundfx"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:97
+#: ../../../headers/stdfix.md:77
 msgid "Higher math functions"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:99
+#: ../../../headers/stdfix.md:79
 msgid ""
 "The following math functions are modeled after C99/C23 math functions for "
 "floating point types, but are not part of the ISO/IEC TR 18037:2008 spec."
 msgstr ""
 
-#: ../../../headers/stdfix.rst:109
+#: ../../../headers/stdfix.md:90
 msgid "cos"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:111
+#: ../../../headers/stdfix.md:92
 msgid "exp"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:113
+#: ../../../headers/stdfix.md:94
 msgid "log"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:115
+#: ../../../headers/stdfix.md:96
 msgid "sin"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:117
+#: ../../../headers/stdfix.md:98
 msgid "sqrt"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:119
+#: ../../../headers/stdfix.md:100
 msgid "tan"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:124
+#: ../../../headers/stdfix.md:104
 msgid "Conversion Functions"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:126
+#: ../../../headers/stdfix.md:106
 msgid ""
 "The following conversion functions are included in the ISO/IEC TR 18037:2008 "
 "standard."
 msgstr ""
 
-#: ../../../headers/stdfix.rst:136
+#: ../../../headers/stdfix.md:117
 msgid "fprintf"
 msgstr "fprintf"
 
-#: ../../../headers/stdfix.rst:138
+#: ../../../headers/stdfix.md:119
 msgid "fscanf"
 msgstr "fscanf"
 
-#: ../../../headers/stdfix.rst:140
+#: ../../../headers/stdfix.md:121
 msgid "strtofx"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:145
+#: ../../../headers/stdfix.md:125
 msgid "Warnings"
 msgstr ""
 
-#: ../../../headers/stdfix.rst:147
+#: ../../../headers/stdfix.md:127
 msgid ""
 "This is currently a work-in-progress, its headers, macros, and ABI are still "
 "unstable, and might be modified."

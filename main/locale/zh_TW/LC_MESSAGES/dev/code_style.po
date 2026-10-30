@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -254,18 +254,19 @@ msgstr ""
 msgid ""
 "While LLVM-libc generally disallows dependencies between public entrypoints, "
 "`libc.src.errno.errno` is an **explicitly allowed exception** in the build "
-"system (see `ALLOWED_DEPS` in `libc/cmake/modules/LLVMLibCObjectRules."
-"cmake`). Downstream consumers and test suites that link the entrypoint "
-"require this dependency so that the storage for `libc_errno` is linked."
+"system (see `ALLOWED_DEPS` in `libc/cmake/modules/"
+"LLVMLibCObjectRules.cmake`). Downstream consumers and test suites that link "
+"the entrypoint require this dependency so that the storage for `libc_errno` "
+"is linked."
 msgstr ""
 
 #: ../../../dev/code_style.md:143
 msgid ""
 "**CMake Dependencies for Internal Support Libraries:** Header-only utility "
 "libraries under `libc/src/__support/` (such as `OSUtil` syscall wrappers or "
-"`FPUtil`) that reference `libc_errno.h` should depend on **`libc.src."
-"__support.libc_errno`** so they remain pure header libraries without "
-"introducing compiled entrypoint object dependencies."
+"`FPUtil`) that reference `libc_errno.h` should depend on "
+"**`libc.src.__support.libc_errno`** so they remain pure header libraries "
+"without introducing compiled entrypoint object dependencies."
 msgstr ""
 
 #: ../../../dev/code_style.md:149
@@ -307,11 +308,75 @@ msgid ""
 "or error values that appear to vanish or go to the wrong thread."
 msgstr ""
 
-#: ../../../dev/code_style.md:170
+#: ../../../dev/code_style.md:172
+msgid "Accessing values from `cpp::expected`, `ErrorOr`, and `cpp::optional`"
+msgstr ""
+
+#: ../../../dev/code_style.md:174
+msgid ""
+"Because LLVM-libc builds with `-fno-exceptions`, [`cpp::expected`](https://"
+"github.com/llvm/llvm-project/blob/main/libc/src/__support/CPP/expected.h) "
+"(along with `ErrorOr<T>`, which aliases `cpp::expected<T, int>`) and "
+"[`cpp::optional`](https://github.com/llvm/llvm-project/blob/main/libc/src/"
+"__support/CPP/optional.h) cannot throw on invalid access. Instead, their "
+"observers provide two distinct safety contracts:"
+msgstr ""
+
+#: ../../../dev/code_style.md:181
+msgid ""
+"**`.value()` and `.error()` are checked in all build modes:** Calling "
+"`.value()` when `!has_value()` (or `.error()` on `cpp::expected` when "
+"`has_value()`) unconditionally executes `__builtin_trap()`, including in "
+"release (`NDEBUG`) builds."
+msgstr ""
+
+#: ../../../dev/code_style.md:185
+msgid ""
+"**`operator*` and `operator->` are unchecked in release builds:** They trap "
+"under `#ifndef NDEBUG` when `!has_value()` to catch bugs during testing, and "
+"compile to direct member access with no check in release builds."
+msgstr ""
+
+#: ../../../dev/code_style.md:189
+msgid "Choose between them as follows:"
+msgstr ""
+
+#: ../../../dev/code_style.md:191
+msgid ""
+"**Prefer `*` and `->` after an explicit check:** Once `has_value()` or "
+"`operator bool` has been checked, prefer `*res` and `res->member`, "
+"especially in performance-sensitive paths (such as math or formatting fast "
+"paths) and whenever accessing members of the contained object (`res->field` "
+"rather than `res.value().field`). When the unwrapped value is needed more "
+"than once in a scope, bind it to a local variable instead of unwrapping "
+"repeatedly:"
+msgstr ""
+
+#: ../../../dev/code_style.md:207
+msgid ""
+"**Use `.value()` when relying on an invariant without a branch:** If an "
+"algorithm or API invariant guarantees that a value is present and you "
+"intentionally omit an `if (!res)` check, you **must** use `.value()` rather "
+"than `*res`. That ensures any unexpected violation traps deterministically "
+"in release builds instead of reading an inactive union member."
+msgstr ""
+
+#: ../../../dev/code_style.md:213
+msgid ""
+"**`.value()` is also acceptable for readability on `bool` or pointer "
+"types:** After a dominating `if (!res)` check, writing `if (!res.value())` "
+"on `ErrorOr<bool>` or `FILE *stream = res.value();` on `ErrorOr<FILE *>` "
+"avoids visually ambiguous `!*res` expressions or confusion between "
+"unwrapping the container and dereferencing the pointer. Under optimization, "
+"jump-threading eliminates the redundant check in `res.value()` when no "
+"opaque calls intervene."
+msgstr ""
+
+#: ../../../dev/code_style.md:221
 msgid "Assertions in libc runtime code"
 msgstr ""
 
-#: ../../../dev/code_style.md:172
+#: ../../../dev/code_style.md:223
 msgid ""
 "The libc developers should, and are encouraged to, use assertions freely in "
 "the libc runtime code. However, the assertion should be listed via the macro "
@@ -323,11 +388,11 @@ msgid ""
 "situations."
 msgstr ""
 
-#: ../../../dev/code_style.md:181
+#: ../../../dev/code_style.md:232
 msgid "Allocations in the libc runtime code"
 msgstr ""
 
-#: ../../../dev/code_style.md:183
+#: ../../../dev/code_style.md:234
 msgid ""
 "Some libc functions allocate memory. For example, the `strdup` function "
 "allocates new memory into which the input string is duplicated. Allocations "
@@ -346,7 +411,7 @@ msgid ""
 "these operators employ a pattern like this:"
 msgstr ""
 
-#: ../../../dev/code_style.md:215
+#: ../../../dev/code_style.md:266
 msgid ""
 "The only exception to using the above pattern is if allocating using the "
 "`realloc` function is of value. In such cases, prefer to use only the "
@@ -358,29 +423,29 @@ msgid ""
 "not required."
 msgstr ""
 
-#: ../../../dev/code_style.md:224
+#: ../../../dev/code_style.md:275
 msgid "Warnings in sources"
 msgstr ""
 
-#: ../../../dev/code_style.md:226
+#: ../../../dev/code_style.md:277
 msgid ""
 "We expect contributions to be free of warnings from the [minimum supported "
 "compiler versions](../compiler_support.md#minimum-supported-versions) (and "
 "newer)."
 msgstr ""
 
-#: ../../../dev/code_style.md:229
+#: ../../../dev/code_style.md:280
 msgid "Header Inclusion Policy"
 msgstr ""
 
-#: ../../../dev/code_style.md:231
+#: ../../../dev/code_style.md:282
 msgid ""
 "Because llvm-libc supports [Overlay Mode](../overlay_mode.md), [Full Host "
 "Build Mode](../full_host_build.md) and [Full Cross Build Mode](../"
 "full_cross_build.md) care must be taken when `#include`'ing certain headers."
 msgstr ""
 
-#: ../../../dev/code_style.md:237
+#: ../../../dev/code_style.md:288
 msgid ""
 "The `include/` directory contains public facing headers that users must "
 "consume for fullbuild mode. As such, types defined here will have ABI "
@@ -389,14 +454,14 @@ msgid ""
 "preprocessor guards for `LLVM_LIBC_FULL_BUILD`."
 msgstr ""
 
-#: ../../../dev/code_style.md:243
+#: ../../../dev/code_style.md:294
 msgid ""
 "Consider the case where an implementation in `libc/src/` may wish to refer "
 "to a `sigset_t`, what header should be included? `<signal.h>`, `<spawn.h>`, "
 "`<sys/select.h>`?"
 msgstr ""
 
-#: ../../../dev/code_style.md:247
+#: ../../../dev/code_style.md:298
 msgid ""
 "None of the above. Instead, code under `src/` should `#include \"hdr/types/"
 "sigset_t.h\"` which contains preprocessor guards on `LLVM_LIBC_FULL_BUILD` "
@@ -404,14 +469,14 @@ msgid ""
 "header (overlay mode)."
 msgstr ""
 
-#: ../../../dev/code_style.md:252
+#: ../../../dev/code_style.md:303
 msgid ""
 "Implementations in `libc/src/` should NOT be `#include`'ing using `<>` or "
 "`\"include/*`, except for these \"proxy\" headers that first check for "
 "`LLVM_LIBC_FULL_BUILD`."
 msgstr ""
 
-#: ../../../dev/code_style.md:256
+#: ../../../dev/code_style.md:307
 msgid ""
 "These \"proxy\" headers are similarly used when referring to preprocessor "
 "defines. Code under `libc/src/` should `#include` a proxy header from `hdr/"
@@ -420,58 +485,58 @@ msgid ""
 "system header (overlay)."
 msgstr ""
 
-#: ../../../dev/code_style.md:262
+#: ../../../dev/code_style.md:313
 msgid "Policy on Assembly sources"
 msgstr ""
 
-#: ../../../dev/code_style.md:264
+#: ../../../dev/code_style.md:315
 msgid ""
 "Coding in high level languages such as C++ provides benefits relative to low "
 "level languages like Assembly, such as:"
 msgstr ""
 
-#: ../../../dev/code_style.md:267
+#: ../../../dev/code_style.md:318
 msgid "Improved safety"
 msgstr ""
 
-#: ../../../dev/code_style.md:269
+#: ../../../dev/code_style.md:320
 msgid "Compile time diagnostics"
 msgstr ""
 
-#: ../../../dev/code_style.md:271
+#: ../../../dev/code_style.md:322
 msgid "Instrumentation"
 msgstr ""
 
-#: ../../../dev/code_style.md:273
+#: ../../../dev/code_style.md:324
 msgid "Code coverage"
 msgstr ""
 
-#: ../../../dev/code_style.md:274
+#: ../../../dev/code_style.md:325
 msgid "Profile collection"
 msgstr ""
 
-#: ../../../dev/code_style.md:276
+#: ../../../dev/code_style.md:327
 msgid "Sanitization"
 msgstr ""
 
-#: ../../../dev/code_style.md:278
+#: ../../../dev/code_style.md:329
 msgid "Automatic generation of debug info"
 msgstr ""
 
-#: ../../../dev/code_style.md:280
+#: ../../../dev/code_style.md:331
 msgid ""
 "While it's not impossible to have Assembly code that correctly provides all "
 "of the above, we do not wish to maintain such Assembly sources in llvm-libc."
 msgstr ""
 
-#: ../../../dev/code_style.md:283
+#: ../../../dev/code_style.md:334
 msgid ""
 "That said, there are a few functions provided by llvm-libc that are "
 "impossible to reliably implement in C++ for all compilers supported for "
 "building llvm-libc."
 msgstr ""
 
-#: ../../../dev/code_style.md:287
+#: ../../../dev/code_style.md:338
 msgid ""
 "We do use inline or out-of-line Assembly in an intentionally minimal set of "
 "places; typically places where the stack or individual register state must "
@@ -480,13 +545,13 @@ msgid ""
 "today."
 msgstr ""
 
-#: ../../../dev/code_style.md:293
+#: ../../../dev/code_style.md:344
 msgid ""
 "Contributions adding functions implemented purely in Assembly for "
 "performance are not welcome."
 msgstr ""
 
-#: ../../../dev/code_style.md:296
+#: ../../../dev/code_style.md:347
 msgid ""
 "Contributors should strive to stick with C++ for as long as it remains "
 "reasonable to do so. Ideally, bugs should be filed against compiler vendors, "
@@ -494,7 +559,7 @@ msgid ""
 "that seek to add Assembly to llvm-libc."
 msgstr ""
 
-#: ../../../dev/code_style.md:301
+#: ../../../dev/code_style.md:352
 msgid ""
 "Patches containing any amount of Assembly ideally should be approved by 2 "
 "maintainers. llvm-libc maintainers reserve the right to reject Assembly "
@@ -502,11 +567,11 @@ msgid ""
 "and to revisit this policy in the future."
 msgstr ""
 
-#: ../../../dev/code_style.md:306
+#: ../../../dev/code_style.md:357
 msgid "LIBC_NAMESPACE_DECL"
 msgstr ""
 
-#: ../../../dev/code_style.md:308
+#: ../../../dev/code_style.md:359
 msgid ""
 "llvm-libc provides a macro `LIBC_NAMESPACE` which contains internal "
 "implementations of libc functions and globals. This macro should only be "
@@ -516,11 +581,11 @@ msgid ""
 "declares `LIBC_NAMESPACE` with hidden visibility."
 msgstr ""
 
-#: ../../../dev/code_style.md:314
+#: ../../../dev/code_style.md:365
 msgid "Example usage:"
 msgstr ""
 
-#: ../../../dev/code_style.md:328
+#: ../../../dev/code_style.md:379
 msgid ""
 "Having hidden visibility on the namespace ensures extern declarations in a "
 "given TU have known visibility and never generate GOT indirections. The "
@@ -528,25 +593,25 @@ msgid ""
 "systems."
 msgstr ""
 
-#: ../../../dev/code_style.md:334
+#: ../../../dev/code_style.md:385
 msgid "Static Analysis & Clang-Tidy"
 msgstr ""
 
-#: ../../../dev/code_style.md:336
+#: ../../../dev/code_style.md:387
 msgid "Configuration"
 msgstr ""
 
-#: ../../../dev/code_style.md:338
+#: ../../../dev/code_style.md:389
 msgid "LLVM libc uses layered `.clang-tidy` configuration files:"
 msgstr ""
 
-#: ../../../dev/code_style.md:340
+#: ../../../dev/code_style.md:391
 msgid ""
 "`libc/.clang-tidy`: baseline checks for the `libc` subtree (currently "
 "focuses on identifier naming conventions)."
 msgstr ""
 
-#: ../../../dev/code_style.md:342
+#: ../../../dev/code_style.md:393
 msgid ""
 "`libc/src/.clang-tidy`: adds LLVM-libc-specific checks (`llvmlibc-*`) for "
 "implementation code under `libc/src` and also enables `readability-"
@@ -554,11 +619,11 @@ msgid ""
 "checks are treated as errors."
 msgstr ""
 
-#: ../../../dev/code_style.md:347
+#: ../../../dev/code_style.md:398
 msgid "Running the checks"
 msgstr ""
 
-#: ../../../dev/code_style.md:349
+#: ../../../dev/code_style.md:400
 msgid ""
 "Configure with `-DLLVM_LIBC_ENABLE_LINTING=ON` and build the `libc-lint` "
 "target. CMake looks for `clang-tidy` in the LLVM tools directory first (the "
@@ -570,7 +635,7 @@ msgid ""
 "and a version mismatch is then reported as a warning rather than an error."
 msgstr ""
 
-#: ../../../dev/code_style.md:358
+#: ../../../dev/code_style.md:409
 msgid ""
 "The `.clang-tidy` files and the `llvmlibc-*` checks live in the same "
 "repository and change together, so the configuration is written for the "
@@ -586,7 +651,7 @@ msgid ""
 "your `clang-tidy` would silently skip."
 msgstr ""
 
-#: ../../../dev/code_style.md:371
+#: ../../../dev/code_style.md:422
 msgid ""
 "A configuration that asks for linting but cannot run it (no `clang-tidy`, a "
 "non-clang compiler, or a discovered `clang-tidy` of the wrong major version) "
@@ -594,19 +659,19 @@ msgid ""
 "nothing, so a green `libc-lint` build always means the checks ran."
 msgstr ""
 
-#: ../../../dev/code_style.md:376
+#: ../../../dev/code_style.md:427
 msgid "LLVM-libc checks"
 msgstr ""
 
-#: ../../../dev/code_style.md:378
+#: ../../../dev/code_style.md:429
 msgid "restrict-system-libc-headers"
 msgstr ""
 
-#: ../../../dev/code_style.md:380
+#: ../../../dev/code_style.md:431
 msgid "Check name: `llvmlibc-restrict-system-libc-headers`."
 msgstr ""
 
-#: ../../../dev/code_style.md:382
+#: ../../../dev/code_style.md:433
 msgid ""
 "One of libc-project's design goals is to use kernel headers and compiler "
 "provided headers to prevent code duplication on a per platform basis. This "
@@ -617,72 +682,72 @@ msgid ""
 "underlying implementation details such as the layout of a struct."
 msgstr ""
 
-#: ../../../dev/code_style.md:390
+#: ../../../dev/code_style.md:441
 msgid ""
 "This check prevents accidental inclusion of system libc headers when writing "
 "a libc implementation."
 msgstr ""
 
-#: ../../../dev/code_style.md:399
+#: ../../../dev/code_style.md:450
 msgid "implementation-in-namespace"
 msgstr ""
 
-#: ../../../dev/code_style.md:401
+#: ../../../dev/code_style.md:452
 msgid "Check name: `llvmlibc-implementation-in-namespace`."
 msgstr ""
 
-#: ../../../dev/code_style.md:403
+#: ../../../dev/code_style.md:454
 msgid ""
 "All LLVM-libc implementation constructs must be enclosed in the "
 "`LIBC_NAMESPACE_DECL` namespace. See {ref}`code_style` for the full "
 "technical rationale and macro definitions."
 msgstr ""
 
-#: ../../../dev/code_style.md:407
+#: ../../../dev/code_style.md:458
 msgid ""
 "This check ensures that top-level declarations in a translation unit are "
 "enclosed within the `LIBC_NAMESPACE_DECL` namespace."
 msgstr ""
 
-#: ../../../dev/code_style.md:431
+#: ../../../dev/code_style.md:482
 msgid "callee-namespace"
 msgstr ""
 
-#: ../../../dev/code_style.md:433
+#: ../../../dev/code_style.md:484
 msgid "Check name: `llvmlibc-callee-namespace`."
 msgstr ""
 
-#: ../../../dev/code_style.md:435
+#: ../../../dev/code_style.md:486
 msgid ""
 "LLVM-libc is distinct because it is designed to maintain interoperability "
 "with other libc libraries, including the one that lives on the system. This "
 "feature creates some uncertainty about which library a call resolves to "
-"especially when a public header with non-namespaced functions like `string."
-"h` is included."
+"especially when a public header with non-namespaced functions like "
+"`string.h` is included."
 msgstr ""
 
-#: ../../../dev/code_style.md:440
+#: ../../../dev/code_style.md:491
 msgid ""
 "This check ensures any function call resolves to a function within the "
 "LIBC_NAMESPACE namespace."
 msgstr ""
 
-#: ../../../dev/code_style.md:443
+#: ../../../dev/code_style.md:494
 msgid ""
 "There are exceptions for the following functions: `__errno_location` so that "
 "`errno` can be set; `malloc`, `calloc`, `realloc`, `aligned_alloc`, and "
 "`free` since they are always external and can be intercepted."
 msgstr ""
 
-#: ../../../dev/code_style.md:469
+#: ../../../dev/code_style.md:520
 msgid "inline-function-decl"
 msgstr ""
 
-#: ../../../dev/code_style.md:471
+#: ../../../dev/code_style.md:522
 msgid "Check name: `llvmlibc-inline-function-decl`."
 msgstr ""
 
-#: ../../../dev/code_style.md:473
+#: ../../../dev/code_style.md:524
 msgid ""
 "LLVM libc uses the `LIBC_INLINE` macro to tag inline function declarations "
 "in headers. This check enforces that any inline function declaration in a "

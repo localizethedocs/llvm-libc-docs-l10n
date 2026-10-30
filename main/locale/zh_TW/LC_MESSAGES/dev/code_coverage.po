@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -249,19 +249,19 @@ msgid "Exports the profile output pattern and Clang 24 tool paths:"
 msgstr ""
 
 #: ../../../dev/code_coverage.md:173 ../../../dev/code_coverage.md:298
-msgid "4. Build and Execute Hermetic Tests"
+msgid "4. Build and Execute Tests"
 msgstr ""
 
 #: ../../../dev/code_coverage.md:175
-msgid "Compiles and executes the full hermetic test suite:"
+msgid "Compiles and executes the test suite:"
 msgstr ""
 
 #: ../../../dev/code_coverage.md:182
 msgid ""
 "The `-k 0` flag ensures Ninja continues executing all remaining test targets "
 "even if an individual edge-case test encounters an error. To only compile "
-"test binaries without executing them, use `ninja -C build-cov libc-hermetic-"
-"tests-build`."
+"test binaries without executing them, use `ninja -C build-cov libc-tests-"
+"build`."
 msgstr ""
 
 #: ../../../dev/code_coverage.md:188 ../../../dev/code_coverage.md:307
@@ -346,8 +346,8 @@ msgstr ""
 
 #: ../../../dev/code_coverage.md:309
 msgid ""
-"Indexes and merges all MC/DC `.profraw` files into a unified `libc_mcdc."
-"profdata` archive for report generation:"
+"Indexes and merges all MC/DC `.profraw` files into a unified "
+"`libc_mcdc.profdata` archive for report generation:"
 msgstr ""
 
 #: ../../../dev/code_coverage.md:317
@@ -396,8 +396,8 @@ msgstr ""
 
 #: ../../../dev/code_coverage.md:377
 msgid ""
-"**Target pattern:** `libc.test.<path_to_test>.<test_name>` (e.g. `libc.test."
-"src.string.strlen_test`)"
+"**Target pattern:** `libc.test.<path_to_test>.<test_name>` (e.g. "
+"`libc.test.src.string.strlen_test`)"
 msgstr ""
 
 #: ../../../dev/code_coverage.md:379
@@ -529,8 +529,8 @@ msgstr ""
 
 #: ../../../dev/code_coverage.md:500
 msgid ""
-"**Conditions:** **C1** represents `c < 0` and **C2** represents `c > cpp::"
-"numeric_limits<unsigned char>::max()`."
+"**Conditions:** **C1** represents `c < 0` and **C2** represents `c > "
+"cpp::numeric_limits<unsigned char>::max()`."
 msgstr ""
 
 #: ../../../dev/code_coverage.md:502

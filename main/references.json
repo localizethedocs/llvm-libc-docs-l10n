@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-10-19 11:28:39 -0700",
-        "hash" : "d48c176a87ce7366d3e00f35b97d906a411ef571",
-        "title" : "[CIR] Implement 'loop hint' lowering (#232975)"
+        "date" : "2026-10-26 08:35:25 -0700",
+        "hash" : "ff57d874f6c8736d54a953b416cd0fe0b7c7b6ef",
+        "title" : "TableGen: Skip disjoint register classes before intersecting them (#234803)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-10-19 11:28:39 -0700",
-        "hash" : "d48c176a87ce7366d3e00f35b97d906a411ef571",
-        "title" : "[CIR] Implement 'loop hint' lowering (#232975)"
+        "date" : "2026-10-26 08:35:25 -0700",
+        "hash" : "ff57d874f6c8736d54a953b416cd0fe0b7c7b6ef",
+        "title" : "TableGen: Skip disjoint register classes before intersecting them (#234803)"
       }
     }
   },

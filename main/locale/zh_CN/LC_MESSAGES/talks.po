@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,375 +22,444 @@ msgid "Talks"
 msgstr ""
 
 #: ../../../talks.md:3
-msgid "2025"
+msgid "2026"
 msgstr ""
 
 #: ../../../talks.md:5
+msgid ""
+"A performance improvement of the Payne-Hanek range reduction algorithm - Tue "
+"Ly"
+msgstr ""
+
+#: ../../../talks.md:7
+msgid "[paper](https://arxiv.org/pdf/2609.35015)"
+msgstr ""
+
+#: ../../../talks.md:9
+msgid ""
+"Sharing LLVM-libc's floating-point routines with compiler-rt (GSoC 2026) - "
+"Mohamed Emad"
+msgstr ""
+
+#: ../../../talks.md:11
+msgid ""
+"[blog](https://blog.llvm.org/posts/2026-08-24-gsoc-sharing-libc-with-"
+"compiler-rt/)"
+msgstr ""
+
+#: ../../../talks.md:13
+msgid ""
+"Bringing Correctly Rounded Math to Production with LLVM-libc - Michael "
+"Jones, Tue Ly, Cody Miller"
+msgstr ""
+
+#: ../../../talks.md:15
+msgid ""
+"[blog](https://devblogs.microsoft.com/cppblog/bringing-correctly-rounded-"
+"math-to-production-with-llvm-libc/)"
+msgstr ""
+
+#: ../../../talks.md:17
+msgid "MSVC C++23: constexpr cmath with LLVM libc - Cody Miller"
+msgstr ""
+
+#: ../../../talks.md:19
+msgid ""
+"[blog](https://devblogs.microsoft.com/cppblog/msvc-c23-constexpr-cmath-with-"
+"llvm-libc/)"
+msgstr ""
+
+#: ../../../talks.md:21
+msgid ""
+"Computing hard-to-round Cases of sin, cos, tan in Double Precision ([ARITH "
+"2026](https://www.arith2026.org/program.html)) - Vincent Lefevre, Tue Ly, "
+"Paul Zimmermann"
+msgstr ""
+
+#: ../../../talks.md:23
+msgid "[slides](https://www.arith2026.org/slides/session_5_3_Ly.pdf)"
+msgstr ""
+
+#: ../../../talks.md:24
+msgid ""
+"[paper](https://www.arith2026.org/papers/Computing%20hard-to-"
+"round%20cases%20of%20sin_2C%20cos_2C%20tan%20in%20double%20precisio.pdf)"
+msgstr ""
+
+#: ../../../talks.md:25
+msgid "[extended version](https://inria.hal.science/hal-05593313)"
+msgstr ""
+
+#: ../../../talks.md:28
+msgid "2025"
+msgstr ""
+
+#: ../../../talks.md:30
 msgid ""
 "From proprietary to fully open-source - Arm Toolchain's adoption of LLVM "
 "technology - Peter Smith"
 msgstr ""
 
-#: ../../../talks.md:7
+#: ../../../talks.md:32
 msgid "[slides](https://llvm.org/devmtg/2025-10/slides/keynotes/smith.pdf)"
 msgstr ""
 
-#: ../../../talks.md:8
+#: ../../../talks.md:33
 msgid "[video](https://www.youtube.com/watch?v=I7S_Vsnkecg)"
 msgstr ""
 
-#: ../../../talks.md:10
+#: ../../../talks.md:35
 msgid ""
 "How to test and evaluate LLVM libc on embedded applications - William Huynh"
 msgstr ""
 
-#: ../../../talks.md:12
+#: ../../../talks.md:37
 msgid ""
 "[slides](https://llvm.org/devmtg/2025-10/slides/lightning_talks/huynh.pdf)"
 msgstr ""
 
-#: ../../../talks.md:13
+#: ../../../talks.md:38
 msgid "[video](https://www.youtube.com/watch?v=Dta6nQLmCOY)"
 msgstr ""
 
-#: ../../../talks.md:15
+#: ../../../talks.md:40
 msgid ""
 "Through the Compiler's Keyhole - Migrating to Clang Without Seeing the "
 "Source - Petr Hosek"
 msgstr ""
 
-#: ../../../talks.md:17
+#: ../../../talks.md:42
 msgid ""
 "[slides](https://llvm.org/devmtg/2025-10/slides/technical_talks/hosek.pdf)"
 msgstr ""
 
-#: ../../../talks.md:18
+#: ../../../talks.md:43
 msgid "[video](https://www.youtube.com/watch?v=CHbyo0Ux60o)"
 msgstr ""
 
-#: ../../../talks.md:20
+#: ../../../talks.md:45
 msgid "Building C++ compiler runtimes on demand - Why and how - Brook Moses"
 msgstr ""
 
-#: ../../../talks.md:22
+#: ../../../talks.md:47
 msgid ""
 "[slides](https://llvm.org/devmtg/2025-10/slides/technical_talks/moses.pdf)"
 msgstr ""
 
-#: ../../../talks.md:23
+#: ../../../talks.md:48
 msgid "[video](https://www.youtube.com/watch?v=4oKegT4TWV0)"
 msgstr ""
 
-#: ../../../talks.md:25
+#: ../../../talks.md:50
 msgid ""
 "LT-Uh-Oh - Adventures using LTO with libc - Paul Kirth, Daniel Thornburgh"
 msgstr ""
 
-#: ../../../talks.md:27
+#: ../../../talks.md:52
 msgid ""
 "[slides](https://llvm.org/devmtg/2025-10/slides/technical_talks/"
 "kirth_thornburgh.pdf)"
 msgstr ""
 
-#: ../../../talks.md:28
+#: ../../../talks.md:53
 msgid "[video](https://www.youtube.com/watch?v=cG278WjmIFs)"
 msgstr ""
 
-#: ../../../talks.md:30
+#: ../../../talks.md:55
 msgid ""
 "Climbing the ladder of Complete - LLVM libc past and future - Michael Jones"
 msgstr ""
 
-#: ../../../talks.md:32
+#: ../../../talks.md:57
 msgid ""
 "[slides](https://llvm.org/devmtg/2025-10/slides/technical_talks/jones.pdf)"
 msgstr ""
 
-#: ../../../talks.md:33
+#: ../../../talks.md:58
 msgid "[video](https://www.youtube.com/watch?v=HtCMCL13Grg)"
 msgstr ""
 
-#: ../../../talks.md:35
+#: ../../../talks.md:60
 msgid ""
 "Project Widen Your Char-izons - Adding wchar support to LLVM libc - Uzair "
 "Nawaz, Sriya Pratipati"
 msgstr ""
 
-#: ../../../talks.md:37
+#: ../../../talks.md:62
 msgid ""
-"[slides](https://llvm.org/devmtg/2025-10/slides/quick_talks/nawaz_pratipati."
-"pdf)"
+"[slides](https://llvm.org/devmtg/2025-10/slides/quick_talks/"
+"nawaz_pratipati.pdf)"
 msgstr ""
 
-#: ../../../talks.md:38
+#: ../../../talks.md:63
 msgid "[video](https://www.youtube.com/watch?v=YjI9dum74uM)"
 msgstr ""
 
-#: ../../../talks.md:40
+#: ../../../talks.md:65
 msgid ""
 "A problem left unsolved by Jean-Michel (RAIM 2025) - Paul Zimmermann, Tue Ly"
 msgstr ""
 
-#: ../../../talks.md:42
+#: ../../../talks.md:67
 msgid ""
 "[slides](https://raim2025.sciencesconf.org/data/program/"
 "slides_paul_zimmermann.pdf)"
 msgstr ""
 
-#: ../../../talks.md:44
+#: ../../../talks.md:69
 msgid "Bfloat16 in LLVM libc (GSoC 2025) - Krishna Pandey"
 msgstr ""
 
-#: ../../../talks.md:46
+#: ../../../talks.md:71
 msgid "[blog](https://blog.llvm.org/posts/2025-09-10-bfloat16-in-llvm-libc/)"
 msgstr ""
 
-#: ../../../talks.md:48
+#: ../../../talks.md:73
 msgid ""
 "Profiling and Testing Math Functions on GPUs (GSoC 2025) - Leandro A. L. "
 "Campos"
 msgstr ""
 
-#: ../../../talks.md:50
+#: ../../../talks.md:75
 msgid ""
 "[blog](https://blog.llvm.org/posts/2025-08-29-gsoc-profiling-and-testing-"
 "math-functions-on-gpus/)"
 msgstr ""
 
-#: ../../../talks.md:52
+#: ../../../talks.md:77
 msgid "GPU-driven I/O with io_uring (GSoC 2025) - Rodrigo Ceccato"
 msgstr ""
 
-#: ../../../talks.md:54
+#: ../../../talks.md:79
 msgid "[blog](https://blog.llvm.org/posts/2025-08-04-gpu-io-uring/)"
 msgstr ""
 
-#: ../../../talks.md:56
+#: ../../../talks.md:81
 msgid "An introduction to building and using LLVM libc - Peter Smith"
 msgstr ""
 
-#: ../../../talks.md:58
+#: ../../../talks.md:83
 msgid ""
 "[slides](https://fosdem.org/2025/events/attachments/fosdem-2025-5456-an-"
-"introduction-to-building-and-using-llvm-libc/slides/237989/Fosdem202_76Bilu2."
-"pdf)"
+"introduction-to-building-and-using-llvm-libc/slides/237989/"
+"Fosdem202_76Bilu2.pdf)"
 msgstr ""
 
-#: ../../../talks.md:59
+#: ../../../talks.md:84
 msgid ""
 "[video](https://fosdem.org/2025/schedule/event/fosdem-2025-5456-an-"
 "introduction-to-building-and-using-llvm-libc/)"
 msgstr ""
 
-#: ../../../talks.md:61
+#: ../../../talks.md:86
 msgid "2024"
 msgstr ""
 
-#: ../../../talks.md:63
+#: ../../../talks.md:88
 msgid "A C/C++ Toolchain for your GPU - Joseph Huber"
 msgstr ""
 
-#: ../../../talks.md:65
+#: ../../../talks.md:90
 msgid ""
 "[slides](https://llvm.org/devmtg/2024-10/slides/techtalk/Huber-A-CPlusPlus-"
 "Toolchain-for-Your-GPU.pdf)"
 msgstr ""
 
-#: ../../../talks.md:66
+#: ../../../talks.md:91
 msgid "[video](https://www.youtube.com/watch?v=4TxGWis1mws)"
 msgstr ""
 
-#: ../../../talks.md:67
+#: ../../../talks.md:92
 msgid "[phoronix](https://www.phoronix.com/news/AMD-Standard-C-Code-GPUs)"
 msgstr ""
 
-#: ../../../talks.md:69
+#: ../../../talks.md:94
 msgid "Modern Embedded Development with LLVM - Petr Hosek"
 msgstr ""
 
-#: ../../../talks.md:71
+#: ../../../talks.md:96
 msgid ""
 "[slides](https://llvm.org/devmtg/2024-10/slides/techtalk/Hosek-"
 "ModernEmbeddedDevelopment-with-LLVM.pdf)"
 msgstr ""
 
-#: ../../../talks.md:72
+#: ../../../talks.md:97
 msgid "[video](https://www.youtube.com/watch?v=5hHQi-Uj34I)"
 msgstr ""
 
-#: ../../../talks.md:74
+#: ../../../talks.md:99
 msgid "Using llvm-libc in LLVM Embedded Toolchain for Arm - Peter Smith"
 msgstr ""
 
-#: ../../../talks.md:76
+#: ../../../talks.md:101
 msgid ""
 "[slides](https://llvm.org/devmtg/2024-10/slides/lightning/Smith-Using-llvm-"
 "libc.pdf)"
 msgstr ""
 
-#: ../../../talks.md:77
+#: ../../../talks.md:102
 msgid "[video](https://www.youtube.com/watch?v=ctgkbaYwT_I)"
 msgstr ""
 
-#: ../../../talks.md:79
+#: ../../../talks.md:104
 msgid ""
 "RISC-V Support into LLVM libc - Challenges and Solutions for 32-bit and 64-"
 "bit - Mikhail R. Gadelha"
 msgstr ""
 
-#: ../../../talks.md:81
+#: ../../../talks.md:106
 msgid ""
 "[slides](https://llvm.org/devmtg/2024-10/slides/quicktalks/Gadelha-RISC-V-"
 "SupportIntoLLVM-libc.pdf)"
 msgstr ""
 
-#: ../../../talks.md:82
+#: ../../../talks.md:107
 msgid "[video](https://www.youtube.com/watch?v=GytmaH64wFo)"
 msgstr ""
 
-#: ../../../talks.md:84
+#: ../../../talks.md:109
 msgid ""
 "Project Hand-in-Hand - The beginning of a beautiful friendship - Michael "
 "Jones & Christopher Di Bella"
 msgstr ""
 
-#: ../../../talks.md:86
+#: ../../../talks.md:111
 msgid ""
 "[slides](https://llvm.org/devmtg/2024-10/slides/techtalk/Jones-DiBella-hand-"
 "in-hand.pdf)"
 msgstr ""
 
-#: ../../../talks.md:87
+#: ../../../talks.md:112
 msgid "[video](https://www.youtube.com/watch?v=VAEO86YtTHA)"
 msgstr ""
 
-#: ../../../talks.md:89
+#: ../../../talks.md:114
 msgid "LLVM libc math library - Current status and future directions - Tue Ly"
 msgstr ""
 
-#: ../../../talks.md:91
+#: ../../../talks.md:116
 msgid ""
 "[slides](https://llvm.org/devmtg/2024-10/slides/techtalk/Ly-LLVM-libc-math-"
 "library-CurrentStatus.pdf)"
 msgstr ""
 
-#: ../../../talks.md:92
+#: ../../../talks.md:117
 msgid "[video](https://www.youtube.com/watch?v=-8zb8rHbvcQ)"
 msgstr ""
 
-#: ../../../talks.md:94
+#: ../../../talks.md:119
 msgid "Half-precision in LLVM libc - Nicolas Celik"
 msgstr ""
 
-#: ../../../talks.md:96
+#: ../../../talks.md:121
 msgid ""
 "[slides](https://llvm.org/devmtg/2024-10/slides/studenttalks/Celik-Half-"
 "precision-in-LLVM-libc.pdf)"
 msgstr ""
 
-#: ../../../talks.md:97
+#: ../../../talks.md:122
 msgid "[video](https://www.youtube.com/watch?v=H6aOFSVwSSM)"
 msgstr ""
 
-#: ../../../talks.md:98
+#: ../../../talks.md:123
 msgid ""
 "[blog](https://blog.llvm.org/posts/2024-08-31-half-precision-in-llvm-libc/)"
 msgstr ""
 
-#: ../../../talks.md:100
+#: ../../../talks.md:125
 msgid "2023"
 msgstr ""
 
-#: ../../../talks.md:102
+#: ../../../talks.md:127
 msgid ""
 "Math functions in LLVM libc or yet another correctly rounded libm - Tue Ly"
 msgstr ""
 
-#: ../../../talks.md:104
+#: ../../../talks.md:129
 msgid ""
 "[slides](https://drive.google.com/file/d/1Gchrc3AXKXAWFI1nk8Y1x8UsoQSp8XjF/"
 "view)"
 msgstr ""
 
-#: ../../../talks.md:105
+#: ../../../talks.md:130
 msgid "[video](https://www.youtube.com/watch?v=kBSJqVWNQLY)"
 msgstr ""
 
-#: ../../../talks.md:107
+#: ../../../talks.md:132
 msgid "The LLVM C Library for GPUs - Joseph Huber"
 msgstr ""
 
-#: ../../../talks.md:109
+#: ../../../talks.md:134
 msgid ""
-"[slides](https://llvm.org/devmtg/2023-10/slides/techtalks/Huber-LibCforGPUs."
-"pdf)"
+"[slides](https://llvm.org/devmtg/2023-10/slides/techtalks/Huber-"
+"LibCforGPUs.pdf)"
 msgstr ""
 
-#: ../../../talks.md:110
+#: ../../../talks.md:135
 msgid "[video](https://www.youtube.com/watch?v=_LLGc48GYHc)"
 msgstr ""
 
-#: ../../../talks.md:112
+#: ../../../talks.md:137
 msgid ""
 "The Challenges of Implementing the C Standard Library in C++ - Sivachandra "
 "Reddy"
 msgstr ""
 
-#: ../../../talks.md:114
+#: ../../../talks.md:139
 msgid ""
 "[slides](https://github.com/boostcon/cppnow_presentations_2023/blob/main/"
-"cppnow_slides/The_Challenges_of_Implementing_the_C_Standard_Library_in_Cpp."
-"pdf)"
+"cppnow_slides/"
+"The_Challenges_of_Implementing_the_C_Standard_Library_in_Cpp.pdf)"
 msgstr ""
 
-#: ../../../talks.md:115
+#: ../../../talks.md:140
 msgid "[video](https://www.youtube.com/watch?v=cuVrWUGSIgM)"
 msgstr ""
 
-#: ../../../talks.md:117
+#: ../../../talks.md:142
 msgid "2022"
 msgstr ""
 
-#: ../../../talks.md:119
+#: ../../../talks.md:144
 msgid "Using LLVM's libc - Sivachandra Reddy, Michael Jones, Tue Ly"
 msgstr ""
 
-#: ../../../talks.md:121
+#: ../../../talks.md:146
 msgid ""
 "[slides](https://llvm.org/devmtg/2022-11/slides/Tutorial1-UsingLLVM-libc.pdf)"
 msgstr ""
 
-#: ../../../talks.md:122
+#: ../../../talks.md:147
 msgid "[video](https://www.youtube.com/watch?v=OpY4lnpnbq4)"
 msgstr ""
 
-#: ../../../talks.md:124
+#: ../../../talks.md:149
 msgid ""
 "Using modern CPU instructions to improve LLVM's libc math library - Tue Ly"
 msgstr ""
 
-#: ../../../talks.md:126
+#: ../../../talks.md:151
 msgid ""
 "[slides](https://llvm.org/devmtg/2022-11/slides/QuickTalk7-"
 "UsingModernCPUInstructionsToImproveLLVM-libcMathLib)"
 msgstr ""
 
-#: ../../../talks.md:127
+#: ../../../talks.md:152
 msgid "[video](https://www.youtube.com/watch?v=9bvdbdn0nMA)"
 msgstr ""
 
-#: ../../../talks.md:129
+#: ../../../talks.md:154
 msgid ""
 "Approximating at Scale: How strto float in LLVM’s libc is faster - Michael "
 "Jones"
 msgstr ""
 
-#: ../../../talks.md:131
+#: ../../../talks.md:156
 msgid ""
 "[slides](https://llvm.org/devmtg/2022-11/slides/QuickTalk3-"
 "ApproximatingatScale-StringToFloat.pdf)"
 msgstr ""
 
-#: ../../../talks.md:132
+#: ../../../talks.md:157
 msgid "[video](https://www.youtube.com/watch?v=s-UjbTV8p6g)"
 msgstr ""

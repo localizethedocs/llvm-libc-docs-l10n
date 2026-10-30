@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../gpu/rpc.rst:5
+#: ../../../gpu/rpc.md:3
 msgid "Remote Procedure Calls"
 msgstr ""
 
-#: ../../../gpu/rpc.rst:8
+#: ../../../gpu/rpc.md:5
 msgid "Remote Procedure Call Implementation"
 msgstr ""
 
-#: ../../../gpu/rpc.rst:10
+#: ../../../gpu/rpc.md:7
 msgid ""
 "Traditionally, the C library abstracts over several functions that interface "
 "with the platform's operating system through system calls. The GPU however "
@@ -34,7 +34,7 @@ msgid ""
 "the host's operating system while executing on a GPU."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:16
+#: ../../../gpu/rpc.md:13
 msgid ""
 "We implemented remote procedure calls using unified virtual memory to create "
 "a shared communicate channel between the two processes. This memory is often "
@@ -45,7 +45,7 @@ msgid ""
 "server protocol using this shared memory."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:24
+#: ../../../gpu/rpc.md:21
 msgid ""
 "This work treats the GPU as a client and the host as a server. The client "
 "initiates a communication while the server listens for them. In order to "
@@ -58,7 +58,7 @@ msgid ""
 "the server when they are not."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:34
+#: ../../../gpu/rpc.md:31
 msgid ""
 "In order to make this transmission channel thread-safe, we abstract "
 "ownership of the given mailbox pair and buffer around a port, effectively "
@@ -69,7 +69,7 @@ msgid ""
 "them as multiple ports."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:41
+#: ../../../gpu/rpc.md:38
 msgid ""
 "If this were simply a standard CPU system, this would be sufficient. "
 "However, GPUs have my unique architectural challenges. First, GPU threads "
@@ -85,81 +85,81 @@ msgid ""
 "remains consistent while interfacing with the port."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:58
+#: ../../../gpu/rpc.md:56
 msgid ""
 "The above diagram outlines the architecture of the RPC interface. For "
 "clarity the following list will explain the operations done by the client "
 "and server respectively when initiating a communication."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:62
+#: ../../../gpu/rpc.md:60
 msgid "First, a communication from the perspective of the client:"
 msgstr ""
 
-#: ../../../gpu/rpc.rst:64
+#: ../../../gpu/rpc.md:62
 msgid "The client searches for an available port and claims the lock."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:65
+#: ../../../gpu/rpc.md:63
 msgid ""
 "The client checks that the port is still available to the current device and "
 "continues if so."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:67
+#: ../../../gpu/rpc.md:65
 msgid ""
 "The client writes its data to the fixed-size packet and toggles its outbox."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:68
+#: ../../../gpu/rpc.md:66
 msgid "The client waits until its inbox matches its outbox."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:69
+#: ../../../gpu/rpc.md:67
 msgid "The client reads the data from the fixed-size packet."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:70
+#: ../../../gpu/rpc.md:68
 msgid "The client closes the port and continues executing."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:72
+#: ../../../gpu/rpc.md:70
 msgid "Now, the same communication from the perspective of the server:"
 msgstr ""
 
-#: ../../../gpu/rpc.rst:74
+#: ../../../gpu/rpc.md:72
 msgid ""
 "The server searches for an available port with pending work and claims the "
 "lock."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:76
+#: ../../../gpu/rpc.md:74
 msgid ""
 "The server checks that the port is still available to the current device."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:77
+#: ../../../gpu/rpc.md:75
 msgid ""
 "The server reads the opcode to perform the expected operation, in this case "
 "a receive and then send."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:79
+#: ../../../gpu/rpc.md:77
 msgid "The server reads the data from the fixed-size packet."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:80
+#: ../../../gpu/rpc.md:78
 msgid ""
 "The server writes its data to the fixed-size packet and toggles its outbox."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:81
+#: ../../../gpu/rpc.md:79
 msgid ""
 "The server closes the port and continues searching for ports that need to be "
 "serviced"
 msgstr ""
 
-#: ../../../gpu/rpc.rst:84
+#: ../../../gpu/rpc.md:82
 msgid ""
 "This architecture currently requires that the host periodically checks the "
 "RPC server's buffer for ports with pending work. Note that a port can be "
@@ -170,11 +170,11 @@ msgid ""
 "fashion."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:92
+#: ../../../gpu/rpc.md:89
 msgid "Client Example"
 msgstr ""
 
-#: ../../../gpu/rpc.rst:94
+#: ../../../gpu/rpc.md:91
 msgid ""
 "The Client API is not currently exported by the LLVM C library. This is "
 "primarily due to being written in C++ and relying on internal data "
@@ -183,22 +183,22 @@ msgid ""
 "pointer on the server."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:100
+#: ../../../gpu/rpc.md:97
 msgid ""
 "This code first opens a port with the given opcode to facilitate the "
 "communication. It then copies over the argument struct to the server using "
-"the ``send_n`` interface to stream arbitrary bytes. The next send operation "
+"the `send_n` interface to stream arbitrary bytes. The next send operation "
 "provides the server with the function pointer that will be executed. The "
 "final receive operation is a no-op and simply forces the client to wait "
 "until the server is done. It can be omitted if asynchronous execution is "
 "desired."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:119
+#: ../../../gpu/rpc.md:115
 msgid "Server Example"
 msgstr ""
 
-#: ../../../gpu/rpc.rst:121
+#: ../../../gpu/rpc.md:117
 msgid ""
 "This example shows the server-side handling of the previous client example. "
 "When the server is checked, if there are any ports with pending work it will "
@@ -206,12 +206,12 @@ msgid ""
 "action is to call a function pointer provided by the client."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:126
+#: ../../../gpu/rpc.md:122
 msgid ""
 "In this example, the server simply runs forever in a separate thread for "
 "brevity's sake. Because the client is a GPU potentially handling several "
 "threads at once, the server needs to loop over all the active threads on the "
-"GPU. We abstract this into the ``num_lanes`` variable, which is simply the "
+"GPU. We abstract this into the `num_lanes` variable, which is simply the "
 "device's warp or wavefront size. The identifier is simply the threads index "
 "into the current warp or wavefront. We allocate memory to copy the struct "
 "data into, and then call the given function pointer with that copied data. "
@@ -219,11 +219,11 @@ msgid ""
 "to delete the temporary data."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:163
+#: ../../../gpu/rpc.md:158
 msgid "Function Dispatch"
 msgstr ""
 
-#: ../../../gpu/rpc.rst:165
+#: ../../../gpu/rpc.md:160
 msgid ""
 "There are cases where the client wants to simply execute a function as-is on "
 "the server. A helper function is provided to make this case almost "
@@ -235,39 +235,39 @@ msgid ""
 "server to complete execution rather than submitting asynchronously."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:200
+#: ../../../gpu/rpc.md:193
 msgid "CUDA Server Example"
 msgstr ""
 
-#: ../../../gpu/rpc.rst:202
+#: ../../../gpu/rpc.md:195
 msgid ""
 "The following code shows an example of using the exported RPC interface "
 "along with the C library to manually configure a working server using the "
 "CUDA language. Other runtimes can use the presence of the "
-"``__llvm_rpc_client`` in the GPU executable as an indicator for whether or "
-"not the server can be checked. These details should ideally be handled by "
-"the GPU language runtime, but the following example shows how it can be used "
-"by a standard user."
+"`__llvm_rpc_client` in the GPU executable as an indicator for whether or not "
+"the server can be checked. These details should ideally be handled by the "
+"GPU language runtime, but the following example shows how it can be used by "
+"a standard user."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:274
+#: ../../../gpu/rpc.md:267
 msgid ""
 "The above code must be compiled in CUDA's relocatable device code mode and "
 "with the advanced offloading driver to link in the library. Currently this "
 "can be done with the following invocation. Using LTO avoids the overhead "
 "normally associated with relocatable device code linking. The C library for "
-"GPU's handling is included through the ``shared/`` directory. This is not "
+"GPU's handling is included through the `shared/` directory. This is not "
 "currently installed as it does not use a stable interface."
 msgstr ""
 
-#: ../../../gpu/rpc.rst:291
+#: ../../../gpu/rpc.md:282
 msgid "Extensions"
 msgstr ""
 
-#: ../../../gpu/rpc.rst:293
+#: ../../../gpu/rpc.md:284
 msgid ""
 "The opcode is a 32-bit integer that must be unique to the requested "
-"operation. All opcodes used by ``libc`` internally have the character ``c`` "
-"in the most significant byte. Any other opcode is available for use outside "
-"of the ``libc`` implementation."
+"operation. All opcodes used by `libc` internally have the character `c` in "
+"the most significant byte. Any other opcode is available for use outside of "
+"the `libc` implementation."
 msgstr ""

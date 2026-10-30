@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../complete_runtimes_build.md:3
+msgid "Complete Runtimes Build for Linux"
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:5
+msgid ""
+"The first two steps are the same as a {ref}`full host build "
+"<full_host_build>`."
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:7
+msgid "Building a Simple Sysroot"
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:9
+msgid "Step 1: Preparation"
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:11
+msgid ""
+"First, check out the demo branch in your llvm-project, then set up the "
+"environment variables for your sysroot path."
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:20
+msgid "Step 2: Linux Headers"
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:22
+msgid ""
+"Next, install the Linux kernel headers into your sysroot. For this guide, "
+"we'll copy the headers from the host system's `/usr/include` directory. This "
+"includes `linux`, `asm-generic`, and the architecture-specific `asm` headers."
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:38
+msgid ""
+"If you instead want to build the headers from the kernel sources, you can "
+"run the following commands:"
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:49
+msgid ""
+"The headers can be built to target non-host architectures by adding the "
+"`ARCH={arm|arm64|i386}` to the above invocation of `make`."
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:53
+msgid ""
+"For a more production-ready sysroot, you would typically download a specific "
+"kernel version and install the headers using `make headers_install` "
+"configured for the target architecture and installation path using the above "
+"instructions."
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:59
+msgid "Step 3: Build and Install Runtimes"
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:61
+msgid ""
+"For simplicity I'm going to assume you've already got a recent version of "
+"clang. These instructions hard-code the clang version being 24 in a couple "
+"places."
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:79
+msgid "if you want to run the tests add"
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:85
+msgid "After configuring, build and install the necessary components:"
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:91
+msgid "Step 4: Build clang with the installed runtimes"
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:113
+msgid "Step 5: Configure the Compiler"
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:115
+msgid ""
+"To make using the new toolchain easier, you can create a Clang configuration "
+"file. This allows you to avoid passing long command line arguments every "
+"time you compile a program."
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:130
+msgid "Step 6: Verification"
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:132
+msgid "You can now use your newly built toolchain by running your compiler."
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:143
+msgid "Compile and run the example:"
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:150
+msgid "The All-in-One Command"
+msgstr ""
+
+#: ../../../complete_runtimes_build.md:152
+msgid "This is so I can copy/paste the whole thing at once."
+msgstr ""

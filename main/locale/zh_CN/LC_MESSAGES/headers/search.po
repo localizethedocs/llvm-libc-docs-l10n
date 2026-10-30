@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,152 +17,139 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../headers/search.rst:3
+#: ../../../headers/search.md:1
 msgid "search.h"
 msgstr ""
 
-#: ../../../headers/search.rst:7
+#: ../../../headers/search.md:3
 msgid "Source Location"
 msgstr ""
 
-#: ../../../headers/search.rst:9
-msgid ""
-"The main source for search functions is located at: ``libc/src/search``."
+#: ../../../headers/search.md:5
+msgid "The main source for search functions is located at: `libc/src/search`."
 msgstr ""
 
-#: ../../../headers/search.rst:12
-msgid ""
-"Hashtable implementation is located at: ``libc/src/__support/HashTable``."
+#: ../../../headers/search.md:7
+msgid "Hashtable implementation is located at: `libc/src/__support/HashTable`."
 msgstr ""
 
-#: ../../../headers/search.rst:15
-msgid "The tests are located at: ``libc/test/src/search/``."
+#: ../../../headers/search.md:9
+msgid "The tests are located at: `libc/test/src/search/`."
 msgstr ""
 
-#: ../../../headers/search.rst:20
+#: ../../../headers/search.md:12
 msgid "Implementation Status"
 msgstr ""
 
-#: ../../../headers/search.rst:23
+#: ../../../headers/search.md:14
 msgid "POSIX Standard Types"
 msgstr ""
 
-#: ../../../headers/search.rst:26
+#: ../../../headers/search.md:0
 msgid "Type Name"
 msgstr ""
 
-#: ../../../headers/search.rst:26 ../../../headers/search.rst:37
-#: ../../../headers/search.rst:57
+#: ../../../headers/search.md:0
 msgid "Available"
 msgstr ""
 
-#: ../../../headers/search.rst:28
+#: ../../../headers/search.md:0
 msgid "ACTION"
 msgstr ""
 
-#: ../../../headers/search.rst:28 ../../../headers/search.rst:29
-#: ../../../headers/search.rst:30 ../../../headers/search.rst:39
-#: ../../../headers/search.rst:40 ../../../headers/search.rst:41
-#: ../../../headers/search.rst:42 ../../../headers/search.rst:43
-#: ../../../headers/search.rst:44 ../../../headers/search.rst:45
-#: ../../../headers/search.rst:59 ../../../headers/search.rst:60
-#: ../../../headers/search.rst:61
-msgid "|check|"
+#: ../../../headers/search.md:0
+msgid "{{ check }}"
 msgstr ""
 
-#: ../../../<rst_prologue>:5
-msgid ":raw-html:`&#x2705`"
-msgstr ""
-
-#: ../../../headers/search.rst:29
+#: ../../../headers/search.md:0
 msgid "ENTRY"
 msgstr ""
 
-#: ../../../headers/search.rst:30
+#: ../../../headers/search.md:0
 msgid "VISIT"
 msgstr ""
 
-#: ../../../headers/search.rst:34
+#: ../../../headers/search.md:22
 msgid "POSIX Standard Functions"
 msgstr ""
 
-#: ../../../headers/search.rst:37 ../../../headers/search.rst:57
+#: ../../../headers/search.md:0
 msgid "Function Name"
 msgstr ""
 
-#: ../../../headers/search.rst:39
+#: ../../../headers/search.md:0
 msgid "hcreate"
 msgstr ""
 
-#: ../../../headers/search.rst:40
+#: ../../../headers/search.md:0
 msgid "hdestroy"
 msgstr ""
 
-#: ../../../headers/search.rst:41
+#: ../../../headers/search.md:0
 msgid "hsearch"
 msgstr ""
 
-#: ../../../headers/search.rst:42
+#: ../../../headers/search.md:0
 msgid "insque"
 msgstr ""
 
-#: ../../../headers/search.rst:43
+#: ../../../headers/search.md:0
 msgid "lfind"
 msgstr ""
 
-#: ../../../headers/search.rst:44
+#: ../../../headers/search.md:0
 msgid "lsearch"
 msgstr ""
 
-#: ../../../headers/search.rst:45
+#: ../../../headers/search.md:0
 msgid "remque"
 msgstr ""
 
-#: ../../../headers/search.rst:46
+#: ../../../headers/search.md:0
 msgid "tdelete"
 msgstr ""
 
-#: ../../../headers/search.rst:47
+#: ../../../headers/search.md:0
 msgid "tfind"
 msgstr ""
 
-#: ../../../headers/search.rst:48
+#: ../../../headers/search.md:0
 msgid "tsearch"
 msgstr ""
 
-#: ../../../headers/search.rst:49
+#: ../../../headers/search.md:0
 msgid "twalk"
 msgstr ""
 
-#: ../../../headers/search.rst:54
+#: ../../../headers/search.md:38
 msgid "GNU Extension Functions"
 msgstr ""
 
-#: ../../../headers/search.rst:59
+#: ../../../headers/search.md:0
 msgid "hsearch_r"
 msgstr ""
 
-#: ../../../headers/search.rst:60
+#: ../../../headers/search.md:0
 msgid "hcreate_r"
 msgstr ""
 
-#: ../../../headers/search.rst:61
+#: ../../../headers/search.md:0
 msgid "hdestroy_r"
 msgstr ""
 
-#: ../../../headers/search.rst:62
+#: ../../../headers/search.md:0
 msgid "tdestroy"
 msgstr ""
 
-#: ../../../headers/search.rst:63
+#: ../../../headers/search.md:0
 msgid "twalk_r"
 msgstr ""
 
-#: ../../../headers/search.rst:68
+#: ../../../headers/search.md:48
 msgid "Standards"
 msgstr ""
 
-#: ../../../headers/search.rst:69
+#: ../../../headers/search.md:50
 msgid ""
 "search.h is specified in POSIX.1-200x (Portable Operating System Interface, "
 "Volume1: Base Specifications)."

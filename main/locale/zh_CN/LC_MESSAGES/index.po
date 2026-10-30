@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,43 +21,43 @@ msgstr ""
 msgid "Using LLVM-libc"
 msgstr ""
 
-#: ../../../index.md:76
+#: ../../../index.md:77
 msgid "Platforms"
 msgstr ""
 
-#: ../../../index.md:85
+#: ../../../index.md:86
 msgid "Implementation Status"
 msgstr ""
 
-#: ../../../index.md:96
+#: ../../../index.md:97
 msgid "Development"
 msgstr ""
 
-#: ../../../index.md:108
+#: ../../../index.md:109
 msgid "Source Code"
 msgstr ""
 
-#: ../../../index.md:108
+#: ../../../index.md:109
 msgid "Bug Reports"
 msgstr ""
 
-#: ../../../index.md:108
+#: ../../../index.md:109
 msgid "Discourse"
 msgstr ""
 
-#: ../../../index.md:108
+#: ../../../index.md:109
 msgid "Join the Discord"
 msgstr ""
 
-#: ../../../index.md:108
+#: ../../../index.md:109
 msgid "Discord Channel"
 msgstr ""
 
-#: ../../../index.md:108
+#: ../../../index.md:109
 msgid "Buildbot"
 msgstr ""
 
-#: ../../../index.md:108
+#: ../../../index.md:109
 msgid "Links"
 msgstr ""
 
@@ -178,9 +178,8 @@ msgstr ""
 
 #: ../../../index.md:58
 msgid ""
-"[Discord](https://discord.com/"
-"channels/636084430946959380/636732994891284500) ([invite](https://discord.gg/"
-"xS7Z362))"
+"[Discord](https://discord.com/channels/"
+"636084430946959380/636732994891284500) ([invite](https://discord.gg/xS7Z362))"
 msgstr ""
 
 #: ../../../index.md:60
