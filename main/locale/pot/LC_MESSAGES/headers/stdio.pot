@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -65,7 +66,8 @@ msgstr ""
 #: ../../../headers/stdio.rst:195 ../../../headers/stdio.rst:199
 #: ../../../headers/stdio.rst:203 ../../../headers/stdio.rst:211
 #: ../../../headers/stdio.rst:215 ../../../headers/stdio.rst:219
-#: ../../../headers/stdio.rst:223 ../../../headers/stdio.rst:243
+#: ../../../headers/stdio.rst:223 ../../../headers/stdio.rst:239
+#: ../../../headers/stdio.rst:243 ../../../headers/stdio.rst:247
 #: ../../../headers/stdio.rst:251 ../../../headers/stdio.rst:255
 #: ../../../headers/stdio.rst:263 ../../../headers/stdio.rst:271
 #: ../../../headers/stdio.rst:275 ../../../headers/stdio.rst:279

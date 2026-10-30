@@ -8,31 +8,32 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../gpu/using.rst:5
+#: ../../../gpu/using.md:3
 msgid "Using libc for GPUs"
 msgstr ""
 
-#: ../../../gpu/using.rst:8
+#: ../../../gpu/using.md:5
 msgid "Using the GPU C library"
 msgstr ""
 
-#: ../../../gpu/using.rst:10
+#: ../../../gpu/using.md:7
 msgid ""
-"Once you have finished :ref:`building<libc_gpu_building>` the GPU C library "
+"Once you have finished {ref}`building<libc_gpu_building>` the GPU C library "
 "it can be used to run libc or libm functions directly on the GPU. Currently, "
-"not all C standard functions are supported on the GPU. Consult the :ref:"
+"not all C standard functions are supported on the GPU. Consult the {ref}"
 "`list of supported functions<libc_gpu_support>` for a comprehensive list."
 msgstr ""
 
-#: ../../../gpu/using.rst:15
+#: ../../../gpu/using.md:12
 msgid ""
 "The GPU C library supports two main usage modes. The first is as a "
 "supplementary library for offloading languages such as OpenMP, CUDA, or HIP. "
@@ -42,98 +43,98 @@ msgid ""
 "primarily used for exported functions on the GPU and testing."
 msgstr ""
 
-#: ../../../gpu/using.rst:23
+#: ../../../gpu/using.md:19
 msgid "Offloading usage"
 msgstr ""
 
-#: ../../../gpu/using.rst:25
+#: ../../../gpu/using.md:21
 msgid ""
 "Offloading languages like CUDA, HIP, or OpenMP work by compiling a single "
 "source file for both the host target and a list of offloading devices. In "
-"order to support standard compilation flows, the ``clang`` driver uses fat "
-"binaries, described in the `clang documentation <https://clang.llvm.org/docs/"
-"OffloadingDesign.html>`_. This linking mode is used by the OpenMP toolchain, "
-"and is used for the CUDA and HIP toolchains when compiling with the ``-fgpu-"
-"rdc`` flag."
+"order to support standard compilation flows, the `clang` driver uses fat "
+"binaries, described in the [clang documentation](https://clang.llvm.org/docs/"
+"OffloadingDesign.html). This linking mode is used by the OpenMP toolchain, "
+"and is used for the CUDA and HIP toolchains when compiling with the `-fgpu-"
+"rdc` flag."
 msgstr ""
 
-#: ../../../gpu/using.rst:33
+#: ../../../gpu/using.md:28
 msgid ""
 "In order to link the GPU runtime, we simply pass this library to the "
-"embedded device linker job. This can be done using the ``-Xoffload-linker`` "
-"option, which forwards an argument to a ``clang`` job used to create the "
-"final GPU executable. The toolchain should pick up the C libraries "
-"automatically in most cases, so this shouldn't be necessary."
+"embedded device linker job. This can be done using the `-Xoffload-linker` "
+"option, which forwards an argument to a `clang` job used to create the final "
+"GPU executable. The toolchain should pick up the C libraries automatically "
+"in most cases, so this shouldn't be necessary."
 msgstr ""
 
-#: ../../../gpu/using.rst:45
+#: ../../../gpu/using.md:40
 msgid ""
 "This will automatically link in the needed function definitions if they were "
-"required by the user's application. Normally using the ``-fgpu-rdc`` option "
+"required by the user's application. Normally using the `-fgpu-rdc` option "
 "results in sub-par performance due to ABA linking. However, the offloading "
-"toolchain supports the ``--foffload-lto`` option to support LTO on the "
-"target device."
+"toolchain supports the `--foffload-lto` option to support LTO on the target "
+"device."
 msgstr ""
 
-#: ../../../gpu/using.rst:51
+#: ../../../gpu/using.md:46
 msgid ""
 "Offloading languages require that functions present on the device be "
-"declared as such. This is done with the ``__device__`` keyword in CUDA and "
-"HIP or the ``declare target`` pragma in OpenMP. This requires that the LLVM "
-"C library exposes its implemented functions to the compiler when it is used "
-"to build. We support this by providing wrapper headers in the compiler's "
-"resource directory. These are located in ``<clang-resource-dir>/include/llvm-"
-"libc-wrappers`` in your installation."
+"declared as such. This is done with the `__device__` keyword in CUDA and HIP "
+"or the `declare target` pragma in OpenMP. This requires that the LLVM C "
+"library exposes its implemented functions to the compiler when it is used to "
+"build. We support this by providing wrapper headers in the compiler's "
+"resource directory. These are located in `<clang-resource-dir>/include/llvm-"
+"libc-wrappers` in your installation."
 msgstr ""
 
-#: ../../../gpu/using.rst:59
+#: ../../../gpu/using.md:54
 msgid ""
 "The support for HIP and CUDA is more experimental, requiring manual "
 "intervention to link and use the facilities. An example of this is shown in "
-"the :ref:`CUDA server example<libc_gpu_cuda_server>`. The OpenMP Offloading "
+"the {ref}`CUDA server example<libc_gpu_cuda_server>`. The OpenMP Offloading "
 "toolchain is completely integrated with the LLVM C library however. It will "
 "automatically handle including the necessary libraries, define device-side "
 "interfaces, and run the RPC server."
 msgstr ""
 
-#: ../../../gpu/using.rst:67
+#: ../../../gpu/using.md:61
 msgid "OpenMP Offloading example"
 msgstr ""
 
-#: ../../../gpu/using.rst:69
+#: ../../../gpu/using.md:63
 msgid ""
 "This section provides a simple example of compiling an OpenMP program with "
 "the GPU C library."
 msgstr ""
 
-#: ../../../gpu/using.rst:83
+#: ../../../gpu/using.md:77
 msgid ""
 "This can simply be compiled like any other OpenMP application to print from "
 "two threads and two blocks."
 msgstr ""
 
-#: ../../../gpu/using.rst:95
+#: ../../../gpu/using.md:89
 msgid ""
-"Including the wrapper headers, linking the C library, and running the :ref:"
+"Including the wrapper headers, linking the C library, and running the {ref}"
 "`RPC server<libc_gpu_rpc>` are all handled automatically by the compiler and "
 "runtime."
 msgstr ""
 
-#: ../../../gpu/using.rst:99
+#: ../../../gpu/using.md:92
 msgid "Direct compilation"
 msgstr ""
 
-#: ../../../gpu/using.rst:101
+#: ../../../gpu/using.md:94
 msgid ""
 "Instead of using standard offloading languages, we can also target the CPU "
 "directly using C and C++ to create a GPU executable similarly to OpenCL. "
-"This is done by targeting the GPU architecture using `clang's cross "
-"compilation support <https://clang.llvm.org/docs/CrossCompilation.html>`_. "
+"This is done by targeting the GPU architecture using [clang's cross "
+"compilation support](https://clang.llvm.org/docs/CrossCompilation.html). "
 "This is the method that the GPU C library uses both to build the library and "
 "to run tests."
 msgstr ""
 
-#: ../../../gpu/using.rst:107
+#: ../../../gpu/using.md:100
 msgid ""
 "This allows us to easily define GPU specific libraries and programs that fit "
 "well into existing tools. In order to target the GPU effectively we rely "
@@ -142,87 +143,85 @@ msgid ""
 "GPUs supported GPUs."
 msgstr ""
 
-#: ../../../gpu/using.rst:125
+#: ../../../gpu/using.md:118
 msgid ""
 "We can then compile this for both NVPTX and AMDGPU into LLVM-IR using the "
 "following commands. This will yield valid LLVM-IR for the given target just "
 "like if we were using CUDA, OpenCL, or OpenMP."
 msgstr ""
 
-#: ../../../gpu/using.rst:134
+#: ../../../gpu/using.md:127
 msgid ""
 "We can also use this support to treat the GPU as a hosted environment by "
 "providing a C library and startup object just like a standard C library "
 "running on the host machine. Then, in order to execute these programs, we "
 "provide a loader utility to launch the executable on the GPU similar to a "
-"cross-compiling emulator. This is how we run :ref:`unit tests "
+"cross-compiling emulator. This is how we run {ref}`unit tests "
 "<libc_gpu_testing>` targeting the GPU. This is clearly not the most "
 "efficient way to use a GPU, but it provides a simple method to test "
 "execution on a GPU for debugging or development."
 msgstr ""
 
-#: ../../../gpu/using.rst:143
+#: ../../../gpu/using.md:135
 msgid "Building for AMDGPU targets"
 msgstr ""
 
-#: ../../../gpu/using.rst:145
+#: ../../../gpu/using.md:137
 msgid ""
 "The AMDGPU target supports several features natively by virtue of using "
-"``lld`` as its linker. The installation will include the ``include/amdgcn-"
-"amd-amdhsa`` and ``lib/amdgcn-amd-amdha`` directories that contain the "
-"necessary code to use the library. We can directly link against ``libc.a`` "
-"and use LTO to generate the final executable."
+"`lld` as its linker. The installation will include the `include/amdgcn-amd-"
+"amdhsa` and `lib/amdgcn-amd-amdha` directories that contain the necessary "
+"code to use the library. We can directly link against `libc.a` and use LTO "
+"to generate the final executable."
 msgstr ""
 
-#: ../../../gpu/using.rst:157
+#: ../../../gpu/using.md:149
 msgid ""
-"This program can then be compiled using the ``clang`` compiler. Note that ``-"
-"flto`` and ``-mcpu=`` should be defined. This is because the GPU sub-"
-"architectures do not have strict backwards compatibility. Use ``-mcpu=help`` "
-"for accepted arguments or ``-mcpu=native`` to target the system's installed "
-"GPUs if present. Additionally, the AMDGPU target always uses ``-flto`` "
-"because we currently do not fully support ELF linking in ``lld``. Once "
-"built, we use the ``amdhsa-loader`` utility to launch execution on the GPU. "
-"This will be built if the ``hsa_runtime64`` library was found during build "
-"time."
+"This program can then be compiled using the `clang` compiler. Note that `-"
+"flto` and `-mcpu=` should be defined. This is because the GPU sub-"
+"architectures do not have strict backwards compatibility. Use `-mcpu=help` "
+"for accepted arguments or `-mcpu=native` to target the system's installed "
+"GPUs if present. Additionally, the AMDGPU target always uses `-flto` because "
+"we currently do not fully support ELF linking in `lld`. Once built, we use "
+"the `amdhsa-loader` utility to launch execution on the GPU. This will be "
+"built if the `hsa_runtime64` library was found during build time."
 msgstr ""
 
-#: ../../../gpu/using.rst:175
+#: ../../../gpu/using.md:167
 msgid ""
-"This will include the ``stdio.h`` header, which is found in the ``include/"
-"amdgcn-amd-amdhsa`` directory. We define out ``main`` function like a "
-"standard application. The startup utility in ``lib/amdgcn-amd-amdhsa/crt1."
-"o`` will handle the necessary steps to execute the ``main`` function along "
-"with global initializers and command line arguments. Finally, we link in the "
-"``libc.a`` library stored in ``lib/amdgcn-amd-amdhsa`` to define the "
-"standard C functions."
+"This will include the `stdio.h` header, which is found in the `include/"
+"amdgcn-amd-amdhsa` directory. We define out `main` function like a standard "
+"application. The startup utility in `lib/amdgcn-amd-amdhsa/crt1.o` will "
+"handle the necessary steps to execute the `main` function along with global "
+"initializers and command line arguments. Finally, we link in the `libc.a` "
+"library stored in `lib/amdgcn-amd-amdhsa` to define the standard C functions."
 msgstr ""
 
-#: ../../../gpu/using.rst:183
+#: ../../../gpu/using.md:175
 msgid ""
 "The search paths for the include directories and libraries are automatically "
 "handled by the compiler. We use this support internally to run unit tests on "
-"the GPU directly. See :ref:`libc_gpu_testing` for more information. The "
-"installation also provides ``libc.bc`` which is a single LLVM-IR bitcode "
-"blob that can be used instead of the static library."
+"the GPU directly. See {ref}`libc_gpu_testing` for more information. The "
+"installation also provides `libc.bc` which is a single LLVM-IR bitcode blob "
+"that can be used instead of the static library."
 msgstr ""
 
-#: ../../../gpu/using.rst:190
+#: ../../../gpu/using.md:181
 msgid "Building for NVPTX targets"
 msgstr ""
 
-#: ../../../gpu/using.rst:192
+#: ../../../gpu/using.md:183
 msgid ""
 "The infrastructure is the same as the AMDGPU example. However, the NVPTX "
 "binary utilities are very limited and must be targeted directly. A utility "
-"called ``clang-nvlink-wrapper`` instead wraps around the standard link job "
-"to give the illusion that ``nvlink`` is a functional linker."
+"called `clang-nvlink-wrapper` instead wraps around the standard link job to "
+"give the illusion that `nvlink` is a functional linker."
 msgstr ""
 
-#: ../../../gpu/using.rst:205
+#: ../../../gpu/using.md:196
 msgid ""
 "Additionally, the NVPTX ABI requires that every function signature matches. "
-"This requires us to pass the full prototype from ``main``. The installation "
-"will contain the ``nvptx-loader`` utility if the CUDA driver was found "
-"during compilation. Using link time optimization will help hide this."
+"This requires us to pass the full prototype from `main`. The installation "
+"will contain the `nvptx-loader` utility if the CUDA driver was found during "
+"compilation. Using link time optimization will help hide this."
 msgstr ""

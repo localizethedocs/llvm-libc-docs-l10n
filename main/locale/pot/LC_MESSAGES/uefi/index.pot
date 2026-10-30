@@ -8,23 +8,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../uefi/index.rst:5
+#: ../../../uefi/index.md:3
 msgid "libc for UEFI"
 msgstr ""
 
-#: ../../../uefi/index.rst:7
+#: ../../../uefi/index.md:6
 msgid "This feature is very experimental and may change in the future."
 msgstr ""
 
-#: ../../../uefi/index.rst:9
+#: ../../../uefi/index.md:9
 msgid ""
 "The *UEFI* support for LLVM's libc project aims to provide a standard libc "
 "frontend to the UEFI protocols. This allows for many existing applications "

@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -285,8 +286,8 @@ msgstr ""
 
 #: ../../../full_cross_build.md:220
 msgid ""
-"To run the tests for the cross-compiled libc, you must use the hermetic test "
-"suite, which is entirely self-hosted."
+"To run the tests for the cross-compiled libc, you can run `libc-tests`, "
+"which executes self-hosted tests in full-build mode:"
 msgstr ""
 
 #: ../../../full_cross_build.md:228
