@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../porting.md:5
 msgid "Building the libc"
-msgstr ""
+msgstr "建置 libc"
 
 #: ../../../porting.md:7
 msgid "An OS specific config directory"
@@ -38,6 +38,11 @@ msgid ""
 "config/windows), the two operating systems on which LLVM's libc is being "
 "actively developed, have their own config directory."
 msgstr ""
+"如果你要開始在新的作業系統上移植 LLVM 的 libc，第一步是在 `libc/config` 目錄"
+"中為該作業系統增添目錄。[Linux](https://github.com/llvm/llvm-project/tree/"
+"main/libc/config/linux) 和 [Windows](https://github.com/llvm/llvm-project/"
+"tree/main/libc/config/windows) 是目前積極開發 LLVM libc 的兩種作業系統，兩者"
+"都有各自的組態目錄。"
 
 #: ../../../porting.md:17
 msgid ""
@@ -45,6 +50,8 @@ msgid ""
 "[Darwin](https://github.com/llvm/llvm-project/tree/main/libc/config/darwin) "
 "config also which is in a similar state as Windows."
 msgstr ""
+"Windows 的開發進度不如 Linux 活躍。此外也有 [Darwin](https://github.com/llvm/"
+"llvm-project/tree/main/libc/config/darwin) 的組態，其狀態與 Windows 類似。"
 
 #: ../../../porting.md:24
 msgid ""
@@ -55,7 +62,7 @@ msgstr ""
 
 #: ../../../porting.md:30
 msgid "Architecture Subdirectory"
-msgstr ""
+msgstr "架構子目錄"
 
 #: ../../../porting.md:32
 msgid ""
@@ -78,7 +85,7 @@ msgstr ""
 
 #: ../../../porting.md:48
 msgid "The entrypoints.txt file"
-msgstr ""
+msgstr "entrypoints.txt 檔案"
 
 #: ../../../porting.md:50
 msgid ""
@@ -90,10 +97,10 @@ msgstr ""
 
 #: ../../../porting.md:55
 msgid ""
-"If you are doing an architecture specific bring-up, then an `entrypoints."
-"txt` file should be created in the architecture subdirectory for each "
-"architecture. Else, having a single `entrypoints.txt` in the operating "
-"system directory is sufficient."
+"If you are doing an architecture specific bring-up, then an "
+"`entrypoints.txt` file should be created in the architecture subdirectory "
+"for each architecture. Else, having a single `entrypoints.txt` in the "
+"operating system directory is sufficient."
 msgstr ""
 
 #: ../../../porting.md:60
@@ -104,7 +111,7 @@ msgstr ""
 
 #: ../../../porting.md:63
 msgid "The headers.txt file"
-msgstr ""
+msgstr "headers.txt 檔案"
 
 #: ../../../porting.md:65
 msgid ""
@@ -150,10 +157,12 @@ msgid ""
 "Maintainers are listed in libc/maintainers.md and must follow [LLVM's "
 "maintainer policy](https://llvm.org/docs/DeveloperPolicy.html#maintainers)."
 msgstr ""
+"維護者列於 libc/maintainers.md，且必須遵循 [LLVM 的維護者方針](https://"
+"llvm.org/docs/DeveloperPolicy.html#maintainers)。"
 
 #: ../../../porting.md:94
 msgid "CI builders"
-msgstr ""
+msgstr "CI 建置器"
 
 #: ../../../porting.md:96
 msgid ""

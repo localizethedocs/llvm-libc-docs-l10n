@@ -63,7 +63,7 @@ msgstr ""
 
 #: ../../../headers/complex.md:0
 msgid "{{ check }}"
-msgstr ""
+msgstr "{{ check }}"
 
 #: ../../../headers/complex.md:0
 msgid "7.3.9.3"

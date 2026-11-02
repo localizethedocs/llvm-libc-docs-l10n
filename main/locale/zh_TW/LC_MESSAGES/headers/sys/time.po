@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 18:38+0000\n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,8 +56,8 @@ msgstr ""
 
 #: ../../../headers/sys/time.rst:20
 msgid ""
-"`removed in POSIX.1-2024 <https://pubs.opengroup.org/"
-"onlinepubs/9699919799.2018edition/functions/getitimer.html>`__"
+"`removed in POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/"
+"9699919799.2018edition/functions/getitimer.html>`__"
 msgstr ""
 
 #: ../../../headers/sys/time.rst:21
@@ -66,8 +66,8 @@ msgstr ""
 
 #: ../../../headers/sys/time.rst:24
 msgid ""
-"`removed in POSIX.1-2024 <https://pubs.opengroup.org/"
-"onlinepubs/9699919799.2018edition/functions/gettimeofday.html>`__"
+"`removed in POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/"
+"9699919799.2018edition/functions/gettimeofday.html>`__"
 msgstr ""
 
 #: ../../../headers/sys/time.rst:25
@@ -86,8 +86,8 @@ msgstr ""
 
 #: ../../../headers/sys/time.rst:32
 msgid ""
-"`removed in POSIX.1-2024 <https://pubs.opengroup.org/"
-"onlinepubs/9699919799.2018edition/functions/setitimer.html>`__"
+"`removed in POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/"
+"9699919799.2018edition/functions/setitimer.html>`__"
 msgstr ""
 
 #: ../../../headers/sys/time.rst:33

@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../../headers/search.md:0
 msgid "{{ check }}"
-msgstr ""
+msgstr "{{ check }}"
 
 #: ../../../headers/search.md:0
 msgid "ENTRY"

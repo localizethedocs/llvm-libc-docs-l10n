@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../../complete_runtimes_build.md:20
 msgid "Step 2: Linux Headers"
-msgstr ""
+msgstr "第 2 步：Linux 標頭檔"
 
 #: ../../../complete_runtimes_build.md:22
 msgid ""

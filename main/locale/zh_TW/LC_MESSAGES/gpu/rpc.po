@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../../gpu/rpc.md:3
 msgid "Remote Procedure Calls"
-msgstr ""
+msgstr "遠端程序呼叫"
 
 #: ../../../gpu/rpc.md:5
 msgid "Remote Procedure Call Implementation"
-msgstr ""
+msgstr "遠端程序呼叫實現"
 
 #: ../../../gpu/rpc.md:7
 msgid ""
@@ -33,6 +33,9 @@ msgid ""
 "operations. Instead, we implemented remote procedure calls to interface with "
 "the host's operating system while executing on a GPU."
 msgstr ""
+"傳統上，C 程式庫會抽象化多個函數，這些函數透過系統呼叫與平台的作業系統互動。"
+"然而，GPU 並未提供可處理目標平台相關作業的作業系統。因此，我們實現了遠端程序"
+"呼叫，讓 GPU 在執行時能與主機的作業系統互動。"
 
 #: ../../../gpu/rpc.md:13
 msgid ""
@@ -44,6 +47,10 @@ msgid ""
 "host system and the GPU. We can then use this to create a simple client-"
 "server protocol using this shared memory."
 msgstr ""
+"我們利用統一虛擬記憶體實作遠端程序呼叫，在兩個處理程序之間建立共用的通訊通"
+"道。這類記憶體通常是釘選記憶體，可由多個進程同時以非同步且原子方式存取。有了"
+"這項支援，我們只要在共用緩衝區上提供互斥機制，就能在主機系統與 GPU 之間來回交"
+"換工作。接著，我們便可運用這個共用記憶體建立簡單的客戶端—伺服端通訊協定。"
 
 #: ../../../gpu/rpc.md:21
 msgid ""
@@ -196,7 +203,7 @@ msgstr ""
 
 #: ../../../gpu/rpc.md:115
 msgid "Server Example"
-msgstr ""
+msgstr "伺服器範例"
 
 #: ../../../gpu/rpc.md:117
 msgid ""
@@ -237,7 +244,7 @@ msgstr ""
 
 #: ../../../gpu/rpc.md:193
 msgid "CUDA Server Example"
-msgstr ""
+msgstr "CUDA 伺服器範例"
 
 #: ../../../gpu/rpc.md:195
 msgid ""
@@ -262,7 +269,7 @@ msgstr ""
 
 #: ../../../gpu/rpc.md:282
 msgid "Extensions"
-msgstr ""
+msgstr "擴充功能"
 
 #: ../../../gpu/rpc.md:284
 msgid ""

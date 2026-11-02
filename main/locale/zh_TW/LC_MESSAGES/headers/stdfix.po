@@ -272,7 +272,7 @@ msgstr ""
 
 #: ../../../headers/stdfix.md:0
 msgid "{{ check }}"
-msgstr ""
+msgstr "{{ check }}"
 
 #: ../../../headers/stdfix.md:0
 msgid "countlsfx"

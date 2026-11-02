@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../gpu/support.md:0
 msgid "{{ check }}"
-msgstr ""
+msgstr "{{ check }}"
 
 #: ../../../gpu/support.md:0
 msgid "isalpha"
@@ -851,6 +851,3 @@ msgstr "assert"
 #: ../../../gpu/support.md:0
 msgid "`__assert_fail`"
 msgstr ""
-
-#~ msgid "__assert_fail"
-#~ msgstr "__assert_fail"

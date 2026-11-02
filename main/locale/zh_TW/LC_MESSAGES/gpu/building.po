@@ -338,25 +338,3 @@ msgid ""
 "automatically to `llvm-gpu-loader` for GPU runtime targets when building via "
 "the runtimes build."
 msgstr ""
-
-#~ msgid "**include/<target-triple>**"
-#~ msgstr "**include/<target-triple>**"
-
-#~ msgid ""
-#~ "**lib/clang/<llvm-major-version>/include/llvm-libc-wrappers/llvm-libc-"
-#~ "decls**"
-#~ msgstr ""
-#~ "**lib/clang/<llvm-major-version>/include/llvm-libc-wrappers/llvm-libc-"
-#~ "decls**"
-
-#~ msgid "**lib/<target-triple>/libc.a**"
-#~ msgstr "**lib/<target-triple>/libc.a**"
-
-#~ msgid "**lib/<target-triple>/libm.a**"
-#~ msgstr "**lib/<target-triple>/libm.a**"
-
-#~ msgid "**lib/<target-triple>/libc.bc**"
-#~ msgstr "**lib/<target-triple>/libc.bc**"
-
-#~ msgid "**lib/<target-triple>/crt1.o**"
-#~ msgstr "**lib/<target-triple>/crt1.o**"

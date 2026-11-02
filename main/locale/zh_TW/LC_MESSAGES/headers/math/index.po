@@ -261,7 +261,7 @@ msgstr ""
 
 #: ../../../headers/math/index.md:13
 msgid "{{ check }}"
-msgstr ""
+msgstr "{{ check }}"
 
 #: ../../../headers/math/index.md:13
 msgid "7.12.9.1"
