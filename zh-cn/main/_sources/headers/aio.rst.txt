@@ -1,0 +1,93 @@
+=====
+aio.h
+=====
+
+Macros
+======
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Macro
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - AIO_ALLDONE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/aio.h.html>`__
+  * - AIO_CANCELED
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/aio.h.html>`__
+  * - AIO_NOTCANCELED
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/aio.h.html>`__
+  * - LIO_NOP
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/aio.h.html>`__
+  * - LIO_NOWAIT
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/aio.h.html>`__
+  * - LIO_READ
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/aio.h.html>`__
+  * - LIO_WAIT
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/aio.h.html>`__
+  * - LIO_WRITE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/aio.h.html>`__
+
+Functions
+=========
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Function
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - aio_cancel
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/aio_cancel.html>`__
+  * - aio_error
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/aio_error.html>`__
+  * - aio_fsync
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/aio_fsync.html>`__
+  * - aio_read
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/aio_read.html>`__
+  * - aio_return
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/aio_return.html>`__
+  * - aio_suspend
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/aio_suspend.html>`__
+  * - aio_write
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/aio_write.html>`__
+  * - lio_listio
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/lio_listio.html>`__

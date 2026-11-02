@@ -1,0 +1,313 @@
+============
+sys/socket.h
+============
+
+Macros
+======
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Macro
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - AF_INET
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - AF_INET6
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - AF_UNIX
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - AF_UNSPEC
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - CMSG_DATA
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - CMSG_FIRSTHDR
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - CMSG_LEN
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - CMSG_NXTHDR
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - CMSG_SPACE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - MSG_CMSG_CLOEXEC
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - MSG_CMSG_CLOFORK
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - MSG_CTRUNC
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - MSG_DONTROUTE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - MSG_EOR
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - MSG_NOSIGNAL
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - MSG_OOB
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - MSG_PEEK
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - MSG_TRUNC
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - MSG_WAITALL
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SCM_RIGHTS
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SHUT_RD
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SHUT_RDWR
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SHUT_WR
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SOCK_CLOEXEC
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SOCK_CLOFORK
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SOCK_DGRAM
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SOCK_NONBLOCK
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SOCK_RAW
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SOCK_SEQPACKET
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SOCK_STREAM
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SOL_SOCKET
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SOMAXCONN
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_ACCEPTCONN
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_BROADCAST
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_DEBUG
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_DOMAIN
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_DONTROUTE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_ERROR
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_KEEPALIVE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_LINGER
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_OOBINLINE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_PROTOCOL
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_RCVBUF
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_RCVLOWAT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_RCVTIMEO
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_REUSEADDR
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_SNDBUF
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_SNDLOWAT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_SNDTIMEO
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+  * - SO_TYPE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_socket.h.html>`__
+
+Functions
+=========
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Function
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - accept
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/accept.html>`__
+  * - accept4
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/accept4.html>`__
+  * - bind
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/bind.html>`__
+  * - connect
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/connect.html>`__
+  * - getpeername
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpeername.html>`__
+  * - getsockname
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getsockname.html>`__
+  * - getsockopt
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/getsockopt.html>`__
+  * - listen
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/listen.html>`__
+  * - recv
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/recv.html>`__
+  * - recvfrom
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/recvfrom.html>`__
+  * - recvmmsg
+    - |check|
+    - 
+    -
+  * - recvmsg
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/recvmsg.html>`__
+  * - send
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/send.html>`__
+  * - sendmmsg
+    - |check|
+    - 
+    -
+  * - sendmsg
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/sendmsg.html>`__
+  * - sendto
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/sendto.html>`__
+  * - setsockopt
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/setsockopt.html>`__
+  * - shutdown
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/shutdown.html>`__
+  * - sockatmark
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/sockatmark.html>`__
+  * - socket
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/socket.html>`__
+  * - socketpair
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/socketpair.html>`__

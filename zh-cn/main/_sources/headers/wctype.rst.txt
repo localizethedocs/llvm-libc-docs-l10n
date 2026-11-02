@@ -1,0 +1,160 @@
+========
+wctype.h
+========
+
+Functions
+=========
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Function
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - iswalnum
+    - |check|
+    - 7.32.2.1.1
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswalnum.html>`__
+  * - iswalnum_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswalnum_l.html>`__
+  * - iswalpha
+    - |check|
+    - 7.32.2.1.2
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswalpha.html>`__
+  * - iswalpha_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswalpha_l.html>`__
+  * - iswblank
+    - |check|
+    - 7.32.2.1.3
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswblank.html>`__
+  * - iswblank_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswblank_l.html>`__
+  * - iswcntrl
+    - |check|
+    - 7.32.2.1.4
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswcntrl.html>`__
+  * - iswcntrl_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswcntrl_l.html>`__
+  * - iswctype
+    - |check|
+    - 7.32.2.2.1
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswctype.html>`__
+  * - iswctype_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswctype_l.html>`__
+  * - iswdigit
+    - |check|
+    - 7.32.2.1.5
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswdigit.html>`__
+  * - iswdigit_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswdigit_l.html>`__
+  * - iswgraph
+    - |check|
+    - 7.32.2.1.6
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswgraph.html>`__
+  * - iswgraph_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswgraph_l.html>`__
+  * - iswlower
+    - |check|
+    - 7.32.2.1.7
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswlower.html>`__
+  * - iswlower_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswlower_l.html>`__
+  * - iswprint
+    - |check|
+    - 7.32.2.1.8
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswprint.html>`__
+  * - iswprint_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswprint_l.html>`__
+  * - iswpunct
+    - |check|
+    - 7.32.2.1.9
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswpunct.html>`__
+  * - iswpunct_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswpunct_l.html>`__
+  * - iswspace
+    - |check|
+    - 7.32.2.1.10
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswspace.html>`__
+  * - iswspace_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswspace_l.html>`__
+  * - iswupper
+    - |check|
+    - 7.32.2.1.11
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswupper.html>`__
+  * - iswupper_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswupper_l.html>`__
+  * - iswxdigit
+    - |check|
+    - 7.32.2.1.12
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswxdigit.html>`__
+  * - iswxdigit_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/iswxdigit_l.html>`__
+  * - towctrans
+    -
+    - 7.32.3.2.1
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/towctrans.html>`__
+  * - towctrans_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/towctrans_l.html>`__
+  * - towlower
+    - |check|
+    - 7.32.3.1.1
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/towlower.html>`__
+  * - towlower_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/towlower_l.html>`__
+  * - towupper
+    - |check|
+    - 7.32.3.1.2
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/towupper.html>`__
+  * - towupper_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/towupper_l.html>`__
+  * - wctrans
+    -
+    - 7.32.3.2.2
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/wctrans.html>`__
+  * - wctrans_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/wctrans_l.html>`__
+  * - wctype
+    - |check|
+    - 7.32.2.2.2
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/wctype.html>`__
+  * - wctype_l
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/wctype_l.html>`__

@@ -1,0 +1,549 @@
+=========
+pthread.h
+=========
+
+Macros
+======
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Macro
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - PTHREAD_BARRIER_SERIAL_THREAD
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_CANCELED
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_CANCEL_ASYNCHRONOUS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_CANCEL_DEFERRED
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_CANCEL_DISABLE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_CANCEL_ENABLE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_COND_INITIALIZER
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_CREATE_DETACHED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_CREATE_JOINABLE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_EXPLICIT_SCHED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_INHERIT_SCHED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_MUTEX_DEFAULT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_MUTEX_ERRORCHECK
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_MUTEX_INITIALIZER
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_MUTEX_NORMAL
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_MUTEX_RECURSIVE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_MUTEX_ROBUST
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_MUTEX_STALLED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_NULL
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_ONCE_INIT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_PRIO_INHERIT
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_PRIO_NONE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_PRIO_PROTECT
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_PROCESS_PRIVATE
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_PROCESS_SHARED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_RWLOCK_INITIALIZER
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_SCOPE_PROCESS
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - PTHREAD_SCOPE_SYSTEM
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - pthread_cleanup_pop
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+  * - pthread_cleanup_push
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pthread.h.html>`__
+
+Functions
+=========
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Function
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - pthread_atfork
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_atfork.html>`__
+  * - pthread_attr_destroy
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_destroy.html>`__
+  * - pthread_attr_getdetachstate
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getdetachstate.html>`__
+  * - pthread_attr_getguardsize
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getguardsize.html>`__
+  * - pthread_attr_getinheritsched
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getinheritsched.html>`__
+  * - pthread_attr_getschedparam
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getschedparam.html>`__
+  * - pthread_attr_getschedpolicy
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getschedpolicy.html>`__
+  * - pthread_attr_getscope
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getscope.html>`__
+  * - pthread_attr_getstack
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getstack.html>`__
+  * - pthread_attr_getstacksize
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getstacksize.html>`__
+  * - pthread_attr_init
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_init.html>`__
+  * - pthread_attr_setdetachstate
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setdetachstate.html>`__
+  * - pthread_attr_setguardsize
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setguardsize.html>`__
+  * - pthread_attr_setinheritsched
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setinheritsched.html>`__
+  * - pthread_attr_setschedparam
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setschedparam.html>`__
+  * - pthread_attr_setschedpolicy
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setschedpolicy.html>`__
+  * - pthread_attr_setscope
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setscope.html>`__
+  * - pthread_attr_setstack
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setstack.html>`__
+  * - pthread_attr_setstacksize
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setstacksize.html>`__
+  * - pthread_barrier_destroy
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_barrier_destroy.html>`__
+  * - pthread_barrier_init
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_barrier_init.html>`__
+  * - pthread_barrier_wait
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_barrier_wait.html>`__
+  * - pthread_barrierattr_destroy
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_barrierattr_destroy.html>`__
+  * - pthread_barrierattr_getpshared
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_barrierattr_getpshared.html>`__
+  * - pthread_barrierattr_init
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_barrierattr_init.html>`__
+  * - pthread_barrierattr_setpshared
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_barrierattr_setpshared.html>`__
+  * - pthread_cancel
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cancel.html>`__
+  * - pthread_cond_broadcast
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cond_broadcast.html>`__
+  * - pthread_cond_clockwait
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cond_clockwait.html>`__
+  * - pthread_cond_destroy
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cond_destroy.html>`__
+  * - pthread_cond_init
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cond_init.html>`__
+  * - pthread_cond_signal
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cond_signal.html>`__
+  * - pthread_cond_timedwait
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cond_timedwait.html>`__
+  * - pthread_cond_wait
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cond_wait.html>`__
+  * - pthread_condattr_destroy
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_condattr_destroy.html>`__
+  * - pthread_condattr_getclock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_condattr_getclock.html>`__
+  * - pthread_condattr_getpshared
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_condattr_getpshared.html>`__
+  * - pthread_condattr_init
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_condattr_init.html>`__
+  * - pthread_condattr_setclock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_condattr_setclock.html>`__
+  * - pthread_condattr_setpshared
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_condattr_setpshared.html>`__
+  * - pthread_create
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_create.html>`__
+  * - pthread_detach
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_detach.html>`__
+  * - pthread_equal
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_equal.html>`__
+  * - pthread_exit
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_exit.html>`__
+  * - pthread_getcpuclockid
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_getcpuclockid.html>`__
+  * - pthread_getschedparam
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_getschedparam.html>`__
+  * - pthread_getspecific
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_getspecific.html>`__
+  * - pthread_join
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_join.html>`__
+  * - pthread_key_create
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_key_create.html>`__
+  * - pthread_key_delete
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_key_delete.html>`__
+  * - pthread_mutex_clocklock
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_clocklock.html>`__
+  * - pthread_mutex_consistent
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_consistent.html>`__
+  * - pthread_mutex_destroy
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_destroy.html>`__
+  * - pthread_mutex_getprioceiling
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_getprioceiling.html>`__
+  * - pthread_mutex_init
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_init.html>`__
+  * - pthread_mutex_lock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_lock.html>`__
+  * - pthread_mutex_setprioceiling
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_setprioceiling.html>`__
+  * - pthread_mutex_timedlock
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_timedlock.html>`__
+  * - pthread_mutex_trylock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_trylock.html>`__
+  * - pthread_mutex_unlock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_unlock.html>`__
+  * - pthread_mutexattr_destroy
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_destroy.html>`__
+  * - pthread_mutexattr_getprioceiling
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_getprioceiling.html>`__
+  * - pthread_mutexattr_getprotocol
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_getprotocol.html>`__
+  * - pthread_mutexattr_getpshared
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_getpshared.html>`__
+  * - pthread_mutexattr_getrobust
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_getrobust.html>`__
+  * - pthread_mutexattr_gettype
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_gettype.html>`__
+  * - pthread_mutexattr_init
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_init.html>`__
+  * - pthread_mutexattr_setprioceiling
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_setprioceiling.html>`__
+  * - pthread_mutexattr_setprotocol
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_setprotocol.html>`__
+  * - pthread_mutexattr_setpshared
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_setpshared.html>`__
+  * - pthread_mutexattr_setrobust
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_setrobust.html>`__
+  * - pthread_mutexattr_settype
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_settype.html>`__
+  * - pthread_once
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_once.html>`__
+  * - pthread_rwlock_clockrdlock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_clockrdlock.html>`__
+  * - pthread_rwlock_clockwrlock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_clockwrlock.html>`__
+  * - pthread_rwlock_destroy
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_destroy.html>`__
+  * - pthread_rwlock_init
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_init.html>`__
+  * - pthread_rwlock_rdlock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_rdlock.html>`__
+  * - pthread_rwlock_timedrdlock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_timedrdlock.html>`__
+  * - pthread_rwlock_timedwrlock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_timedwrlock.html>`__
+  * - pthread_rwlock_tryrdlock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_tryrdlock.html>`__
+  * - pthread_rwlock_trywrlock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_trywrlock.html>`__
+  * - pthread_rwlock_unlock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_unlock.html>`__
+  * - pthread_rwlock_wrlock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_wrlock.html>`__
+  * - pthread_rwlockattr_destroy
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlockattr_destroy.html>`__
+  * - pthread_rwlockattr_getpshared
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlockattr_getpshared.html>`__
+  * - pthread_rwlockattr_init
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlockattr_init.html>`__
+  * - pthread_rwlockattr_setpshared
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlockattr_setpshared.html>`__
+  * - pthread_self
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_self.html>`__
+  * - pthread_setcancelstate
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_setcancelstate.html>`__
+  * - pthread_setcanceltype
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_setcanceltype.html>`__
+  * - pthread_setschedparam
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_setschedparam.html>`__
+  * - pthread_setschedprio
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_setschedprio.html>`__
+  * - pthread_setspecific
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_setspecific.html>`__
+  * - pthread_spin_destroy
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_spin_destroy.html>`__
+  * - pthread_spin_init
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_spin_init.html>`__
+  * - pthread_spin_lock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_spin_lock.html>`__
+  * - pthread_spin_trylock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_spin_trylock.html>`__
+  * - pthread_spin_unlock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_spin_unlock.html>`__
+  * - pthread_testcancel
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_testcancel.html>`__

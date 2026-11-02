@@ -1,0 +1,177 @@
+==========
+sys/mman.h
+==========
+
+Macros
+======
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Macro
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - MAP_ANON
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - MAP_ANONYMOUS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - MAP_FAILED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - MAP_FIXED
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - MAP_PRIVATE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - MAP_SHARED
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - MCL_CURRENT
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - MCL_FUTURE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - MS_ASYNC
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - MS_INVALIDATE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - MS_SYNC
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - POSIX_MADV_DONTNEED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - POSIX_MADV_NORMAL
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - POSIX_MADV_RANDOM
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - POSIX_MADV_SEQUENTIAL
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - POSIX_MADV_WILLNEED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - POSIX_TYPED_MEM_ALLOCATE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - POSIX_TYPED_MEM_ALLOCATE_CONTIG
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - POSIX_TYPED_MEM_MAP_ALLOCATABLE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - PROT_EXEC
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - PROT_NONE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - PROT_READ
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+  * - PROT_WRITE
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/sys_mman.h.html>`__
+
+Functions
+=========
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Function
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - mlock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/mlock.html>`__
+  * - mlockall
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/mlockall.html>`__
+  * - mmap
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/mmap.html>`__
+  * - mprotect
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/mprotect.html>`__
+  * - msync
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/msync.html>`__
+  * - munlock
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/munlock.html>`__
+  * - munlockall
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/munlockall.html>`__
+  * - munmap
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/munmap.html>`__
+  * - posix_madvise
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_madvise.html>`__
+  * - posix_mem_offset
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_mem_offset.html>`__
+  * - posix_typed_mem_get_info
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_typed_mem_get_info.html>`__
+  * - posix_typed_mem_open
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_typed_mem_open.html>`__
+  * - shm_open
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/shm_open.html>`__
+  * - shm_unlink
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/shm_unlink.html>`__

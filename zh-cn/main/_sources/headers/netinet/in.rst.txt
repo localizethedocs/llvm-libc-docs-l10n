@@ -1,0 +1,173 @@
+============
+netinet/in.h
+============
+
+Macros
+======
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Macro
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - IN6ADDR_ANY_INIT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IN6ADDR_LOOPBACK_INIT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IN6_IS_ADDR_LINKLOCAL
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IN6_IS_ADDR_LOOPBACK
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IN6_IS_ADDR_MC_GLOBAL
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IN6_IS_ADDR_MC_LINKLOCAL
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IN6_IS_ADDR_MC_NODELOCAL
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IN6_IS_ADDR_MC_ORGLOCAL
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IN6_IS_ADDR_MC_SITELOCAL
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IN6_IS_ADDR_MULTICAST
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IN6_IS_ADDR_SITELOCAL
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IN6_IS_ADDR_UNSPECIFIED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IN6_IS_ADDR_V4COMPAT
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IN6_IS_ADDR_V4MAPPED
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - INADDR_ANY
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - INADDR_BROADCAST
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - INADDR_LOOPBACK
+    - |check|
+    - 
+    -
+  * - INET6_ADDRSTRLEN
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - INET_ADDRSTRLEN
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IPPROTO_ICMP
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IPPROTO_IP
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IPPROTO_IPV6
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IPPROTO_RAW
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IPPROTO_TCP
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IPPROTO_UDP
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IPV6_JOIN_GROUP
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IPV6_LEAVE_GROUP
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IPV6_MULTICAST_HOPS
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IPV6_MULTICAST_IF
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IPV6_MULTICAST_LOOP
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IPV6_UNICAST_HOPS
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+  * - IPV6_V6ONLY
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/netinet_in.h.html>`__
+
+Functions
+=========
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Function
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - htonl
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/htonl.html>`__
+  * - htons
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/htons.html>`__
+  * - ntohl
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/ntohl.html>`__
+  * - ntohs
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/ntohs.html>`__

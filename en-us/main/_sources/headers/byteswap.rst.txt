@@ -1,0 +1,29 @@
+==========
+byteswap.h
+==========
+
+Macros
+======
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Macro
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - bswap_16
+    - |check|
+    - 
+    -
+  * - bswap_32
+    - |check|
+    - 
+    -
+  * - bswap_64
+    - |check|
+    - 
+    -
+

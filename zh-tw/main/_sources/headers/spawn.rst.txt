@@ -1,0 +1,149 @@
+=======
+spawn.h
+=======
+
+Macros
+======
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Macro
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - POSIX_SPAWN_RESETIDS
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/spawn.h.html>`__
+  * - POSIX_SPAWN_SETPGROUP
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/spawn.h.html>`__
+  * - POSIX_SPAWN_SETSCHEDPARAM
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/spawn.h.html>`__
+  * - POSIX_SPAWN_SETSCHEDULER
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/spawn.h.html>`__
+  * - POSIX_SPAWN_SETSID
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/spawn.h.html>`__
+  * - POSIX_SPAWN_SETSIGDEF
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/spawn.h.html>`__
+  * - POSIX_SPAWN_SETSIGMASK
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/spawn.h.html>`__
+
+Functions
+=========
+
+.. list-table::
+  :widths: auto
+  :align: center
+  :header-rows: 1
+
+  * - Function
+    - Implemented
+    - C23 Standard Section
+    - POSIX Docs
+  * - posix_spawn
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawn.html>`__
+  * - posix_spawn_file_actions_addchdir
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawn_file_actions_addchdir.html>`__
+  * - posix_spawn_file_actions_addclose
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawn_file_actions_addclose.html>`__
+  * - posix_spawn_file_actions_adddup2
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawn_file_actions_adddup2.html>`__
+  * - posix_spawn_file_actions_addfchdir
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawn_file_actions_addfchdir.html>`__
+  * - posix_spawn_file_actions_addopen
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawn_file_actions_addopen.html>`__
+  * - posix_spawn_file_actions_destroy
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawn_file_actions_destroy.html>`__
+  * - posix_spawn_file_actions_init
+    - |check|
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawn_file_actions_init.html>`__
+  * - posix_spawnattr_destroy
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnattr_destroy.html>`__
+  * - posix_spawnattr_getflags
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnattr_getflags.html>`__
+  * - posix_spawnattr_getpgroup
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnattr_getpgroup.html>`__
+  * - posix_spawnattr_getschedparam
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnattr_getschedparam.html>`__
+  * - posix_spawnattr_getschedpolicy
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnattr_getschedpolicy.html>`__
+  * - posix_spawnattr_getsigdefault
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnattr_getsigdefault.html>`__
+  * - posix_spawnattr_getsigmask
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnattr_getsigmask.html>`__
+  * - posix_spawnattr_init
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnattr_init.html>`__
+  * - posix_spawnattr_setflags
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnattr_setflags.html>`__
+  * - posix_spawnattr_setpgroup
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnattr_setpgroup.html>`__
+  * - posix_spawnattr_setschedparam
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnattr_setschedparam.html>`__
+  * - posix_spawnattr_setschedpolicy
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnattr_setschedpolicy.html>`__
+  * - posix_spawnattr_setsigdefault
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnattr_setsigdefault.html>`__
+  * - posix_spawnattr_setsigmask
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnattr_setsigmask.html>`__
+  * - posix_spawnp
+    -
+    -
+    - `POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_spawnp.html>`__
