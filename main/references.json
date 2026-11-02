@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-10-26 08:35:25 -0700",
-      "hash" : "ff57d874f6c8736d54a953b416cd0fe0b7c7b6ef",
-      "title" : "TableGen: Skip disjoint register classes before intersecting them (#234803)"
+      "date" : "2026-11-02 10:23:27 -0800",
+      "hash" : "73013eda3a1b8025dc1a44142a01ded2987e92a0",
+      "title" : "[bazel] Disable new broken LLDB test (#238059)"
     }
   },
   "type" : "branch",

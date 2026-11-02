@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-02 18:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,9 @@ msgstr ""
 msgid "IF_NAMESIZE"
 msgstr ""
 
-#: ../../../headers/net/if.rst:18
+#: ../../../headers/net/if.rst:18 ../../../headers/net/if.rst:35
+#: ../../../headers/net/if.rst:39 ../../../headers/net/if.rst:43
+#: ../../../headers/net/if.rst:47
 msgid "|check|"
 msgstr ""
 
