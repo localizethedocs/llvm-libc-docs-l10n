@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../uefi/support.md:3
+msgid "Supported Functions"
+msgstr ""
+
+#: ../../../uefi/support.md:5
+msgid ""
+"The follow functions and headers are supported at least partially in UEFI. "
+"Some functions are implemented fully for UEFI."
+msgstr ""
+
+#: ../../../uefi/support.md:9
+msgid ""
+"LLVM-libc support for UEFI is currently in the early bring-up phase. The "
+"tables below are placeholders; for the current source of truth on "
+"implemented functions, please refer to `libc/config/uefi/entrypoints.txt` in "
+"the source tree."
+msgstr ""
+
+#: ../../../uefi/support.md:15
+msgid "ctype.h"
+msgstr ""
+
+#: ../../../uefi/support.md:8
+msgid "Function Name"
+msgstr ""
+
+#: ../../../uefi/support.md:8
+msgid "Available"
+msgstr ""
+
+#: ../../../uefi/support.md:21
+msgid "string.h"
+msgstr ""
+
+#: ../../../uefi/support.md:27
+msgid "strings.h"
+msgstr ""
+
+#: ../../../uefi/support.md:33
+msgid "stdbit.h"
+msgstr ""
+
+#: ../../../uefi/support.md:39
+msgid "stdlib.h"
+msgstr ""
+
+#: ../../../uefi/support.md:45
+msgid "inttypes.h"
+msgstr ""
+
+#: ../../../uefi/support.md:51
+msgid "stdio.h"
+msgstr ""
+
+#: ../../../uefi/support.md:57
+msgid "time.h"
+msgstr ""
+
+#: ../../../uefi/support.md:63
+msgid "assert.h"
+msgstr ""

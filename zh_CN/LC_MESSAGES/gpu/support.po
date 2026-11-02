@@ -1,0 +1,853 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../gpu/support.md:3
+msgid "Supported Functions"
+msgstr ""
+
+#: ../../../gpu/support.md:5
+msgid ""
+"The following functions and headers are supported at least partially on the "
+"device. Some functions are implemented fully on the GPU, while others "
+"require a {ref}`remote procedure call <libc_gpu_rpc>`."
+msgstr ""
+
+#: ../../../gpu/support.md:9
+msgid "ctype.h"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "Function Name"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "Available"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "RPC Required"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "isalnum"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "{{ check }}"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "isalpha"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "isascii"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "isblank"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "iscntrl"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "isdigit"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "isgraph"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "islower"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "isprint"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "ispunct"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "isspace"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "isupper"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "isxdigit"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "toascii"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "tolower"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "toupper"
+msgstr ""
+
+#: ../../../gpu/support.md:30
+msgid "string.h"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "bcmp"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "bcopy"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "bzero"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "memccpy"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "memchr"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "memcmp"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "memcpy"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "memmem"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "memmove"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "mempcpy"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "memrchr"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "memset"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stpcpy"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stpncpy"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strcat"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strchr"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strchrnul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strcmp"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strcoll"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strcpy"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strcspn"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strdup"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strerror"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strlcat"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strlcpy"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strlen"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strncat"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strncmp"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strncpy"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strndup"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strnlen"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strpbrk"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strrchr"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strsep"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strspn"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strstr"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strtok"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strtok_r"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strxfrm"
+msgstr ""
+
+#: ../../../gpu/support.md:74
+msgid "strings.h"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strcasecmp"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strcasestr"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "index"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "rindex"
+msgstr ""
+
+#: ../../../gpu/support.md:86
+msgid "stdbit.h"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_leading_zeros_uc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_leading_zeros_us"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_leading_zeros_ui"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_leading_zeros_ul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_leading_zeros_ull"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_trailing_zeros_uc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_trailing_zeros_us"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_trailing_zeros_ui"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_trailing_zeros_ul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_trailing_zeros_ull"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_trailing_ones_uc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_trailing_ones_us"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_trailing_ones_ui"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_trailing_ones_ul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_trailing_ones_ull"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_leading_zero_uc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_leading_zero_us"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_leading_zero_ui"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_leading_zero_ul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_leading_zero_ull"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_leading_one_uc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_leading_one_us"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_leading_one_ui"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_leading_one_ul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_leading_one_ull"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_trailing_zero_uc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_trailing_zero_us"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_trailing_zero_ui"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_trailing_zero_ul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_trailing_zero_ull"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_trailing_one_uc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_trailing_one_us"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_trailing_one_ui"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_trailing_one_ul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_first_trailing_one_ull"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_count_zeros_uc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_count_zeros_us"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_count_zeros_ui"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_count_zeros_ul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_count_zeros_ull"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_count_ones_uc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_count_ones_us"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_count_ones_ui"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_count_ones_ul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_count_ones_ull"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_has_single_bit_uc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_has_single_bit_us"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_has_single_bit_ui"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_has_single_bit_ul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_has_single_bit_ull"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_width_uc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_width_us"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_width_ui"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_width_ul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_width_ull"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_floor_uc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_floor_us"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_floor_ui"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_floor_ul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_floor_ull"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_ceil_uc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_ceil_us"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_ceil_ui"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_ceil_ul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "stdc_bit_ceil_ull"
+msgstr ""
+
+#: ../../../gpu/support.md:156
+msgid "stdlib.h"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "abs"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "atoi"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "atof"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "atol"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "atoll"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "exit"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "abort"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "system"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "labs"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "llabs"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "div"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "ldiv"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "lldiv"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "bsearch"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "qsort"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "qsort_r"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strtod"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strtof"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strtol"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strtold"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strtoll"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strtoul"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strtoull"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "srand"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "rand"
+msgstr ""
+
+#: ../../../gpu/support.md:186
+msgid "inttypes.h"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "imaxabs"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "imaxdiv"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strtoimax"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strtoumax"
+msgstr ""
+
+#: ../../../gpu/support.md:195
+msgid "stdio.h"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "feof"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "ferror"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "clearerr"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "fseek"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "ftell"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "fflush"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "fgetc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "fgets"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "ungetc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "getc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "getchar"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "puts"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "fputs"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "fputc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "fwrite"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "remove"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "rename"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "putc"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "printf"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "vprintf"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "fprintf"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "vfprintf"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "sprintf"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "snprintf"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "vsprintf"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "vsnprintf"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "sscanf"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "scanf"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "fscanf"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "putchar"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "fclose"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "fopen"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "fread"
+msgstr ""
+
+#: ../../../gpu/support.md:233
+msgid "time.h"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "clock"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "clock_gettime"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "nanosleep"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strftime"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "strftime_l"
+msgstr ""
+
+#: ../../../gpu/support.md:243
+msgid "assert.h"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "assert"
+msgstr ""
+
+#: ../../../gpu/support.md:0
+msgid "`__assert_fail`"
+msgstr ""
