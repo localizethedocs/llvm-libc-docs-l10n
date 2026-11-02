@@ -1,0 +1,429 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-02 18:27+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../dev/errno.md:3
+msgid "`errno` and `libc_errno` in LLVM-libc"
+msgstr ""
+
+#: ../../../dev/errno.md:5
+msgid ""
+"Many C and POSIX functions report errors by setting `errno`. Because LLVM-"
+"libc supports multiple build and deployment modes ({doc}`../"
+"full_host_build`, {doc}`../full_cross_build`, {doc}`../overlay_mode`, "
+"baremetal, GPU, and header-only `libc/shared/`), internal code and unit "
+"tests access `errno` through `libc_errno`."
+msgstr ""
+
+#: ../../../dev/errno.md:11
+msgid "Targets Overview"
+msgstr ""
+
+#: ../../../dev/errno.md:13
+msgid "`errno` support is split across three targets:"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "CMake Target"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Bazel Target"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Header / Source"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Purpose"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "`libc.hdr.errno_macros`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "`:hdr_errno_macros`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "`libc/hdr/errno_macros.h`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid ""
+"Error constants (`EINVAL`, `ERANGE`, `EDOM`, `ENOMEM`, etc.) without "
+"`libc_errno`."
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "`libc.src.__support.libc_errno`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "`:__support_libc_errno`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "`libc/src/__support/libc_errno.h`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid ""
+"Declares `libc_errno` (either as `#define libc_errno errno` or as "
+"`LIBC_INLINE_VAR constexpr Errno libc_errno{}`)."
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "`libc.src.errno.errno`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "`:errno`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "`libc/src/errno/libc_errno.cpp`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid ""
+"Defines the backing storage (`thread_errno` or `shared_errno`), `extern "
+"\"C\" int *__llvm_libc_errno() noexcept`, and (when "
+"`LIBC_COPT_PROVIDE_GNU_ALIASES` is enabled) the `__errno_location` alias."
+msgstr ""
+
+#: ../../../dev/errno.md:21
+msgid "Usage Guidelines"
+msgstr ""
+
+#: ../../../dev/errno.md:23
+msgid "1. Header Inclusion"
+msgstr ""
+
+#: ../../../dev/errno.md:25
+msgid ""
+"**Never `#include <errno.h>`** in `libc/src/**` or unit tests (`libc/test/"
+"src/**`)."
+msgstr ""
+
+#: ../../../dev/errno.md:26
+msgid ""
+"**Only need error constants (`EINVAL`, `ERANGE`, `EDOM`, etc.)?** Include "
+"`\"hdr/errno_macros.h\"`:"
+msgstr ""
+
+#: ../../../dev/errno.md:33
+msgid ""
+"**Read or write `errno`?** Include `\"src/__support/libc_errno.h\"` (which "
+"also includes `\"hdr/errno_macros.h\"`) and use `libc_errno`:"
+msgstr ""
+
+#: ../../../dev/errno.md:43
+msgid "2. Where to Set `libc_errno`"
+msgstr ""
+
+#: ../../../dev/errno.md:45
+msgid ""
+"Set `libc_errno` only at the public entrypoint boundary "
+"(`LLVM_LIBC_FUNCTION`) just before returning an error, or via "
+"`fputil::set_errno_if_required` in math implementations."
+msgstr ""
+
+#: ../../../dev/errno.md:48
+msgid ""
+"Internal helpers in `libc/src/__support/` should not set `libc_errno` "
+"directly; return `ErrorOr<T>` or `cpp::optional<T>` instead and set "
+"`libc_errno` in the entrypoint:"
+msgstr ""
+
+#: ../../../dev/errno.md:63
+msgid "3. Build Dependencies"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Target Type"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Only Needs Error Constants (`EINVAL`, etc.)"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Reads or Writes `libc_errno`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "**`libc/src/__support/**`**"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "`libc.src.__support.libc_errno` (never `libc.src.errno.errno`)"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "**Public Entrypoints (`libc/src/**`)**"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid ""
+"`libc.src.__support.libc_errno` (and `libc.src.errno.errno` for non-math "
+"`libc.a` entrypoints)"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "**Tests / Fuzzers / Benchmarks**"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid ""
+"Linked automatically (`libc.src.__support.libc_errno` and "
+"`libc.src.errno.errno`)"
+msgstr ""
+
+#: ../../../dev/errno.md:71
+msgid ""
+"While public entrypoints normally cannot depend on other entrypoints, "
+"`libc.src.errno.errno` is explicitly allowed in `ALLOWED_DEPS` in `libc/"
+"cmake/modules/LLVMLibCObjectRules.cmake`."
+msgstr ""
+
+#: ../../../dev/errno.md:75
+msgid "4. Testing `errno`"
+msgstr ""
+
+#: ../../../dev/errno.md:77
+msgid ""
+"Test rules (`add_libc_test`, `add_fp_unittest`, `add_integration_test`, "
+"`add_libc_fuzzer`, and `perf_test`) automatically link "
+"`libc.src.errno.errno`."
+msgstr ""
+
+#: ../../../dev/errno.md:79
+msgid ""
+"Unit tests that check `errno` should use `ErrnoCheckingTest` (`test/UnitTest/"
+"ErrnoCheckingTest.h`) or `ErrnoSetterMatcher` (`test/UnitTest/"
+"ErrnoSetterMatcher.h`):"
+msgstr ""
+
+#: ../../../dev/errno.md:82
+msgid ""
+"`ErrnoCheckingTest` resets `libc_errno = 0` before each test and verifies "
+"`libc_errno == 0` at the end."
+msgstr ""
+
+#: ../../../dev/errno.md:84
+msgid ""
+"`ErrnoSetterMatcher` (`ASSERT_THAT(..., Fails(EINVAL))` / `Succeeds()`) "
+"checks and resets `libc_errno` automatically."
+msgstr ""
+
+#: ../../../dev/errno.md:86
+msgid ""
+"**Header-only `libc/shared/*` tests (`libc/test/shared/*`)**: Compiled with "
+"`LIBC_ERRNO_MODE_SYSTEM_INLINE` in overlay mode; check `errno` directly when "
+"testing error conditions."
+msgstr ""
+
+#: ../../../dev/errno.md:90
+msgid "`LIBC_ERRNO_MODE` Configurations"
+msgstr ""
+
+#: ../../../dev/errno.md:92
+msgid ""
+"`LIBC_CONF_ERRNO_MODE` (passed to the compiler as `-"
+"DLIBC_ERRNO_MODE=<mode>`) controls how `libc_errno` is implemented:"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Mode"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "`libc_errno` in `libc_errno.h`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Backing Storage in `libc_errno.cpp`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Typical Use Case"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "**`LIBC_ERRNO_MODE_DEFAULT`**"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Resolves to `THREAD_LOCAL` or `SYSTEM_INLINE` (see below)."
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "`thread_errno`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Default configuration."
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "**`LIBC_ERRNO_MODE_THREAD_LOCAL`**"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Inline `Errno` wrapper calling `*__llvm_libc_errno()`."
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "`LIBC_THREAD_LOCAL int thread_errno;`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Full builds; overlay unit tests."
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "**`LIBC_ERRNO_MODE_SHARED`**"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Global `int shared_errno;`"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Single-threaded or thread-local-free targets (GPU, UEFI)."
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "**`LIBC_ERRNO_MODE_EXTERNAL`**"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Provided by external embedder."
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Baremetal (`libc/config/baremetal/config.json`)."
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "**`LIBC_ERRNO_MODE_UNDEFINED`**"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Inline no-op (`operator=` is a no-op, `operator int()` returns `0`)."
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "None (empty TU)."
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Minimal embedded environments without `errno`."
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "**`LIBC_ERRNO_MODE_SYSTEM_INLINE`**"
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "`#define libc_errno errno` (from system `<errno.h>`)."
+msgstr ""
+
+#: ../../../dev/errno.md:0
+msgid "Overlay public archive (`libllvmlibc.a`) and `libc/shared/*`."
+msgstr ""
+
+#: ../../../dev/errno.md:104
+msgid "How `LIBC_ERRNO_MODE_DEFAULT` Resolves"
+msgstr ""
+
+#: ../../../dev/errno.md:106
+msgid "When `LIBC_ERRNO_MODE` is unset or set to `LIBC_ERRNO_MODE_DEFAULT`:"
+msgstr ""
+
+#: ../../../dev/errno.md:108
+msgid ""
+"**Full build (`LIBC_FULL_BUILD`)**: resolves to "
+"`LIBC_ERRNO_MODE_THREAD_LOCAL`."
+msgstr ""
+
+#: ../../../dev/errno.md:109
+msgid ""
+"**Overlay public archive (`LIBC_COPT_PUBLIC_PACKAGING`)**: resolves to "
+"`LIBC_ERRNO_MODE_SYSTEM_INLINE` (`libc/shared/libc_common.h` and `libc/test/"
+"shared/` also configure `LIBC_ERRNO_MODE_SYSTEM_INLINE` in non-full builds)."
+msgstr ""
+
+#: ../../../dev/errno.md:110
+msgid ""
+"**Overlay tests, fuzzers, and benchmarks**: resolves to "
+"`LIBC_ERRNO_MODE_THREAD_LOCAL`."
+msgstr ""
+
+#: ../../../dev/errno.md:112
+msgid "Why `libc_errno` Header and Runtime Storage Are Separated"
+msgstr ""
+
+#: ../../../dev/errno.md:114
+msgid ""
+"Keeping `libc.src.__support.libc_errno` (header) separate from "
+"`libc.src.errno.errno` (runtime object) is necessary for several reasons:"
+msgstr ""
+
+#: ../../../dev/errno.md:117
+msgid ""
+"**Isolating unit tests from host `errno` in overlay mode**: Public overlay "
+"archives (`libllvmlibc.a`) are built with `-DLIBC_COPT_PUBLIC_PACKAGING` and "
+"use the host's `<errno.h>` (`LIBC_ERRNO_MODE_SYSTEM_INLINE`). Unit tests are "
+"built without `-DLIBC_COPT_PUBLIC_PACKAGING` and use LLVM-libc's internal "
+"`thread_errno` (`LIBC_ERRNO_MODE_THREAD_LOCAL`), preventing tested functions "
+"from clobbering the host `errno` used by the test harness. Conversely, if "
+"internal code or tests mistakenly `#include <errno.h>` and use `errno` "
+"directly, reads and writes will hit different thread-local variables in the "
+"same thread."
+msgstr ""
+
+#: ../../../dev/errno.md:126
+msgid ""
+"**Header-only `libc/shared/*` consumption**: External LLVM subprojects (such "
+"as `libc++` and `offload`) include headers under `libc/shared/`, which set "
+"`LIBC_ERRNO_MODE_SYSTEM_INLINE` and map `libc_errno` to `<errno.h>` without "
+"compiling or linking `libc_errno.cpp`."
+msgstr ""
+
+#: ../../../dev/errno.md:130
+msgid ""
+"**`errno`-free math and archive separation (`libc.a` vs. `libm.a` / "
+"`libmvec.a`)**: `FEnvImpl.h` includes `src/__support/libc_errno.h` to define "
+"`fputil::set_errno_if_required`, which is guarded by `#ifndef "
+"LIBC_MATH_HAS_NO_ERRNO`. Because `Errno` methods are inline, functions that "
+"never call `set_errno_if_required` (such as `ceil`, `floor`, `copysign`, "
+"vector math, or `LIBC_MATH_NO_ERRNO` builds) emit no reference to "
+"`__llvm_libc_errno()`, and `libc.src.errno.errno` stays in `libc.a` rather "
+"than being pulled into `libm.a` or `libmvec.a`."
+msgstr ""
+
+#: ../../../dev/errno.md:138
+msgid ""
+"**CMake directory ordering**: `libc/src/CMakeLists.txt` adds `src/__support` "
+"before `src/errno` because `libc.src.errno.errno` depends on "
+"`libc.src.__support.*`. Targets under `libc/src/__support/` therefore cannot "
+"depend on `libc.src.errno.errno`."
+msgstr ""

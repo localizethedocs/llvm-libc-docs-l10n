@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-02 18:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -232,7 +232,11 @@ msgid "\\<Func> (double)"
 msgstr ""
 
 #: ../../../headers/math/index.md:13
-msgid "\\<Func_l> (long double)"
+msgid "\\<Func_f80> (f80)"
+msgstr ""
+
+#: ../../../headers/math/index.md:13
+msgid "\\<Func> (double-double)"
 msgstr ""
 
 #: ../../../headers/math/index.md:13
@@ -531,7 +535,7 @@ msgstr ""
 msgid "7.12.12.9"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:445
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:446
 msgid "fmod"
 msgstr ""
 
@@ -907,7 +911,7 @@ msgstr ""
 msgid "Higher Math Functions"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:248
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:249
 msgid "acos"
 msgstr ""
 
@@ -943,7 +947,7 @@ msgstr ""
 msgid "F.10.1.8"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:260
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:261
 msgid "asin"
 msgstr ""
 
@@ -1043,7 +1047,7 @@ msgstr ""
 msgid "F.10.1.10"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:280
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:281
 msgid "cbrt"
 msgstr ""
 
@@ -1067,7 +1071,7 @@ msgstr ""
 msgid "F.10.4.2"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:284
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:285
 msgid "cos"
 msgstr ""
 
@@ -1135,7 +1139,7 @@ msgstr ""
 msgid "F.10.5.2"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:300
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:301
 msgid "exp"
 msgstr ""
 
@@ -1147,7 +1151,7 @@ msgstr ""
 msgid "F.10.3.1"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:306
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:307
 msgid "exp10"
 msgstr ""
 
@@ -1171,7 +1175,7 @@ msgstr ""
 msgid "F.10.3.3"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:312
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:313
 msgid "exp2"
 msgstr ""
 
@@ -1195,7 +1199,7 @@ msgstr ""
 msgid "F.10.3.5"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:318
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:319
 msgid "expm1"
 msgstr ""
 
@@ -1227,7 +1231,7 @@ msgstr ""
 msgid "fsqrt"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:324
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:325
 msgid "hypot"
 msgstr ""
 
@@ -1251,7 +1255,7 @@ msgstr ""
 msgid "F.10.5.3"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:330
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:331
 msgid "log"
 msgstr ""
 
@@ -1267,7 +1271,7 @@ msgstr ""
 msgid "F.10.3.11"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:336
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:337
 msgid "log10"
 msgstr ""
 
@@ -1291,7 +1295,7 @@ msgstr ""
 msgid "F.10.3.13"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:342
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:343
 msgid "log1p"
 msgstr ""
 
@@ -1303,7 +1307,7 @@ msgstr ""
 msgid "F.10.3.14"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:346
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:347
 msgid "log2"
 msgstr ""
 
@@ -1395,7 +1399,7 @@ msgstr ""
 msgid "F.10.4.9"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:356
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:357
 msgid "sin"
 msgstr ""
 
@@ -1447,7 +1451,7 @@ msgstr ""
 msgid "F.10.4.10"
 msgstr ""
 
-#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:378
+#: ../../../headers/math/index.md:13 ../../../headers/math/index.md:379
 msgid "tan"
 msgstr ""
 
@@ -1527,17 +1531,23 @@ msgid ""
 "function, the latter is implemented as `log_bf16`."
 msgstr ""
 
-#: ../../../headers/math/index.md:235
+#: ../../../headers/math/index.md:231
+msgid ""
+"`long double` functions are aliases to `f80`, `double-double`, `float128`, "
+"or `double` according to the target architecture."
+msgstr ""
+
+#: ../../../headers/math/index.md:236
 msgid "GPU Conformance"
 msgstr ""
 
-#: ../../../headers/math/index.md:237
+#: ../../../headers/math/index.md:238
 msgid ""
 "Conformance tests are located at: [offload/unittests/Conformance](https://"
 "github.com/llvm/llvm-project/tree/main/offload/unittests/Conformance)."
 msgstr ""
 
-#: ../../../headers/math/index.md:238
+#: ../../../headers/math/index.md:239
 msgid ""
 "The math functions for GPUs are compiled with the following optimization "
 "options: `LIBC_MATH_SKIP_ACCURATE_PASS`, "
@@ -1545,7 +1555,7 @@ msgid ""
 "`LIBC_MATH_NO_ERRNO`, and `LIBC_MATH_NO_EXCEPT`."
 msgstr ""
 
-#: ../../../headers/math/index.md:239
+#: ../../../headers/math/index.md:240
 msgid ""
 "The conformance test results for higher math functions on GPUs are reported "
 "in the table below. The results show the maximum observed ULP distance when "
@@ -1555,451 +1565,451 @@ msgid ""
 "HIP Math against the same reference are also included."
 msgstr ""
 
-#: ../../../headers/math/index.md:243
+#: ../../../headers/math/index.md:244
 msgid "Function"
 msgstr ""
 
-#: ../../../headers/math/index.md:243
+#: ../../../headers/math/index.md:244
 msgid "Test Method"
 msgstr ""
 
-#: ../../../headers/math/index.md:243
+#: ../../../headers/math/index.md:244
 msgid "ULP Tolerance"
 msgstr ""
 
-#: ../../../headers/math/index.md:243
+#: ../../../headers/math/index.md:244
 msgid "Max ULP Distance"
 msgstr ""
 
-#: ../../../headers/math/index.md:245
+#: ../../../headers/math/index.md:246
 msgid "LLVM libc (AMDGPU)"
 msgstr ""
 
-#: ../../../headers/math/index.md:245
+#: ../../../headers/math/index.md:246
 msgid "LLVM libc (CUDA)"
 msgstr ""
 
-#: ../../../headers/math/index.md:245
+#: ../../../headers/math/index.md:246
 msgid "CUDA Math (CUDA)"
 msgstr ""
 
-#: ../../../headers/math/index.md:245
+#: ../../../headers/math/index.md:246
 msgid "HIP Math (AMDGPU)"
 msgstr ""
 
-#: ../../../headers/math/index.md:248 ../../../headers/math/index.md:260
-#: ../../../headers/math/index.md:274 ../../../headers/math/index.md:280
-#: ../../../headers/math/index.md:284 ../../../headers/math/index.md:300
-#: ../../../headers/math/index.md:306 ../../../headers/math/index.md:312
-#: ../../../headers/math/index.md:318 ../../../headers/math/index.md:324
-#: ../../../headers/math/index.md:326 ../../../headers/math/index.md:330
-#: ../../../headers/math/index.md:336 ../../../headers/math/index.md:342
-#: ../../../headers/math/index.md:346 ../../../headers/math/index.md:352
-#: ../../../headers/math/index.md:354 ../../../headers/math/index.md:356
-#: ../../../headers/math/index.md:362 ../../../headers/math/index.md:364
-#: ../../../headers/math/index.md:378
+#: ../../../headers/math/index.md:249 ../../../headers/math/index.md:261
+#: ../../../headers/math/index.md:275 ../../../headers/math/index.md:281
+#: ../../../headers/math/index.md:285 ../../../headers/math/index.md:301
+#: ../../../headers/math/index.md:307 ../../../headers/math/index.md:313
+#: ../../../headers/math/index.md:319 ../../../headers/math/index.md:325
+#: ../../../headers/math/index.md:327 ../../../headers/math/index.md:331
+#: ../../../headers/math/index.md:337 ../../../headers/math/index.md:343
+#: ../../../headers/math/index.md:347 ../../../headers/math/index.md:353
+#: ../../../headers/math/index.md:355 ../../../headers/math/index.md:357
+#: ../../../headers/math/index.md:363 ../../../headers/math/index.md:365
+#: ../../../headers/math/index.md:379
 msgid "Randomized"
 msgstr ""
 
-#: ../../../headers/math/index.md:248 ../../../headers/math/index.md:250
-#: ../../../headers/math/index.md:254 ../../../headers/math/index.md:260
-#: ../../../headers/math/index.md:262 ../../../headers/math/index.md:266
-#: ../../../headers/math/index.md:284 ../../../headers/math/index.md:286
-#: ../../../headers/math/index.md:290 ../../../headers/math/index.md:294
-#: ../../../headers/math/index.md:324 ../../../headers/math/index.md:326
-#: ../../../headers/math/index.md:356 ../../../headers/math/index.md:358
-#: ../../../headers/math/index.md:362 ../../../headers/math/index.md:364
-#: ../../../headers/math/index.md:366 ../../../headers/math/index.md:368
-#: ../../../headers/math/index.md:370 ../../../headers/math/index.md:374
+#: ../../../headers/math/index.md:249 ../../../headers/math/index.md:251
+#: ../../../headers/math/index.md:255 ../../../headers/math/index.md:261
+#: ../../../headers/math/index.md:263 ../../../headers/math/index.md:267
+#: ../../../headers/math/index.md:285 ../../../headers/math/index.md:287
+#: ../../../headers/math/index.md:291 ../../../headers/math/index.md:295
+#: ../../../headers/math/index.md:325 ../../../headers/math/index.md:327
+#: ../../../headers/math/index.md:357 ../../../headers/math/index.md:359
+#: ../../../headers/math/index.md:363 ../../../headers/math/index.md:365
+#: ../../../headers/math/index.md:367 ../../../headers/math/index.md:369
+#: ../../../headers/math/index.md:371 ../../../headers/math/index.md:375
 msgid "4"
 msgstr ""
 
-#: ../../../headers/math/index.md:248 ../../../headers/math/index.md:260
+#: ../../../headers/math/index.md:249 ../../../headers/math/index.md:261
 msgid "6 (FAILED)"
 msgstr ""
 
-#: ../../../headers/math/index.md:248 ../../../headers/math/index.md:250
-#: ../../../headers/math/index.md:252 ../../../headers/math/index.md:254
-#: ../../../headers/math/index.md:260 ../../../headers/math/index.md:262
-#: ../../../headers/math/index.md:266 ../../../headers/math/index.md:268
-#: ../../../headers/math/index.md:270 ../../../headers/math/index.md:272
-#: ../../../headers/math/index.md:274 ../../../headers/math/index.md:276
-#: ../../../headers/math/index.md:278 ../../../headers/math/index.md:280
-#: ../../../headers/math/index.md:282 ../../../headers/math/index.md:284
-#: ../../../headers/math/index.md:286 ../../../headers/math/index.md:288
-#: ../../../headers/math/index.md:290 ../../../headers/math/index.md:292
-#: ../../../headers/math/index.md:294 ../../../headers/math/index.md:298
-#: ../../../headers/math/index.md:300 ../../../headers/math/index.md:302
-#: ../../../headers/math/index.md:304 ../../../headers/math/index.md:306
-#: ../../../headers/math/index.md:308 ../../../headers/math/index.md:310
-#: ../../../headers/math/index.md:312 ../../../headers/math/index.md:314
-#: ../../../headers/math/index.md:316 ../../../headers/math/index.md:318
-#: ../../../headers/math/index.md:320 ../../../headers/math/index.md:322
-#: ../../../headers/math/index.md:324 ../../../headers/math/index.md:326
-#: ../../../headers/math/index.md:330 ../../../headers/math/index.md:332
-#: ../../../headers/math/index.md:334 ../../../headers/math/index.md:336
-#: ../../../headers/math/index.md:338 ../../../headers/math/index.md:340
-#: ../../../headers/math/index.md:342 ../../../headers/math/index.md:344
-#: ../../../headers/math/index.md:346 ../../../headers/math/index.md:348
-#: ../../../headers/math/index.md:350 ../../../headers/math/index.md:352
-#: ../../../headers/math/index.md:354 ../../../headers/math/index.md:356
-#: ../../../headers/math/index.md:358 ../../../headers/math/index.md:360
-#: ../../../headers/math/index.md:362 ../../../headers/math/index.md:364
-#: ../../../headers/math/index.md:366 ../../../headers/math/index.md:368
-#: ../../../headers/math/index.md:370 ../../../headers/math/index.md:372
-#: ../../../headers/math/index.md:374 ../../../headers/math/index.md:378
-#: ../../../headers/math/index.md:382 ../../../headers/math/index.md:384
-#: ../../../headers/math/index.md:386 ../../../headers/math/index.md:390
+#: ../../../headers/math/index.md:249 ../../../headers/math/index.md:251
+#: ../../../headers/math/index.md:253 ../../../headers/math/index.md:255
+#: ../../../headers/math/index.md:261 ../../../headers/math/index.md:263
+#: ../../../headers/math/index.md:267 ../../../headers/math/index.md:269
+#: ../../../headers/math/index.md:271 ../../../headers/math/index.md:273
+#: ../../../headers/math/index.md:275 ../../../headers/math/index.md:277
+#: ../../../headers/math/index.md:279 ../../../headers/math/index.md:281
+#: ../../../headers/math/index.md:283 ../../../headers/math/index.md:285
+#: ../../../headers/math/index.md:287 ../../../headers/math/index.md:289
+#: ../../../headers/math/index.md:291 ../../../headers/math/index.md:293
+#: ../../../headers/math/index.md:295 ../../../headers/math/index.md:299
+#: ../../../headers/math/index.md:301 ../../../headers/math/index.md:303
+#: ../../../headers/math/index.md:305 ../../../headers/math/index.md:307
+#: ../../../headers/math/index.md:309 ../../../headers/math/index.md:311
+#: ../../../headers/math/index.md:313 ../../../headers/math/index.md:315
+#: ../../../headers/math/index.md:317 ../../../headers/math/index.md:319
+#: ../../../headers/math/index.md:321 ../../../headers/math/index.md:323
+#: ../../../headers/math/index.md:325 ../../../headers/math/index.md:327
+#: ../../../headers/math/index.md:331 ../../../headers/math/index.md:333
+#: ../../../headers/math/index.md:335 ../../../headers/math/index.md:337
+#: ../../../headers/math/index.md:339 ../../../headers/math/index.md:341
+#: ../../../headers/math/index.md:343 ../../../headers/math/index.md:345
+#: ../../../headers/math/index.md:347 ../../../headers/math/index.md:349
+#: ../../../headers/math/index.md:351 ../../../headers/math/index.md:353
+#: ../../../headers/math/index.md:355 ../../../headers/math/index.md:357
+#: ../../../headers/math/index.md:359 ../../../headers/math/index.md:361
+#: ../../../headers/math/index.md:363 ../../../headers/math/index.md:365
+#: ../../../headers/math/index.md:367 ../../../headers/math/index.md:369
+#: ../../../headers/math/index.md:371 ../../../headers/math/index.md:373
+#: ../../../headers/math/index.md:375 ../../../headers/math/index.md:379
+#: ../../../headers/math/index.md:383 ../../../headers/math/index.md:385
+#: ../../../headers/math/index.md:387 ../../../headers/math/index.md:391
 msgid "1"
 msgstr ""
 
-#: ../../../headers/math/index.md:250 ../../../headers/math/index.md:417
+#: ../../../headers/math/index.md:251 ../../../headers/math/index.md:418
 msgid "acosf"
 msgstr ""
 
-#: ../../../headers/math/index.md:250 ../../../headers/math/index.md:252
-#: ../../../headers/math/index.md:254 ../../../headers/math/index.md:256
-#: ../../../headers/math/index.md:258 ../../../headers/math/index.md:262
-#: ../../../headers/math/index.md:264 ../../../headers/math/index.md:266
-#: ../../../headers/math/index.md:268 ../../../headers/math/index.md:270
-#: ../../../headers/math/index.md:272 ../../../headers/math/index.md:276
-#: ../../../headers/math/index.md:278 ../../../headers/math/index.md:282
-#: ../../../headers/math/index.md:286 ../../../headers/math/index.md:288
-#: ../../../headers/math/index.md:290 ../../../headers/math/index.md:292
-#: ../../../headers/math/index.md:294 ../../../headers/math/index.md:296
-#: ../../../headers/math/index.md:298 ../../../headers/math/index.md:302
-#: ../../../headers/math/index.md:304 ../../../headers/math/index.md:308
-#: ../../../headers/math/index.md:310 ../../../headers/math/index.md:314
-#: ../../../headers/math/index.md:316 ../../../headers/math/index.md:320
-#: ../../../headers/math/index.md:322 ../../../headers/math/index.md:328
-#: ../../../headers/math/index.md:332 ../../../headers/math/index.md:334
-#: ../../../headers/math/index.md:338 ../../../headers/math/index.md:340
-#: ../../../headers/math/index.md:344 ../../../headers/math/index.md:348
-#: ../../../headers/math/index.md:350 ../../../headers/math/index.md:358
-#: ../../../headers/math/index.md:360 ../../../headers/math/index.md:366
-#: ../../../headers/math/index.md:368 ../../../headers/math/index.md:370
-#: ../../../headers/math/index.md:372 ../../../headers/math/index.md:374
-#: ../../../headers/math/index.md:376 ../../../headers/math/index.md:380
-#: ../../../headers/math/index.md:382 ../../../headers/math/index.md:384
-#: ../../../headers/math/index.md:386 ../../../headers/math/index.md:388
-#: ../../../headers/math/index.md:390
+#: ../../../headers/math/index.md:251 ../../../headers/math/index.md:253
+#: ../../../headers/math/index.md:255 ../../../headers/math/index.md:257
+#: ../../../headers/math/index.md:259 ../../../headers/math/index.md:263
+#: ../../../headers/math/index.md:265 ../../../headers/math/index.md:267
+#: ../../../headers/math/index.md:269 ../../../headers/math/index.md:271
+#: ../../../headers/math/index.md:273 ../../../headers/math/index.md:277
+#: ../../../headers/math/index.md:279 ../../../headers/math/index.md:283
+#: ../../../headers/math/index.md:287 ../../../headers/math/index.md:289
+#: ../../../headers/math/index.md:291 ../../../headers/math/index.md:293
+#: ../../../headers/math/index.md:295 ../../../headers/math/index.md:297
+#: ../../../headers/math/index.md:299 ../../../headers/math/index.md:303
+#: ../../../headers/math/index.md:305 ../../../headers/math/index.md:309
+#: ../../../headers/math/index.md:311 ../../../headers/math/index.md:315
+#: ../../../headers/math/index.md:317 ../../../headers/math/index.md:321
+#: ../../../headers/math/index.md:323 ../../../headers/math/index.md:329
+#: ../../../headers/math/index.md:333 ../../../headers/math/index.md:335
+#: ../../../headers/math/index.md:339 ../../../headers/math/index.md:341
+#: ../../../headers/math/index.md:345 ../../../headers/math/index.md:349
+#: ../../../headers/math/index.md:351 ../../../headers/math/index.md:359
+#: ../../../headers/math/index.md:361 ../../../headers/math/index.md:367
+#: ../../../headers/math/index.md:369 ../../../headers/math/index.md:371
+#: ../../../headers/math/index.md:373 ../../../headers/math/index.md:375
+#: ../../../headers/math/index.md:377 ../../../headers/math/index.md:381
+#: ../../../headers/math/index.md:383 ../../../headers/math/index.md:385
+#: ../../../headers/math/index.md:387 ../../../headers/math/index.md:389
+#: ../../../headers/math/index.md:391
 msgid "Exhaustive"
 msgstr ""
 
-#: ../../../headers/math/index.md:252
+#: ../../../headers/math/index.md:253
 msgid "acosf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:252 ../../../headers/math/index.md:254
-#: ../../../headers/math/index.md:256 ../../../headers/math/index.md:258
-#: ../../../headers/math/index.md:260 ../../../headers/math/index.md:264
-#: ../../../headers/math/index.md:266 ../../../headers/math/index.md:268
-#: ../../../headers/math/index.md:270 ../../../headers/math/index.md:272
-#: ../../../headers/math/index.md:274 ../../../headers/math/index.md:278
-#: ../../../headers/math/index.md:280 ../../../headers/math/index.md:282
-#: ../../../headers/math/index.md:284 ../../../headers/math/index.md:286
-#: ../../../headers/math/index.md:288 ../../../headers/math/index.md:290
-#: ../../../headers/math/index.md:292 ../../../headers/math/index.md:296
-#: ../../../headers/math/index.md:298 ../../../headers/math/index.md:302
-#: ../../../headers/math/index.md:304 ../../../headers/math/index.md:308
-#: ../../../headers/math/index.md:310 ../../../headers/math/index.md:314
-#: ../../../headers/math/index.md:316 ../../../headers/math/index.md:318
-#: ../../../headers/math/index.md:322 ../../../headers/math/index.md:324
-#: ../../../headers/math/index.md:326 ../../../headers/math/index.md:328
-#: ../../../headers/math/index.md:332 ../../../headers/math/index.md:334
-#: ../../../headers/math/index.md:338 ../../../headers/math/index.md:340
-#: ../../../headers/math/index.md:342 ../../../headers/math/index.md:344
-#: ../../../headers/math/index.md:350 ../../../headers/math/index.md:352
-#: ../../../headers/math/index.md:354 ../../../headers/math/index.md:358
-#: ../../../headers/math/index.md:360 ../../../headers/math/index.md:362
-#: ../../../headers/math/index.md:366 ../../../headers/math/index.md:368
-#: ../../../headers/math/index.md:372 ../../../headers/math/index.md:376
-#: ../../../headers/math/index.md:378 ../../../headers/math/index.md:380
-#: ../../../headers/math/index.md:382 ../../../headers/math/index.md:384
-#: ../../../headers/math/index.md:386 ../../../headers/math/index.md:390
+#: ../../../headers/math/index.md:253 ../../../headers/math/index.md:255
+#: ../../../headers/math/index.md:257 ../../../headers/math/index.md:259
+#: ../../../headers/math/index.md:261 ../../../headers/math/index.md:265
+#: ../../../headers/math/index.md:267 ../../../headers/math/index.md:269
+#: ../../../headers/math/index.md:271 ../../../headers/math/index.md:273
+#: ../../../headers/math/index.md:275 ../../../headers/math/index.md:279
+#: ../../../headers/math/index.md:281 ../../../headers/math/index.md:283
+#: ../../../headers/math/index.md:285 ../../../headers/math/index.md:287
+#: ../../../headers/math/index.md:289 ../../../headers/math/index.md:291
+#: ../../../headers/math/index.md:293 ../../../headers/math/index.md:297
+#: ../../../headers/math/index.md:299 ../../../headers/math/index.md:303
+#: ../../../headers/math/index.md:305 ../../../headers/math/index.md:309
+#: ../../../headers/math/index.md:311 ../../../headers/math/index.md:315
+#: ../../../headers/math/index.md:317 ../../../headers/math/index.md:319
+#: ../../../headers/math/index.md:323 ../../../headers/math/index.md:325
+#: ../../../headers/math/index.md:327 ../../../headers/math/index.md:329
+#: ../../../headers/math/index.md:333 ../../../headers/math/index.md:335
+#: ../../../headers/math/index.md:339 ../../../headers/math/index.md:341
+#: ../../../headers/math/index.md:343 ../../../headers/math/index.md:345
+#: ../../../headers/math/index.md:351 ../../../headers/math/index.md:353
+#: ../../../headers/math/index.md:355 ../../../headers/math/index.md:359
+#: ../../../headers/math/index.md:361 ../../../headers/math/index.md:363
+#: ../../../headers/math/index.md:367 ../../../headers/math/index.md:369
+#: ../../../headers/math/index.md:373 ../../../headers/math/index.md:377
+#: ../../../headers/math/index.md:379 ../../../headers/math/index.md:381
+#: ../../../headers/math/index.md:383 ../../../headers/math/index.md:385
+#: ../../../headers/math/index.md:387 ../../../headers/math/index.md:391
 msgid "2"
 msgstr ""
 
-#: ../../../headers/math/index.md:254 ../../../headers/math/index.md:419
+#: ../../../headers/math/index.md:255 ../../../headers/math/index.md:420
 msgid "acoshf"
 msgstr ""
 
-#: ../../../headers/math/index.md:256
+#: ../../../headers/math/index.md:257
 msgid "acoshf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:256 ../../../headers/math/index.md:258
-#: ../../../headers/math/index.md:264 ../../../headers/math/index.md:270
-#: ../../../headers/math/index.md:276 ../../../headers/math/index.md:278
-#: ../../../headers/math/index.md:282 ../../../headers/math/index.md:290
-#: ../../../headers/math/index.md:292 ../../../headers/math/index.md:294
-#: ../../../headers/math/index.md:296 ../../../headers/math/index.md:298
-#: ../../../headers/math/index.md:302 ../../../headers/math/index.md:308
-#: ../../../headers/math/index.md:316 ../../../headers/math/index.md:318
-#: ../../../headers/math/index.md:324 ../../../headers/math/index.md:326
-#: ../../../headers/math/index.md:328 ../../../headers/math/index.md:348
-#: ../../../headers/math/index.md:350 ../../../headers/math/index.md:352
-#: ../../../headers/math/index.md:354 ../../../headers/math/index.md:374
-#: ../../../headers/math/index.md:376 ../../../headers/math/index.md:380
-#: ../../../headers/math/index.md:384 ../../../headers/math/index.md:386
-#: ../../../headers/math/index.md:388
+#: ../../../headers/math/index.md:257 ../../../headers/math/index.md:259
+#: ../../../headers/math/index.md:265 ../../../headers/math/index.md:271
+#: ../../../headers/math/index.md:277 ../../../headers/math/index.md:279
+#: ../../../headers/math/index.md:283 ../../../headers/math/index.md:291
+#: ../../../headers/math/index.md:293 ../../../headers/math/index.md:295
+#: ../../../headers/math/index.md:297 ../../../headers/math/index.md:299
+#: ../../../headers/math/index.md:303 ../../../headers/math/index.md:309
+#: ../../../headers/math/index.md:317 ../../../headers/math/index.md:319
+#: ../../../headers/math/index.md:325 ../../../headers/math/index.md:327
+#: ../../../headers/math/index.md:329 ../../../headers/math/index.md:349
+#: ../../../headers/math/index.md:351 ../../../headers/math/index.md:353
+#: ../../../headers/math/index.md:355 ../../../headers/math/index.md:375
+#: ../../../headers/math/index.md:377 ../../../headers/math/index.md:381
+#: ../../../headers/math/index.md:385 ../../../headers/math/index.md:387
+#: ../../../headers/math/index.md:389
 msgid "0"
 msgstr ""
 
-#: ../../../headers/math/index.md:258
+#: ../../../headers/math/index.md:259
 msgid "acospif16"
 msgstr ""
 
-#: ../../../headers/math/index.md:262 ../../../headers/math/index.md:421
+#: ../../../headers/math/index.md:263 ../../../headers/math/index.md:422
 msgid "asinf"
 msgstr ""
 
-#: ../../../headers/math/index.md:262 ../../../headers/math/index.md:274
-#: ../../../headers/math/index.md:276 ../../../headers/math/index.md:300
-#: ../../../headers/math/index.md:302 ../../../headers/math/index.md:306
-#: ../../../headers/math/index.md:308 ../../../headers/math/index.md:312
-#: ../../../headers/math/index.md:314 ../../../headers/math/index.md:318
-#: ../../../headers/math/index.md:320 ../../../headers/math/index.md:330
-#: ../../../headers/math/index.md:332 ../../../headers/math/index.md:336
-#: ../../../headers/math/index.md:338 ../../../headers/math/index.md:346
-#: ../../../headers/math/index.md:348 ../../../headers/math/index.md:370
-#: ../../../headers/math/index.md:380
+#: ../../../headers/math/index.md:263 ../../../headers/math/index.md:275
+#: ../../../headers/math/index.md:277 ../../../headers/math/index.md:301
+#: ../../../headers/math/index.md:303 ../../../headers/math/index.md:307
+#: ../../../headers/math/index.md:309 ../../../headers/math/index.md:313
+#: ../../../headers/math/index.md:315 ../../../headers/math/index.md:319
+#: ../../../headers/math/index.md:321 ../../../headers/math/index.md:331
+#: ../../../headers/math/index.md:333 ../../../headers/math/index.md:337
+#: ../../../headers/math/index.md:339 ../../../headers/math/index.md:347
+#: ../../../headers/math/index.md:349 ../../../headers/math/index.md:371
+#: ../../../headers/math/index.md:381
 msgid "3"
 msgstr ""
 
-#: ../../../headers/math/index.md:264
+#: ../../../headers/math/index.md:265
 msgid "asinf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:266 ../../../headers/math/index.md:423
+#: ../../../headers/math/index.md:267 ../../../headers/math/index.md:424
 msgid "asinhf"
 msgstr ""
 
-#: ../../../headers/math/index.md:268
+#: ../../../headers/math/index.md:269
 msgid "asinhf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:270 ../../../headers/math/index.md:425
+#: ../../../headers/math/index.md:271 ../../../headers/math/index.md:426
 msgid "atanf"
 msgstr ""
 
-#: ../../../headers/math/index.md:270 ../../../headers/math/index.md:276
-#: ../../../headers/math/index.md:378 ../../../headers/math/index.md:380
-#: ../../../headers/math/index.md:384
+#: ../../../headers/math/index.md:271 ../../../headers/math/index.md:277
+#: ../../../headers/math/index.md:379 ../../../headers/math/index.md:381
+#: ../../../headers/math/index.md:385
 msgid "5"
 msgstr ""
 
-#: ../../../headers/math/index.md:272
+#: ../../../headers/math/index.md:273
 msgid "atanf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:274
+#: ../../../headers/math/index.md:275
 msgid "atan2f"
 msgstr ""
 
-#: ../../../headers/math/index.md:274 ../../../headers/math/index.md:388
-#: ../../../headers/math/index.md:437
+#: ../../../headers/math/index.md:275 ../../../headers/math/index.md:389
+#: ../../../headers/math/index.md:438
 msgid "6"
 msgstr ""
 
-#: ../../../headers/math/index.md:276 ../../../headers/math/index.md:427
+#: ../../../headers/math/index.md:277 ../../../headers/math/index.md:428
 msgid "atanhf"
 msgstr ""
 
-#: ../../../headers/math/index.md:278
+#: ../../../headers/math/index.md:279
 msgid "atanhf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:282
+#: ../../../headers/math/index.md:283
 msgid "cbrtf"
 msgstr ""
 
-#: ../../../headers/math/index.md:286 ../../../headers/math/index.md:429
+#: ../../../headers/math/index.md:287 ../../../headers/math/index.md:430
 msgid "cosf"
 msgstr ""
 
-#: ../../../headers/math/index.md:288
+#: ../../../headers/math/index.md:289
 msgid "cosf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:290 ../../../headers/math/index.md:431
+#: ../../../headers/math/index.md:291 ../../../headers/math/index.md:432
 msgid "coshf"
 msgstr ""
 
-#: ../../../headers/math/index.md:292
+#: ../../../headers/math/index.md:293
 msgid "coshf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:294
+#: ../../../headers/math/index.md:295
 msgid "cospif"
 msgstr ""
 
-#: ../../../headers/math/index.md:296
+#: ../../../headers/math/index.md:297
 msgid "cospif16"
 msgstr ""
 
-#: ../../../headers/math/index.md:298
+#: ../../../headers/math/index.md:299
 msgid "erff"
 msgstr ""
 
-#: ../../../headers/math/index.md:298 ../../../headers/math/index.md:352
-#: ../../../headers/math/index.md:354 ../../../headers/math/index.md:455
-#: ../../../headers/math/index.md:465
+#: ../../../headers/math/index.md:299 ../../../headers/math/index.md:353
+#: ../../../headers/math/index.md:355 ../../../headers/math/index.md:456
+#: ../../../headers/math/index.md:466
 msgid "16"
 msgstr ""
 
-#: ../../../headers/math/index.md:302 ../../../headers/math/index.md:433
+#: ../../../headers/math/index.md:303 ../../../headers/math/index.md:434
 msgid "expf"
 msgstr ""
 
-#: ../../../headers/math/index.md:304
+#: ../../../headers/math/index.md:305
 msgid "expf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:308 ../../../headers/math/index.md:435
+#: ../../../headers/math/index.md:309 ../../../headers/math/index.md:436
 msgid "exp10f"
 msgstr ""
 
-#: ../../../headers/math/index.md:310
+#: ../../../headers/math/index.md:311
 msgid "exp10f16"
 msgstr ""
 
-#: ../../../headers/math/index.md:314 ../../../headers/math/index.md:437
+#: ../../../headers/math/index.md:315 ../../../headers/math/index.md:438
 msgid "exp2f"
 msgstr ""
 
-#: ../../../headers/math/index.md:316
+#: ../../../headers/math/index.md:317
 msgid "exp2f16"
 msgstr ""
 
-#: ../../../headers/math/index.md:320 ../../../headers/math/index.md:439
+#: ../../../headers/math/index.md:321 ../../../headers/math/index.md:440
 msgid "expm1f"
 msgstr ""
 
-#: ../../../headers/math/index.md:322
+#: ../../../headers/math/index.md:323
 msgid "expm1f16"
 msgstr ""
 
-#: ../../../headers/math/index.md:326 ../../../headers/math/index.md:449
+#: ../../../headers/math/index.md:327 ../../../headers/math/index.md:450
 msgid "hypotf"
 msgstr ""
 
-#: ../../../headers/math/index.md:328
+#: ../../../headers/math/index.md:329
 msgid "hypotf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:332 ../../../headers/math/index.md:451
+#: ../../../headers/math/index.md:333 ../../../headers/math/index.md:452
 msgid "logf"
 msgstr ""
 
-#: ../../../headers/math/index.md:334
+#: ../../../headers/math/index.md:335
 msgid "logf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:338 ../../../headers/math/index.md:453
+#: ../../../headers/math/index.md:339 ../../../headers/math/index.md:454
 msgid "log10f"
 msgstr ""
 
-#: ../../../headers/math/index.md:340
+#: ../../../headers/math/index.md:341
 msgid "log10f16"
 msgstr ""
 
-#: ../../../headers/math/index.md:344 ../../../headers/math/index.md:455
+#: ../../../headers/math/index.md:345 ../../../headers/math/index.md:456
 msgid "log1pf"
 msgstr ""
 
-#: ../../../headers/math/index.md:348 ../../../headers/math/index.md:457
+#: ../../../headers/math/index.md:349 ../../../headers/math/index.md:458
 msgid "log2f"
 msgstr ""
 
-#: ../../../headers/math/index.md:350
+#: ../../../headers/math/index.md:351
 msgid "log2f16"
 msgstr ""
 
-#: ../../../headers/math/index.md:352
+#: ../../../headers/math/index.md:353
 msgid "powf (integer exp.)"
 msgstr ""
 
-#: ../../../headers/math/index.md:354
+#: ../../../headers/math/index.md:355
 msgid "powf (real exp.)"
 msgstr ""
 
-#: ../../../headers/math/index.md:358 ../../../headers/math/index.md:459
+#: ../../../headers/math/index.md:359 ../../../headers/math/index.md:460
 msgid "sinf"
 msgstr ""
 
-#: ../../../headers/math/index.md:360
+#: ../../../headers/math/index.md:361
 msgid "sinf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:362
+#: ../../../headers/math/index.md:363
 msgid "sincos (cos part)"
 msgstr ""
 
-#: ../../../headers/math/index.md:364
+#: ../../../headers/math/index.md:365
 msgid "sincos (sin part)"
 msgstr ""
 
-#: ../../../headers/math/index.md:366
+#: ../../../headers/math/index.md:367
 msgid "sincosf (cos part)"
 msgstr ""
 
-#: ../../../headers/math/index.md:368
+#: ../../../headers/math/index.md:369
 msgid "sincosf (sin part)"
 msgstr ""
 
-#: ../../../headers/math/index.md:370 ../../../headers/math/index.md:463
+#: ../../../headers/math/index.md:371 ../../../headers/math/index.md:464
 msgid "sinhf"
 msgstr ""
 
-#: ../../../headers/math/index.md:372
+#: ../../../headers/math/index.md:373
 msgid "sinhf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:374
+#: ../../../headers/math/index.md:375
 msgid "sinpif"
 msgstr ""
 
-#: ../../../headers/math/index.md:376
+#: ../../../headers/math/index.md:377
 msgid "sinpif16"
 msgstr ""
 
-#: ../../../headers/math/index.md:380 ../../../headers/math/index.md:465
+#: ../../../headers/math/index.md:381 ../../../headers/math/index.md:466
 msgid "tanf"
 msgstr ""
 
-#: ../../../headers/math/index.md:382
+#: ../../../headers/math/index.md:383
 msgid "tanf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:384 ../../../headers/math/index.md:467
+#: ../../../headers/math/index.md:385 ../../../headers/math/index.md:468
 msgid "tanhf"
 msgstr ""
 
-#: ../../../headers/math/index.md:386
+#: ../../../headers/math/index.md:387
 msgid "tanhf16"
 msgstr ""
 
-#: ../../../headers/math/index.md:388
+#: ../../../headers/math/index.md:389
 msgid "tanpif"
 msgstr ""
 
-#: ../../../headers/math/index.md:390
+#: ../../../headers/math/index.md:391
 msgid "tanpif16"
 msgstr ""
 
-#: ../../../headers/math/index.md:394
+#: ../../../headers/math/index.md:395
 msgid "Notes:"
 msgstr ""
 
-#: ../../../headers/math/index.md:396
+#: ../../../headers/math/index.md:397
 msgid ""
 "Exhaustive tests check every representable point in the input space. This "
 "method is used for half-precision functions and single-precision univariate "
 "functions."
 msgstr ""
 
-#: ../../../headers/math/index.md:397
+#: ../../../headers/math/index.md:398
 msgid ""
 "Randomized tests check a large, deterministic subset of the input space, "
 "typically using 2{sup}`32` samples. This method is used for functions with "
@@ -2007,33 +2017,33 @@ msgid ""
 "functions."
 msgstr ""
 
-#: ../../../headers/math/index.md:398
+#: ../../../headers/math/index.md:399
 msgid ""
 "ULP tolerances are based on The Khronos Group, [The OpenCL C Specification "
 "v3.0.19](https://registry.khronos.org/OpenCL/specs/3.0-unified/html/"
 "OpenCL_C.html), Sec. 7.4, Khronos Registry [July 10, 2025]."
 msgstr ""
 
-#: ../../../headers/math/index.md:399
+#: ../../../headers/math/index.md:400
 msgid "The AMD GPU used for testing is AMD Radeon RX 6950 XT."
 msgstr ""
 
-#: ../../../headers/math/index.md:400
+#: ../../../headers/math/index.md:401
 msgid "The NVIDIA GPU used for testing is NVIDIA RTX 4000 SFF Ada Generation."
 msgstr ""
 
-#: ../../../headers/math/index.md:402
+#: ../../../headers/math/index.md:403
 msgid "Performance"
 msgstr ""
 
-#: ../../../headers/math/index.md:404
+#: ../../../headers/math/index.md:405
 msgid ""
 "Simple performance testings are located at: [libc/test/src/math/"
 "performance_testing](https://github.com/llvm/llvm-project/tree/main/libc/"
 "test/src/math/performance_testing)."
 msgstr ""
 
-#: ../../../headers/math/index.md:405
+#: ../../../headers/math/index.md:406
 msgid ""
 "We also use the *perf* tool from the [CORE-MATH](https://core-"
 "math.gitlabpages.inria.fr/) project: [link](https://gitlab.inria.fr/core-"
@@ -2043,490 +2053,490 @@ msgid ""
 "on Linux). Fmod performance results obtained with \"performance_testing\"."
 msgstr ""
 
-#: ../../../headers/math/index.md:413
+#: ../../../headers/math/index.md:414
 msgid "<Func>"
 msgstr ""
 
-#: ../../../headers/math/index.md:413
+#: ../../../headers/math/index.md:414
 msgid "Reciprocal throughput (clk)"
 msgstr ""
 
-#: ../../../headers/math/index.md:413
+#: ../../../headers/math/index.md:414
 msgid "Latency (clk)"
 msgstr ""
 
-#: ../../../headers/math/index.md:413
+#: ../../../headers/math/index.md:414
 msgid "Testing ranges"
 msgstr ""
 
-#: ../../../headers/math/index.md:413
+#: ../../../headers/math/index.md:414
 msgid "Testing configuration"
 msgstr ""
 
-#: ../../../headers/math/index.md:415
+#: ../../../headers/math/index.md:416
 msgid "LLVM libc"
 msgstr ""
 
-#: ../../../headers/math/index.md:415
+#: ../../../headers/math/index.md:416
 msgid "Reference (glibc)"
 msgstr ""
 
-#: ../../../headers/math/index.md:415
+#: ../../../headers/math/index.md:416
 msgid "CPU"
 msgstr ""
 
-#: ../../../headers/math/index.md:415
+#: ../../../headers/math/index.md:416
 msgid "OS"
 msgstr ""
 
-#: ../../../headers/math/index.md:415
+#: ../../../headers/math/index.md:416
 msgid "Compiler"
 msgstr ""
 
-#: ../../../headers/math/index.md:415
+#: ../../../headers/math/index.md:416
 msgid "Special flags"
 msgstr ""
 
-#: ../../../headers/math/index.md:417
+#: ../../../headers/math/index.md:418
 msgid "24"
 msgstr ""
 
-#: ../../../headers/math/index.md:417 ../../../headers/math/index.md:425
+#: ../../../headers/math/index.md:418 ../../../headers/math/index.md:426
 msgid "29"
 msgstr ""
 
-#: ../../../headers/math/index.md:417 ../../../headers/math/index.md:421
+#: ../../../headers/math/index.md:418 ../../../headers/math/index.md:422
 msgid "62"
 msgstr ""
 
-#: ../../../headers/math/index.md:417 ../../../headers/math/index.md:423
+#: ../../../headers/math/index.md:418 ../../../headers/math/index.md:424
 msgid "77"
 msgstr ""
 
-#: ../../../headers/math/index.md:417 ../../../headers/math/index.md:421
-#: ../../../headers/math/index.md:427
+#: ../../../headers/math/index.md:418 ../../../headers/math/index.md:422
+#: ../../../headers/math/index.md:428
 msgid ":math:`[-1, 1]`"
 msgstr ""
 
-#: ../../../headers/math/index.md:417 ../../../headers/math/index.md:419
-#: ../../../headers/math/index.md:421 ../../../headers/math/index.md:423
-#: ../../../headers/math/index.md:425 ../../../headers/math/index.md:427
-#: ../../../headers/math/index.md:429 ../../../headers/math/index.md:431
-#: ../../../headers/math/index.md:433 ../../../headers/math/index.md:435
-#: ../../../headers/math/index.md:437 ../../../headers/math/index.md:439
-#: ../../../headers/math/index.md:449 ../../../headers/math/index.md:451
-#: ../../../headers/math/index.md:455 ../../../headers/math/index.md:457
-#: ../../../headers/math/index.md:459 ../../../headers/math/index.md:461
-#: ../../../headers/math/index.md:463 ../../../headers/math/index.md:465
-#: ../../../headers/math/index.md:467
+#: ../../../headers/math/index.md:418 ../../../headers/math/index.md:420
+#: ../../../headers/math/index.md:422 ../../../headers/math/index.md:424
+#: ../../../headers/math/index.md:426 ../../../headers/math/index.md:428
+#: ../../../headers/math/index.md:430 ../../../headers/math/index.md:432
+#: ../../../headers/math/index.md:434 ../../../headers/math/index.md:436
+#: ../../../headers/math/index.md:438 ../../../headers/math/index.md:440
+#: ../../../headers/math/index.md:450 ../../../headers/math/index.md:452
+#: ../../../headers/math/index.md:456 ../../../headers/math/index.md:458
+#: ../../../headers/math/index.md:460 ../../../headers/math/index.md:462
+#: ../../../headers/math/index.md:464 ../../../headers/math/index.md:466
+#: ../../../headers/math/index.md:468
 msgid "Ryzen 1700"
 msgstr ""
 
-#: ../../../headers/math/index.md:417 ../../../headers/math/index.md:419
-#: ../../../headers/math/index.md:421 ../../../headers/math/index.md:423
-#: ../../../headers/math/index.md:425 ../../../headers/math/index.md:427
-#: ../../../headers/math/index.md:431 ../../../headers/math/index.md:435
-#: ../../../headers/math/index.md:437 ../../../headers/math/index.md:453
-#: ../../../headers/math/index.md:463 ../../../headers/math/index.md:465
-#: ../../../headers/math/index.md:467
+#: ../../../headers/math/index.md:418 ../../../headers/math/index.md:420
+#: ../../../headers/math/index.md:422 ../../../headers/math/index.md:424
+#: ../../../headers/math/index.md:426 ../../../headers/math/index.md:428
+#: ../../../headers/math/index.md:432 ../../../headers/math/index.md:436
+#: ../../../headers/math/index.md:438 ../../../headers/math/index.md:454
+#: ../../../headers/math/index.md:464 ../../../headers/math/index.md:466
+#: ../../../headers/math/index.md:468
 msgid "Ubuntu 22.04 LTS x86_64"
 msgstr ""
 
-#: ../../../headers/math/index.md:417 ../../../headers/math/index.md:419
-#: ../../../headers/math/index.md:421 ../../../headers/math/index.md:423
-#: ../../../headers/math/index.md:425 ../../../headers/math/index.md:427
-#: ../../../headers/math/index.md:431 ../../../headers/math/index.md:435
-#: ../../../headers/math/index.md:437 ../../../headers/math/index.md:463
-#: ../../../headers/math/index.md:465 ../../../headers/math/index.md:467
+#: ../../../headers/math/index.md:418 ../../../headers/math/index.md:420
+#: ../../../headers/math/index.md:422 ../../../headers/math/index.md:424
+#: ../../../headers/math/index.md:426 ../../../headers/math/index.md:428
+#: ../../../headers/math/index.md:432 ../../../headers/math/index.md:436
+#: ../../../headers/math/index.md:438 ../../../headers/math/index.md:464
+#: ../../../headers/math/index.md:466 ../../../headers/math/index.md:468
 msgid "Clang 14.0.0"
 msgstr ""
 
-#: ../../../headers/math/index.md:417 ../../../headers/math/index.md:419
-#: ../../../headers/math/index.md:421 ../../../headers/math/index.md:423
-#: ../../../headers/math/index.md:425 ../../../headers/math/index.md:427
-#: ../../../headers/math/index.md:429 ../../../headers/math/index.md:431
-#: ../../../headers/math/index.md:433 ../../../headers/math/index.md:435
-#: ../../../headers/math/index.md:437 ../../../headers/math/index.md:439
-#: ../../../headers/math/index.md:451 ../../../headers/math/index.md:453
-#: ../../../headers/math/index.md:455 ../../../headers/math/index.md:457
-#: ../../../headers/math/index.md:459 ../../../headers/math/index.md:461
-#: ../../../headers/math/index.md:463 ../../../headers/math/index.md:465
-#: ../../../headers/math/index.md:467
+#: ../../../headers/math/index.md:418 ../../../headers/math/index.md:420
+#: ../../../headers/math/index.md:422 ../../../headers/math/index.md:424
+#: ../../../headers/math/index.md:426 ../../../headers/math/index.md:428
+#: ../../../headers/math/index.md:430 ../../../headers/math/index.md:432
+#: ../../../headers/math/index.md:434 ../../../headers/math/index.md:436
+#: ../../../headers/math/index.md:438 ../../../headers/math/index.md:440
+#: ../../../headers/math/index.md:452 ../../../headers/math/index.md:454
+#: ../../../headers/math/index.md:456 ../../../headers/math/index.md:458
+#: ../../../headers/math/index.md:460 ../../../headers/math/index.md:462
+#: ../../../headers/math/index.md:464 ../../../headers/math/index.md:466
+#: ../../../headers/math/index.md:468
 msgid "FMA"
 msgstr ""
 
-#: ../../../headers/math/index.md:419 ../../../headers/math/index.md:427
+#: ../../../headers/math/index.md:420 ../../../headers/math/index.md:428
 msgid "18"
 msgstr ""
 
-#: ../../../headers/math/index.md:419
+#: ../../../headers/math/index.md:420
 msgid "26"
 msgstr ""
 
-#: ../../../headers/math/index.md:419 ../../../headers/math/index.md:441
+#: ../../../headers/math/index.md:420 ../../../headers/math/index.md:442
 msgid "73"
 msgstr ""
 
-#: ../../../headers/math/index.md:419
+#: ../../../headers/math/index.md:420
 msgid "74"
 msgstr ""
 
-#: ../../../headers/math/index.md:419
+#: ../../../headers/math/index.md:420
 msgid ":math:`[1, 21]`"
 msgstr ""
 
-#: ../../../headers/math/index.md:421
+#: ../../../headers/math/index.md:422
 msgid "23"
 msgstr ""
 
-#: ../../../headers/math/index.md:421 ../../../headers/math/index.md:425
+#: ../../../headers/math/index.md:422 ../../../headers/math/index.md:426
 msgid "27"
 msgstr ""
 
-#: ../../../headers/math/index.md:423
+#: ../../../headers/math/index.md:424
 msgid "21"
 msgstr ""
 
-#: ../../../headers/math/index.md:423
+#: ../../../headers/math/index.md:424
 msgid "39"
 msgstr ""
 
-#: ../../../headers/math/index.md:423
+#: ../../../headers/math/index.md:424
 msgid "91"
 msgstr ""
 
-#: ../../../headers/math/index.md:423 ../../../headers/math/index.md:425
-#: ../../../headers/math/index.md:431 ../../../headers/math/index.md:433
-#: ../../../headers/math/index.md:435 ../../../headers/math/index.md:437
-#: ../../../headers/math/index.md:439 ../../../headers/math/index.md:463
-#: ../../../headers/math/index.md:467
+#: ../../../headers/math/index.md:424 ../../../headers/math/index.md:426
+#: ../../../headers/math/index.md:432 ../../../headers/math/index.md:434
+#: ../../../headers/math/index.md:436 ../../../headers/math/index.md:438
+#: ../../../headers/math/index.md:440 ../../../headers/math/index.md:464
+#: ../../../headers/math/index.md:468
 msgid ":math:`[-10, 10]`"
 msgstr ""
 
-#: ../../../headers/math/index.md:425
+#: ../../../headers/math/index.md:426
 msgid "79"
 msgstr ""
 
-#: ../../../headers/math/index.md:425 ../../../headers/math/index.md:427
-#: ../../../headers/math/index.md:461
+#: ../../../headers/math/index.md:426 ../../../headers/math/index.md:428
+#: ../../../headers/math/index.md:462
 msgid "68"
 msgstr ""
 
-#: ../../../headers/math/index.md:427
+#: ../../../headers/math/index.md:428
 msgid "66"
 msgstr ""
 
-#: ../../../headers/math/index.md:427
+#: ../../../headers/math/index.md:428
 msgid "133"
 msgstr ""
 
-#: ../../../headers/math/index.md:429 ../../../headers/math/index.md:447
-#: ../../../headers/math/index.md:457 ../../../headers/math/index.md:463
-#: ../../../headers/math/index.md:467
+#: ../../../headers/math/index.md:430 ../../../headers/math/index.md:448
+#: ../../../headers/math/index.md:458 ../../../headers/math/index.md:464
+#: ../../../headers/math/index.md:468
 msgid "13"
 msgstr ""
 
-#: ../../../headers/math/index.md:429
+#: ../../../headers/math/index.md:430
 msgid "32"
 msgstr ""
 
-#: ../../../headers/math/index.md:429
+#: ../../../headers/math/index.md:430
 msgid "53"
 msgstr ""
 
-#: ../../../headers/math/index.md:429
+#: ../../../headers/math/index.md:430
 msgid "59"
 msgstr ""
 
-#: ../../../headers/math/index.md:429
+#: ../../../headers/math/index.md:430
 msgid ":math:`[0, 2\\pi]`"
 msgstr ""
 
-#: ../../../headers/math/index.md:429 ../../../headers/math/index.md:433
-#: ../../../headers/math/index.md:439 ../../../headers/math/index.md:441
-#: ../../../headers/math/index.md:443 ../../../headers/math/index.md:445
-#: ../../../headers/math/index.md:447 ../../../headers/math/index.md:449
-#: ../../../headers/math/index.md:451 ../../../headers/math/index.md:455
-#: ../../../headers/math/index.md:457 ../../../headers/math/index.md:459
-#: ../../../headers/math/index.md:461
+#: ../../../headers/math/index.md:430 ../../../headers/math/index.md:434
+#: ../../../headers/math/index.md:440 ../../../headers/math/index.md:442
+#: ../../../headers/math/index.md:444 ../../../headers/math/index.md:446
+#: ../../../headers/math/index.md:448 ../../../headers/math/index.md:450
+#: ../../../headers/math/index.md:452 ../../../headers/math/index.md:456
+#: ../../../headers/math/index.md:458 ../../../headers/math/index.md:460
+#: ../../../headers/math/index.md:462
 msgid "Ubuntu 20.04 LTS x86_64"
 msgstr ""
 
-#: ../../../headers/math/index.md:429 ../../../headers/math/index.md:433
-#: ../../../headers/math/index.md:439 ../../../headers/math/index.md:441
-#: ../../../headers/math/index.md:443 ../../../headers/math/index.md:445
-#: ../../../headers/math/index.md:447 ../../../headers/math/index.md:449
-#: ../../../headers/math/index.md:451 ../../../headers/math/index.md:455
-#: ../../../headers/math/index.md:457 ../../../headers/math/index.md:459
-#: ../../../headers/math/index.md:461
+#: ../../../headers/math/index.md:430 ../../../headers/math/index.md:434
+#: ../../../headers/math/index.md:440 ../../../headers/math/index.md:442
+#: ../../../headers/math/index.md:444 ../../../headers/math/index.md:446
+#: ../../../headers/math/index.md:448 ../../../headers/math/index.md:450
+#: ../../../headers/math/index.md:452 ../../../headers/math/index.md:456
+#: ../../../headers/math/index.md:458 ../../../headers/math/index.md:460
+#: ../../../headers/math/index.md:462
 msgid "Clang 12.0.0"
 msgstr ""
 
-#: ../../../headers/math/index.md:431 ../../../headers/math/index.md:447
+#: ../../../headers/math/index.md:432 ../../../headers/math/index.md:448
 msgid "14"
 msgstr ""
 
-#: ../../../headers/math/index.md:431
+#: ../../../headers/math/index.md:432
 msgid "20"
 msgstr ""
 
-#: ../../../headers/math/index.md:431 ../../../headers/math/index.md:465
+#: ../../../headers/math/index.md:432 ../../../headers/math/index.md:466
 msgid "50"
 msgstr ""
 
-#: ../../../headers/math/index.md:431 ../../../headers/math/index.md:453
-#: ../../../headers/math/index.md:463
+#: ../../../headers/math/index.md:432 ../../../headers/math/index.md:454
+#: ../../../headers/math/index.md:464
 msgid "48"
 msgstr ""
 
-#: ../../../headers/math/index.md:433 ../../../headers/math/index.md:437
-#: ../../../headers/math/index.md:439 ../../../headers/math/index.md:443
-#: ../../../headers/math/index.md:453
+#: ../../../headers/math/index.md:434 ../../../headers/math/index.md:438
+#: ../../../headers/math/index.md:440 ../../../headers/math/index.md:444
+#: ../../../headers/math/index.md:454
 msgid "9"
 msgstr ""
 
-#: ../../../headers/math/index.md:433
+#: ../../../headers/math/index.md:434
 msgid "7"
 msgstr ""
 
-#: ../../../headers/math/index.md:433 ../../../headers/math/index.md:439
+#: ../../../headers/math/index.md:434 ../../../headers/math/index.md:440
 msgid "44"
 msgstr ""
 
-#: ../../../headers/math/index.md:433 ../../../headers/math/index.md:435
+#: ../../../headers/math/index.md:434 ../../../headers/math/index.md:436
 msgid "38"
 msgstr ""
 
-#: ../../../headers/math/index.md:435 ../../../headers/math/index.md:451
-#: ../../../headers/math/index.md:457
+#: ../../../headers/math/index.md:436 ../../../headers/math/index.md:452
+#: ../../../headers/math/index.md:458
 msgid "10"
 msgstr ""
 
-#: ../../../headers/math/index.md:435
+#: ../../../headers/math/index.md:436
 msgid "8"
 msgstr ""
 
-#: ../../../headers/math/index.md:435
+#: ../../../headers/math/index.md:436
 msgid "40"
 msgstr ""
 
-#: ../../../headers/math/index.md:437 ../../../headers/math/index.md:453
+#: ../../../headers/math/index.md:438 ../../../headers/math/index.md:454
 msgid "35"
 msgstr ""
 
-#: ../../../headers/math/index.md:437
+#: ../../../headers/math/index.md:438
 msgid "31"
 msgstr ""
 
-#: ../../../headers/math/index.md:439
+#: ../../../headers/math/index.md:440
 msgid "42"
 msgstr ""
 
-#: ../../../headers/math/index.md:439
+#: ../../../headers/math/index.md:440
 msgid "121"
 msgstr ""
 
-#: ../../../headers/math/index.md:441
+#: ../../../headers/math/index.md:442
 msgid "fmodf"
 msgstr ""
 
-#: ../../../headers/math/index.md:441
+#: ../../../headers/math/index.md:442
 msgid "263"
 msgstr ""
 
-#: ../../../headers/math/index.md:441 ../../../headers/math/index.md:445
+#: ../../../headers/math/index.md:442 ../../../headers/math/index.md:446
 msgid "[MIN_NORMAL, MAX_NORMAL]"
 msgstr ""
 
-#: ../../../headers/math/index.md:441 ../../../headers/math/index.md:443
-#: ../../../headers/math/index.md:445 ../../../headers/math/index.md:447
+#: ../../../headers/math/index.md:442 ../../../headers/math/index.md:444
+#: ../../../headers/math/index.md:446 ../../../headers/math/index.md:448
 msgid "i5 mobile"
 msgstr ""
 
-#: ../../../headers/math/index.md:443
+#: ../../../headers/math/index.md:444
 msgid "11"
 msgstr ""
 
-#: ../../../headers/math/index.md:443 ../../../headers/math/index.md:447
+#: ../../../headers/math/index.md:444 ../../../headers/math/index.md:448
 msgid "[0, MAX_SUBNORMAL]"
 msgstr ""
 
-#: ../../../headers/math/index.md:445
+#: ../../../headers/math/index.md:446
 msgid "595"
 msgstr ""
 
-#: ../../../headers/math/index.md:445
+#: ../../../headers/math/index.md:446
 msgid "3297"
 msgstr ""
 
-#: ../../../headers/math/index.md:449 ../../../headers/math/index.md:459
+#: ../../../headers/math/index.md:450 ../../../headers/math/index.md:460
 msgid "25"
 msgstr ""
 
-#: ../../../headers/math/index.md:449
+#: ../../../headers/math/index.md:450
 msgid "15"
 msgstr ""
 
-#: ../../../headers/math/index.md:449
+#: ../../../headers/math/index.md:450
 msgid "64"
 msgstr ""
 
-#: ../../../headers/math/index.md:449
+#: ../../../headers/math/index.md:450
 msgid "49"
 msgstr ""
 
-#: ../../../headers/math/index.md:449
+#: ../../../headers/math/index.md:450
 msgid ":math:`[-10, 10] \\times [-10, 10]`"
 msgstr ""
 
-#: ../../../headers/math/index.md:451 ../../../headers/math/index.md:459
+#: ../../../headers/math/index.md:452 ../../../headers/math/index.md:460
 msgid "12"
 msgstr ""
 
-#: ../../../headers/math/index.md:451
+#: ../../../headers/math/index.md:452
 msgid "56"
 msgstr ""
 
-#: ../../../headers/math/index.md:451 ../../../headers/math/index.md:457
+#: ../../../headers/math/index.md:452 ../../../headers/math/index.md:458
 msgid "46"
 msgstr ""
 
-#: ../../../headers/math/index.md:451 ../../../headers/math/index.md:453
-#: ../../../headers/math/index.md:457
+#: ../../../headers/math/index.md:452 ../../../headers/math/index.md:454
+#: ../../../headers/math/index.md:458
 msgid ":math:`[e^{-1}, e]`"
 msgstr ""
 
-#: ../../../headers/math/index.md:453
+#: ../../../headers/math/index.md:454
 msgid "17"
 msgstr ""
 
-#: ../../../headers/math/index.md:453
+#: ../../../headers/math/index.md:454
 msgid "Ryzen 5900X"
 msgstr ""
 
-#: ../../../headers/math/index.md:453
+#: ../../../headers/math/index.md:454
 msgid "Clang 15.0.6"
 msgstr ""
 
-#: ../../../headers/math/index.md:455
+#: ../../../headers/math/index.md:456
 msgid "33"
 msgstr ""
 
-#: ../../../headers/math/index.md:455 ../../../headers/math/index.md:465
+#: ../../../headers/math/index.md:456 ../../../headers/math/index.md:466
 msgid "61"
 msgstr ""
 
-#: ../../../headers/math/index.md:455
+#: ../../../headers/math/index.md:456
 msgid "97"
 msgstr ""
 
-#: ../../../headers/math/index.md:455
+#: ../../../headers/math/index.md:456
 msgid ":math:`[e^{-0.5} - 1, e^{0.5} - 1]`"
 msgstr ""
 
-#: ../../../headers/math/index.md:457 ../../../headers/math/index.md:459
-#: ../../../headers/math/index.md:461 ../../../headers/math/index.md:467
+#: ../../../headers/math/index.md:458 ../../../headers/math/index.md:460
+#: ../../../headers/math/index.md:462 ../../../headers/math/index.md:468
 msgid "57"
 msgstr ""
 
-#: ../../../headers/math/index.md:459
+#: ../../../headers/math/index.md:460
 msgid "51"
 msgstr ""
 
-#: ../../../headers/math/index.md:459 ../../../headers/math/index.md:461
-#: ../../../headers/math/index.md:465
+#: ../../../headers/math/index.md:460 ../../../headers/math/index.md:462
+#: ../../../headers/math/index.md:466
 msgid ":math:`[-\\pi, \\pi]`"
 msgstr ""
 
-#: ../../../headers/math/index.md:461
+#: ../../../headers/math/index.md:462
 msgid "sincosf"
 msgstr ""
 
-#: ../../../headers/math/index.md:461
+#: ../../../headers/math/index.md:462
 msgid "19"
 msgstr ""
 
-#: ../../../headers/math/index.md:461
+#: ../../../headers/math/index.md:462
 msgid "30"
 msgstr ""
 
-#: ../../../headers/math/index.md:463
+#: ../../../headers/math/index.md:464
 msgid "63"
 msgstr ""
 
-#: ../../../headers/math/index.md:463
+#: ../../../headers/math/index.md:464
 msgid "137"
 msgstr ""
 
-#: ../../../headers/math/index.md:465
+#: ../../../headers/math/index.md:466
 msgid "107"
 msgstr ""
 
-#: ../../../headers/math/index.md:467
+#: ../../../headers/math/index.md:468
 msgid "55"
 msgstr ""
 
-#: ../../../headers/math/index.md:467
+#: ../../../headers/math/index.md:468
 msgid "123"
 msgstr ""
 
-#: ../../../headers/math/index.md:471
+#: ../../../headers/math/index.md:472
 msgid "Algorithms + Implementation Details"
 msgstr ""
 
-#: ../../../headers/math/index.md:473
+#: ../../../headers/math/index.md:474
 msgid "{doc}`log`"
 msgstr ""
 
-#: ../../../headers/math/index.md:474
+#: ../../../headers/math/index.md:475
 msgid "[Trigonometric range reduction](https://arxiv.org/pdf/2609.35015)"
 msgstr ""
 
-#: ../../../headers/math/index.md:476
+#: ../../../headers/math/index.md:477
 msgid "Fixed-point Arithmetics"
 msgstr ""
 
-#: ../../../headers/math/index.md:478
+#: ../../../headers/math/index.md:479
 msgid "{doc}`../stdfix`"
 msgstr ""
 
-#: ../../../headers/math/index.md:480
+#: ../../../headers/math/index.md:481
 msgid "References"
 msgstr ""
 
-#: ../../../headers/math/index.md:482
+#: ../../../headers/math/index.md:483
 msgid ""
 "[CRLIBM](https://hal-ens-lyon.archives-ouvertes.fr/ensl-01529804/file/"
 "crlibm.pdf)."
 msgstr ""
 
-#: ../../../headers/math/index.md:483
+#: ../../../headers/math/index.md:484
 msgid "[RLIBM](https://people.cs.rutgers.edu/~sn349/rlibm/)."
 msgstr ""
 
-#: ../../../headers/math/index.md:484
+#: ../../../headers/math/index.md:485
 msgid "[Sollya](https://www.sollya.org/)."
 msgstr ""
 
-#: ../../../headers/math/index.md:485
+#: ../../../headers/math/index.md:486
 msgid "[The CORE-MATH Project](https://core-math.gitlabpages.inria.fr/)."
 msgstr ""
 
-#: ../../../headers/math/index.md:486
+#: ../../../headers/math/index.md:487
 msgid "[The GNU C Library (glibc)](https://www.gnu.org/software/libc/)."
 msgstr ""
 
-#: ../../../headers/math/index.md:487
+#: ../../../headers/math/index.md:488
 msgid "[The GNU MPFR Library](https://www.mpfr.org/)."
 msgstr ""
 
-#: ../../../headers/math/index.md:488
+#: ../../../headers/math/index.md:489
 msgid ""
 "[C++23 Standard](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/"
 "n4950.pdf)."
 msgstr ""
 
-#: ../../../headers/math/index.md:489
+#: ../../../headers/math/index.md:490
 msgid ""
 "[BFloat16](https://en.wikipedia.org/wiki/Bfloat16_floating-point_format)."
 msgstr ""

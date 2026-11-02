@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-02 18:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,32 +96,32 @@ msgstr ""
 #: ../../../headers/unistd.rst:1131 ../../../headers/unistd.rst:1135
 #: ../../../headers/unistd.rst:1139 ../../../headers/unistd.rst:1143
 #: ../../../headers/unistd.rst:1147 ../../../headers/unistd.rst:1151
-#: ../../../headers/unistd.rst:1155 ../../../headers/unistd.rst:1167
-#: ../../../headers/unistd.rst:1179 ../../../headers/unistd.rst:1183
-#: ../../../headers/unistd.rst:1187 ../../../headers/unistd.rst:1191
-#: ../../../headers/unistd.rst:1195 ../../../headers/unistd.rst:1199
-#: ../../../headers/unistd.rst:1203 ../../../headers/unistd.rst:1207
-#: ../../../headers/unistd.rst:1211 ../../../headers/unistd.rst:1215
-#: ../../../headers/unistd.rst:1219 ../../../headers/unistd.rst:1223
-#: ../../../headers/unistd.rst:1227 ../../../headers/unistd.rst:1231
-#: ../../../headers/unistd.rst:1235 ../../../headers/unistd.rst:1239
-#: ../../../headers/unistd.rst:1243 ../../../headers/unistd.rst:1247
-#: ../../../headers/unistd.rst:1251 ../../../headers/unistd.rst:1255
-#: ../../../headers/unistd.rst:1259 ../../../headers/unistd.rst:1267
-#: ../../../headers/unistd.rst:1271 ../../../headers/unistd.rst:1275
-#: ../../../headers/unistd.rst:1279 ../../../headers/unistd.rst:1283
-#: ../../../headers/unistd.rst:1287 ../../../headers/unistd.rst:1291
-#: ../../../headers/unistd.rst:1295 ../../../headers/unistd.rst:1299
-#: ../../../headers/unistd.rst:1303 ../../../headers/unistd.rst:1307
-#: ../../../headers/unistd.rst:1311 ../../../headers/unistd.rst:1315
-#: ../../../headers/unistd.rst:1319 ../../../headers/unistd.rst:1323
-#: ../../../headers/unistd.rst:1327 ../../../headers/unistd.rst:1331
-#: ../../../headers/unistd.rst:1335 ../../../headers/unistd.rst:1339
-#: ../../../headers/unistd.rst:1343 ../../../headers/unistd.rst:1347
-#: ../../../headers/unistd.rst:1351 ../../../headers/unistd.rst:1355
-#: ../../../headers/unistd.rst:1359 ../../../headers/unistd.rst:1363
-#: ../../../headers/unistd.rst:1375 ../../../headers/unistd.rst:1379
-#: ../../../headers/unistd.rst:1383
+#: ../../../headers/unistd.rst:1155 ../../../headers/unistd.rst:1159
+#: ../../../headers/unistd.rst:1167 ../../../headers/unistd.rst:1179
+#: ../../../headers/unistd.rst:1183 ../../../headers/unistd.rst:1187
+#: ../../../headers/unistd.rst:1191 ../../../headers/unistd.rst:1195
+#: ../../../headers/unistd.rst:1199 ../../../headers/unistd.rst:1203
+#: ../../../headers/unistd.rst:1207 ../../../headers/unistd.rst:1211
+#: ../../../headers/unistd.rst:1215 ../../../headers/unistd.rst:1219
+#: ../../../headers/unistd.rst:1223 ../../../headers/unistd.rst:1227
+#: ../../../headers/unistd.rst:1231 ../../../headers/unistd.rst:1235
+#: ../../../headers/unistd.rst:1239 ../../../headers/unistd.rst:1243
+#: ../../../headers/unistd.rst:1247 ../../../headers/unistd.rst:1251
+#: ../../../headers/unistd.rst:1255 ../../../headers/unistd.rst:1259
+#: ../../../headers/unistd.rst:1267 ../../../headers/unistd.rst:1271
+#: ../../../headers/unistd.rst:1275 ../../../headers/unistd.rst:1279
+#: ../../../headers/unistd.rst:1283 ../../../headers/unistd.rst:1287
+#: ../../../headers/unistd.rst:1291 ../../../headers/unistd.rst:1295
+#: ../../../headers/unistd.rst:1299 ../../../headers/unistd.rst:1303
+#: ../../../headers/unistd.rst:1307 ../../../headers/unistd.rst:1311
+#: ../../../headers/unistd.rst:1315 ../../../headers/unistd.rst:1319
+#: ../../../headers/unistd.rst:1323 ../../../headers/unistd.rst:1327
+#: ../../../headers/unistd.rst:1331 ../../../headers/unistd.rst:1335
+#: ../../../headers/unistd.rst:1339 ../../../headers/unistd.rst:1343
+#: ../../../headers/unistd.rst:1347 ../../../headers/unistd.rst:1351
+#: ../../../headers/unistd.rst:1355 ../../../headers/unistd.rst:1359
+#: ../../../headers/unistd.rst:1363 ../../../headers/unistd.rst:1375
+#: ../../../headers/unistd.rst:1379 ../../../headers/unistd.rst:1383
 msgid "|check|"
 msgstr ""
 
