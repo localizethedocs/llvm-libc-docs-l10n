@@ -1,0 +1,302 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/complex.md:1
+msgid "complex.h"
+msgstr ""
+
+#: ../../../headers/complex.md:3
+msgid "Macros"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "\\<Func>"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "\\<Func_f> (float)"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "\\<Func> (double)"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "\\<Func_l> (long double)"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "\\<Func_f16> (float16)"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "\\<Func_f128> (float128)"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "C23 Definition Section"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "C23 Error Handling Section"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "CMPLX"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "{{ check }}"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.9.3"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "N/A"
+msgstr ""
+
+#: ../../../headers/complex.md:9
+msgid "Functions"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "cacos"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.5.1"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "G.6.2.1"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "casin"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.5.2"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "catan"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.5.3"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "ccos"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.5.4"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "csin"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.5.5"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "ctan"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.5.6"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "cacosh"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.6.1"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "G.6.3.1"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "casinh"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.6.2"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "G.6.3.2"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "catanh"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.6.3"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "G.6.3.3"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "ccosh"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.6.4"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "G.6.3.4"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "csinh"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.6.5"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "G.6.3.5"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "ctanh"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.6.6"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "G.6.3.6"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "cexp"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.7.1"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "G.6.4.1"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "clog"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.7.2"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "G.6.4.2"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "cabs"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.8.1"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "cpow"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.8.2"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "G.6.5.1"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "csqrt"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.8.3"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "G.6.5.2"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "carg"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "1 ULP"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.9.1"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "cimag"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.9.2"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "conj"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.9.4"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "cproj"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.9.5"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "creal"
+msgstr ""
+
+#: ../../../headers/complex.md:0
+msgid "7.3.9.6"
+msgstr ""

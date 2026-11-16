@@ -1,0 +1,1139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/math/log.md:3
+msgid "Log/Log10/Log2 Algorithm"
+msgstr ""
+
+#: ../../../headers/math/log.md:5
+msgid ""
+"In this short note, we will discuss in detail about the computation of {math}"
+"`\\log(x)` function, with double precision inputs, in particular, the range "
+"reduction steps and error analysis. The algorithm is broken down into 2 main "
+"phases as follow:"
+msgstr ""
+
+#: ../../../headers/math/log.md:10
+msgid "Fast phase:"
+msgstr ""
+
+#: ../../../headers/math/log.md:12 ../../../headers/math/log.md:23
+msgid "Range reduction"
+msgstr ""
+
+#: ../../../headers/math/log.md:13 ../../../headers/math/log.md:19
+msgid "Polynomial approximation"
+msgstr ""
+
+#: ../../../headers/math/log.md:14
+msgid "Ziv's test"
+msgstr ""
+
+#: ../../../headers/math/log.md:16
+msgid "Accurate phase (if Ziv's test failed):"
+msgstr ""
+
+#: ../../../headers/math/log.md:18
+msgid "Further range reduction"
+msgstr ""
+
+#: ../../../headers/math/log.md:21
+msgid "Fast phase"
+msgstr ""
+
+#: ../../../headers/math/log.md:25
+msgid ""
+"Let {math}`x = 2^{e_x} (1 + m_x)` be a normalized double precision number, "
+"in which {math}`-1074 \\leq e_x \\leq 1022` and {math}`0 \\leq m_x < 1` such "
+"that {math}`2^{52} m_x \\in \\mathbb{Z}`."
+msgstr ""
+
+#: ../../../headers/math/log.md:29
+msgid "Then from the properties of logarithm:"
+msgstr ""
+
+#: ../../../headers/math/log.md:31
+msgid ""
+"\\log(x) &= \\log\\left( 2^{e_x} (1 + m_x) \\right) \\\\\n"
+"        &= \\log\\left( 2^{e_x} \\right) + \\log(1 + m_x) \\\\\n"
+"        &= e_x \\log(2) + \\log(1 + m_x)"
+msgstr ""
+
+#: ../../../headers/math/log.md:37
+msgid "the computation of {math}`\\log(x)` can be reduced to:"
+msgstr ""
+
+#: ../../../headers/math/log.md:39
+msgid "compute the product of {math}`e_x` and {math}`\\log(2)`,"
+msgstr ""
+
+#: ../../../headers/math/log.md:40
+msgid "compute {math}`\\log(1 + m_x)` for {math}`0 \\leq m_x < 1`,"
+msgstr ""
+
+#: ../../../headers/math/log.md:41
+msgid "add step 1 and 2."
+msgstr ""
+
+#: ../../../headers/math/log.md:43
+msgid ""
+"To compute {math}`\\log(1 + m_x)` in step 2, we can reduce the range further "
+"by finding {math}`r > 0` such that:"
+msgstr ""
+
+#: ../../../headers/math/log.md:46
+msgid "| r(1 + m_x) - 1 | < C \\quad \\quad \\text{(R1)}"
+msgstr ""
+
+#: ../../../headers/math/log.md:50
+msgid ""
+"for small {math}`0 < C < 1`. Then if we let {math}`u = r(1 + m_x) - 1`, "
+"{math}`|u| < C`:"
+msgstr ""
+
+#: ../../../headers/math/log.md:52
+msgid ""
+"\\log(1 + m_x) &= \\log \\left( \\frac{r (1 + m_x)}{r} \\right) \\\\\n"
+"              &= \\log(r (1 + m_x) ) - \\log(r) \\\\\n"
+"              &= \\log(1 + u) - \\log(r)"
+msgstr ""
+
+#: ../../../headers/math/log.md:58
+msgid "and step 2 can be computed with:"
+msgstr ""
+
+#: ../../../headers/math/log.md:60
+msgid "extract {math}`r` and {math}`-\\log(r)` from look-up tables,"
+msgstr ""
+
+#: ../../../headers/math/log.md:61
+msgid "compute the reduced argument {math}`u = r(1 + m_x) - 1`,"
+msgstr ""
+
+#: ../../../headers/math/log.md:62
+msgid ""
+"compute {math}`\\log(1 + u)` by polynomial approximation or further range "
+"reduction,"
+msgstr ""
+
+#: ../../../headers/math/log.md:63
+msgid "add the results of items 1 and 3."
+msgstr ""
+
+#: ../../../headers/math/log.md:65
+msgid "How to derive {math}`r`"
+msgstr ""
+
+#: ../../../headers/math/log.md:67
+msgid ""
+"For an efficient implementation, we would like to use the first {math}`M` "
+"significant bits of {math}`m_x` to look up for {math}`r`. In particular, we "
+"would like to find a value of {math}`r` that works for all {math}`m_x` "
+"satisfying:"
+msgstr ""
+
+#: ../../../headers/math/log.md:71
+msgid ""
+"k 2^{-M} \\leq m_x < (k + 1) 2^{-M} \\quad \\text{for some} \\quad\n"
+"k = 0..2^{M} - 1. \\quad\\quad \\text{(M1)}"
+msgstr ""
+
+#: ../../../headers/math/log.md:76
+msgid ""
+"Let {math}`r = 1 + s`, then {math}`u` can be expressed in terms of {math}`s` "
+"as:"
+msgstr ""
+
+#: ../../../headers/math/log.md:78
+msgid ""
+"u &= r(1 + m_x) - 1 \\\\\n"
+"  &= (1 + s)(1 + m_x) - 1 \\\\\n"
+"  &= s m_x + s + m_x  &\\quad\\quad \\text{(U1)} \\\\\n"
+"  &= s (1 + m_x) + m_x \\\\\n"
+"  &= m_x (1 + s) + s."
+msgstr ""
+
+#: ../../../headers/math/log.md:86
+msgid "From the condition {math}`\\text{(R1)}`, {math}`s` is bounded by:"
+msgstr ""
+
+#: ../../../headers/math/log.md:88
+msgid ""
+"\\frac{-C - m_x}{1 + m_x} < s < \\frac{C - m_x}{1 + m_x} \\quad\\quad "
+"\\text{(S1)}."
+msgstr ""
+
+#: ../../../headers/math/log.md:92
+msgid ""
+"Since our reduction constant {math}`s` must work for all {math}`m_x` in the "
+"interval {math}`I = \\{ v: k 2^{-M} \\leq v < (k + 1) 2^{-M} \\}`, {math}`s` "
+"is bounded by:"
+msgstr ""
+
+#: ../../../headers/math/log.md:95
+msgid ""
+"\\sup_{v \\in I} \\frac{-C - v}{1 + v} < s < \\inf_{v \\in I} \\frac{C - v}"
+"{1 + v}"
+msgstr ""
+
+#: ../../../headers/math/log.md:99
+msgid ""
+"For a fixed constant {math}`|c| < 1`, let {math}`f(v) = \\frac{c - v}{1 + v}"
+"`, then its derivative is:"
+msgstr ""
+
+#: ../../../headers/math/log.md:102
+msgid ""
+"f'(v) = \\frac{(-1)(1 + v) - (1)(c - v)}{(1 + v)^2} = \\frac{-1 - c}{(1 + "
+"v)^2}."
+msgstr ""
+
+#: ../../../headers/math/log.md:106
+msgid ""
+"Since {math}`|c| < 1`, {math}`f'(v) < 0` for all {math}`v \\neq -1`, so:"
+msgstr ""
+
+#: ../../../headers/math/log.md:108
+msgid ""
+"\\sup_{v \\in I} f(v) &= f \\left( \\inf\\{ v: v \\in I \\} \\right)\n"
+"                     = f \\left( k 2^{-M} \\right) \\\\\n"
+"\\inf_{v \\in I} f(v) &= f \\left( \\sup\\{ v: v \\in I \\} \\right)\n"
+"                     = f \\left( (k + 1) 2^{-M} \\right)"
+msgstr ""
+
+#: ../../../headers/math/log.md:115
+msgid "Hence we have the following bound on {math}`s`:"
+msgstr ""
+
+#: ../../../headers/math/log.md:117
+msgid ""
+"\\frac{-C - k 2^{-M}}{1 + k 2^{-M}} < s \\leq\n"
+"\\frac{C - (k + 1) 2^{-M}}{1 + (k + 1) 2^{-M}}. \\quad\\quad \\text{(S2)}"
+msgstr ""
+
+#: ../../../headers/math/log.md:122
+msgid "In order for {math}`s` to exist, we need that:"
+msgstr ""
+
+#: ../../../headers/math/log.md:124
+msgid ""
+"\\frac{C - (k + 1) 2^{-M}}{1 + (k + 1) 2^{-M}} >\n"
+"\\frac{-C - k 2^{-M}}{1 + k 2^{-M}}"
+msgstr ""
+
+#: ../../../headers/math/log.md:129
+msgid "which is equivalent to:"
+msgstr ""
+
+#: ../../../headers/math/log.md:131
+msgid ""
+"\\quad\\quad 2C - 2^{-M} + (2k + 1) 2^{-M} C > 0\n"
+"\\iff C > \\frac{2^{-M - 1}}{1 + (2k + 1) 2^{-M - 1}} \\quad\\quad "
+"\\text{(C1)}."
+msgstr ""
+
+#: ../../../headers/math/log.md:136
+msgid ""
+"Consider the case {math}`C = 2^{-N}`. Since {math}`0 \\leq k \\leq 2^M - 1,` "
+"the right hand side of {math}`\\text{(C1)}` is bounded by:"
+msgstr ""
+
+#: ../../../headers/math/log.md:139
+msgid ""
+"2^{-M - 1} > \\frac{2^{-M - 1}}{1 + (2k + 1) 2^{-M - 1}} \\geq\n"
+"\\frac{2^{-M - 1}}{1 + (2^{M + 1} - 1) 2^{-M - 1}} > 2^{-M - 2}."
+msgstr ""
+
+#: ../../../headers/math/log.md:144
+msgid ""
+"Hence, from {math}`\\text{(C1)}`, being an exact power of 2, {math}`C = 2^{-"
+"N}` is bounded below by:"
+msgstr ""
+
+#: ../../../headers/math/log.md:147
+msgid "C = 2^{-N} \\geq 2^{-M - 1}."
+msgstr ""
+
+#: ../../../headers/math/log.md:151
+msgid ""
+"To make the range reduction efficient, we will want to minimize {math}`C` "
+"(maximize {math}`N`) while keeping the required precision of {math}`s`({math}"
+"`r`) as low as possible. And for that, we will consider the following two "
+"cases: {math}`N = M + 1` and {math}`N = M`."
+msgstr ""
+
+#: ../../../headers/math/log.md:155
+msgid "Case 1 - {math}`N = M + 1`"
+msgstr ""
+
+#: ../../../headers/math/log.md:157
+msgid "When {math}`N = M + 1`, {math}`\\text{(S2)}` becomes:"
+msgstr ""
+
+#: ../../../headers/math/log.md:159
+msgid ""
+"\\frac{-2^{-M - 1} - k 2^{-M}}{1 + k 2^{-M}} < s <\n"
+"\\frac{2^{-M - 1} - (k + 1) 2^{-M}}{1 + (k + 1) 2^{-M}}.\n"
+"\\quad\\quad \\text{(S2')}"
+msgstr ""
+
+#: ../../../headers/math/log.md:165 ../../../headers/math/log.md:265
+msgid "This is an interval of length:"
+msgstr ""
+
+#: ../../../headers/math/log.md:167
+msgid ""
+"l &= \\frac{2^{-M - 1} - (k + 1) 2^{-M}}{1 + (k + 1) 2^{-M}} -\n"
+"     \\frac{-2^{-M - 1} - k 2^{-M}}{1 + k 2^{-M}} \\\\\n"
+"  &= \\frac{(2k + 1)2^{-2M - 1}}{(1 + k 2^{-M})(1 + (k + 1)2^{-M})}\n"
+"  \\quad\\quad \\text{(L1)}"
+msgstr ""
+
+#: ../../../headers/math/log.md:174
+msgid ""
+"As a function of {math}`k`, the length {math}`l` has its derivative with "
+"respect to {math}`k`:"
+msgstr ""
+
+#: ../../../headers/math/log.md:176
+msgid ""
+"\\frac{dl}{dk} =\n"
+"\\frac{2^{2M + 1} - 2k(k + 1) - 1}\n"
+"     {2^{4M}(1 + k 2^{-M})^2 (1 + (k + 1) 2^{-M})^2}"
+msgstr ""
+
+#: ../../../headers/math/log.md:182
+msgid ""
+"which is always positive for {math}`0 \\leq k \\leq 2^M - 1`. So for all "
+"{math}`0 < k < 2^{-M}` ({math}`k = 0` will be treated differently in edge "
+"cases), and for {math}`M > 2`, {math}`l` is bounded below by:"
+msgstr ""
+
+#: ../../../headers/math/log.md:186
+msgid "l > 2^{-2M}."
+msgstr ""
+
+#: ../../../headers/math/log.md:190
+msgid ""
+"It implies that we can always find {math}`s` with {math}`\\operatorname{ulp}"
+"(s) = 2^{-2M}`. And from {math}`\\text{(U1)}`, {math}`u = s(1 + m_x) + m_x`, "
+"its {math}`ulp` is:"
+msgstr ""
+
+#: ../../../headers/math/log.md:193
+msgid ""
+"\\operatorname{ulp}(u) &= \\operatorname{ulp}(s) \\cdot \\operatorname{ulp}"
+"(m_x) \\\\\n"
+"                      &= 2^{-2M} \\operatorname{ulp}(m_x)."
+msgstr ""
+
+#: ../../../headers/math/log.md:198 ../../../headers/math/log.md:297
+msgid "Since:"
+msgstr ""
+
+#: ../../../headers/math/log.md:200
+msgid "|u| < C = 2^{-N} = 2^{-M - 1},"
+msgstr ""
+
+#: ../../../headers/math/log.md:204 ../../../headers/math/log.md:303
+msgid "Its required precision is:"
+msgstr ""
+
+#: ../../../headers/math/log.md:206
+msgid ""
+"\\operatorname{prec}(u) &= \\log_2(2^{-M-1} / \\operatorname{ulp}(u)) \\\\\n"
+"                       &= \\log_2(2^{M - 1} / \\operatorname{ulp}(m_x)) \\"
+"\\\n"
+"                       &= M - 1 - \\log_2(\\operatorname{ulp}(m_x))."
+msgstr ""
+
+#: ../../../headers/math/log.md:212
+msgid ""
+"This means that in this case, we cannot restrict {math}`u` to be exactly "
+"representable in double precision for double precision input {math}`x` with "
+"{math}`M > 2`. Nonetheless, for a reasonable value of {math}`M`, we can have "
+"{math}`u` exactly representable in double precision for single precision "
+"input {math}`x` ({math}`\\operatorname{ulp}(m_x) = 2^{-23}`) such that {math}"
+"`|u| < 2^{-M - 1}` using a look-up table of size {math}`2^M`."
+msgstr ""
+
+#: ../../../headers/math/log.md:218
+msgid ""
+"A particular formula for {math}`s` can be derived from {math}`\\text{(S2')}` "
+"by the midpoint formula:"
+msgstr ""
+
+#: ../../../headers/math/log.md:221
+msgid ""
+"s &= 2^{-2M} \\operatorname{round}\\left( 2^{2M} \\cdot "
+"\\operatorname{midpoint}\n"
+"     \\left(-\\frac{-2^{-M - 1} - k2^{-M}}{1 + k 2^{-M}},\n"
+"     \\frac{2^{-M-1} - (k + 1)2^{-M}}{1 + (k + 1) 2^{-M}}\\right) \\right) \\"
+"\\\n"
+"  &= 2^{-2M} \\operatorname{round}\\left( 2^{2M} \\cdot \\frac{1}{2} "
+"\\left(\n"
+"     \\frac{-2^{-M - 1} - k2^{-M}}{1 + k 2^{-M}} +\n"
+"     \\frac{2^{-M - 1} + (k + 1)2^{-M}}{1 + (k + 1) 2^{-M}}\n"
+"  \\right) \\right) \\\\\n"
+"  &= 2^{-2M} \\operatorname{round}\\left( \\frac{\n"
+"     - \\left(k + \\frac{1}{2} \\right) \\left(2^M - k - \\frac{1}{2} "
+"\\right) }\n"
+"     {(1 + k 2^{-N})(1 + (k + 1) 2^{-N})} \\right) \\\\\n"
+"  &= - 2^{-2M} \\operatorname{round}\\left( \\frac{\n"
+"     \\left(k + \\frac{1}{2} \\right) \\left(2^M - k - \\frac{1}{2} "
+"\\right) }\n"
+"     {(1 + k 2^{-N})(1 + (k + 1) 2^{-N})} \\right)  \\quad\\quad \\text{(S3)}"
+msgstr ""
+
+#: ../../../headers/math/log.md:237 ../../../headers/math/log.md:328
+msgid "The corresponding range and formula for {math}`r = 1 + s` are:"
+msgstr ""
+
+#: ../../../headers/math/log.md:239
+msgid ""
+"\\frac{1 - 2^{-M - 1}}{1 + k 2^{-M}} < r \\leq\n"
+"\\frac{1 + 2^{-M - 1}}{1 + (k + 1) 2^{-M}}"
+msgstr ""
+
+#: ../../../headers/math/log.md:244
+msgid ""
+"r &= 2^{-2M} \\operatorname{round}\\left( 2^{2M} \\cdot\n"
+"     \\operatorname{midpoint}\\left( \\frac{1 - 2^{-M - 1}}{1 + k 2^{-M}},\n"
+"        \\frac{1 + 2^{-M - 1}}{1 + (k + 1) 2^{-M}}\\right) \\right) \\\\\n"
+"  &= 2^{-2M} \\operatorname{round}\\left( 2^{2M} \\cdot \\frac{1}{2} "
+"\\left(\n"
+"     \\frac{1 + 2^{-M-1}}{1 + (k + 1) 2^{-M}} + \\frac{1 - 2^{-M-1}}{1 + k "
+"2^{-M}}\n"
+"  \\right) \\right) \\\\\n"
+"  &= 2^{-2M} \\operatorname{round}\\left( 2^{2M} \\cdot \\frac{\n"
+"     1 + \\left(k + \\frac{1}{2} \\right) 2^{-M} - 2^{-2M-2} }{(1 + k 2^{-"
+"M})\n"
+"     (1 + (k + 1) 2^{-M})} \\right)"
+msgstr ""
+
+#: ../../../headers/math/log.md:256
+msgid "Case 1 - {math}`N = M`"
+msgstr ""
+
+#: ../../../headers/math/log.md:258
+msgid "When {math}`N = M`, {math}`\\text{(S2)}` becomes:"
+msgstr ""
+
+#: ../../../headers/math/log.md:260
+msgid ""
+"\\frac{-(k + 1)2^{-M}}{1 + k 2^{-M}} < s < \\frac{-k 2^{-M}}{1 + (k + 1) 2^{-"
+"M}}\n"
+"\\quad\\quad \\text{(S2\")}"
+msgstr ""
+
+#: ../../../headers/math/log.md:267
+msgid ""
+"l &= \\frac{- k 2^{-M}}{1 + (k + 1) 2^{-M}} -\n"
+"     \\frac{- (k + 1) 2^{-M}}{1 + k 2^{-M}} \\\\\n"
+"  &= \\frac{2^{-M} (1 + (2k + 1) 2^{-M})}{(1 + k 2^{-M})(1 + (k + 1)2^{-"
+"M})}\n"
+"  \\quad\\quad \\text{(L1')}"
+msgstr ""
+
+#: ../../../headers/math/log.md:274
+msgid "As a function of {math}`k`, its derivative with respect to {math}`k`:"
+msgstr ""
+
+#: ../../../headers/math/log.md:276
+msgid ""
+"\\frac{dl}{dk} =\n"
+"-\\frac{2^{-2M}(k(k + 1)2^{-M + 1} + 2^{-M} + 2k + 1)}\n"
+"      {(1 + k 2^{-M})^2 (1 + (k + 1) 2^{-M})^2}"
+msgstr ""
+
+#: ../../../headers/math/log.md:282
+msgid ""
+"which is always negative for {math}`0 \\leq k \\leq 2^M - 1`. So for {math}"
+"`M > 1`, {math}`l` is bounded below by:"
+msgstr ""
+
+#: ../../../headers/math/log.md:285
+msgid "l > \\frac{2^{-M - 1} (3 - 2^{-M})}{2 - 2^{-M}} > 2^{-M - 1}."
+msgstr ""
+
+#: ../../../headers/math/log.md:289
+msgid ""
+"It implies that we can always find {math}`s` with {math}`\\operatorname{ulp}"
+"(s) = 2^{-M-1}`. And from {math}`\\text{(U1)}`, {math}`u = s(1 + m_x) + "
+"m_x`, its {math}`ulp` is:"
+msgstr ""
+
+#: ../../../headers/math/log.md:292
+msgid ""
+"\\operatorname{ulp}(u) &= \\operatorname{ulp}(s) \\cdot \\operatorname{ulp}"
+"(m_x) \\\\\n"
+"                      &= 2^{-M - 1} \\operatorname{ulp}(m_x)."
+msgstr ""
+
+#: ../../../headers/math/log.md:299
+msgid "|u| < C = 2^{-N} = 2^{-M},"
+msgstr ""
+
+#: ../../../headers/math/log.md:305
+msgid ""
+"\\operatorname{prec}(u) &= \\log_2(2^{-M} / \\operatorname{ulp}(u)) \\\\\n"
+"                       &= \\log_2(2 / \\operatorname{ulp}(m_x)) \\\\\n"
+"                       &= 1 - \\log_2(\\operatorname{ulp}(m_x))."
+msgstr ""
+
+#: ../../../headers/math/log.md:311
+msgid ""
+"Hence, for double precision {math}`x`, {math}`\\operatorname{ulp}(m_x) = "
+"2^{-52}`, and the precision needed for {math}`u` is {math}"
+"`\\operatorname{prec}(u) = 53`, i.e., {math}`u` can be exactly representable "
+"in double precision. And in this case, {math}`s` can be derived from {math}"
+"`\\text{(S2\")}` by the midpoint formula:"
+msgstr ""
+
+#: ../../../headers/math/log.md:316
+msgid ""
+"s &= 2^{-M - 1} \\operatorname{round}\\left( 2^{M + 1} \\cdot\n"
+"     \\operatorname{midpoint} \\left(-\\frac{-(k + 1)2^{-M}}{1 + k 2^{-M}},\n"
+"     \\frac{-k2^{-M}}{1 + (k + 1) 2^{-M}}\\right) \\right) \\\\\n"
+"  &= 2^{-M - 1} \\operatorname{round}\\left( 2^{M + 1} \\cdot \\frac{1}{2} "
+"\\left(\n"
+"     \\frac{-(k + 1)2^{-M}}{1 + k 2^{-M}} + \\frac{-k2^{-M}}{1 + (k + 1) 2^{-"
+"M}}\n"
+"     \\right) \\right) \\\\\n"
+"  &= -2^{-M - 1} \\operatorname{round}\\left( \\frac{\n"
+"     (2k + 1) + (2k^2 + 2k + 1) 2^{-M} }\n"
+"     {(1 + k 2^{-N})(1 + (k + 1) 2^{-N})} \\right)  \\quad\\quad "
+"\\text{(S3')}"
+msgstr ""
+
+#: ../../../headers/math/log.md:330
+msgid ""
+"\\frac{1 - 2^{-M}}{1 + k 2^{-M}} < r \\leq \\frac{1 + 2^{-M}}{1 + (k + 1) "
+"2^{-M}}"
+msgstr ""
+
+#: ../../../headers/math/log.md:334
+msgid ""
+"r &= 2^{-M-1} \\operatorname{round}\\left( 2^{M + 1} \\cdot\n"
+"     \\operatorname{midpoint}\\left( \\frac{1 - 2^{-M}}{1 + k 2^{-M}},\n"
+"        \\frac{1 + 2^{-M}}{1 + (k + 1) 2^{-M}}\\right) \\right) \\\\\n"
+"  &= 2^{-M-1} \\operatorname{round}\\left( 2^{M + 1} \\cdot \\frac{1}{2} "
+"\\left(\n"
+"     \\frac{1 + 2^{-M}}{1 + (k + 1) 2^{-M}} + \\frac{1 - 2^{-M}}{1 + k 2^{-"
+"M}}\n"
+"  \\right) \\right) \\\\\n"
+"  &= 2^{-M - 1} \\operatorname{round}\\left( 2^{M + 1} \\cdot \\frac{\n"
+"     1 + \\left(k + \\frac{1}{2} \\right) 2^{-M} - 2^{-2M-1} }{(1 + k 2^{-"
+"M})\n"
+"     (1 + (k + 1) 2^{-M})} \\right)"
+msgstr ""
+
+#: ../../../headers/math/log.md:346
+msgid "Edge cases"
+msgstr ""
+
+#: ../../../headers/math/log.md:348
+msgid "When {math}`k = 0`, notice that:"
+msgstr ""
+
+#: ../../../headers/math/log.md:350
+msgid "0 = k 2^{-N} \\leq m_x < (k + 1) 2^{-N} = 2^{-N} = C,"
+msgstr ""
+
+#: ../../../headers/math/log.md:354
+msgid ""
+"so we can simply choose {math}`r = 1` so that {math}`\\log(r) = 0` is exact, "
+"then {math}`u = m_x`. This will help reduce the accumulated errors when "
+"{math}`m_x` is close to 0 while maintaining the range reduction output's "
+"requirements."
+msgstr ""
+
+#: ../../../headers/math/log.md:358
+msgid "When {math}`k = 2^{N} - 1`, {math}`\\text{(S2)}` becomes:"
+msgstr ""
+
+#: ../../../headers/math/log.md:360
+msgid ""
+"-\\frac{1}{2} - \\frac{C - 2^{-M-1}}{2 - 2^{-M}} <> s \\leq\n"
+"-\\frac{1}{2} + \\frac{C}{2}."
+msgstr ""
+
+#: ../../../headers/math/log.md:365
+msgid "so when {math}`C > 2^{-M - 1}` is a power of 2, we can always choose:"
+msgstr ""
+
+#: ../../../headers/math/log.md:367
+msgid "s = -\\frac{1}{2}, \\quad \\text{i.e.} \\quad r = \\frac{1}{2}."
+msgstr ""
+
+#: ../../../headers/math/log.md:371
+msgid ""
+"This reduction works well to avoid catastrophic cancellation happening when "
+"{math}`e_x = -1`."
+msgstr ""
+
+#: ../../../headers/math/log.md:374
+msgid ""
+"This also works when {math}`C = 2^{-M - 1}` if we relax the condition on "
+"{math}`u` to {math}`|u| \\leq C = 2^{-M-1}`."
+msgstr ""
+
+#: ../../../headers/math/log.md:377
+msgid "Intermediate precision, and Ziv's test"
+msgstr ""
+
+#: ../../../headers/math/log.md:379
+msgid ""
+"In the fast phase, we want extra precision while performant, so we use "
+"double-double precision for most intermediate computation steps, and employ "
+"Ziv test to see if the result is accurate or not. In our case, the Ziv's "
+"test can be described as follow:"
+msgstr ""
+
+#: ../../../headers/math/log.md:384
+msgid ""
+"Let {math}`re = re.hi + re.lo` be the double-double output of the fast phase "
+"computation."
+msgstr ""
+
+#: ../../../headers/math/log.md:386
+msgid ""
+"Let {math}`err` be an estimated upper bound of the errors of {math}`re`."
+msgstr ""
+
+#: ../../../headers/math/log.md:387
+msgid ""
+"If {math}`\\circ(re.hi + (re.lo - err)) == \\circ(re.hi + (r.lo + err))` "
+"then the result is correctly rounded to double precision for the current "
+"rounding mode {math}`\\circ`. Otherwise, the accurate phase with extra "
+"precision is needed."
+msgstr ""
+
+#: ../../../headers/math/log.md:391
+msgid ""
+"For an easy and cheap estimation of the error bound {math}`err`, since the "
+"range reduction step described above is accurate, the errors of the result:"
+msgstr ""
+
+#: ../../../headers/math/log.md:394
+msgid ""
+"\\log(x) &= e_x \\log(2) - \\log(r) + \\log(1 + u) \\\\\n"
+"        &\\approx e_x \\log(2) - \\log(r) + u P(u)"
+msgstr ""
+
+#: ../../../headers/math/log.md:399
+msgid "come from 2 parts:"
+msgstr ""
+
+#: ../../../headers/math/log.md:401
+msgid "the look-up part: {math}`e_x \\log(2) - \\log(r)`"
+msgstr ""
+
+#: ../../../headers/math/log.md:402
+msgid "the polynomial approximation part: {math}`u P(u)`"
+msgstr ""
+
+#: ../../../headers/math/log.md:404
+msgid ""
+"The errors of the first part can be computed with a single {math}"
+"`\\operatorname{fma}` operation:"
+msgstr ""
+
+#: ../../../headers/math/log.md:407
+msgid "err_1 = \\operatorname{fma}(e_x, err(\\log(2)), err(\\log(r))),"
+msgstr ""
+
+#: ../../../headers/math/log.md:411
+msgid ""
+"and then combining with the errors of the second part for another {math}"
+"`\\operatorname{fma}` operation:"
+msgstr ""
+
+#: ../../../headers/math/log.md:414
+msgid "err = \\operatorname{fma}(u, err(P), err_1)"
+msgstr ""
+
+#: ../../../headers/math/log.md:418
+msgid "Accurate phase"
+msgstr ""
+
+#: ../../../headers/math/log.md:420
+msgid "Extending range reduction"
+msgstr ""
+
+#: ../../../headers/math/log.md:422
+msgid ""
+"Since the output {math}`u = r(1 + m_x) - 1` of the fast phase's range "
+"reduction is computed exactly, we can apply further range reduction steps by "
+"using the following formula:"
+msgstr ""
+
+#: ../../../headers/math/log.md:426
+msgid "u_{i + 1} = r_i(1 + u_i) - 1 = u_i \\cdot r_i + (r_i - 1),"
+msgstr ""
+
+#: ../../../headers/math/log.md:430
+msgid ""
+"where {math}`|u_i| < 2^{-N_i}` and {math}`u_0 = u` is representable in "
+"double precision."
+msgstr ""
+
+#: ../../../headers/math/log.md:432
+msgid "Let {math}`s_i = r_i - 1`, then we can rewrite it as:"
+msgstr ""
+
+#: ../../../headers/math/log.md:434
+msgid ""
+"u_{i + 1} &= (1 + s_i)(1 + u_i) - 1 \\\\\n"
+"          &= s_i u_i + u_i + s_i \\\\\n"
+"          &= u_i (1 + s_i) + s_i\n"
+"          &= s_i (1 + u_i) + u_i."
+msgstr ""
+
+#: ../../../headers/math/log.md:441
+msgid "Then the bound on {math}`u_{i + 1}` is translated to {math}`s_i` as:"
+msgstr ""
+
+#: ../../../headers/math/log.md:443
+msgid ""
+"\\frac{-2^{-N_{i + 1}} - u_i}{1 + u_i} < s_i < \\frac{2^{-N_{i + 1}} - u_i}"
+"{1 + u_i}."
+msgstr ""
+
+#: ../../../headers/math/log.md:447
+msgid ""
+"Let say we divide the interval {math}`[0, 2^-{N_i})` into {math}`2^{M_i}` "
+"subintervals evenly and use the index {math}`k` such that:"
+msgstr ""
+
+#: ../../../headers/math/log.md:450
+msgid "k 2^{-N_i - M_i} \\leq u_i < (k + 1) 2^{-N_i - M_i},"
+msgstr ""
+
+#: ../../../headers/math/log.md:454
+msgid ""
+"to look-up for the reduction constant {math}`s_{i, k}`. In other word, {math}"
+"`k` is given by the formula:"
+msgstr ""
+
+#: ../../../headers/math/log.md:457
+msgid "k = \\left\\lfloor 2^{N_i + M_i} u_i \\right\\rfloor"
+msgstr ""
+
+#: ../../../headers/math/log.md:461
+msgid ""
+"Notice that our reduction constant {math}`s_{i, k}` must work for all {math}"
+"`u_i` in the interval {math}`I = \\{ v: k 2^{-N_i - M_i} \\leq v < (k + 1) "
+"2^{-N_i - M_i} \\}`, so it is bounded by:"
+msgstr ""
+
+#: ../../../headers/math/log.md:465
+msgid ""
+"\\sup_{v \\in I} \\frac{-2^{-N_{i + 1}} - v}{1 + v} < s_{i, k} < \\inf_{v "
+"\\in I} \\frac{2^{-N_{i + 1}} - v}{1 + v}"
+msgstr ""
+
+#: ../../../headers/math/log.md:469
+msgid ""
+"For a fixed constant {math}`|C| < 1`, let {math}`f(v) = \\frac{C - v}{1 + v}"
+"`, then its derivative is:"
+msgstr ""
+
+#: ../../../headers/math/log.md:472
+msgid ""
+"f'(v) = \\frac{(-1)(1 + v) - (1)(C - v)}{(1 + v)^2} = \\frac{-1 - C}{(1 + "
+"v)^2}."
+msgstr ""
+
+#: ../../../headers/math/log.md:476
+msgid ""
+"Since {math}`|C| < 1`, {math}`f'(v) < 0` for all {math}`v \\neq -1`, so:"
+msgstr ""
+
+#: ../../../headers/math/log.md:478
+msgid ""
+"\\sup_{v \\in I} f(v) &= f \\left( \\inf\\{ v: v \\in I \\} \\right)\n"
+"                     = f \\left( k 2^{-N_i - M_i} \\right) \\\\\n"
+"\\inf_{v \\in I} f(v) &= f \\left( \\sup\\{ v: v \\in I \\} \\right)\n"
+"                     = f \\left( (k + 1) 2^{-N_i - M_i} \\right)"
+msgstr ""
+
+#: ../../../headers/math/log.md:485
+msgid "Hence we have the following bound on {math}`s_{i, k}`:"
+msgstr ""
+
+#: ../../../headers/math/log.md:487
+msgid ""
+"\\frac{-2^{-N_{i + 1}} - k 2^{-N_i - M_i}}{1 + k 2^{-N_i - M_i}} < s_{i, k}\n"
+"\\leq \\frac{2^{-N_{i + 1}} - (k + 1) 2^{-N_i - M_i}}{1 + (k + 1) 2^{-N_i - "
+"M_i}}"
+msgstr ""
+
+#: ../../../headers/math/log.md:492
+msgid "This interval is of length:"
+msgstr ""
+
+#: ../../../headers/math/log.md:494
+msgid ""
+"l &= \\frac{2^{-N_{i + 1}} - (k + 1) 2^{-N_i - M_i}}{1 + (k + 1) 2^{-N_i - "
+"M_i}} -\n"
+"\\frac{-2^{-N_{i + 1}} - k 2^{-N_i - M_i}}{1 + k 2^{-N_i - M_i}} \\\\\n"
+"&= \\frac{2^{-N_{i + 1} + 1} - 2^{-N_i - M_i} + (2k + 1) 2^{-N_{i + 1} - N_i "
+"- M_i}}\n"
+"    {(1 + k 2^{-N_i - M_i})(1 + (k + 1) 2^{-N_i -M_i})}"
+msgstr ""
+
+#: ../../../headers/math/log.md:501
+msgid "So in order to be able to find {math}`s_{i, k}`, we need that:"
+msgstr ""
+
+#: ../../../headers/math/log.md:503
+msgid ""
+"2^{-N_{i + 1} + 1} - 2^{-N_i - M_i} + (2k + 1) 2^{-N_{i + 1} - N_i - M_i} > 0"
+msgstr ""
+
+#: ../../../headers/math/log.md:507
+msgid "This give us the following bound on {math}`N_{i + 1}`:"
+msgstr ""
+
+#: ../../../headers/math/log.md:509
+msgid "N_{i + 1} \\leq N_i + M_i + 1."
+msgstr ""
+
+#: ../../../headers/math/log.md:513
+msgid ""
+"To make the range reduction effective, we will want to maximize {math}`N_{i "
+"+ 1}`, so let consider the two cases: {math}`N_{i + 1} = N_i + M_i + 1` and "
+"{math}`N_{i + 1} = N_i + M_i`."
+msgstr ""
+
+#: ../../../headers/math/log.md:517
+msgid ""
+"The optimal choice to balance between maximizing {math}`N_{i + 1}` and "
+"minimizing the precision needed for {math}`s_{i, k}` is:"
+msgstr ""
+
+#: ../../../headers/math/log.md:520
+msgid "N_{i + 1} = N_i + M_i,"
+msgstr ""
+
+#: ../../../headers/math/log.md:524
+msgid "and in this case, the optimal {math}`\\operatorname{ulp}(s_{i, k})` is:"
+msgstr ""
+
+#: ../../../headers/math/log.md:526
+msgid "\\operatorname{ulp}(s_{i, k}) = 2^{-N_i - M_i}"
+msgstr ""
+
+#: ../../../headers/math/log.md:530
+msgid "and the corresponding {math}`\\operatorname{ulp}(u_{i + 1})` is:"
+msgstr ""
+
+#: ../../../headers/math/log.md:532
+msgid ""
+"\\operatorname{ulp}(u_{i + 1}) &= \\operatorname{ulp}(u_i) "
+"\\operatorname{ulp}(s_{i, k}) \\\\\n"
+"  &= \\operatorname{ulp}(u_i) \\cdot 2^{-N_i - M_i} \\\\\n"
+"  &= \\operatorname{ulp}(u_0) \\cdot 2^{-N_0 - M_0} \\cdot 2^{-N_0 - M_0 - "
+"M_1} \\cdots 2^{-N_0 - M_0 - M_1 - \\cdots - M_i} \\\\\n"
+"  &= 2^{-N_0 - 53} \\cdot 2^{-N_0 - M_0} \\cdot 2^{-N_0 - M_0 - M_1} \\cdots "
+"2^{-N_0 - M_0 - M_1 - \\cdots - M_i}"
+msgstr ""
+
+#: ../../../headers/math/log.md:539
+msgid ""
+"Since {math}`|u_{i + 1}| < 2^{-N_{i + 1}} = 2^{-N_0 - M_1 - ... -M_i}`, the "
+"precision of {math}`u_{i + 1}` is:"
+msgstr ""
+
+#: ../../../headers/math/log.md:542
+msgid ""
+"\\operatorname{prec}(u_{i + 1}) &= (N_0 + 53) + (N_0 + M_0) + \\cdots +\n"
+"  (N_0 + M_0 + \\cdots + M_i) - (N_0 + M_0 + \\cdots + M_i) \\\\\n"
+"  &= (i + 1) N_0 + i M_0 + (i - 1) M_1 + \\cdots + M_{i - 1} + 53"
+msgstr ""
+
+#: ../../../headers/math/log.md:548
+msgid ""
+"If we choose to have the same {math}`M_0 = M_1 = \\cdots = M_i = M`, this "
+"can be simplified to:"
+msgstr ""
+
+#: ../../../headers/math/log.md:551
+msgid ""
+"\\operatorname{prec}(u_{i + 1}) = (i + 1) N_0 + \\frac{i(i + 1)}{2} \\cdot M "
+"+ 53."
+msgstr ""
+
+#: ../../../headers/math/log.md:555
+msgid ""
+"We summarize the precision analysis for extending the range reduction in the "
+"table below:"
+msgstr ""
+
+#: ../../../headers/math/log.md:560
+msgid ":math:`N_0`"
+msgstr ""
+
+#: ../../../headers/math/log.md:560
+msgid ":math:`M`"
+msgstr ""
+
+#: ../../../headers/math/log.md:560
+msgid "No. steps"
+msgstr ""
+
+#: ../../../headers/math/log.md:560
+msgid "Table size"
+msgstr ""
+
+#: ../../../headers/math/log.md:560
+msgid "Output bound"
+msgstr ""
+
+#: ../../../headers/math/log.md:560
+msgid "ulp(:math:`s_{i, k}`)"
+msgstr ""
+
+#: ../../../headers/math/log.md:560
+msgid "prec(:math:`u_{i + 1}`)"
+msgstr ""
+
+#: ../../../headers/math/log.md:562 ../../../headers/math/log.md:586
+msgid "7"
+msgstr ""
+
+#: ../../../headers/math/log.md:562 ../../../headers/math/log.md:568
+#: ../../../headers/math/log.md:576 ../../../headers/math/log.md:584
+msgid "4"
+msgstr ""
+
+#: ../../../headers/math/log.md:562 ../../../headers/math/log.md:586
+msgid "1"
+msgstr ""
+
+#: ../../../headers/math/log.md:562
+msgid "32"
+msgstr ""
+
+#: ../../../headers/math/log.md:562
+msgid ":math:`2^{-11}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:562
+msgid ":math:`2^{-12}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:562 ../../../headers/math/log.md:586
+msgid "60"
+msgstr ""
+
+#: ../../../headers/math/log.md:564 ../../../headers/math/log.md:588
+msgid "2"
+msgstr ""
+
+#: ../../../headers/math/log.md:564
+msgid "64"
+msgstr ""
+
+#: ../../../headers/math/log.md:564 ../../../headers/math/log.md:586
+msgid ":math:`2^{-15}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:564
+msgid ":math:`2^{-16}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:564
+msgid "71"
+msgstr ""
+
+#: ../../../headers/math/log.md:566 ../../../headers/math/log.md:574
+#: ../../../headers/math/log.md:582
+msgid "3"
+msgstr ""
+
+#: ../../../headers/math/log.md:566
+msgid "96"
+msgstr ""
+
+#: ../../../headers/math/log.md:566
+msgid ":math:`2^{-19}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:566
+msgid ":math:`2^{-20}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:566
+msgid "86"
+msgstr ""
+
+#: ../../../headers/math/log.md:568 ../../../headers/math/log.md:570
+msgid "128"
+msgstr ""
+
+#: ../../../headers/math/log.md:568 ../../../headers/math/log.md:574
+msgid ":math:`2^{-23}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:568 ../../../headers/math/log.md:586
+msgid ":math:`2^{-24}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:568
+msgid "105"
+msgstr ""
+
+#: ../../../headers/math/log.md:570 ../../../headers/math/log.md:574
+#: ../../../headers/math/log.md:578
+msgid "5"
+msgstr ""
+
+#: ../../../headers/math/log.md:570
+msgid "160"
+msgstr ""
+
+#: ../../../headers/math/log.md:570 ../../../headers/math/log.md:576
+msgid ":math:`2^{-27}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:570 ../../../headers/math/log.md:576
+msgid ":math:`2^{-28}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:572 ../../../headers/math/log.md:580
+#: ../../../headers/math/log.md:582
+msgid "6"
+msgstr ""
+
+#: ../../../headers/math/log.md:572 ../../../headers/math/log.md:574
+msgid "192"
+msgstr ""
+
+#: ../../../headers/math/log.md:572 ../../../headers/math/log.md:584
+msgid ":math:`2^{-31}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:572 ../../../headers/math/log.md:578
+#: ../../../headers/math/log.md:584
+msgid ":math:`2^{-32}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:572
+msgid "155"
+msgstr ""
+
+#: ../../../headers/math/log.md:574 ../../../headers/math/log.md:588
+msgid ":math:`2^{-22}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:574
+msgid "89"
+msgstr ""
+
+#: ../../../headers/math/log.md:576 ../../../headers/math/log.md:586
+msgid "256"
+msgstr ""
+
+#: ../../../headers/math/log.md:576
+msgid "111"
+msgstr ""
+
+#: ../../../headers/math/log.md:578
+msgid "320"
+msgstr ""
+
+#: ../../../headers/math/log.md:578
+msgid ":math:`2^{-33}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:578
+msgid "138"
+msgstr ""
+
+#: ../../../headers/math/log.md:580 ../../../headers/math/log.md:582
+msgid "384"
+msgstr ""
+
+#: ../../../headers/math/log.md:580
+msgid ":math:`2^{-37}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:580
+msgid ":math:`2^{-38}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:580
+msgid "170"
+msgstr ""
+
+#: ../../../headers/math/log.md:582
+msgid ":math:`2^{-25}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:582
+msgid ":math:`2^{-26}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:582
+msgid "92"
+msgstr ""
+
+#: ../../../headers/math/log.md:584 ../../../headers/math/log.md:588
+msgid "512"
+msgstr ""
+
+#: ../../../headers/math/log.md:584
+msgid "117"
+msgstr ""
+
+#: ../../../headers/math/log.md:588
+msgid ":math:`2^{-21}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:588
+msgid "74"
+msgstr ""
+
+#: ../../../headers/math/log.md:592
+msgid "where:"
+msgstr ""
+
+#: ../../../headers/math/log.md:594
+msgid "Number of steps = {math}`i + 1`"
+msgstr ""
+
+#: ../../../headers/math/log.md:595
+msgid "Table size = {math}`(i + 1) 2^{M + 1}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:596
+msgid "Output bound = {math}`2^{-N_{i + 1}} = 2^{-N_0 - (i + 1) M}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:597
+msgid "{math}`\\operatorname{ulp}(s_{i, k}) = 2^{-N_{i + 1} - 1}`"
+msgstr ""
+
+#: ../../../headers/math/log.md:598
+msgid ""
+"{math}`\\operatorname{prec}(u_{i + 1}) = (i + 1) N_0 + \\frac{i(i + 1)}{2} "
+"\\cdot M + 53`"
+msgstr ""

@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../headers/search.md:1
+msgid "search.h"
+msgstr ""
+
+#: ../../../headers/search.md:3
+msgid "Source Location"
+msgstr ""
+
+#: ../../../headers/search.md:5
+msgid "The main source for search functions is located at: `libc/src/search`."
+msgstr ""
+
+#: ../../../headers/search.md:7
+msgid "Hashtable implementation is located at: `libc/src/__support/HashTable`."
+msgstr ""
+
+#: ../../../headers/search.md:9
+msgid "The tests are located at: `libc/test/src/search/`."
+msgstr ""
+
+#: ../../../headers/search.md:12
+msgid "Implementation Status"
+msgstr ""
+
+#: ../../../headers/search.md:14
+msgid "POSIX Standard Types"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "Type Name"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "Available"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "ACTION"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "{{ check }}"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "ENTRY"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "VISIT"
+msgstr ""
+
+#: ../../../headers/search.md:22
+msgid "POSIX Standard Functions"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "Function Name"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "hcreate"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "hdestroy"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "hsearch"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "insque"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "lfind"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "lsearch"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "remque"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "tdelete"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "tfind"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "tsearch"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "twalk"
+msgstr ""
+
+#: ../../../headers/search.md:38
+msgid "GNU Extension Functions"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "hsearch_r"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "hcreate_r"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "hdestroy_r"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "tdestroy"
+msgstr ""
+
+#: ../../../headers/search.md:0
+msgid "twalk_r"
+msgstr ""
+
+#: ../../../headers/search.md:48
+msgid "Standards"
+msgstr ""
+
+#: ../../../headers/search.md:50
+msgid ""
+"search.h is specified in POSIX.1-200x (Portable Operating System Interface, "
+"Volume1: Base Specifications)."
+msgstr ""
