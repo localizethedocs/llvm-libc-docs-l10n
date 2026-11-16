@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-16 18:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,993 +17,1183 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../headers/stdio.rst:3
+#: ../../../headers/stdio.md:1
 msgid "stdio.h"
 msgstr ""
 
-#: ../../../headers/stdio.rst:6
+#: ../../../headers/stdio.md:3
+msgid ""
+"<div class=\"hc-card\"><div class=\"hc-summary-top\"><div class=\"hc-pill-"
+"row\"><span class=\"hc-pill hc-pill-c23\">C23 Standard</span><span "
+"class=\"hc-pill hc-pill-posix\">POSIX.1-2024</span></div><div class=\"hc-"
+"overall-stat\">95 / 107 <span style=\"color:var(--hc-blue-text)\">(88.8%)</"
+"span></div></div><div class=\"hc-progress-track hc-progress-lg\" "
+"role=\"progressbar\" aria-label=\"stdio.h overall implementation progress\" "
+"aria-valuenow=\"88.8\" aria-valuemin=\"0\" aria-valuemax=\"100\"><div "
+"class=\"hc-progress-fill\" style=\"background:var(--hc-blue-text);width:88.8%"
+"\"></div></div><div class=\"hc-grid-cards\"><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">C23 Standard</div><div class=\"hc-mini-val\">69 / 71 "
+"<span style=\"color:var(--hc-green-text)\">(97.2%)</span></div><div "
+"class=\"hc-progress-track\" role=\"progressbar\" aria-label=\"stdio.h C23 "
+"Standard completion\" aria-valuenow=\"97.2\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"green-text);width:97.2%\"></div></div></div><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">POSIX.1-2024</div><div class=\"hc-mini-val\">85 / 94 "
+"<span style=\"color:var(--hc-blue-text)\">(90.4%)</span></div><div "
+"class=\"hc-progress-track\" role=\"progressbar\" aria-label=\"stdio.h "
+"POSIX.1-2024 completion\" aria-valuenow=\"90.4\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"blue-text);width:90.4%\"></div></div></div><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">Functions</div><div class=\"hc-mini-val\">67 / 76 "
+"<span style=\"color:var(--hc-green-text)\">(88.2%)</span></div><div "
+"class=\"hc-progress-track\" role=\"progressbar\" aria-label=\"stdio.h "
+"Functions completion\" aria-valuenow=\"88.2\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"green-text);width:88.2%\"></div></div></div><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">Macros</div><div class=\"hc-mini-val\">16 / 19 <span "
+"style=\"color:var(--hc-blue-text)\">(84.2%)</span></div><div class=\"hc-"
+"progress-track\" role=\"progressbar\" aria-label=\"stdio.h Macros "
+"completion\" aria-valuenow=\"84.2\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"blue-text);width:84.2%\"></div></div></div><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">Types</div><div class=\"hc-mini-val\">9 / 9 <span "
+"style=\"color:var(--hc-purple-text)\">(100.0%)</span></div><div class=\"hc-"
+"progress-track\" role=\"progressbar\" aria-label=\"stdio.h Types "
+"completion\" aria-valuenow=\"100.0\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"purple-text);width:100.0%\"></div></div></div><div class=\"hc-mini-"
+"card\"><div class=\"hc-mini-title\">Global Variables</div><div class=\"hc-"
+"mini-val\">3 / 3 <span style=\"color:var(--hc-amber-text)\">(100.0%)</span></"
+"div><div class=\"hc-progress-track\" role=\"progressbar\" aria-"
+"label=\"stdio.h Global Variables completion\" aria-valuenow=\"100.0\" aria-"
+"valuemin=\"0\" aria-valuemax=\"100\"><div class=\"hc-progress-fill\" "
+"style=\"background:var(--hc-amber-text);width:100.0%\"></div></div></div></"
+"div></div>"
+msgstr ""
+
+#: ../../../headers/stdio.md:7
+msgid "Types"
+msgstr ""
+
+#: ../../../headers/stdio.md:9
+msgid ""
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Type</th><th class=\"hc-center\">Status</th><th class=\"hc-"
+"center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></tr></"
+"thead>\n"
+"  <tbody>\n"
+"    <tr id=\"type-FILE\"><td><code class=\"hc-sym\">FILE</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/FILE\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"type-cookie_io_functions_t\"><td><code class=\"hc-"
+"sym\">cookie_io_functions_t</code></td><td class=\"hc-center\"><span "
+"class=\"hc-status-yes\" title=\"Implemented\"><span aria-"
+"hidden=\"true\">&#10003;</span><span class=\"hc-sr-only\">Implemented</"
+"span></span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in C23\">&ndash;</span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"type-errno_t\"><td><code class=\"hc-sym\">errno_t</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/error\" title=\"C23 section K.3.5 on "
+"cppreference.com\">K.3.5 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"type-fpos_t\"><td><code class=\"hc-sym\">fpos_t</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fpos_t\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"type-off_t\"><td><code class=\"hc-sym\">off_t</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"type-rsize_t\"><td><code class=\"hc-sym\">rsize_t</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/error\" title=\"C23 section K.3.5 on "
+"cppreference.com\">K.3.5 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"type-size_t\"><td><code class=\"hc-sym\">size_t</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/types/size_t\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"type-ssize_t\"><td><code class=\"hc-sym\">ssize_t</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"type-va_list\"><td><code class=\"hc-sym\">va_list</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
+msgstr ""
+
+#: ../../../headers/stdio.md:26
+msgid "Global Variables"
+msgstr ""
+
+#: ../../../headers/stdio.md:28
+msgid ""
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Global Variable</th><th class=\"hc-center\">Status</th><th "
+"class=\"hc-center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></"
+"tr></thead>\n"
+"  <tbody>\n"
+"    <tr id=\"object-stderr\"><td><code class=\"hc-sym\">stderr</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/std_streams\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"object-stdin\"><td><code class=\"hc-sym\">stdin</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/std_streams\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"object-stdout\"><td><code class=\"hc-sym\">stdout</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/std_streams\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
+msgstr ""
+
+#: ../../../headers/stdio.md:39
 msgid "Macros"
 msgstr ""
 
-#: ../../../headers/stdio.rst:13
-msgid "Macro"
-msgstr ""
-
-#: ../../../headers/stdio.rst:14 ../../../headers/stdio.rst:99
-msgid "Implemented"
-msgstr ""
-
-#: ../../../headers/stdio.rst:15 ../../../headers/stdio.rst:100
-msgid "C23 Standard Section"
-msgstr ""
-
-#: ../../../headers/stdio.rst:16 ../../../headers/stdio.rst:101
-msgid "POSIX Docs"
-msgstr ""
-
-#: ../../../headers/stdio.rst:17
-msgid "BUFSIZ"
-msgstr ""
-
-#: ../../../headers/stdio.rst:18 ../../../headers/stdio.rst:22
-#: ../../../headers/stdio.rst:26 ../../../headers/stdio.rst:30
-#: ../../../headers/stdio.rst:38 ../../../headers/stdio.rst:42
-#: ../../../headers/stdio.rst:46 ../../../headers/stdio.rst:50
-#: ../../../headers/stdio.rst:54 ../../../headers/stdio.rst:58
-#: ../../../headers/stdio.rst:62 ../../../headers/stdio.rst:66
-#: ../../../headers/stdio.rst:78 ../../../headers/stdio.rst:82
-#: ../../../headers/stdio.rst:86 ../../../headers/stdio.rst:103
-#: ../../../headers/stdio.rst:115 ../../../headers/stdio.rst:119
-#: ../../../headers/stdio.rst:123 ../../../headers/stdio.rst:127
-#: ../../../headers/stdio.rst:131 ../../../headers/stdio.rst:135
-#: ../../../headers/stdio.rst:139 ../../../headers/stdio.rst:143
-#: ../../../headers/stdio.rst:147 ../../../headers/stdio.rst:151
-#: ../../../headers/stdio.rst:155 ../../../headers/stdio.rst:159
-#: ../../../headers/stdio.rst:163 ../../../headers/stdio.rst:167
-#: ../../../headers/stdio.rst:171 ../../../headers/stdio.rst:175
-#: ../../../headers/stdio.rst:179 ../../../headers/stdio.rst:183
-#: ../../../headers/stdio.rst:187 ../../../headers/stdio.rst:191
-#: ../../../headers/stdio.rst:195 ../../../headers/stdio.rst:199
-#: ../../../headers/stdio.rst:203 ../../../headers/stdio.rst:211
-#: ../../../headers/stdio.rst:215 ../../../headers/stdio.rst:219
-#: ../../../headers/stdio.rst:223 ../../../headers/stdio.rst:239
-#: ../../../headers/stdio.rst:243 ../../../headers/stdio.rst:247
-#: ../../../headers/stdio.rst:251 ../../../headers/stdio.rst:255
-#: ../../../headers/stdio.rst:263 ../../../headers/stdio.rst:271
-#: ../../../headers/stdio.rst:275 ../../../headers/stdio.rst:279
-#: ../../../headers/stdio.rst:283 ../../../headers/stdio.rst:287
-#: ../../../headers/stdio.rst:291 ../../../headers/stdio.rst:295
-#: ../../../headers/stdio.rst:299 ../../../headers/stdio.rst:303
-#: ../../../headers/stdio.rst:307 ../../../headers/stdio.rst:311
-#: ../../../headers/stdio.rst:315 ../../../headers/stdio.rst:319
-#: ../../../headers/stdio.rst:323 ../../../headers/stdio.rst:331
-#: ../../../headers/stdio.rst:335 ../../../headers/stdio.rst:339
-#: ../../../headers/stdio.rst:343 ../../../headers/stdio.rst:347
-#: ../../../headers/stdio.rst:351 ../../../headers/stdio.rst:355
-msgid "|check|"
-msgstr ""
-
-#: ../../../<rst_prologue>:5
-msgid ":raw-html:`&#x2705`"
-msgstr ""
-
-#: ../../../headers/stdio.rst:19 ../../../headers/stdio.rst:23
-#: ../../../headers/stdio.rst:27 ../../../headers/stdio.rst:31
-#: ../../../headers/stdio.rst:39 ../../../headers/stdio.rst:43
-#: ../../../headers/stdio.rst:47 ../../../headers/stdio.rst:51
-#: ../../../headers/stdio.rst:55 ../../../headers/stdio.rst:59
-#: ../../../headers/stdio.rst:63 ../../../headers/stdio.rst:67
-#: ../../../headers/stdio.rst:71 ../../../headers/stdio.rst:75
-#: ../../../headers/stdio.rst:79 ../../../headers/stdio.rst:83
-#: ../../../headers/stdio.rst:87
-msgid "7.23.1"
-msgstr ""
-
-#: ../../../headers/stdio.rst:20 ../../../headers/stdio.rst:24
-#: ../../../headers/stdio.rst:28 ../../../headers/stdio.rst:32
-#: ../../../headers/stdio.rst:36 ../../../headers/stdio.rst:40
-#: ../../../headers/stdio.rst:44 ../../../headers/stdio.rst:48
-#: ../../../headers/stdio.rst:52 ../../../headers/stdio.rst:56
-#: ../../../headers/stdio.rst:60 ../../../headers/stdio.rst:64
-#: ../../../headers/stdio.rst:68 ../../../headers/stdio.rst:80
-#: ../../../headers/stdio.rst:84 ../../../headers/stdio.rst:88
+#: ../../../headers/stdio.md:41
 msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
-"stdio.h.html>`__"
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Macro</th><th class=\"hc-center\">Status</th><th class=\"hc-"
+"center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></tr></"
+"thead>\n"
+"  <tbody>\n"
+"    <tr id=\"macro-BUFSIZ\"><td><code class=\"hc-sym\">BUFSIZ</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-EOF\"><td><code class=\"hc-sym\">EOF</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-FILENAME_MAX\"><td><code class=\"hc-sym\">FILENAME_MAX</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-FOPEN_MAX\"><td><code class=\"hc-sym\">FOPEN_MAX</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-L_ctermid\"><td><code class=\"hc-sym\">L_ctermid</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-L_tmpnam\"><td><code class=\"hc-sym\">L_tmpnam</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-NULL\"><td><code class=\"hc-sym\">NULL</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/types/NULL\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-SEEK_CUR\"><td><code class=\"hc-sym\">SEEK_CUR</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fseek\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-SEEK_END\"><td><code class=\"hc-sym\">SEEK_END</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fseek\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-SEEK_SET\"><td><code class=\"hc-sym\">SEEK_SET</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fseek\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-TMP_MAX\"><td><code class=\"hc-sym\">TMP_MAX</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-_IOFBF\"><td><code class=\"hc-sym\">_IOFBF</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-_IOLBF\"><td><code class=\"hc-sym\">_IOLBF</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-_IONBF\"><td><code class=\"hc-sym\">_IONBF</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-_PRINTF_NAN_LEN_MAX\"><td><code class=\"hc-"
+"sym\">_PRINTF_NAN_LEN_MAX</code></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" title=\"Not Implemented\"><span aria-"
+"hidden=\"true\">&ndash;</span><span class=\"hc-sr-only\">Not Implemented</"
+"span></span></td><td class=\"hc-center\"><span class=\"hc-c-cell\"><a "
+"class=\"hc-c-link\" href=\"https://en.cppreference.com/w/c/io\" title=\"C23 "
+"section 7.23.1 on cppreference.com\">7.23.1 <span aria-"
+"hidden=\"true\">&#8599;</span></a></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"macro-__STDC_VERSION_STDIO_H__\"><td><code class=\"hc-"
+"sym\">__STDC_VERSION_STDIO_H__</code></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" title=\"Not Implemented\"><span aria-"
+"hidden=\"true\">&ndash;</span><span class=\"hc-sr-only\">Not Implemented</"
+"span></span></td><td class=\"hc-center\"><span class=\"hc-c-cell\"><a "
+"class=\"hc-c-link\" href=\"https://en.cppreference.com/w/c/io\" title=\"C23 "
+"section 7.23.1 on cppreference.com\">7.23.1 <span aria-"
+"hidden=\"true\">&#8599;</span></a></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"macro-stderr\"><td><code class=\"hc-sym\">stderr</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/std_streams\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-stdin\"><td><code class=\"hc-sym\">stdin</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/std_streams\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-stdout\"><td><code class=\"hc-sym\">stdout</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/std_streams\" title=\"C23 section 7.23.1 on "
+"cppreference.com\">7.23.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"stdio.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
 msgstr ""
 
-#: ../../../headers/stdio.rst:21
-msgid "EOF"
-msgstr ""
-
-#: ../../../headers/stdio.rst:25
-msgid "FILENAME_MAX"
-msgstr ""
-
-#: ../../../headers/stdio.rst:29
-msgid "FOPEN_MAX"
-msgstr ""
-
-#: ../../../headers/stdio.rst:33
-msgid "L_ctermid"
-msgstr ""
-
-#: ../../../headers/stdio.rst:37
-msgid "L_tmpnam"
-msgstr ""
-
-#: ../../../headers/stdio.rst:41
-msgid "SEEK_CUR"
-msgstr ""
-
-#: ../../../headers/stdio.rst:45
-msgid "SEEK_END"
-msgstr ""
-
-#: ../../../headers/stdio.rst:49
-msgid "SEEK_SET"
-msgstr ""
-
-#: ../../../headers/stdio.rst:53
-msgid "TMP_MAX"
-msgstr ""
-
-#: ../../../headers/stdio.rst:57
-msgid "_IOFBF"
-msgstr ""
-
-#: ../../../headers/stdio.rst:61
-msgid "_IOLBF"
-msgstr ""
-
-#: ../../../headers/stdio.rst:65
-msgid "_IONBF"
-msgstr ""
-
-#: ../../../headers/stdio.rst:69
-msgid "_PRINTF_NAN_LEN_MAX"
-msgstr ""
-
-#: ../../../headers/stdio.rst:73
-msgid "__STDC_VERSION_STDIO_H__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:77
-msgid "stderr"
-msgstr ""
-
-#: ../../../headers/stdio.rst:81
-msgid "stdin"
-msgstr ""
-
-#: ../../../headers/stdio.rst:85
-msgid "stdout"
-msgstr ""
-
-#: ../../../headers/stdio.rst:91
+#: ../../../headers/stdio.md:68
 msgid "Functions"
 msgstr ""
 
-#: ../../../headers/stdio.rst:98
-msgid "Function"
-msgstr ""
-
-#: ../../../headers/stdio.rst:102
-msgid "clearerr"
-msgstr ""
-
-#: ../../../headers/stdio.rst:104
-msgid "7.23.10.1"
-msgstr ""
-
-#: ../../../headers/stdio.rst:105
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"clearerr.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:106
-msgid "ctermid"
-msgstr ""
-
-#: ../../../headers/stdio.rst:109
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"ctermid.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:110
-msgid "dprintf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:113
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"dprintf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:114
-msgid "fclose"
-msgstr ""
-
-#: ../../../headers/stdio.rst:116
-msgid "7.23.5.1"
-msgstr ""
-
-#: ../../../headers/stdio.rst:117
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fclose.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:118
-msgid "fdopen"
-msgstr ""
-
-#: ../../../headers/stdio.rst:121
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fdopen.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:122
-msgid "feof"
-msgstr ""
-
-#: ../../../headers/stdio.rst:124
-msgid "7.23.10.2"
-msgstr ""
-
-#: ../../../headers/stdio.rst:125
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"feof.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:126
-msgid "ferror"
-msgstr ""
-
-#: ../../../headers/stdio.rst:128
-msgid "7.23.10.3"
-msgstr ""
-
-#: ../../../headers/stdio.rst:129
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"ferror.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:130
-msgid "fflush"
-msgstr ""
-
-#: ../../../headers/stdio.rst:132
-msgid "7.23.5.2"
-msgstr ""
-
-#: ../../../headers/stdio.rst:133
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fflush.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:134
-msgid "fgetc"
-msgstr ""
-
-#: ../../../headers/stdio.rst:136
-msgid "7.23.7.1"
-msgstr ""
-
-#: ../../../headers/stdio.rst:137
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fgetc.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:138
-msgid "fgetpos"
-msgstr ""
-
-#: ../../../headers/stdio.rst:140
-msgid "7.23.9.1"
-msgstr ""
-
-#: ../../../headers/stdio.rst:141
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fgetpos.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:142
-msgid "fgets"
-msgstr ""
-
-#: ../../../headers/stdio.rst:144
-msgid "7.23.7.2"
-msgstr ""
-
-#: ../../../headers/stdio.rst:145
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fgets.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:146
-msgid "fileno"
-msgstr ""
-
-#: ../../../headers/stdio.rst:149
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fileno.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:150
-msgid "flockfile"
-msgstr ""
-
-#: ../../../headers/stdio.rst:153
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"flockfile.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:154
-msgid "fmemopen"
-msgstr ""
-
-#: ../../../headers/stdio.rst:157
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fmemopen.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:158
-msgid "fopen"
-msgstr ""
-
-#: ../../../headers/stdio.rst:160
-msgid "7.23.5.3"
-msgstr ""
-
-#: ../../../headers/stdio.rst:161
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fopen.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:162
-msgid "fprintf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:164
-msgid "7.23.6.1"
-msgstr ""
-
-#: ../../../headers/stdio.rst:165
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fprintf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:166
-msgid "fputc"
-msgstr ""
-
-#: ../../../headers/stdio.rst:168
-msgid "7.23.7.3"
-msgstr ""
-
-#: ../../../headers/stdio.rst:169
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fputc.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:170
-msgid "fputs"
-msgstr ""
-
-#: ../../../headers/stdio.rst:172
-msgid "7.23.7.4"
-msgstr ""
-
-#: ../../../headers/stdio.rst:173
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fputs.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:174
-msgid "fread"
-msgstr ""
-
-#: ../../../headers/stdio.rst:176
-msgid "7.23.8.1"
-msgstr ""
-
-#: ../../../headers/stdio.rst:177
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fread.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:178
-msgid "freopen"
-msgstr ""
-
-#: ../../../headers/stdio.rst:180
-msgid "7.23.5.4"
-msgstr ""
-
-#: ../../../headers/stdio.rst:181
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"freopen.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:182
-msgid "fscanf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:184
-msgid "7.23.6.2"
-msgstr ""
-
-#: ../../../headers/stdio.rst:185
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fscanf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:186
-msgid "fseek"
-msgstr ""
-
-#: ../../../headers/stdio.rst:188
-msgid "7.23.9.2"
-msgstr ""
-
-#: ../../../headers/stdio.rst:189
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fseek.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:190
-msgid "fseeko"
-msgstr ""
-
-#: ../../../headers/stdio.rst:193
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fseeko.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:194
-msgid "fsetpos"
-msgstr ""
-
-#: ../../../headers/stdio.rst:196
-msgid "7.23.9.3"
-msgstr ""
-
-#: ../../../headers/stdio.rst:197
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fsetpos.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:198
-msgid "ftell"
-msgstr ""
-
-#: ../../../headers/stdio.rst:200
-msgid "7.23.9.4"
-msgstr ""
-
-#: ../../../headers/stdio.rst:201
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"ftell.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:202
-msgid "ftello"
-msgstr ""
-
-#: ../../../headers/stdio.rst:205
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"ftello.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:206
-msgid "ftrylockfile"
-msgstr ""
-
-#: ../../../headers/stdio.rst:209
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"ftrylockfile.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:210
-msgid "funlockfile"
-msgstr ""
-
-#: ../../../headers/stdio.rst:213
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"funlockfile.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:214
-msgid "fwrite"
-msgstr ""
-
-#: ../../../headers/stdio.rst:216
-msgid "7.23.8.2"
-msgstr ""
-
-#: ../../../headers/stdio.rst:217
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fwrite.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:218
-msgid "getc"
-msgstr ""
-
-#: ../../../headers/stdio.rst:220
-msgid "7.23.7.5"
-msgstr ""
-
-#: ../../../headers/stdio.rst:221
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"getc.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:222
-msgid "getchar"
-msgstr ""
-
-#: ../../../headers/stdio.rst:224
-msgid "7.23.7.6"
-msgstr ""
-
-#: ../../../headers/stdio.rst:225
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"getchar.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:226
-msgid "getdelim"
-msgstr ""
-
-#: ../../../headers/stdio.rst:229
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"getdelim.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:230
-msgid "getline"
-msgstr ""
-
-#: ../../../headers/stdio.rst:233
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"getline.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:234
-msgid "open_memstream"
-msgstr ""
-
-#: ../../../headers/stdio.rst:237
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"open_memstream.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:238
-msgid "pclose"
-msgstr ""
-
-#: ../../../headers/stdio.rst:241
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"pclose.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:242
-msgid "perror"
-msgstr ""
-
-#: ../../../headers/stdio.rst:244
-msgid "7.23.10.4"
-msgstr ""
-
-#: ../../../headers/stdio.rst:245
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"perror.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:246
-msgid "popen"
-msgstr ""
-
-#: ../../../headers/stdio.rst:249
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"popen.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:250
-msgid "printf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:252
-msgid "7.23.6.3"
-msgstr ""
-
-#: ../../../headers/stdio.rst:253
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"printf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:254
-msgid "putc"
-msgstr ""
-
-#: ../../../headers/stdio.rst:256
-msgid "7.23.7.7"
-msgstr ""
-
-#: ../../../headers/stdio.rst:257
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"putc.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:258
-msgid "putc_unlocked"
-msgstr ""
-
-#: ../../../headers/stdio.rst:261
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"putc_unlocked.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:262
-msgid "putchar"
-msgstr ""
-
-#: ../../../headers/stdio.rst:264
-msgid "7.23.7.8"
-msgstr ""
-
-#: ../../../headers/stdio.rst:265
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"putchar.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:266
-msgid "putchar_unlocked"
-msgstr ""
-
-#: ../../../headers/stdio.rst:269
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"putchar_unlocked.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:270
-msgid "puts"
-msgstr ""
-
-#: ../../../headers/stdio.rst:272
-msgid "7.23.7.9"
-msgstr ""
-
-#: ../../../headers/stdio.rst:273
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"puts.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:274
-msgid "remove"
-msgstr ""
-
-#: ../../../headers/stdio.rst:276
-msgid "7.23.4.1"
-msgstr ""
-
-#: ../../../headers/stdio.rst:277
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"remove.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:278
-msgid "rename"
-msgstr ""
-
-#: ../../../headers/stdio.rst:280
-msgid "7.23.4.2"
-msgstr ""
-
-#: ../../../headers/stdio.rst:281
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"rename.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:282
-msgid "renameat"
-msgstr ""
-
-#: ../../../headers/stdio.rst:285
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"renameat.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:286
-msgid "rewind"
-msgstr ""
-
-#: ../../../headers/stdio.rst:288
-msgid "7.23.9.5"
-msgstr ""
-
-#: ../../../headers/stdio.rst:289
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"rewind.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:290
-msgid "scanf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:292
-msgid "7.23.6.4"
-msgstr ""
-
-#: ../../../headers/stdio.rst:293
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"scanf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:294
-msgid "setbuf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:296
-msgid "7.23.5.5"
-msgstr ""
-
-#: ../../../headers/stdio.rst:297
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"setbuf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:298
-msgid "setvbuf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:300
-msgid "7.23.5.6"
-msgstr ""
-
-#: ../../../headers/stdio.rst:301
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"setvbuf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:302
-msgid "snprintf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:304
-msgid "7.23.6.5"
-msgstr ""
-
-#: ../../../headers/stdio.rst:305
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"snprintf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:306
-msgid "sprintf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:308
-msgid "7.23.6.6"
-msgstr ""
-
-#: ../../../headers/stdio.rst:309
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"sprintf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:310
-msgid "sscanf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:312
-msgid "7.23.6.7"
-msgstr ""
-
-#: ../../../headers/stdio.rst:313
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"sscanf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:314
-msgid "tmpfile"
-msgstr ""
-
-#: ../../../headers/stdio.rst:316
-msgid "7.23.4.3"
-msgstr ""
-
-#: ../../../headers/stdio.rst:317
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"tmpfile.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:318
-msgid "tmpnam"
-msgstr ""
-
-#: ../../../headers/stdio.rst:320
-msgid "7.23.4.4"
-msgstr ""
-
-#: ../../../headers/stdio.rst:321
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"tmpnam.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:322
-msgid "ungetc"
-msgstr ""
-
-#: ../../../headers/stdio.rst:324
-msgid "7.23.7.10"
-msgstr ""
-
-#: ../../../headers/stdio.rst:325
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"ungetc.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:326
-msgid "vdprintf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:329
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"vdprintf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:330
-msgid "vfprintf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:332
-msgid "7.23.6.8"
-msgstr ""
-
-#: ../../../headers/stdio.rst:333
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"vfprintf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:334
-msgid "vfscanf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:336
-msgid "7.23.6.9"
-msgstr ""
-
-#: ../../../headers/stdio.rst:337
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"vfscanf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:338
-msgid "vprintf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:340
-msgid "7.23.6.10"
-msgstr ""
-
-#: ../../../headers/stdio.rst:341
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"vprintf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:342
-msgid "vscanf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:344
-msgid "7.23.6.11"
-msgstr ""
-
-#: ../../../headers/stdio.rst:345
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"vscanf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:346
-msgid "vsnprintf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:348
-msgid "7.23.6.12"
-msgstr ""
-
-#: ../../../headers/stdio.rst:349
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"vsnprintf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:350
-msgid "vsprintf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:352
-msgid "7.23.6.13"
-msgstr ""
-
-#: ../../../headers/stdio.rst:353
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"vsprintf.html>`__"
-msgstr ""
-
-#: ../../../headers/stdio.rst:354
-msgid "vsscanf"
-msgstr ""
-
-#: ../../../headers/stdio.rst:356
-msgid "7.23.6.14"
-msgstr ""
-
-#: ../../../headers/stdio.rst:357
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"vsscanf.html>`__"
+#: ../../../headers/stdio.md:70
+msgid ""
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Function</th><th class=\"hc-center\">Status</th><th "
+"class=\"hc-center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></"
+"tr></thead>\n"
+"  <tbody>\n"
+"    <tr id=\"function-asprintf\"><td><code class=\"hc-sym\">asprintf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"asprintf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-clearerr\"><td><code class=\"hc-sym\">clearerr</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/clearerr\" title=\"C23 section 7.23.10.1 on "
+"cppreference.com\">7.23.10.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"clearerr.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-clearerr_unlocked\"><td><code class=\"hc-"
+"sym\">clearerr_unlocked</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-ctermid\"><td><code class=\"hc-sym\">ctermid</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ctermid.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-dprintf\"><td><code class=\"hc-sym\">dprintf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"dprintf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-fclose\"><td><code class=\"hc-sym\">fclose</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fclose\" title=\"C23 section 7.23.5.1 on "
+"cppreference.com\">7.23.5.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fclose.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-fdopen\"><td><code class=\"hc-sym\">fdopen</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fdopen.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-feof\"><td><code class=\"hc-sym\">feof</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/feof\" title=\"C23 section 7.23.10.2 on "
+"cppreference.com\">7.23.10.2 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/feof.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-feof_unlocked\"><td><code class=\"hc-"
+"sym\">feof_unlocked</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-ferror\"><td><code class=\"hc-sym\">ferror</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/ferror\" title=\"C23 section 7.23.10.3 on "
+"cppreference.com\">7.23.10.3 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ferror.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-ferror_unlocked\"><td><code class=\"hc-"
+"sym\">ferror_unlocked</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-fflush\"><td><code class=\"hc-sym\">fflush</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fflush\" title=\"C23 section 7.23.5.2 on "
+"cppreference.com\">7.23.5.2 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fflush.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-fgetc\"><td><code class=\"hc-sym\">fgetc</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fgetc\" title=\"C23 section 7.23.7.1 on "
+"cppreference.com\">7.23.7.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/fgetc.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-fgetc_unlocked\"><td><code class=\"hc-"
+"sym\">fgetc_unlocked</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-fgetpos\"><td><code class=\"hc-sym\">fgetpos</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fgetpos\" title=\"C23 section 7.23.9.1 on "
+"cppreference.com\">7.23.9.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fgetpos.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-fgets\"><td><code class=\"hc-sym\">fgets</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fgets\" title=\"C23 section 7.23.7.2 on "
+"cppreference.com\">7.23.7.2 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/fgets.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-fileno\"><td><code class=\"hc-sym\">fileno</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fileno.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-flockfile\"><td><code class=\"hc-sym\">flockfile</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"flockfile.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-fmemopen\"><td><code class=\"hc-sym\">fmemopen</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fmemopen.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-fopen\"><td><code class=\"hc-sym\">fopen</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fopen\" title=\"C23 section 7.23.5.3 on "
+"cppreference.com\">7.23.5.3 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/fopen.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-fopencookie\"><td><code class=\"hc-sym\">fopencookie</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-fprintf\"><td><code class=\"hc-sym\">fprintf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fprintf\" title=\"C23 section 7.23.6.1 on "
+"cppreference.com\">7.23.6.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fprintf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-fputc\"><td><code class=\"hc-sym\">fputc</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fputc\" title=\"C23 section 7.23.7.3 on "
+"cppreference.com\">7.23.7.3 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/fputc.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-fputs\"><td><code class=\"hc-sym\">fputs</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fputs\" title=\"C23 section 7.23.7.4 on "
+"cppreference.com\">7.23.7.4 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/fputs.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-fread\"><td><code class=\"hc-sym\">fread</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fread\" title=\"C23 section 7.23.8.1 on "
+"cppreference.com\">7.23.8.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/fread.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-fread_unlocked\"><td><code class=\"hc-"
+"sym\">fread_unlocked</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-freopen\"><td><code class=\"hc-sym\">freopen</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/freopen\" title=\"C23 section 7.23.5.4 on "
+"cppreference.com\">7.23.5.4 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"freopen.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-fscanf\"><td><code class=\"hc-sym\">fscanf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fscanf\" title=\"C23 section 7.23.6.2 on "
+"cppreference.com\">7.23.6.2 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fscanf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-fseek\"><td><code class=\"hc-sym\">fseek</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fseek\" title=\"C23 section 7.23.9.2 on "
+"cppreference.com\">7.23.9.2 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/fseek.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-fseeko\"><td><code class=\"hc-sym\">fseeko</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fseeko.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-fsetpos\"><td><code class=\"hc-sym\">fsetpos</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fsetpos\" title=\"C23 section 7.23.9.3 on "
+"cppreference.com\">7.23.9.3 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fsetpos.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-ftell\"><td><code class=\"hc-sym\">ftell</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/ftell\" title=\"C23 section 7.23.9.4 on "
+"cppreference.com\">7.23.9.4 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/ftell.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-ftello\"><td><code class=\"hc-sym\">ftello</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ftello.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-ftrylockfile\"><td><code class=\"hc-"
+"sym\">ftrylockfile</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-no\" title=\"Not Implemented\"><span aria-hidden=\"true\">&ndash;</"
+"span><span class=\"hc-sr-only\">Not Implemented</span></span></td><td "
+"class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ftrylockfile.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"    <tr id=\"function-funlockfile\"><td><code class=\"hc-sym\">funlockfile</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"funlockfile.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"    <tr id=\"function-fwrite\"><td><code class=\"hc-sym\">fwrite</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fwrite\" title=\"C23 section 7.23.8.2 on "
+"cppreference.com\">7.23.8.2 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fwrite.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-fwrite_unlocked\"><td><code class=\"hc-"
+"sym\">fwrite_unlocked</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-getc\"><td><code class=\"hc-sym\">getc</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fgetc\" title=\"C23 section 7.23.7.5 on "
+"cppreference.com\">7.23.7.5 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/getc.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-getc_unlocked\"><td><code class=\"hc-"
+"sym\">getc_unlocked</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getc_unlocked.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"    <tr id=\"function-getchar\"><td><code class=\"hc-sym\">getchar</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/getchar\" title=\"C23 section 7.23.7.6 on "
+"cppreference.com\">7.23.7.6 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getchar.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-getchar_unlocked\"><td><code class=\"hc-"
+"sym\">getchar_unlocked</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getchar_unlocked.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</"
+"span></a></td></tr>\n"
+"    <tr id=\"function-getdelim\"><td><code class=\"hc-sym\">getdelim</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getdelim.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-getline\"><td><code class=\"hc-sym\">getline</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"getline.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-open_memstream\"><td><code class=\"hc-"
+"sym\">open_memstream</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-no\" title=\"Not Implemented\"><span aria-hidden=\"true\">&ndash;</"
+"span><span class=\"hc-sr-only\">Not Implemented</span></span></td><td "
+"class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"open_memstream.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</"
+"span></a></td></tr>\n"
+"    <tr id=\"function-pclose\"><td><code class=\"hc-sym\">pclose</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"pclose.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-perror\"><td><code class=\"hc-sym\">perror</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/perror\" title=\"C23 section 7.23.10.4 on "
+"cppreference.com\">7.23.10.4 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"perror.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-popen\"><td><code class=\"hc-sym\">popen</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/popen.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-printf\"><td><code class=\"hc-sym\">printf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fprintf\" title=\"C23 section 7.23.6.3 on "
+"cppreference.com\">7.23.6.3 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"printf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-putc\"><td><code class=\"hc-sym\">putc</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fputc\" title=\"C23 section 7.23.7.7 on "
+"cppreference.com\">7.23.7.7 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/putc.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-putc_unlocked\"><td><code class=\"hc-"
+"sym\">putc_unlocked</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-no\" title=\"Not Implemented\"><span aria-hidden=\"true\">&ndash;</"
+"span><span class=\"hc-sr-only\">Not Implemented</span></span></td><td "
+"class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"putc_unlocked.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"    <tr id=\"function-putchar\"><td><code class=\"hc-sym\">putchar</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/putchar\" title=\"C23 section 7.23.7.8 on "
+"cppreference.com\">7.23.7.8 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"putchar.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-putchar_unlocked\"><td><code class=\"hc-"
+"sym\">putchar_unlocked</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-no\" title=\"Not Implemented\"><span aria-hidden=\"true\">&ndash;</"
+"span><span class=\"hc-sr-only\">Not Implemented</span></span></td><td "
+"class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"putchar_unlocked.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</"
+"span></a></td></tr>\n"
+"    <tr id=\"function-puts\"><td><code class=\"hc-sym\">puts</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/puts\" title=\"C23 section 7.23.7.9 on "
+"cppreference.com\">7.23.7.9 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/puts.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-remove\"><td><code class=\"hc-sym\">remove</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/remove\" title=\"C23 section 7.23.4.1 on "
+"cppreference.com\">7.23.4.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"remove.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-rename\"><td><code class=\"hc-sym\">rename</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/rename\" title=\"C23 section 7.23.4.2 on "
+"cppreference.com\">7.23.4.2 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"rename.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-renameat\"><td><code class=\"hc-sym\">renameat</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"renameat.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-rewind\"><td><code class=\"hc-sym\">rewind</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/rewind\" title=\"C23 section 7.23.9.5 on "
+"cppreference.com\">7.23.9.5 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"rewind.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-scanf\"><td><code class=\"hc-sym\">scanf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fscanf\" title=\"C23 section 7.23.6.4 on "
+"cppreference.com\">7.23.6.4 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/scanf.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-setbuf\"><td><code class=\"hc-sym\">setbuf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/setbuf\" title=\"C23 section 7.23.5.5 on "
+"cppreference.com\">7.23.5.5 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setbuf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-setvbuf\"><td><code class=\"hc-sym\">setvbuf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/setvbuf\" title=\"C23 section 7.23.5.6 on "
+"cppreference.com\">7.23.5.6 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setvbuf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-snprintf\"><td><code class=\"hc-sym\">snprintf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fprintf\" title=\"C23 section 7.23.6.5 on "
+"cppreference.com\">7.23.6.5 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"snprintf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-sprintf\"><td><code class=\"hc-sym\">sprintf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fprintf\" title=\"C23 section 7.23.6.6 on "
+"cppreference.com\">7.23.6.6 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sprintf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-sscanf\"><td><code class=\"hc-sym\">sscanf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/fscanf\" title=\"C23 section 7.23.6.7 on "
+"cppreference.com\">7.23.6.7 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"sscanf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-tempnam\"><td><code class=\"hc-sym\">tempnam</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9699919799.2018edition/functions/"
+"tempnam.html\">Removed (2024) <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-tmpfile\"><td><code class=\"hc-sym\">tmpfile</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/tmpfile\" title=\"C23 section 7.23.4.3 on "
+"cppreference.com\">7.23.4.3 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tmpfile.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-tmpnam\"><td><code class=\"hc-sym\">tmpnam</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/tmpnam\" title=\"C23 section 7.23.4.4 on "
+"cppreference.com\">7.23.4.4 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"tmpnam.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-ungetc\"><td><code class=\"hc-sym\">ungetc</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/ungetc\" title=\"C23 section 7.23.7.10 on "
+"cppreference.com\">7.23.7.10 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"ungetc.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-vasprintf\"><td><code class=\"hc-sym\">vasprintf</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vasprintf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-vdprintf\"><td><code class=\"hc-sym\">vdprintf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vdprintf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-vfprintf\"><td><code class=\"hc-sym\">vfprintf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/vfprintf\" title=\"C23 section 7.23.6.8 on "
+"cppreference.com\">7.23.6.8 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vfprintf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-vfscanf\"><td><code class=\"hc-sym\">vfscanf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/vfscanf\" title=\"C23 section 7.23.6.9 on "
+"cppreference.com\">7.23.6.9 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vfscanf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-vprintf\"><td><code class=\"hc-sym\">vprintf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/vfprintf\" title=\"C23 section 7.23.6.10 on "
+"cppreference.com\">7.23.6.10 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vprintf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-vscanf\"><td><code class=\"hc-sym\">vscanf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/vfscanf\" title=\"C23 section 7.23.6.11 on "
+"cppreference.com\">7.23.6.11 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vscanf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-vsnprintf\"><td><code class=\"hc-sym\">vsnprintf</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/vfprintf\" title=\"C23 section 7.23.6.12 on "
+"cppreference.com\">7.23.6.12 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vsnprintf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-vsprintf\"><td><code class=\"hc-sym\">vsprintf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/vfprintf\" title=\"C23 section 7.23.6.13 on "
+"cppreference.com\">7.23.6.13 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vsprintf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-vsscanf\"><td><code class=\"hc-sym\">vsscanf</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/io/vfscanf\" title=\"C23 section 7.23.6.14 on "
+"cppreference.com\">7.23.6.14 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"vsscanf.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
 msgstr ""

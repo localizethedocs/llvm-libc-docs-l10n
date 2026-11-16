@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-16 18:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,111 +120,121 @@ msgid ""
 msgstr ""
 
 #: ../../../Maintainers.md:32
-msgid "Threading, FreeBSD"
+msgid "Sukumar Sawant"
 msgstr ""
 
 #: ../../../Maintainers.md:33
+msgid ""
+"sawantsukumar@gmail.com (email), [Zorojuro](https://github.com/"
+"sukumarsawant) (github)"
+msgstr ""
+
+#: ../../../Maintainers.md:35
+msgid "Threading, FreeBSD"
+msgstr ""
+
+#: ../../../Maintainers.md:36
 msgid "Yifan Zhu"
 msgstr ""
 
-#: ../../../Maintainers.md:34
+#: ../../../Maintainers.md:37
 msgid ""
 "yifanzhu@rochester.edu (email), [Schrodinger ZHU Yifan](https://github.com/"
 "schrodingerzhu) (github)"
 msgstr ""
 
-#: ../../../Maintainers.md:36
+#: ../../../Maintainers.md:39
 msgid "Runtime Safety, Threading, Math"
 msgstr ""
 
-#: ../../../Maintainers.md:37
+#: ../../../Maintainers.md:40
 msgid "Muhammad Bassiouni"
 msgstr ""
 
-#: ../../../Maintainers.md:38
+#: ../../../Maintainers.md:41
 msgid ""
 "muhammad.m.bassiouni@gmail.com (email), [bassiounix](https://github.com/"
 "bassiounix) (github)"
 msgstr ""
 
-#: ../../../Maintainers.md:40
+#: ../../../Maintainers.md:43
 msgid "RISC-V"
 msgstr ""
 
-#: ../../../Maintainers.md:41
+#: ../../../Maintainers.md:44
 msgid "Mikhail R. Gadelha"
 msgstr ""
 
-#: ../../../Maintainers.md:42
+#: ../../../Maintainers.md:45
 msgid ""
 "mikhail@igalia.com (email), [mikhailramalho](https://github.com/"
 "mikhailramalho) (github)"
 msgstr ""
 
-#: ../../../Maintainers.md:44
+#: ../../../Maintainers.md:47
 msgid "Public Headers / hdrgen"
 msgstr ""
 
-#: ../../../Maintainers.md:45
+#: ../../../Maintainers.md:48
 msgid "Roland McGrath"
 msgstr ""
 
-#: ../../../Maintainers.md:46
+#: ../../../Maintainers.md:49
 msgid ""
 "mcgrathr@google.com (email), [frobtech](https://github.com/frobtech) (github)"
 msgstr ""
 
-#: ../../../Maintainers.md:48
+#: ../../../Maintainers.md:51
 msgid "General Maintenance and Documentation"
 msgstr ""
 
-#: ../../../Maintainers.md:49
+#: ../../../Maintainers.md:52
 msgid "Jeff Bailey"
 msgstr ""
 
-#: ../../../Maintainers.md:50
+#: ../../../Maintainers.md:53
 msgid ""
 "jbailey@raspberryginger.com (email), [kaladron](https://github.com/kaladron) "
 "(github), kaladron (discourse), kaladron725 (discord)"
 msgstr ""
 
-#: ../../../Maintainers.md:52
+#: ../../../Maintainers.md:55
 msgid "ARM and AArch64"
 msgstr ""
 
-#: ../../../Maintainers.md:53
+#: ../../../Maintainers.md:56
 msgid "Victor Campos"
 msgstr ""
 
-#: ../../../Maintainers.md:54
+#: ../../../Maintainers.md:57
 msgid ""
 "victor.campos@arm.com (email), [vhscampos](https://github.com/vhscampos) "
 "(github)"
 msgstr ""
 
-#: ../../../Maintainers.md:56
+#: ../../../Maintainers.md:59
 msgid "Hexagon"
 msgstr ""
 
-#: ../../../Maintainers.md:57
+#: ../../../Maintainers.md:60
 msgid "Kushal Pal"
 msgstr ""
 
-#: ../../../Maintainers.md:58
+#: ../../../Maintainers.md:61
 msgid ""
 "kushpal@qti.qualcomm.com (email), [quic-k](https://github.com/quic-k) "
 "(github)"
 msgstr ""
 
-#: ../../../Maintainers.md:60
+#: ../../../Maintainers.md:63
 msgid "Inactive Maintainers"
 msgstr ""
 
-#: ../../../Maintainers.md:61
+#: ../../../Maintainers.md:64
 msgid "Tristan Ross"
 msgstr ""
 
-#: ../../../Maintainers.md:62
+#: ../../../Maintainers.md:65
 msgid ""
 "tristan.ross@midstall.com (email), [RossComputerGuy](https://github.com/"
 "RossComputerGuy) (github)"
