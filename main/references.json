@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-10-26 08:35:25 -0700",
-        "hash" : "ff57d874f6c8736d54a953b416cd0fe0b7c7b6ef",
-        "title" : "TableGen: Skip disjoint register classes before intersecting them (#234803)"
+        "date" : "2026-11-16 10:16:45 -0800",
+        "hash" : "364e0cb697f1785fe43eb9e900c255135f4654cf",
+        "title" : "[MLIR][PDL] Use scoped map for ConstraintQuestion mapping (#228081)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-10-26 08:35:25 -0700",
-        "hash" : "ff57d874f6c8736d54a953b416cd0fe0b7c7b6ef",
-        "title" : "TableGen: Skip disjoint register classes before intersecting them (#234803)"
+        "date" : "2026-11-16 10:16:45 -0800",
+        "hash" : "364e0cb697f1785fe43eb9e900c255135f4654cf",
+        "title" : "[MLIR][PDL] Use scoped map for ConstraintQuestion mapping (#228081)"
       }
     }
   },

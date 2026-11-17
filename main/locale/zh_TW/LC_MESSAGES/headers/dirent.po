@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-16 18:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,228 +17,368 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../headers/dirent.rst:3
+#: ../../../headers/dirent.md:1
 msgid "dirent.h"
 msgstr ""
 
-#: ../../../headers/dirent.rst:6
+#: ../../../headers/dirent.md:3
+msgid ""
+"<div class=\"hc-card\"><div class=\"hc-summary-top\"><div class=\"hc-pill-"
+"row\"><span class=\"hc-pill hc-pill-posix\">POSIX.1-2024</span></div><div "
+"class=\"hc-overall-stat\">22 / 31 <span style=\"color:var(--hc-blue-text)"
+"\">(71.0%)</span></div></div><div class=\"hc-progress-track hc-progress-lg\" "
+"role=\"progressbar\" aria-label=\"dirent.h overall implementation progress\" "
+"aria-valuenow=\"71.0\" aria-valuemin=\"0\" aria-valuemax=\"100\"><div "
+"class=\"hc-progress-fill\" style=\"background:var(--hc-blue-text);width:71.0%"
+"\"></div></div><div class=\"hc-grid-cards\"><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">POSIX.1-2024</div><div class=\"hc-mini-val\">22 / 31 "
+"<span style=\"color:var(--hc-blue-text)\">(71.0%)</span></div><div "
+"class=\"hc-progress-track\" role=\"progressbar\" aria-label=\"dirent.h "
+"POSIX.1-2024 completion\" aria-valuenow=\"71.0\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"blue-text);width:71.0%\"></div></div></div><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">Functions</div><div class=\"hc-mini-val\">7 / 12 "
+"<span style=\"color:var(--hc-green-text)\">(58.3%)</span></div><div "
+"class=\"hc-progress-track\" role=\"progressbar\" aria-label=\"dirent.h "
+"Functions completion\" aria-valuenow=\"58.3\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"green-text);width:58.3%\"></div></div></div><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">Macros</div><div class=\"hc-mini-val\">8 / 12 <span "
+"style=\"color:var(--hc-blue-text)\">(66.7%)</span></div><div class=\"hc-"
+"progress-track\" role=\"progressbar\" aria-label=\"dirent.h Macros "
+"completion\" aria-valuenow=\"66.7\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"blue-text);width:66.7%\"></div></div></div><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">Types</div><div class=\"hc-mini-val\">7 / 7 <span "
+"style=\"color:var(--hc-purple-text)\">(100.0%)</span></div><div class=\"hc-"
+"progress-track\" role=\"progressbar\" aria-label=\"dirent.h Types "
+"completion\" aria-valuenow=\"100.0\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"purple-text);width:100.0%\"></div></div></div></div></div>"
+msgstr ""
+
+#: ../../../headers/dirent.md:7
+msgid "Types"
+msgstr ""
+
+#: ../../../headers/dirent.md:9
+msgid ""
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Type</th><th class=\"hc-center\">Status</th><th class=\"hc-"
+"center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></tr></"
+"thead>\n"
+"  <tbody>\n"
+"    <tr id=\"type-DIR\"><td><code class=\"hc-sym\">DIR</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"type-ino_t\"><td><code class=\"hc-sym\">ino_t</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"type-reclen_t\"><td><code class=\"hc-sym\">reclen_t</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"type-size_t\"><td><code class=\"hc-sym\">size_t</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"type-ssize_t\"><td><code class=\"hc-sym\">ssize_t</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"type-struct-dirent\"><td><code class=\"hc-sym\">struct dirent</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"type-struct-posix_dent\"><td><code class=\"hc-sym\">struct "
+"posix_dent</code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
+msgstr ""
+
+#: ../../../headers/dirent.md:24
 msgid "Macros"
 msgstr "巨集"
 
-#: ../../../headers/dirent.rst:13
-msgid "Macro"
-msgstr "巨集"
-
-#: ../../../headers/dirent.rst:14 ../../../headers/dirent.rst:75
-msgid "Implemented"
-msgstr ""
-
-#: ../../../headers/dirent.rst:15 ../../../headers/dirent.rst:76
-msgid "C23 Standard Section"
-msgstr ""
-
-#: ../../../headers/dirent.rst:16 ../../../headers/dirent.rst:77
-msgid "POSIX Docs"
-msgstr ""
-
-#: ../../../headers/dirent.rst:17
-msgid "DT_BLK"
-msgstr ""
-
-#: ../../../headers/dirent.rst:18 ../../../headers/dirent.rst:22
-#: ../../../headers/dirent.rst:26 ../../../headers/dirent.rst:30
-#: ../../../headers/dirent.rst:34 ../../../headers/dirent.rst:42
-#: ../../../headers/dirent.rst:54 ../../../headers/dirent.rst:62
-#: ../../../headers/dirent.rst:79 ../../../headers/dirent.rst:83
-#: ../../../headers/dirent.rst:87 ../../../headers/dirent.rst:91
-#: ../../../headers/dirent.rst:95 ../../../headers/dirent.rst:103
-#: ../../../headers/dirent.rst:115
-msgid "|check|"
-msgstr ""
-
-#: ../../../<rst_prologue>:5
-msgid ":raw-html:`&#x2705`"
-msgstr ""
-
-#: ../../../headers/dirent.rst:20 ../../../headers/dirent.rst:24
-#: ../../../headers/dirent.rst:28 ../../../headers/dirent.rst:32
-#: ../../../headers/dirent.rst:36 ../../../headers/dirent.rst:40
-#: ../../../headers/dirent.rst:44 ../../../headers/dirent.rst:48
-#: ../../../headers/dirent.rst:52 ../../../headers/dirent.rst:56
-#: ../../../headers/dirent.rst:60 ../../../headers/dirent.rst:64
+#: ../../../headers/dirent.md:26
 msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
-"dirent.h.html>`__"
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Macro</th><th class=\"hc-center\">Status</th><th class=\"hc-"
+"center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></tr></"
+"thead>\n"
+"  <tbody>\n"
+"    <tr id=\"macro-DT_BLK\"><td><code class=\"hc-sym\">DT_BLK</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-DT_CHR\"><td><code class=\"hc-sym\">DT_CHR</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-DT_DIR\"><td><code class=\"hc-sym\">DT_DIR</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-DT_FIFO\"><td><code class=\"hc-sym\">DT_FIFO</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-DT_LNK\"><td><code class=\"hc-sym\">DT_LNK</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-DT_MQ\"><td><code class=\"hc-sym\">DT_MQ</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-DT_REG\"><td><code class=\"hc-sym\">DT_REG</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-DT_SEM\"><td><code class=\"hc-sym\">DT_SEM</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-DT_SHM\"><td><code class=\"hc-sym\">DT_SHM</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-DT_SOCK\"><td><code class=\"hc-sym\">DT_SOCK</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-DT_TMO\"><td><code class=\"hc-sym\">DT_TMO</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-DT_UNKNOWN\"><td><code class=\"hc-sym\">DT_UNKNOWN</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"dirent.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
 msgstr ""
 
-#: ../../../headers/dirent.rst:21
-msgid "DT_CHR"
-msgstr ""
-
-#: ../../../headers/dirent.rst:25
-msgid "DT_DIR"
-msgstr ""
-
-#: ../../../headers/dirent.rst:29
-msgid "DT_FIFO"
-msgstr ""
-
-#: ../../../headers/dirent.rst:33
-msgid "DT_LNK"
-msgstr ""
-
-#: ../../../headers/dirent.rst:37
-msgid "DT_MQ"
-msgstr ""
-
-#: ../../../headers/dirent.rst:41
-msgid "DT_REG"
-msgstr ""
-
-#: ../../../headers/dirent.rst:45
-msgid "DT_SEM"
-msgstr ""
-
-#: ../../../headers/dirent.rst:49
-msgid "DT_SHM"
-msgstr ""
-
-#: ../../../headers/dirent.rst:53
-msgid "DT_SOCK"
-msgstr ""
-
-#: ../../../headers/dirent.rst:57
-msgid "DT_TMO"
-msgstr ""
-
-#: ../../../headers/dirent.rst:61
-msgid "DT_UNKNOWN"
-msgstr ""
-
-#: ../../../headers/dirent.rst:67
+#: ../../../headers/dirent.md:46
 msgid "Functions"
 msgstr ""
 
-#: ../../../headers/dirent.rst:74
-msgid "Function"
-msgstr ""
-
-#: ../../../headers/dirent.rst:78
-msgid "alphasort"
-msgstr ""
-
-#: ../../../headers/dirent.rst:81
+#: ../../../headers/dirent.md:48
 msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"alphasort.html>`__"
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Function</th><th class=\"hc-center\">Status</th><th "
+"class=\"hc-center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></"
+"tr></thead>\n"
+"  <tbody>\n"
+"    <tr id=\"function-alphasort\"><td><code class=\"hc-sym\">alphasort</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"alphasort.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-closedir\"><td><code class=\"hc-sym\">closedir</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"closedir.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-dirfd\"><td><code class=\"hc-sym\">dirfd</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/dirfd.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-fdopendir\"><td><code class=\"hc-sym\">fdopendir</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fdopendir.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-opendir\"><td><code class=\"hc-sym\">opendir</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"opendir.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-posix_getdents\"><td><code class=\"hc-"
+"sym\">posix_getdents</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-no\" title=\"Not Implemented\"><span aria-hidden=\"true\">&ndash;</"
+"span><span class=\"hc-sr-only\">Not Implemented</span></span></td><td "
+"class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"posix_getdents.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</"
+"span></a></td></tr>\n"
+"    <tr id=\"function-readdir\"><td><code class=\"hc-sym\">readdir</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"readdir.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-readdir_r\"><td><code class=\"hc-sym\">readdir_r</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"readdir_r.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-rewinddir\"><td><code class=\"hc-sym\">rewinddir</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"rewinddir.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-scandir\"><td><code class=\"hc-sym\">scandir</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"scandir.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-seekdir\"><td><code class=\"hc-sym\">seekdir</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"seekdir.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-telldir\"><td><code class=\"hc-sym\">telldir</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"telldir.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
 msgstr ""
 
-#: ../../../headers/dirent.rst:82
-msgid "closedir"
-msgstr ""
-
-#: ../../../headers/dirent.rst:85
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"closedir.html>`__"
-msgstr ""
-
-#: ../../../headers/dirent.rst:86
-msgid "dirfd"
-msgstr ""
-
-#: ../../../headers/dirent.rst:89
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"dirfd.html>`__"
-msgstr ""
-
-#: ../../../headers/dirent.rst:90
-msgid "fdopendir"
-msgstr ""
-
-#: ../../../headers/dirent.rst:93
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fdopendir.html>`__"
-msgstr ""
-
-#: ../../../headers/dirent.rst:94
-msgid "opendir"
-msgstr ""
-
-#: ../../../headers/dirent.rst:97
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"opendir.html>`__"
-msgstr ""
-
-#: ../../../headers/dirent.rst:98
-msgid "posix_getdents"
-msgstr ""
-
-#: ../../../headers/dirent.rst:101
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"posix_getdents.html>`__"
-msgstr ""
-
-#: ../../../headers/dirent.rst:102
-msgid "readdir"
-msgstr ""
-
-#: ../../../headers/dirent.rst:105
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"readdir.html>`__"
-msgstr ""
-
-#: ../../../headers/dirent.rst:106
-msgid "readdir_r"
-msgstr ""
-
-#: ../../../headers/dirent.rst:109
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"readdir_r.html>`__"
-msgstr ""
-
-#: ../../../headers/dirent.rst:110
-msgid "rewinddir"
-msgstr ""
-
-#: ../../../headers/dirent.rst:113
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"rewinddir.html>`__"
-msgstr ""
-
-#: ../../../headers/dirent.rst:114
-msgid "scandir"
-msgstr ""
-
-#: ../../../headers/dirent.rst:117
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"scandir.html>`__"
-msgstr ""
-
-#: ../../../headers/dirent.rst:118
-msgid "seekdir"
-msgstr ""
-
-#: ../../../headers/dirent.rst:121
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"seekdir.html>`__"
-msgstr ""
-
-#: ../../../headers/dirent.rst:122
-msgid "telldir"
-msgstr ""
-
-#: ../../../headers/dirent.rst:125
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"telldir.html>`__"
-msgstr ""
+#~ msgid "Macro"
+#~ msgstr "巨集"

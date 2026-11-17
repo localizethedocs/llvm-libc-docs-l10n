@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-16 18:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,117 +17,220 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../headers/poll.rst:3
+#: ../../../headers/poll.md:1
 msgid "poll.h"
 msgstr ""
 
-#: ../../../headers/poll.rst:6
+#: ../../../headers/poll.md:3
+msgid ""
+"<div class=\"hc-card\"><div class=\"hc-summary-top\"><div class=\"hc-pill-"
+"row\"><span class=\"hc-pill hc-pill-posix\">POSIX.1-2024</span></div><div "
+"class=\"hc-overall-stat\">16 / 16 <span style=\"color:var(--hc-green-text)"
+"\">(100.0%)</span></div></div><div class=\"hc-progress-track hc-progress-"
+"lg\" role=\"progressbar\" aria-label=\"poll.h overall implementation "
+"progress\" aria-valuenow=\"100.0\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"green-text);width:100.0%\"></div></div><div class=\"hc-grid-cards\"><div "
+"class=\"hc-mini-card\"><div class=\"hc-mini-title\">POSIX.1-2024</div><div "
+"class=\"hc-mini-val\">16 / 16 <span style=\"color:var(--hc-blue-text)"
+"\">(100.0%)</span></div><div class=\"hc-progress-track\" "
+"role=\"progressbar\" aria-label=\"poll.h POSIX.1-2024 completion\" aria-"
+"valuenow=\"100.0\" aria-valuemin=\"0\" aria-valuemax=\"100\"><div class=\"hc-"
+"progress-fill\" style=\"background:var(--hc-blue-text);width:100.0%\"></"
+"div></div></div><div class=\"hc-mini-card\"><div class=\"hc-mini-"
+"title\">Functions</div><div class=\"hc-mini-val\">2 / 2 <span "
+"style=\"color:var(--hc-green-text)\">(100.0%)</span></div><div class=\"hc-"
+"progress-track\" role=\"progressbar\" aria-label=\"poll.h Functions "
+"completion\" aria-valuenow=\"100.0\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"green-text);width:100.0%\"></div></div></div><div class=\"hc-mini-"
+"card\"><div class=\"hc-mini-title\">Macros</div><div class=\"hc-mini-"
+"val\">10 / 10 <span style=\"color:var(--hc-blue-text)\">(100.0%)</span></"
+"div><div class=\"hc-progress-track\" role=\"progressbar\" aria-"
+"label=\"poll.h Macros completion\" aria-valuenow=\"100.0\" aria-"
+"valuemin=\"0\" aria-valuemax=\"100\"><div class=\"hc-progress-fill\" "
+"style=\"background:var(--hc-blue-text);width:100.0%\"></div></div></div><div "
+"class=\"hc-mini-card\"><div class=\"hc-mini-title\">Types</div><div "
+"class=\"hc-mini-val\">4 / 4 <span style=\"color:var(--hc-purple-text)"
+"\">(100.0%)</span></div><div class=\"hc-progress-track\" "
+"role=\"progressbar\" aria-label=\"poll.h Types completion\" aria-"
+"valuenow=\"100.0\" aria-valuemin=\"0\" aria-valuemax=\"100\"><div class=\"hc-"
+"progress-fill\" style=\"background:var(--hc-purple-text);width:100.0%\"></"
+"div></div></div></div></div>"
+msgstr ""
+
+#: ../../../headers/poll.md:7
+msgid "Types"
+msgstr ""
+
+#: ../../../headers/poll.md:9
+msgid ""
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Type</th><th class=\"hc-center\">Status</th><th class=\"hc-"
+"center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></tr></"
+"thead>\n"
+"  <tbody>\n"
+"    <tr id=\"type-nfds_t\"><td><code class=\"hc-sym\">nfds_t</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/poll.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"type-sigset_t\"><td><code class=\"hc-sym\">sigset_t</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/poll.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"type-struct-pollfd\"><td><code class=\"hc-sym\">struct pollfd</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/poll.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"type-struct-timespec\"><td><code class=\"hc-sym\">struct "
+"timespec</code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/poll.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
+msgstr ""
+
+#: ../../../headers/poll.md:21
 msgid "Macros"
 msgstr "巨集"
 
-#: ../../../headers/poll.rst:13
-msgid "Macro"
-msgstr "巨集"
-
-#: ../../../headers/poll.rst:14 ../../../headers/poll.rst:67
-msgid "Implemented"
-msgstr ""
-
-#: ../../../headers/poll.rst:15 ../../../headers/poll.rst:68
-msgid "C23 Standard Section"
-msgstr ""
-
-#: ../../../headers/poll.rst:16 ../../../headers/poll.rst:69
-msgid "POSIX Docs"
-msgstr ""
-
-#: ../../../headers/poll.rst:17
-msgid "POLLERR"
-msgstr ""
-
-#: ../../../headers/poll.rst:18 ../../../headers/poll.rst:22
-#: ../../../headers/poll.rst:26 ../../../headers/poll.rst:30
-#: ../../../headers/poll.rst:34 ../../../headers/poll.rst:38
-#: ../../../headers/poll.rst:42 ../../../headers/poll.rst:46
-#: ../../../headers/poll.rst:50 ../../../headers/poll.rst:54
-#: ../../../headers/poll.rst:71 ../../../headers/poll.rst:75
-msgid "|check|"
-msgstr ""
-
-#: ../../../<rst_prologue>:5
-msgid ":raw-html:`&#x2705`"
-msgstr ""
-
-#: ../../../headers/poll.rst:20 ../../../headers/poll.rst:24
-#: ../../../headers/poll.rst:28 ../../../headers/poll.rst:32
-#: ../../../headers/poll.rst:36 ../../../headers/poll.rst:40
-#: ../../../headers/poll.rst:44 ../../../headers/poll.rst:48
-#: ../../../headers/poll.rst:52 ../../../headers/poll.rst:56
+#: ../../../headers/poll.md:23
 msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
-"poll.h.html>`__"
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Macro</th><th class=\"hc-center\">Status</th><th class=\"hc-"
+"center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></tr></"
+"thead>\n"
+"  <tbody>\n"
+"    <tr id=\"macro-POLLERR\"><td><code class=\"hc-sym\">POLLERR</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/poll.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"macro-POLLHUP\"><td><code class=\"hc-sym\">POLLHUP</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/poll.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"macro-POLLIN\"><td><code class=\"hc-sym\">POLLIN</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/poll.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"macro-POLLNVAL\"><td><code class=\"hc-sym\">POLLNVAL</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/poll.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"macro-POLLOUT\"><td><code class=\"hc-sym\">POLLOUT</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/poll.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"macro-POLLPRI\"><td><code class=\"hc-sym\">POLLPRI</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/poll.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"macro-POLLRDBAND\"><td><code class=\"hc-sym\">POLLRDBAND</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/poll.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"macro-POLLRDNORM\"><td><code class=\"hc-sym\">POLLRDNORM</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/poll.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"macro-POLLWRBAND\"><td><code class=\"hc-sym\">POLLWRBAND</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/poll.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"macro-POLLWRNORM\"><td><code class=\"hc-sym\">POLLWRNORM</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/poll.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
 msgstr ""
 
-#: ../../../headers/poll.rst:21
-msgid "POLLHUP"
-msgstr ""
-
-#: ../../../headers/poll.rst:25
-msgid "POLLIN"
-msgstr ""
-
-#: ../../../headers/poll.rst:29
-msgid "POLLNVAL"
-msgstr ""
-
-#: ../../../headers/poll.rst:33
-msgid "POLLOUT"
-msgstr ""
-
-#: ../../../headers/poll.rst:37
-msgid "POLLPRI"
-msgstr ""
-
-#: ../../../headers/poll.rst:41
-msgid "POLLRDBAND"
-msgstr ""
-
-#: ../../../headers/poll.rst:45
-msgid "POLLRDNORM"
-msgstr ""
-
-#: ../../../headers/poll.rst:49
-msgid "POLLWRBAND"
-msgstr ""
-
-#: ../../../headers/poll.rst:53
-msgid "POLLWRNORM"
-msgstr ""
-
-#: ../../../headers/poll.rst:59
+#: ../../../headers/poll.md:41
 msgid "Functions"
 msgstr ""
 
-#: ../../../headers/poll.rst:66
-msgid "Function"
-msgstr ""
-
-#: ../../../headers/poll.rst:70
-msgid "poll"
-msgstr ""
-
-#: ../../../headers/poll.rst:73
+#: ../../../headers/poll.md:43
 msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"poll.html>`__"
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Function</th><th class=\"hc-center\">Status</th><th "
+"class=\"hc-center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></"
+"tr></thead>\n"
+"  <tbody>\n"
+"    <tr id=\"function-poll\"><td><code class=\"hc-sym\">poll</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/poll.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-ppoll\"><td><code class=\"hc-sym\">ppoll</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/ppoll.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
 msgstr ""
 
-#: ../../../headers/poll.rst:74
-msgid "ppoll"
-msgstr ""
-
-#: ../../../headers/poll.rst:77
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"ppoll.html>`__"
-msgstr ""
+#~ msgid "Macro"
+#~ msgstr "巨集"

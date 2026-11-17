@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-16 18:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,31 +33,31 @@ msgstr ""
 msgid "Development"
 msgstr ""
 
-#: ../../../index.md:109
+#: ../../../index.md:110
 msgid "Source Code"
 msgstr ""
 
-#: ../../../index.md:109
+#: ../../../index.md:110
 msgid "Bug Reports"
 msgstr ""
 
-#: ../../../index.md:109
+#: ../../../index.md:110
 msgid "Discourse"
 msgstr "Discourse"
 
-#: ../../../index.md:109
+#: ../../../index.md:110
 msgid "Join the Discord"
 msgstr "加入 Discord"
 
-#: ../../../index.md:109
+#: ../../../index.md:110
 msgid "Discord Channel"
 msgstr ""
 
-#: ../../../index.md:109
+#: ../../../index.md:110
 msgid "Buildbot"
 msgstr "Buildbot"
 
-#: ../../../index.md:109
+#: ../../../index.md:110
 msgid "Links"
 msgstr "連結"
 

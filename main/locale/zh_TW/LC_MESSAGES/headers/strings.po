@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-16 18:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,159 +17,204 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../headers/strings.rst:3
+#: ../../../headers/strings.md:1
 msgid "strings.h"
 msgstr "strings.h"
 
-#: ../../../headers/strings.rst:6
+#: ../../../headers/strings.md:3
+msgid ""
+"<div class=\"hc-card\"><div class=\"hc-summary-top\"><div class=\"hc-pill-"
+"row\"><span class=\"hc-pill hc-pill-posix\">POSIX.1-2024</span></div><div "
+"class=\"hc-overall-stat\">14 / 14 <span style=\"color:var(--hc-green-text)"
+"\">(100.0%)</span></div></div><div class=\"hc-progress-track hc-progress-"
+"lg\" role=\"progressbar\" aria-label=\"strings.h overall implementation "
+"progress\" aria-valuenow=\"100.0\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"green-text);width:100.0%\"></div></div><div class=\"hc-grid-cards\"><div "
+"class=\"hc-mini-card\"><div class=\"hc-mini-title\">POSIX.1-2024</div><div "
+"class=\"hc-mini-val\">9 / 9 <span style=\"color:var(--hc-blue-text)"
+"\">(100.0%)</span></div><div class=\"hc-progress-track\" "
+"role=\"progressbar\" aria-label=\"strings.h POSIX.1-2024 completion\" aria-"
+"valuenow=\"100.0\" aria-valuemin=\"0\" aria-valuemax=\"100\"><div class=\"hc-"
+"progress-fill\" style=\"background:var(--hc-blue-text);width:100.0%\"></"
+"div></div></div><div class=\"hc-mini-card\"><div class=\"hc-mini-"
+"title\">Functions</div><div class=\"hc-mini-val\">12 / 12 <span "
+"style=\"color:var(--hc-green-text)\">(100.0%)</span></div><div class=\"hc-"
+"progress-track\" role=\"progressbar\" aria-label=\"strings.h Functions "
+"completion\" aria-valuenow=\"100.0\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"green-text);width:100.0%\"></div></div></div><div class=\"hc-mini-"
+"card\"><div class=\"hc-mini-title\">Types</div><div class=\"hc-mini-"
+"val\">2 / 2 <span style=\"color:var(--hc-purple-text)\">(100.0%)</span></"
+"div><div class=\"hc-progress-track\" role=\"progressbar\" aria-"
+"label=\"strings.h Types completion\" aria-valuenow=\"100.0\" aria-"
+"valuemin=\"0\" aria-valuemax=\"100\"><div class=\"hc-progress-fill\" "
+"style=\"background:var(--hc-purple-text);width:100.0%\"></div></div></div></"
+"div></div>"
+msgstr ""
+
+#: ../../../headers/strings.md:7
+msgid "Types"
+msgstr ""
+
+#: ../../../headers/strings.md:9
+msgid ""
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Type</th><th class=\"hc-center\">Status</th><th class=\"hc-"
+"center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></tr></"
+"thead>\n"
+"  <tbody>\n"
+"    <tr id=\"type-locale_t\"><td><code class=\"hc-sym\">locale_t</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"strings.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"type-size_t\"><td><code class=\"hc-sym\">size_t</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"strings.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
+msgstr ""
+
+#: ../../../headers/strings.md:19
 msgid "Functions"
 msgstr ""
 
-#: ../../../headers/strings.rst:13
-msgid "Function"
-msgstr ""
-
-#: ../../../headers/strings.rst:14
-msgid "Implemented"
-msgstr ""
-
-#: ../../../headers/strings.rst:15
-msgid "C23 Standard Section"
-msgstr ""
-
-#: ../../../headers/strings.rst:16
-msgid "POSIX Docs"
-msgstr ""
-
-#: ../../../headers/strings.rst:17
-msgid "bcmp"
-msgstr "bcmp"
-
-#: ../../../headers/strings.rst:18 ../../../headers/strings.rst:22
-#: ../../../headers/strings.rst:26 ../../../headers/strings.rst:30
-#: ../../../headers/strings.rst:34 ../../../headers/strings.rst:38
-#: ../../../headers/strings.rst:42 ../../../headers/strings.rst:46
-#: ../../../headers/strings.rst:50 ../../../headers/strings.rst:54
-#: ../../../headers/strings.rst:58 ../../../headers/strings.rst:62
-msgid "|check|"
-msgstr ""
-
-#: ../../../<rst_prologue>:5
-msgid ":raw-html:`&#x2705`"
-msgstr ""
-
-#: ../../../headers/strings.rst:20
+#: ../../../headers/strings.md:21
 msgid ""
-"`removed in POSIX.1-2008 <https://pubs.opengroup.org/onlinepubs/007904875/"
-"functions/bcmp.html>`__"
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Function</th><th class=\"hc-center\">Status</th><th "
+"class=\"hc-center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></"
+"tr></thead>\n"
+"  <tbody>\n"
+"    <tr id=\"function-bcmp\"><td><code class=\"hc-sym\">bcmp</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/007904875/functions/bcmp.html\">Removed (2008) "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-bcopy\"><td><code class=\"hc-sym\">bcopy</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/007904875/functions/bcopy.html\">Removed "
+"(2008) <span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-bzero\"><td><code class=\"hc-sym\">bzero</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/007904875/functions/bzero.html\">Removed "
+"(2008) <span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-ffs\"><td><code class=\"hc-sym\">ffs</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/ffs.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-ffsl\"><td><code class=\"hc-sym\">ffsl</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/ffsl.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-ffsll\"><td><code class=\"hc-sym\">ffsll</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/ffsll.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-index\"><td><code class=\"hc-sym\">index</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/007904875/functions/index.html\">Removed "
+"(2008) <span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-rindex\"><td><code class=\"hc-sym\">rindex</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/007904875/functions/rindex.html\">Removed "
+"(2008) <span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-strcasecmp\"><td><code class=\"hc-sym\">strcasecmp</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strcasecmp.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"    <tr id=\"function-strcasecmp_l\"><td><code class=\"hc-"
+"sym\">strcasecmp_l</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strcasecmp_l.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"    <tr id=\"function-strncasecmp\"><td><code class=\"hc-sym\">strncasecmp</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strncasecmp.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"    <tr id=\"function-strncasecmp_l\"><td><code class=\"hc-"
+"sym\">strncasecmp_l</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"strncasecmp_l.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
 msgstr ""
 
-#: ../../../headers/strings.rst:21
-msgid "bcopy"
-msgstr "bcopy"
+#~ msgid "bcmp"
+#~ msgstr "bcmp"
 
-#: ../../../headers/strings.rst:24
-msgid ""
-"`removed in POSIX.1-2008 <https://pubs.opengroup.org/onlinepubs/007904875/"
-"functions/bcopy.html>`__"
-msgstr ""
+#~ msgid "bcopy"
+#~ msgstr "bcopy"
 
-#: ../../../headers/strings.rst:25
-msgid "bzero"
-msgstr "bzero"
+#~ msgid "bzero"
+#~ msgstr "bzero"
 
-#: ../../../headers/strings.rst:28
-msgid ""
-"`removed in POSIX.1-2008 <https://pubs.opengroup.org/onlinepubs/007904875/"
-"functions/bzero.html>`__"
-msgstr ""
+#~ msgid "index"
+#~ msgstr "index"
 
-#: ../../../headers/strings.rst:29
-msgid "ffs"
-msgstr ""
+#~ msgid "rindex"
+#~ msgstr "rindex"
 
-#: ../../../headers/strings.rst:32
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"ffs.html>`__"
-msgstr ""
-
-#: ../../../headers/strings.rst:33
-msgid "ffsl"
-msgstr ""
-
-#: ../../../headers/strings.rst:36
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"ffsl.html>`__"
-msgstr ""
-
-#: ../../../headers/strings.rst:37
-msgid "ffsll"
-msgstr ""
-
-#: ../../../headers/strings.rst:40
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"ffsll.html>`__"
-msgstr ""
-
-#: ../../../headers/strings.rst:41
-msgid "index"
-msgstr "index"
-
-#: ../../../headers/strings.rst:44
-msgid ""
-"`removed in POSIX.1-2008 <https://pubs.opengroup.org/onlinepubs/007904875/"
-"functions/index.html>`__"
-msgstr ""
-
-#: ../../../headers/strings.rst:45
-msgid "rindex"
-msgstr "rindex"
-
-#: ../../../headers/strings.rst:48
-msgid ""
-"`removed in POSIX.1-2008 <https://pubs.opengroup.org/onlinepubs/007904875/"
-"functions/rindex.html>`__"
-msgstr ""
-
-#: ../../../headers/strings.rst:49
-msgid "strcasecmp"
-msgstr "strcasecmp"
-
-#: ../../../headers/strings.rst:52
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"strcasecmp.html>`__"
-msgstr ""
-
-#: ../../../headers/strings.rst:53
-msgid "strcasecmp_l"
-msgstr ""
-
-#: ../../../headers/strings.rst:56
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"strcasecmp_l.html>`__"
-msgstr ""
-
-#: ../../../headers/strings.rst:57
-msgid "strncasecmp"
-msgstr ""
-
-#: ../../../headers/strings.rst:60
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"strncasecmp.html>`__"
-msgstr ""
-
-#: ../../../headers/strings.rst:61
-msgid "strncasecmp_l"
-msgstr ""
-
-#: ../../../headers/strings.rst:64
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"strncasecmp_l.html>`__"
-msgstr ""
+#~ msgid "strcasecmp"
+#~ msgstr "strcasecmp"

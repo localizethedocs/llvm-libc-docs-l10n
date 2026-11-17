@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-16 18:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,376 +17,499 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../headers/fenv.rst:3
+#: ../../../headers/fenv.md:1
 msgid "fenv.h"
 msgstr ""
 
-#: ../../../headers/fenv.rst:6
+#: ../../../headers/fenv.md:3
+msgid ""
+"<div class=\"hc-card\"><div class=\"hc-summary-top\"><div class=\"hc-pill-"
+"row\"><span class=\"hc-pill hc-pill-c23\">C23 Standard</span><span "
+"class=\"hc-pill hc-pill-posix\">POSIX.1-2024</span></div><div class=\"hc-"
+"overall-stat\">29 / 41 <span style=\"color:var(--hc-blue-text)\">(70.7%)</"
+"span></div></div><div class=\"hc-progress-track hc-progress-lg\" "
+"role=\"progressbar\" aria-label=\"fenv.h overall implementation progress\" "
+"aria-valuenow=\"70.7\" aria-valuemin=\"0\" aria-valuemax=\"100\"><div "
+"class=\"hc-progress-fill\" style=\"background:var(--hc-blue-text);width:70.7%"
+"\"></div></div><div class=\"hc-grid-cards\"><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">C23 Standard</div><div class=\"hc-mini-val\">26 / 38 "
+"<span style=\"color:var(--hc-green-text)\">(68.4%)</span></div><div "
+"class=\"hc-progress-track\" role=\"progressbar\" aria-label=\"fenv.h C23 "
+"Standard completion\" aria-valuenow=\"68.4\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"green-text);width:68.4%\"></div></div></div><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">POSIX.1-2024</div><div class=\"hc-mini-val\">24 / 24 "
+"<span style=\"color:var(--hc-blue-text)\">(100.0%)</span></div><div "
+"class=\"hc-progress-track\" role=\"progressbar\" aria-label=\"fenv.h "
+"POSIX.1-2024 completion\" aria-valuenow=\"100.0\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"blue-text);width:100.0%\"></div></div></div><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">Functions</div><div class=\"hc-mini-val\">16 / 20 "
+"<span style=\"color:var(--hc-green-text)\">(80.0%)</span></div><div "
+"class=\"hc-progress-track\" role=\"progressbar\" aria-label=\"fenv.h "
+"Functions completion\" aria-valuenow=\"80.0\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"green-text);width:80.0%\"></div></div></div><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">Macros</div><div class=\"hc-mini-val\">11 / 19 <span "
+"style=\"color:var(--hc-blue-text)\">(57.9%)</span></div><div class=\"hc-"
+"progress-track\" role=\"progressbar\" aria-label=\"fenv.h Macros "
+"completion\" aria-valuenow=\"57.9\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"blue-text);width:57.9%\"></div></div></div><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">Types</div><div class=\"hc-mini-val\">2 / 2 <span "
+"style=\"color:var(--hc-purple-text)\">(100.0%)</span></div><div class=\"hc-"
+"progress-track\" role=\"progressbar\" aria-label=\"fenv.h Types completion\" "
+"aria-valuenow=\"100.0\" aria-valuemin=\"0\" aria-valuemax=\"100\"><div "
+"class=\"hc-progress-fill\" style=\"background:var(--hc-purple-"
+"text);width:100.0%\"></div></div></div></div></div>"
+msgstr ""
+
+#: ../../../headers/fenv.md:7
+msgid "Types"
+msgstr ""
+
+#: ../../../headers/fenv.md:9
+msgid ""
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Type</th><th class=\"hc-center\">Status</th><th class=\"hc-"
+"center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></tr></"
+"thead>\n"
+"  <tbody>\n"
+"    <tr id=\"type-fenv_t\"><td><code class=\"hc-sym\">fenv_t</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv\" title=\"C23 section 7.6 on "
+"cppreference.com\">7.6 <span aria-hidden=\"true\">&#8599;</span></a></span></"
+"td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/fenv.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"type-fexcept_t\"><td><code class=\"hc-sym\">fexcept_t</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv\" title=\"C23 section 7.6 on "
+"cppreference.com\">7.6 <span aria-hidden=\"true\">&#8599;</span></a></span></"
+"td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/fenv.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
+msgstr ""
+
+#: ../../../headers/fenv.md:19
 msgid "Macros"
 msgstr ""
 
-#: ../../../headers/fenv.rst:13
-msgid "Macro"
-msgstr ""
-
-#: ../../../headers/fenv.rst:14 ../../../headers/fenv.rst:103
-msgid "Implemented"
-msgstr ""
-
-#: ../../../headers/fenv.rst:15 ../../../headers/fenv.rst:104
-msgid "C23 Standard Section"
-msgstr ""
-
-#: ../../../headers/fenv.rst:16 ../../../headers/fenv.rst:105
-msgid "POSIX Docs"
-msgstr ""
-
-#: ../../../headers/fenv.rst:17
-msgid "FE_ALL_EXCEPT"
-msgstr ""
-
-#: ../../../headers/fenv.rst:18 ../../../headers/fenv.rst:42
-#: ../../../headers/fenv.rst:50 ../../../headers/fenv.rst:54
-#: ../../../headers/fenv.rst:58 ../../../headers/fenv.rst:62
-#: ../../../headers/fenv.rst:66 ../../../headers/fenv.rst:70
-#: ../../../headers/fenv.rst:78 ../../../headers/fenv.rst:82
-#: ../../../headers/fenv.rst:86 ../../../headers/fenv.rst:115
-#: ../../../headers/fenv.rst:119 ../../../headers/fenv.rst:123
-#: ../../../headers/fenv.rst:131 ../../../headers/fenv.rst:135
-#: ../../../headers/fenv.rst:139 ../../../headers/fenv.rst:143
-#: ../../../headers/fenv.rst:147 ../../../headers/fenv.rst:151
-#: ../../../headers/fenv.rst:159 ../../../headers/fenv.rst:163
-#: ../../../headers/fenv.rst:167 ../../../headers/fenv.rst:171
-msgid "|check|"
-msgstr ""
-
-#: ../../../<rst_prologue>:5
-msgid ":raw-html:`&#x2705`"
-msgstr ""
-
-#: ../../../headers/fenv.rst:19
-msgid "7.6.12"
-msgstr ""
-
-#: ../../../headers/fenv.rst:20 ../../../headers/fenv.rst:44
-#: ../../../headers/fenv.rst:52 ../../../headers/fenv.rst:56
-#: ../../../headers/fenv.rst:60 ../../../headers/fenv.rst:64
-#: ../../../headers/fenv.rst:68 ../../../headers/fenv.rst:72
-#: ../../../headers/fenv.rst:80 ../../../headers/fenv.rst:84
-#: ../../../headers/fenv.rst:88
+#: ../../../headers/fenv.md:21
 msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
-"fenv.h.html>`__"
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Macro</th><th class=\"hc-center\">Status</th><th class=\"hc-"
+"center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></tr></"
+"thead>\n"
+"  <tbody>\n"
+"    <tr id=\"macro-FE_ALL_EXCEPT\"><td><code class=\"hc-sym\">FE_ALL_EXCEPT</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/FE_exceptions\" title=\"C23 section "
+"7.6.12 on cppreference.com\">7.6.12 <span aria-hidden=\"true\">&#8599;</"
+"span></a></span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"fenv.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-FE_DEC_DOWNWARD\"><td><code class=\"hc-"
+"sym\">FE_DEC_DOWNWARD</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-no\" title=\"Not Implemented\"><span aria-hidden=\"true\">&ndash;</"
+"span><span class=\"hc-sr-only\">Not Implemented</span></span></td><td "
+"class=\"hc-center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" "
+"href=\"https://en.cppreference.com/w/c/numeric/fenv\" title=\"C23 section "
+"7.6.14 on cppreference.com\">7.6.14 <span aria-hidden=\"true\">&#8599;</"
+"span></a></span></td><td class=\"hc-center\"><span class=\"hc-status-no\" "
+"aria-label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"macro-FE_DEC_TONEAREST\"><td><code class=\"hc-"
+"sym\">FE_DEC_TONEAREST</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-no\" title=\"Not Implemented\"><span aria-hidden=\"true\">&ndash;</"
+"span><span class=\"hc-sr-only\">Not Implemented</span></span></td><td "
+"class=\"hc-center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" "
+"href=\"https://en.cppreference.com/w/c/numeric/fenv\" title=\"C23 section "
+"7.6.14 on cppreference.com\">7.6.14 <span aria-hidden=\"true\">&#8599;</"
+"span></a></span></td><td class=\"hc-center\"><span class=\"hc-status-no\" "
+"aria-label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"macro-FE_DEC_TONEARESTFROMZERO\"><td><code class=\"hc-"
+"sym\">FE_DEC_TONEARESTFROMZERO</code></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" title=\"Not Implemented\"><span aria-"
+"hidden=\"true\">&ndash;</span><span class=\"hc-sr-only\">Not Implemented</"
+"span></span></td><td class=\"hc-center\"><span class=\"hc-c-cell\"><a "
+"class=\"hc-c-link\" href=\"https://en.cppreference.com/w/c/numeric/fenv\" "
+"title=\"C23 section 7.6.14 on cppreference.com\">7.6.14 <span aria-"
+"hidden=\"true\">&#8599;</span></a></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"macro-FE_DEC_TOWARDZERO\"><td><code class=\"hc-"
+"sym\">FE_DEC_TOWARDZERO</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-no\" title=\"Not Implemented\"><span aria-hidden=\"true\">&ndash;</"
+"span><span class=\"hc-sr-only\">Not Implemented</span></span></td><td "
+"class=\"hc-center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" "
+"href=\"https://en.cppreference.com/w/c/numeric/fenv\" title=\"C23 section "
+"7.6.14 on cppreference.com\">7.6.14 <span aria-hidden=\"true\">&#8599;</"
+"span></a></span></td><td class=\"hc-center\"><span class=\"hc-status-no\" "
+"aria-label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"macro-FE_DEC_UPWARD\"><td><code class=\"hc-sym\">FE_DEC_UPWARD</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv\" title=\"C23 section 7.6.14 on "
+"cppreference.com\">7.6.14 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"macro-FE_DFL_ENV\"><td><code class=\"hc-sym\">FE_DFL_ENV</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/FE_DFL_ENV\" title=\"C23 section 7.6.17 "
+"on cppreference.com\">7.6.17 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/fenv.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"macro-FE_DFL_MODE\"><td><code class=\"hc-sym\">FE_DFL_MODE</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv\" title=\"C23 section 7.6.11 on "
+"cppreference.com\">7.6.11 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"macro-FE_DIVBYZERO\"><td><code class=\"hc-sym\">FE_DIVBYZERO</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/FE_exceptions\" title=\"C23 section "
+"7.6.9 on cppreference.com\">7.6.9 <span aria-hidden=\"true\">&#8599;</span></"
+"a></span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"fenv.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-FE_DOWNWARD\"><td><code class=\"hc-sym\">FE_DOWNWARD</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/FE_round\" title=\"C23 section 7.6.13 "
+"on cppreference.com\">7.6.13 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/fenv.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"macro-FE_INEXACT\"><td><code class=\"hc-sym\">FE_INEXACT</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/FE_exceptions\" title=\"C23 section "
+"7.6.9 on cppreference.com\">7.6.9 <span aria-hidden=\"true\">&#8599;</span></"
+"a></span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"fenv.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-FE_INVALID\"><td><code class=\"hc-sym\">FE_INVALID</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/FE_exceptions\" title=\"C23 section "
+"7.6.9 on cppreference.com\">7.6.9 <span aria-hidden=\"true\">&#8599;</span></"
+"a></span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"fenv.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-FE_OVERFLOW\"><td><code class=\"hc-sym\">FE_OVERFLOW</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/FE_exceptions\" title=\"C23 section "
+"7.6.9 on cppreference.com\">7.6.9 <span aria-hidden=\"true\">&#8599;</span></"
+"a></span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"fenv.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-FE_TONEAREST\"><td><code class=\"hc-sym\">FE_TONEAREST</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/FE_round\" title=\"C23 section 7.6.13 "
+"on cppreference.com\">7.6.13 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/fenv.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"macro-FE_TONEARESTFROMZERO\"><td><code class=\"hc-"
+"sym\">FE_TONEARESTFROMZERO</code></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" title=\"Not Implemented\"><span aria-"
+"hidden=\"true\">&ndash;</span><span class=\"hc-sr-only\">Not Implemented</"
+"span></span></td><td class=\"hc-center\"><span class=\"hc-c-cell\"><a "
+"class=\"hc-c-link\" href=\"https://en.cppreference.com/w/c/numeric/fenv/"
+"FE_round\" title=\"C23 section 7.6.13 on cppreference.com\">7.6.13 <span "
+"aria-hidden=\"true\">&#8599;</span></a></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in POSIX\">&ndash;</"
+"span></td></tr>\n"
+"    <tr id=\"macro-FE_TOWARDZERO\"><td><code class=\"hc-sym\">FE_TOWARDZERO</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/FE_round\" title=\"C23 section 7.6.13 "
+"on cppreference.com\">7.6.13 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/fenv.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"macro-FE_UNDERFLOW\"><td><code class=\"hc-sym\">FE_UNDERFLOW</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/FE_exceptions\" title=\"C23 section "
+"7.6.9 on cppreference.com\">7.6.9 <span aria-hidden=\"true\">&#8599;</span></"
+"a></span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"fenv.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-FE_UPWARD\"><td><code class=\"hc-sym\">FE_UPWARD</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/FE_round\" title=\"C23 section 7.6.13 "
+"on cppreference.com\">7.6.13 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/fenv.h.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"macro-__STDC_VERSION_FENV_H__\"><td><code class=\"hc-"
+"sym\">__STDC_VERSION_FENV_H__</code></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" title=\"Not Implemented\"><span aria-"
+"hidden=\"true\">&ndash;</span><span class=\"hc-sr-only\">Not Implemented</"
+"span></span></td><td class=\"hc-center\"><span class=\"hc-c-cell\"><a "
+"class=\"hc-c-link\" href=\"https://en.cppreference.com/w/c/numeric/fenv\" "
+"title=\"C23 section 7.6.5 on cppreference.com\">7.6.5 <span aria-"
+"hidden=\"true\">&#8599;</span></a></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
 msgstr ""
 
-#: ../../../headers/fenv.rst:21
-msgid "FE_DEC_DOWNWARD"
-msgstr ""
-
-#: ../../../headers/fenv.rst:23 ../../../headers/fenv.rst:27
-#: ../../../headers/fenv.rst:31 ../../../headers/fenv.rst:35
-#: ../../../headers/fenv.rst:39
-msgid "7.6.14"
-msgstr ""
-
-#: ../../../headers/fenv.rst:25
-msgid "FE_DEC_TONEAREST"
-msgstr ""
-
-#: ../../../headers/fenv.rst:29
-msgid "FE_DEC_TONEARESTFROMZERO"
-msgstr ""
-
-#: ../../../headers/fenv.rst:33
-msgid "FE_DEC_TOWARDZERO"
-msgstr ""
-
-#: ../../../headers/fenv.rst:37
-msgid "FE_DEC_UPWARD"
-msgstr ""
-
-#: ../../../headers/fenv.rst:41
-msgid "FE_DFL_ENV"
-msgstr ""
-
-#: ../../../headers/fenv.rst:43
-msgid "7.6.17"
-msgstr ""
-
-#: ../../../headers/fenv.rst:45
-msgid "FE_DFL_MODE"
-msgstr ""
-
-#: ../../../headers/fenv.rst:47
-msgid "7.6.11"
-msgstr ""
-
-#: ../../../headers/fenv.rst:49
-msgid "FE_DIVBYZERO"
-msgstr ""
-
-#: ../../../headers/fenv.rst:51 ../../../headers/fenv.rst:59
-#: ../../../headers/fenv.rst:63 ../../../headers/fenv.rst:67
-#: ../../../headers/fenv.rst:83
-msgid "7.6.9"
-msgstr ""
-
-#: ../../../headers/fenv.rst:53
-msgid "FE_DOWNWARD"
-msgstr ""
-
-#: ../../../headers/fenv.rst:55 ../../../headers/fenv.rst:71
-#: ../../../headers/fenv.rst:75 ../../../headers/fenv.rst:79
-#: ../../../headers/fenv.rst:87
-msgid "7.6.13"
-msgstr ""
-
-#: ../../../headers/fenv.rst:57
-msgid "FE_INEXACT"
-msgstr ""
-
-#: ../../../headers/fenv.rst:61
-msgid "FE_INVALID"
-msgstr ""
-
-#: ../../../headers/fenv.rst:65
-msgid "FE_OVERFLOW"
-msgstr ""
-
-#: ../../../headers/fenv.rst:69
-msgid "FE_TONEAREST"
-msgstr ""
-
-#: ../../../headers/fenv.rst:73
-msgid "FE_TONEARESTFROMZERO"
-msgstr ""
-
-#: ../../../headers/fenv.rst:77
-msgid "FE_TOWARDZERO"
-msgstr ""
-
-#: ../../../headers/fenv.rst:81
-msgid "FE_UNDERFLOW"
-msgstr ""
-
-#: ../../../headers/fenv.rst:85
-msgid "FE_UPWARD"
-msgstr ""
-
-#: ../../../headers/fenv.rst:89
-msgid "__STDC_VERSION_FENV_H__"
-msgstr ""
-
-#: ../../../headers/fenv.rst:91
-msgid "7.6.5"
-msgstr ""
-
-#: ../../../headers/fenv.rst:95
+#: ../../../headers/fenv.md:48
 msgid "Functions"
 msgstr ""
 
-#: ../../../headers/fenv.rst:102
-msgid "Function"
-msgstr ""
-
-#: ../../../headers/fenv.rst:106
-msgid "fe_dec_getround"
-msgstr ""
-
-#: ../../../headers/fenv.rst:108
-msgid "7.6.5.3"
-msgstr ""
-
-#: ../../../headers/fenv.rst:110
-msgid "fe_dec_setround"
-msgstr ""
-
-#: ../../../headers/fenv.rst:112
-msgid "7.6.5.6"
-msgstr ""
-
-#: ../../../headers/fenv.rst:114
-msgid "feclearexcept"
-msgstr ""
-
-#: ../../../headers/fenv.rst:116
-msgid "7.6.4.1"
-msgstr ""
-
-#: ../../../headers/fenv.rst:117
+#: ../../../headers/fenv.md:50
 msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"feclearexcept.html>`__"
-msgstr ""
-
-#: ../../../headers/fenv.rst:118
-msgid "fegetenv"
-msgstr ""
-
-#: ../../../headers/fenv.rst:120
-msgid "7.6.6.1"
-msgstr ""
-
-#: ../../../headers/fenv.rst:121
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fegetenv.html>`__"
-msgstr ""
-
-#: ../../../headers/fenv.rst:122
-msgid "fegetexceptflag"
-msgstr ""
-
-#: ../../../headers/fenv.rst:124
-msgid "7.6.4.2"
-msgstr ""
-
-#: ../../../headers/fenv.rst:125
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fegetexceptflag.html>`__"
-msgstr ""
-
-#: ../../../headers/fenv.rst:126
-msgid "fegetmode"
-msgstr ""
-
-#: ../../../headers/fenv.rst:128
-msgid "7.6.5.1"
-msgstr ""
-
-#: ../../../headers/fenv.rst:130
-msgid "fegetround"
-msgstr ""
-
-#: ../../../headers/fenv.rst:132
-msgid "7.6.5.2"
-msgstr ""
-
-#: ../../../headers/fenv.rst:133
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fegetround.html>`__"
-msgstr ""
-
-#: ../../../headers/fenv.rst:134
-msgid "feholdexcept"
-msgstr ""
-
-#: ../../../headers/fenv.rst:136
-msgid "7.6.6.2"
-msgstr ""
-
-#: ../../../headers/fenv.rst:137
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"feholdexcept.html>`__"
-msgstr ""
-
-#: ../../../headers/fenv.rst:138
-msgid "feraiseexcept"
-msgstr ""
-
-#: ../../../headers/fenv.rst:140
-msgid "7.6.4.3"
-msgstr ""
-
-#: ../../../headers/fenv.rst:141
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"feraiseexcept.html>`__"
-msgstr ""
-
-#: ../../../headers/fenv.rst:142
-msgid "fesetenv"
-msgstr ""
-
-#: ../../../headers/fenv.rst:144
-msgid "7.6.6.3"
-msgstr ""
-
-#: ../../../headers/fenv.rst:145
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fesetenv.html>`__"
-msgstr ""
-
-#: ../../../headers/fenv.rst:146
-msgid "fesetexcept"
-msgstr ""
-
-#: ../../../headers/fenv.rst:148
-msgid "7.6.4.4"
-msgstr ""
-
-#: ../../../headers/fenv.rst:150
-msgid "fesetexceptflag"
-msgstr ""
-
-#: ../../../headers/fenv.rst:152
-msgid "7.6.4.5"
-msgstr ""
-
-#: ../../../headers/fenv.rst:153
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fesetexceptflag.html>`__"
-msgstr ""
-
-#: ../../../headers/fenv.rst:154
-msgid "fesetmode"
-msgstr ""
-
-#: ../../../headers/fenv.rst:156
-msgid "7.6.5.4"
-msgstr ""
-
-#: ../../../headers/fenv.rst:158
-msgid "fesetround"
-msgstr ""
-
-#: ../../../headers/fenv.rst:160
-msgid "7.6.5.5"
-msgstr ""
-
-#: ../../../headers/fenv.rst:161
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fesetround.html>`__"
-msgstr ""
-
-#: ../../../headers/fenv.rst:162
-msgid "fetestexcept"
-msgstr ""
-
-#: ../../../headers/fenv.rst:164
-msgid "7.6.4.7"
-msgstr ""
-
-#: ../../../headers/fenv.rst:165
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"fetestexcept.html>`__"
-msgstr ""
-
-#: ../../../headers/fenv.rst:166
-msgid "fetestexceptflag"
-msgstr ""
-
-#: ../../../headers/fenv.rst:168
-msgid "7.6.4.6"
-msgstr ""
-
-#: ../../../headers/fenv.rst:170
-msgid "feupdateenv"
-msgstr ""
-
-#: ../../../headers/fenv.rst:172
-msgid "7.6.6.4"
-msgstr ""
-
-#: ../../../headers/fenv.rst:173
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"feupdateenv.html>`__"
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Function</th><th class=\"hc-center\">Status</th><th "
+"class=\"hc-center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></"
+"tr></thead>\n"
+"  <tbody>\n"
+"    <tr id=\"function-fe_dec_getround\"><td><code class=\"hc-"
+"sym\">fe_dec_getround</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-no\" title=\"Not Implemented\"><span aria-hidden=\"true\">&ndash;</"
+"span><span class=\"hc-sr-only\">Not Implemented</span></span></td><td "
+"class=\"hc-center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" "
+"href=\"https://en.cppreference.com/w/c/numeric/fenv\" title=\"C23 section "
+"7.6.5.3 on cppreference.com\">7.6.5.3 <span aria-hidden=\"true\">&#8599;</"
+"span></a></span></td><td class=\"hc-center\"><span class=\"hc-status-no\" "
+"aria-label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-fe_dec_setround\"><td><code class=\"hc-"
+"sym\">fe_dec_setround</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-no\" title=\"Not Implemented\"><span aria-hidden=\"true\">&ndash;</"
+"span><span class=\"hc-sr-only\">Not Implemented</span></span></td><td "
+"class=\"hc-center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" "
+"href=\"https://en.cppreference.com/w/c/numeric/fenv\" title=\"C23 section "
+"7.6.5.6 on cppreference.com\">7.6.5.6 <span aria-hidden=\"true\">&#8599;</"
+"span></a></span></td><td class=\"hc-center\"><span class=\"hc-status-no\" "
+"aria-label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-feclearexcept\"><td><code class=\"hc-"
+"sym\">feclearexcept</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/feexcept\" title=\"C23 section 7.6.4.1 "
+"on cppreference.com\">7.6.4.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"feclearexcept.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"    <tr id=\"function-fedisableexcept\"><td><code class=\"hc-"
+"sym\">fedisableexcept</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-feenableexcept\"><td><code class=\"hc-"
+"sym\">feenableexcept</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-fegetenv\"><td><code class=\"hc-sym\">fegetenv</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/feenv\" title=\"C23 section 7.6.6.1 on "
+"cppreference.com\">7.6.6.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fegetenv.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-fegetexcept\"><td><code class=\"hc-sym\">fegetexcept</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-fegetexceptflag\"><td><code class=\"hc-"
+"sym\">fegetexceptflag</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/feexcept\" title=\"C23 section 7.6.4.2 "
+"on cppreference.com\">7.6.4.2 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fegetexceptflag.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</"
+"span></a></td></tr>\n"
+"    <tr id=\"function-fegetmode\"><td><code class=\"hc-sym\">fegetmode</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv\" title=\"C23 section 7.6.5.1 on "
+"cppreference.com\">7.6.5.1 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-fegetround\"><td><code class=\"hc-sym\">fegetround</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/feround\" title=\"C23 section 7.6.5.2 "
+"on cppreference.com\">7.6.5.2 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fegetround.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"    <tr id=\"function-feholdexcept\"><td><code class=\"hc-"
+"sym\">feholdexcept</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/feenv\" title=\"C23 section 7.6.6.2 on "
+"cppreference.com\">7.6.6.2 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"feholdexcept.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"    <tr id=\"function-feraiseexcept\"><td><code class=\"hc-"
+"sym\">feraiseexcept</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/feexcept\" title=\"C23 section 7.6.4.3 "
+"on cppreference.com\">7.6.4.3 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"feraiseexcept.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"    <tr id=\"function-fesetenv\"><td><code class=\"hc-sym\">fesetenv</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/feenv\" title=\"C23 section 7.6.6.3 on "
+"cppreference.com\">7.6.6.3 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fesetenv.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-fesetexcept\"><td><code class=\"hc-sym\">fesetexcept</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/feexcept\" title=\"C23 section 7.6.4.4 "
+"on cppreference.com\">7.6.4.4 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-fesetexceptflag\"><td><code class=\"hc-"
+"sym\">fesetexceptflag</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/feexcept\" title=\"C23 section 7.6.4.5 "
+"on cppreference.com\">7.6.4.5 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fesetexceptflag.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</"
+"span></a></td></tr>\n"
+"    <tr id=\"function-fesetmode\"><td><code class=\"hc-sym\">fesetmode</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv\" title=\"C23 section 7.6.5.4 on "
+"cppreference.com\">7.6.5.4 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-fesetround\"><td><code class=\"hc-sym\">fesetround</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/feround\" title=\"C23 section 7.6.5.5 "
+"on cppreference.com\">7.6.5.5 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fesetround.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"    <tr id=\"function-fetestexcept\"><td><code class=\"hc-"
+"sym\">fetestexcept</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/feexcept\" title=\"C23 section 7.6.4.7 "
+"on cppreference.com\">7.6.4.7 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"fetestexcept.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"    <tr id=\"function-fetestexceptflag\"><td><code class=\"hc-"
+"sym\">fetestexceptflag</code></td><td class=\"hc-center\"><span class=\"hc-"
+"status-yes\" title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</"
+"span><span class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/feexcept\" title=\"C23 section 7.6.4.6 "
+"on cppreference.com\">7.6.4.6 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in POSIX\">&ndash;</span></td></tr>\n"
+"    <tr id=\"function-feupdateenv\"><td><code class=\"hc-sym\">feupdateenv</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-c-cell\"><a class=\"hc-c-link\" href=\"https://"
+"en.cppreference.com/w/c/numeric/fenv/feenv\" title=\"C23 section 7.6.6.4 on "
+"cppreference.com\">7.6.6.4 <span aria-hidden=\"true\">&#8599;</span></a></"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"feupdateenv.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
 msgstr ""

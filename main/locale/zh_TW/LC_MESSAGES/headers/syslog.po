@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-16 18:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,245 +17,393 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../headers/syslog.rst:3
+#: ../../../headers/syslog.md:1
 msgid "syslog.h"
 msgstr ""
 
-#: ../../../headers/syslog.rst:6
+#: ../../../headers/syslog.md:3
+msgid ""
+"<div class=\"hc-card\"><div class=\"hc-summary-top\"><div class=\"hc-pill-"
+"row\"><span class=\"hc-pill hc-pill-posix\">POSIX.1-2024</span></div><div "
+"class=\"hc-overall-stat\">30 / 36 <span style=\"color:var(--hc-blue-text)"
+"\">(83.3%)</span></div></div><div class=\"hc-progress-track hc-progress-lg\" "
+"role=\"progressbar\" aria-label=\"syslog.h overall implementation progress\" "
+"aria-valuenow=\"83.3\" aria-valuemin=\"0\" aria-valuemax=\"100\"><div "
+"class=\"hc-progress-fill\" style=\"background:var(--hc-blue-text);width:83.3%"
+"\"></div></div><div class=\"hc-grid-cards\"><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">POSIX.1-2024</div><div class=\"hc-mini-val\">30 / 36 "
+"<span style=\"color:var(--hc-blue-text)\">(83.3%)</span></div><div "
+"class=\"hc-progress-track\" role=\"progressbar\" aria-label=\"syslog.h "
+"POSIX.1-2024 completion\" aria-valuenow=\"83.3\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"blue-text);width:83.3%\"></div></div></div><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">Functions</div><div class=\"hc-mini-val\">0 / 4 "
+"<span style=\"color:var(--hc-green-text)\">(0.0%)</span></div><div "
+"class=\"hc-progress-track\" role=\"progressbar\" aria-label=\"syslog.h "
+"Functions completion\" aria-valuenow=\"0.0\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"green-text);width:0.0%\"></div></div></div><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">Macros</div><div class=\"hc-mini-val\">30 / 32 <span "
+"style=\"color:var(--hc-blue-text)\">(93.8%)</span></div><div class=\"hc-"
+"progress-track\" role=\"progressbar\" aria-label=\"syslog.h Macros "
+"completion\" aria-valuenow=\"93.8\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"blue-text);width:93.8%\"></div></div></div></div></div>"
+msgstr ""
+
+#: ../../../headers/syslog.md:7
 msgid "Macros"
 msgstr "巨集"
 
-#: ../../../headers/syslog.rst:13
-msgid "Macro"
-msgstr "巨集"
-
-#: ../../../headers/syslog.rst:14 ../../../headers/syslog.rst:155
-msgid "Implemented"
-msgstr ""
-
-#: ../../../headers/syslog.rst:15 ../../../headers/syslog.rst:156
-msgid "C23 Standard Section"
-msgstr ""
-
-#: ../../../headers/syslog.rst:16 ../../../headers/syslog.rst:157
-msgid "POSIX Docs"
-msgstr ""
-
-#: ../../../headers/syslog.rst:17
-msgid "LOG_ALERT"
-msgstr ""
-
-#: ../../../headers/syslog.rst:18 ../../../headers/syslog.rst:22
-#: ../../../headers/syslog.rst:26 ../../../headers/syslog.rst:30
-#: ../../../headers/syslog.rst:34 ../../../headers/syslog.rst:38
-#: ../../../headers/syslog.rst:42 ../../../headers/syslog.rst:46
-#: ../../../headers/syslog.rst:50 ../../../headers/syslog.rst:54
-#: ../../../headers/syslog.rst:58 ../../../headers/syslog.rst:62
-#: ../../../headers/syslog.rst:66 ../../../headers/syslog.rst:70
-#: ../../../headers/syslog.rst:74 ../../../headers/syslog.rst:78
-#: ../../../headers/syslog.rst:82 ../../../headers/syslog.rst:86
-#: ../../../headers/syslog.rst:90 ../../../headers/syslog.rst:94
-#: ../../../headers/syslog.rst:98 ../../../headers/syslog.rst:106
-#: ../../../headers/syslog.rst:110 ../../../headers/syslog.rst:114
-#: ../../../headers/syslog.rst:118 ../../../headers/syslog.rst:122
-#: ../../../headers/syslog.rst:126 ../../../headers/syslog.rst:134
-#: ../../../headers/syslog.rst:138 ../../../headers/syslog.rst:142
-msgid "|check|"
-msgstr ""
-
-#: ../../../<rst_prologue>:5
-msgid ":raw-html:`&#x2705`"
-msgstr ""
-
-#: ../../../headers/syslog.rst:20 ../../../headers/syslog.rst:24
-#: ../../../headers/syslog.rst:28 ../../../headers/syslog.rst:32
-#: ../../../headers/syslog.rst:36 ../../../headers/syslog.rst:40
-#: ../../../headers/syslog.rst:44 ../../../headers/syslog.rst:48
-#: ../../../headers/syslog.rst:52 ../../../headers/syslog.rst:56
-#: ../../../headers/syslog.rst:60 ../../../headers/syslog.rst:64
-#: ../../../headers/syslog.rst:68 ../../../headers/syslog.rst:72
-#: ../../../headers/syslog.rst:76 ../../../headers/syslog.rst:80
-#: ../../../headers/syslog.rst:84 ../../../headers/syslog.rst:88
-#: ../../../headers/syslog.rst:92 ../../../headers/syslog.rst:96
-#: ../../../headers/syslog.rst:100 ../../../headers/syslog.rst:104
-#: ../../../headers/syslog.rst:108 ../../../headers/syslog.rst:112
-#: ../../../headers/syslog.rst:116 ../../../headers/syslog.rst:120
-#: ../../../headers/syslog.rst:124 ../../../headers/syslog.rst:128
-#: ../../../headers/syslog.rst:132 ../../../headers/syslog.rst:136
-#: ../../../headers/syslog.rst:140 ../../../headers/syslog.rst:144
+#: ../../../headers/syslog.md:9
 msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
-"syslog.h.html>`__"
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Macro</th><th class=\"hc-center\">Status</th><th class=\"hc-"
+"center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></tr></"
+"thead>\n"
+"  <tbody>\n"
+"    <tr id=\"macro-LOG_ALERT\"><td><code class=\"hc-sym\">LOG_ALERT</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_AUTH\"><td><code class=\"hc-sym\">LOG_AUTH</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_CONS\"><td><code class=\"hc-sym\">LOG_CONS</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_CRIT\"><td><code class=\"hc-sym\">LOG_CRIT</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_CRON\"><td><code class=\"hc-sym\">LOG_CRON</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_DAEMON\"><td><code class=\"hc-sym\">LOG_DAEMON</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_DEBUG\"><td><code class=\"hc-sym\">LOG_DEBUG</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_EMERG\"><td><code class=\"hc-sym\">LOG_EMERG</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_ERR\"><td><code class=\"hc-sym\">LOG_ERR</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_INFO\"><td><code class=\"hc-sym\">LOG_INFO</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_KERN\"><td><code class=\"hc-sym\">LOG_KERN</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_LOCAL0\"><td><code class=\"hc-sym\">LOG_LOCAL0</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_LOCAL1\"><td><code class=\"hc-sym\">LOG_LOCAL1</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_LOCAL2\"><td><code class=\"hc-sym\">LOG_LOCAL2</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_LOCAL3\"><td><code class=\"hc-sym\">LOG_LOCAL3</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_LOCAL4\"><td><code class=\"hc-sym\">LOG_LOCAL4</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_LOCAL5\"><td><code class=\"hc-sym\">LOG_LOCAL5</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_LOCAL6\"><td><code class=\"hc-sym\">LOG_LOCAL6</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_LOCAL7\"><td><code class=\"hc-sym\">LOG_LOCAL7</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_LPR\"><td><code class=\"hc-sym\">LOG_LPR</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_MAIL\"><td><code class=\"hc-sym\">LOG_MAIL</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_MASK\"><td><code class=\"hc-sym\">LOG_MASK</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_NDELAY\"><td><code class=\"hc-sym\">LOG_NDELAY</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_NEWS\"><td><code class=\"hc-sym\">LOG_NEWS</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_NOTICE\"><td><code class=\"hc-sym\">LOG_NOTICE</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_NOWAIT\"><td><code class=\"hc-sym\">LOG_NOWAIT</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_ODELAY\"><td><code class=\"hc-sym\">LOG_ODELAY</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_PID\"><td><code class=\"hc-sym\">LOG_PID</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_UPTO\"><td><code class=\"hc-sym\">LOG_UPTO</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_USER\"><td><code class=\"hc-sym\">LOG_USER</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_UUCP\"><td><code class=\"hc-sym\">LOG_UUCP</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-LOG_WARNING\"><td><code class=\"hc-sym\">LOG_WARNING</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-yes\" "
+"title=\"Implemented\"><span aria-hidden=\"true\">&#10003;</span><span "
+"class=\"hc-sr-only\">Implemented</span></span></td><td class=\"hc-"
+"center\"><span class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</"
+"span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"syslog.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
 msgstr ""
 
-#: ../../../headers/syslog.rst:21
-msgid "LOG_AUTH"
-msgstr ""
-
-#: ../../../headers/syslog.rst:25
-msgid "LOG_CONS"
-msgstr ""
-
-#: ../../../headers/syslog.rst:29
-msgid "LOG_CRIT"
-msgstr ""
-
-#: ../../../headers/syslog.rst:33
-msgid "LOG_CRON"
-msgstr ""
-
-#: ../../../headers/syslog.rst:37
-msgid "LOG_DAEMON"
-msgstr ""
-
-#: ../../../headers/syslog.rst:41
-msgid "LOG_DEBUG"
-msgstr ""
-
-#: ../../../headers/syslog.rst:45
-msgid "LOG_EMERG"
-msgstr ""
-
-#: ../../../headers/syslog.rst:49
-msgid "LOG_ERR"
-msgstr ""
-
-#: ../../../headers/syslog.rst:53
-msgid "LOG_INFO"
-msgstr ""
-
-#: ../../../headers/syslog.rst:57
-msgid "LOG_KERN"
-msgstr ""
-
-#: ../../../headers/syslog.rst:61
-msgid "LOG_LOCAL0"
-msgstr ""
-
-#: ../../../headers/syslog.rst:65
-msgid "LOG_LOCAL1"
-msgstr ""
-
-#: ../../../headers/syslog.rst:69
-msgid "LOG_LOCAL2"
-msgstr ""
-
-#: ../../../headers/syslog.rst:73
-msgid "LOG_LOCAL3"
-msgstr ""
-
-#: ../../../headers/syslog.rst:77
-msgid "LOG_LOCAL4"
-msgstr ""
-
-#: ../../../headers/syslog.rst:81
-msgid "LOG_LOCAL5"
-msgstr ""
-
-#: ../../../headers/syslog.rst:85
-msgid "LOG_LOCAL6"
-msgstr ""
-
-#: ../../../headers/syslog.rst:89
-msgid "LOG_LOCAL7"
-msgstr ""
-
-#: ../../../headers/syslog.rst:93
-msgid "LOG_LPR"
-msgstr ""
-
-#: ../../../headers/syslog.rst:97
-msgid "LOG_MAIL"
-msgstr ""
-
-#: ../../../headers/syslog.rst:101
-msgid "LOG_MASK"
-msgstr ""
-
-#: ../../../headers/syslog.rst:105
-msgid "LOG_NDELAY"
-msgstr ""
-
-#: ../../../headers/syslog.rst:109
-msgid "LOG_NEWS"
-msgstr ""
-
-#: ../../../headers/syslog.rst:113
-msgid "LOG_NOTICE"
-msgstr ""
-
-#: ../../../headers/syslog.rst:117
-msgid "LOG_NOWAIT"
-msgstr ""
-
-#: ../../../headers/syslog.rst:121
-msgid "LOG_ODELAY"
-msgstr ""
-
-#: ../../../headers/syslog.rst:125
-msgid "LOG_PID"
-msgstr ""
-
-#: ../../../headers/syslog.rst:129
-msgid "LOG_UPTO"
-msgstr ""
-
-#: ../../../headers/syslog.rst:133
-msgid "LOG_USER"
-msgstr ""
-
-#: ../../../headers/syslog.rst:137
-msgid "LOG_UUCP"
-msgstr ""
-
-#: ../../../headers/syslog.rst:141
-msgid "LOG_WARNING"
-msgstr ""
-
-#: ../../../headers/syslog.rst:147
+#: ../../../headers/syslog.md:49
 msgid "Functions"
 msgstr ""
 
-#: ../../../headers/syslog.rst:154
-msgid "Function"
-msgstr ""
-
-#: ../../../headers/syslog.rst:158
-msgid "closelog"
-msgstr ""
-
-#: ../../../headers/syslog.rst:161
+#: ../../../headers/syslog.md:51
 msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"closelog.html>`__"
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Function</th><th class=\"hc-center\">Status</th><th "
+"class=\"hc-center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></"
+"tr></thead>\n"
+"  <tbody>\n"
+"    <tr id=\"function-closelog\"><td><code class=\"hc-sym\">closelog</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"closelog.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-openlog\"><td><code class=\"hc-sym\">openlog</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"openlog.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"function-setlogmask\"><td><code class=\"hc-sym\">setlogmask</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"setlogmask.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></"
+"a></td></tr>\n"
+"    <tr id=\"function-syslog\"><td><code class=\"hc-sym\">syslog</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"syslog.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
 msgstr ""
 
-#: ../../../headers/syslog.rst:162
-msgid "openlog"
-msgstr ""
-
-#: ../../../headers/syslog.rst:165
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"openlog.html>`__"
-msgstr ""
-
-#: ../../../headers/syslog.rst:166
-msgid "setlogmask"
-msgstr ""
-
-#: ../../../headers/syslog.rst:169
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"setlogmask.html>`__"
-msgstr ""
-
-#: ../../../headers/syslog.rst:170
-msgid "syslog"
-msgstr ""
-
-#: ../../../headers/syslog.rst:173
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"syslog.html>`__"
-msgstr ""
+#~ msgid "Macro"
+#~ msgstr "巨集"
