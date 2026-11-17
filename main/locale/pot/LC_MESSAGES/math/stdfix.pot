@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-16 18:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../math/stdfix.md:3
+msgid "Fixed-Point Arithmetic"
+msgstr ""
+
+#: ../../../math/stdfix.md:5
+msgid "Standards and Goals"
+msgstr ""
+
+#: ../../../math/stdfix.md:7
+msgid ""
+"`stdfix.h` is specified in [ISO/IEC TR 18037:2008](https://www.iso.org/"
+"standard/51126.html), C extensions to support embedded processors ([publicly "
+"available specification](https://standards.iso.org/ittf/"
+"PubliclyAvailableStandards/c051126_ISO_IEC_TR_18037_2008.zip))."
+msgstr ""
+
+#: ../../../math/stdfix.md:10
+msgid ""
+"Our goal is to implement a complete set of math functions for fixed-point "
+"types, most of which are not included in ISO/IEC TR 18037:2008.  Our math "
+"functions for fixed-point types are modelled after the C99/C23 math "
+"functions for floating-point types."
+msgstr ""
+
+#: ../../../math/stdfix.md:15
+msgid "Source Location"
+msgstr ""
+
+#: ../../../math/stdfix.md:17
+msgid ""
+"The main source for fixed-point functions is located at [libc/src/stdfix]"
+"(https://github.com/llvm/llvm-project/tree/main/libc/src/stdfix), with "
+"internal support utilities under [libc/src/\\_\\_support/fixed_point]"
+"(https://github.com/llvm/llvm-project/tree/main/libc/src/__support/"
+"fixed_point)."
+msgstr ""
+
+#: ../../../math/stdfix.md:22
+msgid "Implementation Status"
+msgstr ""
+
+#: ../../../math/stdfix.md:24
+msgid ""
+"Per-precision function, macro, and type status tables: {doc}`../headers/"
+"stdfix`"
+msgstr ""
+
+#: ../../../math/stdfix.md:26
+msgid "Requirements"
+msgstr ""
+
+#: ../../../math/stdfix.md:28
+msgid ""
+"Building LLVM-libc with fixed-point arithmetic support requires a compiler "
+"that supports the native fixed-point types `_Fract` and `_Accum` in C++."
+msgstr ""
+
+#: ../../../math/stdfix.md:30
+msgid ""
+"Consuming the generated `stdfix.h` header requires compiler support for "
+"`_Fract` and `_Accum` in C or C++."
+msgstr ""
+
+#: ../../../math/stdfix.md:32
+msgid ""
+"Compiler support is checked at the top of [libc/include/llvm-libc-macros/"
+"stdfix-macros.h](https://github.com/llvm/llvm-project/tree/main/libc/include/"
+"llvm-libc-macros/stdfix-macros.h)."
+msgstr ""
+
+#: ../../../math/stdfix.md:35
+msgid "Predefined Macros"
+msgstr ""
+
+#: ../../../math/stdfix.md:37
+msgid ""
+"`LIBC_COMPILER_HAS_FIXED_POINT` indicates whether the compiler supports "
+"fixed-point types."
+msgstr ""
+
+#: ../../../math/stdfix.md:39
+msgid ""
+"Predefined precision and range macros from ISO/IEC TR 18037:2008 section "
+"7.18a.3 are defined in [libc/include/llvm-libc-macros/stdfix-macros.h]"
+"(https://github.com/llvm/llvm-project/tree/main/libc/include/llvm-libc-"
+"macros/stdfix-macros.h) using the default `typical desktop processor` "
+"configuration from Annex A.3 when compiler predefined macros are absent."
+msgstr ""
+
+#: ../../../math/stdfix.md:45
+msgid "Formatted I/O"
+msgstr ""
+
+#: ../../../math/stdfix.md:47
+msgid ""
+"ISO/IEC TR 18037:2008 section 7.18a.6.7 also specifies fixed-point "
+"conversion specifiers (`r`, `R`, `k`, `K`) for the `<stdio.h>` `fprintf` and "
+"`fscanf` families (`LIBC_CONF_PRINTF_DISABLE_FIXED_POINT` controls `printf` "
+"support)."
+msgstr ""
+
+#: ../../../math/stdfix.md:51
+msgid "Warnings"
+msgstr ""
+
+#: ../../../math/stdfix.md:53
+msgid ""
+"This support is currently a work in progress; its headers, macros, and ABI "
+"are still unstable and may change."
+msgstr ""

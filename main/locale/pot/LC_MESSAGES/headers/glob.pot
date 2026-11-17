@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-16 18:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,117 +17,220 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../headers/glob.rst:3
+#: ../../../headers/glob.md:1
 msgid "glob.h"
 msgstr ""
 
-#: ../../../headers/glob.rst:6
+#: ../../../headers/glob.md:3
+msgid ""
+"<div class=\"hc-card\"><div class=\"hc-summary-top\"><div class=\"hc-pill-"
+"row\"><span class=\"hc-pill hc-pill-posix\">POSIX.1-2024</span><span "
+"class=\"hc-pill hc-pill-exp\" title=\"Requires "
+"-DLLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS=ON\">Experimental</span></"
+"div><div class=\"hc-overall-stat\">0 / 14 <span style=\"color:var(--hc-muted-"
+"text)\">(0.0%)</span> <span class=\"hc-exp-note\">(+12 experimental)</span></"
+"div></div><div class=\"hc-progress-track hc-progress-lg\" "
+"role=\"progressbar\" aria-label=\"glob.h overall implementation progress\" "
+"aria-valuenow=\"0.0\" aria-valuemin=\"0\" aria-valuemax=\"100\"><div "
+"class=\"hc-progress-fill\" style=\"background:var(--hc-muted-text);width:0.0%"
+"\"></div><div class=\"hc-progress-fill hc-progress-exp\" style=\"width:85.7%"
+"\"></div></div><div class=\"hc-grid-cards\"><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">POSIX.1-2024</div><div class=\"hc-mini-val\">0 / 14 "
+"<span style=\"color:var(--hc-blue-text)\">(0.0%)</span> <span class=\"hc-exp-"
+"note\">+12 exp</span></div><div class=\"hc-progress-track\" "
+"role=\"progressbar\" aria-label=\"glob.h POSIX.1-2024 completion\" aria-"
+"valuenow=\"0.0\" aria-valuemin=\"0\" aria-valuemax=\"100\"><div class=\"hc-"
+"progress-fill\" style=\"background:var(--hc-blue-text);width:0.0%\"></"
+"div><div class=\"hc-progress-fill hc-progress-exp\" style=\"width:85.7%\"></"
+"div></div></div><div class=\"hc-mini-card\"><div class=\"hc-mini-"
+"title\">Functions</div><div class=\"hc-mini-val\">0 / 2 <span "
+"style=\"color:var(--hc-green-text)\">(0.0%)</span></div><div class=\"hc-"
+"progress-track\" role=\"progressbar\" aria-label=\"glob.h Functions "
+"completion\" aria-valuenow=\"0.0\" aria-valuemin=\"0\" aria-"
+"valuemax=\"100\"><div class=\"hc-progress-fill\" style=\"background:var(--hc-"
+"green-text);width:0.0%\"></div></div></div><div class=\"hc-mini-card\"><div "
+"class=\"hc-mini-title\">Macros</div><div class=\"hc-mini-val\">0 / 10 <span "
+"style=\"color:var(--hc-blue-text)\">(0.0%)</span> <span class=\"hc-exp-"
+"note\">+10 exp</span></div><div class=\"hc-progress-track\" "
+"role=\"progressbar\" aria-label=\"glob.h Macros completion\" aria-"
+"valuenow=\"0.0\" aria-valuemin=\"0\" aria-valuemax=\"100\"><div class=\"hc-"
+"progress-fill\" style=\"background:var(--hc-blue-text);width:0.0%\"></"
+"div><div class=\"hc-progress-fill hc-progress-exp\" style=\"width:100.0%\"></"
+"div></div></div><div class=\"hc-mini-card\"><div class=\"hc-mini-"
+"title\">Types</div><div class=\"hc-mini-val\">0 / 2 <span "
+"style=\"color:var(--hc-purple-text)\">(0.0%)</span> <span class=\"hc-exp-"
+"note\">+2 exp</span></div><div class=\"hc-progress-track\" "
+"role=\"progressbar\" aria-label=\"glob.h Types completion\" aria-"
+"valuenow=\"0.0\" aria-valuemin=\"0\" aria-valuemax=\"100\"><div class=\"hc-"
+"progress-fill\" style=\"background:var(--hc-purple-text);width:0.0%\"></"
+"div><div class=\"hc-progress-fill hc-progress-exp\" style=\"width:100.0%\"></"
+"div></div></div></div></div>"
+msgstr ""
+
+#: ../../../headers/glob.md:7
+msgid "Types"
+msgstr ""
+
+#: ../../../headers/glob.md:9
+msgid ""
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Type</th><th class=\"hc-center\">Status</th><th class=\"hc-"
+"center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></tr></"
+"thead>\n"
+"  <tbody>\n"
+"    <tr id=\"type-glob_t\"><td><code class=\"hc-sym\">glob_t</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-exp\" title=\"Experimental "
+"(requires -DLLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS=ON)\">Experimental</"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in C23\">&ndash;</span></td><td class=\"hc-center\"><a "
+"class=\"hc-posix-link\" href=\"https://pubs.opengroup.org/onlinepubs/"
+"9799919799/basedefs/glob.h.html\">POSIX.1-2024 <span aria-"
+"hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"type-size_t\"><td><code class=\"hc-sym\">size_t</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-exp\" title=\"Experimental "
+"(requires -DLLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS=ON)\">Experimental</"
+"span></td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-"
+"label=\"Not in C23\">&ndash;</span></td><td class=\"hc-center\"><a "
+"class=\"hc-posix-link\" href=\"https://pubs.opengroup.org/onlinepubs/"
+"9799919799/basedefs/glob.h.html\">POSIX.1-2024 <span aria-"
+"hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
+msgstr ""
+
+#: ../../../headers/glob.md:19
 msgid "Macros"
 msgstr ""
 
-#: ../../../headers/glob.rst:13
-msgid "Macro"
-msgstr ""
-
-#: ../../../headers/glob.rst:14 ../../../headers/glob.rst:67
-msgid "Implemented"
-msgstr ""
-
-#: ../../../headers/glob.rst:15 ../../../headers/glob.rst:68
-msgid "C23 Standard Section"
-msgstr ""
-
-#: ../../../headers/glob.rst:16 ../../../headers/glob.rst:69
-msgid "POSIX Docs"
-msgstr ""
-
-#: ../../../headers/glob.rst:17
-msgid "GLOB_ABORTED"
-msgstr ""
-
-#: ../../../headers/glob.rst:18 ../../../headers/glob.rst:22
-#: ../../../headers/glob.rst:26 ../../../headers/glob.rst:30
-#: ../../../headers/glob.rst:34 ../../../headers/glob.rst:38
-#: ../../../headers/glob.rst:42 ../../../headers/glob.rst:46
-#: ../../../headers/glob.rst:50 ../../../headers/glob.rst:54
-#: ../../../headers/glob.rst:71 ../../../headers/glob.rst:75
-msgid "|check|"
-msgstr ""
-
-#: ../../../<rst_prologue>:5
-msgid ":raw-html:`&#x2705`"
-msgstr ""
-
-#: ../../../headers/glob.rst:20 ../../../headers/glob.rst:24
-#: ../../../headers/glob.rst:28 ../../../headers/glob.rst:32
-#: ../../../headers/glob.rst:36 ../../../headers/glob.rst:40
-#: ../../../headers/glob.rst:44 ../../../headers/glob.rst:48
-#: ../../../headers/glob.rst:52 ../../../headers/glob.rst:56
+#: ../../../headers/glob.md:21
 msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
-"glob.h.html>`__"
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Macro</th><th class=\"hc-center\">Status</th><th class=\"hc-"
+"center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></tr></"
+"thead>\n"
+"  <tbody>\n"
+"    <tr id=\"macro-GLOB_ABORTED\"><td><code class=\"hc-sym\">GLOB_ABORTED</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-exp\" "
+"title=\"Experimental (requires "
+"-DLLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS=ON)\">Experimental</span></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"glob.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-GLOB_APPEND\"><td><code class=\"hc-sym\">GLOB_APPEND</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-exp\" "
+"title=\"Experimental (requires "
+"-DLLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS=ON)\">Experimental</span></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"glob.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-GLOB_DOOFFS\"><td><code class=\"hc-sym\">GLOB_DOOFFS</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-exp\" "
+"title=\"Experimental (requires "
+"-DLLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS=ON)\">Experimental</span></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"glob.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-GLOB_ERR\"><td><code class=\"hc-sym\">GLOB_ERR</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-exp\" "
+"title=\"Experimental (requires "
+"-DLLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS=ON)\">Experimental</span></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"glob.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-GLOB_MARK\"><td><code class=\"hc-sym\">GLOB_MARK</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-exp\" "
+"title=\"Experimental (requires "
+"-DLLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS=ON)\">Experimental</span></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"glob.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-GLOB_NOCHECK\"><td><code class=\"hc-sym\">GLOB_NOCHECK</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-exp\" "
+"title=\"Experimental (requires "
+"-DLLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS=ON)\">Experimental</span></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"glob.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-GLOB_NOESCAPE\"><td><code class=\"hc-sym\">GLOB_NOESCAPE</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-exp\" "
+"title=\"Experimental (requires "
+"-DLLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS=ON)\">Experimental</span></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"glob.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-GLOB_NOMATCH\"><td><code class=\"hc-sym\">GLOB_NOMATCH</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-exp\" "
+"title=\"Experimental (requires "
+"-DLLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS=ON)\">Experimental</span></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"glob.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-GLOB_NOSORT\"><td><code class=\"hc-sym\">GLOB_NOSORT</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-exp\" "
+"title=\"Experimental (requires "
+"-DLLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS=ON)\">Experimental</span></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"glob.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"    <tr id=\"macro-GLOB_NOSPACE\"><td><code class=\"hc-sym\">GLOB_NOSPACE</"
+"code></td><td class=\"hc-center\"><span class=\"hc-status-exp\" "
+"title=\"Experimental (requires "
+"-DLLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS=ON)\">Experimental</span></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" aria-label=\"Not in "
+"C23\">&ndash;</span></td><td class=\"hc-center\"><a class=\"hc-posix-link\" "
+"href=\"https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/"
+"glob.h.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
 msgstr ""
 
-#: ../../../headers/glob.rst:21
-msgid "GLOB_APPEND"
-msgstr ""
-
-#: ../../../headers/glob.rst:25
-msgid "GLOB_DOOFFS"
-msgstr ""
-
-#: ../../../headers/glob.rst:29
-msgid "GLOB_ERR"
-msgstr ""
-
-#: ../../../headers/glob.rst:33
-msgid "GLOB_MARK"
-msgstr ""
-
-#: ../../../headers/glob.rst:37
-msgid "GLOB_NOCHECK"
-msgstr ""
-
-#: ../../../headers/glob.rst:41
-msgid "GLOB_NOESCAPE"
-msgstr ""
-
-#: ../../../headers/glob.rst:45
-msgid "GLOB_NOMATCH"
-msgstr ""
-
-#: ../../../headers/glob.rst:49
-msgid "GLOB_NOSORT"
-msgstr ""
-
-#: ../../../headers/glob.rst:53
-msgid "GLOB_NOSPACE"
-msgstr ""
-
-#: ../../../headers/glob.rst:59
+#: ../../../headers/glob.md:39
 msgid "Functions"
 msgstr ""
 
-#: ../../../headers/glob.rst:66
-msgid "Function"
-msgstr ""
-
-#: ../../../headers/glob.rst:70
-msgid "glob"
-msgstr ""
-
-#: ../../../headers/glob.rst:73
+#: ../../../headers/glob.md:41
 msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"glob.html>`__"
-msgstr ""
-
-#: ../../../headers/glob.rst:74
-msgid "globfree"
-msgstr ""
-
-#: ../../../headers/glob.rst:77
-msgid ""
-"`POSIX.1-2024 <https://pubs.opengroup.org/onlinepubs/9799919799/functions/"
-"globfree.html>`__"
+"<div class=\"hc-table-wrap\"><table class=\"hc-table\">\n"
+"  <thead><tr><th>Function</th><th class=\"hc-center\">Status</th><th "
+"class=\"hc-center\">C23 Section</th><th class=\"hc-center\">POSIX Docs</th></"
+"tr></thead>\n"
+"  <tbody>\n"
+"    <tr id=\"function-glob\"><td><code class=\"hc-sym\">glob</code></td><td "
+"class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/glob.html\">POSIX.1-2024 "
+"<span aria-hidden=\"true\">&#8599;</span></a></td></tr>\n"
+"    <tr id=\"function-globfree\"><td><code class=\"hc-sym\">globfree</code></"
+"td><td class=\"hc-center\"><span class=\"hc-status-no\" title=\"Not "
+"Implemented\"><span aria-hidden=\"true\">&ndash;</span><span class=\"hc-sr-"
+"only\">Not Implemented</span></span></td><td class=\"hc-center\"><span "
+"class=\"hc-status-no\" aria-label=\"Not in C23\">&ndash;</span></td><td "
+"class=\"hc-center\"><a class=\"hc-posix-link\" href=\"https://"
+"pubs.opengroup.org/onlinepubs/9799919799/functions/"
+"globfree.html\">POSIX.1-2024 <span aria-hidden=\"true\">&#8599;</span></a></"
+"td></tr>\n"
+"  </tbody>\n"
+"</table></div>"
 msgstr ""
