@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../roadmap.md:3
+msgid "Roadmap and Known Issues"
+msgstr ""
+
+#: ../../../roadmap.md:5
+msgid ""
+"This page collects planned features and known problems in LLVM-libc. It is a "
+"working list, and each numbered item is intended to become an issue in the "
+"[issue tracker](https://github.com/llvm/llvm-project/labels/libc). Check the "
+"tracker, or ask the maintainers, before starting on one."
+msgstr ""
+
+#: ../../../roadmap.md:10
+msgid ""
+"Paths are relative to `libc/` unless they start with `.github/` or `.ci/`. "
+"Counts and line numbers are as of November 2026."
+msgstr ""
+
+#: ../../../roadmap.md:13
+msgid "Planned features"
+msgstr ""
+
+#: ../../../roadmap.md:15
+msgid ""
+"These are missing or incomplete today. They are not non-goals; see {ref}"
+"`design_philosophy` for those."
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid "Feature"
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid "Status"
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid "Dynamic loading"
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid "Under development. Never intended to be the primary use case."
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid "Time zone database"
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid "Planned. The intent is to base the implementation on the one in libc++."
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid "Thread cancellation"
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid ""
+"Low priority. When added, it must not significantly slow down code that does "
+"not use it."
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid "Message catalogs, Annex K"
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid "Low priority."
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid "Locales"
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid ""
+"The `_l` variants of the relevant functions are planned. See {ref}"
+"`design_philosophy`."
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid "UTF-16 `wchar_t`"
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid "In progress."
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid "Full build for macOS and Windows"
+msgstr ""
+
+#: ../../../roadmap.md:0
+msgid "Not designed yet. See {ref}`abi_policy`."
+msgstr ""

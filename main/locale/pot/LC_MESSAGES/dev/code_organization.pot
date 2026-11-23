@@ -1,0 +1,409 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../dev/code_organization.md:3
+msgid "Where Code Goes"
+msgstr ""
+
+#: ../../../dev/code_organization.md:5
+msgid ""
+"This page explains how to decide where a piece of code belongs: in an "
+"entrypoint, in a helper next to it, in `src/__support/`, or in `shared/`. It "
+"also covers which build modes and targets a new function is enabled for. "
+"{ref}`source_tree_layout` describes the directories themselves."
+msgstr ""
+
+#: ../../../dev/code_organization.md:10
+msgid "Three kinds of code"
+msgstr ""
+
+#: ../../../dev/code_organization.md:12
+msgid "It helps to sort code in a libc into three kinds:"
+msgstr ""
+
+#: ../../../dev/code_organization.md:14
+msgid ""
+"**OS independent**: pure computation with no system interaction, such as the "
+"math and string functions."
+msgstr ""
+
+#: ../../../dev/code_organization.md:16
+msgid ""
+"**OS agnostic**: standard interfaces whose behavior is the same everywhere "
+"but whose implementation needs the system, such as `fopen` or `assert`."
+msgstr ""
+
+#: ../../../dev/code_organization.md:18
+msgid ""
+"**OS specific**: interfaces that are specific to a platform. This can be a "
+"thin interface like a syscall wrapper or a substantial integration like "
+"`popen`."
+msgstr ""
+
+#: ../../../dev/code_organization.md:22
+msgid ""
+"The source tree does not separate these three as cleanly as it should, and "
+"moving toward that separation is a long-term goal. When adding code, decide "
+"which kind it is and keep OS-specific details out of the first two."
+msgstr ""
+
+#: ../../../dev/code_organization.md:28
+msgid "Entrypoints do not call entrypoints"
+msgstr ""
+
+#: ../../../dev/code_organization.md:30
+msgid ""
+"An entrypoint is the definition of one public function. It may contain its "
+"whole implementation. As soon as any part of that implementation is needed "
+"somewhere else, that part moves into a separate internal header or library."
+msgstr ""
+
+#: ../../../dev/code_organization.md:34
+msgid ""
+"**An entrypoint must not call another entrypoint.** This is the most common "
+"mistake in new code. Calling `strlen` from `strdup`, or `fseek` from "
+"`fsetpos`, is the natural way to write the function. It is wrong here "
+"because every entrypoint is a separate public symbol in its own separate "
+"object file that each target enables or leaves out individually. A "
+"dependency between two entrypoints means that they must be pulled in "
+"together."
+msgstr ""
+
+#: ../../../dev/code_organization.md:41
+msgid ""
+"Instead, put the shared logic in an internal function and call it from both "
+"entrypoints:"
+msgstr ""
+
+#: ../../../dev/code_organization.md:58
+msgid ""
+"CMake checks for this. When configured with `-"
+"DLIBC_CMAKE_VERBOSE_LOGGING=ON`, it warns about any entrypoint or internal "
+"library that depends on an entrypoint. The few permitted exceptions, "
+"currently `errno` and `longjmp`, are listed in `check_entrypoint_deps` in "
+"`libc/cmake/modules/LLVMLibCObjectRules.cmake`."
+msgstr ""
+
+#: ../../../dev/code_organization.md:64
+msgid ""
+"Some existing entrypoints break this rule. They are to be cleaned up and are "
+"not precedent for new code."
+msgstr ""
+
+#: ../../../dev/code_organization.md:67
+msgid ""
+"Internal libraries may depend on *variable* entrypoints such as `environ` or "
+"`stdout` when they need the object itself. They may not depend on function "
+"entrypoints."
+msgstr ""
+
+#: ../../../dev/code_organization.md:71
+msgid "Where shared logic lives"
+msgstr ""
+
+#: ../../../dev/code_organization.md:0
+msgid "The logic is used by"
+msgstr ""
+
+#: ../../../dev/code_organization.md:0
+msgid "Put it in"
+msgstr ""
+
+#: ../../../dev/code_organization.md:0
+msgid "One entrypoint"
+msgstr ""
+
+#: ../../../dev/code_organization.md:0
+msgid "The entrypoint's `.cpp` file, as `static` functions."
+msgstr ""
+
+#: ../../../dev/code_organization.md:0
+msgid "A few entrypoints, normally from the same public header"
+msgstr ""
+
+#: ../../../dev/code_organization.md:0
+msgid ""
+"A header or object library in that header's directory, for example `src/"
+"stdio/fflush_internal.h`, in the `internal` namespace."
+msgstr ""
+
+#: ../../../dev/code_organization.md:0
+msgid "Many parts of the library, or other LLVM projects"
+msgstr ""
+
+#: ../../../dev/code_organization.md:0
+msgid "`src/__support/`."
+msgstr ""
+
+#: ../../../dev/code_organization.md:79
+msgid ""
+"Avoid creating new files or directories named `utils`. A name that describes "
+"nothing attracts unrelated code. Name a helper after what it does."
+msgstr ""
+
+#: ../../../dev/code_organization.md:82
+msgid "Keep internal interfaces as narrow and as typed as public ones:"
+msgstr ""
+
+#: ../../../dev/code_organization.md:84
+msgid ""
+"Functions whose result becomes `errno` return `ErrorOr<T>` and never set "
+"`errno` themselves. See {ref}`setting_errno`."
+msgstr ""
+
+#: ../../../dev/code_organization.md:86
+msgid ""
+"Reuse an existing parser or type before writing a narrower one. For example, "
+"`stdio` mode strings are parsed by `FileMode`."
+msgstr ""
+
+#: ../../../dev/code_organization.md:88
+msgid ""
+"Write validity checks positively (\"is one of the supported values\"), not "
+"as a list of rejected cases."
+msgstr ""
+
+#: ../../../dev/code_organization.md:90
+msgid ""
+"Prefer a fixed signature over an unconstrained template when the body only "
+"works for specific types."
+msgstr ""
+
+#: ../../../dev/code_organization.md:93
+msgid "Code shared with other LLVM projects"
+msgstr ""
+
+#: ../../../dev/code_organization.md:95
+msgid ""
+"Headers in `libc/shared/` expose LLVM-libc internals to other LLVM projects "
+"through {ref}`Hand-in-Hand <hand_in_hand>`."
+msgstr ""
+
+#: ../../../dev/code_organization.md:98
+msgid ""
+"`shared/` is only an interface. The implementation lives under `libc/src/`, "
+"usually in `src/__support/`, and the header in `shared/` re-exports it in "
+"the `shared` namespace. Code inside LLVM-libc includes the implementation "
+"from `src/` and does not include anything from `shared/`. The GPU RPC "
+"headers are an existing exception: they are implemented in `shared/` itself."
+msgstr ""
+
+#: ../../../dev/code_organization.md:104
+msgid "Everything reachable from `shared/` has extra constraints:"
+msgstr ""
+
+#: ../../../dev/code_organization.md:106
+msgid "It is header-only."
+msgstr ""
+
+#: ../../../dev/code_organization.md:107
+msgid ""
+"It does not depend on any external libc function. The allocator is the one "
+"exception, because it is external to LLVM-libc on most targets already."
+msgstr ""
+
+#: ../../../dev/code_organization.md:109
+msgid ""
+"It builds with the compilers LLVM itself supports, which are older than the "
+"minimum for the rest of LLVM-libc. See {ref}`compiler_support`."
+msgstr ""
+
+#: ../../../dev/code_organization.md:112
+msgid ""
+"This covers the `printf` core, string-to-number conversion, the math "
+"implementations in `src/__support/math/`, and what they include from `src/"
+"__support/`. Adding a new header to `shared/`, or a new consumer of it, "
+"should be discussed with the maintainers first."
+msgstr ""
+
+#: ../../../dev/code_organization.md:117
+msgid "Operating-system-specific code"
+msgstr ""
+
+#: ../../../dev/code_organization.md:119
+msgid ""
+"Per-OS duplication is acceptable. Operating systems differ enough that "
+"sharing an implementation between them usually costs more than it saves."
+msgstr ""
+
+#: ../../../dev/code_organization.md:122
+msgid ""
+"System calls are made only from wrappers in `src/__support/OSUtil/<os>/`; "
+"see {ref}`syscall_wrapper_refactor`. OS-agnostic code never names an OS-"
+"specific namespace such as `linux_syscalls`."
+msgstr ""
+
+#: ../../../dev/code_organization.md:126
+msgid ""
+"There are several ways to select the implementation for the target OS. Pick "
+"the one that fits the amount of code that differs:"
+msgstr ""
+
+#: ../../../dev/code_organization.md:129
+msgid ""
+"**The whole entrypoint differs.** Put each implementation in `src/<header>/"
+"<os>/<func>.cpp`, and make the entrypoint in `src/<header>/CMakeLists.txt` "
+"an `ALIAS` that depends on `.${LIBC_TARGET_OS}.<func>`. Most syscall-backed "
+"functions work this way."
+msgstr ""
+
+#: ../../../dev/code_organization.md:133
+msgid ""
+"**The entrypoint is common and one step differs.** Keep a single `src/"
+"<header>/<func>.cpp` that calls an `internal::` function, and provide that "
+"function as a per-OS object library selected with the same `ALIAS` "
+"mechanism. `fflush` and its `fflush_internal` library are the example."
+msgstr ""
+
+#: ../../../dev/code_organization.md:137
+msgid ""
+"**A small header-only primitive differs.** Use a dispatch header that "
+"includes the right implementation, as `src/__support/OSUtil/io.h` does."
+msgstr ""
+
+#: ../../../dev/code_organization.md:140
+msgid "Overlay mode and full build"
+msgstr ""
+
+#: ../../../dev/code_organization.md:142
+msgid ""
+"A function may be enabled in {ref}`overlay mode <overlay_mode>` only if it "
+"does not depend on an implementation-defined type or on library-owned state "
+"that is shared between functions. For example:"
+msgstr ""
+
+#: ../../../dev/code_organization.md:146
+msgid ""
+"`strlen` and `round` are pure functions, so they are fine in overlay mode."
+msgstr ""
+
+#: ../../../dev/code_organization.md:147
+msgid ""
+"`fopen` and `fgetc` are full build only, because `FILE` is implementation "
+"defined."
+msgstr ""
+
+#: ../../../dev/code_organization.md:149
+msgid ""
+"`atexit` is full build only, because it sets state that `exit` must read."
+msgstr ""
+
+#: ../../../dev/code_organization.md:150
+msgid ""
+"`strtok` is fine in overlay mode. It keeps internal state, but no other "
+"function reads that state."
+msgstr ""
+
+#: ../../../dev/code_organization.md:153
+msgid ""
+"In each `entrypoints.txt`, overlay-safe functions are listed unconditionally "
+"and the others are inside `if(LLVM_LIBC_FULL_BUILD)`."
+msgstr ""
+
+#: ../../../dev/code_organization.md:156
+msgid ""
+"Both modes matter. Overlay mode is the more portable of the two and is how "
+"many users adopt the math and memory functions; a full build is where "
+"everything else is exercised. A change must build and pass its tests in both "
+"modes unless the code is full-build only. See {ref}`testing_guide`."
+msgstr ""
+
+#: ../../../dev/code_organization.md:161
+msgid "Which targets get a new function"
+msgstr ""
+
+#: ../../../dev/code_organization.md:163
+msgid ""
+"A new entrypoint should be enabled on every target where it works. In "
+"practice contributors cannot test every target, so the minimum is:"
+msgstr ""
+
+#: ../../../dev/code_organization.md:166
+msgid ""
+"For a function that needs Linux, the `entrypoints.txt` files for `x86_64`, "
+"`aarch64`, `arm`, and `riscv` under `libc/config/linux/`. Linux on 32-bit "
+"Arm is included because its tests help cover the 32-bit Arm code that the "
+"baremetal target also uses. See {ref}`platform_support`."
+msgstr ""
+
+#: ../../../dev/code_organization.md:170
+msgid ""
+"For an OS-independent function, the Linux configurations above plus the "
+"baremetal, GPU, and other OS configurations, as described for math functions "
+"in `libc/src/math/docs/add_math_function.md`."
+msgstr ""
+
+#: ../../../dev/code_organization.md:174
+msgid ""
+"`linux/x86_64` is the most complete configuration. An entrypoint that is "
+"present there and missing from another Linux architecture is usually an "
+"oversight, not a decision, and adding it is a welcome change."
+msgstr ""
+
+#: ../../../dev/code_organization.md:178
+msgid ""
+"The public header declaration comes from `libc/include/<header>.yaml`. A "
+"function that is missing there will build and pass the tests but will not "
+"appear in the generated header."
+msgstr ""
+
+#: ../../../dev/code_organization.md:182
+msgid "Experimental entrypoints"
+msgstr ""
+
+#: ../../../dev/code_organization.md:184
+msgid ""
+"Entrypoints with known-incomplete implementations are listed inside "
+"`if(LLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS)` and are off by default. See "
+"{ref}`extensions_and_stubs` for when a function belongs there."
+msgstr ""
+
+#: ../../../dev/code_organization.md:188
+msgid "Configuration options"
+msgstr ""
+
+#: ../../../dev/code_organization.md:190
+msgid ""
+"Options in `libc/config/config.json` are named `LIBC_CONF_*` and are CMake "
+"settings. They become `LIBC_COPT_*` macros on the compiler command line. See "
+"{ref}`configure_options`."
+msgstr ""
+
+#: ../../../dev/code_organization.md:194
+msgid ""
+"Add an option when a standard requires one behavior and a real user needs "
+"another. Disabling floating point support in `printf` for small targets is "
+"the model case. Do not add an option to avoid making a design decision."
+msgstr ""
+
+#: ../../../dev/code_organization.md:198
+msgid ""
+"An option that disables behavior in an entrypoint must disable the matching "
+"checks in that entrypoint's tests under the same condition."
+msgstr ""
+
+#: ../../../dev/code_organization.md:201
+msgid "Bazel"
+msgstr ""
+
+#: ../../../dev/code_organization.md:203
+msgid ""
+"The Bazel build in `utils/bazel/llvm-project-overlay/libc/` is maintained by "
+"its downstream users, and an automated process keeps it in sync. Upstream "
+"contributors are not required to update it, but it is appreciated."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-16 18:21+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,28 +213,42 @@ msgid ""
 msgstr ""
 
 #: ../../../Maintainers.md:59
-msgid "Hexagon"
+msgid "Arm64EC"
 msgstr ""
 
 #: ../../../Maintainers.md:60
-msgid "Kushal Pal"
+msgid "Daniel Paoliello"
 msgstr ""
 
 #: ../../../Maintainers.md:61
+msgid ""
+"danpao@microsoft.com (email), [dpaoliello](https://github.com/dpaoliello) "
+"(github)"
+msgstr ""
+
+#: ../../../Maintainers.md:63
+msgid "Hexagon"
+msgstr ""
+
+#: ../../../Maintainers.md:64
+msgid "Kushal Pal"
+msgstr ""
+
+#: ../../../Maintainers.md:65
 msgid ""
 "kushpal@qti.qualcomm.com (email), [quic-k](https://github.com/quic-k) "
 "(github)"
 msgstr ""
 
-#: ../../../Maintainers.md:63
+#: ../../../Maintainers.md:67
 msgid "Inactive Maintainers"
 msgstr ""
 
-#: ../../../Maintainers.md:64
+#: ../../../Maintainers.md:68
 msgid "Tristan Ross"
 msgstr ""
 
-#: ../../../Maintainers.md:65
+#: ../../../Maintainers.md:69
 msgid ""
 "tristan.ross@midstall.com (email), [RossComputerGuy](https://github.com/"
 "RossComputerGuy) (github)"

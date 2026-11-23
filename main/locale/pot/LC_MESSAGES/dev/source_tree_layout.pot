@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,25 +27,25 @@ msgid ""
 "directories:"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:25
+#: ../../../dev/source_tree_layout.md:26
 msgid "Each of these directories is explained briefly below."
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:27
+#: ../../../dev/source_tree_layout.md:28
 msgid "The `benchmarks` directory"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:29
+#: ../../../dev/source_tree_layout.md:30
 msgid ""
 "The `benchmarks` directory contains LLVM-libc's benchmarking utilities. "
 "These are mostly used for the memory functions."
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:32
+#: ../../../dev/source_tree_layout.md:33
 msgid "The `config` directory"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:34
+#: ../../../dev/source_tree_layout.md:35
 msgid ""
 "The `config` directory contains the default configurations for the targets "
 "LLVM-libc supports. These are files in the `config/<platform>/<architecture>/"
@@ -56,31 +56,31 @@ msgid ""
 "files in the `config/<platform>/` subdirectory."
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:42
+#: ../../../dev/source_tree_layout.md:43
 msgid "The `cmake` directory"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:44
+#: ../../../dev/source_tree_layout.md:45
 msgid ""
 "The `cmake` directory contains the implementations of LLVM-libc's CMake "
 "build rules."
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:47
+#: ../../../dev/source_tree_layout.md:48
 msgid "The `docs` directory"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:49
+#: ../../../dev/source_tree_layout.md:50
 msgid ""
 "The `docs` directory contains design docs and also informative documents "
 "like this document on source layout."
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:52
+#: ../../../dev/source_tree_layout.md:53
 msgid "The `fuzzing` directory"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:54
+#: ../../../dev/source_tree_layout.md:55
 msgid ""
 "This directory contains fuzzing tests for the various components of LLVM-"
 "libc. The directory structure within this directory mirrors the directory "
@@ -88,11 +88,11 @@ msgid ""
 "{doc}`fuzzing`."
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:59
+#: ../../../dev/source_tree_layout.md:60
 msgid "The `hdr` directory"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:61
+#: ../../../dev/source_tree_layout.md:62
 msgid ""
 "This directory contains proxy headers which are included from the files in "
 "the src directory. These proxy headers either include our internal type or "
@@ -100,21 +100,22 @@ msgid ""
 "if we are in fullbuild or overlay mode."
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:66
+#: ../../../dev/source_tree_layout.md:67
 msgid "The `include` directory"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:68
+#: ../../../dev/source_tree_layout.md:69
 msgid "The `include` directory contains:"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:70
+#: ../../../dev/source_tree_layout.md:71
 msgid ""
-"`*.h.def` files - These files are used to construct the generated public "
-"header files."
+"`*.yaml` files - These describe the contents of each public header. The "
+"public headers are generated from them; see {ref}`header_generation`. A few "
+"headers also have a `*.h.def` template file."
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:72
+#: ../../../dev/source_tree_layout.md:74
 msgid ""
 "Self contained public header files - These are header files which are "
 "already in the form that get installed when LLVM-libc is installed on a "
@@ -122,32 +123,43 @@ msgid ""
 "types` subdirectories."
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:77
+#: ../../../dev/source_tree_layout.md:79
 msgid "The `lib` directory"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:79
+#: ../../../dev/source_tree_layout.md:81
 msgid ""
 "This directory contains a `CMakeLists.txt` file listing the targets for the "
 "public libraries `libc.a`, `libm.a` etc."
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:82
+#: ../../../dev/source_tree_layout.md:84
+msgid "The `shared` directory"
+msgstr ""
+
+#: ../../../dev/source_tree_layout.md:86
+msgid ""
+"This directory contains the headers through which other LLVM projects use "
+"LLVM-libc's internal code. See {ref}`hand_in_hand`, and {ref}"
+"`code_organization` for the constraints on code exposed this way."
+msgstr ""
+
+#: ../../../dev/source_tree_layout.md:90
 msgid "The `src` directory"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:84
+#: ../../../dev/source_tree_layout.md:92
 msgid ""
 "This directory contains the implementations of the llvm-libc entrypoints. "
 "For more details on what an entrypoint is and how it is implemented, see the "
 "{ref}`entrypoints` documentation. It is further organized as follows:"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:88
+#: ../../../dev/source_tree_layout.md:96
 msgid "There is a top-level CMakeLists.txt file."
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:89
+#: ../../../dev/source_tree_layout.md:97
 msgid ""
 "For every public header file provided by llvm-libc, there exists a "
 "corresponding directory in the `src` directory. The name of the directory is "
@@ -157,21 +169,27 @@ msgid ""
 "directories."
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:96
+#: ../../../dev/source_tree_layout.md:103
+msgid ""
+"The `__support` directory contains internal code shared across the library. "
+"{ref}`code_organization` explains what belongs there."
+msgstr ""
+
+#: ../../../dev/source_tree_layout.md:106
 msgid "The `startup` directory"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:98
+#: ../../../dev/source_tree_layout.md:108
 msgid ""
 "This directory contains the implementations of the application startup "
 "objects like `crt1.o` etc."
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:101
+#: ../../../dev/source_tree_layout.md:111
 msgid "The `test` directory"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:103
+#: ../../../dev/source_tree_layout.md:113
 msgid ""
 "This directory contains tests for the various components of LLVM-libc. The "
 "directory structure within this directory mirrors the directory structure of "
@@ -180,11 +198,11 @@ msgid ""
 "lives in `src/sys/mman`."
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:109
+#: ../../../dev/source_tree_layout.md:119
 msgid "The `utils` directory"
 msgstr ""
 
-#: ../../../dev/source_tree_layout.md:111
+#: ../../../dev/source_tree_layout.md:121
 msgid ""
 "This directory contains utilities used by other parts of the LLVM-libc "
 "system. See the `README` files in the subdirectories within this directory "

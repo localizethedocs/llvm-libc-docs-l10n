@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,10 +38,12 @@ msgid ""
 "issue\" by the team as potentially easier places to get started. Please do "
 "first check if the bug has an assignee; if so please find another unless "
 "there's been no movement on the issue from the assignee, in which place do "
-"ask if you can help take over."
+"ask if you can help take over. Remember to follow the LLVM [AI Tool Use "
+"Policy](https://llvm.org/docs/AIToolPolicy.html) which forbids using LLMs "
+"for good first issues."
 msgstr ""
 
-#: ../../../contributing.md:17
+#: ../../../contributing.md:19
 msgid ""
 "**Cleanup code-style** - The libc project follows the general [LLVM style]"
 "(https://llvm.org/docs/CodingStandards.html) with specific conventions for "
@@ -51,7 +53,7 @@ msgid ""
 "conventions are welcome."
 msgstr ""
 
-#: ../../../contributing.md:24
+#: ../../../contributing.md:26
 msgid ""
 "**Implement Linux syscall wrappers** - A large portion of the POSIX API can "
 "be implemented as syscall wrappers on Linux. A good number have already been "
@@ -60,7 +62,7 @@ msgid ""
 "implemented."
 msgstr ""
 
-#: ../../../contributing.md:29
+#: ../../../contributing.md:31
 msgid ""
 "**Update the clang-tidy lint rules and use them in the build and/or CI** - "
 "The libc project has a set of clang-tidy checks (see {ref}`clang-tidy checks "
@@ -71,16 +73,164 @@ msgid ""
 "the build and CI."
 msgstr ""
 
-#: ../../../contributing.md:36
+#: ../../../contributing.md:38
 msgid ""
 "**double and higher precision math functions** - These are under active "
 "development but you can take a shot at those not yet implemented. See {ref}"
 "`math` for more information."
 msgstr ""
 
-#: ../../../contributing.md:39
+#: ../../../contributing.md:41
 msgid ""
 "**Contribute a new OS/Architecture port** - You can contribute a new "
 "operating system or target architecture port. See {ref}`porting` for more "
 "information."
+msgstr ""
+
+#: ../../../contributing.md:45
+msgid "Before you start"
+msgstr ""
+
+#: ../../../contributing.md:47
+msgid ""
+"Read {ref}`design_philosophy` and {ref}`abi_policy` to understand what the "
+"project is and is not trying to do. Read {ref}`implementation_guidelines` "
+"for how code is expected to be written, and {ref}`patterns_to_avoid` before "
+"modelling new code on something that is already in the tree, because older "
+"code does not always follow the current conventions."
+msgstr ""
+
+#: ../../../contributing.md:53
+msgid ""
+"Some changes are worth discussing with the maintainers before investing in "
+"an implementation:"
+msgstr ""
+
+#: ../../../contributing.md:56
+msgid ""
+"a non-trivial change to the layout of an existing public type or the value "
+"of an existing public macro, or exporting a symbol under a name other than "
+"its standard one (see {ref}`abi_policy`),"
+msgstr ""
+
+#: ../../../contributing.md:59
+msgid "a function that is not in the C or POSIX standards,"
+msgstr ""
+
+#: ../../../contributing.md:60
+msgid "a new configuration option,"
+msgstr ""
+
+#: ../../../contributing.md:61
+msgid "new code under `libc/shared/`, or a new user of it,"
+msgstr ""
+
+#: ../../../contributing.md:62
+msgid "any code written in assembly (see {ref}`assembly_policy`),"
+msgstr ""
+
+#: ../../../contributing.md:63
+msgid "any intentional deviation from a standard."
+msgstr ""
+
+#: ../../../contributing.md:65
+msgid ""
+"The easiest way to reach out is to ask in the `#libc` channel on the [LLVM "
+"Discord](https://discord.gg/xS7Z362)."
+msgstr ""
+
+#: ../../../contributing.md:68
+msgid "Pull requests"
+msgstr ""
+
+#: ../../../contributing.md:70
+msgid ""
+"**Keep pull requests small and focused.** Add one function, or one closely "
+"related family of functions, per pull request. Land refactoring separately "
+"from the change that needs it. A bug found along the way gets its own pull "
+"request."
+msgstr ""
+
+#: ../../../contributing.md:74
+msgid ""
+"**Title.** Start the title with `[libc]`, and add a second tag where one "
+"applies: `[libc][math]`, `[libc][docs]`, or `[libc][NFC]` for changes with "
+"no functional effect."
+msgstr ""
+
+#: ../../../contributing.md:77
+msgid ""
+"**Format the change.** Run `clang-format` on C++ sources and `libc/utils/"
+"cmake_format.py -i` on the CMake files you edited."
+msgstr ""
+
+#: ../../../contributing.md:79
+msgid ""
+"**Test in both build modes** where the code supports both. See {ref}"
+"`testing_guide`."
+msgstr ""
+
+#: ../../../contributing.md:81
+msgid ""
+"**Do not mention people with `@` in commit messages**, or in a pull request "
+"description that will become one. GitHub notifies them again each time the "
+"commit is pushed to another fork. Request reviews through the reviewers "
+"field instead."
+msgstr ""
+
+#: ../../../contributing.md:85
+msgid ""
+"**Bazel.** Updating the Bazel build files is not required, but it is "
+"appreciated."
+msgstr ""
+
+#: ../../../contributing.md:88
+msgid ""
+"LLVM-libc follows LLVM's [patch reversion policy](https://llvm.org/docs/"
+"DeveloperPolicy.html#patch-reversion-policy). A change that breaks a "
+"buildbot is reverted or, if the fix is trivial, fixed forward. When "
+"relanding, describe what went wrong and how it was fixed."
+msgstr ""
+
+#: ../../../contributing.md:93
+msgid "AI-assisted contributions"
+msgstr ""
+
+#: ../../../contributing.md:95
+msgid ""
+"LLVM's [AI Tool Use Policy](https://llvm.org/docs/AIToolPolicy.html) applies "
+"to LLVM-libc. Read it before using AI tools on a contribution."
+msgstr ""
+
+#: ../../../contributing.md:98
+msgid "Tools make some mistakes in this project more often than people do:"
+msgstr ""
+
+#: ../../../contributing.md:100
+msgid ""
+"They imitate the code around them, including code that follows outdated "
+"conventions. See {ref}`patterns_to_avoid`."
+msgstr ""
+
+#: ../../../contributing.md:102
+msgid ""
+"Asked to make a program work, they change LLVM-libc's types, symbols, or "
+"behavior to match another libc, because that is the shortest path to a "
+"passing build. See {ref}`making_existing_software_work`."
+msgstr ""
+
+#: ../../../contributing.md:105
+msgid ""
+"They reproduce code from other C libraries. That is not allowed, regardless "
+"of how the code was produced. See {ref}`original_implementations`."
+msgstr ""
+
+#: ../../../contributing.md:107
+msgid ""
+"They call one public function from another. See {ref}"
+"`entrypoints_do_not_call_entrypoints`."
+msgstr ""
+
+#: ../../../contributing.md:110
+msgid "Check for these before asking for review."
 msgstr ""

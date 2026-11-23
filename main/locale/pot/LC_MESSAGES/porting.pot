@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,22 +120,71 @@ msgid ""
 "tree/main/libc/config/linux/x86_64) config."
 msgstr ""
 
-#: ../../../porting.md:77
+#: ../../../porting.md:79
+msgid "Using a config directory outside the source tree"
+msgstr ""
+
+#: ../../../porting.md:81
+msgid ""
+"The configuration for a build does not have to live in `libc/config`. The "
+"`LIBC_CONFIG_PATH` CMake option names a directory to use instead of the in-"
+"tree directory for the target:"
+msgstr ""
+
+#: ../../../porting.md:89
+msgid ""
+"The directory must contain an `entrypoints.txt`, and a `headers.txt` for a "
+"full build. An `exclude.txt` and a `config.json` are used if they are "
+"present. The `config.json` is applied on top of the defaults in `libc/config/"
+"config.json`, and the in-tree `config.json` files for the target are not "
+"read."
+msgstr ""
+
+#: ../../../porting.md:95
+msgid ""
+"This is the way to build a libc with a different set of functions, headers, "
+"and options than the default for a target without editing the in-tree "
+"configuration. It is not widely used yet."
+msgstr ""
+
+#: ../../../porting.md:99
+msgid "Building without `-Werror`"
+msgstr ""
+
+#: ../../../porting.md:101
+msgid ""
+"LLVM-libc's library code is compiled with `-Werror`. While bringing up a new "
+"target or compiler, before the build is free of warnings, pass `-"
+"DLIBC_WNO_ERROR=ON` to keep the warnings without treating them as errors. "
+"This should not be considered a long term solution, the warnings should be "
+"fixed before landing upstream."
+msgstr ""
+
+#: ../../../porting.md:107
+msgid ""
+"The tests are currently compiled without `-Werror`, because they do not all "
+"build cleanly with it yet. Turning it back on for the tests is planned; see "
+"{ref}`roadmap`. A build can apply `-Werror` to the library and the tests "
+"alike by setting `LLVM_ENABLE_WERROR`, as the baremetal CMake cache (`libc/"
+"cmake/caches/baremetal_common.cmake`) does."
+msgstr ""
+
+#: ../../../porting.md:113
 msgid "Upstreaming"
 msgstr ""
 
-#: ../../../porting.md:79
+#: ../../../porting.md:115
 msgid ""
 "Adding a target to the main LLVM-libc has some requirements to ensure that "
 "the targets stay in usable condition. LLVM-libc is under active development "
 "and without active maintenance targets will become stale and may be sunset."
 msgstr ""
 
-#: ../../../porting.md:83
+#: ../../../porting.md:119
 msgid "Maintenance"
 msgstr ""
 
-#: ../../../porting.md:85
+#: ../../../porting.md:121
 msgid ""
 "To add a target there must be one or more people whose responsibility it is "
 "to keep the target up to date or push it forwards if it's not complete. "
@@ -145,17 +194,17 @@ msgid ""
 "running."
 msgstr ""
 
-#: ../../../porting.md:91
+#: ../../../porting.md:127
 msgid ""
-"Maintainers are listed in libc/maintainers.md and must follow [LLVM's "
+"Maintainers are listed in `libc/Maintainers.md` and must follow [LLVM's "
 "maintainer policy](https://llvm.org/docs/DeveloperPolicy.html#maintainers)."
 msgstr ""
 
-#: ../../../porting.md:94
+#: ../../../porting.md:130
 msgid "CI builders"
 msgstr ""
 
-#: ../../../porting.md:96
+#: ../../../porting.md:132
 msgid ""
 "Every target needs at least one CI builder. These are used to check when the "
 "target breaks, and to help people who don't have access to the specific "
@@ -167,39 +216,39 @@ msgid ""
 "CIBestPractices.html)"
 msgstr ""
 
-#: ../../../porting.md:105
+#: ../../../porting.md:141
 msgid "The test configurations are at these links:"
 msgstr ""
 
-#: ../../../porting.md:107
+#: ../../../porting.md:143
 msgid ""
 "[Linux Postsubmit](https://github.com/llvm/llvm-zorg/blob/main/zorg/buildbot/"
 "builders/annotated/libc-linux.py)"
 msgstr ""
 
-#: ../../../porting.md:108
+#: ../../../porting.md:144
 msgid ""
 "[Windows Postsubmit](https://github.com/llvm/llvm-zorg/blob/main/zorg/"
 "buildbot/builders/annotated/libc-windows.py)"
 msgstr ""
 
-#: ../../../porting.md:109
+#: ../../../porting.md:145
 msgid ""
 "[Fullbuild Presubmit](https://github.com/llvm/llvm-project/blob/main/.github/"
 "workflows/libc-fullbuild-tests.yml)"
 msgstr ""
 
-#: ../../../porting.md:110
+#: ../../../porting.md:146
 msgid ""
 "[Overlay Presubmit](https://github.com/llvm/llvm-project/blob/main/.github/"
 "workflows/libc-overlay-tests.yml)"
 msgstr ""
 
-#: ../../../porting.md:112
+#: ../../../porting.md:148
 msgid "Sunsetting"
 msgstr ""
 
-#: ../../../porting.md:114
+#: ../../../porting.md:150
 msgid ""
 "Sunsetting is the process through which targets can be removed from LLVM-"
 "libc. If a target is broken or stale it may be sunset. It is the "
@@ -207,7 +256,7 @@ msgid ""
 "target's maintainers may be marked inactive if their target is sunset."
 msgstr ""
 
-#: ../../../porting.md:119
+#: ../../../porting.md:155
 msgid ""
 "Broken targets are ones where the target's CI has been failing for at least "
 "30 days. After 30 days have passed the CI should be changed so it does not "
@@ -215,7 +264,7 @@ msgid ""
 "remains broken for another 90 days it may be sunset."
 msgstr ""
 
-#: ../../../porting.md:124
+#: ../../../porting.md:160
 msgid ""
 "Stale targets are ones with no active maintainers or no contributions. If a "
 "target has 0 specific contributions between two major LLVM releases, or if "
@@ -224,14 +273,14 @@ msgid ""
 "after the next major release it may be sunset."
 msgstr ""
 
-#: ../../../porting.md:130
+#: ../../../porting.md:166
 msgid ""
 "To sunset a target, all specific references to that target in the code and "
 "build system should be removed. All buildbots for that target should be shut "
 "down, or otherwise removed."
 msgstr ""
 
-#: ../../../porting.md:134
+#: ../../../porting.md:170
 msgid ""
 "To restart a target that was previously sunset, the new maintainers are "
 "encouraged to look at the commit(s) removing the target to provide a "
