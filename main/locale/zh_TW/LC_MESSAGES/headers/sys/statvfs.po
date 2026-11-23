@@ -165,6 +165,3 @@ msgid ""
 "  </tbody>\n"
 "</table></div>"
 msgstr ""
-
-#~ msgid "Macro"
-#~ msgstr "巨集"

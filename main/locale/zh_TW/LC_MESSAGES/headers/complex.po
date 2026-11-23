@@ -747,6 +747,3 @@ msgid ""
 "  </tbody>\n"
 "</table></div>"
 msgstr ""
-
-#~ msgid "{{ check }}"
-#~ msgstr "{{ check }}"

@@ -3632,7 +3632,7 @@ msgstr ""
 
 #: ../../../headers/math.md:178
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/math.md:180
 msgid ""

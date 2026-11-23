@@ -93,7 +93,7 @@ msgstr ""
 
 #: ../../../headers/langinfo.md:19
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/langinfo.md:21
 msgid ""

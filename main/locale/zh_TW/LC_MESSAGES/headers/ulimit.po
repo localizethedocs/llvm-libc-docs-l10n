@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../../../headers/ulimit.md:7
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/ulimit.md:9
 msgid ""

@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../../../headers/stdckdint.md:7
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/stdckdint.md:9
 msgid ""

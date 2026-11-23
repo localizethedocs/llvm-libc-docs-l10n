@@ -120,7 +120,7 @@ msgstr ""
 
 #: ../../../headers/sys/time.md:22
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/sys/time.md:24
 msgid ""

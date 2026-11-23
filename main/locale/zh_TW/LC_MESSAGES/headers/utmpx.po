@@ -101,7 +101,7 @@ msgstr ""
 
 #: ../../../headers/utmpx.md:20
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/utmpx.md:22
 msgid ""

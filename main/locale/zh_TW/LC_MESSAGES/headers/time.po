@@ -251,7 +251,7 @@ msgstr ""
 
 #: ../../../headers/time.md:43
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/time.md:45
 msgid ""
@@ -636,18 +636,3 @@ msgid ""
 "  </tbody>\n"
 "</table></div>"
 msgstr ""
-
-#~ msgid "clock"
-#~ msgstr "clock"
-
-#~ msgid "clock_gettime"
-#~ msgstr "clock_gettime"
-
-#~ msgid "nanosleep"
-#~ msgstr "nanosleep"
-
-#~ msgid "strftime"
-#~ msgstr "strftime"
-
-#~ msgid "strftime_l"
-#~ msgstr "strftime_l"

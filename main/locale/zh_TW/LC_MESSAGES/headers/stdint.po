@@ -383,7 +383,7 @@ msgstr ""
 
 #: ../../../headers/stdint.md:45
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/stdint.md:47
 msgid ""

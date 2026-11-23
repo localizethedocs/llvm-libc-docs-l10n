@@ -200,21 +200,3 @@ msgid ""
 "  </tbody>\n"
 "</table></div>"
 msgstr ""
-
-#~ msgid "bcmp"
-#~ msgstr "bcmp"
-
-#~ msgid "bcopy"
-#~ msgstr "bcopy"
-
-#~ msgid "bzero"
-#~ msgstr "bzero"
-
-#~ msgid "index"
-#~ msgstr "index"
-
-#~ msgid "rindex"
-#~ msgstr "rindex"
-
-#~ msgid "strcasecmp"
-#~ msgstr "strcasecmp"

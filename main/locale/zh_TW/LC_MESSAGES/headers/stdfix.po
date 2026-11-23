@@ -847,7 +847,7 @@ msgstr ""
 
 #: ../../../headers/stdfix.md:78
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/stdfix.md:80
 msgid ""
@@ -1336,15 +1336,3 @@ msgid ""
 "  </tbody>\n"
 "</table></div>"
 msgstr ""
-
-#~ msgid "Function Name"
-#~ msgstr "函數名稱"
-
-#~ msgid "{{ check }}"
-#~ msgstr "{{ check }}"
-
-#~ msgid "fprintf"
-#~ msgstr "fprintf"
-
-#~ msgid "fscanf"
-#~ msgstr "fscanf"

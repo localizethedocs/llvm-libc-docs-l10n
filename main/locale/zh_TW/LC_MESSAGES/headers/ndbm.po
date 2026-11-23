@@ -98,7 +98,7 @@ msgstr ""
 
 #: ../../../headers/ndbm.md:20
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/ndbm.md:22
 msgid ""

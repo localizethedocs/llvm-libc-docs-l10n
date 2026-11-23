@@ -140,7 +140,7 @@ msgstr ""
 
 #: ../../../headers/netdb.md:23
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/netdb.md:25
 msgid ""

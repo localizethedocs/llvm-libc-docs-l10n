@@ -47,7 +47,7 @@ msgstr ""
 
 #: ../../../headers/tar.md:7
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/tar.md:9
 msgid ""

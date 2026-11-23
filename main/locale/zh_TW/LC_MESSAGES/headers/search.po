@@ -271,12 +271,3 @@ msgid ""
 "  </tbody>\n"
 "</table></div>"
 msgstr ""
-
-#~ msgid "Type Name"
-#~ msgstr "型別名稱"
-
-#~ msgid "{{ check }}"
-#~ msgstr "{{ check }}"
-
-#~ msgid "Function Name"
-#~ msgstr "函數名稱"

@@ -82,7 +82,7 @@ msgstr ""
 
 #: ../../../headers/ftw.md:18
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/ftw.md:20
 msgid ""

@@ -87,9 +87,3 @@ msgid ""
 "  </tbody>\n"
 "</table></div>"
 msgstr ""
-
-#~ msgid "Macro"
-#~ msgstr "巨集"
-
-#~ msgid "assert"
-#~ msgstr "assert"

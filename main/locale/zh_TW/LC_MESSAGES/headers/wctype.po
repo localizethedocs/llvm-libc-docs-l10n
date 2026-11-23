@@ -124,7 +124,7 @@ msgstr ""
 
 #: ../../../headers/wctype.md:21
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/wctype.md:23
 msgid ""

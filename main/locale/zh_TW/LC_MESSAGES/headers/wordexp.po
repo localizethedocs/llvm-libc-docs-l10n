@@ -93,7 +93,7 @@ msgstr ""
 
 #: ../../../headers/wordexp.md:19
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/wordexp.md:21
 msgid ""

@@ -136,7 +136,7 @@ msgstr ""
 
 #: ../../../headers/sys/shm.md:24
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/sys/shm.md:26
 msgid ""

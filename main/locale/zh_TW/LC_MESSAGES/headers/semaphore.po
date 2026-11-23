@@ -112,7 +112,7 @@ msgstr ""
 
 #: ../../../headers/semaphore.md:21
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/semaphore.md:23
 msgid ""

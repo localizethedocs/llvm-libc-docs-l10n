@@ -113,7 +113,7 @@ msgstr ""
 
 #: ../../../headers/regex.md:20
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/regex.md:22
 msgid ""

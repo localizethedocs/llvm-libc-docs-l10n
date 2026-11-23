@@ -53,7 +53,7 @@ msgstr ""
 
 #: ../../../headers/fmtmsg.md:7
 msgid "Macros"
-msgstr ""
+msgstr "巨集"
 
 #: ../../../headers/fmtmsg.md:9
 msgid ""
