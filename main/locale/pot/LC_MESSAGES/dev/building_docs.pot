@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-16 18:21+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -155,8 +155,8 @@ msgstr ""
 
 #: ../../../dev/building_docs.md:82
 msgid ""
-"A new RST/Markdown file needs a `toctree` entry. Add it to the appropriate "
-"`index.rst` or its parent toctree."
+"A new Markdown file needs a `toctree` entry. Add it to the appropriate "
+"`index.md` or its parent toctree."
 msgstr ""
 
 #: ../../../dev/building_docs.md:85

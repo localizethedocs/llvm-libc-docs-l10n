@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../../dev/syscall_wrapper_refactor.md:3
-msgid "Syscall Wrapper Refactoring"
+msgid "Syscall Wrappers"
 msgstr ""
 
 #: ../../../dev/syscall_wrapper_refactor.md:5
@@ -27,94 +27,146 @@ msgstr ""
 
 #: ../../../dev/syscall_wrapper_refactor.md:7
 msgid ""
-"LLVM-libc is transitioning to a centralized system for Linux syscalls. The "
-"goal is to move all direct `syscall_impl` calls into a dedicated directory: "
-"`src/__support/OSUtil/linux/syscall_wrappers/`."
+"All Linux system calls in LLVM-libc are made through wrapper functions in "
+"one directory: `src/__support/OSUtil/linux/syscall_wrappers/`. Code outside "
+"`src/__support/OSUtil/` does not call `syscall_impl` or use `SYS_*` numbers "
+"directly."
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:11
-msgid "This refactor provides several benefits:"
+#: ../../../dev/syscall_wrapper_refactor.md:12
+msgid "This provides several benefits:"
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:13
+#: ../../../dev/syscall_wrapper_refactor.md:14
 msgid ""
 "**Reusability**: Allows multiple entrypoints to share a single syscall "
 "implementation without public APIs depending on other public APIs."
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:15
+#: ../../../dev/syscall_wrapper_refactor.md:16
 msgid ""
 "**Type Safety**: Using `ErrorOr<T>` ensures that error conditions are "
 "handled explicitly."
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:17
+#: ../../../dev/syscall_wrapper_refactor.md:18
 msgid ""
 "**Consistency**: Standardizes the conversion of syscall return values into "
 "errno-compatible objects."
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:19
+#: ../../../dev/syscall_wrapper_refactor.md:20
 msgid ""
 "**Maintainability**: Centralizes platform-specific syscall logic, making it "
 "easier to audit and update."
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:22
+#: ../../../dev/syscall_wrapper_refactor.md:23
+msgid ""
+"The migration of existing code to this structure is still in progress, so "
+"the tree contains entrypoints that call `syscall_impl` themselves. Do not "
+"copy them. New code uses a wrapper, and adds one if it does not exist yet."
+msgstr ""
+
+#: ../../../dev/syscall_wrapper_refactor.md:27
 msgid "The Pattern"
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:24
+#: ../../../dev/syscall_wrapper_refactor.md:29
 msgid ""
-"Each syscall should have its own header-only library in the "
-"`syscall_wrappers` directory. The wrapper function should return an "
-"`ErrorOr<T>`. Wrappers live in the `linux_syscalls` namespace to make call "
+"Each syscall has its own header-only library in the `syscall_wrappers` "
+"directory. Wrappers live in the `linux_syscalls` namespace to make call "
 "sites self-documenting and to clearly identify any leakage into OS-generic "
 "code."
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:29
+#: ../../../dev/syscall_wrapper_refactor.md:33
 msgid "Example Wrapper (`src/__support/OSUtil/linux/syscall_wrappers/read.h`):"
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:50
+#: ../../../dev/syscall_wrapper_refactor.md:54
+msgid "The entrypoint turns the result into the public contract. In outline:"
+msgstr ""
+
+#: ../../../dev/syscall_wrapper_refactor.md:67
+msgid "Rules for wrappers"
+msgstr ""
+
+#: ../../../dev/syscall_wrapper_refactor.md:69
+msgid ""
+"**A wrapper represents an operation of the operating system**, not a POSIX "
+"function. Linux-specific system calls get wrappers like any other."
+msgstr ""
+
+#: ../../../dev/syscall_wrapper_refactor.md:71
+msgid ""
+"**A wrapper hides which syscall number implements the operation.** Some "
+"architectures lack the older syscalls (there is no `SYS_mkdir` on AArch64, "
+"for instance), so the `mkdir` wrapper calls `SYS_mkdirat`. Callers do not "
+"repeat that choice."
+msgstr ""
+
+#: ../../../dev/syscall_wrapper_refactor.md:75
+msgid ""
+"**Use `syscall_checked`.** It converts the kernel's error convention into an "
+"`ErrorOr<T>`. Do not call `syscall_impl` and check the sign of the result by "
+"hand."
+msgstr ""
+
+#: ../../../dev/syscall_wrapper_refactor.md:78
+msgid ""
+"**Syscalls that cannot fail return the plain type.** `getpid` returns "
+"`pid_t`, not `ErrorOr<pid_t>`, and is one of the few places that use "
+"`syscall_impl`."
+msgstr ""
+
+#: ../../../dev/syscall_wrapper_refactor.md:81
+msgid ""
+"**A wrapper never sets `errno`.** The entrypoint does. See {ref}"
+"`setting_errno`."
+msgstr ""
+
+#: ../../../dev/syscall_wrapper_refactor.md:84
+msgid ""
+"Other operating systems follow the same structure under their own directory "
+"and namespace, for example `src/__support/OSUtil/freebsd/syscall_wrappers/`."
+msgstr ""
+
+#: ../../../dev/syscall_wrapper_refactor.md:87
 msgid "How to Migrate"
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:52
-msgid ""
-"**Cleanup Existing Implementation**: If the syscall was previously "
-"implemented in `OSUtil/linux/fcntl.cpp` (or similar), remove the old "
-"implementation to replace it with the new wrapper."
-msgstr ""
-
-#: ../../../dev/syscall_wrapper_refactor.md:56
+#: ../../../dev/syscall_wrapper_refactor.md:89
 msgid ""
 "**Create the Wrapper**: Add a new header file in `src/__support/OSUtil/linux/"
 "syscall_wrappers/`."
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:59
+#: ../../../dev/syscall_wrapper_refactor.md:92
 msgid ""
 "**Update CMake**: Add a `add_header_library` target for the new wrapper in "
 "`src/__support/OSUtil/linux/syscall_wrappers/CMakeLists.txt`."
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:62
+#: ../../../dev/syscall_wrapper_refactor.md:95
 msgid "**Refactor Entrypoints**:"
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:64
+#: ../../../dev/syscall_wrapper_refactor.md:97
 msgid "Include the new wrapper header (e.g., `read.h`)."
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:65
+#: ../../../dev/syscall_wrapper_refactor.md:98
 msgid ""
 "Replace direct `syscall_impl` calls with `linux_syscalls::<function_name>`."
 msgstr ""
 
-#: ../../../dev/syscall_wrapper_refactor.md:67
+#: ../../../dev/syscall_wrapper_refactor.md:100
 msgid ""
 "Update the entrypoint's `DEPENDS` in `CMakeLists.txt` to include the new "
 "wrapper target."
+msgstr ""
+
+#: ../../../dev/syscall_wrapper_refactor.md:103
+msgid "Migrate one system call per pull request."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,14 +33,13 @@ msgstr ""
 msgid ""
 "**The overlay mode** - In this mode, one uses the static archive from LLVM's "
 "libc along with the system libc. See {ref}`overlay_mode` for more details on "
-"building and using the libc in this mode. You can only run the libc "
-"unittests in this mode. To run them, one simply does:"
+"building and using the libc in this mode. To run the tests, one simply does:"
 msgstr ""
 
 #: ../../../build_and_test.md:18
 msgid ""
-"Note that, unittests for only those functions which are part of the overlay "
-"static archive will be run with the above command."
+"Note that only the tests for functions that are part of the overlay static "
+"archive are run by the above command."
 msgstr ""
 
 #: ../../../build_and_test.md:21
@@ -48,57 +47,65 @@ msgid ""
 "**The full build mode** - In this mode, the libc is used as the only libc "
 "for the user's application. See {ref}`full_host_build` for more details on "
 "building and using the libc in this mode. Once configured for a full libc "
-"build, you can run three kinds of tests:"
+"build, the same command builds the tests against LLVM-libc's own headers and "
+"startup code and runs them:"
 msgstr ""
 
-#: ../../../build_and_test.md:26
-msgid "Unit tests - You can run unittests by the command:"
+#: ../../../build_and_test.md:31
+msgid "Subsets of the tests have their own targets:"
 msgstr ""
 
-#: ../../../build_and_test.md:32
+#: ../../../build_and_test.md:33
 msgid "Integration tests - You can run integration tests by the command:"
 msgstr ""
 
-#: ../../../build_and_test.md:38
+#: ../../../build_and_test.md:39
 msgid ""
 "Shared tests - You can run tests for shared, standalone components (like "
 "math primitives) without needing the full libc runtime by the command:"
 msgstr ""
 
-#: ../../../build_and_test.md:44
+#: ../../../build_and_test.md:45
+msgid ""
+"A change should be tested in both modes. See {ref}`testing_guide` for the "
+"kinds of tests, how to run a single test, and how to confirm that a test was "
+"not silently skipped."
+msgstr ""
+
+#: ../../../build_and_test.md:49
 msgid "Building with VSCode"
 msgstr ""
 
-#: ../../../build_and_test.md:46
+#: ../../../build_and_test.md:51
 msgid ""
 "As a quickstart to using VSCode for development, install the cmake extension "
 "and put the following in your settings.json file:"
 msgstr ""
 
-#: ../../../build_and_test.md:67
+#: ../../../build_and_test.md:72
 msgid "Building with Bazel"
 msgstr ""
 
-#: ../../../build_and_test.md:69
+#: ../../../build_and_test.md:74
 msgid "To build with Bazel, use the following command:"
 msgstr ""
 
-#: ../../../build_and_test.md:75
+#: ../../../build_and_test.md:80
 msgid "To run the unit tests with bazel, use the following command:"
 msgstr ""
 
-#: ../../../build_and_test.md:81
+#: ../../../build_and_test.md:86
 msgid ""
 "The bazel target layout of `libc` is located at: [utils/bazel/llvm-project-"
 "overlay/libc/BUILD.bazel](https://github.com/llvm/llvm-project/tree/main/"
 "utils/bazel/llvm-project-overlay/libc/BUILD.bazel)."
 msgstr ""
 
-#: ../../../build_and_test.md:83
+#: ../../../build_and_test.md:88
 msgid "Building in a container for a different architecture"
 msgstr ""
 
-#: ../../../build_and_test.md:85
+#: ../../../build_and_test.md:90
 msgid ""
 "[Podman](https://podman.io/) can be used together with [QEMU](https://"
 "www.qemu.org/) to run container images built for architectures other than "
@@ -108,29 +115,29 @@ msgid ""
 "powerful machine under a different architecture."
 msgstr ""
 
-#: ../../../build_and_test.md:92
+#: ../../../build_and_test.md:97
 msgid "As an example, to build and test in a container for 32-bit Arm:"
 msgstr ""
 
-#: ../../../build_and_test.md:94
+#: ../../../build_and_test.md:99
 msgid "To install the necessary packages on Arch Linux:"
 msgstr ""
 
-#: ../../../build_and_test.md:101
+#: ../../../build_and_test.md:106
 msgid ""
 "To run Bash interactively in an Ubuntu 22.04 container for 32-bit Arm and "
 "bind-mount an existing checkout of llvm-project on the host:"
 msgstr ""
 
-#: ../../../build_and_test.md:110
+#: ../../../build_and_test.md:115
 msgid "Install necessary packages, invoke CMake, build, and run tests."
 msgstr ""
 
-#: ../../../build_and_test.md:112
+#: ../../../build_and_test.md:117
 msgid "Building and Testing with an Emulator"
 msgstr ""
 
-#: ../../../build_and_test.md:114
+#: ../../../build_and_test.md:119
 msgid ""
 "If you are cross-compiling the libc for a different architecture, you can "
 "use an emulator such as QEMU to run the tests directly on your host without "

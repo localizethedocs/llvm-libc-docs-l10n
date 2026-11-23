@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,19 +147,21 @@ msgstr ""
 
 #: ../../../dev/entrypoints.md:90
 msgid ""
-"Entrypoint objects are generally forbidden from depending on other "
-"entrypoint objects. The single allowed exception is `libc.src.errno.errno`: "
-"entrypoints that read or set `errno` should declare both "
-"`libc.src.__support.libc_errno` (the internal header) and "
+"Entrypoint objects are forbidden from depending on other entrypoint objects; "
+"see {ref}`entrypoints_do_not_call_entrypoints` for what to do instead. The "
+"allowed exceptions are listed in `check_entrypoint_deps` in `libc/cmake/"
+"modules/LLVMLibCObjectRules.cmake`. The one that matters in practice is "
+"`libc.src.errno.errno`: entrypoints that read or set `errno` should declare "
+"both `libc.src.__support.libc_errno` (the internal header) and "
 "`libc.src.errno.errno` (the compiled runtime storage) in their `DEPENDS` "
 "list. See {ref}`setting_errno` for detailed rules."
 msgstr ""
 
-#: ../../../dev/entrypoints.md:96
+#: ../../../dev/entrypoints.md:100
 msgid "`add_entrypoint_library`"
 msgstr ""
 
-#: ../../../dev/entrypoints.md:98
+#: ../../../dev/entrypoints.md:102
 msgid ""
 "Standard library files like `libc.a` and `libm.a` are produced by "
 "aggregating multiple entrypoint objects. The `add_entrypoint_library` target "
@@ -167,33 +169,46 @@ msgid ""
 "library."
 msgstr ""
 
-#: ../../../dev/entrypoints.md:102
+#: ../../../dev/entrypoints.md:106
 msgid "Configuration: `entrypoints.txt`"
 msgstr ""
 
-#: ../../../dev/entrypoints.md:104
+#: ../../../dev/entrypoints.md:108
 msgid ""
 "The final selection of which entrypoints are included in a specific build is "
 "determined by `entrypoints.txt` files located in the `libc/config` tree."
 msgstr ""
 
-#: ../../../dev/entrypoints.md:107
+#: ../../../dev/entrypoints.md:111
 msgid ""
 "**Location**: Typically found in `libc/config/<os>/entrypoints.txt` or `libc/"
 "config/<os>/<arch>/entrypoints.txt`."
 msgstr ""
 
-#: ../../../dev/entrypoints.md:109
+#: ../../../dev/entrypoints.md:113
 msgid ""
 "**Role**: This file acts as the \"source of truth\" for what is supported on "
 "a given platform. A typical bring-up procedure involves progressively adding "
 "targets to this file as they are implemented and tested."
 msgstr ""
 
-#: ../../../dev/entrypoints.md:113
+#: ../../../dev/entrypoints.md:117
 msgid ""
 "If you are implementing a new entrypoint, you must add its target name to "
 "the relevant `entrypoints.txt` files for it to be included in the library "
-"build. For more details on platform configuration, see the {ref}`porting` "
-"guide."
+"build. See {ref}`code_organization` for which files those are, and the {ref}"
+"`porting` guide for more details on platform configuration."
+msgstr ""
+
+#: ../../../dev/entrypoints.md:122
+msgid "Experimental entrypoints"
+msgstr ""
+
+#: ../../../dev/entrypoints.md:124
+msgid ""
+"Entrypoints whose implementations are known to be incomplete are listed "
+"inside an `if(LLVM_LIBC_ENABLE_EXPERIMENTAL_ENTRYPOINTS)` block in "
+"`entrypoints.txt`. The option is off by default. See {ref}"
+"`extensions_and_stubs` for when an entrypoint belongs there and when it can "
+"leave."
 msgstr ""

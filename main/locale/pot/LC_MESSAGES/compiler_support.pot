@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,4 +52,13 @@ msgstr ""
 
 #: ../../../compiler_support.md:19
 msgid "`GCC 12.2`"
+msgstr ""
+
+#: ../../../compiler_support.md:21
+msgid ""
+"Code that is shared with other LLVM projects through {ref}`Hand-in-Hand "
+"<hand_in_hand>` is compiled as part of those projects, so it must also build "
+"with the [host compilers LLVM supports](https://llvm.org/docs/"
+"GettingStarted.html#host-c-toolchain-both-compiler-and-standard-library), "
+"which are older."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,44 +22,102 @@ msgid "Architecture Support"
 msgstr ""
 
 #: ../../../arch_support.md:3
-msgid "The currently continuously tested architectures are:"
+msgid "The table below lists what is built and tested on every pull request."
 msgstr ""
 
-#: ../../../arch_support.md:5
-msgid "aarch64"
+#: ../../../arch_support.md:0
+msgid "Architecture"
 msgstr ""
 
-#: ../../../arch_support.md:6
-msgid "amdgpu"
+#: ../../../arch_support.md:0
+msgid "Tests run"
 msgstr ""
 
-#: ../../../arch_support.md:7
-msgid "arm"
+#: ../../../arch_support.md:0
+msgid "Built only"
 msgstr ""
 
-#: ../../../arch_support.md:8
-msgid "nvptx"
+#: ../../../arch_support.md:0
+msgid "x86-64"
 msgstr ""
 
-#: ../../../arch_support.md:9
-msgid "riscv32"
+#: ../../../arch_support.md:0
+msgid "Linux (overlay and full build), Windows (overlay), FreeBSD (overlay)"
 msgstr ""
 
-#: ../../../arch_support.md:10
-msgid "riscv64"
+#: ../../../arch_support.md:0
+msgid "UEFI"
 msgstr ""
 
-#: ../../../arch_support.md:11
-msgid "x86_64"
+#: ../../../arch_support.md:0
+msgid "AArch64"
 msgstr ""
 
-#: ../../../arch_support.md:13
-msgid ""
-"i386 support is [in the works](https://github.com/llvm/llvm-project/issues/"
-"93709)."
+#: ../../../arch_support.md:0
+msgid "Linux (overlay and full build), macOS (overlay)"
+msgstr ""
+
+#: ../../../arch_support.md:0
+msgid "32-bit Arm"
+msgstr ""
+
+#: ../../../arch_support.md:0
+msgid "Linux (overlay, under QEMU), Baremetal Armv7-M (under QEMU)"
+msgstr ""
+
+#: ../../../arch_support.md:0
+msgid "Baremetal for the other Arm profiles"
+msgstr ""
+
+#: ../../../arch_support.md:0
+msgid "64-bit RISC-V"
+msgstr ""
+
+#: ../../../arch_support.md:0
+msgid "Linux (overlay, under QEMU)"
+msgstr ""
+
+#: ../../../arch_support.md:0
+msgid "32-bit RISC-V"
+msgstr ""
+
+#: ../../../arch_support.md:0
+msgid "Baremetal"
+msgstr ""
+
+#: ../../../arch_support.md:0
+msgid "Hexagon"
+msgstr ""
+
+#: ../../../arch_support.md:0
+msgid "AMDGPU"
+msgstr ""
+
+#: ../../../arch_support.md:0
+msgid "GPU"
 msgstr ""
 
 #: ../../../arch_support.md:15
+msgid ""
+"NVPTX is also a supported GPU target. See {doc}`the GPU docs <gpu/index>` "
+"for both GPU targets."
+msgstr ""
+
+#: ../../../arch_support.md:18
+msgid ""
+"After a change lands, the [postcommit buildbots](https://lab.llvm.org/"
+"buildbot/#/builders?tags=libc) currently cover Linux on x86-64: Clang and "
+"GCC, overlay and full build, and AddressSanitizer."
+msgstr ""
+
+#: ../../../arch_support.md:23
+msgid ""
+"i386 support is [in the works](https://github.com/llvm/llvm-project/issues/"
+"93709), though it may be sunset. See {ref}`platform_support` for the status "
+"of each target."
+msgstr ""
+
+#: ../../../arch_support.md:27
 msgid ""
 "See {doc}`Bringup on a New OS or Architecture <porting>` for more "
 "information. Please do first file a bug in [our issue tracker](https://"

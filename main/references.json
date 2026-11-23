@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-11-16 10:16:45 -0800",
-      "hash" : "364e0cb697f1785fe43eb9e900c255135f4654cf",
-      "title" : "[MLIR][PDL] Use scoped map for ConstraintQuestion mapping (#228081)"
+      "date" : "2026-11-23 20:34:07 +0000",
+      "hash" : "c6ecd4a1da04558a18bdc7ffcea1af4b50403789",
+      "title" : "[SandboxVec][LoadStoreVec] Support mixed-type load vectorization (#236647)"
     }
   },
   "type" : "branch",

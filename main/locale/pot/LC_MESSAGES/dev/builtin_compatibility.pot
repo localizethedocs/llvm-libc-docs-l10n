@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -477,7 +477,27 @@ msgid "`__builtin_isfinite`"
 msgstr ""
 
 #: ../../../dev/builtin_compatibility.md:0
+msgid "`__builtin_isgreater`"
+msgstr ""
+
+#: ../../../dev/builtin_compatibility.md:0
+msgid "`__builtin_isgreaterequal`"
+msgstr ""
+
+#: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_isinf`"
+msgstr ""
+
+#: ../../../dev/builtin_compatibility.md:0
+msgid "`__builtin_isless`"
+msgstr ""
+
+#: ../../../dev/builtin_compatibility.md:0
+msgid "`__builtin_islessequal`"
+msgstr ""
+
+#: ../../../dev/builtin_compatibility.md:0
+msgid "`__builtin_islessgreater`"
 msgstr ""
 
 #: ../../../dev/builtin_compatibility.md:0
@@ -486,6 +506,10 @@ msgstr ""
 
 #: ../../../dev/builtin_compatibility.md:0
 msgid "`__builtin_isnormal`"
+msgstr ""
+
+#: ../../../dev/builtin_compatibility.md:0
+msgid "`__builtin_isunordered`"
 msgstr ""
 
 #: ../../../dev/builtin_compatibility.md:0

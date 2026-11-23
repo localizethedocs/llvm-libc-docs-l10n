@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,30 +24,31 @@ msgstr ""
 #: ../../../dev/undefined_behavior.md:5
 msgid ""
 "The C standard leaves behavior undefined or implementation defined in many "
-"places. Undefined behavior is behavior that the standards leave up to the "
-"implementation. As an implementation, LLVM's libc must provide a result for "
-"any input, including inputs for which the result is undefined. This page "
-"provides examples of how these situations are handled in existing code, "
-"followed by guidelines to help determine the right approach for new "
-"situations."
-msgstr ""
-
-#: ../../../dev/undefined_behavior.md:12
-msgid "Guidelines"
+"places. Undefined behavior is behavior for which the standard imposes no "
+"requirements, and implementation-defined behavior is behavior that each "
+"implementation chooses and documents. As an implementation, LLVM's libc must "
+"provide a result for any input, including inputs for which the result is "
+"undefined. This page provides examples of how these situations are handled "
+"in existing code, followed by guidelines to help determine the right "
+"approach for new situations."
 msgstr ""
 
 #: ../../../dev/undefined_behavior.md:14
+msgid "Guidelines"
+msgstr ""
+
+#: ../../../dev/undefined_behavior.md:16
 msgid ""
 "Most undefined behavior is outside the scope of normal use. Follow these "
 "guidelines and the resulting code should behave predictably even in "
 "unexpected situations."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:18
+#: ../../../dev/undefined_behavior.md:20
 msgid "Follow the standards."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:19
+#: ../../../dev/undefined_behavior.md:21
 msgid ""
 "If there is no standard, first ask yourself if this implementation is "
 "necessary (are there users who need this functionality?). If it truly is, "
@@ -55,115 +56,115 @@ msgid ""
 "confusion (see the history of qsort_r)."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:20
+#: ../../../dev/undefined_behavior.md:22
 msgid "Avoid giving an incorrect answer."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:21
+#: ../../../dev/undefined_behavior.md:23
 msgid ""
 "In general, correct answer > correct answer (wrong format) > no answer > "
 "crash the program >>>>>>> incorrect answer."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:22
+#: ../../../dev/undefined_behavior.md:24
 msgid ""
 "The C library is called frequently in performance critical situations, and "
 "so can't afford to do thorough error checking and correction."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:23
+#: ../../../dev/undefined_behavior.md:25
 msgid ""
 "It also cannot give the incorrect answer for any reasonable input, since it "
 "is so foundational."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:24
+#: ../../../dev/undefined_behavior.md:26
 msgid ""
 "This leaves crashing or address space corruption as a probable option for a "
 "libc function in an ambiguous state."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:25
+#: ../../../dev/undefined_behavior.md:27
 msgid "Don't overcomplicate undefined situations."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:26
+#: ../../../dev/undefined_behavior.md:28
 msgid ""
 "It's better to have a slightly confusing result for an undefined input than "
 "100 extra lines of code that are never used for a well defined input."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:27
+#: ../../../dev/undefined_behavior.md:29
 msgid ""
 "LLVM's libc is also used for embedded systems that care a lot about code "
 "size."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:28
+#: ../../../dev/undefined_behavior.md:30
 msgid "Unreasonable inputs can have unreasonable outputs."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:29
+#: ../../../dev/undefined_behavior.md:31
 msgid "Match other implementations when it makes sense."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:30
+#: ../../../dev/undefined_behavior.md:32
 msgid ""
 "Every libc has to make these choices, and sometimes others have already "
 "found the right choice."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:31
+#: ../../../dev/undefined_behavior.md:33
 msgid ""
 "Be careful, just because there is a consensus doesn't make that consensus "
 "right."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:32
+#: ../../../dev/undefined_behavior.md:34
 msgid "LLVM's libc should be consistent with itself."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:33
+#: ../../../dev/undefined_behavior.md:35
 msgid ""
 "Similar inputs to the same function should yield similar results, even when "
 "the inputs are undefined."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:34
+#: ../../../dev/undefined_behavior.md:36
 msgid "The same input to similar functions should also yield similar results."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:35
+#: ../../../dev/undefined_behavior.md:37
 msgid ""
 "The same input to the same function on different platforms should yield the "
 "same result, unless there's a specific reason not to (e.g. 64 bit long vs 32 "
 "bit long)."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:36
+#: ../../../dev/undefined_behavior.md:38
 msgid "Write down the decision."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:37
+#: ../../../dev/undefined_behavior.md:39
 msgid ""
 "Every libc has to make a decision on how to handle undefined inputs. Users "
 "should be able to find what LLVM's libc does."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:38
+#: ../../../dev/undefined_behavior.md:40
 msgid ""
 "While users shouldn't rely on undefined behavior, it shouldn't surprise them."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:40
+#: ../../../dev/undefined_behavior.md:42
 msgid "Approaches"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:42
+#: ../../../dev/undefined_behavior.md:44
 msgid "Matching Behavior Against Existing Implementations"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:44
+#: ../../../dev/undefined_behavior.md:46
 msgid ""
 "Existing implementations have already chosen how to handle undefined "
 "situations, and sometimes there are benefits to matching those decisions, "
@@ -180,11 +181,11 @@ msgid ""
 "correctness in this case."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:46
+#: ../../../dev/undefined_behavior.md:48
 msgid "Simplifying Handling Invalid Inputs"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:48
+#: ../../../dev/undefined_behavior.md:50
 msgid ""
 "When handling invalid inputs, the output should be simple to code, and "
 "simple for the user to understand. An example of this is how the printf "
@@ -200,11 +201,11 @@ msgid ""
 "predictable for the user."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:50
+#: ../../../dev/undefined_behavior.md:52
 msgid "Conforming to Existing Practice"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:52
+#: ../../../dev/undefined_behavior.md:54
 msgid ""
 "There are some behaviors that are technically undefined, but are otherwise "
 "consistent across implementations, such as how printf handles length "
@@ -223,11 +224,11 @@ msgid ""
 "predictable outcome for the user."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:54
+#: ../../../dev/undefined_behavior.md:56
 msgid "Interpreting the Standard's Reasoning"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:56
+#: ../../../dev/undefined_behavior.md:58
 msgid ""
 "Often the standard will imply an intended behavior through what it states is "
 "undefined, such as in the case of printf's handling of the %% conversion. "
@@ -247,11 +248,11 @@ msgid ""
 "for unreasonable edge cases, such as this one, is unnecessary."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:58
+#: ../../../dev/undefined_behavior.md:60
 msgid "Ignoring Bug-For-Bug Compatibility"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:60
+#: ../../../dev/undefined_behavior.md:62
 msgid ""
 "Any long running implementations will have bugs and deviations from the "
 "standard. Hyrum's Law states that “all observable behaviors of your system "
@@ -274,15 +275,15 @@ msgid ""
 "first consider if anyone will actually use it at all."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:62
+#: ../../../dev/undefined_behavior.md:64
 msgid "Design Decisions"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:64
+#: ../../../dev/undefined_behavior.md:66
 msgid "Resizable Tables for hsearch"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:66
+#: ../../../dev/undefined_behavior.md:68
 msgid ""
 "The POSIX.1 standard does not delineate the behavior consequent to invoking "
 "hsearch or hdestroy without prior initialization of the hash table via "
@@ -302,11 +303,11 @@ msgid ""
 "the hash table."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:68
+#: ../../../dev/undefined_behavior.md:70
 msgid "Path without Leading Slashs in shm_open"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:70
+#: ../../../dev/undefined_behavior.md:72
 msgid ""
 "POSIX.1 leaves that when the name of a shared memory object does not begin "
 "with a slash, the behavior is implementation defined. In such cases, the "
@@ -314,22 +315,22 @@ msgid ""
 "slash."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:72
+#: ../../../dev/undefined_behavior.md:74
 msgid "Handling of NULL arguments to the 's' and 'n' format specifiers"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:74
+#: ../../../dev/undefined_behavior.md:76
 msgid ""
 "The C standard does not specify behavior for `printf(\"%s\", NULL)` or "
 "`printf(\"%n\", NULL)`. For LLVM-libc, see {ref}"
 "`LIBC_COPT_PRINTF_NO_NULLPTR_CHECKS <printf_no_nullptr_checks>` for details."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:78
+#: ../../../dev/undefined_behavior.md:80
 msgid "Unknown Math Rounding Direction"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:80
+#: ../../../dev/undefined_behavior.md:82
 msgid ""
 "The C23 standard states that if the value of the `rnd` argument of the "
 "`fromfp`, `ufromfp`, `fromfpx` and `ufromfpx` functions is not equal to the "
@@ -338,33 +339,33 @@ msgid ""
 "direction in this case."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:86
+#: ../../../dev/undefined_behavior.md:88
 msgid "Non-const Constant Return Values"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:88
+#: ../../../dev/undefined_behavior.md:90
 msgid ""
 "Some libc functions, like `dlerror()`, return `char *` instead of `const "
 "char *` and then tell the caller they promise not to modify this value. Any "
 "modification of this value is undefined behavior."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:90
+#: ../../../dev/undefined_behavior.md:92
 msgid "Unrecognized `clockid_t` values for `pthread_rwlock_clock*` APIs"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:92
+#: ../../../dev/undefined_behavior.md:94
 msgid ""
 "POSIX.1-2024 only demands support for `CLOCK_REALTIME` and "
 "`CLOCK_MONOTONIC`. Currently, as in LLVM libc, if other clock ids are used, "
 "they will be treated as monotonic clocks."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:95
+#: ../../../dev/undefined_behavior.md:97
 msgid "Invalid condition variable attributes for `pthread_cond_init`"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:97
+#: ../../../dev/undefined_behavior.md:99
 msgid ""
 "POSIX.1-2024 specifies that `pthread_cond_init` returns an error number on "
 "failure, but it does not specify the behavior when the provided "
@@ -375,11 +376,11 @@ msgid ""
 "not set `errno`."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:105
+#: ../../../dev/undefined_behavior.md:107
 msgid "PThread SpinLock Destroy"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:107
+#: ../../../dev/undefined_behavior.md:109
 msgid ""
 "POSIX.1 Issue 7 updates the spinlock destroy behavior description such that "
 "the return code for uninitialized spinlock and invalid spinlock is left "
@@ -390,11 +391,11 @@ msgid ""
 "lock object without any reinitialization will return EINVAL."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:113
+#: ../../../dev/undefined_behavior.md:115
 msgid "Strftime"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:115
+#: ../../../dev/undefined_behavior.md:117
 msgid ""
 "In the C Standard, it provides a list of modifiers, and the conversions "
 "these are valid on. It also says that a modifier on an unspecified "
@@ -402,7 +403,7 @@ msgid ""
 "modifier isn't there."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:120
+#: ../../../dev/undefined_behavior.md:122
 msgid ""
 "If a struct tm with values out of the normal range is passed, the standard "
 "says the result is undefined. For LLVM-libc, the result may be either the "
@@ -416,7 +417,7 @@ msgid ""
 "value will result in \"?\"."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:130
+#: ../../../dev/undefined_behavior.md:132
 msgid ""
 "Posix adds padding support to strftime, but says \"the default padding "
 "character is unspecified.\" For LLVM-libc, the default padding character is "
@@ -429,13 +430,13 @@ msgid ""
 "outside of the range -999 to 9999."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:139
+#: ../../../dev/undefined_behavior.md:141
 msgid ""
 "The %e conversion is padded with spaces by default, but pads with 0s if the "
 "'0' flag is set."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:142
+#: ../../../dev/undefined_behavior.md:144
 msgid ""
 "Posix also adds flags and a minimum field width, but leaves unspecified what "
 "happens for most combinations of these. For LLVM-libc: An unspecified "
@@ -447,11 +448,11 @@ msgid ""
 "component conversions."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:150
+#: ../../../dev/undefined_behavior.md:152
 msgid "a64l and l64a"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:152
+#: ../../../dev/undefined_behavior.md:154
 msgid ""
 "These functions convert to and from a posix-specified base64 encoding. There "
 "are a few cases left undefined. For a64l, the behavior is undefined if the "
@@ -464,11 +465,11 @@ msgid ""
 "buffer that's overwritten on each call."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:162
+#: ../../../dev/undefined_behavior.md:164
 msgid "`inet_aton` and Non-Standard Binary Integers"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:164
+#: ../../../dev/undefined_behavior.md:166
 msgid ""
 "The current implementation of the `inet_aton` function utilizes the same "
 "code as `strtol` to parse IPv4 numbers-and-dots notations. This approach may "
@@ -476,44 +477,44 @@ msgid ""
 "by the standard."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:169
+#: ../../../dev/undefined_behavior.md:171
 msgid "`tdelete` on Non-existent Key"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:171
+#: ../../../dev/undefined_behavior.md:173
 msgid ""
 "The return value of `tdelete` is unspecified if the key is not found in the "
 "tree. For LLVM-libc, `tdelete` returns bit-casted `uintptr_t`'s maximum "
 "value."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:174
+#: ../../../dev/undefined_behavior.md:176
 msgid "`twalk/twalk_r/tdestroy` with Null Function Pointer"
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:176
+#: ../../../dev/undefined_behavior.md:178
 msgid ""
 "The standard requires that `twalk`, `twalk_r`, and `tdestroy` to be used "
-"with a valid function pointer. LLVM-libc follows the behavior of configured "
-"via the `LIBC_ADD_NULL_CHECKS` option."
-msgstr ""
-
-#: ../../../dev/undefined_behavior.md:180
-msgid "Invalid Thread Joining Behavior"
+"with a valid function pointer. LLVM-libc's behavior for a null function "
+"pointer is configured via the `LIBC_ADD_NULL_CHECKS` option."
 msgstr ""
 
 #: ../../../dev/undefined_behavior.md:182
+msgid "Invalid Thread Joining Behavior"
+msgstr ""
+
+#: ../../../dev/undefined_behavior.md:184
 msgid ""
 "POSIX standard does not demand accurate deadlock detection and leaves "
 "repeated/concurrent joining as undefined behavior. In the following, we "
 "discuss the related behaviors explicitly."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:186
+#: ../../../dev/undefined_behavior.md:188
 msgid "Self joining is always rejected with `EDEADLK`."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:188
+#: ../../../dev/undefined_behavior.md:190
 msgid ""
 "At least one of the two threads in a mutual joining will detect the deadlock "
 "and return `EDEADLK`. If joining requester gets `EDEADLK`, the joining "
@@ -521,11 +522,11 @@ msgid ""
 "already be waiting if it does not see `EDEADLK`."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:193
+#: ../../../dev/undefined_behavior.md:195
 msgid "Cyclic joining with more than two threads is not detected."
 msgstr ""
 
-#: ../../../dev/undefined_behavior.md:195
+#: ../../../dev/undefined_behavior.md:197
 msgid ""
 "Concurrent and repeated joinings on the same thread are faulty behaviors, "
 "because target thread's TLS may already be torn down. `EINVAL` may be "

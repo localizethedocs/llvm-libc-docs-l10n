@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,20 +75,39 @@ msgid "OpenMP uses it for printf on GPUs."
 msgstr ""
 
 #: ../../../hand_in_hand.md:37
-msgid "[WIP] clang uses it for APFloat functions."
+msgid ""
+"compiler-rt can use it to implement its floating point builtins "
+"(`COMPILER_RT_USE_LIBC_MATH`)."
 msgstr ""
 
 #: ../../../hand_in_hand.md:39
 msgid ""
+"The offloading runtime and the sanitizers' GPU support use the RPC headers."
+msgstr ""
+
+#: ../../../hand_in_hand.md:40
+msgid ""
+"[WIP] LLVM uses it for APFloat functions. A few functions are provided so "
+"far."
+msgstr ""
+
+#: ../../../hand_in_hand.md:43
+msgid ""
+"See {ref}`code_organization` for the constraints on code that is exposed "
+"this way."
+msgstr ""
+
+#: ../../../hand_in_hand.md:46
+msgid ""
 "For more information check out the 2024 talk about the original Project:"
 msgstr ""
 
-#: ../../../hand_in_hand.md:41
+#: ../../../hand_in_hand.md:48
 msgid ""
 "[slides](https://llvm.org/devmtg/2024-10/slides/techtalk/Jones-DiBella-hand-"
 "in-hand.pdf)"
 msgstr ""
 
-#: ../../../hand_in_hand.md:42
+#: ../../../hand_in_hand.md:49
 msgid "[video](https://www.youtube.com/watch?v=VAEO86YtTHA)"
 msgstr ""

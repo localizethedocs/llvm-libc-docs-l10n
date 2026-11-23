@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,98 +39,114 @@ msgid ""
 msgstr ""
 
 #: ../../../dev/implementing_a_function.md:11
+msgid ""
+"Before starting, read {ref}`code_organization` and {ref}`patterns_to_avoid`. "
+"The most common mistake in a new function is calling another public function "
+"from it, which is not allowed (see {ref}"
+"`entrypoints_do_not_call_entrypoints`)."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:16
 msgid "Step-by-Step Checklist"
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:13
+#: ../../../dev/implementing_a_function.md:18
 msgid "1. Header Entry"
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:15
+#: ../../../dev/implementing_a_function.md:20
 msgid ""
 "Update the standard YAML file that describes the public header to ensure the "
 "function is included in the generated public header."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:17
+#: ../../../dev/implementing_a_function.md:22
 msgid ""
 "**File**: `libc/include/<header>.yaml` (or `libc/include/sys/<header>.yaml` "
 "for system headers)"
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:18
+#: ../../../dev/implementing_a_function.md:23
 msgid "Add the new function to the `functions` list."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:19
+#: ../../../dev/implementing_a_function.md:24
 msgid "Specify its name, return type, and arguments."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:20
+#: ../../../dev/implementing_a_function.md:25
 msgid "List the standards it complies with (e.g., `stdc`, `POSIX`)."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:22
+#: ../../../dev/implementing_a_function.md:27
 msgid "2. Header Declaration"
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:24
+#: ../../../dev/implementing_a_function.md:29
 msgid ""
 "Declare the function in the internal implementation header file. This file "
 "is used by other internal code."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:26
+#: ../../../dev/implementing_a_function.md:31
 msgid "**File**: `libc/src/<header>/<func>.h`"
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:27
+#: ../../../dev/implementing_a_function.md:32
 msgid "Follow the structure defined in {ref}`implementation_standard`."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:28
+#: ../../../dev/implementing_a_function.md:33
 msgid "Ensure the declaration is inside the `LIBC_NAMESPACE_DECL` namespace."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:30
+#: ../../../dev/implementing_a_function.md:35
 msgid "3. Implementation"
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:32
+#: ../../../dev/implementing_a_function.md:37
 msgid "Write the actual code for the function."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:34
+#: ../../../dev/implementing_a_function.md:39
 msgid ""
 "**File**: `libc/src/<header>/<func>.cpp` (or `libc/src/<header>/<os>/"
 "<func>.cpp` for platform-specific implementations)"
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:35
+#: ../../../dev/implementing_a_function.md:40
 msgid "Use the `LLVM_LIBC_FUNCTION` macro."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:36
-msgid "Refer to {ref}`code_style` for naming and layout conventions."
-msgstr ""
-
-#: ../../../dev/implementing_a_function.md:38
-msgid "4. CMake Rule"
-msgstr ""
-
-#: ../../../dev/implementing_a_function.md:40
-msgid "Add a CMake target for the new function so it can be compiled."
-msgstr ""
-
-#: ../../../dev/implementing_a_function.md:42
-msgid "**File**: `libc/src/<header>/CMakeLists.txt`"
+#: ../../../dev/implementing_a_function.md:41
+msgid ""
+"Refer to {ref}`code_style` for naming and layout conventions and to {ref}"
+"`implementation_guidelines` for memory use and input checking."
 msgstr ""
 
 #: ../../../dev/implementing_a_function.md:43
+msgid ""
+"A function that makes a system call does so through a wrapper. See {ref}"
+"`syscall_wrapper_refactor`."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:46
+msgid "4. CMake Rule"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:48
+msgid "Add a CMake target for the new function so it can be compiled."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:50
+msgid "**File**: `libc/src/<header>/CMakeLists.txt`"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:51
 msgid "Add an `add_entrypoint_object` rule for the new file."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:44
+#: ../../../dev/implementing_a_function.md:52
 msgid ""
 "List all internal dependencies correctly to ensure proper build order. If "
 "the function reads or sets `errno`, include both "
@@ -138,45 +154,89 @@ msgid ""
 "{ref}`setting_errno`)."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:48
+#: ../../../dev/implementing_a_function.md:56
 msgid "5. Platform Registration"
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:50
+#: ../../../dev/implementing_a_function.md:58
 msgid ""
 "Register the new entrypoint for the target platforms to include it in the "
 "build."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:52
+#: ../../../dev/implementing_a_function.md:60
 msgid "**File**: `libc/config/<os>/<arch>/entrypoints.txt`"
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:53
-msgid "Add the new function to the list of active entrypoints."
+#: ../../../dev/implementing_a_function.md:61
+msgid ""
+"Add the new function to the list of active entrypoints, on every target "
+"where it works. See {ref}`code_organization` for the minimum set and for the "
+"difference between the overlay and full build lists."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:55
+#: ../../../dev/implementing_a_function.md:65
 msgid "6. Testing"
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:57
+#: ../../../dev/implementing_a_function.md:67
 msgid "Create tests to verify the implementation."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:59
+#: ../../../dev/implementing_a_function.md:69
 msgid "**File**: `libc/test/src/<header>/<func>_test.cpp`"
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:60
+#: ../../../dev/implementing_a_function.md:70
 msgid ""
 "Add corresponding tests using the internal testing framework. For functions "
 "setting `errno`, use `ErrnoCheckingTest` and `ErrnoSetterMatcher` (see {ref}"
 "`setting_errno`)."
 msgstr ""
 
-#: ../../../dev/implementing_a_function.md:63
+#: ../../../dev/implementing_a_function.md:73
 msgid ""
 "Update the `CMakeLists.txt` in the test directory (`libc/test/src/<header>/"
 "CMakeLists.txt`) to include the new test target."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:74
+msgid ""
+"See {ref}`testing_guide` for what the test should cover and how to confirm "
+"that it ran."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:77
+msgid "Adding a New Public Type"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:79
+msgid ""
+"A function sometimes needs a public type that LLVM-libc does not define yet. "
+"A type is registered separately from the functions that use it:"
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:82
+msgid ""
+"**Definition**: add `libc/include/llvm-libc-types/<type>.h` and an "
+"`add_header` entry for it in `libc/include/llvm-libc-types/CMakeLists.txt`. "
+"A structure such as `struct stat` is named `struct_stat` in file and target "
+"names. See {ref}`choosing_type_layout` and {ref}`writing_public_headers` "
+"before choosing the definition."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:87
+msgid ""
+"**Public header**: list the type under `types` in `libc/include/"
+"<header>.yaml` for every header that provides it, and add `.llvm-libc-types."
+"<type>` to the `DEPENDS` of that header's `add_header_macro` rule in `libc/"
+"include/CMakeLists.txt`."
+msgstr ""
+
+#: ../../../dev/implementing_a_function.md:91
+msgid ""
+"**Proxy header**: add `libc/hdr/types/<type>.h` and an "
+"`add_proxy_header_library` entry in `libc/hdr/types/CMakeLists.txt`. "
+"Implementation and test code include the type through this header. See the "
+"header inclusion policy in {ref}`code_style`."
 msgstr ""

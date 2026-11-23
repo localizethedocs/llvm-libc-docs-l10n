@@ -1,0 +1,405 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2011-2026, LLVM Project
+# This file is distributed under the same license as the libc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: libc main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../dev/implementation_guidelines.md:3
+msgid "Implementation Guidelines"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:5
+msgid ""
+"{ref}`code_style` covers naming, macros, and formatting. This page covers "
+"the judgment calls that come up while writing an implementation: what to "
+"optimize for, how to use memory, when to check inputs, and how to handle "
+"headers. {ref}`patterns_to_avoid` lists the mistakes and outdated patterns "
+"that reviewers see most often."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:11
+msgid "Priorities"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:13
+msgid "When goals conflict, prefer them in this order:"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:15
+msgid ""
+"**Correctness.** Follow the standard. See {ref}`undefined_behavior` for what "
+"to do where the standard is silent."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:17
+msgid ""
+"**Readability.** Code that is long but obvious is better than code that is "
+"short and clever. The character classification tables in `src/__support/"
+"ctype_utils.h` are long, and anyone can see what they do."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:20
+msgid ""
+"**Efficiency.** This encompasses latency, throughput, binary size, and "
+"memory usage. There's no consistent formula for tradeoffs between these, but "
+"in general baremetal users prioritize binary size and servers prioritize "
+"latency and throughput."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:25
+msgid ""
+"The memory functions and the math library are exceptions, where performance "
+"is an explicit goal alongside correctness."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:28
+msgid ""
+"Microbenchmarks are useful for finding a direction but are not a goal in and "
+"of themselves. The ideal performance measurement is from sampling real "
+"systems, though that's impractical for most changes. The project does not "
+"have a settled benchmarking setup today. LLVM's [benchmarking tips](https://"
+"llvm.org/docs/Benchmarking.html) describe how to take more meaningful "
+"measurements."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:35
+msgid "Memory"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:37
+msgid ""
+"**Allocate on the heap only when necessary.** Many targets have a small heap "
+"or none. When allocation is needed, follow the allocation rules in {ref}"
+"`code_style` and handle failure."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:40
+msgid ""
+"**Stack buffers may be large when the function needs them.** Prefer a "
+"correct implementation with a generous buffer over a complicated one. Sizes "
+"can be tuned later."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:43
+msgid ""
+"**Do not use unbounded recursion.** Baremetal users must be able to "
+"determine the maximum stack depth statically. Recursion with an explicit "
+"depth limit is acceptable."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:47
+msgid "Allocators"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:49
+msgid ""
+"LLVM-libc does not aim to provide its own general-purpose allocator for "
+"hosted systems. On Linux the supported allocator is [Scudo](https://llvm.org/"
+"docs/ScudoHardenedAllocator.html), and users with specific performance "
+"requirements are expected to bring the allocator they already prefer."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:55
+msgid ""
+"Scudo is not used on baremetal targets. It is designed for hosted systems "
+"and gets its memory from the operating system by mapping pages. A baremetal "
+"target has no operating system to ask, and usually has a small, fixed region "
+"of memory. On baremetal targets LLVM-libc instead provides an optimized "
+"allocator in `src/__support/freelist_heap.h`, which manages the memory "
+"between two symbols that the linker script provides."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:62
+msgid "Assembly"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:64
+msgid ""
+"LLVM-libc is written in C++. Assembly is used only in the few places where "
+"the stack or individual registers must be controlled exactly, or where an "
+"instruction has no compiler builtin. Assembly written for performance is not "
+"accepted, because it gives up what the compiler provides for C++ code: "
+"diagnostics, sanitizers, coverage and profile instrumentation, and debug "
+"information. {ref}`assembly_policy` has the full policy, including how "
+"patches that contain assembly are reviewed."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:72
+msgid "Runtime checks"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:74
+msgid ""
+"**Null pointers.** At the start of an entrypoint, pass each pointer argument "
+"that would be dereferenced, and for which a null pointer is not a valid "
+"input, to `LIBC_CRASH_ON_NULLPTR` (`src/__support/macros/null_check.h`). The "
+"check is lightweight, is controlled by the `LIBC_ADD_NULL_CHECKS` option, "
+"and exists to make a crash easy to diagnose. Put it in the entrypoint only, "
+"not in internal code. Do not add the check for a pointer that the libc only "
+"passes on to the kernel without dereferencing it. The kernel checks such "
+"pointers safely and returns `EFAULT` for any invalid address, not only for a "
+"null pointer."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:83
+msgid ""
+"**Internal invariants.** Use `LIBC_ASSERT`. It compiles away in release "
+"builds."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:85
+msgid ""
+"**Hardening.** `LIBC_COPT_HARDENING_MODE` was added for the allocator's "
+"integrity checks. Extending it to other code needs discussion first."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:87
+msgid ""
+"**Everything else.** Do not validate inputs beyond what the standard "
+"requires. {ref}`undefined_behavior` explains the reasoning."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:90
+msgid "Headers"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:92
+msgid ""
+"**Include what you use.** Every name a file uses must be made available by a "
+"header that the file includes directly, not by a transitive inclusion. A "
+"file that names `mode_t` includes `hdr/types/mode_t.h` itself, even if "
+"another header it includes happens to provide the type. This applies to "
+"header files as well as `.cpp` files. The exception is a header whose "
+"purpose is to include another one, such as a proxy header or a header that "
+"selects the implementation for the target: include that header, not the file "
+"it forwards to."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:100
+msgid ""
+"**Use proxy headers** from `libc/hdr/` for every type and macro that the "
+"libc also provides publicly. See the header inclusion policy in {ref}"
+"`code_style`. Compiler-provided headers are tolerated but should also go "
+"through a proxy header where one exists. The existing `#include <pthread.h>` "
+"style includes under `libc/src/` are incorrect and should not be copied."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:106
+msgid ""
+"**`src/__support/CPP/` headers** are included through the top-level header, "
+"for example `src/__support/CPP/type_traits.h` or `src/__support/CPP/"
+"utility.h`, not through the individual files in the subdirectories of the "
+"same name. The top-level header is a forwarding header of the kind the first "
+"point describes."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:114
+msgid "Feature-test macros in public headers"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:116
+msgid ""
+"Public headers do not use feature-test macros such as `_GNU_SOURCE` or "
+"`_POSIX_C_SOURCE` to hide declarations. Do not add `#ifdef` guards of that "
+"kind to a header. The exception is a macro that a standard itself defines "
+"for this purpose, such as `__STDC_WANT_LIB_EXT1__` for Annex K."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:121
+msgid ""
+"Headers are generated from the YAML files in `libc/include/` (see {ref}"
+"`header_generation`), and a generated header declares only the functions "
+"that are enabled for the target. A user who wants a different API surface "
+"generates headers to match it, by pointing the `LIBC_CONFIG_PATH` CMake "
+"option at their own `entrypoints.txt`, `headers.txt`, and configuration (see "
+"{ref}`custom_config_directory`), instead of every user receiving one set of "
+"headers full of conditionals."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:129
+msgid ""
+"Each function in the YAML files lists the `standards` it comes from (`stdc`, "
+"`posix`, `gnu`, `bsd`, `linux`, `llvm_libc_ext`, and so on). Keep that field "
+"accurate. It records where each declaration comes from."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:133
+msgid "{ref}`writing_public_headers` has the other rules for public headers."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:135
+msgid "File headers and comments"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:137
+msgid ""
+"Every file touched by a change uses the current LLVM file header: a bare "
+"separator line, the license block, and a `\\file` description."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:155
+msgid ""
+"Comment only what the code does not already say. A straightforward function "
+"or test needs no introductory paragraph, and a function that is moved keeps "
+"exactly the comments it had. Also, don't number the steps of a function in "
+"its comments (`// 1. ...`, `// 2. ...`). It makes later refactors noisier "
+"than necessary for no tangible benefit."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:161
+msgid "Character data"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:163
+msgid ""
+"Do not compare against character literals (except for equality), or do "
+"arithmetic on them to classify or convert characters. Use the helpers in "
+"`src/__support/ctype_utils.h` and `src/__support/wctype_utils.h`, which work "
+"for non-ASCII encodings and for both `char` and `wchar_t`. See {ref}"
+"`design_philosophy` for the model behind this."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:171
+msgid "Math functions"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:173
+msgid ""
+"The {ref}`math page <math>` describes the goals of the math library, and "
+"`libc/src/math/docs/add_math_function.md` is the step-by-step guide for "
+"adding a function. The points below are the ones that most often need "
+"stating."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:177
+msgid "Accuracy and error reporting"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:179
+msgid ""
+"The default implementation of every math function is expected to be "
+"correctly rounded in all rounding modes, and to support `errno`, floating "
+"point exceptions, and signaling NaNs. A signaling NaN input produces a quiet "
+"NaN and raises `FE_INVALID`."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:183
+msgid "The exceptions to that expectation are:"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:184
+msgid ""
+"a build that selects a different trade-off with the "
+"`LIBC_CONF_MATH_OPTIMIZATIONS` option, for example "
+"`LIBC_MATH_SKIP_ACCURATE_PASS`, `LIBC_MATH_NO_ERRNO`, or "
+"`LIBC_MATH_NO_EXCEPT`. The baremetal and GPU configurations set several of "
+"these by default;"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:189
+msgid ""
+"an implementation variant other than the default one (see {ref}"
+"`math_function_structure`);"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:191
+msgid ""
+"the GPU-specific math implementations, which have different accuracy bounds "
+"and are maintained by the GPU maintainers."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:193
+msgid ""
+"The {doc}`math.h status tables <../headers/math>` record the accuracy of "
+"each function, including any that are not correctly rounded yet."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:195
+msgid ""
+"`errno` and floating point exceptions are reported only through "
+"`fputil::set_errno_if_required` and `fputil::raise_except_if_required`."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:200
+msgid "Structure"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:202
+msgid ""
+"The implementation lives in a header under `src/__support/math/`, and the "
+"entrypoint is a thin wrapper."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:204
+msgid ""
+"A function can have several implementations, each in its own namespace "
+"(`double_eval`, `float_eval`, `float_eval_cr_rn`, `integer_eval`), with "
+"`LIBC_MATH_<FUNC>_IMPL` selecting the one to use. This is the intended "
+"structure for every function, although only some functions have been "
+"converted so far. Variants other than the default may make different "
+"guarantees."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:210
+msgid ""
+"The functions in `math::static_rounding` take the rounding mode as an "
+"argument. They exist for callers that need a fixed rounding mode, such as "
+"compilers. They are not the primary implementation of a function. The "
+"primary implementation is whichever one is best for the target's "
+"configuration."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:215
+msgid ""
+"A pull request may add a function for a single floating point type. It does "
+"not need to cover every type at once."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:218
+msgid "Testing"
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:220
+msgid ""
+"The author of a math change runs the unit, smoke, and exhaustive tests for "
+"it on their own machine, at least in the default configuration, and "
+"preferably before sending the pull request. Reviewers check that this was "
+"done. CI covers most of the tests and some configurations, not all of them."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:224
+msgid "The exhaustive tests take a long time and are not run by `check-libc`."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:225
+msgid ""
+"If the tests are hard to run, or hard to get passing, ask the math "
+"maintainers for help."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:227
+msgid ""
+"Tests that compare against MPFR run only in overlay mode. Every function "
+"also needs a smoke test, which is what runs in full builds and on baremetal "
+"and GPU targets."
+msgstr ""
+
+#: ../../../dev/implementation_guidelines.md:230
+msgid ""
+"`libc/test/src/math/exhaustive/` contains hard-to-round inputs from the "
+"[CORE-MATH](https://core-math.gitlabpages.inria.fr/) project, as text files "
+"(`.wc`) and in a compact binary form (`.bin`). The two forms must stay "
+"consistent."
+msgstr ""

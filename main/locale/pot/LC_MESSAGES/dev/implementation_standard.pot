@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libc main\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 15:42+0000\n"
+"POT-Creation-Date: 2026-11-23 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,15 +79,17 @@ msgstr ""
 msgid ""
 "Notice the use of the macro `LLVM_LIBC_FUNCTION`. This macro helps us define "
 "a C alias symbol for the C++ implementation. For example, for a library "
-"build, the macro is defined as follows:"
+"build, the macro expands to roughly the following. The full definition, "
+"including the optional fourth argument that names the C alias, is in `src/"
+"__support/common.h`."
 msgstr ""
 
-#: ../../../dev/implementation_standard.md:77
+#: ../../../dev/implementation_standard.md:79
 msgid ""
 "The LLVM_LIBC_FUNCTION_ATTR macro is normally defined to nothing, but can be "
 "defined by vendors who want to set their own attributes."
 msgstr ""
 
-#: ../../../dev/implementation_standard.md:80
+#: ../../../dev/implementation_standard.md:82
 msgid "When defining a variable, use the `LLVM_LIBC_VARIABLE` macro:"
 msgstr ""
