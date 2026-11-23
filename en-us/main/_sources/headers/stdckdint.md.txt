@@ -1,0 +1,20 @@
+# stdckdint.h
+
+```{raw} html
+<div class="hc-card"><div class="hc-summary-top"><div class="hc-pill-row"><span class="hc-pill hc-pill-c23">C23 Standard</span></div><div class="hc-overall-stat">4 / 4 <span style="color:var(--hc-green-text)">(100.0%)</span></div></div><div class="hc-progress-track hc-progress-lg" role="progressbar" aria-label="stdckdint.h overall implementation progress" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-green-text);width:100.0%"></div></div><div class="hc-grid-cards"><div class="hc-mini-card"><div class="hc-mini-title">C23 Standard</div><div class="hc-mini-val">4 / 4 <span style="color:var(--hc-green-text)">(100.0%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdckdint.h C23 Standard completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-green-text);width:100.0%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">Macros</div><div class="hc-mini-val">4 / 4 <span style="color:var(--hc-blue-text)">(100.0%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdckdint.h Macros completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:100.0%"></div></div></div></div></div>
+```
+
+## Macros
+
+```{raw} html
+<div class="hc-table-wrap"><table class="hc-table">
+  <thead><tr><th>Macro</th><th class="hc-center">Status</th><th class="hc-center">C23 Section</th><th class="hc-center">POSIX Docs</th></tr></thead>
+  <tbody>
+    <tr id="macro-__STDC_VERSION_STDCKDINT_H__"><td><code class="hc-sym">__STDC_VERSION_STDCKDINT_H__</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-c-cell"><a class="hc-c-link" href="https://en.cppreference.com/w/c/numeric/ckd_arith" title="C23 section 7.20 on cppreference.com">7.20 <span aria-hidden="true">&#8599;</span></a></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
+    <tr id="macro-ckd_add"><td><code class="hc-sym">ckd_add</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-c-cell"><a class="hc-c-link" href="https://en.cppreference.com/w/c/numeric/ckd_arith" title="C23 section 7.20.1 on cppreference.com">7.20.1 <span aria-hidden="true">&#8599;</span></a></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
+    <tr id="macro-ckd_mul"><td><code class="hc-sym">ckd_mul</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-c-cell"><a class="hc-c-link" href="https://en.cppreference.com/w/c/numeric/ckd_arith" title="C23 section 7.20.1 on cppreference.com">7.20.1 <span aria-hidden="true">&#8599;</span></a></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
+    <tr id="macro-ckd_sub"><td><code class="hc-sym">ckd_sub</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-c-cell"><a class="hc-c-link" href="https://en.cppreference.com/w/c/numeric/ckd_arith" title="C23 section 7.20.1 on cppreference.com">7.20.1 <span aria-hidden="true">&#8599;</span></a></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
+  </tbody>
+</table></div>
+```
+

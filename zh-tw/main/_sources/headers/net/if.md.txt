@@ -1,0 +1,44 @@
+# net/if.h
+
+```{raw} html
+<div class="hc-card"><div class="hc-summary-top"><div class="hc-pill-row"><span class="hc-pill hc-pill-posix">POSIX.1-2024</span></div><div class="hc-overall-stat">8 / 8 <span style="color:var(--hc-green-text)">(100.0%)</span></div></div><div class="hc-progress-track hc-progress-lg" role="progressbar" aria-label="net/if.h overall implementation progress" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-green-text);width:100.0%"></div></div><div class="hc-grid-cards"><div class="hc-mini-card"><div class="hc-mini-title">POSIX.1-2024</div><div class="hc-mini-val">6 / 6 <span style="color:var(--hc-blue-text)">(100.0%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="net/if.h POSIX.1-2024 completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:100.0%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">Functions</div><div class="hc-mini-val">4 / 4 <span style="color:var(--hc-green-text)">(100.0%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="net/if.h Functions completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-green-text);width:100.0%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">Macros</div><div class="hc-mini-val">2 / 2 <span style="color:var(--hc-blue-text)">(100.0%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="net/if.h Macros completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:100.0%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">Types</div><div class="hc-mini-val">2 / 2 <span style="color:var(--hc-purple-text)">(100.0%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="net/if.h Types completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-purple-text);width:100.0%"></div></div></div></div></div>
+```
+
+## Types
+
+```{raw} html
+<div class="hc-table-wrap"><table class="hc-table">
+  <thead><tr><th>Type</th><th class="hc-center">Status</th><th class="hc-center">C23 Section</th><th class="hc-center">POSIX Docs</th></tr></thead>
+  <tbody>
+    <tr id="type-struct-if_nameindex"><td><code class="hc-sym">struct if_nameindex</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/net_if.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="type-struct-ifreq"><td><code class="hc-sym">struct ifreq</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
+  </tbody>
+</table></div>
+```
+
+## Macros
+
+```{raw} html
+<div class="hc-table-wrap"><table class="hc-table">
+  <thead><tr><th>Macro</th><th class="hc-center">Status</th><th class="hc-center">C23 Section</th><th class="hc-center">POSIX Docs</th></tr></thead>
+  <tbody>
+    <tr id="macro-IFNAMSIZ"><td><code class="hc-sym">IFNAMSIZ</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
+    <tr id="macro-IF_NAMESIZE"><td><code class="hc-sym">IF_NAMESIZE</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/net_if.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+  </tbody>
+</table></div>
+```
+
+## Functions
+
+```{raw} html
+<div class="hc-table-wrap"><table class="hc-table">
+  <thead><tr><th>Function</th><th class="hc-center">Status</th><th class="hc-center">C23 Section</th><th class="hc-center">POSIX Docs</th></tr></thead>
+  <tbody>
+    <tr id="function-if_freenameindex"><td><code class="hc-sym">if_freenameindex</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/if_freenameindex.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="function-if_indextoname"><td><code class="hc-sym">if_indextoname</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/if_indextoname.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="function-if_nameindex"><td><code class="hc-sym">if_nameindex</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/if_nameindex.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="function-if_nametoindex"><td><code class="hc-sym">if_nametoindex</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/if_nametoindex.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+  </tbody>
+</table></div>
+```
+
